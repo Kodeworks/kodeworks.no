@@ -1,0 +1,15 @@
+h1 {
+  font-size: 46px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 28px;
+  margin-bottom: 15px;
+}
+
+section h1 {
+  font-size: 32px;
+}

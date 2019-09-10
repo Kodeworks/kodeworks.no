@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="utf-8">
+    <title>Kodeworks</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
+
+    <link rel="icon" href="assets/favicon.png" type="image/png" sizes="128x128">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+  </head>
+  <body id="body">
+    <header class="navbar">
+      <div class="container cf">
+        <a href="/">
+          <img id="logo" class="navbar-logo" src="assets/logos/kodeworks.svg" alt="Logo">
+        </a>
+
+        <div class="navbar-button--container">
+          <button id="navbar-button">
+            <svg x="0px" y="0px" width="100%" viewBox="0 0 96 96" class="navbar-svg" enable-background="new 0 0 96 96">
+              <rect width="32" height="4" x="32" y="46" class="navbar-svg-rect-top"></rect>
+            </svg>
+            <svg x="0px" y="0px" width="100%" viewBox="0 0 96 96" class="navbar-svg" enable-background="new 0 0 96 96">
+              <rect width="32" height="4" x="32" y="46" class="navbar-svg-rect-bottom"></rect>
+            </svg>
+          </button>
+        </div>
+
+        <ul id="navbar" class="navbar-navigation">
+          <li><a href="menneskene.html">Menneskene</a></li>
+          <li><a href="jobb.html">Jobb</a></li>
+          <li class="navbar-navigation--separator"></li>
+          <li class="navbar-navigation--external"><a href="https://medium.com/kodeworkslabs">Blogg</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="section">
+      <div class="container">
+        <h2>Menneskene i Kodeworks.</h2>
+        <p>I Kodeworks har vi <span id="people-count"></span> teknologer som brenner for faget.</p>
+      </div>
+    </div>
+
+    <section id="people-list" class="people-list"></section>
+
+
+    <footer class="footer">
+      <div class="container cf">
+        <div class="footer-contacts">
+          <img class="footer-logo" src="assets/logos/kodeworks.svg" alt="">
+
+          <p>Fjordgata 30<br>
+            7010 Trondheim</p>
+
+          <p><strong>Organisasjonsnummer</strong><br>
+            820 478 452</p>
+
+          <p>
+            Tel.: 416 70 269<br>
+            <a href="mailto:post@kodeworks.no">post@kodeworks.no</a></p>
+        </div>
+
+        <div class="footer-links">
+          <ul>
+            <li><a class="external-link" href="https://facebook.com/kodeworks/">Facebook</a></li>
+            <li><a class="external-link" href="https://www.linkedin.com/company/kodeworks/">LinkedIn</a></li>
+          </ul>
+          <ul>
+            <li><a href="/menneskene.html">Menneskene</a></li>
+            <li><a href="/jobb.html">Jobb</a></li>
+            <li><a class="external-link" href="https://medium.com/kodeworkslabs">Blogg</a></li>
+            <li><a href="/handbok">Håndboka</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/menneskene.js"></script>
+    <script src="js/menu.js"></script>
+  </body>
+</html>

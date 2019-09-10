@@ -1,0 +1,38 @@
+body {
+  color: #484d54;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.625;
+  height: 100vh;
+}
+
+a {
+  color: #1d80ac;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+section {
+  margin-bottom: 80px;
+}
+
+strong {
+  font-weight: bold;
+}
+
+.cf:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.external-link:after {
+  content: " →";
+}

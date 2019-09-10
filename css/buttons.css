@@ -1,0 +1,60 @@
+/* Buttons
+   ------------------------------------------------------------------------------*/
+.btn,
+.btn:hover {
+  color: #222;
+}
+
+.btn {
+  background-color: #fff;
+  border-radius: 3px;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: bold;
+  margin-right: 8px;
+  margin-top: 15px;
+  padding: 8px 20px;
+  position: relative;
+  text-transform: uppercase;
+  transition: all .15s;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.btn-action {
+  background-color: #1b7198;
+  color: #fff;
+}
+.btn.btn-action:hover {
+  background-color: #1a5e7d;
+}
+
+.btn.btn-icon {
+  padding-left: 57px;
+}
+.btn.btn-icon span {
+  background: #444;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  display: inline-block;
+  text-align: center;
+  width: 43px;
+
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.btn.btn-icon i {
+  color: #fff;
+  font-size: 16px;
+  width: 20px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  position: absolute;
+  left: 50%;
+}
