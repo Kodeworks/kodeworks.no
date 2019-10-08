@@ -120,6 +120,20 @@ var peoples = [
     title: "Konsulent",
     email: "joachim@kodeworks.no",
     page: "folk/joachim.html"
+  },
+  {
+    name: "Lars Ødegaard",
+    img: "assets/peoples/lars.jpg",
+    title: "Konsulent",
+    email: "lars@kodeworks.no",
+    page: "folk/lars.html"
+  },
+  {
+    name: "Martin A. Wilhelmsen",
+    img: "assets/peoples/martin.jpg",
+    title: "Konsulent",
+    email: "martin@kodeworks.no",
+    page: "folk/martin.html"
   }
 ];
 
