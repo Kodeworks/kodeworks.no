@@ -139,7 +139,7 @@ var peoples = [
     name: "Håkon Hesselberg",
     img: "assets/peoples/person2.png",
     title: "Konsulent",
-    email: "hakon@kodeworks.no",
+    email: "hakon.hesselberg@kodeworks.no",
     page: "folk/hakon.html"
   }
 ];
