@@ -134,6 +134,13 @@ var peoples = [
     title: "Konsulent",
     email: "martin@kodeworks.no",
     page: "folk/martin.html"
+  },
+  {
+    name: "Håkon Hesselberg",
+    img: "assets/peoples/person2.png",
+    title: "Konsulent",
+    email: "hakon@kodeworks.no",
+    page: "folk/hakon.html"
   }
 ];
 
