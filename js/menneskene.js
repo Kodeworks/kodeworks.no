@@ -141,7 +141,21 @@ var peoples = [
     title: "Konsulent",
     email: "hakon.hesselberg@kodeworks.no",
     page: "folk/hakon.html"
-  }
+  },
+  {
+    name: "Emil Midtlyng",
+    img: "assets/peoples/person2.png",
+    title: "Konsulent",
+    email: "emil.midtlyng@kodeworks.no",
+    page: "folk/emilmidtlyng.html"
+  },
+  {
+    name: "Erik Skår",
+    img: "assets/peoples/person2.png",
+    title: "Konsulent",
+    email: "erik.skar@kodeworks.no",
+    page: "folk/erikskar.html"
+  },
 ];
 
 var peopleCount = document.getElementById("people-count");
