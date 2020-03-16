@@ -99,9 +99,6 @@ svg, rect {
   transform: translateX(-50%);
 }
 
-.customer:first-child{
-  padding-top: 0;
-}
 
 .customer:last-child:after {
   border: none;
