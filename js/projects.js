@@ -103,6 +103,14 @@ const projects = [
     applikasjonsporteføljen, samt å modernisere systemet for
     deployment i cloud.`,
     image: 'assets/logos/technipfmc.svg',
+  },
+  {
+    name: 'Vaskehjelp AS',
+    description: `Vaskehjelp er en markedsplass som kobler vasker og kunder sammen.
+    Vaskehjelps rolle er å tilby plattformen hvor rengjører og kunde kan finne
+    hverandre, samt ta av seg betaling og annet papirarbeid. Kodeworks har bistått
+    med utvikling av iOS- og Android-applikasjon.`,
+    image: 'assets/logos/vaskehjelp.jpg',
   }
 ]
 
