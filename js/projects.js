@@ -116,8 +116,6 @@ const projects = [
 
 const projectList = document.getElementById('project-list')
 
-console.log(shuffleArray(projects));
-
 shuffleArray(projects).forEach(function (project) {
   const article = document.createElement('article')
   const articleContent = document.createElement('div')
