@@ -52,13 +52,6 @@ var peoples = [
     page: "folk/vegard.html"
   },
   {
-    name: "Anders Nykås",
-    img: "assets/peoples/anders.jpg",
-    title: "Konsulent",
-    email: "anders@kodeworks.no",
-    page: "folk/anders.html"
-  },
-  {
     name: "Sindre Stephansen",
     img: "assets/peoples/sindre.jpg",
     title: "Konsulent",
