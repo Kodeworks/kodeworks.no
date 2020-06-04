@@ -149,6 +149,13 @@ var peoples = [
     email: "erik.skar@kodeworks.no",
     page: "folk/erikskar.html"
   },
+  {
+    name: "Rune Holmgren",
+    img: "assets/peoples/rune.jpg",
+    title: "Konsulent",
+    email: "rune@kodeworks.no",
+    page: "folk/rune.html"
+  }
 ];
 
 var peopleCount = document.getElementById("people-count");
