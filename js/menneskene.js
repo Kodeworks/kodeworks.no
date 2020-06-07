@@ -155,6 +155,13 @@ var peoples = [
     title: "Konsulent",
     email: "rune@kodeworks.no",
     page: "folk/rune.html"
+  },
+  {
+    name: "Eivind Kristiansen Skjelmo",
+    img: "assets/peoples/person2.png",
+    title: "Konsulent",
+    email: "eivind@kodeworks.no",
+    page: "folk/eivind.html"
   }
 ];
 
