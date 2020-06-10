@@ -162,6 +162,13 @@ var peoples = [
     title: "Konsulent",
     email: "eivind@kodeworks.no",
     page: "folk/eivind.html"
+  },
+  {
+    name: "Nina Aalberg Johannessen",
+    img: "assets/peoples/person2.png",
+    title: "Konsulent",
+    email: "nina@kodeworks.no",
+    page: "folk/nina.html"
   }
 ];
 
