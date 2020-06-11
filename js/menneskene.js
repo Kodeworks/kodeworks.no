@@ -81,7 +81,7 @@ var peoples = [
   },
   {
     name: "Ørjan Bostad Vesterlid",
-    img: "assets/peoples/person2.png",
+    img: "assets/peoples/orjan.jpg",
     title: "Konsulent",
     email: "orjan@kodeworks.no",
     page: "folk/orjan.html"
