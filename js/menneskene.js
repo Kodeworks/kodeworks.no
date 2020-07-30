@@ -159,7 +159,7 @@ var peoples = [
   {
     name: "Nina Aalberg Johannessen",
     img: "assets/peoples/person2.png",
-    title: "Konsulent",
+    title: "Administrasjon",
     email: "nina@kodeworks.no",
     page: "folk/nina.html"
   }
