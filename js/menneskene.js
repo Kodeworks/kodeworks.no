@@ -176,6 +176,20 @@ var peoples = [
     title: "Konsulent",
     email: "simen@kodeworks.no",
     page: "folk/simen.html"
+  },
+  {
+    name: "Jan Burak",
+    img: "assets/peoples/person2.png",
+    title: "Konsulent",
+    email: "jan@kodeworks.no",
+    page: "folk/jan.html"
+  },
+  {
+    name: "Ferdy Wessing",
+    img: "assets/peoples/person2.png",
+    title: "Konsulent",
+    email: "ferdy@kodeworks.no",
+    page: "folk/ferdy.html"
   }
 ];
 
