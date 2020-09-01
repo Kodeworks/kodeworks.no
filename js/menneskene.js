@@ -162,6 +162,20 @@ var peoples = [
     title: "Administrasjon",
     email: "nina@kodeworks.no",
     page: "folk/nina.html"
+  },
+  {
+    name: "Andreas Norstein",
+    img: "assets/peoples/person2.png",
+    title: "Konsulent",
+    email: "andreas@kodeworks.no",
+    page: "folk/andreas.html"
+  },
+  {
+    name: "Simen Moen Storvik",
+    img: "assets/peoples/person2.png",
+    title: "Konsulent",
+    email: "simen@kodeworks.no",
+    page: "folk/simen.html"
   }
 ];
 
