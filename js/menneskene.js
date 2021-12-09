@@ -80,13 +80,6 @@ var peoples = [
     page: "folk/orjan.html",
   },
   {
-    name: "Nicolaj Nielsen",
-    img: "assets/peoples/nicolaj.jpg",
-    title: "Konsulent",
-    email: "nicolaj@kodeworks.no",
-    page: "folk/nicolaj.html",
-  },
-  {
     name: "Aleksander Skraastad",
     img: "assets/peoples/aleksander.jpg",
     title: "Konsulent",
@@ -184,6 +177,13 @@ var peoples = [
     email: "ferdy@kodeworks.no",
     page: "folk/ferdy.html",
   },
+  {
+    name: "Peter Ringset",
+    img: "assets/peoples/person2.png",
+    title: "Seniorkonsulent",
+    email: "peter@kodeworks.no",
+    page: "folk/peter.html",
+  }
 ];
 
 var peopleCount = document.getElementById("people-count");
