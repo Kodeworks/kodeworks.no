@@ -1,0 +1,367 @@
+@import url("_reset.css");
+
+@import url("_fonts.css");
+
+@import url("_core.css");
+@import url("_typography.css");
+
+@import url("_button.css");
+
+@import url("_frontpage.css");
+
+:root {
+  --gutter-size: 30px;
+  --grid-gap-size: 50px;
+
+  --spacer-large: 120px;
+  --spacer-medium: 60px;
+}
+
+
+#container > div{
+  margin: 120px auto 120px auto;
+  max-width: 1280px;
+ }
+
+
+/* Main Header
+------------------------------------------------------------------------------*/
+#main-header {
+  background: #e8e7e6 url("../assets/seismograf.svg") no-repeat center;
+  background-color: #e8e7e6;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+#logo {
+  line-height: 1;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  left: var(--gutter-size);
+}
+
+#main-header .logo a:focus {
+  outline-style: solid;
+}
+
+/* Menu Button
+------------------------------------------------------------------------------*/
+#menu-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 32px;
+  height: 44px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  z-index: 1000;
+}
+
+.theme-dark #menu-button {
+  color: #fff;
+}
+
+/* Menu
+------------------------------------------------------------------------------*/
+#menu:not(.opened) {
+  z-index: -1;
+  visibility: hidden;
+}
+
+#menu {
+  height: 100vh;
+  overflow: hidden;
+  transition: visibility .2s ease-in-out .1s, z-index .2s ease-in-out .1s;
+  width: 100vw;
+
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 100;
+}
+
+/* Menu Main
+------------------------------------------------------------------------------*/
+#menu-main,
+#menu.opened #menu-main {
+  transition: width 0.3s ease-in-out, padding 0.3s ease-in-out;
+}
+
+#menu-main {
+  background-color: #efefef;
+  box-sizing: border-box;
+  height: 100%;
+  padding-top: 85px;
+  width: 0;
+
+  position: absolute;
+  right: 0;
+}
+
+#menu.opened #menu-main {
+  padding-left: var(--gutter-size);
+  padding-right: var(--gutter-size);
+  width: 380px;
+}
+
+#menu-main a {
+  line-height: 32px;
+}
+
+/* Menu Content
+------------------------------------------------------------------------------*/
+#menu-content {
+  transition: left 0.3s ease-in-out, padding 0.3s ease-in-out;
+}
+
+#menu-content {
+  position: absolute;
+
+  box-sizing: border-box;
+  padding-top: 25px;
+  height: 100%;
+
+  background-color: #efefef;
+
+  width: calc(100vw - 380px);
+  left: calc(-100vw - 380px);
+  right: 100%;
+  bottom: 0;
+  top: 0;
+  background-color: hotpink;
+}
+
+#menu.opened #menu-content {
+  left: 0;
+}
+
+/* Menu Footer
+------------------------------------------------------------------------------*/
+#menu-footer {
+  position: absolute;
+  bottom: 25px;
+}
+
+.main-menu__closeButton {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.main-menu__closeButton img {
+  width: 44px;
+  height: 44px;
+}
+
+.no-scroll {
+  height: 100vh;
+  overflow: hidden;
+}
+
+
+
+@media (max-width: 900px) {
+  .person-grid {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 550px) {
+  #projects,
+  #about {
+    width: auto;
+    height: auto;
+    overflow: auto;
+  }
+
+  #about {
+    display: block;
+    text-align: center;
+  }
+
+  #about > div {
+    padding-right: var(--gutter-size);
+  }
+
+  #about img {
+    margin-left: 0;
+    height: 100%;
+    width: 100%;
+  }
+
+  #projects {
+    display: block;
+    text-align: center;
+  }
+
+  #projects img {
+    height: 280px;
+  }
+
+  #projects > div {
+    padding: 60px var(--gutter-size);
+  }
+
+  .project-description {
+    padding: 25px 25px 120px 25px;
+  }
+
+  #logo {
+    height: auto;
+    width: 200px;
+  }
+
+  #people-list {
+    column-count: 1;
+  }
+
+  #people-list header:not(:hover) .person-overlay {
+    visibility: visible;
+    opacity: 1;
+
+    background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.31) 0,
+      rgba(0, 0, 0, 0.3) 5%,
+      rgba(0, 0, 0, 0.2) 10%,
+      rgba(0, 0, 0, 0.18) 20%,
+      rgba(0, 0, 0, 0.16) 30%,
+      rgba(0, 0, 0, 0.14) 40%,
+      rgba(0, 0, 0, 0.12) 50%,
+      rgba(0, 0, 0, 0.1) 60%,
+      rgba(0, 0, 0, 0.2) 70%,
+      rgba(0, 0, 0, 0.25) 90%,
+      rgba(0, 0, 0, 0.31) 95%,
+      rgba(0, 0, 0, 0.34)
+    );
+  }
+}
+
+#page-projects {
+  background-color: #000;
+  color: #fff;
+  overflow: auto;
+  padding-left: var(--gutter-size);
+  padding-right: var(--gutter-size);
+}
+
+#page-projects header {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 220px 30px 80px 30px;
+  text-align: center;
+}
+
+#page-projects > article {
+  margin-bottom: 120px;
+  width: 100%;
+}
+
+#page-projects > article img {
+  height: 85vh;
+  margin-bottom: 25px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.project-ingress {
+  display: flex;
+  justify-content: space-between;
+  padding-left: var(--gutter-size);
+  padding-right: var(--gutter-size);
+}
+
+@media (max-width: 550px) {
+  #page-projects {
+    padding: 0;
+  }
+  .project-ingress {
+    display: block;
+    text-align: left;
+  }
+}
+
+#page-project {
+  background-color: #000;
+  color: #fff;
+}
+
+#page-project header {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 220px 30px 80px 30px;
+  text-align: center;
+}
+
+#page-project header ul {
+  font-size: 14px;
+  font-weight: 200;
+  margin-bottom: 30px;
+}
+
+#page-project > article {
+  margin-bottom: 120px;
+  width: 100%;
+}
+
+#page-project > article img {
+  height: 60vh;
+  margin-bottom: 25px;
+  object-fit: cover;
+  width: 100%;
+}
+
+#page-project > article > section {
+  box-sizing: border-box;
+  clear: both;
+  padding: 60px 30px;
+}
+
+#page-project > article::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.project-description-input,
+.project-description-output {
+  width: 46%;
+}
+
+.project-description-input {
+  float: left;
+}
+
+.project-description-output {
+  float: right;
+}
+
+.project-output {
+  background-color: #1a1a1a;
+  text-align: center;
+}
+
+.project-output > * {
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+@media (max-width: 550px) {
+  .project-description-input,
+  .project-description-output {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+}

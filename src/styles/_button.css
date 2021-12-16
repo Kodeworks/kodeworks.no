@@ -1,0 +1,26 @@
+.btn {
+  border: none;
+  color: #fff;
+  display: inline-block;
+  font-size: 14px;
+  line-height: 26px;
+  padding-left: 8px;
+  padding-right: 8px;
+  cursor: pointer;
+}
+
+.btn.btn-icon {
+  background: url("../assets/icons/chevron-right.svg") no-repeat;
+  background-position: right 4px top 5px;
+  padding-right: 24px;
+}
+
+.btn.btn-dark {
+  color: #fff;
+  background-color: #000;
+}
+
+.btn.btn-light {
+  color: #000;
+  background-color: #fff;
+}
