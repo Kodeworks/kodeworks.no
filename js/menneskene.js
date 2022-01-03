@@ -12,14 +12,14 @@ var peoples = [
   {
     name: "Eirik Larsen",
     img: "assets/peoples/eirik.jpg",
-    title: "Seniorkonsulent / Daglig Leder",
+    title: "Seniorkonsulent / Daglig Leder Kodeworks",
     email: "eirik@kodeworks.no",
     page: "folk/eirik.html",
   },
   {
     name: "Christian Neverdal",
     img: "assets/peoples/christian.jpg",
-    title: "Seniorkonsulent",
+    title: "Seniorkonsulent / Daglig Leder Trondheim",
     email: "christian@kodeworks.no",
     page: "folk/christian.html",
   },
@@ -61,7 +61,7 @@ var peoples = [
   {
     name: "John Hansen",
     img: "assets/peoples/john.jpg",
-    title: "Konsulent",
+    title: "Seniorkonsulent",
     email: "john@kodeworks.no",
     page: "folk/john.html",
   },
@@ -82,7 +82,7 @@ var peoples = [
   {
     name: "Aleksander Skraastad",
     img: "assets/peoples/aleksander.jpg",
-    title: "Konsulent",
+    title: "Seniorkonsulent / Daglig Leder Oslo",
     email: "aleksander@kodeworks.no",
     page: "folk/aleksander.html",
   },
@@ -103,21 +103,21 @@ var peoples = [
   {
     name: "Lars Ødegaard",
     img: "assets/peoples/lars.jpg",
-    title: "Konsulent",
+    title: "Seniorkonsulent",
     email: "lars@kodeworks.no",
     page: "folk/lars.html",
   },
   {
     name: "Martin A. Wilhelmsen",
     img: "assets/peoples/martin.jpg",
-    title: "Konsulent",
+    title: "Seniorkonsulent",
     email: "martin@kodeworks.no",
     page: "folk/martin.html",
   },
   {
     name: "Håkon Hesselberg",
     img: "assets/peoples/person2.png",
-    title: "Konsulent",
+    title: "Seniorkonsulent",
     email: "hakon.hesselberg@kodeworks.no",
     page: "folk/hakon.html",
   },
@@ -131,7 +131,7 @@ var peoples = [
   {
     name: "Rune Holmgren",
     img: "assets/peoples/rune.jpg",
-    title: "Konsulent",
+    title: "Seniorkonsulent",
     email: "rune@kodeworks.no",
     page: "folk/rune.html",
   },
@@ -183,6 +183,20 @@ var peoples = [
     title: "Seniorkonsulent",
     email: "peter@kodeworks.no",
     page: "folk/peter.html",
+  },
+  {
+    name: "Ådne Nystuen",
+    img: "assets/peoples/adne.png",
+    title: "Konsulent",
+    email: "adne@kodeworks.no",
+    page: "folk/adne.html",
+  },
+  {
+    name: "Ole Marius Forbord",
+    img: "assets/peoples/person2.png",
+    title: "Konsulent",
+    email: "ole.marius.forbord@kodeworks.no",
+    page: "folk/ole_marius.html",
   }
 ];
 
