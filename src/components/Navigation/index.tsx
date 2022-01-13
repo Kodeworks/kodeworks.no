@@ -13,7 +13,8 @@ function Navigation({ isOpened, toggleNavigationOpened }: Prop) {
   return (
     <menu id="menu" className={isOpened ? 'opened' : ''}>
       <div id="menu-content">
-        <img src="/assets/logo.svg" width="100" alt="" />
+        <img className="menu-logo" src="/assets/logo-white.svg" width="100" alt="" />
+        <div className="menu-dark"></div>
       </div>
       <div id="menu-main">
         <nav onClick={toggleNavigationOpened}>
@@ -36,13 +37,15 @@ function Navigation({ isOpened, toggleNavigationOpened }: Prop) {
 
         <footer id="menu-footer">
           <h4>Kontakt oss</h4>
-          <p>post@kodehworks.no</p>
-          <p>+47 466 93 738</p>
+          <p>
+            post@kodeworks.no<br />
+            +47 466 93 738
+          </p>
 
-          <h4>Oslo</h4>
+          <h5>Oslo</h5>
           <p>Grønnegata 10, 0350 Oslo</p>
 
-          <h4>Trondheim</h4>
+          <h5>Trondheim</h5>
           <p>Fjordgata 30, 7050 Trondheim</p>
         </footer>
       </div>
