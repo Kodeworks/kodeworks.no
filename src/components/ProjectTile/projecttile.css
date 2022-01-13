@@ -1,0 +1,10 @@
+.project-ingress {
+  display: flex;
+  justify-content: space-between;
+  padding-left: var(--gutter-size);
+  padding-right: var(--gutter-size);
+}
+
+.project-ingress p {
+  width: 60%;
+}

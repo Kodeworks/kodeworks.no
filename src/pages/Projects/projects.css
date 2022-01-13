@@ -1,0 +1,41 @@
+#page-projects {
+  background-color: #000;
+  color: #fff;
+  overflow: auto;
+  padding-left: var(--gutter-size);
+  padding-right: var(--gutter-size);
+}
+
+#page-projects header {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 220px 30px 80px 30px;
+  text-align: center;
+}
+
+#page-projects > article {
+  max-width: 1600px;
+  margin-bottom: 120px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+#page-projects > article img {
+  height: 85vh;
+  margin-bottom: 25px;
+  object-fit: cover;
+  width: 100%;
+}
+
+
+
+@media (max-width: 550px) {
+  #page-projects {
+    padding: 0;
+  }
+  .project-ingress {
+    display: block;
+    text-align: left;
+  }
+}
