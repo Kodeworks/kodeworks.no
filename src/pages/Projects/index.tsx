@@ -9,7 +9,8 @@ function Projects() {
     <div id="page-projects" className="theme-dark">
       <header>
         <h1>Prosjektene</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sit amet dapibus nisl, eu molestie odio. Cras egestas lorem sed mauris dapibus viverra. Praesent quis iaculis augue, sit amet porta lacus..</p>
+
+      <p>[SIMEN, WE NEED TEXT HERE] - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sit amet dapibus nisl, eu molestie odio. Cras egestas lorem sed mauris dapibus viverra. Praesent quis iaculis augue, sit amet porta lacus..</p>
       </header>
 
       { api.projects.getProjects().map((project) => <ProjectTile key={ project.name } project={ project }/>)}
