@@ -1,0 +1,89 @@
+/* Menu Content
+------------------------------------------------------------------------------*/
+#menu-content {
+  transition: left 0.3s ease-in-out, padding 0.3s ease-in-out;
+}
+
+#menu-content {
+  position: absolute;
+
+  box-sizing: border-box;
+  padding-top: 25px;
+  height: 100%;
+
+  background-color: #efefef;
+
+  width: calc(100vw - 380px);
+  left: calc(-100vw - 380px);
+  right: 100%;
+  bottom: 0;
+  top: 0;
+  background-image: url('../../assets/computer.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#menu.opened #menu-content {
+  left: 0;
+}
+
+.menu-dark {
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.8;
+}
+
+.menu-logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  width: 30%;
+}
+
+/* Menu Footer
+------------------------------------------------------------------------------*/
+#menu-footer {
+  position: absolute;
+  bottom: 25px;
+  font-size: 14px;
+  line-height: 28px;
+}
+
+#menu-footer p {
+  margin-bottom: 15px;
+}
+
+.main-menu__closeButton {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.main-menu__closeButton img {
+  width: 44px;
+  height: 44px;
+}
+
+/* FIXME (TRI): extract this code #somedaymaybe
+ */
+
+#menu h4 {
+  color: var(--color-grey);
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+
+#menu-footer h5 {
+  color: var(--color-grey);
+  font-size: 14px;
+  line-height: 1.1;
+}
