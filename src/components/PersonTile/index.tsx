@@ -27,7 +27,7 @@ function PersonTile({ person }: Prop) {
         </div>
       </header>
 
-      <ul className="projects">
+      <ul className="person-projects">
         {person.projects.map((project) => (
           <li key={project.name}>
             <a href={`/input/${project.name.toLowerCase().replace(/ /g, '-')}`} className="btn btn-dark">{project.name}</a>

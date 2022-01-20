@@ -1,0 +1,51 @@
+.person-projects li:not(:last-child) {
+  margin-right: 4px;
+}
+
+.person-projects li {
+  display: inline-block;
+}
+
+.person-overlay {
+  transition: opacity 0.1s ease-in-out, visibility 0.1s ease-in-out;
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+.person-information {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  line-height: 20px;
+
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  right: 15px;
+}
+
+.person-information a {
+  color: #fff;
+  /* font-family: "Natural Grotesk Light", arial, sans-serif; */
+  font-weight: 200;
+}
+
+.person-image {
+  height: unset;
+  width: 100%;
+  display: block;
+}
+
+.person-actions {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+}
+
+.person-actions a:not(:last-child) {
+  margin-right: 4px;
+}

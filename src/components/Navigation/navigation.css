@@ -1,5 +1,22 @@
-/* Menu Content
-------------------------------------------------------------------------------*/
+#menu:not(.opened) {
+  z-index: -1;
+  visibility: hidden;
+}
+
+#menu {
+  height: 100vh;
+  overflow: hidden;
+  transition: visibility .2s ease-in-out .1s, z-index .2s ease-in-out .1s;
+  width: 100vw;
+
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 100;
+}
+
 #menu-content {
   transition: left 0.3s ease-in-out, padding 0.3s ease-in-out;
 }
@@ -48,6 +65,32 @@
 
 /* Menu Footer
 ------------------------------------------------------------------------------*/
+#menu-main,
+#menu.opened #menu-main {
+  transition: width 0.3s ease-in-out, padding 0.3s ease-in-out;
+}
+
+#menu-main {
+  background-color: #efefef;
+  box-sizing: border-box;
+  height: 100%;
+  padding-top: 85px;
+  width: 0;
+
+  position: absolute;
+  right: 0;
+}
+
+#menu.opened #menu-main {
+  padding-left: var(--gutter-size);
+  padding-right: var(--gutter-size);
+  width: 380px;
+}
+
+#menu-main a {
+  line-height: 32px;
+}
+
 #menu-footer {
   position: absolute;
   bottom: 25px;
