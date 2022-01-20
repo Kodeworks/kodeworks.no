@@ -1,9 +1,0 @@
-#work {
-  align-items: center;
-  box-sizing: border-box;
-  display: flex;
-  justify-content: center;
-  padding-left: var(--gutter-size);
-  padding-right: var(--gutter-size);
-  text-align: center;
-}
