@@ -8,33 +8,33 @@ export const projects: ProjectObjectType = {
   Equinor: {
     name: 'Equinor',
     image: '/assets/projects/project1.jpg',
-    description: 'Equinor er et internasjonalt energiselskap, og har de siste årene iverksatt en strategisk satsing på bærekraftig energi. Dette er en prosess som krever innovasjon, forretningsforståelse og et stort fokus på kvalitet. Kodeworks støtter Equinors forsknings- og digitaliseringsaktiviteter gjennom analyse, design, programmering og testing.',
+    description: 'Equinor is an international energy company, which in recent years has implemented a strategic investment in sustainable energy. This is a process that requires innovation, business understanding and a strong focus on quality. Kodeworks supports Equinor’s research and digitization activities through analysis, design, programming and testing.',
   },
   Inatur: {
     name: 'Inatur',
     image: '/assets/projects/project2.jpg',
-    description: 'Inatur er Norges største markedsplass for jakt, fiske og hytter i norsk natur.  Kodeworks bidrar til utvikling av applikasjoner tilrettelagt for tilbydere av jakt, fiske og hytter slik at det enkelt kan tilbys til potensielle kunder og forhandlere.',
+    description: 'Inatur is Norway’s largest marketplace for hunting, fishing and cabins. Kodeworks contributes to the development of applications adapted to providers of hunting, fishing and cabins so that it can easily be offered to potential customers and dealers.',
     highlighted: true,
   },
   Statkraft: {
     name: 'Statkraft',
     image: '/assets/projects/project3.jpg',
-    description: 'Statkraft er Europas største produsent av fornybar energi og et globalt selskap innen energimarkedsoperasjoner. Kodeworks har bistått med koordinering og utvikling av en samlet plattform for booking, risikoevaluering og rapportering av kraftkjøpsavtale.',
+    description: 'Statkraft is Europe’s largest producer of renewable energy and a global company in energy market operations. Kodeworks has assisted with the coordination and development of an overall platform for booking, risk assessment and reporting of power purchase agreements.',
   },
   Flir: {
-    name: 'Teledynename:  FLIR',
+    name: 'Teledyne FLIR',
     image: '/assets/projects/project4.jpg',
-    description: 'Teledyne FLIR designer, utvikler, produserer og distribuerer teknologier som streber etter å skape en mer bærekraftig, mer effektiv og tryggere fremtid ved å forbedre menneskelig oppfatning gjennom klassens beste intelligente bildebehandlings- og sensorløsninger.',
+    description: 'Teledyne FLIR specializes in the design and production of thermal imaging cameras and sensors. FLIR strives to create a sustainable, efficient and more secure future by improving human perception through the class’ best intelligent image processing and sensor solutions.',
   },
   Vaskehjelp: {
     name: 'Vaskehjelp',
     image: '/assets/projects/project4.jpg',
-    description: 'Vaskehjelp er en markedsplass som kobler rengjører og kunde sammen, samt tar av seg betaling og annet papirarbeid. Kodeworks har bistått med utvikling av iOS- og Android-applikasjon.',
+    description: 'Vaskehjelp is a marketplace that connects a cleaner and customer, as well as taking care of payment and other paperwork. Kodeworks has assisted in the development of the iOS and Android application.',
   },
   Sunlitsea: {
     name: 'Sunlit Sea',
     image: '/assets/projects/project4.jpg',
-    description: 'Sunlit Sea utvikler en ny type teknologi for flytende solcelleinstallasjoner som åpner et helt nytt marked for solceller på hav. Kodeworks utvikler sensorløsninger for solcelleinstallasjonen, samt overvåking og berikning av data fra sensorene for å optimalisere produksjon og vedlikehold.',
+    description: 'Sunlit Sea develops technology for floating solar cell installations that opens up a completely new market for solar cells at sea. Kodeworks develops sensor solutions for solar cell installation, as well as monitoring and enrichment of data from the sensors to optimize production and maintenance.',
   },
   Lilbit: {
     name: 'Lilbit',
@@ -45,12 +45,12 @@ export const projects: ProjectObjectType = {
   Skandiaenergi: {
     name: 'Skandiaenergi',
     image: '/assets/projects/project5.jpg',
-    description: 'SkandiaEnergi utvikler løsninger for fremtidens strømmarked. De tilbyr unike og smarte energiløsninger for solstrøm og energisparing. Kodeworks bistår til å utvikle en app som gjør hverdagen som kunde mer oversiktlig, og som tilbyr smarte løsninger for strømstyring og lading av elbil.',
+    description: 'SkandiaEnergi develops solutions for the electricity market. They offer unique and smart energy solutions for solar power and energy saving. Kodeworks assists in developing an app that simplifies everyday life for the customer, offering smart solutions for power management and charging of electric cars.',
   },
   Kongsberg: {
     name: 'Kongsberg',
     image: '/assets/projects/project1.jpg',
-    description: "Kongsberg Digital tilbyr digitale løsninger for kunder innen maritim, olje og gass, med autonomi, smarte data, og augmented reality som fellesnevner. Kodeworks jobber med utvikling av maritim simulering brukt i blant annet treningssystemer for kunder over hele verden.\n\nKongsberg A&D er en global teknologileder innen forsvar, overvåking, romfart, flystrukturer og flyvedlikehold.",
+    description: "Kongsberg Digital offers digital solutions for customers in maritime, oil and gas. Kodeworks works with the development of maritime simulation used in, among other things, training systems for customers all over the world. Kongsberg A&D is a global technology leader in defense, surveillance, aerospace, aircraft structures and aircraft maintenance.",
   },
   Akerbp: {
     name: 'Akerbp',
@@ -60,42 +60,42 @@ export const projects: ProjectObjectType = {
   Gintel: {
     name: 'Gintel',
     image: '/assets/projects/project1.jpg',
-    description: 'Gintel AS er et norsk IT-selskap som produserer programvare og applikasjoner innenfor telekommunikasjon, som endrer måten operatører komponerer og leverer tjenester til bedriftskunder.',
+    description: 'Gintel AS is a Norwegian IT company that develops software and applications within telecommunications, which changes the way operators compose and deliver services to corporate customers.',
   },
   Bnentreprenor: {
     name: 'Bnentreprenor',
     image: '/assets/projects/project1.jpg',
-    description: 'BN Entreprenør AS er et maskinentreprenørfirma som ble etablert i 1973. Med en moderne maskinpark er de i stand til å utføre oppdrag på en kostnadseffektiv måte.',
+    description: 'BN Entreprenør AS is a machine contractor company that was established in 1973. With a modern machine park, they are able to carry out assignments in a cost-effective way.',
   },
   Politiet: {
     name: 'Politiet',
     image: '/assets/projects/project1.jpg',
-    description: 'Politiet skal forebygge og bekjempe kriminalitet samt skape trygghet i samfunnet. For å klare oppdraget er de avhengig av gode datasystemer som understøtter den daglige driften på en smidig og effektiv måte. Kodeworks har vært med å utvikle to svært viktige systemer for Politet: Mobil- og Omvendt Voldsalarm (MOVA) og Politioperative tjenester i felt (PO). Begge systemene har bidratt til å bedre responstiden på landets operasjonssentraler, trygge hverdagen til voldsutsatte, og gjort politipatruljer mer effektiv.',
+    description: 'The police must prevent and fight crime and create security in society. To accomplish the task, they rely on good computer systems that support day-to-day operations in a smooth and efficient manner. Kodeworks has been involved in developing two very important systems for the Police: Mobile and Reverse Violence Alarm (MOVA) and Police Operational Services in the Field (PO). Both systems have helped to improve the response time at the country’s operations centers, secure the everyday lives of victims of violence, and made police patrols more efficient.',
   },
   Avinor: {
     name: 'Avinor',
     image: '/assets/projects/project1.jpg',
-    description: 'Samfunnsoppdraget til Avinor er å sikre hele Norge gode luftfartstjenester. Dette består blant annet i å opprettholde god informasjonsflyt til ansatte og flypassasjerer. Avinor er underlagt noe av landets strengeste krav til sikkerhet og kvalitet. Kodeworks har bistått med integrasjon av sanntids informasjonsprosessering samt testing og kvalitetsikring av kode.',
+    description: 'Avinor’s social mission is to ensure good aviation services throughout Norway. This includes maintaining a good information flow to employees and air passengers. Avinor is subject to some of the country’s strictest requirements for safety and quality. Kodeworks has assisted with the integration of real-time information processing as well as testing and quality assurance of code.',
   },
   Wtw: {
     name: 'Wtw',
     image: '/assets/projects/project1.jpg',
-    description: 'WTW er en teknologibasert bedrift som jobber med markedsledende mobilbaserte tjenester innen helse, transport og fritid.',
+    description: 'WTW is a technology-based company that works with market-leading mobile-based services within health, transport and leisure.',
   },
   KLP: {
     name: 'KLP',
     image: '/assets/projects/project1.jpg',
-    description: 'Kommunal Landspensjonskasse Gjensidig Forsikringsselskap er et Oslo-basert pensjonselskap som forvalter pensjonene til kommunalt ansatte i Norge.',
+    description: 'Kommunal Landspensjonskasse Gjensidig Forsikringsselskap is an Oslo-based pension company that manages the pensions of municipal employees in Norway.',
   },
   Thales: {
     name: 'THALES',
     image: '/assets/projects/project1.jpg',
-    description: 'Thales Group er et fransk multinasjonalt selskap som designer og bygger elektriske systemer og leverer tjenester for luftfart, forsvar, transport og sikkerhet.',
+    description: 'Thales Group is a French multinational company that designs and builds electrical systems and provides services for aviation, defense, transport and security.',
   },
   TechnipFMC: {
     name: 'TechnipFMC',
     image: '/assets/projects/project2.jpg',
-    description: 'Som et verdensomspennende energi-serviceselskap har TechnipFMC store kunder i Norge. Sensorer brukes til sanntids overvåking av flyt gjennom installasjoner, og tung matematisk datamodellering for å optimalisere driften. Kodeworks bistår med å øke skalerbarhet og ytelse i applikasjonsporteføljen, samt å modernisere systemet for deployment i skyen.'
+    description: 'As a worldwide energy service company, TechnipFMC has large customers in Norway. Sensors are used for real-time monitoring of flow through installations, and heavy mathematical data modeling to optimize operations. Kodeworks assists in increasing the scalability and performance of the application portfolio, as well as modernizing the deployment system in the cloud.'
   },
 };
 
