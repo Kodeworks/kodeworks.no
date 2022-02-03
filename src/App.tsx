@@ -36,25 +36,32 @@ import './styles/kw.css';
 
 function App() {
   const [isNavigationOpen, setIsNavigationOpen] = useState(false)
+  const [darkMode, setDarkMode] = useState(false);
 
   function handleMenuButtonClick() {
     setIsNavigationOpen(!isNavigationOpen)
   }
 
+  function handleDarkMode(isDarkMode: boolean) {
+    if (darkMode != isDarkMode) {
+      setDarkMode(isDarkMode);
+    }
+  }
+
   return (
     <div className="App">
       <Router>
-        <button onClick={handleMenuButtonClick} id="menu-button">
+      <button onClick={handleMenuButtonClick} id="menu-button" className={darkMode ? 'dark-mode' : ''}>
           { isNavigationOpen
             ? <img src={xmarkIcon} alt="Close button" />
-            :  'MENY' }
+            :  'MENU' }
         </button>
 
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home handleDarkMode={handleDarkMode} />} />
           <Route path="staffmanual" element={<StaffManual />} />
           <Route path="people" element={<People />} />
-          <Route path="projects" element={<Projects />} />
+          <Route path="projects" element={<Projects handleDarkMode={handleDarkMode} />} />
           <Route path="input/*" element={<InputRoutes />} />
         </Routes>
 

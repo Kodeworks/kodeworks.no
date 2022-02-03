@@ -1,16 +1,38 @@
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import api from '../../api';
+import darkMode from '../../utils/darkMode';
 
-import PersonTile from '../../components/PersonTile';
 import PeopleList from '../../components/PeopleList';
 
 import './home.css';
+import { Project } from '../../types';
 
-function Home() {
+interface Prop {
+  handleDarkMode(isDarkMode: boolean): any
+}
+
+function Home({ handleDarkMode } : Prop) {
+
+  const [highlightedProject, setHighlightedProject] = useState<Project>();
+
   const people = api.people.getPeople();
+
   const highlightedProjects = api.projects.getHighlightedProjects();
-  const highlightedProject = highlightedProjects[Math.ceil(Math.random() * highlightedProjects.length) - 1];
+
+  useEffect(() => {
+    const project = highlightedProjects[Math.ceil(Math.random() * highlightedProjects.length) - 1];
+    setHighlightedProject(project);
+  }, []);
+
+  useEffect(() => {
+    handleDarkMode(false);
+  }, []);
+
+  document.addEventListener('scroll', function() {
+    darkMode('projects', handleDarkMode);
+  });
 
   return (
     <>
@@ -57,18 +79,18 @@ function Home() {
 
       <article id="projects">
         <img
-          src={highlightedProject.image}
-          alt={highlightedProject.name}
+          src={highlightedProject && highlightedProject.image}
+          alt={highlightedProject && highlightedProject.name}
           width="400"
           height="400"
         />
 
         <div>
-          <h2>{highlightedProject.name}</h2>
+          <h2>{highlightedProject && highlightedProject.name}</h2>
           <p>
-            {highlightedProject.description}
+            {highlightedProject && highlightedProject.description}
           </p>
-          <Link to={`/input/${highlightedProject.name.toLowerCase()}`} className="btn btn-light">Les mer om prosjektet</Link>
+          <Link to={`/input/${highlightedProject && highlightedProject.name.toLowerCase()}`} className="btn btn-light">Les mer om prosjektet</Link>
         </div>
       </article>
 

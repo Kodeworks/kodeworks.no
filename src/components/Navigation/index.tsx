@@ -21,25 +21,25 @@ function Navigation({ isOpened, toggleNavigationOpened }: Prop) {
           <h4><Link to="/">KodeWorks</Link></h4>
           <ul>
             <li>
-              <Link to="/people">Menneskene</Link>
+              <Link to="/people">Our People</Link>
             </li>
             <li>
-              <Link to="/projects">Prosjekter</Link>
+              <Link to="/projects">Projects</Link>
             </li>
             <li>
-              <Link to="/jobs">Jobb</Link>
+              <Link to="/jobs">Join Us</Link>
             </li>
             <li>
-              <Link to="/staffmanual">Personalhåndboken</Link>
+              <Link to="/staffmanual">Staff Manual</Link>
             </li>
           </ul>
         </nav>
 
         <footer id="menu-footer">
-          <h4>Kontakt oss</h4>
+          <h4>Get in Touch</h4>
           <p>
             post@kodeworks.no<br />
-            +47 466 93 738
+            +47 416 70 269‬
           </p>
 
           <h5>Oslo</h5>
