@@ -1,10 +1,21 @@
+import { useEffect } from 'react';
+
 import ProjectTile from '../../components/ProjectTile';
 
 import api from '../../api';
+import darkMode from '../../utils/darkMode';
 
 import './projects.css';
 
-function Projects() {
+interface Prop {
+  handleDarkMode(isDarkMode: boolean): any
+}
+
+function Projects({ handleDarkMode }: Prop) {
+  useEffect(() => {
+    handleDarkMode(true);
+  }, []);
+
   return (
     <div id="page-projects" className="theme-dark">
       <header>

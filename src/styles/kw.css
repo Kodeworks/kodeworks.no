@@ -88,6 +88,10 @@ h4 {
   z-index: 1000;
 }
 
+#menu-button.dark-mode {
+  color: var(--color-green);
+}
+
 .theme-dark #menu-button {
   color: #fff;
 }
