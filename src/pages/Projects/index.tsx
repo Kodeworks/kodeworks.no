@@ -3,7 +3,6 @@ import { useEffect } from 'react';
 import ProjectTile from '../../components/ProjectTile';
 
 import api from '../../api';
-import darkMode from '../../utils/darkMode';
 
 import './projects.css';
 
@@ -21,7 +20,7 @@ function Projects({ handleDarkMode }: Prop) {
       <header>
         <h1>Prosjektene</h1>
 
-      <p>[SIMEN, WE NEED TEXT HERE] - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sit amet dapibus nisl, eu molestie odio. Cras egestas lorem sed mauris dapibus viverra. Praesent quis iaculis augue, sit amet porta lacus..</p>
+        <p>Since 2008, we have through our value oriented approach completed great projects with clients of varying size, and across a wide spectrum of domains. Read more about the types of solutions we have developed for our client here.</p>
       </header>
 
       { api.projects.getProjects().map((project) => <ProjectTile key={ project.name } project={ project }/>)}

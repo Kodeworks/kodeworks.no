@@ -12,27 +12,26 @@ import People from './pages/People';
 import Projects from './pages/Projects';
 import StaffManual from './pages/StaffManual';
 
-import Equinor from './pages/input/Equinor';
-import Inatur from './pages/input/Inatur';
-import Statkraft from './pages/input/Statkraft';
-import Flir from './pages/input/Flir';
-import Vaskehjelp from './pages/input/Vaskehjelp';
-import Sunlitsea from './pages/input/Sunlitsea';
-import Lilbit from './pages/input/Lilbit';
-import Skandiaenergi from './pages/input/Skandiaenergi';
-import Kongsberg from './pages/input/Kongsberg';
 import Akerbp from './pages/input/Akerbp';
-import Gintel from './pages/input/Gintel';
-import Bnentreprenor from './pages/input/Bnentreprenor';
-import Politiet from './pages/input/Politiet';
 import Avinor from './pages/input/Avinor';
+import Bnentreprenor from './pages/input/Bnentreprenor';
+import Equinor from './pages/input/Equinor';
+import Flir from './pages/input/Flir';
+import Gintel from './pages/input/Gintel';
+import Inatur from './pages/input/Inatur';
 import KLP from './pages/input/KLP';
+import Kongsberg from './pages/input/Kongsberg';
+import Lilbit from './pages/input/Lilbit';
+import Politiet from './pages/input/Politiet';
+import Skandiaenergi from './pages/input/Skandiaenergi';
+import Statkraft from './pages/input/Statkraft';
+import Sunlitsea from './pages/input/Sunlitsea';
 import Thales from './pages/input/Thales';
+import Vaskehjelp from './pages/input/Vaskehjelp';
 
 import xmarkIcon from './assets/icons/xmark.svg';
 
 import './styles/kw.css';
-
 
 function App() {
   const [isNavigationOpen, setIsNavigationOpen] = useState(false)
@@ -60,7 +59,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home handleDarkMode={handleDarkMode} />} />
           <Route path="staffmanual" element={<StaffManual />} />
-          <Route path="people" element={<People />} />
+          <Route path="people" element={<People handleDarkMode={handleDarkMode} />} />
           <Route path="projects" element={<Projects handleDarkMode={handleDarkMode} />} />
           <Route path="input/*" element={<InputRoutes />} />
         </Routes>
