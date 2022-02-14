@@ -30,9 +30,10 @@
 }
 
 #about > div {
+  box-sizing: border-box;
   margin: 120px auto 120px auto;
   max-width: 1280px;
-  padding: 60px 0 60px var(--gutter-size);
+  padding: 60px var(--gutter-size) 60px var(--gutter-size);
 }
 
 #about img {

@@ -1,8 +1,18 @@
+import { useEffect } from 'react';
+
 import PeopleList from '../../components/PeopleList';
 
 import './people.css';
 
-function People() {
+interface Prop {
+  handleDarkMode(isDarkMode: boolean): any
+}
+
+function People({ handleDarkMode }: Prop) {
+  useEffect(() => {
+    handleDarkMode(false);
+  }, []);
+
   return (
     <div id="container">
       <div>

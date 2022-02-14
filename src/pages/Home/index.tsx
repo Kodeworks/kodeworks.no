@@ -14,11 +14,9 @@ interface Prop {
 }
 
 function Home({ handleDarkMode } : Prop) {
-
   const [highlightedProject, setHighlightedProject] = useState<Project>();
 
   const people = api.people.getPeople();
-
   const highlightedProjects = api.projects.getHighlightedProjects();
 
   useEffect(() => {
@@ -30,9 +28,17 @@ function Home({ handleDarkMode } : Prop) {
     handleDarkMode(false);
   }, []);
 
-  document.addEventListener('scroll', function() {
-    darkMode('projects', handleDarkMode);
-  });
+  useEffect(() => {
+    function darkModeListener() {
+      darkMode('projects', handleDarkMode);
+    }
+
+    document.addEventListener('scroll', darkModeListener);
+
+    return function cleanupListener() {
+      document.removeEventListener('scroll', darkModeListener);
+    }
+  }, [handleDarkMode]);
 
   return (
     <>
@@ -42,12 +48,9 @@ function Home({ handleDarkMode } : Prop) {
 
       <article id="about">
         <div>
-          <h2>Hvem?</h2>
+          <h2>Who?</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-            malesuada risus et eros tempus placerat. In nec leo rutrum,
-            consectetur dolor ut, dapibus est. Nunc at auctor lorem.
-            Suspendisse potenti.
+            We are a pack of technologists that believe in creating value through openness, expertise and dedication. We commit ourselves to delivering good solutions and value in collaboration with our client. Meanwhile, we strive each day to create an invigorating and giving workplace.
           </p>
         </div>
 
