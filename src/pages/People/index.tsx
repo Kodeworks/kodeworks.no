@@ -14,7 +14,7 @@ function People({ handleDarkMode }: Prop) {
   }, []);
 
   return (
-    <div id="container">
+    <div id="page-people">
       <div>
         <h1>People</h1>
         <PeopleList />

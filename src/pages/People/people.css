@@ -1,0 +1,4 @@
+#page-people > div {
+  padding-left: var(--gutter-size);
+  padding-right: var(--gutter-size);
+}
