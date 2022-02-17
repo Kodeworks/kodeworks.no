@@ -1,8 +1,37 @@
 /* Håndbok
    -----------------------------------------------------------------------------*/
-.handbook-container {
-  /* margin: 120px auto 120px auto; */
-  /* max-width: 1280px; */
+.handbok-column-2 h1 {
+  font-size: 64px;
+}
+
+.handbok-column-2 h2 {
+  font-size: 38px;
+  line-height: 48px;;
+  margin-top: 20px;
+}
+
+.handbok-column-2 h3 {
+  font-size: 26px;
+  line-height: 36px;
+  margin-top: 20px;
+}
+
+.handbok-column-2 h4 {
+  font-size: 22px;
+}
+
+.handbok-column-2 ul,
+.handbok-column-2 ol {
+  margin-bottom: 15px;
+  margin-left: 25px;
+}
+
+.handbok-column-2 ul {
+  list-style: disc;
+}
+
+.handbok-column-2 ol {
+  list-style: digit;
 }
 
 .handbok {
