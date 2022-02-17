@@ -1,4 +1,14 @@
-function Inatur() {
+import { useEffect } from 'react';
+
+interface Prop {
+  handleDarkMode(isDarkMode: boolean): any
+}
+
+function Inatur({ handleDarkMode }: Prop) {
+  useEffect(() => {
+    handleDarkMode(true);
+  }, []);
+
   return (
     <div id="page-project">
       <header>

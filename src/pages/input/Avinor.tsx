@@ -1,4 +1,14 @@
-function Equinor() {
+import { useEffect } from 'react';
+
+interface Prop {
+  handleDarkMode(isDarkMode: boolean): any
+}
+
+function Equinor({ handleDarkMode }: Prop) {
+  useEffect(() => {
+    handleDarkMode(true);
+  }, []);
+
   return (
     <div id="page-project">
       <header>

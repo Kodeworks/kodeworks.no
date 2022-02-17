@@ -1,8 +1,18 @@
-function Vaskehjelp() {
+import { useEffect } from 'react';
+
+interface Prop {
+  handleDarkMode(isDarkMode: boolean): any
+}
+
+function Equinor({ handleDarkMode }: Prop) {
+  useEffect(() => {
+    handleDarkMode(true);
+  }, []);
+
   return (
     <div id="page-project">
       <header>
-        <h1>Vaskehjelp</h1>
+        <h1>Equinor</h1>
         <ul>
           <li>Java, Spring, JavaScript, ReactJS</li>
         </ul>
@@ -10,7 +20,7 @@ function Vaskehjelp() {
       </header>
 
       <article>
-        <img src="/assets/projects/project1.jpg" width="1200" height="1200" alt="" />
+        <img src="assets/projects/project1.jpg" width="1200" height="1200" alt="" />
         <section className="project-description-input">
           <p>Vestibulum suscipit libero non justo interdum bibendum. Integer elit dui, aliquet eget lectus nec, imperdiet lacinia massa. Morbi varius tellus sapien, sit amet elementum erat pulvinar lacinia.</p>
           <p>Maecenas consequat dictum nibh, ac ultrices ipsum facilisis sed. Maecenas pretium turpis tortor, eu blandit sapien egestas quis. Ut vitae nibh ultrices, ornare tellus eu, tincidunt turpis. Nullam sed commodo lectus. In tristique, mi ut iaculis malesuada, augue mi iaculis ex, sed fermentum risus neque a quam.</p>
@@ -34,4 +44,4 @@ function Vaskehjelp() {
   )
 }
 
-export default Vaskehjelp
+export default Equinor

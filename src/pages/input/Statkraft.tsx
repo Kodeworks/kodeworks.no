@@ -1,8 +1,18 @@
-function Statkraft() {
+import { useEffect } from 'react';
+
+interface Prop {
+  handleDarkMode(isDarkMode: boolean): any
+}
+
+function Equinor({ handleDarkMode }: Prop) {
+  useEffect(() => {
+    handleDarkMode(true);
+  }, []);
+
   return (
     <div id="page-project">
       <header>
-        <h1>Statkraft</h1>
+        <h1>Equinor</h1>
         <ul>
           <li>Java, Spring, JavaScript, ReactJS</li>
         </ul>
@@ -34,4 +44,4 @@ function Statkraft() {
   )
 }
 
-export default Statkraft
+export default Equinor

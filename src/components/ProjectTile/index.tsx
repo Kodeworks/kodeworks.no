@@ -11,7 +11,7 @@ function ProjectTile({ project }: Prop) {
     <article>
       <img src={ project.image } width="1200" height="1200" alt="" />
       <div className="project-ingress">
-        <h3>{ project.name }</h3>
+      <h3><a href={`/input/${project.name}`} className="project-link">{ project.name }</a></h3>
         <p>{ project.description }</p>
       </div>
     </article>

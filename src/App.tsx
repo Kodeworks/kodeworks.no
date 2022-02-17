@@ -47,6 +47,29 @@ function App() {
     }
   }
 
+function InputRoutes() {
+  return (
+    <Routes>
+      <Route path="inatur" element={<Inatur handleDarkMode={handleDarkMode}  />} />
+      <Route path="equinor" element={<Equinor handleDarkMode={handleDarkMode}  />} />
+      <Route path="sunlitsea" element={<Sunlitsea handleDarkMode={handleDarkMode}  />} />
+      <Route path="kongsberg" element={<Kongsberg handleDarkMode={handleDarkMode}  />} />
+      <Route path="flir" element={<Flir handleDarkMode={handleDarkMode}  />} />
+      <Route path="lilbit" element={<Lilbit handleDarkMode={handleDarkMode}  />} />
+      <Route path="thales" element={<Thales handleDarkMode={handleDarkMode}  />} />
+      <Route path="vaskehjelp" element={<Vaskehjelp handleDarkMode={handleDarkMode}  />} />
+      <Route path="skandiaenergi" element={<Skandiaenergi handleDarkMode={handleDarkMode}  />} />
+      <Route path="statkraft" element={<Statkraft handleDarkMode={handleDarkMode}  />} />
+      <Route path="klp" element={<KLP handleDarkMode={handleDarkMode}  />} />
+      <Route path="bnentreprenor" element={<Bnentreprenor handleDarkMode={handleDarkMode}  />} />
+      <Route path="avinor" element={<Avinor handleDarkMode={handleDarkMode}  />} />
+      <Route path="politiet" element={<Politiet handleDarkMode={handleDarkMode}  />} />
+      <Route path="akerbp" element={<Akerbp handleDarkMode={handleDarkMode}  />} />
+      <Route path="gintel" element={<Gintel handleDarkMode={handleDarkMode}  />} />
+    </Routes>
+  );
+}
+
   return (
     <div className="App">
       <Router>
@@ -70,27 +93,6 @@ function App() {
   );
 }
 
-function InputRoutes() {
-  return (
-    <Routes>
-      <Route path="inatur" element={<Inatur />} />
-      <Route path="equinor" element={<Equinor />} />
-      <Route path="sunlitsea" element={<Sunlitsea />} />
-      <Route path="kongsberg" element={<Kongsberg />} />
-      <Route path="flir" element={<Flir />} />
-      <Route path="lilbit" element={<Lilbit />} />
-      <Route path="thales" element={<Thales />} />
-      <Route path="vaskehjelp" element={<Vaskehjelp />} />
-      <Route path="skandiaenergi" element={<Skandiaenergi />} />
-      <Route path="statkraft" element={<Statkraft />} />
-      <Route path="klp" element={<KLP />} />
-      <Route path="bnentreprenor" element={<Bnentreprenor />} />
-      <Route path="avinor" element={<Avinor />} />
-      <Route path="politiet" element={<Politiet />} />
-      <Route path="akerbp" element={<Akerbp />} />
-      <Route path="gintel" element={<Gintel />} />
-    </Routes>
-  );
-}
+
 
 export default App;

@@ -8,3 +8,15 @@
 .project-ingress p {
   width: 60%;
 }
+
+.project-link {
+  color: #fff;
+  border-bottom: 4px solid var(--color-green);
+  text-decoration: none;
+}
+
+.project-link:hover {
+  color: #fff;
+  border: none;
+  text-decoration: none;
+}
