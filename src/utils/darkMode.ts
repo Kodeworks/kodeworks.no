@@ -1,11 +1,41 @@
-export default function darkMode(id: string, handleDarkMode: any) {
-  const element = document.getElementById(id);
-  const elementTop = element ? element.offsetTop : 0;
-  const elementBottom = element ? elementTop + element.offsetHeight : 0;
+export default function darkMode(handleDarkMode: any, ids: Array<string>) {
+  let offsets: { top: number, bottom: number }[] = [];
 
-  if (window.pageYOffset + 40 > elementTop && window.pageYOffset + 40 < elementBottom) {
-    handleDarkMode(true);
-  } else {
-    handleDarkMode(false);
+  for (let id of ids) {
+    let element = document.getElementById(id);
+
+    if (element == null) {
+      element = document.querySelector(id);
+    }
+
+    const elementTop = element ? element.offsetTop : 0;
+    const elementBottom = element ? elementTop + element.offsetHeight : 0;
+
+    offsets.push({ top: elementTop, bottom: elementBottom });
   }
+
+  let isHit = false;
+
+  for (let offset of offsets) {
+    if (window.pageYOffset + 40 > offset.top && window.pageYOffset + 40 < offset.bottom) {
+      isHit = true;
+    }
+  }
+
+  handleDarkMode(isHit);
+
+
+  // if (window.pageYOffset + 40 > elementTop && window.pageYOffset + 40 < elementBottom) {
+  //     handleDarkMode(true);
+  //   } else {
+  //     handleDarkMode(false);
+  //   }
+
+  // let element = document.getElementById(id);
+
+  // if (element == null) {
+  //   element = document.querySelector('#about img');
+  // }
+
+
 }
