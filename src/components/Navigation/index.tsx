@@ -27,9 +27,6 @@ function Navigation({ isOpened, toggleNavigationOpened }: Prop) {
               <Link to="/projects">Projects</Link>
             </li>
             <li>
-              <Link to="/jobs">Join Us</Link>
-            </li>
-            <li>
               <Link to="/staffmanual">Staff Manual</Link>
             </li>
           </ul>
