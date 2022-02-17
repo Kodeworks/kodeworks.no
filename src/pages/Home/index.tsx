@@ -1,19 +1,18 @@
 import { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
 
 import api from '../../api';
 import darkMode from '../../utils/darkMode';
+import { Project } from '../../types';
 
 import PeopleList from '../../components/PeopleList';
 
 import './home.css';
-import { Project } from '../../types';
 
 interface Prop {
   handleDarkMode(isDarkMode: boolean): any
 }
 
-function Home({ handleDarkMode } : Prop) {
+function Home({ handleDarkMode }: Prop) {
   const [highlightedProject, setHighlightedProject] = useState<Project>();
 
   const people = api.people.getPeople();
@@ -66,7 +65,7 @@ function Home({ handleDarkMode } : Prop) {
               Today Kodeworks consists of {people.length} accomplished developers, who endeavor to develop solutions realizing our clients vision.
             </p>
             <p>
-              <Link to="people">See all of them</Link>{" "}
+              <a href="people">See all of them</a>{" "}
               <img
                 src="../assets/icons/chevron-right.svg"
                 alt=""
@@ -76,7 +75,7 @@ function Home({ handleDarkMode } : Prop) {
             </p>
           </header>
 
-          <PeopleList />
+          <PeopleList people={api.people.getHighligtedPeople().slice(0, 6)} />
         </div>
       </article>
 
@@ -93,18 +92,18 @@ function Home({ handleDarkMode } : Prop) {
           <p>
             {highlightedProject && highlightedProject.description}
           </p>
-          <Link to={`/input/${highlightedProject && highlightedProject.name.toLowerCase()}`} className="btn btn-light">Les mer om prosjektet</Link>
+          <a href={`/input/${highlightedProject && highlightedProject.name.toLowerCase()}`} className="btn btn-light">Les mer om prosjektet</a>
         </div>
       </article>
 
       <article id="work">
         <div>
-          <h2>We want to get to know you!</h2>
+          <h2>We want to get to get to know you!</h2>
           <p>
             Let's grab a cup of coffee, and feel free to have a look at our staff manual for a better grasp of what we offer.
           </p>
           <p>
-            <Link to="/staffmanual">Staff Manual</Link>
+            <a href="/staffmanual">Staff Manual</a>
           </p>
         </div>
       </article>

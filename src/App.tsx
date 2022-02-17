@@ -47,36 +47,36 @@ function App() {
     }
   }
 
-function InputRoutes() {
-  return (
-    <Routes>
-      <Route path="inatur" element={<Inatur handleDarkMode={handleDarkMode}  />} />
-      <Route path="equinor" element={<Equinor handleDarkMode={handleDarkMode}  />} />
-      <Route path="sunlitsea" element={<Sunlitsea handleDarkMode={handleDarkMode}  />} />
-      <Route path="kongsberg" element={<Kongsberg handleDarkMode={handleDarkMode}  />} />
-      <Route path="flir" element={<Flir handleDarkMode={handleDarkMode}  />} />
-      <Route path="lilbit" element={<Lilbit handleDarkMode={handleDarkMode}  />} />
-      <Route path="thales" element={<Thales handleDarkMode={handleDarkMode}  />} />
-      <Route path="vaskehjelp" element={<Vaskehjelp handleDarkMode={handleDarkMode}  />} />
-      <Route path="skandiaenergi" element={<Skandiaenergi handleDarkMode={handleDarkMode}  />} />
-      <Route path="statkraft" element={<Statkraft handleDarkMode={handleDarkMode}  />} />
-      <Route path="klp" element={<KLP handleDarkMode={handleDarkMode}  />} />
-      <Route path="bnentreprenor" element={<Bnentreprenor handleDarkMode={handleDarkMode}  />} />
-      <Route path="avinor" element={<Avinor handleDarkMode={handleDarkMode}  />} />
-      <Route path="politiet" element={<Politiet handleDarkMode={handleDarkMode}  />} />
-      <Route path="akerbp" element={<Akerbp handleDarkMode={handleDarkMode}  />} />
-      <Route path="gintel" element={<Gintel handleDarkMode={handleDarkMode}  />} />
-    </Routes>
-  );
-}
+  function InputRoutes() {
+    return (
+      <Routes>
+        <Route path="inatur" element={<Inatur handleDarkMode={handleDarkMode} />} />
+        <Route path="equinor" element={<Equinor handleDarkMode={handleDarkMode} />} />
+        <Route path="sunlitsea" element={<Sunlitsea handleDarkMode={handleDarkMode} />} />
+        <Route path="kongsberg" element={<Kongsberg handleDarkMode={handleDarkMode} />} />
+        <Route path="flir" element={<Flir handleDarkMode={handleDarkMode} />} />
+        <Route path="lilbit" element={<Lilbit handleDarkMode={handleDarkMode} />} />
+        <Route path="thales" element={<Thales handleDarkMode={handleDarkMode} />} />
+        <Route path="vaskehjelp" element={<Vaskehjelp handleDarkMode={handleDarkMode} />} />
+        <Route path="skandiaenergi" element={<Skandiaenergi handleDarkMode={handleDarkMode} />} />
+        <Route path="statkraft" element={<Statkraft handleDarkMode={handleDarkMode} />} />
+        <Route path="klp" element={<KLP handleDarkMode={handleDarkMode} />} />
+        <Route path="bnentreprenor" element={<Bnentreprenor handleDarkMode={handleDarkMode} />} />
+        <Route path="avinor" element={<Avinor handleDarkMode={handleDarkMode} />} />
+        <Route path="politiet" element={<Politiet handleDarkMode={handleDarkMode} />} />
+        <Route path="akerbp" element={<Akerbp handleDarkMode={handleDarkMode} />} />
+        <Route path="gintel" element={<Gintel handleDarkMode={handleDarkMode} />} />
+      </Routes>
+    );
+  }
 
   return (
     <div className="App">
       <Router>
-      <button onClick={handleMenuButtonClick} id="menu-button" className={darkMode ? 'dark-mode' : ''}>
-          { isNavigationOpen
+        <button onClick={handleMenuButtonClick} id="menu-button" className={darkMode ? 'dark-mode' : ''}>
+          {isNavigationOpen
             ? <img src={xmarkIcon} alt="Close button" />
-            :  'MENU' }
+            : 'MENU'}
         </button>
 
         <Routes>
@@ -87,12 +87,10 @@ function InputRoutes() {
           <Route path="input/*" element={<InputRoutes />} />
         </Routes>
 
-        <Navigation isOpened={isNavigationOpen} toggleNavigationOpened={handleMenuButtonClick}/>
+        <Navigation isOpened={isNavigationOpen} toggleNavigationOpened={handleMenuButtonClick} />
       </Router>
     </div>
   );
 }
-
-
 
 export default App;

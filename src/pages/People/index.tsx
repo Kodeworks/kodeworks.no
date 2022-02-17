@@ -1,5 +1,7 @@
 import { useEffect } from 'react';
 
+import api from '../../api';
+
 import PeopleList from '../../components/PeopleList';
 
 import './people.css';
@@ -13,12 +15,16 @@ function People({ handleDarkMode }: Prop) {
     handleDarkMode(false);
   }, []);
 
+  const people = api.people.getPeople();
+
   return (
     <div id="page-people">
       <div>
         <h1>People</h1>
-        <p>Today Kodeworks consists of 27 accomplished developers, who endeavor to develop solutions realizing our clients vision.</p>
-        <PeopleList />
+
+        <p>Today Kodeworks consists of {people.length} accomplished developers, who endeavor to develop solutions realizing our clients vision.</p>
+
+        <PeopleList people={people} />
       </div>
     </div>
   )

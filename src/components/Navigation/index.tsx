@@ -1,7 +1,3 @@
-import {
-  Link
-} from 'react-router-dom';
-
 import './navigation.css';
 
 interface Prop {
@@ -18,16 +14,16 @@ function Navigation({ isOpened, toggleNavigationOpened }: Prop) {
       </div>
       <div id="menu-main">
         <nav onClick={toggleNavigationOpened}>
-          <h4><Link to="/">KodeWorks</Link></h4>
+          <h4><a href="/">KodeWorks</a></h4>
           <ul>
             <li>
-              <Link to="/people">Our People</Link>
+              <a href="/people">Our People</a>
             </li>
             <li>
-              <Link to="/projects">Projects</Link>
+              <a href="/projects">Projects</a>
             </li>
             <li>
-              <Link to="/staffmanual">Staff Manual</Link>
+              <a href="/staffmanual">Staff Manual</a>
             </li>
           </ul>
         </nav>
