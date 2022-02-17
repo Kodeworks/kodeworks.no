@@ -130,3 +130,14 @@
   font-size: 14px;
   line-height: 1.1;
 }
+
+
+@media (max-width: 500px) {
+  #menu-content {
+    display: none;
+  }
+
+  #menu.opened #menu-main {
+    width: 100%;
+  }
+}
