@@ -1,16 +1,23 @@
 /* Håndbok
    -----------------------------------------------------------------------------*/
+.handbook-container {
+  /* margin: 120px auto 120px auto; */
+  /* max-width: 1280px; */
+}
+
 .handbok {
   padding-top: 20px;
   padding-bottom: 60px;
 }
 
 .handbok-container {
-  padding-top: 30px;
   box-sizing: border-box;
   display: flex;
-  margin-left: -40px;
-  margin-right: -40px;
+  margin: 120px auto 120px auto;
+  max-width: 1280px;
+  padding-left: var(--gutter-size);
+  padding-right: var(--gutter-size);
+  padding-top: 30px;
   width: 100%;
 }
 

@@ -2,34 +2,33 @@ import './staffmanual.css';
 
 function StaffManual() {
   return (
-    <div id="container">
       <div className="handbok-container">
 
         <div className="handbok-column-1">
           <div className="handbok-sidebar">
             <nav className="handbok-sidebar-local-nav">
               <ul className="handbok-menu">
-                <li><strong>Håndboka</strong></li>
-                <li><a href="#handbok-arbeidstid">Arbeidstid</a></li>
-                <li><a href="#handbok-arbeidststed">Arbeidssted</a></li>
-                <li><a href="#handbok-betingelser">Betingelser</a></li>
-                <li><a href="#handbok-timeforing">Timeføring</a></li>
-                <li><a href="#handbok-medeier">Medeier</a></li>
-                <li><a href="#handbok-other">Alt annet + kontoret</a></li>
-                <li><a href="#handbok-militaer">Militærtjeneste</a></li>
-                <li><a href="#handbok-kommunikasjon">Slack og epost</a></li>
-              </ul>
-            </nav>
-
-            <nav className="handbok-sidebar-more">
-              <ul>
-                <li><a href="/handbok/ansettelse.html">&rarr; Ansettelse</a></li>
+                <li><strong>Staff Manual</strong></li>
+                <li><a href="#handbok-arbeidstid">Working Hours</a></li>
+                <li><a href="#handbok-arbeidststed">Workplace</a></li>
+                <li><a href="#handbok-betingelser">Conditions</a></li>
+                <li><a href="#handbok-timeforing">Timekeeping</a></li>
+                <li><a href="#handbok-medeier">Co-Owner</a></li>
+                <li><a href="#handbok-other">Everything Else + The Office</a></li>
+                <li><a href="#handbok-militaer">Military Service</a></li>
+                <li><a href="#handbok-kommunikasjon">Slack and Email</a></li>
+                <li><a href="#handbok-employment">Employment</a></li>
+                <li><a href="#handbok-process-and-onboarding">Process and Onboarding</a></li>
+                <li><a href="#handbok-probation">Probation</a></li>
+                <li><a href="#handbok-job-types">Job Types</a></li>
+                <li><a href="#handbok-resignation">Resignation</a></li>
               </ul>
             </nav>
           </div>
         </div>
 
         <div className="handbok-column-2">
+          <h1>Staff Manual</h1>
           <section className="handbok">
             <header className="customer-header">
               <p>This document serves as a staff handbook for Kodeworks employees. We aim to describe how we do things and how we think. In this document you will find information about working hours, holiday pay, salary, benefits and much more. This is a document we want all employees to contribute to, and have ownership of.</p>
@@ -37,7 +36,7 @@ function StaffManual() {
           </section>
 
           <section className="handbok" id="handbok-arbeidstid">
-            <h2>Working Time</h2>
+            <h2>Working Hours</h2>
 
             <p>Contractual working hours are 8 hours per day, with a 30-minute lunch break. In Kodeworks, we operate with a core time in the period 9-15, with the opportunity and room to be able to be flexible during working hours. In a company where competence is our main product, we know that working closely with our colleagues will give the best results. We also know that everyday life can offer other things that mean that at times you need to adapt your working hours outside the core hours.</p>
 
@@ -202,12 +201,12 @@ function StaffManual() {
           </section>
 
 
-          <section>
-            <h2>Appointment</h2>
+          <section id="handbok-employment">
+            <h2>Employment</h2>
             <p>An employment is an important investment for Kodeworks. The employees are not only employees who will contribute to a good working environment, but are also the actual product Kodeworks delivers. There is therefore a great focus on hiring skilled employees who seek and master challenges. The employees represent Kodeworks.</p>
           </section>
 
-          <section>
+          <section id="handbok-process-and-onboarding">
             <h2>Process and Onboarding</h2>
             <p>At Kodeworks, we want you as a new employee to feel that the process from the time you contact us until the contract is signed and the employment relationship has started is a good experience.</p>
 
@@ -252,12 +251,12 @@ function StaffManual() {
             </ul>
           </section>
 
-          <section>
+          <section id="handbok-probation">
             <h2>Probation</h2>
             <p>New full-time employees have a probationary period of six months from the date of accession. The probationary period is reciprocal and shall entail the possibility for both the employer and the employee to terminate the employment relationship if it turns out that the circumstances were not as intended. During the probationary period, one month\'s notice period applies. The probationary period can be extended if the employee has been absent during the probationary period, this includes holidays. The probationary period can be shortened by further agreement between the employer and the employee.</p>
           </section>
 
-          <section>
+          <section id="handbok-job-types">
             <h2>Job types</h2>
             <p>Kodeworks operates with different job types.</p>
 
@@ -290,7 +289,7 @@ function StaffManual() {
             <p>Approximately 10% of the total number of hours in Kodeworks will go to staff-related work within administration, management, follow-up of employees and sales. The staff\'s task is to ensure that the machinery runs properly; that there is a steady influx of professionally interesting assignments, that the employees are well, that the customers are satisfied with Kodeworks, that the company\'s finances are going as they should, that the company reaches its measurement parameters, and more.</p>
           </section>
 
-          <section>
+          <section id="handbok-resignation">
             <h2>Resignation</h2>
 
             <p>Termination must be in writing. The notice period is mutual for employees and employers with a duration of three months. It runs from the first day of the month after the termination took place unless otherwise agreed.</p>
@@ -299,7 +298,7 @@ function StaffManual() {
           </section>
         </div>
       </div>
-    </div>
+
   );
 }
 
