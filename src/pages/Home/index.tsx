@@ -50,7 +50,7 @@ function Home({ handleDarkMode } : Prop) {
         <div>
           <h2>Who?</h2>
           <p>
-            We are a pack of technologists that believe in creating value through openness, expertise and dedication. We commit ourselves to delivering good solutions and value in collaboration with our client. Meanwhile, we strive each day to create an invigorating and giving workplace.
+            We are a pack of technologists who believe in creating value through receptiveness, expertise and dedication. We commit ourselves to delivering good solutions and value in collaboration with our clients, and strive each day to create an invigorating and giving workplace.
           </p>
         </div>
 
@@ -60,13 +60,12 @@ function Home({ handleDarkMode } : Prop) {
       <article id="people">
         <div>
           <header className="people-header">
-            <h2>Møt Menneskene</h2>
+            <h2>Our Developers</h2>
             <p>
-              I Kodeworks har vi {people.length} teknologer som brenner for faget. Her er
-              et lite tilfeldig utvalg av dem.
+              Today Kodeworks consists of {people.length} accomplished developers, who endeavor to develop solutions realizing our clients vision.
             </p>
             <p>
-              <Link to="people">Se alle menneskene</Link>{" "}
+              <Link to="people">See all of them</Link>{" "}
               <img
                 src="../assets/icons/chevron-right.svg"
                 alt=""
@@ -99,14 +98,12 @@ function Home({ handleDarkMode } : Prop) {
 
       <article id="work">
         <div>
-          <h2>Vil du jobbe med oss?</h2>
+          <h2>We want to get to know you!</h2>
           <p>
-            Vi vil bli bedre kjent med deg! Ta gjerne kontakt for en uformell
-            prat over en kaffe, og titt innom håndboka vår og se hva vi kan
-            tilby.
+            Let's grab a cup of coffee, and feel free to have a look at our staff manual for a better grasp of what we offer.
           </p>
           <p>
-            <Link to="/staffmanual">Personalhåndboken</Link>
+            <Link to="/staffmanual">Staff Manual</Link>
           </p>
         </div>
       </article>
