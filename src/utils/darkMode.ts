@@ -2,12 +2,7 @@ export default function darkMode(handleDarkMode: any, ids: Array<string>) {
   let offsets: { top: number, bottom: number }[] = [];
 
   for (let id of ids) {
-    let element = document.getElementById(id);
-
-    if (element == null) {
-      element = document.querySelector(id);
-    }
-
+    const element = getElement(id);
     const elementTop = element ? element.offsetTop : 0;
     const elementBottom = element ? elementTop + element.offsetHeight : 0;
 
@@ -23,19 +18,14 @@ export default function darkMode(handleDarkMode: any, ids: Array<string>) {
   }
 
   handleDarkMode(isHit);
+}
 
+function getElement(id: string) {
+  let element = document.getElementById(id);
 
-  // if (window.pageYOffset + 40 > elementTop && window.pageYOffset + 40 < elementBottom) {
-  //     handleDarkMode(true);
-  //   } else {
-  //     handleDarkMode(false);
-  //   }
+  if (element == null) {
+    element = document.querySelector(id);
+  }
 
-  // let element = document.getElementById(id);
-
-  // if (element == null) {
-  //   element = document.querySelector('#about img');
-  // }
-
-
+  return element;
 }
