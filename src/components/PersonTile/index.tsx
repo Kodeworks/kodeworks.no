@@ -30,7 +30,8 @@ function PersonTile({ person }: Prop) {
       <ul className="person-projects">
         {person.projects.map((project) => (
           <li key={project.name}>
-            <a href={`/input/${project.name.toLowerCase().replace(/ /g, '-')}`} className="btn btn-dark">{project.name}</a>
+            <a href={`/input/${project.name.toLowerCase().replace(/ /g, '-')}`} className="btn btn-dark">
+            <span>{project.name}</span></a>
           </li>
         ))}
       </ul>
