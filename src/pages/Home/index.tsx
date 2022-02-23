@@ -6,6 +6,8 @@ import { Project } from '../../types';
 
 import PeopleList from '../../components/PeopleList';
 
+import ImageAbout from '../../assets/images/EOSR7695.jpg';
+
 import './home.css';
 
 interface Prop {
@@ -53,7 +55,7 @@ function Home({ handleDarkMode }: Prop) {
           </p>
         </div>
         <span id="about-image">
-          <img src="../assets/office.jpg" alt="" />
+        <img src={ImageAbout} alt="" />
         </span>
       </article>
 
