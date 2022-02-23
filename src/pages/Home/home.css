@@ -38,15 +38,42 @@
 
 #about > div {
   box-sizing: border-box;
-  margin: 120px auto 120px auto;
+  margin: 80px auto 80px auto;
   max-width: 1280px;
+  max-height: 40%;
   padding: 60px var(--gutter-size) 60px var(--gutter-size);
 }
 
 #about img {
+
   object-fit: cover;
-  height: 100vh;
   width: 100%;
+  height: 100vh;
+}
+
+@media (max-height: 950px) and (min-width: 700px) {
+  #about img {
+    object-position: center -150px;
+  }
+}
+
+@media (max-height: 950px) and (min-width: 900px) {
+  #about img {
+    object-position: center -180px;
+  }
+}
+
+@media (max-height: 1200px) and (min-width: 1200px) {
+  #about img {
+    object-position: center -180px;
+  }
+}
+
+
+@media (max-height: 700px) {
+  #about img {
+    object-position: center -100px;
+  }
 }
 
 
@@ -128,6 +155,7 @@
   }
 
   #about img {
+    object-position: unset;
     margin-left: 0;
     height: 100%;
     width: 100%;
