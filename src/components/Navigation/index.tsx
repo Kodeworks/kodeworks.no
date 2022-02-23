@@ -1,3 +1,5 @@
+import { useEffect } from 'react';
+
 import './navigation.css';
 
 interface Prop {
@@ -6,6 +8,20 @@ interface Prop {
 }
 
 function Navigation({ isOpened, toggleNavigationOpened }: Prop) {
+  useEffect(() => {
+    function escKeyListener(event: KeyboardEvent) {
+      if (isOpened && event.key === 'Escape') {
+        toggleNavigationOpened();
+      }
+    }
+
+    document.addEventListener('keydown', escKeyListener);
+
+    return function cleanupListener() {
+      document.removeEventListener('keydown', escKeyListener);
+    }
+  }, [isOpened, toggleNavigationOpened]);
+
   return (
     <menu id="menu" className={isOpened ? 'opened' : ''}>
       <div id="menu-content">
