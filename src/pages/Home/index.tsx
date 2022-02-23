@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 
 import api from '../../api';
 import darkMode from '../../utils/darkMode';
-import { Project } from '../../types';
+import { Person, Project } from '../../types';
 
 import PeopleList from '../../components/PeopleList';
 
@@ -16,13 +16,17 @@ interface Prop {
 
 function Home({ handleDarkMode }: Prop) {
   const [highlightedProject, setHighlightedProject] = useState<Project>();
+  const [highlightedPeople, setHighlightedPeople] = useState<Array<Person>>([]);
 
   const people = api.people.getPeople();
   const highlightedProjects = api.projects.getHighlightedProjects();
 
   useEffect(() => {
     const project = highlightedProjects[Math.ceil(Math.random() * highlightedProjects.length) - 1];
+    const people = api.people.getHighligtedPeople().slice(0, 6);
+
     setHighlightedProject(project);
+    setHighlightedPeople(people);
   }, []);
 
   useEffect(() => {
@@ -77,7 +81,7 @@ function Home({ handleDarkMode }: Prop) {
             </p>
           </header>
 
-          <PeopleList people={api.people.getHighligtedPeople().slice(0, 6)} />
+        <PeopleList people={highlightedPeople} />
         </div>
       </article>
 

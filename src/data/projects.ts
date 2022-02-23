@@ -97,6 +97,16 @@ export const projects: ProjectObjectType = {
     image: '/assets/projects/project2.jpg',
     description: 'As a worldwide energy service company, TechnipFMC has large customers in Norway. Sensors are used for real-time monitoring of flow through installations, and heavy mathematical data modeling to optimize operations. Kodeworks assists in increasing the scalability and performance of the application portfolio, as well as modernizing the deployment system in the cloud.'
   },
+  Dnb: {
+    name: 'DNB',
+    image: '/assets/projects/project2.jpg',
+    description: '',
+  },
+  Obos: {
+    name: 'Obos',
+    image: '/assets/projects/project2.jpg',
+    description: '',
+  },
 };
 
 
