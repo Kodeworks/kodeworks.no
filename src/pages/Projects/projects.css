@@ -22,7 +22,7 @@
 }
 
 #page-projects > article img {
-  height: 85vh;
+  height: 80vh;
   margin-bottom: 25px;
   object-fit: cover;
   width: 100%;
@@ -33,8 +33,26 @@
   #page-projects {
     padding: 0;
   }
+
+  #page-projects > article img {
+    height: 50vh;
+  }
+
   .project-ingress {
     display: block;
     text-align: left;
+  }
+
+  .project-ingress h3,
+  .project-ingress p {
+    text-align: center;
+  }
+
+  .project-ingress h3 {
+    margin-bottom: 15px;
+  }
+
+  .project-ingress p {
+    width: 100%;
   }
 }
