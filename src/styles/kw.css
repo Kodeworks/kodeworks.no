@@ -1,6 +1,5 @@
 @import url("_reset.css");
 @import url("_fonts.css");
-@import url("_button.css");
 
 :root {
   --gutter-size: 30px;

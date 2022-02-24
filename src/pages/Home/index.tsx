@@ -4,6 +4,7 @@ import api from '../../api';
 import darkMode from '../../utils/darkMode';
 import { Person, Project } from '../../types';
 
+import Button from '../../components/Button';
 import PeopleList from '../../components/PeopleList';
 
 import ImageAbout from '../../assets/images/EOSR7695.jpg';
@@ -98,7 +99,7 @@ function Home({ handleDarkMode }: Prop) {
           <p>
             {highlightedProject && highlightedProject.description}
           </p>
-          <a href={`/input/${highlightedProject && highlightedProject.name.toLowerCase()}`} className="btn btn-light">Les mer om prosjektet</a>
+      <Button appearance={Button.appearances.Light} text={'Go to project page'} href={`/input/${highlightedProject && highlightedProject.name.toLowerCase()}`} />
         </div>
       </article>
 
