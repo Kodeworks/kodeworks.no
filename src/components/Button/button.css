@@ -41,7 +41,7 @@
 }
 
 .btn:hover.btn-light {
-  border-style: dotted;
+  border-color: #fff;
 }
 
 .btn.btn-light span {
