@@ -1,3 +1,4 @@
+import Button from '../Button';
 import { Person } from '../../types';
 
 import './persontile.css';
@@ -30,8 +31,7 @@ function PersonTile({ person }: Prop) {
       <ul className="person-projects">
         {person.projects.map((project) => (
           <li key={project.name}>
-            <a href={`/input/${project.name.toLowerCase().replace(/ /g, '-')}`} className="btn btn-dark">
-            <span>{project.name}</span></a>
+            <Button text={project.name} href={`/input/${project.name.toLowerCase().replace(/ /i, '-')}`} />
           </li>
         ))}
       </ul>

@@ -160,7 +160,7 @@ const people: Array<Person> = [
 ];
 
 function getPeople(): Array<Person> {
-  return people;
+  return shuffleArray(people);
 }
 
 function getHighligtedPeople(): Array<Person> {
@@ -179,7 +179,7 @@ function getHighligtedPeople(): Array<Person> {
     return hasProject;
   })
 
-  return shuffleArray(filteredList);
+  return shuffleArray(filteredList.filter((person) => person.image));
 }
 
 function shuffleArray(array: Array<Person>): Array<Person> {
