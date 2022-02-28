@@ -49,7 +49,7 @@ function Home({ handleDarkMode }: Prop) {
   return (
     <>
       <header id="main-header">
-        <img className="logo" src="../assets/logo.svg" alt="Logo" width="280" height="59" />
+        <img className="logo" src="/assets/logo.svg" alt="Logo" width="280" height="59" />
       </header>
 
       <article id="about">
@@ -99,7 +99,7 @@ function Home({ handleDarkMode }: Prop) {
           <p>
             {highlightedProject && highlightedProject.description}
           </p>
-      <Button appearance={Button.appearances.Light} text={'Go to project page'} href={`/input/${highlightedProject && highlightedProject.name.toLowerCase()}`} />
+          <Button appearance={Button.appearances.Light} text={'Go to project page'} href={`/input/${highlightedProject && highlightedProject.name.toLowerCase()}`} disabled={!(highlightedProject && highlightedProject.enabled)} />
         </div>
       </article>
 

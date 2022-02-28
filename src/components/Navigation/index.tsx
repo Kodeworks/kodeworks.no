@@ -4,14 +4,14 @@ import './navigation.css';
 
 interface Prop {
   isOpened: boolean
-  toggleNavigationOpened: () => void
+  toggleNavigationOpened(event: any): void;
 }
 
 function Navigation({ isOpened, toggleNavigationOpened }: Prop) {
   useEffect(() => {
     function escKeyListener(event: KeyboardEvent) {
       if (isOpened && event.key === 'Escape') {
-        toggleNavigationOpened();
+        toggleNavigationOpened(event);
       }
     }
 

@@ -13,12 +13,14 @@ interface MainButtonProp {
   appearance?: Appearance;
   onClick?: () => void;
   href?: string;
+  disabled?: boolean;
 };
 
 interface ButtonProp {
   text: string;
   onClick?: () => void;
-  href?: string
+  href?: string;
+  disabled?: boolean;
 }
 
 function Button({ appearance, ...props }: MainButtonProp) {
@@ -32,10 +34,10 @@ function Button({ appearance, ...props }: MainButtonProp) {
   }
 }
 
-function DarkButton({ text, onClick, href }: ButtonProp) {
+function DarkButton({ text, onClick, href, disabled }: ButtonProp) {
   if (href != null) {
     return (
-      <a href={ href } className="btn btn-dark">
+      <a href={ href } className={`btn btn-dark ${disabled ? 'btn-disabled' : ''}`}>
         <span>{ text }</span>
       </a>
     );
@@ -46,10 +48,10 @@ function DarkButton({ text, onClick, href }: ButtonProp) {
   }
 }
 
-function LightButton({ text, onClick, href }: ButtonProp) {
+function LightButton({ text, onClick, href, disabled }: ButtonProp) {
   if (href != null) {
     return (
-      <a href={ href } className="btn btn-light">
+      <a href={ href } className={`btn btn-light ${disabled ? 'btn-disabled' : ''}`}>
         <span>{ text }</span>
       </a>
     );

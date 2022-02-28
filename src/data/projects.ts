@@ -30,17 +30,20 @@ export const projects: ProjectObjectType = {
     name: 'Vaskehjelp',
     image: '/assets/projects/project4.jpg',
     description: 'Vaskehjelp is a marketplace that connects a cleaner and customer, as well as taking care of payment and other paperwork. Kodeworks has assisted in the development of the iOS and Android application.',
+    enabled: true,
   },
   Sunlitsea: {
     name: 'Sunlit Sea',
     image: '/assets/projects/project4.jpg',
     description: 'Sunlit Sea develops technology for floating solar cell installations that opens up a completely new market for solar cells at sea. Kodeworks develops sensor solutions for solar cell installation, as well as monitoring and enrichment of data from the sensors to optimize production and maintenance.',
+    enabled: true,
   },
   Lilbit: {
     name: 'Lilbit',
     image: '/assets/projects/project5.jpg',
     description: 'Lilbit er et selskap som leverer en platform for GPS-sporing av kjæledyr. Deres visjon er å kunne gi eiere informasjon om dyrets tilstand gjennom dens oppførsel.',
     highlighted: true,
+    enabled: true,
   },
   Skandiaenergi: {
     name: 'Skandiaenergi',
@@ -104,6 +107,11 @@ export const projects: ProjectObjectType = {
   },
   Obos: {
     name: 'Obos',
+    image: '/assets/projects/project2.jpg',
+    description: '',
+  },
+  Remarkable: {
+    name: 'Remarkable',
     image: '/assets/projects/project2.jpg',
     description: '',
   },

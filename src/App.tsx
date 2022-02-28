@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { MouseEventHandler, useState } from 'react';
 
 import {
   BrowserRouter as Router,
@@ -37,7 +37,8 @@ function App() {
   const [isNavigationOpen, setIsNavigationOpen] = useState(false)
   const [darkMode, setDarkMode] = useState(false);
 
-  function handleMenuButtonClick() {
+  function handleMenuButtonClick(event: any) {
+    event.stopPropagation();
     setIsNavigationOpen(!isNavigationOpen)
   }
 

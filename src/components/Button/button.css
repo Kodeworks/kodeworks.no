@@ -47,3 +47,16 @@
 .btn.btn-light span {
   border-bottom: none;
 }
+
+.btn.btn-disabled {
+  background-color: var(--color-grey);
+  border-color: transparent;
+  color: #fff;
+  cursor: default;
+  opacity: .6;
+  pointer-events: none;
+}
+
+.btn:hover.btn-disabled {
+  border-color: transparent;
+}
