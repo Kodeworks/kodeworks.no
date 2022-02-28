@@ -2,14 +2,14 @@ import { Person } from '../types.d';
 import { projects } from './projects';
 
 /*  */
-const stories = [projects.Lilbit, projects.Inatur, projects.Vaskehjelp];
+const stories = [projects.Sunlitsea, projects.Vaskehjelp];
 
 const people: Array<Person> = [
   {
     name: 'Ingrid Skar',
     email: 'ingrid@kodeworks.no',
     projects: [projects.Equinor, projects.Inatur],
-    image: 'assets/people/ingrid-3.jpg',
+    image: '/assets/people/ingrid.jpg',
     urls: [
       {
         name: 'github',
@@ -25,7 +25,7 @@ const people: Array<Person> = [
     name: 'Tri Nguyen',
     email: 'tri@kodeworks.no',
     projects: [projects.Vaskehjelp, projects.Inatur, projects.Flir],
-    image: 'assets/people/tri-1.jpg',
+    image: '/assets/people/tri.jpg',
     urls: [
       {
         name: 'github',
@@ -41,43 +41,43 @@ const people: Array<Person> = [
     name: 'Aleksander Skraastad',
     email: 'aleksander@kodeworks.no',
     projects: [projects.Statkraft, projects.Dnb],
-    image: 'assets/people/aleksander-1.jpg',
+    image: '/assets/people/aleksander.jpg',
   },
   {
     name: 'Ådne Nystuen',
     email: 'adne@kodeworks.no',
     projects: [projects.Obos],
-    image: 'assets/people/adne-2.jpg',
+    image: '/assets/people/adne.jpg',
   },
   {
     name: 'Eirik Larsen',
     email: 'eirik@kodeworks.no',
     projects: [projects.Politiet, projects.Sunlitsea],
-    image: 'assets/people/eirik-2.jpg',
+    image: '/assets/people/eirik.jpg',
   },
   {
     name: 'Simen Moen Storvik',
     email: 'simen@kodeworks.no',
     projects: [projects.Sunlitsea],
-    image: 'assets/people/simen-1.jpg',
+    image: '/assets/people/simen.jpg',
   },
   {
     name: 'Joachim Fasting',
     email: 'joachim@kodeworks.no',
     projects: [projects.Lilbit],
-    image: 'assets/people/joachim-2.jpg',
+    image: '/assets/people/joachim.jpg',
   },
   {
     name: 'Peter Ringset',
     email: 'peter@kodeworks.no',
     projects: [projects.Skandiaenergi, projects.Vaskehjelp],
-    image: 'assets/people/peter-1.jpg',
+    image: '/assets/people/peter.jpg',
   },
   {
     name: 'Sindre Stephansen',
     email: 'sindre@kodeworks.no',
     projects: [projects.Sunlitsea, projects.Thales],
-    image: 'assets/people/sindre-1.jpg',
+    image: '/assets/people/sindre.jpg',
   },
   {
     name: 'Erik Kjosavik',
@@ -89,13 +89,13 @@ const people: Array<Person> = [
     name: 'Vegard Stengrundet',
     email: 'vegard@kodeworks.no',
     projects: [projects.Wtw, projects.Sunlitsea, projects.Equinor, projects.Kongsberg],
-    image: 'assets/people/vegard-2.jpg',
+    image: '/assets/people/vegard.jpg',
   },
   {
     name: 'Rune Holmgren',
     email: 'rune@kodeworks.no',
     projects: [projects.Sunlitsea],
-    image: 'assets/people/rune-1.jpg',
+    image: '/assets/people/rune.jpg',
   },
   {
     name: 'Nina Aalberg Johannessen',
@@ -107,19 +107,19 @@ const people: Array<Person> = [
     name: 'Ørjan Bostad Vesterlid',
     email: 'orjan@kodeworks.no',
     projects: [projects.Wtw, projects.Lilbit, projects.Skandiaenergi],
-    image: 'assets/people/orjan-1.jpg',
+    image: '/assets/people/orjan.jpg',
   },
   {
     name: 'Ole Johan Adersen',
     email: 'ole@kodeworks.no',
     projects: [projects.Inatur, projects.Equinor],
-    image: 'assets/people/ole-1.jpg',
+    image: '/assets/people/ole.jpg',
   },
   {
     name: 'Jan Burak',
     email: 'jan@kodeworks.no',
     projects: [projects.Sunlitsea],
-    image: 'assets/people/jan-2.jpg',
+    image: '/assets/people/jan.jpg',
   },
   {
     name: 'Håkon Hesselberg',
@@ -131,31 +131,43 @@ const people: Array<Person> = [
     name: 'Ferdy Wessing',
     email: 'ferdy@kodeworks.no',
     projects: [projects.Sunlitsea],
-    image: 'assets/people/ferdy-1.jpg',
+    image: '/assets/people/ferdy.jpg',
   },
   {
     name: 'Eivind Kristiansen Skjelmo',
     email: 'eivind@kodeworks.no',
     projects: [projects.Inatur, projects.Vaskehjelp],
-    image: 'assets/people/eivind-1.jpg',
+    image: '/assets/people/eivind.jpg',
   },
   {
     name: 'Andreas Norstein',
     email: 'andreas@kodeworks.no',
     projects: [projects.Inatur, projects.Dnb],
-    image: 'assets/people/andreas-1.jpg',
+    image: '/assets/people/andreas.jpg',
   },
   {
     name: 'Lars Ødegaard',
     email: 'lars@kodeworks.no',
     projects: [projects.Kongsberg, projects.Thales],
-    image: 'assets/people/lars-1.jpg',
+    image: '/assets/people/lars.jpg',
   },
   {
     name: 'Martin Wilhelmsen',
     email: 'martin@kodeworks.no',
     projects: [projects.Kongsberg, projects.Thales],
-    image: 'assets/people/martin-1.jpg',
+    image: '/assets/people/martin.jpg',
+  },
+  {
+    name: 'John Hansen',
+    email: 'john@kodeworks.no',
+    projects: [projects.KLP, projects.Remarkable],
+    image: '/assets/people/john.jpg',
+  },
+  {
+    name: 'Thomas Gulbrandsrød',
+    email: 'thomas@kodeworks.no',
+    projects: [projects.Sunlitsea],
+    image: '/assets/people/thomas.jpg',
   },
 ];
 

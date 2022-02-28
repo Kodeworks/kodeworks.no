@@ -11,6 +11,7 @@ export interface Project {
   description: string;
   image: string;
   highlighted?: boolean;
+  enabled?: boolean;
 }
 
 export interface SocialUrl {

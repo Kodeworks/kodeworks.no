@@ -30,9 +30,13 @@
 
 .person-information a {
   color: #fff;
-  /* font-family: "Natural Grotesk Light", arial, sans-serif; */
   font-weight: 200;
 }
+
+.person-information a:hover {
+  color: #fff;
+}
+
 
 .person-image {
   height: unset;
