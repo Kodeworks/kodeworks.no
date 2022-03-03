@@ -66,7 +66,7 @@ export const projects: ProjectObjectType = {
     description: "Kongsberg Digital offers digital solutions for customers in maritime, oil and gas. Kodeworks works with the development of maritime simulation used in, among other things, training systems for customers all over the world. Kongsberg A&D is a global technology leader in defense, surveillance, aerospace, aircraft structures and aircraft maintenance.",
   },
   Akerbp: {
-    name: 'Akerbp',
+    name: 'Aker BP',
     urlName: 'Akerbp',
     image: '/assets/projects/akerbp.jpg',
     description: 'Aker BP ASA er et norsk oljeutvinning- og utviklingsselskap som fokuserer petroleumsressurser på norsk kontinentalsokkel.',
@@ -78,7 +78,7 @@ export const projects: ProjectObjectType = {
     description: 'Gintel AS is a Norwegian IT company that develops software and applications within telecommunications, which changes the way operators compose and deliver services to corporate customers.',
   },
   Bnentreprenor: {
-    name: 'Bnentreprenor',
+    name: 'BN Entreprenør',
     urlName: 'Bnentreprenor',
     image: '/assets/projects/bnentreprenor-2.jpg',
     description: 'BN Entreprenør AS is a machine contractor company that was established in 1973. With a modern machine park, they are able to carry out assignments in a cost-effective way.',
