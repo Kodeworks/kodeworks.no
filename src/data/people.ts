@@ -173,19 +173,19 @@ const people: Array<Person> = [
     name: 'Erik Skår',
     email: 'erik.skar@kodeworks.no',
     projects: [projects.Sunlitsea],
-    image: '/assets/people/thomas.jpg',
+    image: '',
   },
   {
     name: 'Pål Nødseth',
     email: 'pal.nodseth@kodeworks.no',
     projects: [projects.Sunlitsea],
-    image: '/assets/people/thomas.jpg',
+    image: '',
   },
   {
     name: 'Lasse Holanger',
     email: 'lasse@kodeworks.no',
     projects: [projects.Sunlitsea],
-    image: '/assets/people/thomas.jpg',
+    image: '',
   },
 ];
 
