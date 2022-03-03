@@ -99,7 +99,7 @@ function Home({ handleDarkMode }: Prop) {
           <p>
             {highlightedProject && highlightedProject.description}
           </p>
-          <Button appearance={Button.appearances.Light} text={'Go to project page'} href={`/input/${highlightedProject && highlightedProject.name.toLowerCase()}`} disabled={!(highlightedProject && highlightedProject.enabled)} />
+          <Button text={'Go to project page'} href={`/input/${highlightedProject && highlightedProject.urlName.toLowerCase()}`} disabled={!(highlightedProject && highlightedProject.enabled)} />
         </div>
       </article>
 
