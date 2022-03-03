@@ -105,7 +105,7 @@ export const projects: ProjectObjectType = {
     name: 'THALES',
     urlName: 'Thales',
     image: '/assets/projects/thales.jpg',
-    description: 'Thales Group is a French multinational company that designs and builds electrical systems and provides services for aviation, defense, transport and security.',
+    description: 'Thales Group is a French, multi-national company that designs and builds electronic systems and delivers services for aviation, defense, transport and security.',
   },
   TechnipFMC: {
     name: 'TechnipFMC',
@@ -117,7 +117,7 @@ export const projects: ProjectObjectType = {
     name: 'DNB',
     urlName: 'Dnb',
     image: '/assets/projects/dnb.jpg',
-    description: '',
+    description: 'DNB as a company has worked for what is soon to be 200 years to find the best solutions for their customers, and is today one of the largest technology companies within the banking and financial sector. Kodeworks assists in this adaptation by establishing a central system for managing master- and reference data in DNB. In using a holistic end-to-end mindset and utilizing modern cloud services, Kodeworks helps DNB establish a robust solution for both operational and analytical usage.',
   },
   Obos: {
     name: 'Obos',
@@ -129,7 +129,7 @@ export const projects: ProjectObjectType = {
     name: 'Remarkable',
     urlName: 'Remarkable',
     image: '/assets/projects/remarkable-2.jpg',
-    description: '',
+    description: 'reMarkable is a Norwegian startup developing a tablet for writing and drawing, and aiming to give the user a sensation of writing on paper. The unique tablet is designed for use in academia as well as in professional settings. Kodeworks assists in development of reMarkable’s complex and international web platform.',
   },
   Kvaerner: {
     name: 'Kværner',
