@@ -11,6 +11,7 @@ export const projects: ProjectObjectType = {
     image: '/assets/projects/vaskehjelp.jpg',
     description: 'Vaskehjelp is a marketplace that connects a cleaner and customer, as well as taking care of payment and other paperwork. Kodeworks has assisted in the development of the iOS and Android application.',
     enabled: true,
+    highlighted: true,
   },
   Sunlitsea: {
     name: 'Sunlit Sea',
@@ -18,6 +19,7 @@ export const projects: ProjectObjectType = {
     image: '/assets/projects/sunlitsea.jpg',
     description: 'Sunlit Sea develops technology for floating solar cell installations that opens up a completely new market for solar cells at sea. Kodeworks develops sensor solutions for solar cell installation, as well as monitoring and enrichment of data from the sensors to optimize production and maintenance.',
     enabled: true,
+    highlighted: true,
   },
   Lilbit: {
     name: 'Lilbit',
@@ -38,7 +40,6 @@ export const projects: ProjectObjectType = {
     urlName: 'Inatur',
     image: '/assets/projects/inatur.jpg',
     description: 'Inatur is Norway’s largest marketplace for hunting, fishing and cabins. Kodeworks contributes to the development of applications adapted to providers of hunting, fishing and cabins so that it can easily be offered to potential customers and dealers.',
-    highlighted: true,
   },
   Statkraft: {
     name: 'Statkraft',
