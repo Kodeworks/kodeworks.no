@@ -146,13 +146,13 @@ export const projects: ProjectObjectType = {
   MollerIT: {
     name: 'Møller IT',
     urlName: 'mollerit',
-    image: '/assets/projects/.jpg',
+    image: '/assets/projects/mollerit.jpg',
     description: '',
   },
   ThomsonReuters: {
     name: 'Thomson Reuters',
     urlName: 'thomsonreuters',
-    image: '/assets/projects/.jpg',
+    image: '/assets/projects/thomasonreuters.jpg',
     description: '',
   },
 };
