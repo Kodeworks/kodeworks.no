@@ -22,7 +22,7 @@ export const projects: ProjectObjectType = {
     highlighted: true,
   },
   Lilbit: {
-    name: 'Lilbit',
+    name: 'lilbit',
     urlName: 'Lilbit',
     image: '/assets/projects/lilbit.jpg',
     description: 'lilbit delivers products for tracking and monitoring of pets, pursuing their goal of expanding the communication between pet and owner. With this ambition, they have achieved huge interest for current and future products and services.',
