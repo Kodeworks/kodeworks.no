@@ -87,7 +87,7 @@ export const projects: ProjectObjectType = {
     name: 'Politiet',
     urlName: 'Politiet',
     image: '/assets/projects/politiet.jpg',
-    description: 'The Police depend on reliable information systems that support daily operation in an agile and efficient manner. Kodeworks has been part of the development of two instrumental systems for the police: Mobile and Reverse Violence Alarm (MOVA) and Police Operative field services (PO).',
+    description: 'The Police depend on reliable information systems that support daily operation in an agile and efficient manner. Kodeworks has been part of the development of two instrumental systems for the police: Mobile and Reverse Violence Alarm and Police Operative field services.',
   },
   Avinor: {
     name: 'Avinor',
@@ -135,13 +135,13 @@ export const projects: ProjectObjectType = {
     name: 'Kværner',
     urlName: 'kvaerner',
     image: '/assets/projects/kvaerner.jpg',
-    description: '',
+    description: 'Kværner is a project specialist that offers engineering, procurement and construction services, as well as the delivery of advanced offshore platforms, onshore facilities, floating production units and renewable energy solutions.',
   },
   Nomono: {
     name: 'Nomono',
     urlName: 'nomono',
     image: '/assets/projects/nomono.jpg',
-    description: '',
+    description: 'Cloud-based audio collaboration and processing built specifically for podcasters, broadcast journalists, and audio storytellers.',
   },
   MollerIT: {
     name: 'Møller IT',
