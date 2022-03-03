@@ -214,7 +214,7 @@ function StaffManual() {
 
           <section className="handbok" id="handbok-other">
             <h2>Everything Else + The Office</h2>
-            <p>At our office at Fjordgata 30 in Trondheim, you have access to a workplace, printer, scanner, pinball machine, coffee and other refreshments. In Oslo, we have an office in Grønnegata 10 at Majorstuen. Here you also have access to a workplace, coffee machine, meeting rooms, etc. You use the premises at your own discretion on a daily basis when you do not have the opportunity to work from the custumer's offices.</p>
+<p>At our offices you have acces to a workplace, coffee and other refreshments.  You use the premises at your own discretion on a daily basis when you do not have the opportunity to work from the custumer's offices.</p>
           </section>
 
           <section className="handbok" id="handbok-militaer">
