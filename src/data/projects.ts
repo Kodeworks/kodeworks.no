@@ -131,11 +131,11 @@ export const projects: ProjectObjectType = {
     image: '/assets/projects/remarkable-2.jpg',
     description: 'reMarkable is a Norwegian startup developing a tablet for writing and drawing, and aiming to give the user a sensation of writing on paper. The unique tablet is designed for use in academia as well as in professional settings. Kodeworks assists in development of reMarkable’s complex and international web platform.',
   },
-  Kvaerner: {
-    name: 'Kværner',
-    urlName: 'kvaerner',
-    image: '/assets/projects/kvaerner.jpg',
-    description: 'Kværner is a project specialist that offers engineering, procurement and construction services, as well as the delivery of advanced offshore platforms, onshore facilities, floating production units and renewable energy solutions.',
+  Aize: {
+    name: 'Aize',
+    urlName: 'aize',
+    image: '/assets/projects/aize.jpg',
+    description: 'Aize is a project specialist that offers engineering, procurement and construction services, as well as the delivery of advanced offshore platforms, onshore facilities, floating production units and renewable energy solutions.',
   },
   Nomono: {
     name: 'Nomono',
