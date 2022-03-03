@@ -1,7 +1,7 @@
 import { Person } from '../types.d';
 import { projects } from './projects';
 
-/*  */
+/* Highlighted stories */
 const stories = [projects.Sunlitsea, projects.Vaskehjelp];
 
 const people: Array<Person> = [
@@ -52,7 +52,7 @@ const people: Array<Person> = [
   {
     name: 'Eirik Larsen',
     email: 'eirik@kodeworks.no',
-    projects: [projects.Politiet, projects.Sunlitsea],
+    projects: [projects.Politiet, projects.Sunlitsea, projects.Avinor, projects.TechnipFMC, projects.MollerIT, projects.ThomsonReuters],
     image: '/assets/people/eirik.jpg',
   },
   {
@@ -70,7 +70,7 @@ const people: Array<Person> = [
   {
     name: 'Peter Ringset',
     email: 'peter@kodeworks.no',
-    projects: [projects.Skandiaenergi, projects.Vaskehjelp],
+    projects: [projects.Skandiaenergi, projects.Vaskehjelp, projects.Nomono],
     image: '/assets/people/peter.jpg',
   },
   {
@@ -88,7 +88,7 @@ const people: Array<Person> = [
   {
     name: 'Vegard Stengrundet',
     email: 'vegard@kodeworks.no',
-    projects: [projects.Wtw, projects.Sunlitsea, projects.Equinor, projects.Kongsberg],
+    projects: [projects.Sunlitsea, projects.Equinor, projects.Kongsberg],
     image: '/assets/people/vegard.jpg',
   },
   {
@@ -106,7 +106,7 @@ const people: Array<Person> = [
   {
     name: 'Ørjan Bostad Vesterlid',
     email: 'orjan@kodeworks.no',
-    projects: [projects.Wtw, projects.Lilbit, projects.Skandiaenergi],
+    projects: [projects.Lilbit, projects.Skandiaenergi],
     image: '/assets/people/orjan.jpg',
   },
   {
@@ -118,7 +118,7 @@ const people: Array<Person> = [
   {
     name: 'Jan Burak',
     email: 'jan@kodeworks.no',
-    projects: [projects.Sunlitsea],
+    projects: [projects.Sunlitsea, projects.Kvaerner],
     image: '/assets/people/jan.jpg',
   },
   {
@@ -160,7 +160,7 @@ const people: Array<Person> = [
   {
     name: 'John Hansen',
     email: 'john@kodeworks.no',
-    projects: [projects.KLP, projects.Remarkable],
+    projects: [projects.KLP, projects.Remarkable, projects.Equinor],
     image: '/assets/people/john.jpg',
   },
   {
@@ -169,10 +169,28 @@ const people: Array<Person> = [
     projects: [projects.Sunlitsea],
     image: '/assets/people/thomas.jpg',
   },
+  {
+    name: 'Erik Skår',
+    email: 'erik.skar@kodeworks.no',
+    projects: [projects.Sunlitsea],
+    image: '/assets/people/thomas.jpg',
+  },
+  {
+    name: 'Pål Nødseth',
+    email: 'pal.nodseth@kodeworks.no',
+    projects: [projects.Sunlitsea],
+    image: '/assets/people/thomas.jpg',
+  },
+  {
+    name: 'Lasse Holanger',
+    email: 'lasse@kodeworks.no',
+    projects: [projects.Sunlitsea],
+    image: '/assets/people/thomas.jpg',
+  },
 ];
 
 function getPeople(): Array<Person> {
-  return shuffleArray(people);
+  return shufflePeopleWithoutImagesToBottom(shuffleArray(people));
 }
 
 function getHighligtedPeople(): Array<Person> {
@@ -191,7 +209,7 @@ function getHighligtedPeople(): Array<Person> {
     return hasProject;
   })
 
-  return shuffleArray(filteredList.filter((person) => person.image));
+  return filteredList.filter((person) => person.image);
 }
 
 function shuffleArray(array: Array<Person>): Array<Person> {
@@ -201,6 +219,20 @@ function shuffleArray(array: Array<Person>): Array<Person> {
   }
 
   return array;
+}
+
+function shufflePeopleWithoutImagesToBottom(people: Array<Person>): Array<Person> {
+  let _people: Array<Person> = [];
+
+  people.forEach((person) => {
+    if (person.image == undefined || person.image.length == 0) {
+      _people.push(person);
+    } else {
+      _people.unshift(person);
+    }
+  });
+
+  return _people;
 }
 
 const exportedFunctions = {

@@ -20,3 +20,10 @@
   border: none;
   text-decoration: none;
 }
+
+.project-tile--image {
+  height: 55vh;
+  margin-bottom: 25px;
+  object-fit: cover;
+  width: 100%;
+}
