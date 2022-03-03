@@ -155,11 +155,17 @@ export const projects: ProjectObjectType = {
     image: '/assets/projects/thomasonreuters.jpg',
     description: '',
   },
+  Administration: {
+    name: 'Administration',
+    urlName: 'thomsonreuters',
+    image: '/assets/projects/thomasonreuters.jpg',
+    description: '',
+  },
 };
 
 
 function getProjects(): Array<Project> {
-  return Object.values(projects);
+  return Object.values(projects).filter(project => project.name !== 'Administration');
 }
 
 function getHighlightedProjects(): Array<Project> {
