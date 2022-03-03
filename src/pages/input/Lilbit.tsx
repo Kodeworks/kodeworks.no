@@ -14,7 +14,7 @@ function Equinor({ handleDarkMode }: Prop) {
       <header>
       <h1>Lilbit</h1>
         <ul>
-          <li>Java, Spring, JavaScript, ReactJS</li>
+          <li>Java, Spring, Android, iOS, JavaScript, ReactJS, Tailwind</li>
         </ul>
         <p>lilbit delivers products for tracking and monitoring of pets, pursuing their goal of expanding the communication between pet and owner. With this ambition, they have achieved huge interest for current and future products and services.</p>
       </header>
