@@ -19,13 +19,50 @@
   margin-left: auto;
   margin-right: auto;
   width: 100%;
+  position: relative;
 }
 
 #page-projects > article img {
-  height: 80vh;
+
+}
+
+.project-image--header {
+  height: 40vh;
   margin-bottom: 25px;
   object-fit: cover;
   width: 100%;
+}
+
+.project-image--floatRight {
+  float: right;
+  width: 40%;
+}
+
+.project-image--floatLeft {
+  float: left;
+  width: 45%;
+}
+
+
+.project-description-input {
+
+}
+
+.project-quote {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.project-quote--content {
+  border-left: 10px solid var(--color-green);
+  padding-left: 25px;
+  margin-top: 15px;
+}
+
+.project-quote--author {
+  text-align: right;
+  display: block;
+  font-size: 14px;
+  color: var(--color-grey);
 }
 
 

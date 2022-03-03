@@ -12,7 +12,7 @@ function PersonTile({ person }: Prop) {
    return (
     <>
       <header>
-        <img className="person-image" alt="" src={person.image} width="150" height="220" />
+        <img className="person-image" alt="" src={person.image || '/assets/people/placeholder.jpg'} width="150" height="220" />
         <div className="person-overlay">
           <div className="person-information">
             <strong>{person.name}</strong>
@@ -31,7 +31,7 @@ function PersonTile({ person }: Prop) {
       <ul className="person-projects">
         {person.projects.map((project) => (
           <li key={project.name}>
-            <Button text={project.name} href={`/input/${project.name.toLowerCase().replace(/ /i, '-')}`} disabled={!project.enabled} />
+            <Button text={project.name} href={`/input/${project.urlName.toLowerCase().replace(/ /i, '-')}`} disabled={!project.enabled} />
           </li>
         ))}
       </ul>

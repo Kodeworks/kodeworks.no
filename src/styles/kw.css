@@ -124,19 +124,28 @@ h4 {
 #page-project > article {
   padding-bottom: 120px;
   width: 100%;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-#page-project > article img {
-  height: 60vh;
-  margin-bottom: 25px;
-  object-fit: cover;
-  width: 100%;
-}
+/* #page-project > article img { */
+/*   height: 50vh; */
+/*   margin-bottom: 25px; */
+/*   object-fit: cover; */
+/*   width: 100%; */
+/* } */
 
 #page-project > article > section {
   box-sizing: border-box;
   clear: both;
   padding: 60px 30px;
+}
+
+#page-project > article > section::after {
+  display: table;
+  content: " ";
+  clear: both;
 }
 
 #page-project > article::after {
