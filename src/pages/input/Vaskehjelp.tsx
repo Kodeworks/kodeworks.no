@@ -16,7 +16,7 @@ function Equinor({ handleDarkMode }: Prop) {
       <header>
         <h1>Vaskehjelp</h1>
         <ul>
-      <li>iOS, Android, Swift, Kotlin, .NET</li>
+      <li>iOS, Android, .NET</li>
       </ul>
       <p>Vaskehjelp is a marketplace that connects cleaning personell and a customer, as well as taking care of payment and other paperwork. Kodeworks has assisted in the development of the iOS and Android application.</p>
       </header>
