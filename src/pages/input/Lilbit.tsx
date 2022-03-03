@@ -16,7 +16,7 @@ function Equinor({ handleDarkMode }: Prop) {
         <ul>
           <li>Java, Spring, Android, iOS, JavaScript, ReactJS, Tailwind</li>
         </ul>
-        <p>lilbit delivers products for tracking and monitoring of pets, pursuing their goal of expanding the communication between pet and owner. With this ambition, they have achieved huge interest for current and future products and services.</p>
+        <p>Lilbit is a company that develops a platform for GPS tracking of pets. Their vision is to give pet-owners information about the health and state of the pet by monitoring its behavior.</p>
       </header>
 
       <article>
