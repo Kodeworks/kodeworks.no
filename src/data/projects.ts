@@ -69,7 +69,7 @@ export const projects: ProjectObjectType = {
     name: 'Aker BP',
     urlName: 'Akerbp',
     image: '/assets/projects/akerbp.jpg',
-    description: 'Aker BP ASA er et norsk oljeutvinning- og utviklingsselskap som fokuserer petroleumsressurser på norsk kontinentalsokkel.',
+    description: 'Aker BP ASA is a Norwegian oil extraction and development company, focusing on petroleum resources on the Norwegian continental shelf. g',
   },
   Gintel: {
     name: 'Gintel',
