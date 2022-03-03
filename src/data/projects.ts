@@ -25,7 +25,7 @@ export const projects: ProjectObjectType = {
     name: 'Lilbit',
     urlName: 'Lilbit',
     image: '/assets/projects/lilbit.jpg',
-    description: 'Lilbit er et selskap som leverer en platform for GPS-sporing av kjæledyr. Deres visjon er å kunne gi eiere informasjon om dyrets tilstand gjennom dens oppførsel.',
+    description: 'lilbit delivers products for tracking and monitoring of pets, pursuing their goal of expanding the communication between pet and owner. With this ambition, they have achieved huge interest for current and future products and services.',
     highlighted: true,
     enabled: true,
   },
@@ -134,7 +134,7 @@ export const projects: ProjectObjectType = {
   Kvaerner: {
     name: 'Kværner',
     urlName: 'kvaerner',
-    image: '/assets/projects/.jpg',
+    image: '/assets/projects/kvaerner.jpg',
     description: '',
   },
   Nomono: {
