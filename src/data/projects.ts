@@ -147,13 +147,13 @@ export const projects: ProjectObjectType = {
     name: 'Møller IT',
     urlName: 'mollerit',
     image: '/assets/projects/mollerit.jpg',
-    description: '',
+    description: 'Møller IT, part of the Møller Mobility Group, is the leading car group in the Nordic and Baltic countries with over 60 dealers and 750,000 customers. The company has traditionally operated within new car sales, leasing, financing, used car sales, and now more recently other types of mobility services.',
   },
   ThomsonReuters: {
     name: 'Thomson Reuters',
     urlName: 'thomsonreuters',
     image: '/assets/projects/thomasonreuters.jpg',
-    description: '',
+    description: 'Through various digital platforms for energy and commodity trading, Thomson Reuters delivers analysis tools intended for investors and companies. The information presented in these solutions is time-critical, the amounts of data are large, the sources are many and the algorithms are complex.',
   },
   Administration: {
     name: 'Administration',
