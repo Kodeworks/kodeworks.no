@@ -9,10 +9,17 @@ interface Prop {
 
 function PersonTile({ person }: Prop) {
 
+  function getImage(person: Person) {
+    if (person.name === 'Nina Aalberg Johannessen') {
+      return '/assets/people/placeholder-1.jpg'
+    }
+
+    return person.image || '/assets/people/placeholder-2.jpg';
+  }
    return (
     <>
       <header>
-        <img className="person-image" alt="" src={person.image || '/assets/people/placeholder.jpg'} width="150" height="220" />
+       <img className="person-image" alt="" src={getImage(person)} width="150" height="220" />
         <div className="person-overlay">
           <div className="person-information">
             <strong>{person.name}</strong>
