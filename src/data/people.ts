@@ -100,7 +100,7 @@ const people: Array<Person> = [
   {
     name: 'Nina Aalberg Johannessen',
     email: 'nina@kodeworks.no',
-    projects: [],
+    projects: [projects.Administration],
     image: '',
   },
   {
