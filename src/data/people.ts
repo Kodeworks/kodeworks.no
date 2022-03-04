@@ -118,7 +118,7 @@ const people: Array<Person> = [
   {
     name: 'Jan Burak',
     email: 'jan@kodeworks.no',
-    projects: [projects.Sunlitsea, projects.Kvaerner],
+    projects: [projects.Sunlitsea, projects.Aize],
     image: '/assets/people/jan.jpg',
   },
   {
