@@ -1,11 +1,13 @@
-.person-projects li:not(:last-child) {
-  margin-right: 4px;
+.person {}
+
+.person-image {
+  height: unset;
+  width: 100%;
+  display: block;
 }
 
-.person-projects li {
-  display: inline-block;
-}
-
+/* Person Overlay
+--------------------------------------------------------------------*/
 .person-overlay {
   transition: opacity 0.1s ease-in-out, visibility 0.1s ease-in-out;
 
@@ -15,6 +17,33 @@
   right: 0;
   top: 0;
 }
+
+.person:not(:hover) .person-overlay {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.person:hover .person-overlay:hover {
+  display: block;
+
+  background-image: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.31) 0,
+    rgba(0, 0, 0, 0.3) 5%,
+    rgba(0, 0, 0, 0.2) 10%,
+    rgba(0, 0, 0, 0.18) 20%,
+    rgba(0, 0, 0, 0.16) 30%,
+    rgba(0, 0, 0, 0.14) 40%,
+    rgba(0, 0, 0, 0.12) 50%,
+    rgba(0, 0, 0, 0.1) 60%,
+    rgba(0, 0, 0, 0.2) 70%,
+    rgba(0, 0, 0, 0.25) 90%,
+    rgba(0, 0, 0, 0.31) 95%,
+    rgba(0, 0, 0, 0.34)
+  );
+}
+/* END Person Overlay
+--------------------------------------------------------------------*/
 
 .person-information {
   color: #fff;
@@ -37,11 +66,12 @@
   color: #fff;
 }
 
+.person-projects li:not(:last-child) {
+  margin-right: 4px;
+}
 
-.person-image {
-  height: unset;
-  width: 100%;
-  display: block;
+.person-projects li {
+  display: inline-block;
 }
 
 .person-actions {
@@ -52,4 +82,27 @@
 
 .person-actions a:not(:last-child) {
   margin-right: 4px;
+}
+
+@media (max-width: 660px) {
+  .person:not(:hover) .person-overlay {
+    visibility: visible;
+    opacity: 1;
+
+    background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.31) 0,
+      rgba(0, 0, 0, 0.3) 5%,
+      rgba(0, 0, 0, 0.2) 10%,
+      rgba(0, 0, 0, 0.18) 20%,
+      rgba(0, 0, 0, 0.16) 30%,
+      rgba(0, 0, 0, 0.14) 40%,
+      rgba(0, 0, 0, 0.12) 50%,
+      rgba(0, 0, 0, 0.1) 60%,
+      rgba(0, 0, 0, 0.2) 70%,
+      rgba(0, 0, 0, 0.25) 90%,
+      rgba(0, 0, 0, 0.31) 95%,
+      rgba(0, 0, 0, 0.34)
+    );
+  }
 }
