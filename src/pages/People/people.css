@@ -14,7 +14,8 @@
 @media (max-width: 660px),
 (max-device-width: 850px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
   #page-people > div {
-      padding-left: var(--gutter-size-mobile);
-      padding-right: var(--gutter-size-mobile);
+    margin-top: 100px;
+    padding-left: var(--gutter-size-mobile);
+    padding-right: var(--gutter-size-mobile);
   }
 }
