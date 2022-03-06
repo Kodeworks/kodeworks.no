@@ -1,4 +1,8 @@
-import { useEffect } from 'react';interface Prop {
+import { useEffect } from 'react';
+
+import './project.css';
+
+interface Prop {
   handleDarkMode(isDarkMode: boolean): any
 }
 

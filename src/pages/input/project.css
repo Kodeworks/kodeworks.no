@@ -1,0 +1,86 @@
+#page-project {
+  background-color: #000;
+  color: #fff;
+}
+
+#page-project header {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 220px var(--gutter-size) 80px var(--gutter-size);
+  text-align: center;
+}
+
+#page-project header ul {
+  font-size: 14px;
+  font-weight: 200;
+  margin-bottom: 30px;
+}
+
+#page-project > article {
+  padding-bottom: 120px;
+  width: 100%;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#page-project > article > section {
+  box-sizing: border-box;
+  clear: both;
+  padding: 60px var(--gutter-size);
+}
+
+#page-project > article > section::after {
+  display: table;
+  content: " ";
+  clear: both;
+}
+
+#page-project > article::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.project-description-input,
+.project-description-output {
+  width: 46%;
+}
+
+.project-description-input {
+  float: left;
+}
+
+.project-description-output {
+  float: right;
+}
+
+.project-output {
+  background-color: #1a1a1a;
+  text-align: center;
+}
+
+.project-output > * {
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+@media (min-width: 360px) and (max-width: 660px) {
+  #page-project header {
+    padding-top: 140px;
+    padding-left: var(--gutter-size-mobile);
+    padding-right: var(--gutter-size-mobile);
+  }
+
+  #page-project > article > section {
+    padding-left: var(--gutter-size-mobile);
+    padding-right: var(--gutter-size-mobile);
+  }
+
+  .project-description-input,
+  .project-description-output {
+    float: none;
+    width: 100%;
+
+  }
+}

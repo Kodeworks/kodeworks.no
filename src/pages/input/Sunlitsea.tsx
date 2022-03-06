@@ -1,5 +1,7 @@
 import { useEffect } from 'react';
 
+import './project.css';
+
 import ImageSunlitsea from '../../assets/images/sunlitsea.jpg';
 
 interface Prop {
