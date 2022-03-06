@@ -137,10 +137,6 @@
     display: none;
   }
 
-  #menu-main {
-    padding-top: 45px;
-  }
-
   .menu--opened #menu-main {
     display: flex;
     flex-direction: column;

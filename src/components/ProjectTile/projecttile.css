@@ -27,3 +27,26 @@
   object-fit: cover;
   width: 100%;
 }
+
+
+@media (max-width: 660px) {
+  .project-ingress {
+    display: block;
+    padding-left: var(--gutter-size-mobile);
+    padding-right: var(--gutter-size-mobile);
+    text-align: left;
+  }
+
+  .project-ingress h3,
+  .project-ingress p {
+    text-align: center;
+  }
+
+  .project-ingress h3 {
+    margin-bottom: 15px;
+  }
+
+  .project-ingress p {
+    width: 100%;
+  }
+}

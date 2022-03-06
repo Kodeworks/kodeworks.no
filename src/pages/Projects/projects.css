@@ -9,7 +9,7 @@
 #page-projects header {
   max-width: 900px;
   margin: 0 auto;
-  padding: 220px 30px 80px 30px;
+  padding: 220px var(--gutter-size) 80px var(--gutter-size);
   text-align: center;
 }
 
@@ -66,31 +66,20 @@
 }
 
 
-@media (max-width: 660px) {
+@media (max-width: 660px),
+(max-device-width: 850px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
   #page-projects {
     padding: 0;
   }
 
+  #page-projects header {
+    padding-top: 100px;
+    padding-left: var(--gutter-size-mobile);
+    padding-right: var(--gutter-size-mobile);
+  }
+
   #page-projects > article img {
     height: 50vh;
-  }
-
-  .project-ingress {
-    display: block;
-    text-align: left;
-  }
-
-  .project-ingress h3,
-  .project-ingress p {
-    text-align: center;
-  }
-
-  .project-ingress h3 {
-    margin-bottom: 15px;
-  }
-
-  .project-ingress p {
-    width: 100%;
   }
 
   .project-image--floatRight {
