@@ -1,5 +1,6 @@
-import Button from '../Button';
 import { Person } from '../../types';
+
+import Button from '../Button';
 
 import './persontile.css';
 
@@ -16,10 +17,10 @@ function PersonTile({ person }: Prop) {
 
     return person.image || '/assets/people/placeholder-2.jpg';
   }
-   return (
+  return (
     <>
-      <header>
-       <img className="person-image" alt="" src={getImage(person)} width="150" height="220" />
+      <header className="person">
+        <img className="person-image" alt="" src={getImage(person)} width="150" height="220" />
         <div className="person-overlay">
           <div className="person-information">
             <strong>{person.name}</strong>
