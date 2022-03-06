@@ -34,18 +34,8 @@
 }
 
 .btn.btn-light {
-  color: #fff;
-  border: 2px solid var(--color-green);
-  background-color: #000;
-  padding-bottom: 0;
-}
-
-.btn:hover.btn-light {
-  border-color: #fff;
-}
-
-.btn.btn-light span {
-  border-bottom: none;
+  color: #000;
+  background-color: transparent;
 }
 
 .btn.btn-disabled {
@@ -61,4 +51,8 @@
 
 .btn:hover.btn-disabled {
   border-color: transparent;
+}
+
+.btn.btn--noPadding {
+  padding: 0;
 }

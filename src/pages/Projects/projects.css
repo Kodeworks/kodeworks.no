@@ -66,7 +66,7 @@
 }
 
 
-@media (max-width: 550px) {
+@media (max-width: 660px) {
   #page-projects {
     padding: 0;
   }
@@ -91,5 +91,15 @@
 
   .project-ingress p {
     width: 100%;
+  }
+
+  .project-image--floatRight {
+    margin-left: 15px;
+    margin-bottom: 15px;
+  }
+
+  .project-image--floatLeft {
+    margin-right: 15px;
+    margin-bottom: 15px;
   }
 }

@@ -72,7 +72,7 @@ function Home({ handleDarkMode }: Prop) {
               Today Kodeworks consists of {people.length} accomplished developers, who endeavor to develop solutions realizing our clients vision.
             </p>
             <p>
-              <a href="people">See all of them</a>{" "}
+              <Button appearance={Button.appearances.LightNoPadding} href="/people">See all of them</Button>
               <img
                 src="../assets/icons/chevron-right.svg"
                 alt=""
@@ -99,7 +99,7 @@ function Home({ handleDarkMode }: Prop) {
           <p>
             {highlightedProject && highlightedProject.description}
           </p>
-          <Button text={'Go to project page'} href={`/input/${highlightedProject && highlightedProject.urlName.toLowerCase()}`} disabled={!(highlightedProject && highlightedProject.enabled)} />
+          <Button appearance={Button.appearances.DarkNoPadding} href={`/input/${highlightedProject && highlightedProject.urlName.toLowerCase()}`} disabled={!(highlightedProject && highlightedProject.enabled)}>Go to project page</Button>
         </div>
       </article>
 
@@ -110,7 +110,7 @@ function Home({ handleDarkMode }: Prop) {
             Let's grab a cup of coffee, and feel free to have a look at our staff manual for a better grasp of what we offer.
           </p>
           <p>
-            <a href="/staffmanual">Staff Manual</a>
+              <Button appearance={Button.appearances.LightNoPadding} href="/staffmanual">Staff Manual</Button>
           </p>
         </div>
       </article>

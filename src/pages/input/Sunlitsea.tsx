@@ -17,9 +17,7 @@ function Equinor({ handleDarkMode }: Prop) {
     <div id="page-project">
       <header>
         <h1>Sunlit Sea</h1>
-        <ul>
-          <li>Embedded, C, Arduino, Scala, Akka, Python, AWS, Influx, React, ThreeJS, Tailwind</li>
-        </ul>
+        <div className="project__technologies">Embedded, C, Arduino, Scala, Akka, Python, AWS, Influx, React, ThreeJS, Tailwind</div>
         <p>Sunlit Sea develops technology for floating solar cell installations that opens up a completely new market for solar cells at sea. Kodeworks develops sensor solutions for solar cell installation, as well as monitoring and enrichment of data from the sensors to optimize production and maintenance.</p>
       </header>
 
@@ -46,37 +44,37 @@ function Equinor({ handleDarkMode }: Prop) {
 
         </section>
 
-      <section className="project-output">
+        <section className="project-output">
 
           <p>As co-founder of Sunlit Sea, Kodeworks has been part of the picture from the very beginning, in 2019.</p>
         </section>
 
 
         <section >
-      <img src={ImageSunlitsea} alt="" className="project-image--floatLeft" />
-      <div className="project-description-output">
-          <p>Sunlit Sea has on several occasions worked with Kodeworks on this, and we have contributed in a broad range of areas. From 3D renderings of production and deployment, and a website with Sunlit Sea’s Smart Quoter service, down to the sensor- and communication electronics put on every module, Kodeworks has designed and implemented necessary solutions from the ground up.</p>
+          <img src={ImageSunlitsea} alt="" className="project-image--floatLeft" />
+          <div className="project-description-output">
+            <p>Sunlit Sea has on several occasions worked with Kodeworks on this, and we have contributed in a broad range of areas. From 3D renderings of production and deployment, and a website with Sunlit Sea’s Smart Quoter service, down to the sensor- and communication electronics put on every module, Kodeworks has designed and implemented necessary solutions from the ground up.</p>
 
-          <p>Through a collaborative partnership and mutual knowledge sharing, Kodeworks has been essential for Sunlit Sea’s technological edge.</p>
+            <p>Through a collaborative partnership and mutual knowledge sharing, Kodeworks has been essential for Sunlit Sea’s technological edge.</p>
 
-          <div className="project-quote">
-            <p className="project-quote--content">In Sunlit Sea, I am solely accountable for the quality of the solutions I develop, and there is a lot of responsibility on the shoulders of each developer. There is no relying on other team members to catch weaknesses in my solutions, unless I specifically ask for a peer review of the systems. We all simply have to identify possible weaknesses in the systems and procedures that we develop, and ensure that more than one set of eyes are scanning it all for flaws.</p>
+            <div className="project-quote">
+              <p className="project-quote--content">In Sunlit Sea, I am solely accountable for the quality of the solutions I develop, and there is a lot of responsibility on the shoulders of each developer. There is no relying on other team members to catch weaknesses in my solutions, unless I specifically ask for a peer review of the systems. We all simply have to identify possible weaknesses in the systems and procedures that we develop, and ensure that more than one set of eyes are scanning it all for flaws.</p>
+            </div>
+
+            <p>The engineering solutions that make up the base for the solar module, must meet requirements that evolve as the product moves towards the commercialization stage. That also applies for the processing and presentation of collected sensor data, and the use of data for further prediction of performance and behavior in various environments. This goes on in parallel with how Sunlit Sea pushes forward in competitiveness and scaling of production.</p>
+
+
+
+
+            <div className="project-quote">
+              <p className="project-quote--content">Before Sunlit Sea, I had little experience with how to define systems and procedures for getting the production of an actual product up and running. It has been very interesting to learn what works when designing a handful of prototypes, and what needs to be changed when moving towards mass production of the same product. An extremely important tool I keep in my mental toolbox is the ability to design a product in a way that allows a factory to produce it, without me being involved in the actual production.</p>
+            </div>
+
+            <p>Broad and documentable domain expertise is important in a relatively young industry. For the purpose of extending specific domain knowledge, Sunlit Sea today works towards identifying the performance ratio of the solar panels in different sea states given a set of waves, in a collaboration between Kodeworks and IFE to combine historical weather data with bespoke sensorics and processing technology. This work is part of state-of-the-art research within the field, and is laying the foundation for several scientific publications from IFE.</p>
+
+            <p>Kodeworks continues to develop solutions for Sunlit Sea, and looks forward to collaborating on solving many exciting challenges in the future.</p>
+
           </div>
-
-          <p>The engineering solutions that make up the base for the solar module, must meet requirements that evolve as the product moves towards the commercialization stage. That also applies for the processing and presentation of collected sensor data, and the use of data for further prediction of performance and behavior in various environments. This goes on in parallel with how Sunlit Sea pushes forward in competitiveness and scaling of production.</p>
-
-
-
-
-          <div className="project-quote">
-            <p className="project-quote--content">Before Sunlit Sea, I had little experience with how to define systems and procedures for getting the production of an actual product up and running. It has been very interesting to learn what works when designing a handful of prototypes, and what needs to be changed when moving towards mass production of the same product. An extremely important tool I keep in my mental toolbox is the ability to design a product in a way that allows a factory to produce it, without me being involved in the actual production.</p>
-          </div>
-
-          <p>Broad and documentable domain expertise is important in a relatively young industry. For the purpose of extending specific domain knowledge, Sunlit Sea today works towards identifying the performance ratio of the solar panels in different sea states given a set of waves, in a collaboration between Kodeworks and IFE to combine historical weather data with bespoke sensorics and processing technology. This work is part of state-of-the-art research within the field, and is laying the foundation for several scientific publications from IFE.</p>
-
-          <p>Kodeworks continues to develop solutions for Sunlit Sea, and looks forward to collaborating on solving many exciting challenges in the future.</p>
-
-</div>
         </section>
 
 
