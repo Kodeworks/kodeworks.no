@@ -36,7 +36,7 @@ function Home({ handleDarkMode }: Prop) {
 
   useEffect(() => {
     function darkModeListener() {
-      darkMode(handleDarkMode, ['projects', 'about-image']);
+      darkMode(handleDarkMode, ['projects', 'about-imageContainer']);
     }
 
     document.addEventListener('scroll', darkModeListener);
@@ -59,8 +59,8 @@ function Home({ handleDarkMode }: Prop) {
             We are a pack of technologists who believe in creating value through receptiveness, expertise and dedication. We commit ourselves to delivering good solutions and value in collaboration with our clients, and strive each day to create an invigorating and giving workplace.
           </p>
         </div>
-        <span id="about-image">
-        <img src={ImageAbout} alt="" />
+        <span id="about-imageContainer">
+          <img src={ImageAbout} alt="" />
         </span>
       </article>
 
