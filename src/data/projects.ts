@@ -102,7 +102,7 @@ export const projects: ProjectObjectType = {
     description: 'Kommunal Landspensjonskasse Gjensidig Forsikringsselskap is an Oslo-based pension company that manages the pensions of municipal employees in Norway.',
   },
   Thales: {
-    name: 'THALES',
+    name: 'THALES Norway',
     urlName: 'Thales',
     image: '/assets/projects/thales.jpg',
     description: 'Thales Group is a French, multi-national company that designs and builds electronic systems and delivers services for aviation, defense, transport and security.',
