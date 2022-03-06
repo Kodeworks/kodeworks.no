@@ -1,5 +1,6 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
+import { Person } from '../../types';
 import api from '../../api';
 
 import PeopleList from '../../components/PeopleList';
@@ -11,11 +12,15 @@ interface Prop {
 }
 
 function People({ handleDarkMode }: Prop) {
+  const [people, setPeople] = useState<Array<Person>>([]);
+
   useEffect(() => {
     handleDarkMode(false);
   }, []);
 
-  const people = api.people.getPeople();
+  useEffect(() => {
+    setPeople(api.people.getPeople());
+  }, []);
 
   return (
     <div id="page-people">
