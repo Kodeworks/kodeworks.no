@@ -178,13 +178,13 @@ const people: Array<Person> = [
   {
     name: 'Pål Nødseth',
     email: 'pal.nodseth@kodeworks.no',
-    projects: [projects.Sunlitsea],
+    projects: [projects.Equinor],
     image: '',
   },
   {
     name: 'Lasse Holanger',
     email: 'lasse@kodeworks.no',
-    projects: [projects.Sunlitsea],
+    projects: [projects.Administration],
     image: '',
   },
 ];
