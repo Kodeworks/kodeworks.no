@@ -27,7 +27,7 @@ function Navigation({ isOpened, toggleNavigationOpened }: Prop) {
   }, [isOpened, toggleNavigationOpened]);
 
   return (
-    <menu id="menu" className={isOpened ? 'opened' : ''}>
+    <menu id="menu" className={isOpened ? 'menu--opened' : ''}>
       <div id="menu-content">
         <img className="menu-logo" src="/assets/logo-white.svg" width="100" alt="" />
         <div className="menu-dark"></div>
