@@ -1,5 +1,7 @@
 import { useEffect } from 'react';
 
+import './project.css';
+
 import ImageVaskehjelp from '../../assets/images/vaskehjelp.jpg';
 
 interface Prop {
