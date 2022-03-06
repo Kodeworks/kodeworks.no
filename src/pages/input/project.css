@@ -65,7 +65,8 @@
   max-width: 900px;
 }
 
-@media (min-width: 360px) and (max-width: 660px) {
+@media (max-width: 660px),
+(max-device-width: 850px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
   #page-project header {
     padding-top: 140px;
     padding-left: var(--gutter-size-mobile);
@@ -81,6 +82,5 @@
   .project-description-output {
     float: none;
     width: 100%;
-
   }
 }
