@@ -25,9 +25,9 @@
 #about > div,
 #people > div {
   box-sizing: border-box;
-  margin: 80px auto 80px auto;
+  margin: 70px auto 70px auto;
   max-width: var(--page-max-width);
-  max-height: 40%;
+  max-height: 35%;
   padding: 60px var(--gutter-size) 60px var(--gutter-size);
 }
 
