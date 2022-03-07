@@ -34,7 +34,7 @@ const people: Array<Person> = [
       {
         name: 'linkedin',
         url: 'https://www.linkedin.com/in/trimn/'
-      }
+      },
     ],
   },
   {
@@ -42,6 +42,16 @@ const people: Array<Person> = [
     email: 'aleksander@kodeworks.no',
     projects: [projects.Statkraft, projects.Dnb],
     image: '/assets/people/aleksander.jpg',
+    urls: [
+      {
+        name: 'github',
+        url: 'https://github.com/myth'
+      },
+      {
+        name: 'linkedin',
+        url: 'https://www.linkedin.com/in/aleksander-skraastad/'
+      },
+    ],
   },
   {
     name: 'Ådne Nystuen',
@@ -72,6 +82,20 @@ const people: Array<Person> = [
     email: 'peter@kodeworks.no',
     projects: [projects.Skandiaenergi, projects.Vaskehjelp, projects.Nomono],
     image: '/assets/people/peter.jpg',
+    urls: [
+      {
+        name: 'github',
+        url: 'https://github.com/peterringset'
+      },
+      {
+        name: 'linkedin',
+        url: 'https://www.linkedin.com/in/peter-ringset-3415a719/'
+      },
+      {
+        name: 'twitter',
+        url: 'https://twitter.com/PRingset'
+      },
+    ],
   },
   {
     name: 'Sindre Stephansen',
