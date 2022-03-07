@@ -36,10 +36,22 @@ import './styles/kw.css';
 function App() {
   const [isNavigationOpen, setIsNavigationOpen] = useState(false)
   const [darkMode, setDarkMode] = useState(false);
+  const [scrollTop, setScrollTop] = useState(0);
 
   function handleMenuButtonClick(event: any) {
     event.stopPropagation();
+
     setIsNavigationOpen(!isNavigationOpen)
+
+    if (!isNavigationOpen) {
+      setTimeout(() => {
+        setScrollTop(document.documentElement.scrollTop);
+        document.documentElement.className = 'no-scroll';
+      }, 250);
+    } else {
+      document.documentElement.className = '';
+      document.documentElement.scrollTop = scrollTop;
+    }
   }
 
   function handleDarkMode(isDarkMode: boolean) {

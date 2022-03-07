@@ -17,14 +17,12 @@ function Navigation({ isOpened, toggleNavigationOpened }: Prop) {
 
     if (isOpened) {
       document.addEventListener('keydown', escKeyListener);
-      document.body.style.overflow = 'hidden';
     }
 
     return function cleanupListener() {
       document.removeEventListener('keydown', escKeyListener);
-      document.body.style.overflow = 'visible';
     }
-  }, [isOpened, toggleNavigationOpened]);
+  }, [isOpened]);
 
   return (
     <menu id="menu" className={isOpened ? 'menu--opened' : ''}>

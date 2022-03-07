@@ -93,5 +93,7 @@ h4 {
 
 .no-scroll {
   height: 100vh;
-  overflow: hidden;
+  overflow-y: scroll;
+  position: fixed;
+  width: 100%;
 }
