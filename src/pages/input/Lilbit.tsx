@@ -48,7 +48,7 @@ function Equinor({ handleDarkMode }: Prop) {
 
 
 
-          <p>lilbit CEO Morten Sæthre describes Joachim as the first truly autonomous developer he met; someone who sees weaknesses and corresponding solutions in a system, and implements these as they emerge. Today, Joachim works on developing the backend. lilbit develops and maintains backend solutions for both the IoT units and the cloud services. This is important, since lilbit units contain sensorics that will facilitate expanded communication between a dog and its owner.</p>
+          <p>lilbit CEO Morten Sæthre describes Joachim from Kodeworks as the first truly autonomous developer he met; someone who sees weaknesses and corresponding solutions in a system, and implements these as they emerge. Today, Joachim works on developing the backend. lilbit develops and maintains backend solutions for both the IoT units and the cloud services. This is important, since lilbit units contain sensorics that will facilitate expanded communication between a dog and its owner.</p>
 
           <p>We at Kodeworks are thankful to be collaborating with lilbit on this, and look forward to being part of the development in the time to come.</p>
         </section>
