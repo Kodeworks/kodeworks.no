@@ -20,7 +20,7 @@ function PersonTile({ person }: Prop) {
   return (
     <>
       <header className="person">
-        <img className="person-image" alt="" src={getImage(person)} width="150" height="220" />
+        <img className="person-image" alt="" src={getImage(person)} width="450" height="550" />
         <div className="person-overlay">
           <div className="person-information">
             <strong>{person.name}</strong>
