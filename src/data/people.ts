@@ -76,7 +76,7 @@ const people: Array<Person> = [
   {
     name: 'Sindre Stephansen',
     email: 'sindre@kodeworks.no',
-    projects: [projects.Sunlitsea, projects.Thales],
+    projects: [projects.Skandiaenergi, projects.Thales],
     image: '/assets/people/sindre.jpg',
   },
   {
