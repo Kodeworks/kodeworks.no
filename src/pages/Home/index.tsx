@@ -73,16 +73,9 @@ function Home({ handleDarkMode }: Prop) {
             </p>
             <p>
               <Button appearance={Button.appearances.LightNoPadding} href="/people">See all of them</Button>
-              <img
-                src="../assets/icons/chevron-right.svg"
-                alt=""
-                width="8"
-                height="11"
-              />
             </p>
           </header>
-
-        <PeopleList people={highlightedPeople} />
+          <PeopleList people={highlightedPeople} />
         </div>
       </article>
 
@@ -110,7 +103,7 @@ function Home({ handleDarkMode }: Prop) {
             Let's grab a cup of coffee, and feel free to have a look at our staff manual for a better grasp of what we offer.
           </p>
           <p>
-              <Button appearance={Button.appearances.LightNoPadding} href="/staffmanual">Staff Manual</Button>
+            <Button appearance={Button.appearances.LightNoPadding} href="/staffmanual">Staff Manual</Button>
           </p>
         </div>
       </article>
