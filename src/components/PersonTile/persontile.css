@@ -76,8 +76,20 @@
 
 .person-actions {
   position: absolute;
-  bottom: 15px;
+  bottom: 10px;
   right: 15px;
+}
+
+.person-actions li {
+  display: inline-block;
+}
+
+.person-actions li:hover {
+  opacity: 0.7;
+}
+
+.person-actions li:not(:last-child) {
+  margin-right: 6px;
 }
 
 .person-actions a:not(:last-child) {

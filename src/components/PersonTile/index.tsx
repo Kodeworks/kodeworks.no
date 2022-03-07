@@ -26,13 +26,15 @@ function PersonTile({ person }: Prop) {
             <strong>{person.name}</strong>
             <a href={`mailto:${person.email}`}>{person.email}</a>
           </div>
-          <div className="person-actions">
+          <ul className="person-actions">
             {person.urls && person.urls.map((url) => (
-              <a key={url.name} href={url.url}>
-                <img src={`assets/icons/${url.name}.svg`} alt="" width="26" height="26" />
-              </a>
+              <li key={url.name}>
+                <a href={url.url}>
+                  <img src={`assets/icons/${url.name}.svg`} alt="" width="26" height="26" />
+                </a>
+              </li>
             ))}
-          </div>
+          </ul>
         </div>
       </header>
 
