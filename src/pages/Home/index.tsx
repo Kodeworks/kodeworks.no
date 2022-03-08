@@ -98,7 +98,7 @@ function Home({ handleDarkMode }: Prop) {
 
       <article id="work">
         <div>
-          <h2>We want to get to get to know you!</h2>
+          <h2>We want to get to know you!</h2>
           <p>
             Let's grab a cup of coffee, and feel free to have a look at our staff manual for a better grasp of what we offer.
           </p>
