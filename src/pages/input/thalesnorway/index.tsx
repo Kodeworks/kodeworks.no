@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 
-import './project.css';
+import '../project.css';
 
 interface Prop {
   handleDarkMode(isDarkMode: boolean): any
@@ -11,7 +11,6 @@ function Equinor({ handleDarkMode }: Prop) {
     handleDarkMode(true);
   }, []);
 
-
   return (
     <div id="page-project">
       <header>
@@ -19,7 +18,7 @@ function Equinor({ handleDarkMode }: Prop) {
         <ul>
           <li>Java, Spring, JavaScript, ReactJS</li>
         </ul>
-        <p>Equinor is an international energy company that has in recent years sparked a strategic and significant effort in sustainable energy. This is a process that requires innovation, business intelligence and a huge focus on quality. Kodeworks supports the research and digitization activities of Equinor through analysis, design, programming and testing.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sit amet dapibus nisl, eu molestie odio. Cras egestas lorem sed mauris dapibus viverra. Praesent quis iaculis augue, sit amet porta lacus..</p>
       </header>
 
       <article>

@@ -1,4 +1,4 @@
-import { MouseEventHandler, useState } from 'react';
+import { useState } from 'react';
 
 import {
   BrowserRouter as Router,
@@ -12,22 +12,22 @@ import People from './pages/People';
 import Projects from './pages/Projects';
 import StaffManual from './pages/StaffManual';
 
-import Akerbp from './pages/input/Akerbp';
-import Avinor from './pages/input/Avinor';
-import Bnentreprenor from './pages/input/Bnentreprenor';
-import Equinor from './pages/input/Equinor';
-import Flir from './pages/input/Flir';
-import Gintel from './pages/input/Gintel';
-import Inatur from './pages/input/Inatur';
-import KLP from './pages/input/KLP';
-import Kongsberg from './pages/input/Kongsberg';
-import Lilbit from './pages/input/Lilbit';
-import Politiet from './pages/input/Politiet';
-import Skandiaenergi from './pages/input/Skandiaenergi';
-import Statkraft from './pages/input/Statkraft';
-import Sunlitsea from './pages/input/Sunlitsea';
-import Thales from './pages/input/Thales';
-import Vaskehjelp from './pages/input/Vaskehjelp';
+import Aize from './pages/input/aize';
+import Avinor from './pages/input/avinor';
+import Bnentreprenor from './pages/input/bnentreprenor';
+import Equinor from './pages/input/equinor';
+import Flir from './pages/input/flir';
+import Gintel from './pages/input/gintel';
+import Inatur from './pages/input/inatur';
+import KLP from './pages/input/klp';
+import Kongsberg from './pages/input/kongsberg';
+import Lilbit from './pages/input/lilbit';
+import Politiet from './pages/input/politiet';
+import Skandiaenergi from './pages/input/skandiaenergi';
+import Statkraft from './pages/input/statkraft';
+import Sunlitsea from './pages/input/sunlitsea';
+import Thales from './pages/input/thalesnorway';
+import Vaskehjelp from './pages/input/vaskehjelp';
 
 import xmarkIcon from './assets/icons/xmark.svg';
 
@@ -63,22 +63,22 @@ function App() {
   function InputRoutes() {
     return (
       <Routes>
-        <Route path="inatur" element={<Inatur handleDarkMode={handleDarkMode} />} />
+        <Route path="aize" element={<Aize handleDarkMode={handleDarkMode} />} />
+        <Route path="avinor" element={<Avinor handleDarkMode={handleDarkMode} />} />
+        <Route path="bnentreprenor" element={<Bnentreprenor handleDarkMode={handleDarkMode} />} />
         <Route path="equinor" element={<Equinor handleDarkMode={handleDarkMode} />} />
-        <Route path="sunlitsea" element={<Sunlitsea handleDarkMode={handleDarkMode} />} />
-        <Route path="kongsberg" element={<Kongsberg handleDarkMode={handleDarkMode} />} />
         <Route path="flir" element={<Flir handleDarkMode={handleDarkMode} />} />
+        <Route path="gintel" element={<Gintel handleDarkMode={handleDarkMode} />} />
+        <Route path="inatur" element={<Inatur handleDarkMode={handleDarkMode} />} />
+        <Route path="klp" element={<KLP handleDarkMode={handleDarkMode} />} />
+        <Route path="kongsberg" element={<Kongsberg handleDarkMode={handleDarkMode} />} />
         <Route path="lilbit" element={<Lilbit handleDarkMode={handleDarkMode} />} />
-        <Route path="thales" element={<Thales handleDarkMode={handleDarkMode} />} />
-        <Route path="vaskehjelp" element={<Vaskehjelp handleDarkMode={handleDarkMode} />} />
+        <Route path="politiet" element={<Politiet handleDarkMode={handleDarkMode} />} />
         <Route path="skandiaenergi" element={<Skandiaenergi handleDarkMode={handleDarkMode} />} />
         <Route path="statkraft" element={<Statkraft handleDarkMode={handleDarkMode} />} />
-        <Route path="klp" element={<KLP handleDarkMode={handleDarkMode} />} />
-        <Route path="bnentreprenor" element={<Bnentreprenor handleDarkMode={handleDarkMode} />} />
-        <Route path="avinor" element={<Avinor handleDarkMode={handleDarkMode} />} />
-        <Route path="politiet" element={<Politiet handleDarkMode={handleDarkMode} />} />
-        <Route path="akerbp" element={<Akerbp handleDarkMode={handleDarkMode} />} />
-        <Route path="gintel" element={<Gintel handleDarkMode={handleDarkMode} />} />
+        <Route path="sunlitsea" element={<Sunlitsea handleDarkMode={handleDarkMode} />} />
+        <Route path="thales" element={<Thales handleDarkMode={handleDarkMode} />} />
+        <Route path="vaskehjelp" element={<Vaskehjelp handleDarkMode={handleDarkMode} />} />
       </Routes>
     );
   }

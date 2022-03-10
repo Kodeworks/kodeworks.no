@@ -1,8 +1,8 @@
 import { useEffect } from 'react';
 
-import './project.css';
+import '../project.css';
 
-import ImageVaskehjelp from '../../assets/images/vaskehjelp.jpg';
+import ImageVaskehjelp from './assets/vaskehjelp.jpg';
 
 interface Prop {
   handleDarkMode(isDarkMode: boolean): any

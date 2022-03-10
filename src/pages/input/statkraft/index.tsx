@@ -1,12 +1,12 @@
 import { useEffect } from 'react';
 
-import './project.css';
+import '../project.css';
 
 interface Prop {
   handleDarkMode(isDarkMode: boolean): any
 }
 
-function Inatur({ handleDarkMode }: Prop) {
+function Equinor({ handleDarkMode }: Prop) {
   useEffect(() => {
     handleDarkMode(true);
   }, []);
@@ -14,7 +14,7 @@ function Inatur({ handleDarkMode }: Prop) {
   return (
     <div id="page-project">
       <header>
-        <h1>Inatur</h1>
+        <h1>Equinor</h1>
         <ul>
           <li>Java, Spring, JavaScript, ReactJS</li>
         </ul>
@@ -46,4 +46,4 @@ function Inatur({ handleDarkMode }: Prop) {
   )
 }
 
-export default Inatur
+export default Equinor

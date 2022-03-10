@@ -1,14 +1,14 @@
 import { useEffect } from 'react';
 
-import './project.css';
+import '../project.css';
 
-import ImageSunlitsea from '../../assets/images/sunlitsea.jpg';
+import ImageSunlitsea from './assets/sunlitsea.jpg';
 
 interface Prop {
   handleDarkMode(isDarkMode: boolean): any
 }
 
-function Equinor({ handleDarkMode }: Prop) {
+function Sunlitsea({ handleDarkMode }: Prop) {
   useEffect(() => {
     handleDarkMode(true);
   }, []);
@@ -73,7 +73,7 @@ function Equinor({ handleDarkMode }: Prop) {
             <p>Broad and documentable domain expertise is important in a relatively young industry. For the purpose of extending specific domain knowledge, Sunlit Sea today works towards identifying the performance ratio of the solar panels in different sea states given a set of waves, in a collaboration between Kodeworks and IFE to combine historical weather data with bespoke sensorics and processing technology. This work is part of state-of-the-art research within the field, and is laying the foundation for several scientific publications from IFE.</p>
 
             <p>Kodeworks continues to develop solutions for Sunlit Sea, and looks forward to collaborating on solving many exciting challenges in the future.</p>
-
+pp
           </div>
         </section>
 
@@ -83,4 +83,4 @@ function Equinor({ handleDarkMode }: Prop) {
   )
 }
 
-export default Equinor
+export default Sunlitsea;

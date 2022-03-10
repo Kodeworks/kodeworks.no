@@ -1,12 +1,12 @@
 import { useEffect } from 'react';
 
-import './project.css';
+import '../project.css';
 
 interface Prop {
   handleDarkMode(isDarkMode: boolean): any
 }
 
-function Equinor({ handleDarkMode }: Prop) {
+function Lilbit({ handleDarkMode }: Prop) {
   useEffect(() => {
     handleDarkMode(true);
   }, []);
@@ -52,11 +52,9 @@ function Equinor({ handleDarkMode }: Prop) {
 
           <p>We at Kodeworks are thankful to be collaborating with lilbit on this, and look forward to being part of the development in the time to come.</p>
         </section>
-
-
       </article>
     </div>
   )
 }
 
-export default Equinor
+export default Lilbit;

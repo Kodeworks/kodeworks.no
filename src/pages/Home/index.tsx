@@ -7,7 +7,7 @@ import { Person, Project } from '../../types';
 import Button from '../../components/Button';
 import PeopleList from '../../components/PeopleList';
 
-import ImageAbout from '../../assets/images/EOSR7695.jpg';
+import ImageAbout from './assets/EOSR7695.jpg';
 
 import './home.css';
 
