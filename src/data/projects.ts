@@ -172,7 +172,9 @@ function getHighlightedProjects(): Array<Project> {
   return Object.values(projects).filter((project) => project.highlighted);
 }
 
-export default {
+const projectsApi = {
   getHighlightedProjects,
   getProjects,
-}
+};
+
+export default projectsApi;

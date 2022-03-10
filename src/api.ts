@@ -1,7 +1,9 @@
 import people from './data/people';
 import projects from './data/projects';
 
-export default {
+const api = {
   people,
   projects
 };
+
+export default api;

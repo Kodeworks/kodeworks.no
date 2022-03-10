@@ -259,9 +259,9 @@ function shufflePeopleWithoutImagesToBottom(people: Array<Person>): Array<Person
   return _people;
 }
 
-const exportedFunctions = {
+const peopleApi = {
   getHighligtedPeople,
   getPeople
 };
 
-export default exportedFunctions;
+export default peopleApi;
