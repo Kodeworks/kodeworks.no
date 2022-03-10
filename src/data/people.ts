@@ -58,6 +58,16 @@ const people: Array<Person> = [
     email: 'adne@kodeworks.no',
     projects: [projects.Obos],
     image: '/assets/people/adne.jpg',
+    urls: [
+      {
+        name: 'github',
+        url: 'https://github.com/nystu1'
+      },
+      {
+        name: 'linkedin',
+        url: 'https://www.linkedin.com/in/adne-nystuen/'
+      },
+    ],
   },
   {
     name: 'Eirik Larsen',
