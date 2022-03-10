@@ -1,136 +1,102 @@
-/* Håndbok
-   -----------------------------------------------------------------------------*/
-.handbok-column-2 h1 {
-  font-size: 64px;
+.handbook-mainheader {
+  padding: 80px var(--gutter-size);
+  max-width: 60%;
 }
 
-.handbok-column-2 h2 {
-  font-size: 38px;
-  line-height: 48px;;
-  margin-top: 20px;
-}
-
-.handbok-column-2 h3 {
-  font-size: 26px;
-  line-height: 36px;
-  margin-top: 20px;
-}
-
-.handbok-column-2 h4 {
-  font-size: 22px;
-}
-
-.handbok-column-2 ul,
-.handbok-column-2 ol {
+.handbook-mainheader h1 {
+  font-size: 72px;
   margin-bottom: 15px;
-  margin-left: 25px;
+  line-height: 0.7;
 }
 
-.handbok-column-2 ul {
-  list-style: disc;
+.handbook-mainheader h1 span {
+  /* display: block; */
+  /* margin-left: 25px; */
 }
 
-.handbok-column-2 ol {
-  list-style: digit;
+.handbook-horizontal-separator {
+  display: block;
+  height: 2px;
+  width: 80px;
+  background-color: #000;
+  margin-top: 10px;
 }
 
-.handbok {
-  padding-top: 20px;
-  padding-bottom: 60px;
+.handbook-wrapper {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 3fr);
+  grid-gap: 25px;
+  gap: 25px;
+  grid-template-areas: "sidebar main";
+  padding-left: 25px;
 }
 
-.handbok-container {
-  box-sizing: border-box;
-  display: flex;
-  margin: 120px auto 120px auto;
-  max-width: var(--page-max-width);
-  padding-left: var(--gutter-size);
-  padding-right: var(--gutter-size);
-  padding-top: 30px;
-  width: 100%;
+.handbook-wrapper h2 {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
-.handbok-column-1 {
-  flex: 1;
-  max-width: 240px;
-  min-width: 240px;
-  margin-right: 45px;
+.handbook-wrapper h3 {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 42px;
+  margin-top: 35px;
+  margin-bottom: 8px;
 }
 
-.handbok-sidebar {
-  padding-top: 50px;
+.handbook-wrapper h4 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-top: 35px;
+  margin-bottom: 14px;
+}
+
+.handbook-sidebar {
+  grid-area: sidebar;
+  align-self: start;
+  padding-top: 35px;
   position: sticky;
   top: 0;
 }
 
-.handbok-sidebar nav {
-  border-bottom: 1px solid #eee;
-  margin-bottom: 25px;
-  padding-bottom: 20px;
+.handbook-sidebar-list {
+  border-left: 2px solid var(--color-green);
+  padding-left: 15px;
 }
 
-.handbok-sidebar nav:last-child {
-  border-bottom: none;
+.handbook-content {
+  padding-right: var(--gutter-size);
+  padding-top: 25px;
+}
+.handbook-content section {
+  margin-bottom: 60px;
+  margin-top: 60px;
 }
 
-.handbok-sidebar-more {
-  font-weight: 600;
-}
-.handbok-sidebar-more a {
-  color: #DA0F47;
-}
-
-.handbok-column-2 {
-  flex: 2;
-}
-
-@media (max-width: 1080px) {
-  .handbok-column-1 {
-    max-width: 180px;
-    min-width: 180px;
-  }
-}
-
-
-.handbok-menu li {
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-.handbok-menu li:last-child {
-  border-bottom: none;
-}
-
-.handbok ul {
+.handbook-content ul,
+.handbook-content ol {
   list-style: disc;
   margin-left: 25px;
+  margin-bottom: 15px;
 }
 
-.handbok article {
-  margin-top: 45px;
-}
 
-@media (max-width: 810px) {
-
-  .handbok-container {
-    display: block;
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  .handbok-column-1 {
+@media (max-width: 660px),
+(max-device-width: 850px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  .handbook-mainheader {
     max-width: 100%;
-    min-width: 100%;
-    padding-left: 30px;
-    padding-right: 30px;
-    margin-left: -30px;
   }
 
-  .handbok-sidebar-local-nav {
+  .handbook-mainheader p {
+    font-size: 14px;
+    line-height: 26px;
+  }
+
+  .handbook-wrapper {
+    display: block;
+  }
+  .handbook-sidebar {
     display: none;
-  }
-
-  .handbok-column-2 {
-    width: 100%;
   }
 }
