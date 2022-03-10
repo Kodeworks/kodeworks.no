@@ -17,6 +17,14 @@
   z-index: 100;
 }
 
+#menu a {
+  text-decoration: none;
+}
+
+#menu a:hover {
+  text-decoration: underline;
+}
+
 #menu-content {
   transition: left 0.3s ease-in-out, padding 0.3s ease-in-out;
 }

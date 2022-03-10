@@ -98,12 +98,12 @@ function Home({ handleDarkMode }: Prop) {
 
       <article id="work">
         <div>
-          <h2>We want to get to know you!</h2>
+          <h2>Join the team!</h2>
           <p>
-            Let's grab a cup of coffee, and feel free to have a look at our staff manual for a better grasp of what we offer.
+            We want to get to know you! Let's grab a cup of coffee, and feel free to have a look at our <a href="/staffmanual">Staff Manual</a> for a better grasp of what we offer.
           </p>
           <p>
-            <Button appearance={Button.appearances.LightNoPadding} href="/staffmanual">Staff Manual</Button>
+            You can reach us at <strong>jobb@kodeworks.no</strong>.
           </p>
         </div>
       </article>

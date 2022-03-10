@@ -22,12 +22,11 @@ body {
 
 a {
   color: #666;
-  text-decoration: none;
 }
 
 a:hover {
   color: #000;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 p {
@@ -50,7 +49,7 @@ h1 {
 h2 {
   font-size: 64px;
   line-height: 72px;
-  margin-bottom: 4px;
+  margin-bottom: 10px;
   font-family: "Natural Grotesk Bold";
 }
 
