@@ -120,13 +120,13 @@
  */
 
 #menu h4 {
-  color: var(--color-grey);
+  color: #888;
   font-size: 22px;
   margin-bottom: 12px;
 }
 
 #menu-footer h5 {
-  color: var(--color-grey);
+  color: #888;
   font-size: 14px;
   line-height: 1.1;
 }
