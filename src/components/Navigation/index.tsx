@@ -57,7 +57,7 @@ function Navigation({ isOpened, toggleNavigationOpened }: Prop) {
           <p>Grønnegata 10, 0350 Oslo</p>
 
           <h5>Trondheim</h5>
-          <p>Fjordgata 30, 7050 Trondheim</p>
+          <p>Fjordgata 30, 7010 Trondheim</p>
         </footer>
       </div>
     </menu>
