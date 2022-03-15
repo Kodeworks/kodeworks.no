@@ -123,7 +123,7 @@ export const projects: ProjectObjectType = {
     name: 'Obos',
     urlName: 'Obos',
     image: '/assets/projects/obos.jpg',
-    description: '',
+    description: 'OBOS plays a big role in the Norwegian housing and property market, and offers customers - among other services - an easier path to the housing market through partial housing ownership. OBOS is also behind Nabohjelp, an app that makes it easier to ask your neighbors for assistance. Kodeworks assists in both maintenance and development of the app, which is written in native iOS and Android.',
   },
   Remarkable: {
     name: 'Remarkable',
