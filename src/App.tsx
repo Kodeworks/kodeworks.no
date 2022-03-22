@@ -29,6 +29,8 @@ import Sunlitsea from './pages/input/sunlitsea';
 import Thales from './pages/input/thalesnorway';
 import Vaskehjelp from './pages/input/vaskehjelp';
 
+import PrivacyPolicy from './pages/Legal/Privacy';
+
 import xmarkIcon from './assets/icons/xmark.svg';
 
 import './styles/kw.css';
@@ -83,6 +85,14 @@ function App() {
     );
   }
 
+  function LegalRoutes() {
+    return (
+      <Routes>
+        <Route path="privacy" element={<PrivacyPolicy />} />
+      </Routes>
+    );
+  }
+
   return (
     <div className="App">
       <Router>
@@ -98,6 +108,7 @@ function App() {
           <Route path="people" element={<People handleDarkMode={handleDarkMode} />} />
           <Route path="projects" element={<Projects handleDarkMode={handleDarkMode} />} />
           <Route path="input/*" element={<InputRoutes />} />
+          <Route path="legal/*" element={<LegalRoutes />} />
         </Routes>
 
         <Navigation isOpened={isNavigationOpen} toggleNavigationOpened={handleMenuButtonClick} />

@@ -102,8 +102,12 @@
 #menu-footer {
   position: absolute;
   bottom: 25px;
+  left: 25px;
+  right: 25px;
+
   font-size: 14px;
   line-height: 28px;
+
 }
 
 #menu-footer p {
@@ -122,6 +126,27 @@
 .main-menu__closeButton img {
   width: 44px;
   height: 44px;
+}
+
+
+
+
+
+.menu-list {
+  list-style-type: none;
+  margin-left: 0;
+}
+
+
+.menu-list-booring {
+  border-top: 1px solid #ddd;
+  font-size: 12px;
+  margin-top: 25px;
+  width: 100%;
+}
+
+.menu-list-booring li {
+  display: inline-block;
 }
 
 /* FIXME (TRI): extract this code #somedaymaybe
@@ -143,6 +168,11 @@
 (max-device-width: 850px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
   #menu-content {
     display: none;
+  }
+
+  #menu-footer {
+    left: 0;
+    right: 0;
   }
 
   .menu--opened #menu-main {

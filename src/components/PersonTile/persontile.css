@@ -66,6 +66,11 @@
   color: #fff;
 }
 
+.person-projects {
+  list-style-type: none;
+  margin-left: 0;
+}
+
 .person-projects li:not(:last-child) {
   margin-right: 4px;
 }
