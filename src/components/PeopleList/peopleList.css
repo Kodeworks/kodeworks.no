@@ -1,6 +1,8 @@
 .people-list {
   column-count: 3;
   column-gap: 30px;
+  list-style-type: none;
+  margin-left: 0;
 }
 
 .people-list > li {
