@@ -18,7 +18,7 @@ function Projects({ handleDarkMode }: Prop) {
   return (
     <div id="page-projects" className="theme-dark">
       <header>
-        <h1>Our Projects</h1>
+        <h1 className="section-header-headline">Our Projects</h1>
 
         <p>By adopting our value oriented approach we have carried out projects with and for clients of varying size, and across a wide spectrum of domains. Below you can find the types of solutions we have developed for our customers.</p>
       </header>

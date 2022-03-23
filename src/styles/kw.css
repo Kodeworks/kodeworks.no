@@ -6,6 +6,7 @@
   --gutter-size-mobile: 20px;
 
   --page-max-width: 1400px;
+  --page-max-width-narrow: 1100px;
 
   --spacer-large: 120px;
   --spacer-medium: 60px;
@@ -15,13 +16,14 @@
 }
 
 body {
-  font-size: 17px;
-  line-height: 32px;
   font-family: arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.625;
 }
 
 a {
   color: #666;
+  text-decoration: underline;
 }
 
 a:hover {
@@ -40,36 +42,39 @@ strong {
 
 /* Typography
 ------------------------------------------------------------------------------*/
-h1 {
-  font-size: 42px;
-  margin-bottom: 4px;
-  line-height: 56px;
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Natural Grotesk Bold", arial, sans-serif;
+  font-weight: 600;
+  line-height: 1.1;
+  margin: 0 0 5px 0;
 }
 
-h2 {
-  font-size: 64px;
-  line-height: 72px;
-  margin-bottom: 10px;
-  font-family: "Natural Grotesk Bold";
+h1 { font-size: 42px; }
+h2 { font-size: 40px; }
+h3 { font-size: 28px; }
+h4 { font-size: 18px; }
+h5 { font-size: 14px;}
+
+.section-header-headline {
+  font-size: 68px;
 }
 
-h3 {
-  font-size: 28px;
+@media (max-width: 660px),
+(max-device-width: 850px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  h1 { font-size: 38px; }
+  h2 { font-size: 32px; }
+  h3 { font-size: 20px; }
+  h4 { font-size: 16px; }
+  h5 { font-size: 14px;}
+
+  .section-header-headline  {
+    font-size: 42px;
+  }
 }
 
-h4 {
-  font-size: 18px;
-  line-height: 24px;
-  margin-bottom: 4px;
-}
 
-ul, ol {
-  list-style-type: disc;
-  margin-left: 30px;
-}
-
-/* Stuff */
-
+/* Section
+------------------------------------------------------------------------------*/
 .section {
   display: block;
 }
@@ -79,12 +84,22 @@ ul, ol {
   margin-top: 35px;
   margin-bottom: 35px;
 }
+
 .section-text-center {
   text-align: center;
 }
-.section-content {
 
+.section-content {
+  width: 100%;
+  max-width: var(--page-max-width);
+  margin-left: auto;
+  margin-right: auto;
 }
+
+.section-content.section-content-narrow {
+  max-width: var(--page-max-width-narrow);
+}
+
 
 @media (max-width: 660px),
 (max-device-width: 850px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
@@ -94,8 +109,20 @@ ul, ol {
 }
 
 
+/* List
+------------------------------------------------------------------------------*/
+ul, ol {
+  list-style-type: disc;
+  margin-left: 30px;
+}
+
+.list-plain {
+  list-style-type: none;
+  margin-left: 0;
+}
+
 .list-alphabet {
-  list-style: lower-alpha;
+  list-style-type: lower-alpha;
 }
 
 
@@ -125,6 +152,9 @@ ul, ol {
   color: #fff;
 }
 
+
+/* Utilities
+------------------------------------------------------------------------------*/
 .no-scroll {
   height: 100vh;
   overflow-y: scroll;

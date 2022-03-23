@@ -128,16 +128,6 @@
   height: 44px;
 }
 
-
-
-
-
-.menu-list {
-  list-style-type: none;
-  margin-left: 0;
-}
-
-
 .menu-list-booring {
   border-top: 1px solid #ddd;
   font-size: 12px;
@@ -149,19 +139,18 @@
   display: inline-block;
 }
 
-/* FIXME (TRI): extract this code #somedaymaybe
- */
 
-#menu h4 {
+/* Menu Headings
+------------------------------------------------------------------------------*/
+
+#menu h4,
+#menu h5 {
   color: #888;
-  font-size: 22px;
-  margin-bottom: 12px;
 }
 
-#menu-footer h5 {
-  color: #888;
-  font-size: 14px;
-  line-height: 1.1;
+#menu h4 {
+  font-size: 22px;
+  margin-bottom: 12px;
 }
 
 @media (max-width: 660px),

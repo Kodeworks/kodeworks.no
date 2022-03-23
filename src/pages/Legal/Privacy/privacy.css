@@ -10,19 +10,8 @@
   width: 100%;
 }
 
-.privacy-list {
-  margin-left: 0;
-  list-style-type: none;
-}
-
 .privacy-list > li {
   margin-bottom: 35px;
-}
-
-.privacy h1,
-.privacy h2,
-.privacy h3 {
-  line-height: 1.625;
 }
 
 .privacy h1 {

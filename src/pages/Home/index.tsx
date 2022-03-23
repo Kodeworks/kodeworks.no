@@ -54,12 +54,12 @@ function Home({ handleDarkMode }: Prop) {
 
       <article id="about">
         <div>
-          <h2>Who?</h2>
+          <h2 className="section-header-headline">Who?</h2>
           <p>
             We are a pack of technologists who believe in creating value through receptiveness, expertise and dedication. We commit ourselves to delivering good solutions and value in collaboration with our clients, and strive each day to create an invigorating and giving workplace.
           </p>
         </div>
-        <span id="about-imageContainer">
+        <span id="about-image-container">
           <img src={ImageAbout} alt="" />
         </span>
       </article>
@@ -67,7 +67,7 @@ function Home({ handleDarkMode }: Prop) {
       <article id="people">
         <div>
           <header className="people-header">
-            <h2>Our Developers</h2>
+            <h2 className="section-header-headline">Our Developers</h2>
             <p>
               Today Kodeworks consists of {people.length} accomplished developers, who endeavor to develop solutions realizing our clients vision.
             </p>
@@ -88,7 +88,7 @@ function Home({ handleDarkMode }: Prop) {
         />
 
         <div>
-          <h2>{highlightedProject && highlightedProject.name}</h2>
+          <h2 className="section-header-headline">{highlightedProject && highlightedProject.name}</h2>
           <p>
             {highlightedProject && highlightedProject.description}
           </p>
@@ -98,7 +98,7 @@ function Home({ handleDarkMode }: Prop) {
 
       <article id="work">
         <div>
-          <h2>Join the team!</h2>
+          <h2 className="section-header-headline">Join the team!</h2>
           <p>
             We want to get to know you! Let's grab a cup of coffee, and feel free to have a look at our <a href="/staffmanual">Staff Manual</a> for a better grasp of what we offer.
           </p>

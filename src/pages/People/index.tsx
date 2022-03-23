@@ -25,7 +25,7 @@ function People({ handleDarkMode }: Prop) {
   return (
     <div id="page-people">
       <div>
-        <h1>People</h1>
+        <h1 className="section-header-headline">People</h1>
 
         <p>Today Kodeworks consists of {people.length} accomplished developers, who endeavor to develop solutions realizing our clients vision.</p>
 
