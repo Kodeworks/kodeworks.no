@@ -15,7 +15,7 @@ function Privacy() {
         </div>
       </section>
       <section className={`section`}>
-        <ul className="privacy-list">
+        <ul className="list-plain privacy-list">
           <li>
             <h2>Ansvarlig for behandling av personopplysninger</h2>
             <p>Kodeworks AS er behandlingsansvarlig, dvs. bestemmer hvorfor og hvordan personopplysningene som omtalt i denne personvernerklæringen skal behandles.</p>

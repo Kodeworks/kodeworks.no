@@ -94,7 +94,7 @@ function App() {
   }
 
   return (
-    <div className="App">
+    <>
       <Router>
         <button onClick={handleMenuButtonClick} id="menu-button" className={darkMode ? 'dark-mode' : ''}>
           {isNavigationOpen
@@ -113,7 +113,7 @@ function App() {
 
         <Navigation isOpened={isNavigationOpen} toggleNavigationOpened={handleMenuButtonClick} />
       </Router>
-    </div>
+    </>
   );
 }
 

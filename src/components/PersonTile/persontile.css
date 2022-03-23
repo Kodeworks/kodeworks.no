@@ -1,9 +1,7 @@
-.person {}
-
 .person-image {
+  display: block;
   height: unset;
   width: 100%;
-  display: block;
 }
 
 /* Person Overlay
@@ -19,8 +17,8 @@
 }
 
 .person:not(:hover) .person-overlay {
-  visibility: hidden;
   opacity: 0;
+  visibility: hidden;
 }
 
 .person:hover .person-overlay:hover {
@@ -64,11 +62,6 @@
 
 .person-information a:hover {
   color: #fff;
-}
-
-.person-projects {
-  list-style-type: none;
-  margin-left: 0;
 }
 
 .person-projects li:not(:last-child) {

@@ -33,7 +33,7 @@ function Navigation({ isOpened, toggleNavigationOpened }: Prop) {
       <div id="menu-main">
         <nav onClick={toggleNavigationOpened}>
           <h4><a href="/">KodeWorks</a></h4>
-          <ul className="menu-list">
+          <ul className="list-plain">
             <li>
               <a href="/people">Our People</a>
             </li>
@@ -59,7 +59,7 @@ function Navigation({ isOpened, toggleNavigationOpened }: Prop) {
           <h5>Trondheim</h5>
           <p>Fjordgata 30, 7010 Trondheim</p>
 
-          <ul className="menu-list menu-list-booring">
+          <ul className="list-plain menu-list-booring">
             <li><a href="/legal/privacy">Privacy Policy</a></li>
           </ul>
         </footer>

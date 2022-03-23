@@ -38,7 +38,7 @@ function PersonTile({ person }: Prop) {
         </div>
       </header>
 
-      <ul className="person-projects">
+      <ul className="list-plain person-projects">
         {person.projects.map((project) => (
           <li key={project.name}>
             <Button href={`/input/${project.urlName.toLowerCase().replace(/ /i, '-')}`} disabled={!project.enabled}>{ project.name }</Button>
