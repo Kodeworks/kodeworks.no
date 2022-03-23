@@ -1,0 +1,16 @@
+.section-legal {
+  box-sizing: border-box;
+  margin: 80px auto 50px auto;
+  padding-left: var(--gutter-size);
+  padding-right: var(--gutter-size);
+  max-width: 650px;
+  widht: 100%;
+}
+
+
+@media (max-width: 660px) {
+  .section-legal {
+    padding-left: var(--gutter-size);
+    padding-right: var(--gutter-size);
+  }
+}
