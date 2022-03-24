@@ -32,7 +32,7 @@ function Navigation({ isOpened, toggleNavigationOpened }: Prop) {
       </div>
 
       <div className="menu-content">
-        <nav className="menu-navigation" onClick={toggleNavigationOpened}>
+        <nav className="menu-navigation">
           <h4><a href="/">KodeWorks</a></h4>
           <ul className="list-plain">
             <li>
