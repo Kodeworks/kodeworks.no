@@ -83,20 +83,18 @@
 .menu-content {
   background-color: #efefef;
   box-sizing: border-box;
-  padding-top: 55px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-y: scroll;
   padding-bottom: 15px;
+  padding-top: 55px;
   width: 0;
 
   position: absolute;
   bottom: 0;
   right: 0;
   top: 0;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-
-  overflow-y: scroll;
 }
 
 .menu--opened .menu-content {
@@ -150,7 +148,7 @@ ul.menu-list-booring li:not(:first-child)::before {
   margin-bottom: 12px;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 660px) {
   .menu-hero {
     display: none;
   }
