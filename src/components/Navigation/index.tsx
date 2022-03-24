@@ -26,12 +26,13 @@ function Navigation({ isOpened, toggleNavigationOpened }: Prop) {
 
   return (
     <menu id="menu" className={isOpened ? 'menu--opened' : ''}>
-      <div id="menu-content">
-        <img className="menu-logo" src="/assets/logo-white.svg" width="100" alt="" />
-        <div className="menu-dark"></div>
+      <div className="menu-hero">
+        <img className="menu-hero-logo" src="/assets/logo-white.svg" width="100" alt="" />
+        <div className="menu-hero-overlay"></div>
       </div>
-      <div id="menu-main">
-        <nav onClick={toggleNavigationOpened}>
+
+      <div className="menu-content">
+        <nav className="menu-navigation" onClick={toggleNavigationOpened}>
           <h4><a href="/">KodeWorks</a></h4>
           <ul className="list-plain">
             <li>
@@ -46,7 +47,7 @@ function Navigation({ isOpened, toggleNavigationOpened }: Prop) {
           </ul>
         </nav>
 
-        <footer id="menu-footer">
+        <footer className="menu-footer">
           <h4>Get in Touch</h4>
           <p>
             post@kodeworks.no<br />

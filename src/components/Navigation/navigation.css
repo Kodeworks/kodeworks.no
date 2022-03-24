@@ -1,10 +1,10 @@
 #menu:not(.menu--opened) {
-  z-index: -1;
   visibility: hidden;
+  z-index: -1;
 }
 
 #menu {
-  height: 100vh;
+  height: 100;
   overflow: hidden;
   transition: visibility .2s ease-in-out .1s, z-index .2s ease-in-out .1s;
   width: 100vw;
@@ -25,11 +25,13 @@
   text-decoration: underline;
 }
 
-#menu-content {
+/* Menu Hero
+------------------------------------------------------------------------------*/
+.menu-hero {
   transition: left 0.3s ease-in-out, padding 0.3s ease-in-out;
 }
 
-#menu-content {
+.menu-hero {
   position: absolute;
 
   box-sizing: border-box;
@@ -48,11 +50,11 @@
   background-size: cover;
 }
 
-.menu--opened #menu-content {
+.menu--opened .menu-hero {
   left: 0;
 }
 
-.menu-dark {
+.menu-hero-overlay {
   background-color: #000;
   position: absolute;
   top: 0;
@@ -62,7 +64,7 @@
   opacity: 0.8;
 }
 
-.menu-logo {
+.menu-hero-logo {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -71,61 +73,50 @@
   width: 30%;
 }
 
-/* Menu Footer
+/* Menu content
 ------------------------------------------------------------------------------*/
-#menu-main,
-.menu--opened #menu-main {
+.menu-content,
+.menu--opened .menu-content {
   transition: width 0.3s ease-in-out, padding 0.3s ease-in-out;
 }
 
-#menu-main {
+.menu-content {
   background-color: #efefef;
   box-sizing: border-box;
-  height: 100%;
-  padding-top: 85px;
+  padding-top: 55px;
+  padding-bottom: 15px;
   width: 0;
 
   position: absolute;
+  bottom: 0;
   right: 0;
+  top: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  overflow-y: scroll;
 }
 
-.menu--opened #menu-main {
+.menu--opened .menu-content {
   padding-left: var(--gutter-size);
   padding-right: var(--gutter-size);
   width: 380px;
 }
 
-#menu-main a {
+.menu-content a {
   line-height: 32px;
 }
 
-#menu-footer {
-  position: absolute;
-  bottom: 25px;
-  left: 25px;
-  right: 25px;
+.menu-navigation {
+  margin-bottom: 35px;
+}
 
+/* Menu Footer
+------------------------------------------------------------------------------*/
+.menu-footer {
   font-size: 14px;
-  line-height: 28px;
-
-}
-
-#menu-footer p {
-  margin-bottom: 15px;
-}
-
-.main-menu__closeButton {
-  position: absolute;
-  top: 25px;
-  right: 25px;
-  cursor: pointer;
-  background: none;
-  border: none;
-}
-
-.main-menu__closeButton img {
-  width: 44px;
-  height: 44px;
 }
 
 .menu-list-booring {
@@ -135,8 +126,14 @@
   width: 100%;
 }
 
-.menu-list-booring li {
-  display: inline-block;
+ul.menu-list-booring li:not(:first-child) {
+  padding-left: 10px;
+}
+
+ul.menu-list-booring li:not(:first-child)::before {
+  color: #888;
+  content: "• ";
+  padding-right: 6px;
 }
 
 
@@ -153,28 +150,13 @@
   margin-bottom: 12px;
 }
 
-@media (max-width: 660px),
-(max-device-width: 850px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
-  #menu-content {
+@media (max-width: 750px) {
+  .menu-hero {
     display: none;
   }
 
-  #menu-footer {
-    left: 0;
-    right: 0;
-  }
-
-  .menu--opened #menu-main {
-    display: flex;
-    flex-direction: column;
+  .menu--opened .menu-content {
     overflow-y: scroll;
     width: 100%;
-  }
-
-  .menu--opened #menu-footer {
-    position: relative;
-    bottom: 0;
-    padding-top: 65px;
-    padding-bottom: 85px;
   }
 }
