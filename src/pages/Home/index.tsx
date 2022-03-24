@@ -36,7 +36,7 @@ function Home({ handleDarkMode }: Prop) {
 
   useEffect(() => {
     function darkModeListener() {
-      darkMode(handleDarkMode, ['projects', 'about-imageContainer']);
+      darkMode(handleDarkMode, ['projects', 'about-image-container']);
     }
 
     document.addEventListener('scroll', darkModeListener);
