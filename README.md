@@ -26,3 +26,7 @@ npm run start
 ```
 
 Server starts at `http://localhost:3000`.
+
+### Image attributions
+
+Some images used across the site has been found at `https://unsplash.com/`.
