@@ -81,7 +81,7 @@ const people: Array<Person> = [
     name: 'Peter Ringset',
     email: 'peter@kodeworks.no',
     projects: [projects.Skandiaenergi, projects.Vaskehjelp, projects.Nomono],
-    image: '/assets/people/peter.jpg',
+    image: '/assets/people/peter.png',
     urls: [
       {
         name: 'github',
