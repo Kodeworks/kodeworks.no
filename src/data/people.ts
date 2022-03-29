@@ -2,7 +2,11 @@ import { Person } from '../types.d';
 import { projects } from './projects';
 
 /* Highlighted stories */
-const stories = [projects.Sunlitsea, projects.Vaskehjelp];
+const stories = [
+  projects.Inatur,
+  projects.Sunlitsea,
+  projects.Vaskehjelp
+];
 
 const people: Array<Person> = [
   {
