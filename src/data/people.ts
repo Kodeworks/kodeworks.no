@@ -121,7 +121,7 @@ const people: Array<Person> = [
     name: 'Erik Kjosavik',
     email: 'erik@kodeworks.no',
     projects: [projects.Inatur, projects.Gintel, projects.Bnentreprenor],
-    image: '',
+    image: '/assets/people/erik.jpg',
   },
   {
     name: 'Vegard Stengrundet',
@@ -139,7 +139,7 @@ const people: Array<Person> = [
     name: 'Nina Aalberg Johannessen',
     email: 'nina@kodeworks.no',
     projects: [projects.Administration],
-    image: '',
+    image: '/assets/people/nina.jpg',
   },
   {
     name: 'Ørjan Bostad Vesterlid',
@@ -217,13 +217,13 @@ const people: Array<Person> = [
     name: 'Pål Nødseth',
     email: 'pal.nodseth@kodeworks.no',
     projects: [projects.Equinor],
-    image: '',
+    image: '/assets/people/pal.jpg',
   },
   {
     name: 'Lasse Holanger',
     email: 'lasse@kodeworks.no',
     projects: [projects.Administration],
-    image: '',
+    image: '/assets/people/lasse.jpg',
   },
 ];
 

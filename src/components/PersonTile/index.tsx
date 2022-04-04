@@ -11,10 +11,6 @@ interface Prop {
 function PersonTile({ person }: Prop) {
 
   function getImage(person: Person) {
-    if (person.name === 'Nina Aalberg Johannessen') {
-      return '/assets/people/placeholder-1.jpg'
-    }
-
     return person.image || '/assets/people/placeholder-2.jpg';
   }
   return (
