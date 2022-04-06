@@ -97,12 +97,14 @@ export const projects: ProjectObjectType = {
     description:
       "BN Entreprenør AS is a machine contractor company that was established in 1973. With a modern machine park, they are able to carry out assignments in a cost-effective way.",
   },
-  Politiet: {
-    name: "The Police",
-    urlName: "Politiet",
-    image: "/assets/projects/politiet.jpg",
+  Lawenforcementagency: {
+    name: "Law Enforcement Agency",
+    urlName: "Lawenforcementagency",
+    image: "/assets/projects/lawenforcementagency.jpg",
     description:
-      "The Police depend on reliable information systems that support daily operation in an agile and efficient manner. Kodeworks has been part of the development of two instrumental systems for the police: Mobile and Reverse Violence Alarm and Police Operative field services.",
+      "A law enforcement agency should prevent crime and maintain our safety as citizens. Kodeworks has been part of the development of two instrumental systems for a prominent Nordic law enforcement agency: System for Safety Alarm and Electronic Control; and System for Operative Law Enforcement.",
+    highlighted: true,
+    enabled: true,
   },
   Avinor: {
     name: "Avinor",

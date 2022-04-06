@@ -22,7 +22,7 @@ import Inatur from './pages/input/inatur';
 import KLP from './pages/input/klp';
 import Kongsberg from './pages/input/kongsberg';
 import Lilbit from './pages/input/lilbit';
-import Politiet from './pages/input/politiet';
+import Lawenforcementagency from './pages/input/lawenforcementagency';
 import Skandiaenergi from './pages/input/skandiaenergi';
 import Statkraft from './pages/input/statkraft';
 import Sunlitsea from './pages/input/sunlitsea';
@@ -75,7 +75,7 @@ function App() {
         <Route path="klp" element={<KLP handleDarkMode={handleDarkMode} />} />
         <Route path="kongsberg" element={<Kongsberg handleDarkMode={handleDarkMode} />} />
         <Route path="lilbit" element={<Lilbit handleDarkMode={handleDarkMode} />} />
-        <Route path="politiet" element={<Politiet handleDarkMode={handleDarkMode} />} />
+        <Route path="lawenforcementagency" element={<Lawenforcementagency handleDarkMode={handleDarkMode} />} />
         <Route path="skandiaenergi" element={<Skandiaenergi handleDarkMode={handleDarkMode} />} />
         <Route path="statkraft" element={<Statkraft handleDarkMode={handleDarkMode} />} />
         <Route path="sunlitsea" element={<Sunlitsea handleDarkMode={handleDarkMode} />} />
