@@ -225,6 +225,18 @@ const people: Array<Person> = [
     projects: [projects.Administration],
     image: '/assets/people/lasse.jpg',
   },
+  {
+    name: 'Jan- Marius Vatle',
+    email: 'janmarius@kodeworks.no',
+    projects: [projects.Sunlitsea],
+    image: '',
+  },
+  {
+    name: 'Ole Marius Forbord',
+    email: 'olemarius@kodeworks.no',
+    projects: [projects.Sunlitsea],
+    image: '',
+  },
 ];
 
 function getPeople(): Array<Person> {
