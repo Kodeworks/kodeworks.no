@@ -106,7 +106,7 @@ function StaffManual() {
 
             <h3>Computer and Software</h3>
 
-            <p>We cover the computer and software you need to do your job. What you choose is up to you. Kodeworks\' laptop fleet now includes Dell XPS 15, MacBook Pro and Christian's gaming laptop. If at some point the computer is not good enough to do the work tasks as efficiently as possible, it's time for a new one.</p>
+            <p>We cover the computer and software you need to do your job. What you choose is up to you. Kodeworks' laptop fleet now includes Dell XPS 15, MacBook Pro and Christian's gaming laptop. If at some point the computer is not good enough to do the work tasks as efficiently as possible, it's time for a new one.</p>
 
             <p>If you need software to do your job, such as IDEA, you can buy this directly and register an expense in our accounting system.</p>
 
@@ -125,6 +125,20 @@ function StaffManual() {
             <p>Our occupational group is very exposed to stress-related injuries, which can be avoided by facilitating a good physical work environment. If you're working from a customers offices, and feel that – for example – a table, screen or chair is not good enough, we will make sure to improve this. It should not be necessary to let such things go at the expense of health.</p>
 
             <p>We also want to make arrangements for you to be physically active. In Trondheim, Kodeworks has a corporate agreement with 3T. Here, several Kodeworks employees play weekly squash. You do not need to use this if you want to train elsewhere. We cover a similar subscription with other providers as well. In Oslo, there is no separate company agreement, so there you just have to find a similar subscription and we will reimburse it.</p>
+
+            <h3>Sick days</h3>
+            <p>We have an extended sick day (self certification) system, that is more flexible than the normal 4x3 days system in Norway. Sick days can be taken individually, this is done to give the employees more flexibility.</p>
+            <ul>
+              <li>You have 12 single days you can use, they can be used one by one or consecutively. We use a 12 month sliding window when calculating sick days, this means that you should look 12 months back from todays date when calculating how many days you have left. The number of days used in a 12 month period should never exceed 12 days.</li>
+              <li>Report to you nearest manager as soon as possible when you use sick days. Also make sure that you (or someone else) notifies your client in a timely manner.</li>
+              <li>You can take the rest of the day off if you get sick during your working hours, this will not count as a sick day. This is an extra benefit that you get as a Kodeworks employee.</li>
+              <li>Sick note (doctor's certificate) is needed if you are away for more than 3 consecutive days. You can get this from your general practitioner, or any other medical professional that can issue sick notes.</li>
+              <li>Sick days used before a sick note is issued count as used sick days.</li>
+              <li>Sick days cannot be used if you're have with a partial sick note.</li>
+              <li>Staying home to take care of sick children counts as welfare leave, and does not affect your availale sick days.</li>
+              <li>We have a very good health insurance that covers many different forms of treatment. More information about what is covered can be found in the "Forsikring" folder on Google Drive.</li>
+              <li>Sick days are not the same as vacation days, they cannot be saved and carried over to the next year.</li>
+            </ul>
 
             <h3>Benefits</h3>
 
