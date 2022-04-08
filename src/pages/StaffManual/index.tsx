@@ -106,7 +106,7 @@ function StaffManual() {
 
             <h3>Computer and Software</h3>
 
-            <p>We cover the computer and software you need to do your job. What you choose is up to you. Kodeworks\' laptop fleet now includes Dell XPS 15, MacBook Pro and Christian's gaming laptop. If at some point the computer is not good enough to do the work tasks as efficiently as possible, it's time for a new one.</p>
+            <p>We cover the computer and software you need to do your job. What you choose is up to you. Kodeworks' laptop fleet now includes Dell XPS 15, MacBook Pro and Christian's gaming laptop. If at some point the computer is not good enough to do the work tasks as efficiently as possible, it's time for a new one.</p>
 
             <p>If you need software to do your job, such as IDEA, you can buy this directly and register an expense in our accounting system.</p>
 
