@@ -52,13 +52,16 @@
   padding-right: 15px;
 }
 
-
 .handbook-content h2 {
   margin-top: 55px;
 }
 
 .handbook-content h3 {
   margin-top: 45px;
+}
+
+.handbook-content h4 {
+  margin-top: 30px;
 }
 
 @media (max-width: 660px),

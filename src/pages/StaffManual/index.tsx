@@ -155,8 +155,9 @@ function StaffManual() {
               <li>Full pay during parental leave.</li>
             </ul>
 
-
-
+            <h4>Pay during sick leave</h4>
+            <p>The Norwegian welfare system (NAV) covers the salary of employees in Norway for sick leave periods lasting more than 16 days. NAV will however not cover salaries over 6G (roughly 640.000 NOK in 2022). To mitigate this, we have an insurance policy that covers the difference between 6G and your salary as long as you fill the requirement NAV has set for <a href="https://www.nav.no/en/home/benefits-and-services/Sickness-benefit-for-employees">sickness benefits</a> and the insurance's terms. The insurance's terms can be found by logging in to our insurance provider.</p>
+            
             <h3>Welfare Leave</h3>
             <p>To help make both planned and unforeseen events in everyday life a little easier to handle, Kodeworks provides the following welfare benefits in addition to what is required by law:</p>
 
@@ -256,9 +257,8 @@ function StaffManual() {
               <li>Follow up porting of telephone subscriptions.</li>
             </ul>
 
-            <p>
-              <strong>At start-up with sponsor</strong>
-            </p>
+            <h4>At start-up with sponsor</h4>
+
             <ul>
               <li>Update CV.</li>
               <li>Prepare for customer project.</li>
