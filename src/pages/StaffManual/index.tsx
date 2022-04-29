@@ -142,7 +142,7 @@ function StaffManual() {
 
             <h3>Benefits</h3>
 
-            <p>Kodeworks has several benefits so that you as an employee can have a flexible, safe, and predictable everyday life. Some benefits are entered into the timekeeping system, such as parental leave and care leave. Expenses should be registered in our accounting system and will be reimbursed on the next salary payment.<p>
+            <p>Kodeworks has several benefits so that you as an employee can have a flexible, safe, and predictable everyday life. Some benefits are entered into the timekeeping system, such as parental leave and care leave. Expenses should be registered in our accounting system and will be reimbursed on the next salary payment.</p>
 
             <p>Periodic expenses such as broadband and membership at the fitness center must be registered monthly. In the event of varying expenses, it is your responsibility as an employee not to exceed 12 times the maximum monthly amount for the relevant benefit in the current year.</p>
 
@@ -158,7 +158,7 @@ function StaffManual() {
 
 
             <h3>Welfare Leave</h3>
-            <p> To help make both planned and unforeseen events in everyday life a little easier to handle, Kodeworks provides the following welfare benefits in addition to what is required by law:</p>
+            <p>To help make both planned and unforeseen events in everyday life a little easier to handle, Kodeworks provides the following welfare benefits in addition to what is required by law:</p>
 
             <ul>
               <li>Examination by a doctor or dentist.</li>
