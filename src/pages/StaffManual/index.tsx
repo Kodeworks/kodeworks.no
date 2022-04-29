@@ -75,23 +75,23 @@ function StaffManual() {
           <article id="handbok-betingelser">
             <h2>Conditions</h2>
 
-            <p>We want all our employees to feel as good as possible at work by offering the necessary freedom, security and stability in everyday life. At the same time, it is also important to get the tools you need to be able to do your job in the best possible way.</p>
+            <p>We want all our employees to feel as good as possible at work by offering the necessary freedom, security, and stability in everyday life. At the same time, it is also important to get the tools you need to be able to do your job in the best possible way.</p>
 
             <h3>Salary</h3>
 
-            <p>At Kodeworks, we do not want the salary to be a factor you have to think about. At the same time, it is important to have a good salary in order to have the freedom and stability we want all our employees to have. Therefore, have no individual salary assessments. As an employee, you should not have to ask for what you deserve. It should come automatically. We have chosen a salary model that gives everyone equal pay mainly based on the number of years of experience. All Kodeworks employees have an overview of what the others earn. An overview of the current salary level and background figures for salary adjustment can be found in the "Lønn" folder on Google Drive.</p>
+            <p>At Kodeworks, we do not want the salary to be a factor you have to think about. At the same time, it is important to have a good salary to have the freedom and stability we want all our employees to have. Therefore, have no individual salary assessments. As an employee, you should not have to ask for what you deserve. It should come automatically. We have chosen a salary model that gives everyone equal pay mainly based on the number of years of experience. All Kodeworks employees have an overview of what the others earn. An overview of the current salary level and background figures for salary adjustment can be found in the "Lønn" folder on Google Drive.</p>
 
             <p>Salary is usually paid on the 22nd of each month, or the last business day before if the 22nd is not a business day.</p>
 
             <h3>Holiday Pay</h3>
 
-            <p>Holiday pay is paid in June. All 25 vacation days will be deducted this month. June usually does not have 25 working days, so the remaining vacation days are deducted correspondingly from the holiday pay. Employees who have started working during the current year will not have any accrued holiday pay, and will be deducted the remainder of the vacation day deduction in the following month (so that there will be a 25-day deduction in total). If you want to be paid the holiday pay at another time, this can be done by agreement with the accounting department. For practical reasons, it is a good idea to notify this in good time before you want payment.</p>
+            <p>Holiday pay is paid in June. All 25 vacation days will be deducted this month. June usually does not have 25 working days, so the remaining vacation days are deducted correspondingly from the holiday pay. Employees who have started working during the current year will not have any accrued holiday pay and will be deducted the remainder of the vacation day deduction in the following month (so that there will be a 25-day deduction in total). If you want to be paid the holiday pay at another time, this can be done by agreement with the accounting department. For practical reasons, it is a good idea to notify this in good time before you want payment.</p>
 
             <h3>Overtime and Overtime Allowance</h3>
 
-            <p>From time to time you may need to work a few extra hours a week. This mainly applies for hectic periods during a project a customer project. Beyond this, it is desirable to keep overtime work to a minimum. We believe that the employee's free time should be respected and that you would rather perform better the hours you are at work if you have had sufficient rest. Therefore, you decide completely if you want to work overtime.</p>
+            <p>From time to time you may need to work a few extra hours a week. This mainly applies to hectic periods during a project a customer project. Beyond this, it is desirable to keep overtime work to a minimum. We believe that the employee's free time should be respected and that you would rather perform better during the hours you are at work if you have had sufficient rest. Therefore, you decide completely if you want to work overtime.</p>
 
-            <p>The overtime pay can be calculated by dividing the annual salary by 1950 hours, and then adding 40%.</p>
+            <p>The overtime pay can be calculated by dividing the annual salary by 1950 hours and then adding 40%.</p>
 
             <p>Overtime work must always be clarified with the personnel manager first unless otherwise agreed.</p>
 
@@ -102,47 +102,47 @@ function StaffManual() {
 
             <p>In addition to regular business travel and occupational injury insurance, we have travel insurance that covers leisure travel for you and your family. We also have treatment insurance that ensures that you get fast and good treatment if something should happen. This also includes free access to doctor's appointments on mobile.</p>
 
-            <p>We use Gjensidige for both pension and insurance, and each employee can log in to Gjensidige and see their profile and details about this. A short guide on how to get an overview of your own insurance in Gjensidige can be found in the "Forsikring" folder on Google Drive.</p>
+            <p>We use Gjensidige for both pension and insurance, and each employee can log in to Gjensidige and see their profile and details about this. A short guide on how to get an overview of your insurance in Gjensidige can be found in the "Forsikring" folder on Google Drive.</p>
 
             <h3>Computer and Software</h3>
 
-            <p>We cover the computer and software you need to do your job. What you choose is up to you. Kodeworks' laptop fleet now includes Dell XPS 15, MacBook Pro and Christian's gaming laptop. If at some point the computer is not good enough to do the work tasks as efficiently as possible, it's time for a new one.</p>
+            <p>We cover the computer and software you need to do your job. What you choose is up to you. Kodeworks' laptop fleet now includes Dell XPS 15, MacBook Pro, and Christian's gaming laptop. If at some point the computer is not good enough to do the work tasks as efficiently as possible, it's time for a new one.</p>
 
             <p>If you need software to do your job, such as IDEA, you can buy this directly and register an expense in our accounting system.</p>
 
             <h3>Literature and Other Learning Materials</h3>
 
-            <p>There are countless sources to help quench the thirst for knowledge. If you want to take advantage of e-learning offers such as Pluralsight, Coursera or similar, just sign up for this. You are also free to buy books in all shapes and forms. After all, it is knowledge we live by! Register the expense in our accounting system, so that you can be reimbursed.</p>
+            <p>There are countless sources to help quench the thirst for knowledge. If you want to take advantage of e-learning offers such as Pluralsight, Coursera, or similar, just sign up for this. You are also free to buy books in all shapes and forms. After all, we are a knowledge-based company, this is how we make our living! Register the expense in our accounting system, so that you can be reimbursed.</p>
 
             <h3>Courses and Conferences</h3>
 
             <p>Kodeworks encourages you to attend courses and conferences. In 2018, we all went to JavaZone, but it is to be expected that the employees' interests and wishes for professional replenishment can best be satisfied in other places as well. If you want to go to courses or conferences several times a year, or to go to places that entail greater costs than, for example, JavaZone, this requires the approval of the human resources manager.</p>
 
-            <p>If you contribute to giving lectures, courses or the like, Kodeworks will cover this within reasonable limits.</p>
+            <p>If you contribute to giving lectures, courses, or the like, Kodeworks will cover this within reasonable limits.</p>
 
             <h3>Health</h3>
 
-            <p>Our occupational group is very exposed to stress-related injuries, which can be avoided by facilitating a good physical work environment. If you're working from a customers offices, and feel that – for example – a table, screen or chair is not good enough, we will make sure to improve this. It should not be necessary to let such things go at the expense of health.</p>
+            <p>Our occupational group is very exposed to stress-related injuries, which can be avoided by facilitating a good physical work environment. If you're working from a customer's office, and feel that – for example – a table, screen, or chair is not good enough, we will make sure to improve this. It should not be necessary to let such things go at the expense of health.</p>
 
             <p>We also want to make arrangements for you to be physically active. In Trondheim, Kodeworks has a corporate agreement with 3T. Here, several Kodeworks employees play weekly squash. You do not need to use this if you want to train elsewhere. We cover a similar subscription with other providers as well. In Oslo, there is no separate company agreement, so there you just have to find a similar subscription and we will reimburse it.</p>
 
             <h3>Sick days</h3>
-            <p>We have an extended sick day (self certification) system, that is more flexible than the normal 4x3 days system in Norway. Sick days can be taken individually, this is done to give the employees more flexibility.</p>
+            <p>We have an extended sick day (self-certification) system that is more flexible than the normal system in Norway (4x3 days every 12 months). Sick days can be taken individually, this is done to give the employees more flexibility.</p>
             <ul>
-              <li>You have 12 single days you can use, they can be used one by one or consecutively. We use a 12 month sliding window when calculating sick days, this means that you should look 12 months back from todays date when calculating how many days you have left. The number of days used in a 12 month period should never exceed 12 days.</li>
-              <li>Report to you nearest manager as soon as possible when you use sick days. Also make sure that you (or someone else) notifies your client in a timely manner.</li>
+              <li>You have 12 single days you can use, they can be used one by one or consecutively. We use a 12-month sliding window when calculating sick days, this means that you should look 12 months back from today's date when calculating how many days you have left. The number of days used in a 12 month period should never exceed 12 days.</li>
+              <li>Report to your nearest manager as soon as possible when you use sick days. Also, make sure that you (or someone else) notify your customer in a timely manner.</li>
               <li>You can take the rest of the day off if you get sick during your working hours, this will not count as a sick day. This is an extra benefit that you get as a Kodeworks employee.</li>
               <li>Sick note (doctor's certificate) is needed if you are away for more than 3 consecutive days. You can get this from your general practitioner, or any other medical professional that can issue sick notes.</li>
               <li>Sick days used before a sick note is issued count as used sick days.</li>
-              <li>Sick days cannot be used if you're have with a partial sick note.</li>
-              <li>Staying home to take care of sick children counts as welfare leave, and does not affect your availale sick days.</li>
-              <li>We have a very good health insurance that covers many different forms of treatment. More information about what is covered can be found in the "Forsikring" folder on Google Drive.</li>
+              <li>Sick days cannot be used if you have a partial sick note.</li>
+              <li>Staying home to take care of sick children counts as welfare leave, and does not affect your available sick days.</li>
+              <li>We have very good health insurance that covers many different forms of treatment. More information about what is covered can be found in the "Forsikring" folder on Google Drive.</li>
               <li>Sick days are not the same as vacation days, they cannot be saved and carried over to the next year.</li>
             </ul>
 
             <h3>Benefits</h3>
 
-            <p>In order for you as an employee to have a flexible, safe and predictable everyday life, Kodeworks has a number of benefits. With the exception of benefits that are to be entered in the time registration system, such as parental leave and care leave, expenses for everything else are registered as employee expenses and will be reimbursed on the next salary payment.</p>
+            <p>Kodeworks has several benefits so that you as an employee can have a flexible, safe, and predictable everyday life. Some benefits are entered into the timekeeping system, such as parental leave and care leave. Expenses should be registered in our accounting system and will be reimbursed on the next salary payment.<p>
 
             <p>Periodic expenses such as broadband and membership at the fitness center must be registered monthly. In the event of varying expenses, it is your responsibility as an employee not to exceed 12 times the maximum monthly amount for the relevant benefit in the current year.</p>
 
@@ -158,7 +158,7 @@ function StaffManual() {
 
 
             <h3>Welfare Leave</h3>
-            <p>In order to help make both planned and unforeseen events in everyday life a little easier to handle, Kodeworks provides the following welfare benefits in addition to what is required by law:</p>
+            <p> To help make both planned and unforeseen events in everyday life a little easier to handle, Kodeworks provides the following welfare benefits in addition to what is required by law:</p>
 
             <ul>
               <li>Examination by a doctor or dentist.</li>
@@ -177,11 +177,11 @@ function StaffManual() {
           <article id="handbok-timeforing">
             <h2>Timekeeping</h2>
 
-            <p>Timekeeping is unfortunately required in most consulting companies, and Kodeworks is no exception. Fortunately, like most other consulting companies, we have created our own timekeeping tool to make the process easier. In the timekeeping tool, you enter work-related time, i.e. billable time on various projects, illness, vacation, leave, etc. The hours are delivered by the last working day of the month.</p>
+            <p>Timekeeping is unfortunately required in most consulting companies, and Kodeworks is no exception. Fortunately, like most other consulting companies, we have created our own timekeeping system to make the process easier. You should enter work-related time, i.e. billable time on various projects, illness, vacation, leave, etc. The hours should be delivered by the last working day of the month.</p>
 
-            <p>A working day in the timekeeping tool is 8 hours. This means that holidays, welfare leave and internal initiatives must be taken with 8 hours per day. For customer projects, it will usually be 7.5 hours, unless the contract indicates that we invoice the lunch break as well. You will be informed of this before the project starts.</p>
+            <p>A working day in the timekeeping tool is 8 hours. This means that holidays, welfare leave, and internal initiatives must be taken with 8 hours per day. For customer projects, it will usually be 7.5 hours, unless the contract indicates that we invoice the lunch break as well. You will be informed of this before the project starts.</p>
 
-            <p>You may also have to keep hours in the customer's own system. There will probably be other rules for when and how this is to be done.</p>
+            <p>You may also have to keep hours in the customer's system. There will probably be other rules for when and how this is to be done.</p>
           </article>
 
           <article id="handbok-medeier">
@@ -195,19 +195,19 @@ function StaffManual() {
           <article id="handbok-other">
             <h2>Everything Else + The Office</h2>
 
-            <p>At our offices you have acces to a workplace, coffee and other refreshments.  You use the premises at your own discretion on a daily basis when you do not have the opportunity to work from the custumer's offices.</p>
+            <p>At our offices you have access to a workplace, coffee, and other refreshments.  You use the premises at your discretion daily when you do not have the opportunity to work from the customer's offices.</p>
           </article>
 
           <article id="handbok-militaer">
             <h2>Military Service</h2>
 
-            <p>Summons to military service, including first-time service, which requires leave from work, is notified to the human resources manager and placed in the calendar. For compulsory service in the Armed Forces, the Home Guard, the Civil Defense and the Police Reserve, up to one month salary is paid per. years, with the deduction of all military supplements such as salary, unemployment benefits, etc. For voluntary service in the Home Guard, leave without pay is granted. First-time military service is granted unpaid leave. Repetition exercises that last longer than four weeks must be arranged separately.</p>
+            <p>Summons to military service, including first-time service, which requires leave from work, is notified to the human resources manager and placed in the calendar. For compulsory service in the Armed Forces, the Home Guard, the Civil Defense, and the Police Reserve, up to one month's salary is paid per. years, with the deduction of all military supplements such as salary, unemployment benefits, etc. For voluntary service in the Home Guard, leave without pay is granted. First-time military service is granted unpaid leave. Repetition exercises that last longer than four weeks must be arranged separately.</p>
           </article>
 
           <article id="handbok-kommunikasjon">
             <h2>Slack and Email</h2>
 
-            <p>Most of our daily communications are on Slack, our preferred platform. Here you'll find a relaxed vibe. This is where you'll find everyone if you want to initiate a social gathering, like an after work beverage, a game of squash, or a bit of Fortnite.</p>
+            <p>Most of our daily communications are on Slack, our preferred platform. Here you'll find a relaxed vibe. This is where you'll find everyone if you want to initiate a social gathering, like an after-work beverage, a game of squash, or a bit of Fortnite.</p>
 
             <p>If you need to be a bit more formal we recommend using email.</p>
 
@@ -217,7 +217,7 @@ function StaffManual() {
 
           <article id="handbok-employment">
             <h2>Employment</h2>
-            <p>An employment is an important investment for Kodeworks. The employees are not only the people who will contribute to a good working environment, they are also the actual product Kodeworks delivers. There is therefore a great focus on hiring skilled employees who seek and master challenges. The employees represent Kodeworks.</p>
+            <p>Employment is an important investment for Kodeworks. The employees are not only the people who will contribute to a good working environment, they are also the actual product Kodeworks delivers. There is therefore a great focus on hiring skilled employees who seek and master challenges. The employees represent Kodeworks.</p>
           </article>
 
           <article id="handbok-process-and-onboarding">
@@ -283,32 +283,32 @@ function StaffManual() {
             </ul>
 
             <h3>Consultant</h3>
-            <p>As a consultant, you usually spend most of your working time on behalf of clients.</p>
+            <p>As a consultant, you usually spend most of your working time on behalf of customers.</p>
             <p>Promotion to senior consultant is assessed annually by a joint board, based on the following criteria:</p>
             <ul>
-              <li>Renewable assignments. Ability to sell themselves on extensions of their customer project.</li>
+              <li>Renewable assignments. Ability to sell themselves on extensions of their projects.</li>
               <li>Can draw in others on assignments. Sees opportunities to sell colleagues on the same customer project as themselves.</li>
-              <li>Get new leads. Is observant when in contact with customers, and picks up signals about other projects. Facilitates dialogue between Kodeworks and customer. Follows their network on possible projects with other customers.</li>
+              <li>Get new leads. Is observant when in contact with customers, and picks up signals about other projects. Facilitates dialogue between Kodeworks and customers. Follows their network on possible projects with other customers.</li>
               <li>Available at a higher hourly rate. Has a CV and profile that is sellable at hourly rates up to the upper tier of what the market will pay. Note that Kodeworks may have other incentives for not offering the consultant at a high rate; the consultant can still be considered sellable at a higher hourly rate”.</li>
               <li>Total work experience. Number of years with relevant professional experience.</li>
-              <li>Professional contribution. Contributes to Kodeworks' internal and customer-specific professional programs. Promotes professional development, brings colleagues to professional events, possibly arranges professional happenings.</li>
-              <li>Social contributions. Promotes corporate sports, social gatherings and excursions. Ability to create space for everyone to participate.</li>
+              <li>Professional contribution. Contributes to Kodeworks' internal and customer-specific professional programs. Promotes professional development, brings colleagues to professional events, and possibly arranges professional happenings.</li>
+              <li>Social contributions. Promotes corporate sports, social gatherings, and excursions. Ability to create space for everyone to participate.</li>
 
               <li>Must be able to be sold out as a senior. Holds a resume and character that is easy to convince customers that is a senior profile.</li>
             </ul>
 
             <h3>Senior</h3>
-            <p>An independent and experienced consultant with high professional skills and who is able to communicate well with colleagues, management and customers. All the criteria for promotion to senior under listed above is also relevant.</p>
+            <p>An independent and experienced consultant with high professional skills and who can communicate well with colleagues, management, and customers. All the criteria for promotion to senior listed above are also relevant.</p>
 
             <h3>Staff</h3>
-            <p>Approximately 10% of the total number of hours in Kodeworks will go to staff-related work within administration, management, follow-up of employees and sales. The staff's task is to ensure that the machinery runs properly; that there is a steady influx of professionally interesting assignments, that the employees are well, that the customers are satisfied with Kodeworks, that the company's finances are going as they should, that the company reaches its measurement parameters, and more.</p>
+            <p>Approximately 10% of the total number of hours in Kodeworks will go to staff-related work within the administration, management, follow-up of employees, and sales. The staff's task is to ensure that the machinery runs properly; that there is a steady influx of professionally interesting assignments, that the employees are well, that the customers are satisfied with Kodeworks, that the company's finances are going as they should, that the company reaches its measurement parameters, and more.</p>
           </article>
 
           <article id="handbok-resignation">
             <h2>Resignation</h2>
 
             <p>Termination must notified be in writing. The notice period is mutual for employees and employers with a duration of three months. It runs from the first day of the month after the termination took place unless otherwise agreed.</p>
-            <p>Employees who leave must return handed out material. Exceptions can be made if the handed out material is not considered to have any useful value for Kodeworks, for example a PC and / or mobile phone. Kodeworks does not feel compelled to confiscate equipment that cannot be easily converted into cash or used by other employees.</p>
+            <p>Employees who leave must return handed-out material. Exceptions can be made if the handed-out material is not considered to have any useful value for Kodeworks, for example, a PC and/or mobile phone. Kodeworks does not feel compelled to confiscate equipment that cannot be easily converted into cash or used by other employees.</p>
             <p>If you have accumulated co-ownership in the company, shares must also be redeemed in accordance with the shareholder agreement.</p>
           </article>
         </section>
