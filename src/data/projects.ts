@@ -48,6 +48,15 @@ export const projects: ProjectObjectType = {
     enabled: true,
     highlighted: true,
   },
+  Sesam: {
+    name: "Sesam",
+    urlName: "Sesam",
+    image: "/assets/projects/sesam-front.jpg",
+    description:
+      "Sesam is Kodeworks' own internal door lock and doorbell system, and is developed from the bottom up and maintained in full by Kodeworks.",
+    enabled: true,
+    highlighted: true,
+  },
   Statkraft: {
     name: "Statkraft",
     urlName: "Statkraft",
