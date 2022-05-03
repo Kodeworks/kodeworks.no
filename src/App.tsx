@@ -19,6 +19,7 @@ import Equinor from './pages/input/equinor';
 import Flir from './pages/input/flir';
 import Gintel from './pages/input/gintel';
 import Inatur from './pages/input/inatur';
+import Sesam from './pages/input/sesam';
 import KLP from './pages/input/klp';
 import Kongsberg from './pages/input/kongsberg';
 import Lilbit from './pages/input/lilbit';
@@ -72,6 +73,7 @@ function App() {
         <Route path="flir" element={<Flir handleDarkMode={handleDarkMode} />} />
         <Route path="gintel" element={<Gintel handleDarkMode={handleDarkMode} />} />
         <Route path="inatur" element={<Inatur handleDarkMode={handleDarkMode} />} />
+        <Route path="sesam" element={<Sesam handleDarkMode={handleDarkMode} />} />
         <Route path="klp" element={<KLP handleDarkMode={handleDarkMode} />} />
         <Route path="kongsberg" element={<Kongsberg handleDarkMode={handleDarkMode} />} />
         <Route path="lilbit" element={<Lilbit handleDarkMode={handleDarkMode} />} />

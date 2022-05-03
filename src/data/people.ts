@@ -2,11 +2,7 @@ import { Person } from '../types.d';
 import { projects } from './projects';
 
 /* Highlighted stories */
-const stories = [
-  projects.Inatur,
-  projects.Sunlitsea,
-  projects.Vaskehjelp
-];
+const stories = [projects.Inatur, projects.Sunlitsea, projects.Vaskehjelp];
 
 const people: Array<Person> = [
   {
@@ -17,12 +13,12 @@ const people: Array<Person> = [
     urls: [
       {
         name: 'github',
-        url: 'https://github.com/ingrskar'
+        url: 'https://github.com/ingrskar',
       },
       {
         name: 'linkedin',
-        url: 'https://www.linkedin.com/in/ingrid-skar/'
-      }
+        url: 'https://www.linkedin.com/in/ingrid-skar/',
+      },
     ],
   },
   {
@@ -33,11 +29,11 @@ const people: Array<Person> = [
     urls: [
       {
         name: 'github',
-        url: 'https://github.com/tmn'
+        url: 'https://github.com/tmn',
       },
       {
         name: 'linkedin',
-        url: 'https://www.linkedin.com/in/trimn/'
+        url: 'https://www.linkedin.com/in/trimn/',
       },
     ],
   },
@@ -49,11 +45,11 @@ const people: Array<Person> = [
     urls: [
       {
         name: 'github',
-        url: 'https://github.com/myth'
+        url: 'https://github.com/myth',
       },
       {
         name: 'linkedin',
-        url: 'https://www.linkedin.com/in/aleksander-skraastad/'
+        url: 'https://www.linkedin.com/in/aleksander-skraastad/',
       },
     ],
   },
@@ -65,24 +61,31 @@ const people: Array<Person> = [
     urls: [
       {
         name: 'github',
-        url: 'https://github.com/nystu1'
+        url: 'https://github.com/nystu1',
       },
       {
         name: 'linkedin',
-        url: 'https://www.linkedin.com/in/adne-nystuen/'
+        url: 'https://www.linkedin.com/in/adne-nystuen/',
       },
     ],
   },
   {
     name: 'Eirik Larsen',
     email: 'eirik@kodeworks.no',
-    projects: [projects.Lawenforcementagency, projects.Sunlitsea, projects.Avinor, projects.TechnipFMC, projects.MollerIT, projects.ThomsonReuters],
+    projects: [
+      projects.Lawenforcementagency,
+      projects.Sunlitsea,
+      projects.Avinor,
+      projects.TechnipFMC,
+      projects.MollerIT,
+      projects.ThomsonReuters,
+    ],
     image: '/assets/people/eirik.jpg',
   },
   {
     name: 'Simen Moen Storvik',
     email: 'simen@kodeworks.no',
-    projects: [projects.Sunlitsea],
+    projects: [projects.Sunlitsea, projects.Sesam],
     image: '/assets/people/simen.jpg',
   },
   {
@@ -99,15 +102,15 @@ const people: Array<Person> = [
     urls: [
       {
         name: 'github',
-        url: 'https://github.com/peterringset'
+        url: 'https://github.com/peterringset',
       },
       {
         name: 'linkedin',
-        url: 'https://www.linkedin.com/in/peter-ringset-3415a719/'
+        url: 'https://www.linkedin.com/in/peter-ringset-3415a719/',
       },
       {
         name: 'twitter',
-        url: 'https://twitter.com/PRingset'
+        url: 'https://twitter.com/PRingset',
       },
     ],
   },
@@ -156,7 +159,7 @@ const people: Array<Person> = [
   {
     name: 'Jan Burak',
     email: 'jan@kodeworks.no',
-    projects: [projects.Sunlitsea, projects.Aize],
+    projects: [projects.Sunlitsea, projects.Aize, projects.Sesam],
     image: '/assets/people/jan.jpg',
   },
   {
@@ -257,7 +260,7 @@ function getHighligtedPeople(): Array<Person> {
     }
 
     return hasProject;
-  })
+  });
 
   return filteredList.filter((person) => person.image);
 }
@@ -271,7 +274,9 @@ function shuffleArray(array: Array<Person>): Array<Person> {
   return array;
 }
 
-function shufflePeopleWithoutImagesToBottom(people: Array<Person>): Array<Person> {
+function shufflePeopleWithoutImagesToBottom(
+  people: Array<Person>
+): Array<Person> {
   let _people: Array<Person> = [];
 
   people.forEach((person) => {
@@ -287,7 +292,7 @@ function shufflePeopleWithoutImagesToBottom(people: Array<Person>): Array<Person
 
 const peopleApi = {
   getHighligtedPeople,
-  getPeople
+  getPeople,
 };
 
 export default peopleApi;
