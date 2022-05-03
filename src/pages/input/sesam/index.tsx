@@ -33,8 +33,8 @@ function Sesam({ handleDarkMode }: Prop) {
           <img
             className="project-image--floatLeft"
             src="/assets/projects/sesam-1.jpg"
-            width="1200"
-            height="800"
+            /*             width="1200"
+            height="800" */
             alt=""
           />
           <div className="project-description-output">
@@ -71,8 +71,8 @@ function Sesam({ handleDarkMode }: Prop) {
           <img
             className="project-image--floatRight"
             src="/assets/projects/sesam-2.jpg"
-            width="1200"
-            height="800"
+            /*             width="1200"
+            height="800" */
             alt=""
           />
 
@@ -127,8 +127,8 @@ function Sesam({ handleDarkMode }: Prop) {
           <img
             className="project-image--floatLeft"
             src="/assets/projects/sesam-3.jpg"
-            width="1200"
-            height="1200"
+            /* width="1200"
+            height="1200" */
             alt=""
           />
           <div className="project-description-output">
