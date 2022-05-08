@@ -1,7 +1,6 @@
 import './staffmanual.css';
 
-
-function StaffManual() {
+export default function StaffManual(): JSX.Element {
   return (
     <>
       <header className="section-hero section-content section-content-narrow">
@@ -316,5 +315,3 @@ function StaffManual() {
     </>
   );
 }
-
-export default StaffManual;

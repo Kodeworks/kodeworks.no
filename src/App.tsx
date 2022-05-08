@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 
 import {
   BrowserRouter as Router,
@@ -6,40 +6,26 @@ import {
   Route,
 } from 'react-router-dom';
 
+import { ClipContentContext, useClipContent } from './context/ClipContentContext';
+
+import api from './api';
+
 import Home from './pages/Home';
 import Navigation from './components/Navigation';
 import People from './pages/People';
 import Projects from './pages/Projects';
 import StaffManual from './pages/StaffManual';
-
-import Aize from './pages/input/aize';
-import Avinor from './pages/input/avinor';
-import Bnentreprenor from './pages/input/bnentreprenor';
-import Equinor from './pages/input/equinor';
-import Flir from './pages/input/flir';
-import Gintel from './pages/input/gintel';
-import Inatur from './pages/input/inatur';
-import Sesam from './pages/input/sesam';
-import KLP from './pages/input/klp';
-import Kongsberg from './pages/input/kongsberg';
-import Lilbit from './pages/input/lilbit';
-import Lawenforcementagency from './pages/input/lawenforcementagency';
-import Skandiaenergi from './pages/input/skandiaenergi';
-import Statkraft from './pages/input/statkraft';
-import Sunlitsea from './pages/input/sunlitsea';
-import Thales from './pages/input/thalesnorway';
-import Vaskehjelp from './pages/input/vaskehjelp';
-
 import PrivacyPolicy from './pages/Legal/Privacy';
 
 import xmarkIcon from './assets/icons/xmark.svg';
 
 import './styles/kw.css';
 
-function App() {
+export default function App(): JSX.Element {
   const [isNavigationOpen, setIsNavigationOpen] = useState(false)
-  const [darkMode, setDarkMode] = useState(false);
   const [scrollTop, setScrollTop] = useState(0);
+
+  const { clipMode } = useContext(ClipContentContext);
 
   function handleMenuButtonClick(event: any) {
     event.stopPropagation();
@@ -57,58 +43,20 @@ function App() {
     }
   }
 
-  function handleDarkMode(isDarkMode: boolean) {
-    if (darkMode != isDarkMode) {
-      setDarkMode(isDarkMode);
-    }
-  }
-
-  function InputRoutes() {
-    return (
-      <Routes>
-        <Route path="aize" element={<Aize handleDarkMode={handleDarkMode} />} />
-        <Route path="avinor" element={<Avinor handleDarkMode={handleDarkMode} />} />
-        <Route path="bnentreprenor" element={<Bnentreprenor handleDarkMode={handleDarkMode} />} />
-        <Route path="equinor" element={<Equinor handleDarkMode={handleDarkMode} />} />
-        <Route path="flir" element={<Flir handleDarkMode={handleDarkMode} />} />
-        <Route path="gintel" element={<Gintel handleDarkMode={handleDarkMode} />} />
-        <Route path="inatur" element={<Inatur handleDarkMode={handleDarkMode} />} />
-        <Route path="sesam" element={<Sesam handleDarkMode={handleDarkMode} />} />
-        <Route path="klp" element={<KLP handleDarkMode={handleDarkMode} />} />
-        <Route path="kongsberg" element={<Kongsberg handleDarkMode={handleDarkMode} />} />
-        <Route path="lilbit" element={<Lilbit handleDarkMode={handleDarkMode} />} />
-        <Route path="lawenforcementagency" element={<Lawenforcementagency handleDarkMode={handleDarkMode} />} />
-        <Route path="skandiaenergi" element={<Skandiaenergi handleDarkMode={handleDarkMode} />} />
-        <Route path="statkraft" element={<Statkraft handleDarkMode={handleDarkMode} />} />
-        <Route path="sunlitsea" element={<Sunlitsea handleDarkMode={handleDarkMode} />} />
-        <Route path="thales" element={<Thales handleDarkMode={handleDarkMode} />} />
-        <Route path="vaskehjelp" element={<Vaskehjelp handleDarkMode={handleDarkMode} />} />
-      </Routes>
-    );
-  }
-
-  function LegalRoutes() {
-    return (
-      <Routes>
-        <Route path="privacy" element={<PrivacyPolicy />} />
-      </Routes>
-    );
-  }
-
   return (
     <>
       <Router>
-        <button onClick={handleMenuButtonClick} id="menu-button" className={darkMode ? 'dark-mode' : ''}>
+        <button onClick={handleMenuButtonClick} id="menu-button" className={clipMode ? 'dark-mode' : ''}>
           {isNavigationOpen
             ? <img src={xmarkIcon} alt="Close button" />
             : 'MENU'}
         </button>
 
         <Routes>
-          <Route path="/" element={<Home handleDarkMode={handleDarkMode} />} />
+          <Route path="/" element={<Home />} />
           <Route path="staffmanual" element={<StaffManual />} />
-          <Route path="people" element={<People handleDarkMode={handleDarkMode} />} />
-          <Route path="projects" element={<Projects handleDarkMode={handleDarkMode} />} />
+          <Route path="people" element={<People />} />
+          <Route path="projects" element={<Projects />} />
           <Route path="input/*" element={<InputRoutes />} />
           <Route path="legal/*" element={<LegalRoutes />} />
         </Routes>
@@ -119,4 +67,25 @@ function App() {
   );
 }
 
-export default App;
+
+function InputRoutes() {
+  const { changeClipMode } = useClipContent()
+
+  useEffect(() => {
+    changeClipMode(true);
+  }, []);
+
+  return (
+    <Routes>
+      { api.projects.getProjects().map((project) => <Route key={project.urlName} path={project.urlName} element={project.element ? <project.element project={project} /> : null } /> )}
+    </Routes>
+  );
+}
+
+function LegalRoutes() {
+  return (
+    <Routes>
+      <Route path="privacy" element={<PrivacyPolicy />} />
+    </Routes>
+  );
+}

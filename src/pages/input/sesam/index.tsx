@@ -1,15 +1,14 @@
-import { useEffect } from 'react';
+import { Project } from '../../../types';
+import { usePageTitle } from '../../../utils/usePageTitle';
 
 import '../project.css';
 
 interface Prop {
-  handleDarkMode(isDarkMode: boolean): any;
+  project: Project
 }
 
-function Sesam({ handleDarkMode }: Prop) {
-  useEffect(() => {
-    handleDarkMode(true);
-  }, []);
+export default function Sesam({ project }: Prop): JSX.Element {
+  usePageTitle(project.name);
 
   return (
     <div id="page-project">
@@ -184,5 +183,3 @@ function Sesam({ handleDarkMode }: Prop) {
     </div>
   );
 }
-
-export default Sesam;

@@ -1,22 +1,21 @@
-import { useEffect } from 'react';
+import { Project } from '../../../types';
+import { usePageTitle } from '../../../utils/usePageTitle';
 
 import '../project.css';
 
 interface Prop {
-  handleDarkMode(isDarkMode: boolean): any
+  project: Project
 }
 
-function Equinor({ handleDarkMode }: Prop) {
-  useEffect(() => {
-    handleDarkMode(true);
-  }, []);
+export default function Avinor({ project }: Prop): JSX.Element {
+  usePageTitle(project.name);
 
   return (
     <div id="page-project">
       <header>
-        <h1>Equinor</h1>
+        <h1>Avinor</h1>
         <ul>
-          <li>Java, Spring, JavaScript, ReactJS</li>
+          <li>Tech list</li>
         </ul>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sit amet dapibus nisl, eu molestie odio. Cras egestas lorem sed mauris dapibus viverra. Praesent quis iaculis augue, sit amet porta lacus..</p>
       </header>
@@ -45,5 +44,3 @@ function Equinor({ handleDarkMode }: Prop) {
     </div>
   )
 }
-
-export default Equinor

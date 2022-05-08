@@ -7,17 +7,17 @@ interface Prop {
   project: Project
 }
 
-export default function ThalesNorway({ project }: Prop): JSX.Element {
+export default function ThomsonReuters({ project }: Prop): JSX.Element {
   usePageTitle(project.name);
 
   return (
     <div id="page-project">
       <header>
-        <h1>Equinor</h1>
+        <h1>Thomson Reuters</h1>
         <ul>
           <li>Java, Spring, JavaScript, ReactJS</li>
         </ul>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sit amet dapibus nisl, eu molestie odio. Cras egestas lorem sed mauris dapibus viverra. Praesent quis iaculis augue, sit amet porta lacus..</p>
+        <p>Equinor is an international energy company that has in recent years sparked a strategic and significant effort in sustainable energy. This is a process that requires innovation, business intelligence and a huge focus on quality. Kodeworks supports the research and digitization activities of Equinor through analysis, design, programming and testing.</p>
       </header>
 
       <article>

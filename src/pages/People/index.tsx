@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 
+import { useClipContent } from '../../context/ClipContentContext';
 import { Person } from '../../types';
 import api from '../../api';
 
@@ -7,15 +8,12 @@ import PeopleList from '../../components/PeopleList';
 
 import './people.css';
 
-interface Prop {
-  handleDarkMode(isDarkMode: boolean): any
-}
-
-function People({ handleDarkMode }: Prop) {
+export default function People(): JSX.Element {
   const [people, setPeople] = useState<Array<Person>>([]);
+  const { changeClipMode } = useClipContent();
 
   useEffect(() => {
-    handleDarkMode(false);
+    changeClipMode(false);
   }, []);
 
   useEffect(() => {
@@ -34,5 +32,3 @@ function People({ handleDarkMode }: Prop) {
     </div>
   )
 };
-
-export default People;

@@ -1,8 +1,10 @@
-import { useEffect, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 
 import api from '../../api';
-import darkMode from '../../utils/darkMode';
+import { useClipText } from '../../utils/useClipText';
 import { Person, Project } from '../../types';
+
+import { ClipContentContext } from '../../context/ClipContentContext';
 
 import Button from '../../components/Button';
 import PeopleList from '../../components/PeopleList';
@@ -11,13 +13,11 @@ import ImageAbout from './assets/EOSR7695.jpg';
 
 import './home.css';
 
-interface Prop {
-  handleDarkMode(isDarkMode: boolean): any
-}
-
-function Home({ handleDarkMode }: Prop) {
+function Home(): JSX.Element {
   const [highlightedProject, setHighlightedProject] = useState<Project>();
   const [highlightedPeople, setHighlightedPeople] = useState<Array<Person>>([]);
+
+  const { changeClipMode } = useContext(ClipContentContext);
 
   const people = api.people.getPeople();
   const highlightedProjects = api.projects.getHighlightedProjects();
@@ -30,21 +30,11 @@ function Home({ handleDarkMode }: Prop) {
     setHighlightedPeople(people);
   }, []);
 
-  useEffect(() => {
-    handleDarkMode(false);
-  }, []);
+  const shouldClipText = useClipText(['projects', 'about-image-container']);
 
   useEffect(() => {
-    function darkModeListener() {
-      darkMode(handleDarkMode, ['projects', 'about-image-container']);
-    }
-
-    document.addEventListener('scroll', darkModeListener);
-
-    return function cleanupListener() {
-      document.removeEventListener('scroll', darkModeListener);
-    }
-  }, [handleDarkMode]);
+    changeClipMode(shouldClipText);
+  }, [shouldClipText]);
 
   return (
     <>

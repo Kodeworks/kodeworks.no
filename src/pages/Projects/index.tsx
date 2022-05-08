@@ -2,17 +2,16 @@ import { useEffect } from 'react';
 
 import ProjectTile from '../../components/ProjectTile';
 
+import { useClipContent } from '../../context/ClipContentContext';
 import api from '../../api';
 
 import './projects.css';
 
-interface Prop {
-  handleDarkMode(isDarkMode: boolean): any
-}
+export default function Projects(): JSX.Element {
+  const { changeClipMode } = useClipContent();
 
-function Projects({ handleDarkMode }: Prop) {
   useEffect(() => {
-    handleDarkMode(true);
+    changeClipMode(true);
   }, []);
 
   return (
@@ -27,5 +26,3 @@ function Projects({ handleDarkMode }: Prop) {
     </div>
   );
 }
-
-export default Projects;

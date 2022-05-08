@@ -1,17 +1,16 @@
-import { useEffect } from 'react';
+import { Project } from '../../../types';
+import { usePageTitle } from '../../../utils/usePageTitle';
 
 import '../project.css';
 
 import ImageSunlitsea from './assets/sunlitsea.jpg';
 
 interface Prop {
-  handleDarkMode(isDarkMode: boolean): any
+  project: Project
 }
 
-function Sunlitsea({ handleDarkMode }: Prop) {
-  useEffect(() => {
-    handleDarkMode(true);
-  }, []);
+export default function Sunlitsea({ project }: Prop): JSX.Element {
+  usePageTitle(project.name);
 
   return (
     <div id="page-project">
@@ -81,5 +80,3 @@ function Sunlitsea({ handleDarkMode }: Prop) {
     </div>
   )
 }
-
-export default Sunlitsea;

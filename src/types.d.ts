@@ -1,3 +1,5 @@
+import React from "react";
+
 export interface Person {
   name: string;
   image: string;
@@ -13,6 +15,7 @@ export interface Project {
   highlighted?: boolean;
   enabled?: boolean;
   urlName: string;
+  element: React.FC<any> | null
 }
 
 export interface SocialUrl {

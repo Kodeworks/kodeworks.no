@@ -1,6 +1,6 @@
 import './privacy.css';
 
-function Privacy() {
+export default function Privacy(): JSX.Element {
   return (
     <div className="privacy">
       <section className={`section section-hero section-text-center`}>
@@ -86,5 +86,3 @@ function Privacy() {
     </div>
   );
 }
-
-export default Privacy;
