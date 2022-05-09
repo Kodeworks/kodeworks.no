@@ -1,6 +1,8 @@
 import { Project } from '../../../types';
 import { usePageTitle } from '../../../utils/usePageTitle';
 
+import ProjectHeader from '../../../components/ProjectHeader';
+
 import '../project.css';
 
 interface Prop {
@@ -12,21 +14,7 @@ export default function Inatur({ project }: Prop): JSX.Element {
 
   return (
     <div id="page-project">
-      <header>
-        <h1>Inatur</h1>
-        <div className="project__technologies">
-          Java, Spring, MongoDB, JavaScript, React
-        </div>
-        <p>
-          Inatur is Norway's largest online platform for selling hunting and
-          fishing licenses, having offered their services for more than ten
-          years. On their website, larger municipal bodies as well as hunting
-          associations and ground owners can put hunting and fishing licenses
-          out for sale. In this context, Inatur also offers the ability to put
-          cabins out for rent, both for hunting and vacationing. Today, there
-          are more than 1200 cabins registered for renting on Inatur's website.
-        </p>
-      </header>
+      <ProjectHeader project={project} />
 
       <article>
         <img

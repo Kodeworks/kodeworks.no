@@ -1,4 +1,3 @@
-import api from '../../api';
 import { Person } from '../../types';
 
 import PersonTile from '../PersonTile';

@@ -35,8 +35,9 @@ export const projects: ProjectObjectType = {
     name: 'Vaskehjelp',
     urlName: 'vaskehjelp',
     image: '/assets/projects/vaskehjelp.jpg',
+    technologies: ['iOS', 'Android', '.NET', 'Blazor', 'Tailwind'],
     description:
-      'Vaskehjelp is a marketplace that connects a cleaner and customer, as well as taking care of payment and other paperwork. Kodeworks has assisted in the development of the iOS and Android application.',
+      'Vaskehjelp is a marketplace that connects cleaning personell and a customer, as well as taking care of payment and other paperwork.Kodeworks has assisted in the development of the iOS and Android application.',
     enabled: true,
     highlighted: true,
     element: Vaskehjelp
@@ -45,6 +46,7 @@ export const projects: ProjectObjectType = {
     name: 'Sunlit Sea',
     urlName: 'sunlitsea',
     image: '/assets/projects/sunlitsea.jpg',
+    technologies: ['Embedded', 'C', 'Arduino', 'Scala', 'Akka', 'Python', 'AWS', 'Influx', 'React', 'ThreeJS', 'Tailwind'],
     description:
       'Sunlit Sea develops technology for floating solar cell installations that opens up a completely new market for solar cells at sea. Kodeworks develops sensor solutions for solar cell installation, as well as monitoring and enrichment of data from the sensors to optimize production and maintenance.',
     enabled: true,
@@ -55,6 +57,7 @@ export const projects: ProjectObjectType = {
     name: 'lilbit',
     urlName: 'lilbit',
     image: '/assets/projects/lilbit.jpg',
+    technologies: ['Java', 'Spring', 'Android', 'iOS', 'JavaScript', 'ReactJS', 'Tailwind'],
     description:
       'lilbit delivers products for tracking and monitoring of pets, pursuing their goal of expanding the communication between pet and owner. With this ambition, they have achieved huge interest for current and future products and services.',
     highlighted: true,
@@ -73,8 +76,8 @@ export const projects: ProjectObjectType = {
     name: 'Inatur',
     urlName: 'inatur',
     image: '/assets/projects/inatur.jpg',
-    description:
-      'Inatur is Norway’s largest marketplace for hunting, fishing and cabins. Kodeworks contributes to the development of applications adapted to providers of hunting, fishing and cabins so that it can easily be offered to potential customers and dealers.',
+    technologies: ['Java', 'Spring', 'MongoDB', 'JavaScript', 'React'],
+    description: "Inatur is Norway's largest online platform for selling hunting and fishing licenses, having offered their services for more than ten years. On their website, larger municipal bodies as well as hunting associations and ground owners can put hunting and fishing licenses out for sale. In this context, Inatur also offers the ability to put cabins out for rent, both for hunting and vacationing. Today, there are more than 1200 cabins registered for renting on Inatur's website.",
     enabled: true,
     highlighted: true,
     element: Inatur,
@@ -83,6 +86,7 @@ export const projects: ProjectObjectType = {
     name: 'Sesam',
     urlName: 'sesam',
     image: '/assets/projects/Sesam-front.jpg',
+    technologies: ['Low voltage', 'Arduino', 'C++', 'MQTT', 'Docker', 'Node', 'NextJS', 'TypeScript', 'React'],
     description:
       "Sesam is Kodeworks' own internal door lock and doorbell system, and is developed from the bottom up and maintained in full by Kodeworks.",
     enabled: true,

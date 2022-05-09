@@ -1,6 +1,8 @@
 import { Project } from '../../../types';
 import { usePageTitle } from '../../../utils/usePageTitle';
 
+import ProjectHeader from '../../../components/ProjectHeader';
+
 import '../project.css';
 
 import ImageSunlitsea from './assets/sunlitsea.jpg';
@@ -14,16 +16,12 @@ export default function Sunlitsea({ project }: Prop): JSX.Element {
 
   return (
     <div id="page-project">
-      <header>
-        <h1>Sunlit Sea</h1>
-        <div className="project__technologies">Embedded, C, Arduino, Scala, Akka, Python, AWS, Influx, React, ThreeJS, Tailwind</div>
-        <p>Sunlit Sea develops technology for floating solar cell installations that opens up a completely new market for solar cells at sea. Kodeworks develops sensor solutions for solar cell installation, as well as monitoring and enrichment of data from the sensors to optimize production and maintenance.</p>
-      </header>
+      <ProjectHeader project={project} />
 
       <article>
         <img className="project-image--header" src="/assets/projects/sunlitsea.jpg" width="1200" height="1200" alt="" />
-        <section className="project-description-input">
 
+        <section className="project-description-input">
 
           <p>With their extensive ambitions, Sunlit Sea is a central player in the field of floating solar power. A glance at the evolution they have undergone across their entire technology stack supports this.</p>
 

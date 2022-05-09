@@ -13,7 +13,7 @@ export default function Lawenforcementagency({ project }: Prop): JSX.Element {
   return (
     <div id="page-project">
       <header>
-        <h1>Law Enforcement Agency</h1>
+        <h1>{project.name}</h1>
         <p>
           A law enforcement agency should prevent crime and maintain our safety as
           citizens. In order to achieve this, they are dependent on reliable

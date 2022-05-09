@@ -1,6 +1,8 @@
 import { Project } from '../../../types';
 import { usePageTitle } from '../../../utils/usePageTitle';
 
+import ProjectHeader from '../../../components/ProjectHeader';
+
 import '../project.css';
 
 interface Prop {
@@ -12,20 +14,7 @@ export default function Sesam({ project }: Prop): JSX.Element {
 
   return (
     <div id="page-project">
-      <header>
-        <h1>Sesam - A door lock project</h1>
-        <div className="project__technologies">
-          Low voltage, Arduino, C++, MQTT, Docker, Node, NextJS, TypeScript,
-          React
-        </div>
-        <p>
-          When between customer assignments in Kodeworks, the focus is on
-          professional and academic development. At the same time, some real
-          value creation can also be achieved. At the Kodeworks office in Oslo,
-          Jan and Simen received an interesting task in modernizing the existing
-          door lock system.
-        </p>
-      </header>
+      <ProjectHeader project={project} extras={`When between customer assignments in Kodeworks, the focus is on professional and academic development. At the same time, some real value creation can also be achieved. At the Kodeworks office in Oslo, Jan and Simen received an interesting task in modernizing the existing door lock system.`} />
 
       <article>
         <section>

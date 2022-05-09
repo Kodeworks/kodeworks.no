@@ -1,3 +1,5 @@
+import { usePageTitle } from '../../../utils/usePageTitle';
+
 import './privacy.css';
 
 export default function Privacy(): JSX.Element {

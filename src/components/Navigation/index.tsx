@@ -7,7 +7,7 @@ interface Prop {
   toggleNavigationOpened(event: any): void;
 }
 
-function Navigation({ isOpened, toggleNavigationOpened }: Prop) {
+export default function Navigation({ isOpened, toggleNavigationOpened }: Prop) {
   useEffect(() => {
     function escKeyListener(event: KeyboardEvent) {
       if (isOpened && event.key === 'Escape') {
@@ -68,5 +68,3 @@ function Navigation({ isOpened, toggleNavigationOpened }: Prop) {
     </menu>
   )
 }
-
-export default Navigation

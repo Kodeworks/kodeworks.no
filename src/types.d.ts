@@ -12,10 +12,12 @@ export interface Project {
   name: string;
   description: string;
   image: string;
+  urlName: string;
+  element: React.FC<any> | null;
+
+  technologies?: string[];
   highlighted?: boolean;
   enabled?: boolean;
-  urlName: string;
-  element: React.FC<any> | null
 }
 
 export interface SocialUrl {

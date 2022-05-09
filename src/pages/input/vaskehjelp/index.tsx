@@ -1,6 +1,8 @@
 import { Project } from '../../../types';
 import { usePageTitle } from '../../../utils/usePageTitle';
 
+import ProjectHeader from '../../../components/ProjectHeader';
+
 import '../project.css';
 
 import ImageVaskehjelp from './assets/vaskehjelp.jpg';
@@ -14,11 +16,7 @@ export default function Vaskehjelp({ project }: Prop): JSX.Element {
 
   return (
     <div id="page-project">
-      <header>
-        <h1>Vaskehjelp</h1>
-        <div className="project__technologies">iOS, Android, .NET, Blazor, Tailwind</div>
-        <p>Vaskehjelp is a marketplace that connects cleaning personell and a customer, as well as taking care of payment and other paperwork. Kodeworks has assisted in the development of the iOS and Android application.</p>
-      </header>
+      <ProjectHeader project={project} />
 
       <article>
         <img className="project-image--header" src={'/assets/projects/vaskehjelp.jpg'} width="1200" height="1200" alt="" />
@@ -37,19 +35,6 @@ export default function Vaskehjelp({ project }: Prop): JSX.Element {
             </div>
 
             <p>In Vaskehjelp, have been central in both Android and iOS development. Peter has for the most part worked with iOS, while Tri from Kodeworks worked with Android development.</p>
-
-
-
-
-
-
-
-
-
-
-
-
-
           </div>
         </section>
 
@@ -59,9 +44,6 @@ export default function Vaskehjelp({ project }: Prop): JSX.Element {
 
 
         <section className="project-description-output">
-
-
-
           <div className="project-quote">
             <p className="project-quote--content">The biggest challenge we faced was the amount of time we had to deliver. We wanted to get a lot done in a relatively short amount of time, with only a few months from starting fresh with a full crew, until the first version was to be released. Like most projects with intense final days, the intensity of the work increased as we moved towards the release date. Luckily, the team was communicating excellently, and we were able to make agile prioritizations, enabling us to emerge at the release date with a well-functioning application.</p>
             <span className="project-quote--author">- Peter Ringset</span>
@@ -78,8 +60,6 @@ export default function Vaskehjelp({ project }: Prop): JSX.Element {
 
           <p>Vaskehjelp continues to be a central player as a cleaning service platform, and Kodeworks says thanks for the opportunity to be a part of the commercialization of a very exciting startup.</p>
         </section>
-
-
       </article>
     </div>
   )

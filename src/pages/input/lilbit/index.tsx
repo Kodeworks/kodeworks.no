@@ -1,6 +1,8 @@
 import { Project } from '../../../types';
 import { usePageTitle } from '../../../utils/usePageTitle';
 
+import ProjectHeader from '../../../components/ProjectHeader';
+
 import '../project.css';
 
 interface Prop {
@@ -12,11 +14,7 @@ export default function Lilbit({ project }: Prop): JSX.Element {
 
   return (
     <div id="page-project">
-      <header>
-        <h1>lilbit</h1>
-        <div className="project__technologies">Java, Spring, Android, iOS, JavaScript, ReactJS, Tailwind</div>
-        <p>lilbit delivers products for tracking and monitoring of pets, pursuing their goal of expanding the communication between pet and owner. With this ambition, they have achieved huge interest for current and future products and services.</p>
-      </header>
+      <ProjectHeader project={project} />
 
       <article>
         <img className="project-image--header" src="/assets/projects/lilbit.jpg" width="1200" height="1200" alt="" />
