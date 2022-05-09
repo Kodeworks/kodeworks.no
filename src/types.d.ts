@@ -17,7 +17,6 @@ export interface Project {
 
   technologies?: string[];
   highlighted?: boolean;
-  enabled?: boolean;
 }
 
 export interface SocialUrl {

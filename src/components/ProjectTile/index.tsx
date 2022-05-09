@@ -13,7 +13,7 @@ export default function ProjectTile({ project }: Prop) {
       <div className="project-ingress">
         <h3>
           {
-            project.enabled
+            project.element !== null
               ? <a href={`/input/${project.urlName}`} className="project-link">{project.name}</a>
               : project.name
           }

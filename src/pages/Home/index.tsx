@@ -82,7 +82,7 @@ function Home(): JSX.Element {
           <p>
             {highlightedProject && highlightedProject.description}
           </p>
-          <Button appearance={Button.appearances.DarkNoPadding} href={`/input/${highlightedProject && highlightedProject.urlName.toLowerCase()}`} disabled={!(highlightedProject && highlightedProject.enabled)}>Go to project page</Button>
+          <Button appearance={Button.appearances.DarkNoPadding} href={`/input/${highlightedProject && highlightedProject.urlName.toLowerCase()}`} disabled={!(highlightedProject && (highlightedProject.element !== null))}>Go to project page</Button>
         </div>
       </article>
 

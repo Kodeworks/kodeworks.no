@@ -37,7 +37,7 @@ export default function PersonTile({ person }: Prop) {
       <ul className="list-plain person-projects">
         {person.projects.map((project) => (
           <li key={project.name}>
-            <Button href={`/input/${project.urlName.toLowerCase().replace(/ /i, '-')}`} disabled={!project.enabled}>{project.name}</Button>
+            <Button href={`/input/${project.urlName.toLowerCase().replace(/ /i, '-')}`} disabled={project.element === null}>{project.name}</Button>
           </li>
         ))}
       </ul>
