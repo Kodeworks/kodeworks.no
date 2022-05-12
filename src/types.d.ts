@@ -4,8 +4,8 @@ export interface Person {
   name: string;
   image: string;
   email: string;
-  urls?: Array<SocialUrl>;
-  projects: Array<Project>;
+  urls?: SocialUrl[];
+  projects: Project[];
 }
 
 export interface Project {

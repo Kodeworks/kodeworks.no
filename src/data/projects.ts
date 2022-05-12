@@ -252,13 +252,13 @@ export const projects: ProjectObjectType = {
   },
 };
 
-function getProjects(): Array<Project> {
+function getProjects(): Project[] {
   return Object.values(projects).filter(
     (project) => project.name !== 'Administration'
   );
 }
 
-function getHighlightedProjects(): Array<Project> {
+function getHighlightedProjects(): Project[] {
   return Object.values(projects).filter((project) => project.highlighted);
 }
 

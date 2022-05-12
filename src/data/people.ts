@@ -4,7 +4,7 @@ import { projects } from './projects';
 /* Highlighted stories */
 const stories = [projects.inatur, projects.sunlitsea, projects.vaskehjelp];
 
-const people: Array<Person> = [
+const people: Person[] = [
   {
     name: 'Ingrid Skar',
     email: 'ingrid@kodeworks.no',
@@ -199,7 +199,7 @@ const people: Array<Person> = [
     image: '/assets/people/martin.jpg',
   },
   {
-    name: 'John Hansen',
+    name: 'John Hansenp',
     email: 'john@kodeworks.no',
     projects: [projects.klp, projects.remarkable, projects.equinor],
     image: '/assets/people/john.jpg',
@@ -242,11 +242,11 @@ const people: Array<Person> = [
   },
 ];
 
-function getPeople(): Array<Person> {
+function getPeople(): Person[] {
   return shufflePeopleWithoutImagesToBottom(shuffleArray(people));
 }
 
-function getHighligtedPeople(): Array<Person> {
+function getHighligtedPeople(): Person[] {
   const people = getPeople();
 
   const filteredList = people.filter((person) => {
@@ -265,7 +265,7 @@ function getHighligtedPeople(): Array<Person> {
   return filteredList.filter((person) => person.image);
 }
 
-function shuffleArray(array: Array<Person>): Array<Person> {
+function shuffleArray(array: Person[]): Person[] {
   for (let i = array.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
     [array[i], array[j]] = [array[j], array[i]];
@@ -274,10 +274,8 @@ function shuffleArray(array: Array<Person>): Array<Person> {
   return array;
 }
 
-function shufflePeopleWithoutImagesToBottom(
-  people: Array<Person>
-): Array<Person> {
-  let _people: Array<Person> = [];
+function shufflePeopleWithoutImagesToBottom(people: Person[]): Person[] {
+  let _people: Person[] = [];
 
   people.forEach((person) => {
     if (person.image == undefined || person.image.length == 0) {

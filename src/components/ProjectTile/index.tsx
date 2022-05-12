@@ -6,7 +6,7 @@ interface Prop {
   project: Project
 }
 
-export default function ProjectTile({ project }: Prop) {
+export default function ProjectTile({ project }: Prop): JSX.Element {
   return (
     <article>
       <img className="project-tile--image" src={project.image} width="1200" height="1200" alt="" />

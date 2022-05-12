@@ -1,5 +1,4 @@
 import React from 'react';
-import { Project } from '../../types';
 
 import './button.css';
 
@@ -19,7 +18,7 @@ interface ButtonProp {
   children?: React.ReactNode
 }
 
-function Button({ appearance, ...props }: ButtonProp) {
+function Button({ appearance, ...props }: ButtonProp): JSX.Element {
   switch (appearance) {
     case Appearance.Light:
     case Appearance.LightNoPadding:
@@ -32,7 +31,7 @@ function Button({ appearance, ...props }: ButtonProp) {
   }
 }
 
-function DarkButton({ appearance, onClick, href, disabled, children }: ButtonProp) {
+function DarkButton({ appearance, onClick, href, disabled, children }: ButtonProp): JSX.Element {
   if (href != null) {
     return (
       <a href={ href } className={`btn btn-dark ${disabled ? 'btn-disabled' : ''} ${appearance === Appearance.DarkNoPadding ? 'btn--noPadding' : ''}`}>
@@ -46,7 +45,7 @@ function DarkButton({ appearance, onClick, href, disabled, children }: ButtonPro
   }
 }
 
-function LightButton({ appearance,  onClick, href, disabled, children }: ButtonProp) {
+function LightButton({ appearance,  onClick, href, disabled, children }: ButtonProp): JSX.Element {
   if (href != null) {
     return (
       <a href={ href } className={`btn btn-light ${disabled ? 'btn-disabled' : ''} ${appearance === Appearance.LightNoPadding ? 'btn--noPadding' : ''}`}>

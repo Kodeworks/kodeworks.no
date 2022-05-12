@@ -7,7 +7,7 @@ interface Prop {
   toggleNavigationOpened(event: any): void;
 }
 
-export default function Navigation({ isOpened, toggleNavigationOpened }: Prop) {
+export default function Navigation({ isOpened, toggleNavigationOpened }: Prop): JSX.Element {
   useEffect(() => {
     function escKeyListener(event: KeyboardEvent) {
       if (isOpened && event.key === 'Escape') {

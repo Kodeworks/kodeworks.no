@@ -9,7 +9,7 @@ import PeopleList from '../../components/PeopleList';
 import './people.css';
 
 export default function People(): JSX.Element {
-  const [people, setPeople] = useState<Array<Person>>([]);
+  const [people, setPeople] = useState<Person[]>([]);
   const { changeClipMode } = useClipContent();
 
   useEffect(() => {

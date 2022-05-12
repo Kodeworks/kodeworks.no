@@ -8,7 +8,7 @@ interface Prop {
   person: Person
 }
 
-export default function PersonTile({ person }: Prop) {
+export default function PersonTile({ person }: Prop): JSX.Element {
   function getImage(person: Person) {
     return person.image || '/assets/people/placeholder-2.jpg';
   }

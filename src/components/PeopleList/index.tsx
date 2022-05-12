@@ -5,10 +5,10 @@ import PersonTile from '../PersonTile';
 import './peopleList.css';
 
 interface Prop {
-  people: Array<Person>
+  people: Person[]
 }
 
-export default function PeopleList({ people }: Prop) {
+export default function PeopleList({ people }: Prop): JSX.Element {
   return (
     <ul className="people-list">
       {people.map((person) => (

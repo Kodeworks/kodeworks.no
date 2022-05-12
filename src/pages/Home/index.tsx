@@ -15,7 +15,7 @@ import './home.css';
 
 function Home(): JSX.Element {
   const [highlightedProject, setHighlightedProject] = useState<Project>();
-  const [highlightedPeople, setHighlightedPeople] = useState<Array<Person>>([]);
+  const [highlightedPeople, setHighlightedPeople] = useState<Person[]>([]);
 
   const { changeClipMode } = useContext(ClipContentContext);
 

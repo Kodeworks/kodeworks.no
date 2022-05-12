@@ -21,7 +21,6 @@ export default function Vaskehjelp({ project }: Prop): JSX.Element {
       <article>
         <img className="project-image--header" src={'/assets/projects/vaskehjelp.jpg'} width="1200" height="1200" alt="" />
 
-
         <section className="">
           <img alt="Developer Team at Vaskehjelp" src={ImageVaskehjelp} className="project-image--floatRight" />
           <div className="project-description-input">

@@ -13,7 +13,7 @@ interface Prop {
   children: JSX.Element
 }
 
-export function ClipContentProvider({ children }: Prop) {
+export function ClipContentProvider({ children }: Prop): JSX.Element {
   const [clipMode, setClipMode] = useState(false);
 
   function changeClipMode(mode: boolean): void {
@@ -27,7 +27,7 @@ export function ClipContentProvider({ children }: Prop) {
   );
 }
 
-export function useClipContent() {
+export function useClipContent(): ClipContentContextInterface {
   const context = useContext(ClipContentContext);
 
   if (!context) {
