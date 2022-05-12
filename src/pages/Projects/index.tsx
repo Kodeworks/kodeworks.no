@@ -1,5 +1,3 @@
-import { useEffect } from 'react';
-
 import ProjectTile from '../../components/ProjectTile';
 
 import { useClipContent } from '../../context/ClipContentContext';
@@ -8,11 +6,7 @@ import api from '../../api';
 import './projects.css';
 
 export default function Projects(): JSX.Element {
-  const { changeClipMode } = useClipContent();
-
-  useEffect(() => {
-    changeClipMode(true);
-  }, []);
+  useClipContent(true);
 
   return (
     <div id="page-projects" className="theme-dark">

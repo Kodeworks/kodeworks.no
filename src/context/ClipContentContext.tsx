@@ -27,11 +27,15 @@ export function ClipContentProvider({ children }: Prop): JSX.Element {
   );
 }
 
-export function useClipContent(): ClipContentContextInterface {
+export function useClipContent(clipMode? : boolean): ClipContentContextInterface {
   const context = useContext(ClipContentContext);
 
   if (!context) {
     throw new Error('Cannot use useClipContent outside of ClipContentContext');
+  }
+
+  if (clipMode !== undefined) {
+    context.changeClipMode(clipMode);
   }
 
   return context;

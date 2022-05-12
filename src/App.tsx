@@ -69,11 +69,7 @@ export default function App(): JSX.Element {
 
 
 function InputRoutes() {
-  const { changeClipMode } = useClipContent()
-
-  useEffect(() => {
-    changeClipMode(true);
-  }, []);
+  useClipContent(true);
 
   return (
     <Routes>

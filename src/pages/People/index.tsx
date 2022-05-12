@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 
-import { useClipContent } from '../../context/ClipContentContext';
 import { Person } from '../../types';
 import api from '../../api';
 
@@ -10,11 +9,6 @@ import './people.css';
 
 export default function People(): JSX.Element {
   const [people, setPeople] = useState<Person[]>([]);
-  const { changeClipMode } = useClipContent();
-
-  useEffect(() => {
-    changeClipMode(false);
-  }, []);
 
   useEffect(() => {
     setPeople(api.people.getPeople());
