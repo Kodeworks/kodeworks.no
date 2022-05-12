@@ -11,7 +11,7 @@ interface Prop {
   project: Project
 }
 
-export default function Lilbit({ project }: Prop): JSX.Element {
+export default function LildogWithLilbit({ project }: Prop): JSX.Element {
   usePageTitle(project.name);
 
   return (

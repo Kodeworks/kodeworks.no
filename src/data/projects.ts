@@ -12,7 +12,7 @@ import Inatur from '../pages/input/inatur';
 import Klp from '../pages/input/klp';
 import Kongsberg from '../pages/input/kongsberg';
 import Lawenforcementagency from '../pages/input/lawenforcementagency';
-import Lilbit from '../pages/input/lilbit';
+import LildogWithLilbit from '../pages/input/lildog-with-lilbit';
 import MollerIT from '../pages/input/mollerit';
 import Nomono from '../pages/input/nomono';
 import Obos from '../pages/input/obos';
@@ -59,7 +59,7 @@ export const projects: ProjectObjectType = {
     description:
       'lilbit delivers products for tracking and monitoring pets, pursuing their goal of expanding the communication between pet and owner. They have achieved tremendous interest in current and future products and services with this ambition.',
     highlighted: true,
-    element: Lilbit,
+    element: LildogWithLilbit,
   },
   equinor: {
     name: 'Equinor',
