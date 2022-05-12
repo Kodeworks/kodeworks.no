@@ -10,13 +10,20 @@ interface Prop {
 export default function ProjectHeader({ project, extras }: Prop): JSX.Element {
   return (
     <header>
-      <h1>{project.name}</h1>
-      {project.technologies && (
-        <div className="project__technologies">{project.technologies.join(', ')}</div>
-      )}
+      <div className="projectHeader__content">
+        <h1>{project.name}</h1>
 
-      <p>{project.description}</p>
-      { extras && <p>{ extras }</p> }
+        <ul className="projectHeader__technologies">
+          {project.technologies && (
+            <li>{project.technologies.join(', ')}</li>
+          )}
+        </ul>
+
+        <p>{project.description}</p>
+        {extras && <p>{extras}</p>}
+      </div>
+
+      <img className="projectHeader__image" src={project.image} width="1200" height="1200" alt="" />
     </header>
   );
 }

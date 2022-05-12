@@ -19,8 +19,6 @@ export default function Sunlitsea({ project }: Prop): JSX.Element {
       <ProjectHeader project={project} />
 
       <article>
-        <img className="project-image--header" src="/assets/projects/sunlitsea.jpg" width="1200" height="1200" alt="" />
-
         <section className="project-description-input">
 
           <p>With their extensive ambitions, Sunlit Sea is a central player in the field of floating solar power. A glance at the evolution they have undergone across their entire technology stack supports this.</p>

@@ -3,19 +3,6 @@
   color: #fff;
 }
 
-#page-project header {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 220px var(--gutter-size) 80px var(--gutter-size);
-  text-align: center;
-}
-
-#page-project header ul {
-  font-size: 14px;
-  font-weight: 200;
-  margin-bottom: 30px;
-}
-
 #page-project > article {
   padding-bottom: 120px;
   width: 100%;
@@ -40,12 +27,6 @@
   content: "";
   display: table;
   clear: both;
-}
-
-.project__technologies {
-  color: var(--color-grey);
-  font-size: 14px;
-  margin-bottom: 15px;
 }
 
 .project-description-input,

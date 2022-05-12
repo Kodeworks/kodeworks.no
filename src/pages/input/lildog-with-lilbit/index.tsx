@@ -19,8 +19,6 @@ export default function LildogWithLilbit({ project }: Prop): JSX.Element {
       <ProjectHeader project={project} />
 
       <article>
-        <img className="project-image--header" src="/assets/projects/lilbit.jpg" width="1200" height="1200" alt="" />
-
         <section>
           <div className="project-description-input">
             <p>Through long-lasting collaboration, Kodeworks has yielded consultancy and knowledge boosting and development. Joachim Fasting in Kodeworks has been a central figure in this collaboration, especially within backend development and reducing complexity and costs in the technology stack.</p>

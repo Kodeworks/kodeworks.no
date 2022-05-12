@@ -17,13 +17,6 @@ export default function Inatur({ project }: Prop): JSX.Element {
       <ProjectHeader project={project} />
 
       <article>
-        <img
-          className="project-image--header"
-          src="/assets/projects/inatur-2.jpg"
-          width="1200"
-          height="1200"
-          alt=""
-        />
         <section className="project-description-input">
           <p>
             Inatur has built a solid platform for delivering their services, and
@@ -52,7 +45,7 @@ export default function Inatur({ project }: Prop): JSX.Element {
         </section>
 
         <img
-          className="project-image--header"
+          className="project-image--fullWidth"
           src="/assets/projects/inatur-3.jpg"
           width="1200"
           height="1200"

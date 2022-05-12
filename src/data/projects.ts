@@ -72,7 +72,7 @@ export const projects: ProjectObjectType = {
   inatur: {
     name: 'Inatur',
     urlName: 'inatur',
-    image: '/assets/projects/inatur.jpg',
+    image: '/assets/projects/inatur-2.jpg',
     technologies: ['Java', 'Spring', 'MongoDB', 'JavaScript', 'React'],
     description: "Inatur is Norway's largest online platform for selling hunting and fishing licenses, having offered their services for more than ten years. On their website, larger municipal bodies as well as hunting associations and ground owners can put hunting and fishing licenses out for sale. In this context, Inatur also offers the ability to put cabins out for rent, both for hunting and vacationing. Today, there are more than 1200 cabins registered for renting on Inatur's website.",
     highlighted: true,

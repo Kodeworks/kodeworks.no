@@ -13,18 +13,20 @@ export default function Lawenforcementagency({ project }: Prop): JSX.Element {
   return (
     <div id="page-project">
       <header>
-        <h1>{project.name}</h1>
-        <p>
-          A law enforcement agency should prevent crime and maintain our safety as
-          citizens. In order to achieve this, they are dependent on reliable
-          information systems that support daily operation in an agile and
-          efficient manner. Kodeworks has been part of the development of two
-          instrumental systems for a prominent Nordic law enforcement agency:
-          System for Safety Alarm and Electronic Control; and System for Operative
-          Law Enforcement. Both systems have contributed towards lowering the
-          response times of the agency's operations centers, bettering the safety
-          of Safety Alarm bearers and streamlining the agency's patrolling.
-        </p>
+        <div className="projectHeader__content">
+          <h1>{project.name}</h1>
+          <p>
+            A law enforcement agency should prevent crime and maintain our safety as
+            citizens. In order to achieve this, they are dependent on reliable
+            information systems that support daily operation in an agile and
+            efficient manner. Kodeworks has been part of the development of two
+            instrumental systems for a prominent Nordic law enforcement agency:
+            System for Safety Alarm and Electronic Control; and System for Operative
+            Law Enforcement. Both systems have contributed towards lowering the
+            response times of the agency's operations centers, bettering the safety
+            of Safety Alarm bearers and streamlining the agency's patrolling.
+          </p>
+        </div>
       </header>
 
       <article>
@@ -70,7 +72,7 @@ export default function Lawenforcementagency({ project }: Prop): JSX.Element {
         </section>
 
         <img
-          className="project-image--header"
+          className="project-image--fullWidth"
           src="/assets/projects/lawenforcementagency-2.jpg"
           width="1200"
           height="1200"
