@@ -52,12 +52,12 @@ export const projects: ProjectObjectType = {
     element: Sunlitsea,
   },
   lilbit: {
-    name: 'lilbit',
-    urlName: 'lilbit',
+    name: 'lildog with lilbit',
+    urlName: 'lildog-with-lilbit',
     image: '/assets/projects/lilbit.jpg',
     technologies: ['Java', 'Spring', 'Android', 'iOS', 'JavaScript', 'ReactJS', 'Tailwind'],
     description:
-      'lilbit delivers products for tracking and monitoring of pets, pursuing their goal of expanding the communication between pet and owner. With this ambition, they have achieved huge interest for current and future products and services.',
+      'lilbit delivers products for tracking and monitoring pets, pursuing their goal of expanding the communication between pet and owner. They have achieved tremendous interest in current and future products and services with this ambition.',
     highlighted: true,
     element: Lilbit,
   },
