@@ -9,7 +9,7 @@ interface Prop {
 export default function ProjectTile({ project }: Prop): JSX.Element {
   return (
     <article>
-      <img className="project-tile--image" src={project.image} width="1200" height="1200" alt="" />
+      <img className="project-tile--image" src={project.image} width="1200" height="1200" alt={project.name} />
       <div className="project-ingress">
         <h3>
           {
