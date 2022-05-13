@@ -1,0 +1,6 @@
+public/
+src/
+
+*.ts
+*.tsx
+*.js
