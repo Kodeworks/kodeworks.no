@@ -16,28 +16,24 @@
   top: 0;
 }
 
-.person:not(:hover) .person-overlay {
-  opacity: 0;
-  visibility: hidden;
-}
-
-.person:hover .person-overlay:hover {
+.person .person-overlay {
   display: block;
 
   background-image: linear-gradient(
     180deg,
-    rgba(0, 0, 0, 0.31) 0,
-    rgba(0, 0, 0, 0.3) 5%,
-    rgba(0, 0, 0, 0.2) 10%,
-    rgba(0, 0, 0, 0.18) 20%,
-    rgba(0, 0, 0, 0.16) 30%,
-    rgba(0, 0, 0, 0.14) 40%,
-    rgba(0, 0, 0, 0.12) 50%,
-    rgba(0, 0, 0, 0.1) 60%,
-    rgba(0, 0, 0, 0.2) 70%,
-    rgba(0, 0, 0, 0.25) 90%,
-    rgba(0, 0, 0, 0.31) 95%,
-    rgba(0, 0, 0, 0.34)
+    rgba(0, 0, 0, 0.1) 0,
+    rgba(0, 0, 0, 0.08) 5%,
+    rgba(0, 0, 0, 0.07) 10%,
+    rgba(0, 0, 0, 0.06) 20%,
+    rgba(0, 0, 0, 0.05) 30%,
+    rgba(0, 0, 0, 0.04) 40%,
+    rgba(0, 0, 0, 0.03) 50%,
+    rgba(0, 0, 0, 0.08) 60%,
+    rgba(0, 0, 0, 0.3) 70%,
+    rgba(0, 0, 0, 0.55) 80%,
+    rgba(0, 0, 0, 0.6) 90%,
+    rgba(0, 0, 0, 0.6) 95%,
+    rgba(0, 0, 0, 0.7)
   );
 }
 /* END Person Overlay
@@ -50,18 +46,21 @@
   line-height: 20px;
 
   position: absolute;
-  bottom: 15px;
+  bottom: 10px;
   left: 15px;
   right: 15px;
 }
 
 .person-information a {
   color: #fff;
-  font-weight: 200;
+  font-size: 14px;
+  text-decoration: none;
+
 }
 
 .person-information a:hover {
   color: #fff;
+  text-decoration: underline;
 }
 
 .person-projects li:not(:last-child) {
@@ -92,28 +91,4 @@
 
 .person-actions a:not(:last-child) {
   margin-right: 4px;
-}
-
-@media (max-width: 660px),
-(max-device-width: 850px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
-  .person:not(:hover) .person-overlay {
-    visibility: visible;
-    opacity: 1;
-
-    background-image: linear-gradient(
-      180deg,
-      rgba(0, 0, 0, 0.31) 0,
-      rgba(0, 0, 0, 0.3) 5%,
-      rgba(0, 0, 0, 0.2) 10%,
-      rgba(0, 0, 0, 0.18) 20%,
-      rgba(0, 0, 0, 0.16) 30%,
-      rgba(0, 0, 0, 0.14) 40%,
-      rgba(0, 0, 0, 0.12) 50%,
-      rgba(0, 0, 0, 0.1) 60%,
-      rgba(0, 0, 0, 0.2) 70%,
-      rgba(0, 0, 0, 0.25) 90%,
-      rgba(0, 0, 0, 0.31) 95%,
-      rgba(0, 0, 0, 0.34)
-    );
-  }
 }
