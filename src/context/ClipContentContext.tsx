@@ -1,4 +1,4 @@
-import { createContext, useContext, useState } from 'react';
+import { createContext, useContext, useEffect, useState } from 'react';
 
 interface ClipContentContextInterface {
   clipMode: boolean,
@@ -30,12 +30,14 @@ export function ClipContentProvider({ children }: Prop): JSX.Element {
 export function useClipContent(clipMode? : boolean): ClipContentContextInterface {
   const context = useContext(ClipContentContext);
 
+  useEffect(() => {
+    if (context) {
+      context.changeClipMode(clipMode || false);
+    }
+  });
+
   if (!context) {
     throw new Error('Cannot use useClipContent outside of ClipContentContext');
-  }
-
-  if (clipMode !== undefined) {
-    context.changeClipMode(clipMode);
   }
 
   return context;
