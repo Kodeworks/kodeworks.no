@@ -199,7 +199,7 @@ const people: Person[] = [
     image: '/assets/people/martin.jpg',
   },
   {
-    name: 'John Hansenp',
+    name: 'John Hansen',
     email: 'john@kodeworks.no',
     projects: [projects.klp, projects.remarkable, projects.equinor],
     image: '/assets/people/john.jpg',
