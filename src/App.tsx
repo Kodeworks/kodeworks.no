@@ -47,9 +47,21 @@ export default function App(): JSX.Element {
     <>
       <Router>
         <button onClick={handleMenuButtonClick} id="menu-button" className={clipMode ? 'dark-mode' : ''}>
-          {isNavigationOpen
-            ? <img src={xmarkIcon} alt="Close button" />
-            : 'MENU'}
+          <label className="menuicon-label">
+            <span
+              className={`menuicon-line-container menuicon-line-container-top${isNavigationOpen ? '--active' : ''}`}
+            >
+              <span className="menuicon-line menuicon-line-top"></span>
+            </span>
+            <span
+              className={`menuicon-line-container menuicon-line-container-bottom${isNavigationOpen ? '--active' : ''}`}
+            >
+              <span className="menuicon-line menuicon-line-bottom"></span>
+            </span>
+          </label>
+          <label className={`menubutton-label ${isNavigationOpen ? 'menubutton-label-close' : ''}`}>
+            {isNavigationOpen ? 'Close' : 'Menu'}
+          </label>
         </button>
 
         <Routes>

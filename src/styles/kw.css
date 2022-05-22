@@ -125,18 +125,19 @@ ul, ol {
   list-style-type: lower-alpha;
 }
 
-
 /* Menu Button
 ------------------------------------------------------------------------------*/
 #menu-button {
-  background: none;
+  background-color: transparent;
+  border-radius: 22px;
   border: none;
   color: #000;
   cursor: pointer;
-  font-size: 32px;
   height: 44px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-transform: uppercase;
+  width: 140px;
 
   position: fixed;
   top: 15px;
@@ -147,9 +148,96 @@ ul, ol {
 #menu-button.dark-mode {
   color: var(--color-green);
 }
+#menu-button.dark-mode .menuicon-line {
+  background-color: var(--color-green);
+}
 
 .theme-dark #menu-button {
   color: #fff;
+}
+
+.menubutton-label {
+  cursor: pointer;
+  font-size: 28px;
+
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 44px;
+}
+
+.menubutton-label-close {
+  color: #000;
+  font-size: 24px;
+}
+
+.menuicon-label {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10px;
+  display: block;
+  width: 44px;
+  height: 44px;
+}
+
+.menuicon-line-container {
+  position: absolute;
+  left: 0;
+  top: 7px;
+  width: 30px;
+  height: 30px;
+}
+
+.menuicon-line {
+  display: block;
+  width: 17px;
+  height: 1px;
+  background-color: #000;
+  border-radius: 0.5px;
+  position: absolute;
+  left: 6px;
+  z-index: 1;
+}
+
+.menuicon-line-container {
+  transition: transform 0.2s ease-in-out 0s;
+}
+
+.menuicon-line-top {
+  transition: top 0.2s ease-in-out 0.2s;
+  top: 11px;
+}
+
+.menuicon-line-bottom {
+  transition: bottom 0.2s ease-in-out 0.2s;
+  bottom: 11px;
+}
+
+.menuicon-line-container-top--active {
+  transition: transform 0.2s ease-in-out 0.2s;
+  transform: rotate(45deg);
+}
+
+.menuicon-line-container-top--active .menuicon-line,
+.menuicon-line-container-bottom--active .menuicon-line {
+  background-color: #000 !important;
+}
+
+.menuicon-line-container-bottom--active {
+  transition: transform 0.2s ease-in-out 0.2s;
+  transform: rotate(-45deg);
+}
+
+.menuicon-line-container-top--active .menuicon-line-top {
+  transition: top 0.2s ease-in-out 0s;
+  top: 15px;
+}
+
+.menuicon-line-container-bottom--active .menuicon-line-bottom {
+  transition: bottom 0.2s ease-in-out 0s;
+  bottom: 15px;
 }
 
 
