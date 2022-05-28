@@ -30,7 +30,7 @@ function Home(): JSX.Element {
     setHighlightedPeople(people);
   }, []);
 
-  const shouldClipText = useClipText(['projects', 'about-image-container']);
+  const shouldClipText = useClipText(['projects']);
 
   useEffect(() => {
     changeClipMode(shouldClipText);
@@ -46,7 +46,7 @@ function Home(): JSX.Element {
         <div>
           <h2 className="section-header-headline">Who?</h2>
           <p>
-            We are a pack of technologists who believe in creating value through receptiveness, expertise and dedication. We commit ourselves to delivering good solutions and value in collaboration with our clients, and strive each day to create an invigorating and giving workplace.
+            We are a pack of technologists who believe in creating value through receptiveness, expertise and dedication. We commit ourselves to deliver good solutions and value in collaboration with our clients, and strive each day to create an invigorating and giving workplace.
           </p>
         </div>
         <span id="about-image-container">
