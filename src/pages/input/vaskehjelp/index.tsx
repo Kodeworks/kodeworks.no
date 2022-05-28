@@ -20,7 +20,6 @@ export default function Vaskehjelp({ project }: Prop): JSX.Element {
 
       <article>
         <section className="">
-          <img alt="Developer Team at Vaskehjelp" src={ImageVaskehjelp} className="project-image--floatRight" />
           <div className="project-description-input">
             <p>Peter Ringset in Kodeworks joined us last year, but we already knew him well from the time at Vaskehjelp, where we worked on a project together. Vaskehjelp is a marketplace that connects professional cleaners and customers. They offer a unique approach to digitizing cleaning services, and Peter is here to tell us a bit about what it was like working on this project.</p>
 
@@ -57,6 +56,8 @@ export default function Vaskehjelp({ project }: Prop): JSX.Element {
 
           <p>Vaskehjelp continues to be a central player as a cleaning service platform, and Kodeworks says thanks for the opportunity to be a part of the commercialization of a very exciting startup.</p>
         </section>
+
+        <img alt="Developer Team at Vaskehjelp" src={ImageVaskehjelp} className="project-image--floatRight" />
       </article>
     </div>
   )

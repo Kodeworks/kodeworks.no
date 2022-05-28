@@ -6,7 +6,7 @@
 #page-project > article {
   padding-bottom: 120px;
   width: 100%;
-  max-width: var(--page-max-width);
+  max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -29,17 +29,29 @@
   clear: both;
 }
 
+#page-project article img {
+  width: 100%;
+  margin-bottom: 25px;
+  margin-top: 15px;
+}
+
 .project-description-input,
 .project-description-output {
-  width: 46%;
+
+  max-width: 620px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .project-description-input {
-  float: left;
+  /* margin-left: 55px; */
+  /* max-width: 680px; */
 }
 
 .project-description-output {
-  float: right;
+  /* max-width: 580px; */
+  /* margin-left: auto; */
+  /* margin-right: auto; */
 }
 
 .project-output {
@@ -67,7 +79,10 @@
 
   .project-description-input,
   .project-description-output {
-    float: none;
     width: 100%;
+  }
+
+  .project-description-input {
+    margin-left: 0;
   }
 }

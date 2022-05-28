@@ -46,7 +46,6 @@ export default function Sunlitsea({ project }: Prop): JSX.Element {
 
 
         <section >
-          <img src={ImageSunlitsea} alt="" className="project-image--floatLeft" />
           <div className="project-description-output">
             <p>Sunlit Sea has on several occasions worked with Kodeworks on this, and we have contributed in a broad range of areas. From 3D renderings of production and deployment, and a website with Sunlit Sea’s Smart Quoter service, down to the sensor- and communication electronics put on every module, Kodeworks has designed and implemented necessary solutions from the ground up.</p>
 
@@ -71,7 +70,7 @@ export default function Sunlitsea({ project }: Prop): JSX.Element {
           </div>
         </section>
 
-
+        <img src={ImageSunlitsea} alt="" className="project-image--floatLeft" />
       </article>
     </div>
   )

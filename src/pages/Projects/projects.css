@@ -35,13 +35,11 @@
 }
 
 .project-image--floatRight {
-  float: right;
-  width: 40%;
+
 }
 
 .project-image--floatLeft {
-  float: left;
-  width: 45%;
+
 }
 
 
@@ -84,12 +82,10 @@
   }
 
   .project-image--floatRight {
-    margin-left: 15px;
-    margin-bottom: 15px;
+
   }
 
   .project-image--floatLeft {
-    margin-right: 15px;
-    margin-bottom: 15px;
+
   }
 }
