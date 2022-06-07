@@ -3,8 +3,6 @@ import ProjectTile from '../../components/ProjectTile';
 import { useClipContent } from '../../context/ClipContentContext';
 import api from '../../api';
 
-import './projects.css';
-
 export default function Projects(): JSX.Element {
   useClipContent(true);
 

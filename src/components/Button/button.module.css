@@ -24,7 +24,7 @@
 }
 
 .btn.btn-icon {
-  background: url("../../assets/icons/chevron-right.svg") no-repeat;
+  background: url("/static/icons/chevron-right.svg") no-repeat;
   background-position: right 4px top 5px;
   padding-right: 24px;
 }

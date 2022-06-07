@@ -1,0 +1,252 @@
+:root {
+  --gutter-size: 30px;
+  --gutter-size-mobile: 20px;
+
+  --page-max-width: 1400px;
+  --page-max-width-narrow: 1100px;
+
+  --spacer-large: 120px;
+  --spacer-medium: 60px;
+
+  --color-green: #b7ff9f;
+  --color-grey: #E8E7E6;
+}
+
+body {
+  font-family: arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.625;
+}
+
+a {
+  color: #666;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+strong {
+  font-weight: bold;
+}
+
+
+/* Typography
+------------------------------------------------------------------------------*/
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Natural Grotesk Bold", arial, sans-serif;
+  font-weight: 600;
+  line-height: 1.1;
+  margin: 0 0 5px 0;
+}
+
+h1 { font-size: 42px; }
+h2 { font-size: 40px; }
+h3 { font-size: 28px; }
+h4 { font-size: 18px; }
+h5 { font-size: 14px;}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.section-header-headline {
+  font-size: 68px;
+}
+
+@media (max-width: 660px),
+(max-device-width: 850px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  h1 { font-size: 36px; }
+  h2 { font-size: 28px; }
+  h3 { font-size: 20px; }
+  h4 { font-size: 16px; }
+  h5 { font-size: 14px;}
+
+  .section-header-headline  {
+    font-size: 42px;
+  }
+}
+
+
+/* Section
+------------------------------------------------------------------------------*/
+.section {
+  display: block;
+}
+
+.section-hero {
+  font-size: 20px;
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
+.section-text-center {
+  text-align: center;
+}
+
+.section-content {
+  width: 100%;
+  max-width: var(--page-max-width);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-content.section-content-narrow {
+  max-width: var(--page-max-width-narrow);
+}
+
+
+@media (max-width: 660px),
+(max-device-width: 850px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  .section-hero {
+    font-size: 18px;
+  }
+}
+
+
+/* List
+------------------------------------------------------------------------------*/
+ul, ol {
+  list-style-type: disc;
+  margin-left: 30px;
+}
+
+.list-plain {
+  list-style-type: none;
+  margin-left: 0;
+}
+
+.list-alphabet {
+  list-style-type: lower-alpha;
+}
+
+/* Menu Button
+------------------------------------------------------------------------------*/
+#menu-button {
+  background-color: transparent;
+  border-radius: 22px;
+  border: none;
+  color: #000;
+  cursor: pointer;
+  height: 44px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-transform: uppercase;
+  width: 140px;
+
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  z-index: 1000;
+}
+
+#menu-button.dark-mode {
+  color: var(--color-green);
+}
+#menu-button.dark-mode .menuicon-line {
+  background-color: var(--color-green);
+}
+
+.theme-dark #menu-button {
+  color: #fff;
+}
+
+.menubutton-label {
+  cursor: pointer;
+  font-size: 28px;
+
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 44px;
+}
+
+.menubutton-label-close {
+  color: #000;
+  font-size: 24px;
+}
+
+.menuicon-label {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10px;
+  display: block;
+  width: 44px;
+  height: 44px;
+}
+
+.menuicon-line-container {
+  position: absolute;
+  left: 0;
+  top: 7px;
+  width: 30px;
+  height: 30px;
+}
+
+.menuicon-line {
+  display: block;
+  width: 17px;
+  height: 1px;
+  background-color: #000;
+  border-radius: 0.5px;
+  position: absolute;
+  left: 6px;
+  z-index: 1;
+}
+
+.menuicon-line-container {
+  transition: transform 0.2s ease-in-out 0s;
+}
+
+.menuicon-line-top {
+  transition: top 0.2s ease-in-out 0.2s;
+  top: 11px;
+}
+
+.menuicon-line-bottom {
+  transition: bottom 0.2s ease-in-out 0.2s;
+  bottom: 11px;
+}
+
+.menuicon-line-container-top--active {
+  transition: transform 0.2s ease-in-out 0.2s;
+  transform: rotate(45deg);
+}
+
+.menuicon-line-container-top--active .menuicon-line,
+.menuicon-line-container-bottom--active .menuicon-line {
+  background-color: #000 !important;
+}
+
+.menuicon-line-container-bottom--active {
+  transition: transform 0.2s ease-in-out 0.2s;
+  transform: rotate(-45deg);
+}
+
+.menuicon-line-container-top--active .menuicon-line-top {
+  transition: top 0.2s ease-in-out 0s;
+  top: 15px;
+}
+
+.menuicon-line-container-bottom--active .menuicon-line-bottom {
+  transition: bottom 0.2s ease-in-out 0s;
+  bottom: 15px;
+}
+
+
+/* Utilities
+------------------------------------------------------------------------------*/
+.no-scroll {
+  height: 100vh;
+  overflow-y: scroll;
+  position: fixed;
+  width: 100%;
+}

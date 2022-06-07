@@ -1,6 +1,8 @@
-import './staffmanual.css';
+import { useClipContent } from '../../context/ClipContentContext';
 
 export default function StaffManual(): JSX.Element {
+  useClipContent(false);
+
   return (
     <>
       <header className="section-hero section-content section-content-narrow">

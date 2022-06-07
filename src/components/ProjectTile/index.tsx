@@ -1,25 +1,38 @@
+import { useRouter } from 'next/router';
+import Link from 'next/link';
+
 import { Project } from '../../types';
 
-import './projecttile.css';
+import style from './projecttile.module.css';
 
 interface Prop {
-  project: Project
+  project: Project;
 }
 
 export default function ProjectTile({ project }: Prop): JSX.Element {
+  const { locale } = useRouter();
+
   return (
     <article>
-      <img className="project-tile--image" src={project.image} width="1200" height="1200" alt={project.name} />
-      <div className="project-ingress">
+      <img
+        className={style['project-tile--image']}
+        src={project.image}
+        width="1200"
+        height="1200"
+        alt={project.name}
+      />
+      <div className={style['project-ingress']}>
         <h3>
-          {
-            project.element !== null
-              ? <a href={`/input/${project.urlName}`} className="project-link">{project.name}</a>
-              : project.name
-          }
+          {project.published ? (
+            <Link href={`input/${project.urlName}`} locale={locale}>
+              <a className={style['project-link']}>{project.name}</a>
+            </Link>
+          ) : (
+            project.name
+          )}
         </h3>
         <p>{project.description}</p>
       </div>
     </article>
-  )
+  );
 }

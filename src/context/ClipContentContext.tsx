@@ -1,16 +1,17 @@
 import { createContext, useContext, useEffect, useState } from 'react';
 
 interface ClipContentContextInterface {
-  clipMode: boolean,
-  changeClipMode: (mode: boolean) => void
+  clipMode: boolean;
+  changeClipMode: (mode: boolean) => void;
 }
 
-export const ClipContentContext = createContext<ClipContentContextInterface>(
-  { clipMode: false, changeClipMode: () => {} }
-);
+export const ClipContentContext = createContext<ClipContentContextInterface>({
+  clipMode: false,
+  changeClipMode: () => {},
+});
 
 interface Prop {
-  children: JSX.Element
+  children: JSX.Element | JSX.Element[];
 }
 
 export function ClipContentProvider({ children }: Prop): JSX.Element {
@@ -22,12 +23,12 @@ export function ClipContentProvider({ children }: Prop): JSX.Element {
 
   return (
     <ClipContentContext.Provider value={{ clipMode, changeClipMode }}>
-      { children }
+      {children}
     </ClipContentContext.Provider>
   );
 }
 
-export function useClipContent(clipMode? : boolean): ClipContentContextInterface {
+export function useClipContent(clipMode?: boolean): ClipContentContextInterface {
   const context = useContext(ClipContentContext);
 
   useEffect(() => {

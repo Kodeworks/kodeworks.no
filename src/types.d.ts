@@ -1,25 +1,37 @@
-import React from "react";
+import React from 'react';
 
-export interface Person {
+export type Person = {
   name: string;
   image: string;
   email: string;
   urls?: SocialUrl[];
   projects: Project[];
-}
+};
 
-export interface Project {
+export type Project = {
   name: string;
   description: string;
   image: string;
   urlName: string;
-  element: React.FC<any> | null;
-
   technologies?: string[];
-  highlighted?: boolean;
-}
+  published?: boolean;
+};
 
-export interface SocialUrl {
+export type SocialUrl = {
   name: string;
   url: string;
-}
+};
+
+// Dictionary Types
+
+type DictionaryTerm = {
+  [key: string]: string;
+};
+
+type DictionaryKey = {
+  [key: string]: string;
+};
+
+type Dictionary = {
+  [key: string]: DictionaryTerm;
+};

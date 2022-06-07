@@ -2,13 +2,11 @@ import { Project } from '../../../types';
 import { usePageTitle } from '../../../utils/usePageTitle';
 
 import ProjectHeader from '../../../components/ProjectHeader';
-
-import '../project.css';
+import api from '../../../api';
 
 interface Prop {
-  project: Project
+  project: Project;
 }
-
 
 export default function Equinor({ project }: Prop): JSX.Element {
   usePageTitle(project.name);
@@ -17,9 +15,15 @@ export default function Equinor({ project }: Prop): JSX.Element {
     <div id="page-project">
       <ProjectHeader project={project} />
 
-      <article>
-
-      </article>
+      <article></article>
     </div>
-  )
+  );
+}
+
+export async function getStaticProps() {
+  return {
+    props: {
+      project: await api.projects.getProject('equinor'),
+    },
+  };
 }

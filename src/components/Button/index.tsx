@@ -1,13 +1,15 @@
 import React from 'react';
+import Link from 'next/link';
+import { useRouter } from 'next/router';
 
-import './button.css';
+import style from './button.module.css';
 
 enum Appearance {
   Dark,
   Light,
   DarkNoPadding,
   LightNoPadding,
-  Secondary
+  Secondary,
 }
 
 interface ButtonProp {
@@ -15,47 +17,59 @@ interface ButtonProp {
   onClick?: () => void;
   href?: string;
   disabled?: boolean;
-  children?: React.ReactNode
+  children?: React.ReactNode;
 }
 
 function Button({ appearance, ...props }: ButtonProp): JSX.Element {
   switch (appearance) {
     case Appearance.Light:
     case Appearance.LightNoPadding:
-      return <LightButton appearance={appearance} { ...props } />
+      return <LightButton appearance={appearance} {...props} />;
 
     case Appearance.Dark:
     case Appearance.DarkNoPadding:
     default:
-      return <DarkButton appearance={appearance} { ...props } />
+      return <DarkButton appearance={appearance} {...props} />;
   }
 }
 
 function DarkButton({ appearance, onClick, href, disabled, children }: ButtonProp): JSX.Element {
+  const { locale } = useRouter();
+
   if (href != null) {
     return (
-      <a href={ href } className={`btn btn-dark ${disabled ? 'btn-disabled' : ''} ${appearance === Appearance.DarkNoPadding ? 'btn--noPadding' : ''}`}>
-        <span>{ children }</span>
-      </a>
+      <Link href={href} locale={locale}>
+        <a
+          className={`${style.btn} ${style['btn-dark']} ${disabled ? style['btn-disabled'] : ''} ${
+            appearance === Appearance.DarkNoPadding ? style['btn--noPadding'] : ''
+          }`}
+        >
+          <span>{children}</span>
+        </a>
+      </Link>
     );
   } else {
-    return (
-      <></>
-    );
+    return <></>;
   }
 }
 
-function LightButton({ appearance,  onClick, href, disabled, children }: ButtonProp): JSX.Element {
+function LightButton({ appearance, onClick, href, disabled, children }: ButtonProp): JSX.Element {
+  const { locale } = useRouter();
+
   if (href != null) {
     return (
-      <a href={ href } className={`btn btn-light ${disabled ? 'btn-disabled' : ''} ${appearance === Appearance.LightNoPadding ? 'btn--noPadding' : ''}`}>
-        <span>{ children }</span>
-      </a>
+      <Link href={href} locale={locale}>
+        <a
+          className={`${style.btn} ${style['btn-light']} ${disabled ? style['btn-disabled'] : ''} ${
+            appearance === Appearance.LightNoPadding ? 'btn--noPadding' : ''
+          }`}
+        >
+          <span>{children}</span>
+        </a>
+      </Link>
     );
   } else {
-    return (
-      <></>
-    );
+    return <></>;
   }
 }
 
