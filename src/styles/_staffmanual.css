@@ -1,3 +1,70 @@
+.search-results-container {
+
+}
+
+.search {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  width: 800px;
+}
+
+.search-textinput {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+  width: 100%;
+}
+
+.search-results-list {
+  background-color: #fff;
+  overflow: scroll;
+
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+
+  list-style: none;
+  margin-left: 0;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  right: 0;
+  min-height: 75px;
+  max-height: 300px;
+  z-index: 1000;
+}
+
+.search-results-element {
+  border-top: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  padding: 15px;
+  box-sizing: border-box;
+
+  cursor: pointer;
+}
+
+.search-results-element:first-child {
+  border-top: none;
+}
+
+.search-results-element:hover {
+  background-color: #efefef;
+}
+
+.search-results-element h4 {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.search-results-element p {
+  font-size: 14px;
+}
+.search-results-element p:last-child {
+  margin-bottom: 0;
+}
+
+
 .handbook-mainheader-content {
   box-sizing: border-box;
   margin-left: auto;
@@ -5,9 +72,18 @@
   max-width: 800px;
   padding-left: var(--gutter-size);
   padding-right: var(--gutter-size);
-  padding: 80px 0 25px 0;
+  padding: 100px 0 25px 0;
   text-align: center;
   width: 100%;
+}
+
+.handbook-mainheader-content h1 {
+  font-size: 110px;
+}
+
+.handbook-mainheader-metadata {
+  font-size: 16px;
+  color: #888;
 }
 
 .handbook-horizontal-separator {

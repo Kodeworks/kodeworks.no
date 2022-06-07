@@ -1,13 +1,27 @@
 import { useEffect } from 'react';
+import { useRouter } from 'next/router';
+import Link from 'next/link';
 
-import './navigation.css';
+import { useTranslation } from '../../utils/useTranslation';
+import dictionary from './dict';
+
+import style from './navigation.module.css';
 
 interface Prop {
-  isOpened: boolean
-  toggleNavigationOpened(event: any): void;
+  isOpened: boolean;
+  toggleNavigationOpened(
+    event:
+      | React.MouseEvent<HTMLButtonElement>
+      | React.MouseEvent<HTMLAnchorElement>
+      | KeyboardEvent,
+    skip?: boolean
+  ): void;
 }
 
 export default function Navigation({ isOpened, toggleNavigationOpened }: Prop): JSX.Element {
+  const { t } = useTranslation(dictionary);
+  const { locale, pathname } = useRouter();
+
   useEffect(() => {
     function escKeyListener(event: KeyboardEvent) {
       if (isOpened && event.key === 'Escape') {
@@ -21,36 +35,72 @@ export default function Navigation({ isOpened, toggleNavigationOpened }: Prop): 
 
     return function cleanupListener() {
       document.removeEventListener('keydown', escKeyListener);
-    }
+    };
   }, [isOpened]);
 
+  function onLinkClick(event: React.MouseEvent<HTMLAnchorElement>) {
+    event.preventDefault();
+
+    const currentHref = event.currentTarget.href;
+
+    toggleNavigationOpened(event, true);
+    window.location.href = currentHref;
+  }
+
   return (
-    <menu id="menu" className={isOpened ? 'menu--opened' : ''}>
-      <div className="menu-hero">
-        <img className="menu-hero-logo" src="/assets/logo-white.svg" width="100" alt="" />
-        <div className="menu-hero-overlay"></div>
+    <menu id={style['menu']} className={isOpened ? style['menu--opened'] : ''}>
+      <div className={style['menu-hero']}>
+        <img className={style['menu-hero-logo']} src="/static/logo-white.svg" width="100" alt="" />
+        <div className={style['menu-hero-overlay']}></div>
       </div>
 
-      <div className="menu-content">
-        <nav className="menu-navigation">
-          <h4><a href="/">KodeWorks</a></h4>
+      <div className={style['menu-content']}>
+        <nav className={style['menu-navigation']}>
+          <h4>
+            <Link href="/" locale={locale}>
+              KodeWorks
+            </Link>
+          </h4>
           <ul className="list-plain">
             <li>
-              <a href="/people">Our People</a>
+              <Link href="/people" locale={locale}>
+                {t('our people')}
+              </Link>
             </li>
             <li>
-              <a href="/projects">Projects</a>
+              <Link href="/projects" locale={locale}>
+                {t('projects')}
+              </Link>
             </li>
             <li>
-              <a href="/staffmanual">Staff Manual</a>
+              <Link href="/staffmanual" locale={locale}>
+                {t('staff manual')}
+              </Link>
+            </li>
+            <li className={style['menu-change-language']}>
+              <Link href={pathname} locale="no">
+                <img
+                  className={style['icon-flag']}
+                  src="/static/icons/flag-no.png"
+                  alt="Change language to Norwegian"
+                />
+              </Link>
+              <Link href={pathname} locale="en">
+                <img
+                  className={style['icon-flag']}
+                  src="/static/icons/flag-en.png"
+                  alt="Change language to English"
+                />
+              </Link>
             </li>
           </ul>
         </nav>
 
-        <footer className="menu-footer">
-          <h4>Get in Touch</h4>
+        <footer className={style['menu-footer']}>
+          <h4>{t('get in touch')}</h4>
           <p>
-            post@kodeworks.no<br />
+            post@kodeworks.no
+            <br />
             +47 416 70 269‬
           </p>
 
@@ -59,12 +109,40 @@ export default function Navigation({ isOpened, toggleNavigationOpened }: Prop): 
 
           <h5>Trondheim</h5>
           <p>Fjordgata 30, 7010 Trondheim</p>
+          <div className={`${style['menu-footer-links']}`}>
+            <ul className={`list-plain ${style['menu-list-booring']}`}>
+              <li>
+                <Link href="/legal/privacy">
+                  <a>{t('privacy policy')}</a>
+                </Link>
+              </li>
+            </ul>
 
-          <ul className="list-plain menu-list-booring">
-            <li><a href="/legal/privacy">Privacy Policy</a></li>
-          </ul>
+            <ul className={`list-plain ${style['menu-list-languages']}`}>
+              <li>
+                <Link href={pathname} locale="no">
+                  <a>
+                    <div>Norsk</div>
+                  </a>
+                </Link>
+              </li>
+              <li>
+                <Link href={pathname} locale="en">
+                  <a>
+                    <div>English</div>
+                  </a>
+                </Link>
+              </li>
+            </ul>
+          </div>
         </footer>
       </div>
     </menu>
-  )
+  );
+}
+
+export async function getStaticProps() {
+  return {
+    props: {},
+  };
 }

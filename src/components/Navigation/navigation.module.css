@@ -45,7 +45,7 @@
   right: 100%;
   bottom: 0;
   top: 0;
-  background-image: url('./assets/EOSR7735.jpg');
+  background-image: url('/static/photos/EOSR7735.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -111,27 +111,83 @@
   margin-bottom: 35px;
 }
 
+.menu-change-language {
+  margin-top: 20px;
+  margin-left: -4px;
+}
+
 /* Menu Footer
 ------------------------------------------------------------------------------*/
 .menu-footer {
   font-size: 14px;
 }
 
-.menu-list-booring {
+
+/* Menu Footer - Links
+------------------------------------------------------------------------------*/
+.menu-footer-links {
   border-top: 1px solid #ddd;
   font-size: 12px;
   margin-top: 25px;
   width: 100%;
 }
 
-ul.menu-list-booring li:not(:first-child) {
+.menu-footer-links::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.menu-list-languages,
+.menu-list-booring {
+  line-height: 38px;
+}
+
+.menu-list-languages li,
+.menu-list-booring li {
+  display: inline-block;
+  position: relative;
+}
+
+.menu-list-languages {
+  float: right;
+}
+
+.menu-list-languages li:not(:first-child) {
+  margin-left: 15px;
+}
+
+.menu-list-languages li:not(:first-child)::before {
+  color: #888;
+  content: "• ";
+  position: absolute;
+  font-size: 9px;
+  left: -9px;
+}
+
+.menu-list-languages a {
+  display: block;
+  line-height: 38px;
+}
+
+.menu-list-booring {
+  float: left;
+}
+
+.menu-list-booring li:not(:first-child) {
   padding-left: 10px;
 }
 
-ul.menu-list-booring li:not(:first-child)::before {
+.menu-list-booring li:not(:first-child)::before {
   color: #888;
   content: "• ";
   padding-right: 6px;
+}
+
+.icon-flag {
+  width: 32px;
+  margin: 4px;
+  cursor: pointer;
 }
 
 

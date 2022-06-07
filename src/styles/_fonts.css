@@ -1,17 +1,17 @@
 @font-face {
   font-family: "Natural Grotesk";
-  src: url("./fonts/NON Natural Grotesk-Regular.woff2") format("woff2"),
-    url("./fonts/NON Natural Grotesk-Regular.woff") format("woff");
+  src: url("/static/fonts/NON Natural Grotesk-Regular.woff2") format("woff2"),
+    url("/static/fonts/NON Natural Grotesk-Regular.woff") format("woff");
 }
 
 @font-face {
   font-family: "Natural Grotesk Bold";
-  src: url("./fonts/NON Natural Grotesk-Bold.woff2") format("woff2"),
-    url("./fonts/NON Natural Grotesk-Bold.woff") format("woff");
+  src: url("/static/fonts/NON Natural Grotesk-Bold.woff2") format("woff2"),
+    url("/static/fonts/NON Natural Grotesk-Bold.woff") format("woff");
 }
 
 @font-face {
   font-family: "Natural Grotesk Light";
-  src: url("./fonts/NON Natural Grotesk-Light.woff2") format("woff2"),
-    url("./fonts/NON Natural Grotesk-Light.woff") format("woff");
+  src: url("/static/fonts/NON Natural Grotesk-Light.woff2") format("woff2"),
+    url("/static/fonts/NON Natural Grotesk-Light.woff") format("woff");
 }

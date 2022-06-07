@@ -2,15 +2,15 @@ import { Person } from '../../types';
 
 import PersonTile from '../PersonTile';
 
-import './peopleList.css';
+import style from './peopleList.module.css';
 
 interface Prop {
-  people: Person[]
+  people: Person[];
 }
 
 export default function PeopleList({ people }: Prop): JSX.Element {
   return (
-    <ul className="people-list">
+    <ul className={style['people-list']}>
       {people.map((person) => (
         <li key={person.name}>
           <PersonTile person={person} />
