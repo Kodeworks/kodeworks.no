@@ -203,7 +203,7 @@ export default function StaffManual(): JSX.Element {
           <article id="handbok-militaer">
             <h2>Military Service</h2>
 
-            <p>Summons to military service, including first-time service, which requires leave from work, is notified to the human resources manager and placed in the calendar. For compulsory service in the Armed Forces, the Home Guard, the Civil Defense, and the Police Reserve, up to one month's salary is paid per. years, with the deduction of all military supplements such as salary, unemployment benefits, etc. For voluntary service in the Home Guard, leave without pay is granted. First-time military service is granted unpaid leave. Repetition exercises that last longer than four weeks must be arranged separately.</p>
+            <p>Summons to military service, including first-time service, which requires leave from work, is notified to the human resources manager and placed in the calendar. For compulsory service in the Armed Forces, the Home Guard, the Civil Defense, and the Police Reserve, up to one month's salary is paid per year, with the deduction of all military supplements such as salary, unemployment benefits, etc. First-time military service is granted unpaid leave. Repetition exercises must be arranged separately.</p>
           </article>
 
           <article id="handbok-kommunikasjon">
