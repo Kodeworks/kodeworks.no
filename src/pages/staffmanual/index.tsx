@@ -130,7 +130,7 @@ export default function StaffManual(): JSX.Element {
             <h3>Sick days</h3>
             <p>We have an extended sick day (self-certification) system that is more flexible than the normal system in Norway (4x3 days every 12 months). Sick days can be taken individually, this is done to give the employees more flexibility.</p>
             <ul>
-              <li>You have 12 single days you can use, they can be used one by one or consecutively. We use a 12-month sliding window when calculating sick days, this means that you should look 12 months back from today's date when calculating how many days you have left. The number of days used in a 12 month period should never exceed 12 days.</li>
+              <li>You have 12 single days you can use, they can be used one by one or consecutively. We use a 12-month sliding window when calculating sick days, this means that you should look 12 months back from today's date when calculating how many days you have left. The number of days used in a 12-month period should never exceed 12 days.</li>
               <li>Report to your nearest manager as soon as possible when you use sick days. Also, make sure that you (or someone else) notify your customer in a timely manner.</li>
               <li>You can take the rest of the day off if you get sick during your working hours, this will not count as a sick day. This is an extra benefit that you get as a Kodeworks employee.</li>
               <li>Sick note (doctor's certificate) is needed if you are away for more than 3 consecutive days. You can get this from your general practitioner, or any other medical professional that can issue sick notes.</li>
