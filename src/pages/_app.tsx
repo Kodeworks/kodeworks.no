@@ -3,7 +3,6 @@ import Head from 'next/head';
 import { NextPage } from 'next';
 import { AppProps } from 'next/app';
 import { useRouter } from 'next/router';
-import Link from 'next/link';
 
 import { ClipContentContext } from '../context/ClipContentContext';
 import { ClipContentProvider } from '../context/ClipContentContext';
@@ -38,9 +37,6 @@ function Main(): JSX.Element {
   const router = useRouter();
   const { clipMode } = useContext(ClipContentContext);
 
-  const scrollPositions = useRef<{ [url: string]: number }>({});
-  const isBack = useRef(false);
-
   useEffect(() => {
     function onRouteChangeStart(): void {
       setIsNavigationOpen(false);
@@ -48,35 +44,11 @@ function Main(): JSX.Element {
     }
 
     router.events.on('routeChangeStart', onRouteChangeStart);
-    router.events.on('routeChangeComplete', onRouteChangeComplete);
 
     return () => {
       router.events.off('routeChangeStart', onRouteChangeStart);
-      router.events.off('routeChangeComplete', onRouteChangeComplete);
     };
   }, [router]);
-
-  // useEffect(() => {
-  //   function handleRouteChangeStart() {
-  //     document.documentElement.className = '';
-  //     document.documentElement.scrollTop = scrollTop;
-  //     console.log(1234);
-  //   }
-
-  //   function handleRouteChangeComplete() {
-  //     // setIsNavigationOpen(false);
-  //     // window.scroll({
-  //     //   top: 0,
-  //     //   left: 0,
-  //     // });
-  //     // setScrollTop(0);
-  //     // console.log(document.documentElement.scrollTop);
-  //     setIsNavigationOpen(false);
-  //   }
-
-  //   router.events.on('routeChangeStart', handleRouteChangeStart);
-  //   router.events.on('routeChangeComplete', handleRouteChangeComplete);
-  // });
 
   function handleMenuButtonClick(
     event:

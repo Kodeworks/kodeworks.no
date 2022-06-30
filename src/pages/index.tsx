@@ -102,7 +102,7 @@ function Home(): JSX.Element {
           <p>
             We want to get to know you! Let's grab a cup of coffee, and feel free to have a look at{' '}
             <Link href="/staffmanual" locale={locale}>
-              Staff Manual
+              <a>Staff Manual</a>
             </Link>{' '}
             for a better grasp of what we offer.
           </p>

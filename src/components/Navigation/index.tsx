@@ -58,39 +58,23 @@ export default function Navigation({ isOpened, toggleNavigationOpened }: Prop): 
         <nav className={style['menu-navigation']}>
           <h4>
             <Link href="/" locale={locale}>
-              KodeWorks
+              <a>KodeWorks</a>
             </Link>
           </h4>
           <ul className="list-plain">
             <li>
               <Link href="/people" locale={locale}>
-                {t('our people')}
+                <a>{t('our people')}</a>
               </Link>
             </li>
             <li>
               <Link href="/projects" locale={locale}>
-                {t('projects')}
+                <a>{t('projects')}</a>
               </Link>
             </li>
             <li>
               <Link href="/staffmanual" locale={locale}>
-                {t('staff manual')}
-              </Link>
-            </li>
-            <li className={style['menu-change-language']}>
-              <Link href={pathname} locale="no">
-                <img
-                  className={style['icon-flag']}
-                  src="/static/icons/flag-no.png"
-                  alt="Change language to Norwegian"
-                />
-              </Link>
-              <Link href={pathname} locale="en">
-                <img
-                  className={style['icon-flag']}
-                  src="/static/icons/flag-en.png"
-                  alt="Change language to English"
-                />
+                <a>{t('staff manual')}</a>
               </Link>
             </li>
           </ul>
