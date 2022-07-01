@@ -1,6 +1,5 @@
 import { useContext, useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
-import Link from 'next/link';
 
 import api from '../api';
 import { useClipText } from '../utils/useClipText';
@@ -46,12 +45,7 @@ function Home(): JSX.Element {
       <article id="about">
         <div>
           <h2 className="section-header-headline">{t('who')}</h2>
-          <p>
-            We are a pack of technologists who believe in creating value through receptiveness,
-            expertise and dedication. We commit ourselves to deliver good solutions and value in
-            collaboration with our clients, and strive each day to create an invigorating and giving
-            workplace.
-          </p>
+          <p>{t('who_description')}</p>
         </div>
         <span id="about-image-container">
           <img src="/static/photos/EOSR7695.jpg" alt="About" />
@@ -65,7 +59,7 @@ function Home(): JSX.Element {
             <p>{t('people_description', people.length)}</p>
             <p>
               <Button appearance={Button.appearances.LightNoPadding} href="/people">
-                See all of them
+                {t('who_button')}
               </Button>
             </p>
           </header>
@@ -98,17 +92,9 @@ function Home(): JSX.Element {
 
       <article id="work">
         <div>
-          <h2 className="section-header-headline">{t('join the team')}</h2>
-          <p>
-            We want to get to know you! Let's grab a cup of coffee, and feel free to have a look at{' '}
-            <Link href="/staffmanual" locale={locale}>
-              <a>Staff Manual</a>
-            </Link>{' '}
-            for a better grasp of what we offer.
-          </p>
-          <p>
-            You can reach us at <strong>jobb@kodeworks.no</strong>.
-          </p>
+          <h2 className="section-header-headline">{t('career')}</h2>
+          <p dangerouslySetInnerHTML={{ __html: t('career_description') }} />
+          <p dangerouslySetInnerHTML={{ __html: t('career_contact') }} />
         </div>
       </article>
     </>
