@@ -6,22 +6,6 @@ const stories = [projects.inatur, projects.sunlitsea, projects.vaskehjelp];
 
 const people: Person[] = [
   {
-    name: 'Ingrid Skar',
-    email: 'ingrid@kodeworks.no',
-    projects: [projects.equinor, projects.inatur],
-    image: '/static/photos/people/ingrid.jpg',
-    urls: [
-      {
-        name: 'github',
-        url: 'https://github.com/ingrskar',
-      },
-      {
-        name: 'linkedin',
-        url: 'https://www.linkedin.com/in/ingrid-skar/',
-      },
-    ],
-  },
-  {
     name: 'Tri Nguyen',
     email: 'tri@kodeworks.no',
     projects: [projects.vaskehjelp, projects.inatur, projects.flir],
@@ -229,7 +213,7 @@ const people: Person[] = [
     image: '/static/photos/people/lasse.jpg',
   },
   {
-    name: 'Jan- Marius Vatle',
+    name: 'Jan-Marius Vatle',
     email: 'janmarius@kodeworks.no',
     projects: [projects.sunlitsea],
     image: '',
@@ -238,6 +222,12 @@ const people: Person[] = [
     name: 'Ole Marius Forbord',
     email: 'olemarius@kodeworks.no',
     projects: [projects.sunlitsea],
+    image: '',
+  },
+  {
+    name: 'Eirik Baug',
+    email: 'eirik.baug@kodeworks.no',
+    projects: [],
     image: '',
   },
 ];
