@@ -1,13 +1,17 @@
 import { useEffect, useState } from 'react';
 
 import api from '../../api';
+import dictionary from '../dict';
 import { Person } from '../../types';
 import { useClipContent } from '../../context/ClipContentContext';
+import { useTranslation } from '../../utils/useTranslation';
 
 import PeopleList from '../../components/PeopleList';
 
+
 export default function People(): JSX.Element {
   const [people, setPeople] = useState<Person[]>([]);
+  const { t } = useTranslation(dictionary);
   useClipContent(false);
 
   useEffect(() => {
@@ -19,10 +23,7 @@ export default function People(): JSX.Element {
       <div>
         <h1 className="section-header-headline">People</h1>
 
-        <p>
-          Today Kodeworks consists of {people.length} amazing people, who endeavor to
-          develop solutions realizing our clients' visions.
-        </p>
+        <p>{t('people_description', people.length)}</p>
 
         <PeopleList people={people} />
       </div>
