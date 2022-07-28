@@ -9,10 +9,10 @@ export default function StaffManual(): JSX.Element {
   const router = useRouter();
   const locale = getLocale(router);
 
+  useClipContent(false);
+
   // TODO: Improve this
   if (locale === "no") return StaffManualNO()
-
-  useClipContent(false);
 
   return (
     <>
