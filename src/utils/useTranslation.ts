@@ -25,7 +25,7 @@ export function useTranslation(dictionary: Dictionary) {
   };
 }
 
-function getLocale(router: NextRouter): string | undefined {
+export function getLocale(router: NextRouter): string | undefined {
   const { locales, defaultLocale, ...nextRouter } = router;
   const locale = (locales ?? []).includes(nextRouter.locale || '')
     ? nextRouter.locale

@@ -1,6 +1,17 @@
+import { useRouter } from 'next/router';
+
 import { useClipContent } from '../../context/ClipContentContext';
+import { getLocale } from '../../utils/useTranslation';
+
+import StaffManualNO from './no';
 
 export default function StaffManual(): JSX.Element {
+  const router = useRouter();
+  const locale = getLocale(router);
+
+  // TODO: Improve this
+  if (locale === "no") return StaffManualNO()
+
   useClipContent(false);
 
   return (
