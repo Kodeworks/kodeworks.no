@@ -59,7 +59,7 @@ export default function LildogWithLilbit({ project }: Prop): JSX.Element {
       </div>
       <article>
         <img
-          src={`static/projects/lildog-with-lilbit/lildog-with-lilbit.jpg`}
+          src={`/static/projects/lildog-with-lilbit/lildog-with-lilbit.jpg`}
           className="project-image--floatLeft"
           alt="lildog with lilbit"
         />
