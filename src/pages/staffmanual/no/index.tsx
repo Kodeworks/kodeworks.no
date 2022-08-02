@@ -7,9 +7,8 @@ export default function StaffManual(): JSX.Element {
     <>
       <header className="section-hero section-content section-content-narrow">
         <div className="handbook-mainheader-content">
-          <h1 className="section-header-headline">Ansatthåndbok</h1>
-          <p>Dette dokumentet er en håndbok i hva det vil si å være ansatt i Kodeworks. Vi ønsker med dette å beskrive hvordan vi tenker og hvordan vi gjør ting i praksis. I dette dokumentet vil du finne informasjon om alt fra arbeidstid, lønn, utstyr, goder, prosesser og mye mer. Dette er et dokument vi ønsker at alle våre ansatte skal bidra til og føle eierskap til.</p>
-
+          <h1 className="section-header-headline">Personalhåndbok</h1>
+          <p>Velkommen til håndboken vår! Vi ønsker i dette dokumentet å beskrive hvordan vi tenker og hvordan vi gjør ting i praksis. Her vil du finne informasjon om alt fra arbeidstid, lønn, utstyr, goder, prosesser og mye mer. Dette er et dokument vi ønsker at alle våre ansatte skal bidra til og føle eierskap til.</p>
         </div>
       </header>
 
@@ -33,7 +32,6 @@ export default function StaffManual(): JSX.Element {
             <li><a href="#handbok-process-and-onboarding">Prosess og onboarding</a></li>
             <li><a href="#handbok-probation">Prøvetid</a></li>
             <li><a href="#handbok-job-types">Stillingstyper og roller</a></li>
-            <li><a href="#handbok-salary-adjustment">Lønnstrinn og lønnsjustering</a></li>
             <li><a href="#handbok-expectations">Forventninger</a></li>
             <li><a href="#handbok-one-on-ones">Medarbeidersamtaler og fagsamtaler</a></li>
             <li><a href="#handbok-resignation">Oppsigelse</a></li>
@@ -67,7 +65,7 @@ export default function StaffManual(): JSX.Element {
           <article id="handbok-arbeidssted">
             <h2>Arbeidssted</h2>
 
-            <p>Som konsulent hender det ofte at man vil arbeids fra kundens lokaler. Vi ønsker i hovedsak å finne oppdrag som ikke er for langt fra våre egne kontorer.</p>
+            <p>Som konsulent hender det ofte at man vil arbeide fra kundens lokaler. Vi ønsker i hovedsak å finne oppdrag som ikke er for langt fra våre egne kontorer.</p>
             <p>Kodeworks vil dekke eventuelle reiseutgifter for oppdrag som påløper ytterligere kostnader og betydelig lengre reisevei enn det normalt ville vært til et av våre kontorer.</p>
             <p>For eksempel vil det bety for oppdrag som faller utenfor Sone A i Trondheim eller Sone 1 i oslo.</p>
           </article>
@@ -82,9 +80,16 @@ export default function StaffManual(): JSX.Element {
             <p>I Kodeworks har vi som mål at lønn ikke skal være noe du trenger å bekymre deg for. Vi har derfor ingen individuelle lønnsjusteringer der man må forhandle seg frem til bedre vilkår. Som ansatt skal du ikke behøve å be om å få det du fortjener. Det skal komme automatisk. Vi har derfor valgt en lønnsmodell som gir alle våre ansatte lik lønn for likt grunnlag, som baseres på den ansattes erfaring, i hovedsak antall års erfaring. Alle Kodeworks-ansatte har innsikt i hva andre i selskapet tjener. En oversikt over lønnstabellen for inneværende og tidligere år finnes under “Lønn” i fellesmappen på Google Drive.</p>
             <p>Lønn skal som hovedregel utbetales innen den 22. hver måned, eller siste virkedag før 22. dersom det ikke er en vanlig virkedag.</p>
 
+            <h4>Lønnstrinn og lønnsjustering</h4>
+
+            <p>Kodeworks har en felles lønnsmodell som gir forutsigbarhet og trygghet for de ansatte. Når man får et jobbtilbud fra Kodeworks vil man få presentert en årlig fastlønn som er gjeldende ved oppstartsdato. Lønnsnivået bestemmes ut i fra lønnstrinnet ditt i inneværende års lønnstabell.</p>
+            <p>Lønnstabellen består av 21 trinn, fra lønnstrinn 0 til og med lønnstrinn 20. Lønnstabellen justeres ved årsskiftet hvert år, og beregnes ut i fra siste års lønnsutvikling basert på Tekna IKT Privat Sektor. Nyutdannede uten relevant mastergrad starter på lønnstrinn 0, og med relevant mastergrad på lønnstrinn 1. Den til enhver tid gjeldende lønnstabellen finner du i fellesmappen på Google Drive innunder “Lønn”.</p>
+            <p>Lønnstrinnet ditt fastsettes basert på det totale antallet måneder fulltids relevant arbeidserfaring, i tillegg til ansiennitet opparbeidet i Kodeworks. Lønnstrinnet ditt heves med ett trinn hvert hele år med arbeidserfaring du opparbeider deg. Dette medfører at du i tillegg kan oppleve en lønnsjustering også utenfor den felles lønnsjusteringen som skjer i januar. Du vil få fastsatt hvilken måned dette faller på ved oppstart, og det vil være den samme måneden for resten av arbeidsforholdet.</p>
+
+
             <h3>Feriepenger</h3>
 
-            <p>Feriepenger utbetales i juni. Alle 25 feriedagene vil bli trukket denne måneden. Juni har vanligvis ikke 25 feriedager, så de resterende feriedagene blir trukket fra de utbetalte feriepengene. Ansatte som har startet i inneværende år vil ikke ha noen oppsparte feriepenger, så da vil de resterende dagene bli trukket fra neste månedslønn. Dersom man ønsker en alternativ utbetaling av feriepenger, kan dette tilrettelegges av regnskapsavdelingen ved behov. Av praktiske årsaker er det lurt å informere om dette i god tid før utbetalingen skal skje.</p>
+            <p>Feriepenger utbetales i juni. Alle 25 feriedagene vil bli trukket denne måneden. Juni har vanligvis ikke 25 arbeidsdager, så de resterende feriedagene blir trukket fra de utbetalte feriepengene. Ansatte som har startet i inneværende år vil ikke ha noen oppsparte feriepenger, så da vil de resterende dagene bli trukket fra neste månedslønn. Dersom man ønsker en alternativ utbetaling av feriepenger, kan dette tilrettelegges av regnskapsavdelingen ved behov. Av praktiske årsaker er det lurt å informere om dette i god tid før utbetalingen skal skje.</p>
 
             <h3>Overtid og overtidslønn</h3>
 
@@ -106,7 +111,7 @@ export default function StaffManual(): JSX.Element {
 
             <h3>Litteratur og læringsmateriale</h3>
 
-            <p>Det finnes endeløse ressurser for å slukke læringstørsten. Hvis du ønsker å benytte e-læringsverktøy som Pluralsight, Coursera eller lignende, er det bare å registrere seg for dette. Du står også fritt til å bestille bøker i alle former og formater. Vi er jo et kunnskapsbasert selskap, så det er jo en viktig del av levebrødet vårt! Registrer utgiften i regnskapssystemet, så vil du få det tilbakeført.</p>
+            <p>Det finnes endeløse ressurser for å slukke læringstørsten. Hvis du ønsker å benytte e-læringsverktøy som Pluralsight, Coursera eller lignende, er det bare å registrere seg for dette. Du står også fritt til å bestille bøker i alle former og formater. Vi er et kunnskapsbasert selskap, så det er en viktig del av levebrødet vårt! Registrer utgiften i regnskapssystemet, så vil du få det tilbakeført.</p>
 
             <h3>Kurs og konferanse</h3>
 
@@ -120,10 +125,10 @@ export default function StaffManual(): JSX.Element {
 
             <h3>Sykedager</h3>
 
-            <p>Vi har et utvidet sykedagssystem (egenmelding) som er mer fleksibelt enn det normale systemet i Norge (4x3 dager hver 12. måned). Sykedager kan tas ut individuelt, for å gi deg som ansatt mer fleksibilitet for kort tids sykdom uten å måtte kontakte lege.</p>
+            <p>Vi har et utvidet egenmeldingssystem, som er mer fleksibelt enn det normale systemet i Norge (4x3 dager hver 12. måned). Egenmeldingsdager kan tas ut individuelt, for å gi deg som ansatt mer fleksibilitet for kort tids sykdom uten å måtte kontakte lege.</p>
 
             <ul>
-              <li>Du har 12 enkeltvis egenmeldingsdager du kan bruke en etter en, eller sammenhengende. Vi bruker et 12-måneders glidende vindu for å holde dette ajour. Dette betyr at vi ser 12 måneder tilbake i tid for å se hvor mange egenmeldingsdager du har tilgjengelig.</li>
+              <li>Du har 12 enkeltvis egenmeldingsdager du kan bruke én og én eller etter hverandre. Vi bruker et 12-måneders glidende vindu for å holde dette ajour. Dette betyr at vi ser 12 måneder tilbake i tid for å se hvor mange egenmeldingsdager du har tilgjengelig.</li>
               <li>Meld fra til nærmeste leder så snart du må benytte deg av en sykedag. Husk også å melde i fra til kunden eller prosjektledelsen så snart som mulig.</li>
               <li>Dersom du blir syk underveis i arbeidsdagen, vil du kunne benytte velferdspermisjon til dette. Dette vil ikke telle som en sykedag. Dette er en ekstra fleksibilitet til deg som ansatt i Kodeworks.</li>
               <li>Sykemelding fra lege kreves dersom du er syk i mer enn 3 sammenhengende dager. Du  kan få dette fra fastlegen din, eller annet kvalifisert helsepersonell som kan utstede sykemelding.</li>
@@ -134,7 +139,7 @@ export default function StaffManual(): JSX.Element {
               <li>Sykedager er ikke det samme som feriedager, så ubrukte egenmeldingsdager vil ikke overføres til neste periode.</li>
             </ul>
 
-            <h4>Pay during sick leave</h4>
+            <h4>Lønn under sykefravær</h4>
 
             <p>NAV dekker lønn for sykefravær når sykemeldingsperioden overstiger 16 dager. NAV dekker derimot ikke lønn over 6G (ca 640000 NOK i 2022). For å håndtere dette har vi en sykelønnsforsikring som dekker differansen mellom 6G og din lønn, såfremt du oppfyller krave NAV har satt for <a href="https://www.nav.no/no/person/arbeid/sykmeldt-arbeidsavklaringspenger-og-yrkesskade/sykepenger/sykepenger-til-arbeidstakere">Sykepenger til arbeidstakere</a> og vilkårene i forsikringen. Forsikringsvilkårene finnes ved å logge inn hos vårt forsikringsselskap. Mer informasjon om dette finner du i mappen “Forsikring” på Google Drive.</p>
 
@@ -161,8 +166,8 @@ export default function StaffManual(): JSX.Element {
               <li>Undersøkelse av lege eller tannlege.</li>
               <li>Følge barn til første dag på skole eller barnehage (opp til 1 dag).</li>
               <li>Permisjon resten av dagen dersom man blir syk i løpet av arbeidsdagen.</li>
-              <li>Kort permisjon ifm sykdom i eget hjem.</li>
-              <li>Kort permisjon ifm ektefelles/samboers/partners fødsel.</li>
+              <li>Kort permisjon ifm. sykdom i eget hjem.</li>
+              <li>Kort permisjon ifm. ektefelles/samboers/partners fødsel.</li>
               <li>Dødsfall og/eller begravelse for nær familie (opp til 5 dager).</li>
               <li>Donering av blod.</li>
               <li>Flyttedag (opp til 1 dag per år).</li>
@@ -174,17 +179,17 @@ export default function StaffManual(): JSX.Element {
           <article id="handbok-timeforing">
             <h2>Timeføring</h2>
 
-            <p>Timeføring er dessverre noe som kreves i de fleste konsulentselskaper, og Kodeworks er intet unntak. Derimot har vi, i likhet med mange andre IT-konsulentselskaper, utviklet vårt eget timeføringssystem tilpasset oss for å gjøre prosessen enklere.</p>
+            <p>Timeføring er noe som kreves i de fleste konsulentselskaper, og Kodeworks er intet unntak. Derimot har vi, i likhet med mange andre IT-konsulentselskaper, utviklet vårt eget timeføringssystem tilpasset oss for å gjøre prosessen enklere.</p>
             <p>Du skal føre arbeidsrelatert tid, for eksempel fakturerbare timer på ulike prosjekter, sykdom, ferie, velferdspermisjon og så videre. Timelisten må være levert innen siste virkedag hver måned.</p>
             <p>En arbeidsdag er definert som 8 timer i timeføringssystemet. Dette betyr at ferie, velferdspermisjon og interntid skal føres som 8 timer hver dag. For kundeprosjekter vil det i de fleste tilfeller være 7,5 timer som skal faktureres, med mindre kontrakten tilsier at vi kan fakturere lunsjpausen i tillegg. Dette vil du bli informert om før prosjektoppstart.</p>
-            <p>Du vil også potensielt måtte føre timer i kunden sitt timeføringssystem. Her vil det nok være andre regler som gjelder for når og hvordan det skal føres.</p>
+            <p>Du vil også potensielt måtte føre timer i kunden sitt timeføringssystem. Her kan det være andre regler som gjelder for når og hvordan det skal føres.</p>
           </article>
 
           <article id="handbok-medeier">
             <h2>Medeier</h2>
 
             <p>Som ansatt kan man også bli medeier i avdelingen man jobber i. Vi tror på at ansatte som har medeierskap får sterkere insentiver for å skape vekst og trivsel i selskapet, som kommer alle til gode. Medeierskap i form av aksjer vil bli distribuert fra et sett av aksjer som er eid av selskapet, eller morselskapet. Aksjene kjøpes og selges til kostpris. Når man tiltrer som aksjonær i selskapet, blir man underlagt selskapets aksjonæravtale.</p>
-            <p>Alle ansatte vil bli tilbudt aksjer ved neste oppdatering av aksjeeierboken, etter at prøveperioden er passert. Siden dette krever litt administrasjon og signatur fra eksisterende eiere, gjør vi dette normalt hvert halvår (1. Juni og 1. Desember), alternativt hvert år (1. Desember). Vi anbefaler alle å lese seg opp om det å være aksjonær i forkant av denne prosessen, og vi står behjelpelig til å svare så godt vi kan på eventuelle spørsmål.</p>
+            <p>Alle ansatte vil bli tilbudt aksjer ved neste oppdatering av aksjeeierboken, etter at prøveperioden er passert. Siden dette krever litt administrasjon og signatur fra eksisterende eiere, gjør vi dette normalt hvert halvår (1. juni og 1. desember), alternativt hvert år (1. desember). Vi anbefaler alle å lese seg opp om det å være aksjonær i forkant av denne prosessen, og vi står behjelpelig til å svare så godt vi kan på eventuelle spørsmål.</p>
           </article>
 
           <article id="handbok-other">
@@ -238,7 +243,7 @@ export default function StaffManual(): JSX.Element {
               <li>Oppstart:
                 <ul>
                   <li>Første arbeidsdag med hilserunde på kontoret.</li>
-                  <li>Innføring i kontorrutiner, nøkler, alarmsystem, lunsj ordning, timeføring.</li>
+                  <li>Innføring i kontorrutiner, nøkler, alarmsystem, lunsjordning, timeføring.</li>
                   <li>Innføring i hvordan å være en konsulent.</li>
                   <li>Forberedelse til kundeprosjekt, herunder kartlegging av kompetanse og interesser, forberede CV osv.</li>
                   <li>Tilegning av arbeidsoppgaver før oppstart i kundeprosjekt.</li>
@@ -258,32 +263,24 @@ export default function StaffManual(): JSX.Element {
           <article id="handbok-job-types">
             <h2>Stillingstyper og roller</h2>
 
-            <p>De aller fleste ansatte i Kodeworks er utviklere og har stilling som konsulent. I tillegg finnes det noen stillinger under ledelse og administrasjon, mer spesifikt daglig leder, økonomimedarbeider og selger. Enkelte ansatte er i tillegg styremedlemmer i de ulike selskapene (avdelingene). Hver avdeling har en ledergruppe, som normalt sett består av daglig leder og andre styremedlemmer.</p>
-            <p>I motsetning til andre konsulentselskaper har vi ikke en egen stillingstype for seniorkonsulent. Du vil derimot kunne bli presentert ovenfor en potensiell kunde som seniorkonsulent, på bakgrunn av kompetanse og erfaring, men dette vil ofte variere basert på hver enkelt kundes definisjon av senior.</p>
+            <p>De aller fleste ansatte i Kodeworks er utviklere og har stilling som konsulent. I tillegg finnes det noen stillinger under ledelse og administrasjon, mer spesifikt daglig leder, økonomimedarbeider og selger. Enkelte ansatte er i tillegg styremedlemmer i de ulike avdelingene. Hver avdeling har en ledergruppe, som normalt sett består av daglig leder og andre styremedlemmer.</p>
+            <p>I motsetning til andre konsulentselskaper har vi ikke en egen stillingstype for seniorkonsulent. Du vil derimot kunne bli presentert ovenfor en potensiell kunde som seniorkonsulent på bakgrunn av kompetanse og erfaring, men dette vil ofte variere basert på hver enkelt kundes definisjon av senior.</p>
             <p>Det finnes ulike roller man kan påta seg i hver avdeling, litt avhengig av hva gjeldende ønsker og behov er blant de ansatte. Noen er faggruppeledere eller -medlemmer, noen er sosialansvarlig, og noen er tillitsvalgte. Det er bare å snakke med avdelingslederen din dersom du ønsker å bidra til å skape et enda bedre arbeidsmiljø, sosialt, eller faglig tilbud.</p>
-          </article>
-
-          <article id="handbok-salary-adjustment">
-            <h2>Lønnstrinn og lønnsjustering</h2>
-
-            <p>Som beskrevet i arbeidsvilkårene har Kodeworks en felles lønnsmodell som gir forutsigbarhet og trygghet for de ansatte. Når man får et jobbtilbud fra Kodeworks vil man få presentert en årlig fastlønn som er gjeldende ved oppstartsdato. Lønnsnivået bestemmes ut i fra lønnstrinnet ditt i inneværende års lønnstabell.</p>
-            <p>Lønnstabellen består av 21 trinn, fra lønnstrinn 0 til og med lønnstrinn 20. Lønnstabellen justeres ved årsskiftet hvert år, og beregnes ut i fra siste års lønnsutvikling basert på Tekna IKT Privat Sektor. Nyutdannede uten relevant mastergrad starter på lønnstrinn 0, og med relevant mastergrad på lønnstrinn 1. Den til enhver tid gjeldende lønnstabellen finner du i fellesmappen på Google Drive innunder “Lønn”.</p>
-            <p>Lønnstrinnet ditt fastsettes basert på det totale antallet måneder fulltids relevant arbeidserfaring, i tillegg til ansiennitet opparbeidet i Kodeworks. Lønnstrinnet ditt heves med ett trinn hvert hele år med arbeidserfaring du opparbeider deg. Dette medfører at du i tillegg kan oppleve en lønnsjustering også utenfor den felles lønnsjusteringen som skjer i januar. Du vil få fastsatt hvilken måned dette faller på ved oppstart, og det vil være den samme måneden for resten av arbeidsforholdet.</p>
           </article>
 
           <article id="handbok-expectations">
             <h2>Forventninger</h2>
 
-            <p>Som konsulent vil du tilbringe mye av tiden ute på oppdrag hos kundene våre. For oss er det viktig at alle våre konsulenter er gode ambassadører for Kodeworks. Dette gjelder både i form av å levere resultater med høy kvalitet, utfordre kunden når det passer seg for å skape de beste løsningene, men også forsøke å forstå kunden og deres prosesser utover prosjektet. Ofte viser deg seg at det er andre utfordringer kunden også trenger hjelp til, som kan resultere i nye oppdrag for Kodeworks.</p>
+            <p>Som konsulent vil du tilbringe mye av tiden ute på oppdrag hos kundene våre. For oss er det viktig at alle våre konsulenter er gode ambassadører for Kodeworks. Dette gjelder både i form av å levere resultater med høy kvalitet, utfordre kunden når det passer seg for å skape de beste løsningene, men også forsøke å forstå kunden og deres prosesser utover prosjektet. Ofte viser det seg at det er andre utfordringer kunden også trenger hjelp til, som kan resultere i nye oppdrag for Kodeworks.</p>
             <p>En av hovedkarakteristikkene til konsulentene i Kodeworks er at de er brenner for faget. Vi  tilrettelegger for faglig utvikling gjennom blant annet fagdager, fagsamtaler, men håper også at du følger med og holder deg oppdatert på nye trender og teknologier utover dette.</p>
-            <p>For å kunne ha et bredt tilbud er vi og avhengig av innspill fra de ansatte. Vi oppfordrer deg derfor til å enten komme med idéer eller ta ansvar for å arrangere det du måtte ønske av sosiale eller faglige arrangementer. Vi har et solid sosial- og fagbudsjett til disposisjon, så her er det bare kreativiteten det går på!</p>
+            <p>For å kunne ha et bredt tilbud er vi avhengige av innspill fra de ansatte. Vi oppfordrer deg derfor til enten å komme med idéer eller ta ansvar for å arrangere det du måtte ønske av sosiale eller faglige arrangementer. Vi har et solid sosial- og fagbudsjett til disposisjon, så her er det bare kreativiteten det går på!</p>
           </article>
 
           <article id="handbok-one-on-ones">
             <h2>Medarbeidersamtaler og fagsamtaler</h2>
 
             <p>Du vil som ansatt gjennomgå 1-2 offisielle medarbeidersamtaler i året. Selvfølgelig er det alltid rom for slå av en prat dersom det er noe du ønsker å snakke om, så det er bare å ta kontakt med nærmeste leder når du har noe på hjertet. Noe av det vi setter høyest er at alle ansatte trives på arbeidsplassen, så vi vil forsøke å hjelpe deg så godt vi kan med oppfølging og tilrettelegging av dine ønsker og behov.</p>
-            <p>Faggruppa vil og holde fagsamtaler med deg. Her forsøker vi å kartlegge dine faglige ønsker og behov, og hjelpe deg til å finne relevante målsetninger eller fokusområder som drar deg i riktig retning. Dette kan spenne alt fra ønsker til prosjektoppdrag, kurs og konferanser, spesifikk domenekunnskap osv. Fagsamtaler kommer i tillegg til medarbeidersamtaler.</p>
+            <p>Faggruppa vil og holde fagsamtaler med deg. Her forsøker vi å kartlegge dine faglige ønsker og behov, og hjelpe deg til å finne relevante målsetninger eller fokusområder som drar deg i riktig retning. Dette kan være alt fra ønsker om type prosjektoppdrag, kurs, og konferanser, til spesifikk kompetansebygging på teknologier og annen domenekunnskap mm. Fagsamtaler kommer i tillegg til medarbeidersamtaler.</p>
           </article>
 
           <article id="handbok-resignation">
