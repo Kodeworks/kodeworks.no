@@ -1,13 +1,10 @@
 import { NextRouter, useRouter } from 'next/router';
 
 import { Dictionary } from '../types';
-import { i18n } from './i18n';
 
 export function useTranslation(dictionary: Dictionary) {
   const router = useRouter();
   const locale = getLocale(router);
-
-  console.log(i18n('projects', dictionary));
 
   function translate(term: string, ...args: any[]): string {
     let translation = dictionary[locale!][term];
