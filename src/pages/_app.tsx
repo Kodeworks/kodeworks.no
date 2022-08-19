@@ -117,7 +117,7 @@ function Main(): JSX.Element {
           </span>
         </label>
         <label className={`menubutton-label ${isNavigationOpen ? 'menubutton-label-close' : ''}`}>
-          {isNavigationOpen ? 'Close' : 'Menu'}
+          {isNavigationOpen ? 'Lukk' : 'Meny'}
         </label>
       </button>
 
