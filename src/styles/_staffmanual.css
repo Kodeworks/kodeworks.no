@@ -112,21 +112,43 @@
   position: sticky;
   text-align: right;
   top: 0;
-  width: 260px;
+  width: 300px;
+}
+
+.handbook-sidebar i {
+  color: var(--color-green);
+  font-weight: bolder;
+
+}
+
+.handbook-sidebar a {
+  border-bottom: 2px solid  var(--color-green);
+  line-height: 32px;
+  text-decoration: none;
+}
+
+.handbook-sidebar a:hover {
+  border-bottom-color: #000;
+}
+
+.handbook-sidebar a:hover i {
+  color: #000;
 }
 
 .handbook-sidebar h3 {
   font-size: 14px;
   margin-bottom: 15px;
-  padding-right: 15px;
   text-transform: uppercase;
 }
 
 .handbook-sidebar-list {
-  border-right: 2px solid var(--color-green);
   margin-bottom: 35px;
-  padding-right: 15px;
 }
+
+.handbook-content article {
+  margin-bottom: 120px;
+}
+
 
 .handbook-content h2 {
   margin-top: 55px;
