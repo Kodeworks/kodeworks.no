@@ -10,6 +10,9 @@ export default {
     career_description:
       'Vi vil bli bedre kjent med deg! Ta gjerne kontakt for en uformell prat over en kaffe. Titt innom <a href="/staffmanual">håndboka</a> vår og se hva vi kan tilby.',
     career_contact: 'Gi oss gjerne en lyd på <strong>jobb@kodeworks.no</strong>.',
+    what: 'Hva gjør vi?',
+    what_description:
+      'Vi har utført prosjekter med og for kunder av varierende størrelse og på tvers av et bredt spekter av domener. Konsulentene våre sitter inne med mye kunnskap som vi gjerne deler med andre. Nedenfor finner du hvilke typer løsninger vi har utviklet for våre kunder.',
   },
   en: {
     people: 'Our Developers',
@@ -23,5 +26,8 @@ export default {
     career_description:
       'We want to get to know you! Let\'s grab a cup of coffee, and feel free to have a look at <a href="/staffmanual">Staff Manual</a> for a better grasp of what we offer.',
     career_contact: 'You can reach us at <strong>jobb@kodeworks.no</strong>.',
+    what: 'Our Projects',
+    what_description:
+      'By adopting our value oriented approach we have carried out projects with and for clients of varying size, and across a wide spectrum of domains. Below you can find the types of solutions we have developed for our customers.',
   },
 };
