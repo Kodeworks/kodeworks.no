@@ -22,7 +22,7 @@ npm install
 And run the server locally using
 
 ```bash
-npm run start
+npm run dev
 ```
 
 Server starts at `http://localhost:3000`.
