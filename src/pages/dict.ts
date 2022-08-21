@@ -1,7 +1,7 @@
 export default {
   no: {
     people: 'Menneskene',
-    people_description: 'I Kodeworks har vi %1 fantastiske mennesker som brenner for faget.',
+    people_description: 'I KodeWorks har vi %1 fantastiske mennesker som brenner for faget.',
     who: 'Hvem er vi?',
     who_description:
       'Vi er en gjeng teknologer som tror på verdiskapning gjennom åpenhet, kompetanse og dedikasjon. Vi er opptatt av å levere gode løsninger og verdi i samarbeid med kunden, og samtidig jobber vi hver dag for å skape en livlig og givende arbeidsplass.',
@@ -14,7 +14,7 @@ export default {
   en: {
     people: 'Our Developers',
     people_description:
-      "Today Kodeworks consists of %1 amazing people, who endeavor to develop solutions realizing our clients' visions.",
+      "Today KodeWorks consists of %1 amazing people, who endeavor to develop solutions realizing our clients' visions.",
     who: 'Who?',
     who_description:
       'We are a pack of technologists who believe in creating value through receptiveness, expertise and dedication. We commit ourselves to deliver good solutions and value in collaboration with our clients, and strive each day to create an invigorating and giving workplace.',

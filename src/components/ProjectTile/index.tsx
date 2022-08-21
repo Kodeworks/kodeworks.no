@@ -16,7 +16,7 @@ export default function ProjectTile({ project }: Prop): JSX.Element {
     <article>
       <img
         className={style['project-tile--image']}
-        src={project.image}
+        src={'/static/photos/projects/' + project.image}
         width="1200"
         height="1200"
         alt={project.name}

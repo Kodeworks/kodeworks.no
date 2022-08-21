@@ -69,7 +69,7 @@ function Home(): JSX.Element {
 
       <article id="projects">
         <img
-          src={highlightedProject && highlightedProject.image}
+          src={highlightedProject && '/static/photos/projects/' + highlightedProject.image}
           alt={highlightedProject && highlightedProject.name}
           width="400"
           height="400"

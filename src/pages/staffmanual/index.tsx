@@ -8,7 +8,7 @@ export default function StaffManual(): JSX.Element {
       <header className="section-hero section-content section-content-narrow">
         <div className="handbook-mainheader-content">
           <h1 className="section-header-headline">Staff Manual</h1>
-          <p>This document serves as a staff handbook for Kodeworks employees. We aim to describe how we do things and how we think. In this document you will find information about working hours, holiday pay, salary, benefits and much more. This is a document we want all employees to contribute to, and have ownership of.</p>
+          <p>This document serves as a staff handbook for KodeWorks employees. We aim to describe how we do things and how we think. In this document you will find information about working hours, holiday pay, salary, benefits and much more. This is a document we want all employees to contribute to, and have ownership of.</p>
 
         </div>
       </header>
@@ -42,7 +42,7 @@ export default function StaffManual(): JSX.Element {
           <article id="handbok-arbeidstid">
             <h2>Working Hours</h2>
 
-            <p>Contractual working hours are 8 hours per day, with a 30-minute lunch break. In Kodeworks, we operate with a core time in the period 9-15, with the opportunity and room to be able to be flexible during working hours. In a company where competence is our main product, we know that working closely with our colleagues will give the best results. We also know that everyday life can offer other things that mean that at times you need to adapt your working hours outside the core hours.</p>
+            <p>Contractual working hours are 8 hours per day, with a 30-minute lunch break. In KodeWorks, we operate with a core time in the period 9-15, with the opportunity and room to be able to be flexible during working hours. In a company where competence is our main product, we know that working closely with our colleagues will give the best results. We also know that everyday life can offer other things that mean that at times you need to adapt your working hours outside the core hours.</p>
 
             <p>As consultants, we must nevertheless take into account that our customers have their own core time, and any changes here you must coordinate with your project and/or your human resources manager.</p>
 
@@ -66,9 +66,9 @@ export default function StaffManual(): JSX.Element {
 
           <article id="handbok-arbeidssted">
             <h2>Workplace</h2>
-            <p>As a consultant, it often happens that we work where the customer is located. We at Kodeworks aim to find assignments that are not too far from the ordinary workplace.</p>
+            <p>As a consultant, it often happens that we work where the customer is located. We at KodeWorks aim to find assignments that are not too far from the ordinary workplace.</p>
 
-            <p>Kodeworks will cover travel expenses for assignments that entail greater costs and a significantly longer journey than to a normal workplace.</p>
+            <p>KodeWorks will cover travel expenses for assignments that entail greater costs and a significantly longer journey than to a normal workplace.</p>
 
             <p>For example, this will be with longer assignments outside zone A in Trondheim or zone 1 in Oslo.</p>
           </article>
@@ -80,7 +80,7 @@ export default function StaffManual(): JSX.Element {
 
             <h3>Salary</h3>
 
-            <p>At Kodeworks, we do not want the salary to be a factor you have to think about. At the same time, it is important to have a good salary to have the freedom and stability we want all our employees to have. Therefore, have no individual salary assessments. As an employee, you should not have to ask for what you deserve. It should come automatically. We have chosen a salary model that gives everyone equal pay mainly based on the number of years of experience. All Kodeworks employees have an overview of what the others earn. An overview of the current salary level and background figures for salary adjustment can be found in the "Lønn" folder on Google Drive.</p>
+            <p>At KodeWorks, we do not want the salary to be a factor you have to think about. At the same time, it is important to have a good salary to have the freedom and stability we want all our employees to have. Therefore, have no individual salary assessments. As an employee, you should not have to ask for what you deserve. It should come automatically. We have chosen a salary model that gives everyone equal pay mainly based on the number of years of experience. All KodeWorks employees have an overview of what the others earn. An overview of the current salary level and background figures for salary adjustment can be found in the "Lønn" folder on Google Drive.</p>
 
             <p>Salary is usually paid on the 22nd of each month, or the last business day before if the 22nd is not a business day.</p>
 
@@ -99,7 +99,7 @@ export default function StaffManual(): JSX.Element {
 
             <h3>Pension and Insurance</h3>
 
-            <p>Kodeworks sets aside 7% in pension savings. This applies from 0 to 12G.</p>
+            <p>KodeWorks sets aside 7% in pension savings. This applies from 0 to 12G.</p>
 
             <p>In addition to regular business travel and occupational injury insurance, we have travel insurance that covers leisure travel for you and your family. We also have treatment insurance that ensures that you get fast and good treatment if something should happen. This also includes free access to doctor's appointments on mobile.</p>
 
@@ -107,7 +107,7 @@ export default function StaffManual(): JSX.Element {
 
             <h3>Computer and Software</h3>
 
-            <p>We cover the computer and software you need to do your job. What you choose is up to you. Kodeworks' laptop fleet now includes Dell XPS 15, MacBook Pro, and Christian's gaming laptop. If at some point the computer is not good enough to do the work tasks as efficiently as possible, it's time for a new one.</p>
+            <p>We cover the computer and software you need to do your job. What you choose is up to you. KodeWorks' laptop fleet now includes Dell XPS 15, MacBook Pro, and Christian's gaming laptop. If at some point the computer is not good enough to do the work tasks as efficiently as possible, it's time for a new one.</p>
 
             <p>If you need software to do your job, such as IDEA, you can buy this directly and register an expense in our accounting system.</p>
 
@@ -117,22 +117,22 @@ export default function StaffManual(): JSX.Element {
 
             <h3>Courses and Conferences</h3>
 
-            <p>Kodeworks encourages you to attend courses and conferences. In 2018, we all went to JavaZone, but it is to be expected that the employees' interests and wishes for professional replenishment can best be satisfied in other places as well. If you want to go to courses or conferences several times a year, or to go to places that entail greater costs than, for example, JavaZone, this requires the approval of the human resources manager.</p>
+            <p>KodeWorks encourages you to attend courses and conferences. In 2018, we all went to JavaZone, but it is to be expected that the employees' interests and wishes for professional replenishment can best be satisfied in other places as well. If you want to go to courses or conferences several times a year, or to go to places that entail greater costs than, for example, JavaZone, this requires the approval of the human resources manager.</p>
 
-            <p>If you contribute to giving lectures, courses, or the like, Kodeworks will cover this within reasonable limits.</p>
+            <p>If you contribute to giving lectures, courses, or the like, KodeWorks will cover this within reasonable limits.</p>
 
             <h3>Health</h3>
 
             <p>Our occupational group is very exposed to stress-related injuries, which can be avoided by facilitating a good physical work environment. If you're working from a customer's office, and feel that – for example – a table, screen, or chair is not good enough, we will make sure to improve this. It should not be necessary to let such things go at the expense of health.</p>
 
-            <p>We also want to make arrangements for you to be physically active. In Trondheim, Kodeworks has a corporate agreement with 3T. Here, several Kodeworks employees play weekly squash. You do not need to use this if you want to train elsewhere. We cover a similar subscription with other providers as well. In Oslo, there is no separate company agreement, so there you just have to find a similar subscription and we will reimburse it.</p>
+            <p>We also want to make arrangements for you to be physically active. In Trondheim, KodeWorks has a corporate agreement with 3T. Here, several KodeWorks employees play weekly squash. You do not need to use this if you want to train elsewhere. We cover a similar subscription with other providers as well. In Oslo, there is no separate company agreement, so there you just have to find a similar subscription and we will reimburse it.</p>
 
             <h3>Sick days</h3>
             <p>We have an extended sick day (self-certification) system that is more flexible than the normal system in Norway (4x3 days every 12 months). Sick days can be taken individually, this is done to give the employees more flexibility.</p>
             <ul>
               <li>You have 12 single days you can use, they can be used one by one or consecutively. We use a 12-month sliding window when calculating sick days, this means that you should look 12 months back from today's date when calculating how many days you have left. The number of days used in a 12 month period should never exceed 12 days.</li>
               <li>Report to your nearest manager as soon as possible when you use sick days. Also, make sure that you (or someone else) notify your customer in a timely manner.</li>
-              <li>You can take the rest of the day off if you get sick during your working hours, this will not count as a sick day. This is an extra benefit that you get as a Kodeworks employee.</li>
+              <li>You can take the rest of the day off if you get sick during your working hours, this will not count as a sick day. This is an extra benefit that you get as a KodeWorks employee.</li>
               <li>Sick note (doctor's certificate) is needed if you are away for more than 3 consecutive days. You can get this from your general practitioner, or any other medical professional that can issue sick notes.</li>
               <li>Sick days used before a sick note is issued count as used sick days.</li>
               <li>Sick days cannot be used if you have a partial sick note.</li>
@@ -143,7 +143,7 @@ export default function StaffManual(): JSX.Element {
 
             <h3>Benefits</h3>
 
-            <p>Kodeworks has several benefits so that you as an employee can have a flexible, safe, and predictable everyday life. Some benefits are entered into the timekeeping system, such as parental leave and care leave. Expenses should be registered in our accounting system and will be reimbursed on the next salary payment.</p>
+            <p>KodeWorks has several benefits so that you as an employee can have a flexible, safe, and predictable everyday life. Some benefits are entered into the timekeeping system, such as parental leave and care leave. Expenses should be registered in our accounting system and will be reimbursed on the next salary payment.</p>
 
             <p>Periodic expenses such as broadband and membership at the fitness center must be registered monthly. In the event of varying expenses, it is your responsibility as an employee not to exceed 12 times the maximum monthly amount for the relevant benefit in the current year.</p>
 
@@ -160,7 +160,7 @@ export default function StaffManual(): JSX.Element {
             <p>The Norwegian welfare system (NAV) covers the salary of employees in Norway for sick leave periods lasting more than 16 days. NAV will however not cover salaries over 6G (roughly 640.000 NOK in 2022). To mitigate this, we have an insurance policy that covers the difference between 6G and your salary as long as you fill the requirement NAV has set for <a href="https://www.nav.no/en/home/benefits-and-services/Sickness-benefit-for-employees">sickness benefits</a> and the insurance's terms. The insurance's terms can be found by logging in to our insurance provider.</p>
             
             <h3>Welfare Leave</h3>
-            <p>To help make both planned and unforeseen events in everyday life a little easier to handle, Kodeworks provides the following welfare benefits in addition to what is required by law:</p>
+            <p>To help make both planned and unforeseen events in everyday life a little easier to handle, KodeWorks provides the following welfare benefits in addition to what is required by law:</p>
 
             <ul>
               <li>Examination by a doctor or dentist.</li>
@@ -179,7 +179,7 @@ export default function StaffManual(): JSX.Element {
           <article id="handbok-timeforing">
             <h2>Timekeeping</h2>
 
-            <p>Timekeeping is unfortunately required in most consulting companies, and Kodeworks is no exception. Fortunately, like most other consulting companies, we have created our own timekeeping system to make the process easier. You should enter work-related time, i.e. billable time on various projects, illness, vacation, leave, etc. The hours should be delivered by the last working day of the month.</p>
+            <p>Timekeeping is unfortunately required in most consulting companies, and KodeWorks is no exception. Fortunately, like most other consulting companies, we have created our own timekeeping system to make the process easier. You should enter work-related time, i.e. billable time on various projects, illness, vacation, leave, etc. The hours should be delivered by the last working day of the month.</p>
 
             <p>A working day in the timekeeping tool is 8 hours. This means that holidays, welfare leave, and internal initiatives must be taken with 8 hours per day. For customer projects, it will usually be 7.5 hours, unless the contract indicates that we invoice the lunch break as well. You will be informed of this before the project starts.</p>
 
@@ -219,19 +219,19 @@ export default function StaffManual(): JSX.Element {
 
           <article id="handbok-employment">
             <h2>Employment</h2>
-            <p>Employment is an important investment for Kodeworks. The employees are not only the people who will contribute to a good working environment, they are also the actual product Kodeworks delivers. There is therefore a great focus on hiring skilled employees who seek and master challenges. The employees represent Kodeworks.</p>
+            <p>Employment is an important investment for KodeWorks. The employees are not only the people who will contribute to a good working environment, they are also the actual product KodeWorks delivers. There is therefore a great focus on hiring skilled employees who seek and master challenges. The employees represent KodeWorks.</p>
           </article>
 
           <article id="handbok-process-and-onboarding">
             <h2>Process and Onboarding</h2>
-            <p>At Kodeworks, we want you as a new employee to feel that the process from the time you contact us until the contract is signed and the employment relationship has started is a good experience.</p>
+            <p>At KodeWorks, we want you as a new employee to feel that the process from the time you contact us until the contract is signed and the employment relationship has started is a good experience.</p>
 
             <h3>Recruitment Manager</h3>
             <ul>
               <li>Create user in Google Suite.</li>
               <li>Create a CV and invite the new employee to start filling it out.</li>
               <li>Coordinate photo shoots for CV.</li>
-              <li>Invite the new employee to a social event in Kodeworks.</li>
+              <li>Invite the new employee to a social event in KodeWorks.</li>
               <li>Order equipment (computer etc.).</li>
               <li>Assign sponsor.</li>
               <li>Follow up the Administration's tasks.</li>
@@ -251,7 +251,7 @@ export default function StaffManual(): JSX.Element {
               <li>Coordinate place and time. Lunch at the office, feel free to invite with other colleagues.</li>
               <li>Give an introduction to how employee expenses and other accounting matters work.</li>
               <li>Give an introduction to how WerkzTime works.</li>
-              <li>Invite the new employee to a social event in Kodeworks.</li>
+              <li>Invite the new employee to a social event in KodeWorks.</li>
               <li>Invite to Slack.</li>
               <li>Invite to GitLab.</li>
               <li>Invite to GitHub.</li>
@@ -273,7 +273,7 @@ export default function StaffManual(): JSX.Element {
 
           <article id="handbok-job-types">
             <h2>Job types</h2>
-            <p>Kodeworks operates with different titles.</p>
+            <p>KodeWorks operates with different titles.</p>
 
             <h3>Newly hired</h3>
             <p>The position lasts until the probationary period (6 months) and until you have been on assignment with a customer for 3 months and are on assignment further, after which you move up to Consultant. The tasks as a new employee are mainly:</p>
@@ -289,10 +289,10 @@ export default function StaffManual(): JSX.Element {
             <ul>
               <li>Renewable assignments. Ability to sell themselves on extensions of their projects.</li>
               <li>Can draw in others on assignments. Sees opportunities to sell colleagues on the same customer project as themselves.</li>
-              <li>Get new leads. Is observant when in contact with customers, and picks up signals about other projects. Facilitates dialogue between Kodeworks and customers. Follows their network on possible projects with other customers.</li>
-              <li>Available at a higher hourly rate. Has a CV and profile that is sellable at hourly rates up to the upper tier of what the market will pay. Note that Kodeworks may have other incentives for not offering the consultant at a high rate; the consultant can still be considered sellable at a higher hourly rate”.</li>
+              <li>Get new leads. Is observant when in contact with customers, and picks up signals about other projects. Facilitates dialogue between KodeWorks and customers. Follows their network on possible projects with other customers.</li>
+              <li>Available at a higher hourly rate. Has a CV and profile that is sellable at hourly rates up to the upper tier of what the market will pay. Note that KodeWorks may have other incentives for not offering the consultant at a high rate; the consultant can still be considered sellable at a higher hourly rate”.</li>
               <li>Total work experience. Number of years with relevant professional experience.</li>
-              <li>Professional contribution. Contributes to Kodeworks' internal and customer-specific professional programs. Promotes professional development, brings colleagues to professional events, and possibly arranges professional happenings.</li>
+              <li>Professional contribution. Contributes to KodeWorks' internal and customer-specific professional programs. Promotes professional development, brings colleagues to professional events, and possibly arranges professional happenings.</li>
               <li>Social contributions. Promotes corporate sports, social gatherings, and excursions. Ability to create space for everyone to participate.</li>
 
               <li>Must be able to be sold out as a senior. Holds a resume and character that is easy to convince customers that is a senior profile.</li>
@@ -302,14 +302,14 @@ export default function StaffManual(): JSX.Element {
             <p>An independent and experienced consultant with high professional skills and who can communicate well with colleagues, management, and customers. All the criteria for promotion to senior listed above are also relevant.</p>
 
             <h3>Staff</h3>
-            <p>Approximately 10% of the total number of hours in Kodeworks will go to staff-related work within the administration, management, follow-up of employees, and sales. The staff's task is to ensure that the machinery runs properly; that there is a steady influx of professionally interesting assignments, that the employees are well, that the customers are satisfied with Kodeworks, that the company's finances are going as they should, that the company reaches its measurement parameters, and more.</p>
+            <p>Approximately 10% of the total number of hours in KodeWorks will go to staff-related work within the administration, management, follow-up of employees, and sales. The staff's task is to ensure that the machinery runs properly; that there is a steady influx of professionally interesting assignments, that the employees are well, that the customers are satisfied with KodeWorks, that the company's finances are going as they should, that the company reaches its measurement parameters, and more.</p>
           </article>
 
           <article id="handbok-resignation">
             <h2>Resignation</h2>
 
             <p>Termination must notified be in writing. The notice period is mutual for employees and employers with a duration of three months. It runs from the first day of the month after the termination took place unless otherwise agreed.</p>
-            <p>Employees who leave must return handed-out material. Exceptions can be made if the handed-out material is not considered to have any useful value for Kodeworks, for example, a PC and/or mobile phone. Kodeworks does not feel compelled to confiscate equipment that cannot be easily converted into cash or used by other employees.</p>
+            <p>Employees who leave must return handed-out material. Exceptions can be made if the handed-out material is not considered to have any useful value for KodeWorks, for example, a PC and/or mobile phone. KodeWorks does not feel compelled to confiscate equipment that cannot be easily converted into cash or used by other employees.</p>
             <p>If you have accumulated co-ownership in the company, shares must also be redeemed in accordance with the shareholder agreement.</p>
           </article>
         </section>

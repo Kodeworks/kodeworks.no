@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 
-const defaultPostfix = ' - Kodeworks';
+const defaultPostfix = ' - KodeWorks';
 
 export function usePageTitle(title: string): void {
   useEffect(() => {

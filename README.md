@@ -1,8 +1,8 @@
-# Kodeworks.no
+# KodeWorks.no
 
 ## Getting started
 
-Kodeworks.no is created using [Create React App](https://github.com/facebook/create-react-app). and is currently written in **TypeScript**.
+KodeWorks.no is created using [Create React App](https://github.com/facebook/create-react-app). and is currently written in **TypeScript**.
 
 The project is currently in an early state and breaking changes will occur.
 
