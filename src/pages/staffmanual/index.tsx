@@ -7,310 +7,667 @@ export default function StaffManual(): JSX.Element {
     <>
       <header className="section-hero section-content section-content-narrow">
         <div className="handbook-mainheader-content">
-          <h1 className="section-header-headline">Staff Manual</h1>
-          <p>This document serves as a staff handbook for KodeWorks employees. We aim to describe how we do things and how we think. In this document you will find information about working hours, holiday pay, salary, benefits and much more. This is a document we want all employees to contribute to, and have ownership of.</p>
-
+          <h1 className="section-header-headline">Personalhåndbok</h1>
+          <p>
+            Velkommen til håndboken vår! Vi ønsker i dette dokumentet å beskrive hvordan vi tenker
+            og hvordan vi gjør ting i praksis. Her vil du finne informasjon om alt fra arbeidstid,
+            lønn, utstyr, goder, prosesser og mye mer. Dette er et dokument vi ønsker at alle våre
+            ansatte skal bidra til og føle eierskap til.
+          </p>
         </div>
       </header>
 
       <section className="section-content section-content-narrow handbook-wrapper">
         <nav className="handbook-sidebar">
-          <h3>In this article</h3>
+          <h3>Generelt</h3>
           <ul className="list-plain handbook-sidebar-list">
-            <li><a href="#handbok-arbeidstid">Working Hours</a></li>
-            <li><a href="#handbok-arbeidssted">Workplace</a></li>
-            <li><a href="#handbok-betingelser">Conditions</a></li>
-            <li><a href="#handbok-timeforing">Timekeeping</a></li>
-            <li><a href="#handbok-medeier">Co-Owner</a></li>
-            <li><a href="#handbok-other">Everything Else + The Office</a></li>
-            <li><a href="#handbok-militaer">Military Service</a></li>
-            <li><a href="#handbok-kommunikasjon">Slack and Email</a></li>
+            <li>
+              <a href="#handbok-arbeidstid">Arbeidstid</a>
+            </li>
+            <li>
+              <a href="#handbok-arbeidssted">Arbeidssted</a>
+            </li>
+            <li>
+              <a href="#handbok-betingelser">Vilkår</a>
+            </li>
+            <li>
+              <a href="#handbok-timeforing">Timeføring</a>
+            </li>
+            <li>
+              <a href="#handbok-medeier">Medeier</a>
+            </li>
+            <li>
+              <a href="#handbok-other">Alt annet + Kontoret</a>
+            </li>
+            <li>
+              <a href="#handbok-militaer">Militærtjeneste</a>
+            </li>
+            <li>
+              <a href="#handbok-kommunikasjon">Slack og E-post</a>
+            </li>
           </ul>
 
-          <h3>Employment</h3>
+          <h3>Ansettelse</h3>
           <ul className="list-plain handbook-sidebar-list">
-            <li><a href="#handbok-employment">Employment</a></li>
-            <li><a href="#handbok-process-and-onboarding">Process and Onboarding</a></li>
-            <li><a href="#handbok-probation">Probation</a></li>
-            <li><a href="#handbok-job-types">Job Types</a></li>
-            <li><a href="#handbok-resignation">Resignation</a></li>
+            <li>
+              <a href="#handbok-employment">Ansettelse</a>
+            </li>
+            <li>
+              <a href="#handbok-process-and-onboarding">Prosess og onboarding</a>
+            </li>
+            <li>
+              <a href="#handbok-probation">Prøvetid</a>
+            </li>
+            <li>
+              <a href="#handbok-job-types">Stillingstyper og roller</a>
+            </li>
+            <li>
+              <a href="#handbok-expectations">Forventninger</a>
+            </li>
+            <li>
+              <a href="#handbok-one-on-ones">Medarbeidersamtaler og fagsamtaler</a>
+            </li>
+            <li>
+              <a href="#handbok-resignation">Oppsigelse</a>
+            </li>
           </ul>
         </nav>
 
         <section className="handbook-content">
-
           <article id="handbok-arbeidstid">
-            <h2>Working Hours</h2>
+            <h2>Arbeidstid</h2>
 
-            <p>Contractual working hours are 8 hours per day, with a 30-minute lunch break. In KodeWorks, we operate with a core time in the period 9-15, with the opportunity and room to be able to be flexible during working hours. In a company where competence is our main product, we know that working closely with our colleagues will give the best results. We also know that everyday life can offer other things that mean that at times you need to adapt your working hours outside the core hours.</p>
+            <p>
+              Kontraktsfestet arbeidstid er 8 timer per dag, med en 30 minutters lunsjpause. I
+              Kodeworks opererer vi med en kjernetid mellom 9-15, med mulighet og rom til å kunne
+              være fleksibel under arbeidstiden. I et selskap der mennesker med kompetanse er
+              hovedproduktet, vet vi at å jobbe tett med kollegaene våre gir det beste resultatet.
+              Vi vet og at hverdagslivet kan by på utfordringer der man av og til må tilpasse
+              arbeidstiden litt utenom kjernetiden.
+            </p>
+            <p>
+              Som konsulenter må vi uansett ta høyde for at kundene våre har sin egen kjernetid, og
+              eventuelle endringer vil kunne forekomme. Det viktigste er at man avklarer eventuelle
+              endringer med prosjektet man er på.
+            </p>
 
-            <p>As consultants, we must nevertheless take into account that our customers have their own core time, and any changes here you must coordinate with your project and/or your human resources manager.</p>
+            <h3>Ferie</h3>
 
-            <h3>Vacation</h3>
-
-            <p>We use the regular 5-week paid vacation.</p>
-
-            <p>It is often the case that the project you are on wants you to take the holiday at certain times, typically the joint holiday, Easter, Christmas, autumn/winter holiday overlapping with school/kindergarten, etc. We try to adapt to this, but understand that it is not always doable.</p>
-
-            <p>When you go on holiday, just follow this checklist:</p>
+            <p>Vi har vanlig 5-ukers betalt ferie.</p>
+            <p>
+              Det er ofte tilfellet at prosjektet man er på ønsker at man tar ut ferie i enkelte
+              tidsrom, som for eksempel fellesferien, påske, julen, høst-/vinterferie som overlapper
+              med skole og barnehage osv. Vi prøver å tilpasse oss dette, men forstår at det ikke
+              alltid er mulig.
+            </p>
+            <p>Når du ønsker å ta ferie, følger du bare denne sjekklisten:</p>
 
             <ol>
-              <li>Report to the nearest manager</li>
-              <li>Talk to the customer to get it cleared</li>
-              <li>Put it in the calendar</li>
-              <li>Enter it in the timekeeping system</li>
+              <li>Si i fra til din nærmeste leder</li>
+              <li>Snakk med kunden/prosjektet og få det godkjent</li>
+              <li>Putt det i kalenderen</li>
+              <li>Før det inn i timeføringssystemet</li>
             </ol>
 
-            <p>We follow the Norwegian legislation and Tekna'a definition of Norwegian holidays. For instance, Christmas Eve and New Year's Eve are ordinary working days.</p>
+            <p>
+              Vi følger arbeidsmiljølovens og Tekna sin definisjon av høytider. Det vil si at
+              julaften og nyttårsaften anses som vanlige arbeidsdager.
+            </p>
           </article>
 
           <article id="handbok-arbeidssted">
-            <h2>Workplace</h2>
-            <p>As a consultant, it often happens that we work where the customer is located. We at KodeWorks aim to find assignments that are not too far from the ordinary workplace.</p>
+            <h2>Arbeidssted</h2>
 
-            <p>KodeWorks will cover travel expenses for assignments that entail greater costs and a significantly longer journey than to a normal workplace.</p>
-
-            <p>For example, this will be with longer assignments outside zone A in Trondheim or zone 1 in Oslo.</p>
+            <p>
+              Som konsulent hender det ofte at man vil arbeide fra kundens lokaler. Vi ønsker i
+              hovedsak å finne oppdrag som ikke er for langt fra våre egne kontorer.
+            </p>
+            <p>
+              Kodeworks vil dekke eventuelle reiseutgifter for oppdrag som påløper ytterligere
+              kostnader og betydelig lengre reisevei enn det normalt ville vært til et av våre
+              kontorer.
+            </p>
+            <p>
+              For eksempel vil det bety for oppdrag som faller utenfor Sone A i Trondheim eller Sone
+              1 i oslo.
+            </p>
           </article>
 
           <article id="handbok-betingelser">
-            <h2>Conditions</h2>
+            <h2>Vilkår</h2>
 
-            <p>We want all our employees to feel as good as possible at work by offering the necessary freedom, security, and stability in everyday life. At the same time, it is also important to get the tools you need to be able to do your job in the best possible way.</p>
+            <p>
+              Vi ønsker at alle våre ansatte skal ha det godt på jobb, gjennom å tilby den
+              nødvendige friheten, tryggheten og stabiliteten i hverdagen. Samtidig er det også
+              viktig å tilrettelegge med de nødvendige verktøyene for at du skal kunne gjøre jobben
+              på best mulig måte.
+            </p>
 
-            <h3>Salary</h3>
+            <h3>Lønn</h3>
 
-            <p>At KodeWorks, we do not want the salary to be a factor you have to think about. At the same time, it is important to have a good salary to have the freedom and stability we want all our employees to have. Therefore, have no individual salary assessments. As an employee, you should not have to ask for what you deserve. It should come automatically. We have chosen a salary model that gives everyone equal pay mainly based on the number of years of experience. All KodeWorks employees have an overview of what the others earn. An overview of the current salary level and background figures for salary adjustment can be found in the "Lønn" folder on Google Drive.</p>
+            <p>
+              I Kodeworks har vi som mål at lønn ikke skal være noe du trenger å bekymre deg for. Vi
+              har derfor ingen individuelle lønnsjusteringer der man må forhandle seg frem til bedre
+              vilkår. Som ansatt skal du ikke behøve å be om å få det du fortjener. Det skal komme
+              automatisk. Vi har derfor valgt en lønnsmodell som gir alle våre ansatte lik lønn for
+              likt grunnlag, som baseres på den ansattes erfaring, i hovedsak antall års erfaring.
+              Alle Kodeworks-ansatte har innsikt i hva andre i selskapet tjener. En oversikt over
+              lønnstabellen for inneværende og tidligere år finnes under “Lønn” i fellesmappen på
+              Google Drive.
+            </p>
+            <p>
+              Lønn skal som hovedregel utbetales innen den 22. hver måned, eller siste virkedag før
+              22. dersom det ikke er en vanlig virkedag.
+            </p>
 
-            <p>Salary is usually paid on the 22nd of each month, or the last business day before if the 22nd is not a business day.</p>
+            <h4>Lønnstrinn og lønnsjustering</h4>
 
-            <h3>Holiday Pay</h3>
+            <p>
+              Kodeworks har en felles lønnsmodell som gir forutsigbarhet og trygghet for de ansatte.
+              Når man får et jobbtilbud fra Kodeworks vil man få presentert en årlig fastlønn som er
+              gjeldende ved oppstartsdato. Lønnsnivået bestemmes ut i fra lønnstrinnet ditt i
+              inneværende års lønnstabell.
+            </p>
+            <p>
+              Lønnstabellen består av 21 trinn, fra lønnstrinn 0 til og med lønnstrinn 20.
+              Lønnstabellen justeres ved årsskiftet hvert år, og beregnes ut i fra siste års
+              lønnsutvikling basert på Tekna IKT Privat Sektor. Nyutdannede uten relevant mastergrad
+              starter på lønnstrinn 0, og med relevant mastergrad på lønnstrinn 1. Den til enhver
+              tid gjeldende lønnstabellen finner du i fellesmappen på Google Drive innunder “Lønn”.
+            </p>
+            <p>
+              Lønnstrinnet ditt fastsettes basert på det totale antallet måneder fulltids relevant
+              arbeidserfaring, i tillegg til ansiennitet opparbeidet i Kodeworks. Lønnstrinnet ditt
+              heves med ett trinn hvert hele år med arbeidserfaring du opparbeider deg. Dette
+              medfører at du i tillegg kan oppleve en lønnsjustering også utenfor den felles
+              lønnsjusteringen som skjer i januar. Du vil få fastsatt hvilken måned dette faller på
+              ved oppstart, og det vil være den samme måneden for resten av arbeidsforholdet.
+            </p>
 
-            <p>Holiday pay is paid in June. All 25 vacation days will be deducted this month. June usually does not have 25 working days, so the remaining vacation days are deducted correspondingly from the holiday pay. Employees who have started working during the current year will not have any accrued holiday pay and will be deducted the remainder of the vacation day deduction in the following month (so that there will be a 25-day deduction in total). If you want to be paid the holiday pay at another time, this can be done by agreement with the accounting department. For practical reasons, it is a good idea to notify this in good time before you want payment.</p>
+            <h3>Feriepenger</h3>
 
-            <h3>Overtime and Overtime Allowance</h3>
+            <p>
+              Feriepenger utbetales i juni. Alle 25 feriedagene vil bli trukket denne måneden. Juni
+              har vanligvis ikke 25 arbeidsdager, så de resterende feriedagene blir trukket fra de
+              utbetalte feriepengene. Ansatte som har startet i inneværende år vil ikke ha noen
+              oppsparte feriepenger, så da vil de resterende dagene bli trukket fra neste
+              månedslønn. Dersom man ønsker en alternativ utbetaling av feriepenger, kan dette
+              tilrettelegges av regnskapsavdelingen ved behov. Av praktiske årsaker er det lurt å
+              informere om dette i god tid før utbetalingen skal skje.
+            </p>
 
-            <p>From time to time you may need to work a few extra hours a week. This mainly applies to hectic periods during a project a customer project. Beyond this, it is desirable to keep overtime work to a minimum. We believe that the employee's free time should be respected and that you would rather perform better during the hours you are at work if you have had sufficient rest. Therefore, you decide completely if you want to work overtime.</p>
+            <h3>Overtid og overtidslønn</h3>
 
-            <p>The overtime pay can be calculated by dividing the annual salary by 1950 hours and then adding 40%.</p>
+            <p>
+              Fra tid til annen kan det hende at man må jobbe noen timer ekstra i uken. Dette
+              sammenfaller ofte med hektiske perioder på kundeprosjekt. Utover dette, ønsker vi å
+              holde overtid til et absolutt minimum. Vi setter den ansattes fritid høyt, og ønsker
+              at denne respekteres. Vi tror og at man arbeider mer effektivt dersom man får
+              tilstrekkelig hvile. Derfor bestemmer du selv om du ønsker å jobbe overtid.
+            </p>
+            <p>
+              Overtidsbetaling beregnes time for time, og kan regnes ut ved å dele brutto årslønn på
+              1950 timer og legge på 40%.
+            </p>
+            <p>
+              Forespørsler om overtid skal alltid godkjennes av nærmeste leder først, med mindre
+              annet er avklart på forhånd.
+            </p>
 
-            <p>Overtime work must always be clarified with the personnel manager first unless otherwise agreed.</p>
+            <h3>Pensjon og forsikring</h3>
 
+            <p>
+              Kodeworks setter av 7% til pensjonssparing. Dette gjelder allerede fra 0G og opp til
+              21G, der G er folketrygdens grunnbeløp.
+            </p>
+            <p>
+              I tillegg til vanlig yrkesreise- og yrkesskadeforsikring, har vi og reiseforsikring
+              for fritidsreiser som dekker deg og din nærmeste familie. Vi har og
+              behandlingsforsikring som sikrer at du får rask og god behandling dersom noe skulle
+              oppstå. Dette inkluderer gratis tilgang til legekonsultasjoner på mobil.
+            </p>
+            <p>
+              Vi benytter Gjensidige for både pensjon og forsikring, slik at alle ansatte kan logge
+              inn i Gjensidige og se forsikringsvilkår og justere risikoplan for pensjonssparing. En
+              guide for hvordan man skaffer seg oversikt over forsikringer i Gjensidige finner man
+              under “Forsikringer” i fellesmappen på Google Drive.
+            </p>
 
-            <h3>Pension and Insurance</h3>
+            <h3>Datamaskin og programvare</h3>
 
-            <p>KodeWorks sets aside 7% in pension savings. This applies from 0 to 12G.</p>
+            <p>
+              Vi dekker arbeidsmaskin og programvare du behøver for å gjøre jobben din. Hva du
+              velger er opp til deg. Vi sitter på alt fra gamingmaskiner til Dell XPS og MacBook
+              Pro. Dersom maskinen din på et tidspunkt begynner å bli for dårlig til at du kan gjøre
+              jobben effektivt er det på tide med en ny.
+            </p>
+            <p>
+              Dersom du trenger tilrettelagt programvare for å gjøre jobben din, kan du bare
+              bestille dette og føre det som utlegg i regnskapssystemet.
+            </p>
 
-            <p>In addition to regular business travel and occupational injury insurance, we have travel insurance that covers leisure travel for you and your family. We also have treatment insurance that ensures that you get fast and good treatment if something should happen. This also includes free access to doctor's appointments on mobile.</p>
+            <h3>Litteratur og læringsmateriale</h3>
 
-            <p>We use Gjensidige for both pension and insurance, and each employee can log in to Gjensidige and see their profile and details about this. A short guide on how to get an overview of your insurance in Gjensidige can be found in the "Forsikring" folder on Google Drive.</p>
+            <p>
+              Det finnes endeløse ressurser for å slukke læringstørsten. Hvis du ønsker å benytte
+              e-læringsverktøy som Pluralsight, Coursera eller lignende, er det bare å registrere
+              seg for dette. Du står også fritt til å bestille bøker i alle former og formater. Vi
+              er et kunnskapsbasert selskap, så det er en viktig del av levebrødet vårt! Registrer
+              utgiften i regnskapssystemet, så vil du få det tilbakeført.
+            </p>
 
-            <h3>Computer and Software</h3>
+            <h3>Kurs og konferanse</h3>
 
-            <p>We cover the computer and software you need to do your job. What you choose is up to you. KodeWorks' laptop fleet now includes Dell XPS 15, MacBook Pro, and Christian's gaming laptop. If at some point the computer is not good enough to do the work tasks as efficiently as possible, it's time for a new one.</p>
+            <p>
+              Kodeworks oppfordrer deg til å delta på kurs og konferanser. Tidligere har vi alle
+              dratt samlet på for eksempel JavaZone, men det er forventet at de ansattes interesser
+              og preferanser for faglig forfriskning kan tilfredsstille best på andre steder også.
+              Dersom du ønsker å delta på kurs eller konferanser flere ganger i året kan du gjerne
+              det, såfremt du holder deg innenfor ditt tilegnede kurs- og konferansebudsjett.
+            </p>
+            <p>
+              Dersom du bidrar til fellesskapet gjennom å holde kurs, foredrag og liknende vil
+              Kodeworks også dekke utgifter til dette innen rimelighetens grenser.
+            </p>
 
-            <p>If you need software to do your job, such as IDEA, you can buy this directly and register an expense in our accounting system.</p>
+            <h3>Helse</h3>
 
-            <h3>Literature and Other Learning Materials</h3>
+            <p>
+              Vår yrkesgruppe er utsatt for belastningsskader knyttet til å sitte for mye i ro foran
+              datamaskinen. Dette kan motvirkes gjennom å tilrettelegge for et godt fysisk
+              arbeidsmiljø. Dersom du arbeider fra kundes kontor, og ikke finner at for eksempel
+              bord, stol eller skjerm ikke er tilfredsstillende, vil vi ta tak i dette. Det skal
+              ikke ikke gå utover helsen.
+            </p>
+            <p>
+              Vi legger også til rette for at du skal kunne være fysisk aktiv. I Trondheim har vi en
+              bedriftsavtale med 3T. Her har flere Kodeworks-ansatte for eksempel ukentlig
+              Squash-trening. Du trenger ikke benytte deg av dette dersom det er mer praktisk for
+              deg å trene andre steder. Vi dekker et tilsvarende beløp med andre tilbydere i
+              tillegg. I Oslo er det ingen spesiell bedriftsavtale, så her står man fritt til å
+              velge treningssenter, så vil man få dekket et beløp i henhold til ansattbudsjettet.
+            </p>
 
-            <p>There are countless sources to help quench the thirst for knowledge. If you want to take advantage of e-learning offers such as Pluralsight, Coursera, or similar, just sign up for this. You are also free to buy books in all shapes and forms. After all, we are a knowledge-based company, this is how we make our living! Register the expense in our accounting system, so that you can be reimbursed.</p>
+            <h3>Sykedager</h3>
 
-            <h3>Courses and Conferences</h3>
+            <p>
+              Vi har et utvidet egenmeldingssystem, som er mer fleksibelt enn det normale systemet i
+              Norge (4x3 dager hver 12. måned). Egenmeldingsdager kan tas ut individuelt, for å gi
+              deg som ansatt mer fleksibilitet for kort tids sykdom uten å måtte kontakte lege.
+            </p>
 
-            <p>KodeWorks encourages you to attend courses and conferences. In 2018, we all went to JavaZone, but it is to be expected that the employees' interests and wishes for professional replenishment can best be satisfied in other places as well. If you want to go to courses or conferences several times a year, or to go to places that entail greater costs than, for example, JavaZone, this requires the approval of the human resources manager.</p>
-
-            <p>If you contribute to giving lectures, courses, or the like, KodeWorks will cover this within reasonable limits.</p>
-
-            <h3>Health</h3>
-
-            <p>Our occupational group is very exposed to stress-related injuries, which can be avoided by facilitating a good physical work environment. If you're working from a customer's office, and feel that – for example – a table, screen, or chair is not good enough, we will make sure to improve this. It should not be necessary to let such things go at the expense of health.</p>
-
-            <p>We also want to make arrangements for you to be physically active. In Trondheim, KodeWorks has a corporate agreement with 3T. Here, several KodeWorks employees play weekly squash. You do not need to use this if you want to train elsewhere. We cover a similar subscription with other providers as well. In Oslo, there is no separate company agreement, so there you just have to find a similar subscription and we will reimburse it.</p>
-
-            <h3>Sick days</h3>
-            <p>We have an extended sick day (self-certification) system that is more flexible than the normal system in Norway (4x3 days every 12 months). Sick days can be taken individually, this is done to give the employees more flexibility.</p>
             <ul>
-              <li>You have 12 single days you can use, they can be used one by one or consecutively. We use a 12-month sliding window when calculating sick days, this means that you should look 12 months back from today's date when calculating how many days you have left. The number of days used in a 12 month period should never exceed 12 days.</li>
-              <li>Report to your nearest manager as soon as possible when you use sick days. Also, make sure that you (or someone else) notify your customer in a timely manner.</li>
-              <li>You can take the rest of the day off if you get sick during your working hours, this will not count as a sick day. This is an extra benefit that you get as a KodeWorks employee.</li>
-              <li>Sick note (doctor's certificate) is needed if you are away for more than 3 consecutive days. You can get this from your general practitioner, or any other medical professional that can issue sick notes.</li>
-              <li>Sick days used before a sick note is issued count as used sick days.</li>
-              <li>Sick days cannot be used if you have a partial sick note.</li>
-              <li>Staying home to take care of sick children counts as welfare leave, and does not affect your available sick days.</li>
-              <li>We have very good health insurance that covers many different forms of treatment. More information about what is covered can be found in the "Forsikring" folder on Google Drive.</li>
-              <li>Sick days are not the same as vacation days, they cannot be saved and carried over to the next year.</li>
+              <li>
+                Du har 12 enkeltvis egenmeldingsdager du kan bruke én og én eller etter hverandre.
+                Vi bruker et 12-måneders glidende vindu for å holde dette ajour. Dette betyr at vi
+                ser 12 måneder tilbake i tid for å se hvor mange egenmeldingsdager du har
+                tilgjengelig.
+              </li>
+              <li>
+                Meld fra til nærmeste leder så snart du må benytte deg av en sykedag. Husk også å
+                melde i fra til kunden eller prosjektledelsen så snart som mulig.
+              </li>
+              <li>
+                Dersom du blir syk underveis i arbeidsdagen, vil du kunne benytte velferdspermisjon
+                til dette. Dette vil ikke telle som en sykedag. Dette er en ekstra fleksibilitet til
+                deg som ansatt i Kodeworks.
+              </li>
+              <li>
+                Sykemelding fra lege kreves dersom du er syk i mer enn 3 sammenhengende dager. Du
+                kan få dette fra fastlegen din, eller annet kvalifisert helsepersonell som kan
+                utstede sykemelding.
+              </li>
+              <li>Sykedager som er brukt før utstedt sykemelding telles som egenmeldingsdager.</li>
+              <li>Egenmeldingsdager kan ikke benyttes dersom du har en delvis sykemelding.</li>
+              <li>
+                Å være hjemme med sykt barn klassifiseres som velferdspermisjon og trekkes ikke fra
+                tilgjengelige egenmeldingsdager.
+              </li>
+              <li>
+                Vi har en svært god helseforsikring som dekker mange former for behandling. Mer
+                informasjon om hva som dekkes finnes i mappen “Forsikring” på Google Drive.
+              </li>
+              <li>
+                Sykedager er ikke det samme som feriedager, så ubrukte egenmeldingsdager vil ikke
+                overføres til neste periode.
+              </li>
             </ul>
 
-            <h3>Benefits</h3>
+            <h4>Lønn under sykefravær</h4>
 
-            <p>KodeWorks has several benefits so that you as an employee can have a flexible, safe, and predictable everyday life. Some benefits are entered into the timekeeping system, such as parental leave and care leave. Expenses should be registered in our accounting system and will be reimbursed on the next salary payment.</p>
+            <p>
+              NAV dekker lønn for sykefravær når sykemeldingsperioden overstiger 16 dager. NAV
+              dekker derimot ikke lønn over 6G (ca 640000 NOK i 2022). For å håndtere dette har vi
+              en sykelønnsforsikring som dekker differansen mellom 6G og din lønn, såfremt du
+              oppfyller krave NAV har satt for{' '}
+              <a href="https://www.nav.no/no/person/arbeid/sykmeldt-arbeidsavklaringspenger-og-yrkesskade/sykepenger/sykepenger-til-arbeidstakere">
+                Sykepenger til arbeidstakere
+              </a>{' '}
+              og vilkårene i forsikringen. Forsikringsvilkårene finnes ved å logge inn hos vårt
+              forsikringsselskap. Mer informasjon om dette finner du i mappen “Forsikring” på Google
+              Drive.
+            </p>
 
-            <p>Periodic expenses such as broadband and membership at the fitness center must be registered monthly. In the event of varying expenses, it is your responsibility as an employee not to exceed 12 times the maximum monthly amount for the relevant benefit in the current year.</p>
+            <h3>Ansattgoder</h3>
+
+            <p>
+              Kodeworks har en rekke goder som gjør at du som ansatt kan ha en fleksibel, trygg og
+              forutsigbar hverdag. Noen av disse godene må registreres i timeføringssystemet, slik
+              som foreldrepermisjon og velferdspermisjon. Eventuelle utlegg man har, for eksempel
+              knyttet til ansattbudsjettet, skal registreres i regnskapssystemet og vil utbetales
+              ved neste lønning.
+            </p>
+            <p>
+              Periodiske utgifter som bredbånd og treningsmedlemsskap skal registreres månedlig.
+              Dersom det er variable kostnader, er det ditt ansvar som ansatt å sørge for at den
+              totale kostnaden for inneværende år ikke overstiger maksbeløpet for den aktuelle
+              utgiften. Vi vil ikke dekke utgifter som overskrider grensen i ansattbudsjettet.
+            </p>
 
             <ul>
-              <li>Mobile phone + subscription.</li>
-              <li>Broadband is covered by up to NOK 500 per month.</li>
-              <li>Membership with 3T (Trondheim) is covered through our corporate agreement, or a corresponding subscription with other providers (Oslo & Trondheim).</li>
-              <li>Other necessary electronics to perform the work, for example mobile phone, computer monitor, or mouse.</li>
-              <li>2 weeks paid leave at child birth.</li>
-              <li>Full pay during parental leave.</li>
+              <li>Mobiltelefon og abonnement</li>
+              <li>Bredbånd dekkes inntil 500kr / mnd.</li>
+              <li>
+                Treningsmedlemsskap dekkes med inntil 500kr / mnd eller gjennom 3T abonnement i
+                Trondheim.
+              </li>
+              <li>
+                Andre nødvendige utgifter for å utføre arbeidet, slik som datamaskin, skjerm, mus,
+                tastatur og lignende dekkes i henhold til satsene i ansattbudsjettet.
+              </li>
+              <li>
+                Årlig budsjett for kurs-, konferanse og litteratur i henhold til gjeldende satser i
+                ansattbudsjettet.
+              </li>
+              <li>2 ukers betalt permisjon ved fødsel.</li>
+              <li>Full lønn under foreldrepermisjon.</li>
             </ul>
 
-            <h4>Pay during sick leave</h4>
-            <p>The Norwegian welfare system (NAV) covers the salary of employees in Norway for sick leave periods lasting more than 16 days. NAV will however not cover salaries over 6G (roughly 640.000 NOK in 2022). To mitigate this, we have an insurance policy that covers the difference between 6G and your salary as long as you fill the requirement NAV has set for <a href="https://www.nav.no/en/home/benefits-and-services/Sickness-benefit-for-employees">sickness benefits</a> and the insurance's terms. The insurance's terms can be found by logging in to our insurance provider.</p>
-            
-            <h3>Welfare Leave</h3>
-            <p>To help make both planned and unforeseen events in everyday life a little easier to handle, KodeWorks provides the following welfare benefits in addition to what is required by law:</p>
+            <h3>Velferdspermisjon</h3>
+
+            <p>
+              For å hjelpe til med å gjøre både planlagte og uforutsette hendelser i livet litt
+              lettere å håndtere, har Kodeworks en rekke velferdspermisjoner i tillegg til det som
+              er påkrevd av loven.
+            </p>
 
             <ul>
-              <li>Examination by a doctor or dentist.</li>
-              <li>Accompany children to the first day of school or kindergarten (up to 1 day).</li>
-              <li>Leave for the rest of the working day if you become ill during the day and have to leave the workplace.</li>
-              <li>Short leave due to illness in the home.</li>
-              <li>Short leave when spouse/cohabitant/partner is about to give birth.</li>
-              <li>Deaths and funerals for close relatives (up to 5 days).</li>
-              <li>To donate blood.</li>
-              <li>Relocation (up to 1 day a year).</li>
-              <li>Wedding (up to 1 day).</li>
-              <li>Driver's license exam.</li>
+              <li>Undersøkelse av lege eller tannlege.</li>
+              <li>Følge barn til første dag på skole eller barnehage (opp til 1 dag).</li>
+              <li>Permisjon resten av dagen dersom man blir syk i løpet av arbeidsdagen.</li>
+              <li>Kort permisjon ifm. sykdom i eget hjem.</li>
+              <li>Kort permisjon ifm. ektefelles/samboers/partners fødsel.</li>
+              <li>Dødsfall og/eller begravelse for nær familie (opp til 5 dager).</li>
+              <li>Donering av blod.</li>
+              <li>Flyttedag (opp til 1 dag per år).</li>
+              <li>Bryllup (opp til 1 dag per år).</li>
+              <li>Oppkjøring til førerkort.</li>
             </ul>
           </article>
 
           <article id="handbok-timeforing">
-            <h2>Timekeeping</h2>
+            <h2>Timeføring</h2>
 
-            <p>Timekeeping is unfortunately required in most consulting companies, and KodeWorks is no exception. Fortunately, like most other consulting companies, we have created our own timekeeping system to make the process easier. You should enter work-related time, i.e. billable time on various projects, illness, vacation, leave, etc. The hours should be delivered by the last working day of the month.</p>
-
-            <p>A working day in the timekeeping tool is 8 hours. This means that holidays, welfare leave, and internal initiatives must be taken with 8 hours per day. For customer projects, it will usually be 7.5 hours, unless the contract indicates that we invoice the lunch break as well. You will be informed of this before the project starts.</p>
-
-            <p>You may also have to keep hours in the customer's system. There will probably be other rules for when and how this is to be done.</p>
+            <p>
+              Timeføring er noe som kreves i de fleste konsulentselskaper, og Kodeworks er intet
+              unntak. Derimot har vi, i likhet med mange andre IT-konsulentselskaper, utviklet vårt
+              eget timeføringssystem tilpasset oss for å gjøre prosessen enklere.
+            </p>
+            <p>
+              Du skal føre arbeidsrelatert tid, for eksempel fakturerbare timer på ulike prosjekter,
+              sykdom, ferie, velferdspermisjon og så videre. Timelisten må være levert innen siste
+              virkedag hver måned.
+            </p>
+            <p>
+              En arbeidsdag er definert som 8 timer i timeføringssystemet. Dette betyr at ferie,
+              velferdspermisjon og interntid skal føres som 8 timer hver dag. For kundeprosjekter
+              vil det i de fleste tilfeller være 7,5 timer som skal faktureres, med mindre
+              kontrakten tilsier at vi kan fakturere lunsjpausen i tillegg. Dette vil du bli
+              informert om før prosjektoppstart.
+            </p>
+            <p>
+              Du vil også potensielt måtte føre timer i kunden sitt timeføringssystem. Her kan det
+              være andre regler som gjelder for når og hvordan det skal føres.
+            </p>
           </article>
 
           <article id="handbok-medeier">
-            <h2>Co-Owner</h2>
+            <h2>Medeier</h2>
 
-            <p>The position also facilitates that employees can become co-owners. We believe that employees who have co-ownership get stronger incentives to create growth and well-being in the company, which benefits everyone. Co-ownership will be distributed from a pool of shares owned by the company or parent company. The shares are bought and sold at cost price. Upon share purchase, the employee joins the company's shareholder agreement.</p>
-
-            <p>All employees will be offered shares after they have been hired as consultants for three months. Since this requires some administration and signatures of all existing shareholders, we do this every six months (June 1 and December 1). We recommend everyone to read up on the topic before the process begins, but we will also try to answer all questions to the best of our ability.</p>
+            <p>
+              Som ansatt kan man også bli medeier i avdelingen man jobber i. Vi tror på at ansatte
+              som har medeierskap får sterkere insentiver for å skape vekst og trivsel i selskapet,
+              som kommer alle til gode. Medeierskap i form av aksjer vil bli distribuert fra et sett
+              av aksjer som er eid av selskapet, eller morselskapet. Aksjene kjøpes og selges til
+              kostpris. Når man tiltrer som aksjonær i selskapet, blir man underlagt selskapets
+              aksjonæravtale.
+            </p>
+            <p>
+              Alle ansatte vil bli tilbudt aksjer ved neste oppdatering av aksjeeierboken, etter at
+              prøveperioden er passert. Siden dette krever litt administrasjon og signatur fra
+              eksisterende eiere, gjør vi dette normalt hvert halvår (1. juni og 1. desember),
+              alternativt hvert år (1. desember). Vi anbefaler alle å lese seg opp om det å være
+              aksjonær i forkant av denne prosessen, og vi står behjelpelig til å svare så godt vi
+              kan på eventuelle spørsmål.
+            </p>
           </article>
 
           <article id="handbok-other">
-            <h2>Everything Else + The Office</h2>
+            <h2>Alt annet + kontoret</h2>
 
-            <p>At our offices you have access to a workplace, coffee, and other refreshments.  You use the premises at your discretion daily when you do not have the opportunity to work from the customer's offices.</p>
+            <p>
+              På kontorene våre har du tilgang til arbeidsplass, samt kaffe og andre forfriskninger.
+              Du kan bruke lokalene når det passer deg, som for eksempel når du ikke har anledning
+              til å jobbe fra kundens kontorlokaler. Det er og helt i orden å bruke kontoret på
+              fritiden, enten det er for å arrangere LAN-party eller spise pizza. Bare sørg for å
+              forlate kontoret i samme (helst litt bedre) stand enn da du ankom!
+            </p>
           </article>
 
           <article id="handbok-militaer">
-            <h2>Military Service</h2>
+            <h2>Militærtjeneste</h2>
 
-            <p>Summons to military service, including first-time service, which requires leave from work, is notified to the human resources manager and placed in the calendar. For compulsory service in the Armed Forces, the Home Guard, the Civil Defense, and the Police Reserve, up to one month's salary is paid per. years, with the deduction of all military supplements such as salary, unemployment benefits, etc. For voluntary service in the Home Guard, leave without pay is granted. First-time military service is granted unpaid leave. Repetition exercises that last longer than four weeks must be arranged separately.</p>
+            <p>
+              Innkalling til militærtjeneste som krever at man er borte fra arbeidsplassen,
+              inkludert førstegangstjeneste, meldes fra til nærmeste leder og legges inn i
+              kalenderen.
+            </p>
+            <p>
+              Ansatte med fullført forutgående prøvetid vil få utbetalt lønn for inntil 1 måned i
+              kalenderåret ved tvungen militær-tjeneste, sivil tjenesteplikt, plikttjeneste i
+              sivilforsvaret, i politireserven og i heimevernet. Eventuelle tjenestetillegg utbetalt
+              i forbindelse med plikttjenesten vil bli trukket fra lønnsutbetalingen.
+            </p>
+            <p>
+              Innkallelse til førstegangstjeneste medfører permisjon uten lønn. Frivillig verv som
+              medfører plikttjeneste utover ovennevnte 1 måned vanlig trening vil bli tilrettelagt
+              av arbeidsgiver iht. gjeldende lovverk og gis permisjon uten lønn.
+            </p>
           </article>
 
           <article id="handbok-kommunikasjon">
-            <h2>Slack and Email</h2>
+            <h2>Slack og E-post</h2>
 
-            <p>Most of our daily communications are on Slack, our preferred platform. Here you'll find a relaxed vibe. This is where you'll find everyone if you want to initiate a social gathering, like an after-work beverage, a game of squash, or a bit of Fortnite.</p>
-
-            <p>If you need to be a bit more formal we recommend using email.</p>
-
-            <p>Work related communications should be kept to normal business hours.</p>
+            <p>
+              Mesteparten av vår daglige kommunikasjon skjer på Slack, som er vår foretrukne
+              plattform. Her finner du en avslappet stemning. Dette er stedet du får tak i alle
+              dersom du for eksempel vil invitere til en sosial samling, som en after-work, å spille
+              squash, eller litt Fortnite.
+            </p>
+            <p>Dersom man behøver å være litt mer formell anbefaler vi å benytte e-post.</p>
+            <p>Vi forsøker å holde all arbeidsrelatert kommunikasjon innenfor normal arbeidstid.</p>
           </article>
 
-
           <article id="handbok-employment">
-            <h2>Employment</h2>
-            <p>Employment is an important investment for KodeWorks. The employees are not only the people who will contribute to a good working environment, they are also the actual product KodeWorks delivers. There is therefore a great focus on hiring skilled employees who seek and master challenges. The employees represent KodeWorks.</p>
+            <h2>Ansettelse</h2>
+
+            <p>
+              En ansettelse er en svært viktig investering for Kodeworks. De ansatte er ikke bare
+              personer som vil bidra til et godt arbeidsmiljø, men de er og det produktet Kodeworks
+              leverer. Det er derfor et stort fokus på å ansatte dyktige medarbeidere som søker og
+              mestrer utfordringer. Det er de ansatte som utgjør Kodeworks.
+            </p>
           </article>
 
           <article id="handbok-process-and-onboarding">
-            <h2>Process and Onboarding</h2>
-            <p>At KodeWorks, we want you as a new employee to feel that the process from the time you contact us until the contract is signed and the employment relationship has started is a good experience.</p>
+            <h2>Prosess og onboarding</h2>
 
-            <h3>Recruitment Manager</h3>
-            <ul>
-              <li>Create user in Google Suite.</li>
-              <li>Create a CV and invite the new employee to start filling it out.</li>
-              <li>Coordinate photo shoots for CV.</li>
-              <li>Invite the new employee to a social event in KodeWorks.</li>
-              <li>Order equipment (computer etc.).</li>
-              <li>Assign sponsor.</li>
-              <li>Follow up the Administration's tasks.</li>
-            </ul>
-
-            <h3>Administration</h3>
-            <ul>
-              <li>Order a telephone subscription.</li>
-              <li>Register a new employee in Tripletex.</li>
-              <li>Enrol new employees in insurance and pensions.</li>
-              <li>Create user in WerkzTime.</li>
-            </ul>
-
-            <h3>Sponsor (fadder)</h3>
-            <p>Organize start-up day:</p>
-            <ul>
-              <li>Coordinate place and time. Lunch at the office, feel free to invite with other colleagues.</li>
-              <li>Give an introduction to how employee expenses and other accounting matters work.</li>
-              <li>Give an introduction to how WerkzTime works.</li>
-              <li>Invite the new employee to a social event in KodeWorks.</li>
-              <li>Invite to Slack.</li>
-              <li>Invite to GitLab.</li>
-              <li>Invite to GitHub.</li>
-              <li>Follow up porting of telephone subscriptions.</li>
-            </ul>
-
-            <h4>At start-up with sponsor</h4>
+            <p>
+              I Kodeworks vil vi at du som nyansatt skal føle at prosessen fra tiden du har tatt
+              kontakt med oss, til kontrakten er signert du har begynt å jobbe, har vært en god
+              opplevelse.
+            </p>
+            <p>
+              Til vanlig vil du som nyansatt bli fulgt opp av daglig leder under ansettelsen og
+              påfølgende onboarding, som i hovedsak består av følgende tema:
+            </p>
 
             <ul>
-              <li>Update CV.</li>
-              <li>Prepare for customer project.</li>
+              <li>Jobbtilbud og signering av arbeidskontrakt.</li>
+              <li>
+                Bestilling av nødvendig utstyr, slik som arbeidsmaskin, mobiltelefon med tilhørende
+                abonnement, samt annet tilleggsutstyr.
+              </li>
+              <li>
+                Oppretting av nødvendige brukere i Google Workspace, Tripletex (regnskapssystem), og
+                Werkz (timeføringssystem).
+              </li>
+              <li>Innmelding i selskapets pensjon- og forsikringsavtaler.</li>
+              <li>
+                Invitasjon til samhandlingsplattformer:
+                <ul>
+                  <li>Slack</li>
+                  <li>GitHub</li>
+                  <li>Discord</li>
+                  <li>GitLab</li>
+                </ul>
+              </li>
+              <li>
+                Oppstart:
+                <ul>
+                  <li>Første arbeidsdag med hilserunde på kontoret.</li>
+                  <li>Innføring i kontorrutiner, nøkler, alarmsystem, lunsjordning, timeføring.</li>
+                  <li>Innføring i hvordan å være en konsulent.</li>
+                  <li>
+                    Forberedelse til kundeprosjekt, herunder kartlegging av kompetanse og
+                    interesser, forberede CV osv.
+                  </li>
+                  <li>Tilegning av arbeidsoppgaver før oppstart i kundeprosjekt.</li>
+                  <li>Invitasjon til faglige og sosiale arrangementer.</li>
+                </ul>
+              </li>
             </ul>
           </article>
 
           <article id="handbok-probation">
-            <h2>Probation</h2>
-            <p>New full-time employees have a probationary period of six months from the date of accession. The probationary period is reciprocal and shall entail the possibility for both the employer and the employee to terminate the employment relationship if it turns out that the circumstances were not as intended. During the probationary period, one month's notice period applies. The probationary period can be extended if the employee has been absent during the probationary period, this includes holidays. The probationary period can be shortened by further agreement between the employer and the employee.</p>
+            <h2>Prøvetid</h2>
+
+            <p>
+              Som ny fulltidsansatt har du en prøvetid på 6 måneder fra kontraktsfestet
+              oppstartsdato. Prøvetiden er gjensidig. Med dette menes at den er til både for deg som
+              nyansatt og Kodeworks som selskap for å eventuelt avslutte arbeidsforholdet dersom
+              omstendighetene ikke var som forventet. Under prøveperioden har man oppsigelsestid på
+              1 måned.
+            </p>
+            <p>
+              Prøvetiden kan bli utvidet dersom du har vært borte under prøveperioden, som for
+              eksempel grunnet sykdom eller foreldrepermisjon. Hovedregelen er at prøvetiden kan
+              forlenges dersom det skyldes forhold som oppstår fra den ansattes side, ikke dersom
+              arbeidsgiver har forhindret den ansatte fra å kunne arbeide. En slik forlengelse vil
+              meddeles skriftlig innen utgangen av prøvetiden.
+            </p>
           </article>
 
           <article id="handbok-job-types">
-            <h2>Job types</h2>
-            <p>KodeWorks operates with different titles.</p>
+            <h2>Stillingstyper og roller</h2>
 
-            <h3>Newly hired</h3>
-            <p>The position lasts until the probationary period (6 months) and until you have been on assignment with a customer for 3 months and are on assignment further, after which you move up to Consultant. The tasks as a new employee are mainly:</p>
-            <ul>
-              <li>Work actively with offers.</li>
-              <li>Professional development.</li>
-              <li>Assist on ongoing projects, off-site or on-site.</li>
-            </ul>
+            <p>
+              De aller fleste ansatte i Kodeworks er utviklere og har stilling som konsulent. I
+              tillegg finnes det noen stillinger under ledelse og administrasjon, mer spesifikt
+              daglig leder, økonomimedarbeider og selger. Enkelte ansatte er i tillegg
+              styremedlemmer i de ulike avdelingene. Hver avdeling har en ledergruppe, som normalt
+              sett består av daglig leder og andre styremedlemmer.
+            </p>
+            <p>
+              I motsetning til andre konsulentselskaper har vi ikke en egen stillingstype for
+              seniorkonsulent. Du vil derimot kunne bli presentert ovenfor en potensiell kunde som
+              seniorkonsulent på bakgrunn av kompetanse og erfaring, men dette vil ofte variere
+              basert på hver enkelt kundes definisjon av senior.
+            </p>
+            <p>
+              Det finnes ulike roller man kan påta seg i hver avdeling, litt avhengig av hva
+              gjeldende ønsker og behov er blant de ansatte. Noen er faggruppeledere eller
+              -medlemmer, noen er sosialansvarlig, og noen er tillitsvalgte. Det er bare å snakke
+              med avdelingslederen din dersom du ønsker å bidra til å skape et enda bedre
+              arbeidsmiljø, sosialt, eller faglig tilbud.
+            </p>
+          </article>
 
-            <h3>Consultant</h3>
-            <p>As a consultant, you usually spend most of your working time on behalf of customers.</p>
-            <p>Promotion to senior consultant is assessed annually by a joint board, based on the following criteria:</p>
-            <ul>
-              <li>Renewable assignments. Ability to sell themselves on extensions of their projects.</li>
-              <li>Can draw in others on assignments. Sees opportunities to sell colleagues on the same customer project as themselves.</li>
-              <li>Get new leads. Is observant when in contact with customers, and picks up signals about other projects. Facilitates dialogue between KodeWorks and customers. Follows their network on possible projects with other customers.</li>
-              <li>Available at a higher hourly rate. Has a CV and profile that is sellable at hourly rates up to the upper tier of what the market will pay. Note that KodeWorks may have other incentives for not offering the consultant at a high rate; the consultant can still be considered sellable at a higher hourly rate”.</li>
-              <li>Total work experience. Number of years with relevant professional experience.</li>
-              <li>Professional contribution. Contributes to KodeWorks' internal and customer-specific professional programs. Promotes professional development, brings colleagues to professional events, and possibly arranges professional happenings.</li>
-              <li>Social contributions. Promotes corporate sports, social gatherings, and excursions. Ability to create space for everyone to participate.</li>
+          <article id="handbok-expectations">
+            <h2>Forventninger</h2>
 
-              <li>Must be able to be sold out as a senior. Holds a resume and character that is easy to convince customers that is a senior profile.</li>
-            </ul>
+            <p>
+              Som konsulent vil du tilbringe mye av tiden ute på oppdrag hos kundene våre. For oss
+              er det viktig at alle våre konsulenter er gode ambassadører for Kodeworks. Dette
+              gjelder både i form av å levere resultater med høy kvalitet, utfordre kunden når det
+              passer seg for å skape de beste løsningene, men også forsøke å forstå kunden og deres
+              prosesser utover prosjektet. Ofte viser det seg at det er andre utfordringer kunden
+              også trenger hjelp til, som kan resultere i nye oppdrag for Kodeworks.
+            </p>
+            <p>
+              En av hovedkarakteristikkene til konsulentene i Kodeworks er at de er brenner for
+              faget. Vi tilrettelegger for faglig utvikling gjennom blant annet fagdager,
+              fagsamtaler, men håper også at du følger med og holder deg oppdatert på nye trender og
+              teknologier utover dette.
+            </p>
+            <p>
+              For å kunne ha et bredt tilbud er vi avhengige av innspill fra de ansatte. Vi
+              oppfordrer deg derfor til enten å komme med idéer eller ta ansvar for å arrangere det
+              du måtte ønske av sosiale eller faglige arrangementer. Vi har et solid sosial- og
+              fagbudsjett til disposisjon, så her er det bare kreativiteten det går på!
+            </p>
+          </article>
 
-            <h3>Senior</h3>
-            <p>An independent and experienced consultant with high professional skills and who can communicate well with colleagues, management, and customers. All the criteria for promotion to senior listed above are also relevant.</p>
+          <article id="handbok-one-on-ones">
+            <h2>Medarbeidersamtaler og fagsamtaler</h2>
 
-            <h3>Staff</h3>
-            <p>Approximately 10% of the total number of hours in KodeWorks will go to staff-related work within the administration, management, follow-up of employees, and sales. The staff's task is to ensure that the machinery runs properly; that there is a steady influx of professionally interesting assignments, that the employees are well, that the customers are satisfied with KodeWorks, that the company's finances are going as they should, that the company reaches its measurement parameters, and more.</p>
+            <p>
+              Du vil som ansatt gjennomgå 1-2 offisielle medarbeidersamtaler i året. Selvfølgelig er
+              det alltid rom for slå av en prat dersom det er noe du ønsker å snakke om, så det er
+              bare å ta kontakt med nærmeste leder når du har noe på hjertet. Noe av det vi setter
+              høyest er at alle ansatte trives på arbeidsplassen, så vi vil forsøke å hjelpe deg så
+              godt vi kan med oppfølging og tilrettelegging av dine ønsker og behov.
+            </p>
+            <p>
+              Faggruppa vil og holde fagsamtaler med deg. Her forsøker vi å kartlegge dine faglige
+              ønsker og behov, og hjelpe deg til å finne relevante målsetninger eller fokusområder
+              som drar deg i riktig retning. Dette kan være alt fra ønsker om type prosjektoppdrag,
+              kurs, og konferanser, til spesifikk kompetansebygging på teknologier og annen
+              domenekunnskap mm. Fagsamtaler kommer i tillegg til medarbeidersamtaler.
+            </p>
           </article>
 
           <article id="handbok-resignation">
-            <h2>Resignation</h2>
+            <h2>Oppsigelse</h2>
 
-            <p>Termination must notified be in writing. The notice period is mutual for employees and employers with a duration of three months. It runs from the first day of the month after the termination took place unless otherwise agreed.</p>
-            <p>Employees who leave must return handed-out material. Exceptions can be made if the handed-out material is not considered to have any useful value for KodeWorks, for example, a PC and/or mobile phone. KodeWorks does not feel compelled to confiscate equipment that cannot be easily converted into cash or used by other employees.</p>
-            <p>If you have accumulated co-ownership in the company, shares must also be redeemed in accordance with the shareholder agreement.</p>
+            <p>
+              En oppsigelse skal sendes skriftlig. Oppsigelsestiden er gjensidig for både deg som
+              ansatt og arbeidsgiver. Oppsigelsestiden er normalt 3 måneder, med unntak av
+              prøveperioden da den er 1 måned. Oppsigelsestiden starter fra første dag måneden etter
+              oppsigelsen ble sendt, med mindre annet er eksplisitt avtalt.
+            </p>
+            <p>
+              Dersom du skal forlate Kodeworks vil du måtte returnere utstyr du har fått utlevert.
+              Avhengig av hvor gammelt utstyret er og hvilken nytteverdi det har for Kodeworks vil
+              du kunne kjøpe det ut etter gjeldende avskrivningsregler. Dette kan for eksempel være
+              arbeidsmaskinen din eller en mobiltelefon. Kodeworks ønsker i utgangspunktet ikke å
+              kreve tilbake utstyr som ikke enkelt kan benyttes av andre ansatte eller omgjøres til
+              kapital.
+            </p>
+            <p>
+              Dersom du er medeier i selskapet, må også aksjene dine selges tilbake til selskapet i
+              henhold til aksjonæravtalen.
+            </p>
           </article>
         </section>
       </section>

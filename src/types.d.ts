@@ -25,7 +25,7 @@ export type ProjectContentDescriptor = 'texts' | 'image' | 'wideimage' | 'quote'
 
 export type ProjectContentTexts = {
   type: 'texts';
-  value: string[];
+  value: DictText[];
 }
 
 export type ProjectContentImage = {
@@ -64,6 +64,8 @@ export type SocialUrl = {
 };
 
 // Dictionary Types
+
+type DictText = string | DictionaryTerm
 
 type DictionaryTerm = {
   [key: string]: string;

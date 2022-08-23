@@ -8,7 +8,6 @@ import { useTranslation } from '../../utils/useTranslation';
 
 import PeopleList from '../../components/PeopleList';
 
-
 export default function People(): JSX.Element {
   const [people, setPeople] = useState<Person[]>([]);
   const { t } = useTranslation(dictionary);
@@ -21,7 +20,7 @@ export default function People(): JSX.Element {
   return (
     <div id="page-people">
       <div>
-        <h1 className="section-header-headline">People</h1>
+        <h1 className="section-header-headline">{t('people')}</h1>
 
         <p>{t('people_description', people.length)}</p>
 

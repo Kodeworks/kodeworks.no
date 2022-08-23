@@ -2,12 +2,17 @@ import { Project, ProjectContentImage, ProjectContentOutput, ProjectContentQuote
 
 import { Fragment } from 'react';
 import { groupSplit } from '../../utils/groupSplit';
+import { NextRouter, useRouter } from 'next/router';
+import { getLocale } from '../../utils/useTranslation';
+
 
 interface Prop {
   project: Project;
 }
 
 export default function ProjectBody({ project }: Prop): JSX.Element {
+  const locale = getLocale(useRouter());
+
   const projectContentSplitByOutput = groupSplit(project.content!, pc => pc.type === 'output' || pc.type === 'wideimage');
   const renderedOutput =
     <> {
@@ -30,7 +35,8 @@ export default function ProjectBody({ project }: Prop): JSX.Element {
                   <Fragment key={contentId}>{
                     content.type === 'texts' ?
                       (content as ProjectContentTexts).value.map((text, textId) =>
-                        <p key={textId}>{text}</p>
+                        <p key={textId}>{typeof text === 'string' ? (text as string) : text[locale!]
+                        }</p>
                       ) :
                       content.type === 'image' ?
                         <img
