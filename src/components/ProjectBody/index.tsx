@@ -1,9 +1,9 @@
-import { Project, ProjectContentImage, ProjectContentOutput, ProjectContentQuote, ProjectContentQuoteContent, ProjectContentTexts, ProjectContentWideImage } from '../../types';
+import { Project, ProjectContent, DictProjectContents, ProjectContentImage, ProjectContentOutput, ProjectContentQuote, ProjectContentTexts, ProjectContentWideImage } from '../../types';
 
+import { useRouter } from 'next/router';
 import { Fragment } from 'react';
 import { groupSplit } from '../../utils/groupSplit';
-import { NextRouter, useRouter } from 'next/router';
-import { getLocale } from '../../utils/useTranslation';
+import { getLocale, fmt } from '../../utils/useTranslation';
 
 
 interface Prop {
@@ -12,15 +12,15 @@ interface Prop {
 
 export default function ProjectBody({ project }: Prop): JSX.Element {
   const locale = getLocale(useRouter());
-
-  const projectContentSplitByOutput = groupSplit(project.content!, pc => pc.type === 'output' || pc.type === 'wideimage');
+  const content = Array.isArray(project.content) ? project.content as ProjectContent[] : (project.content as DictProjectContents)[locale!]
+  const projectContentSplitByOutput = groupSplit(content, pc => pc.type === 'output' || pc.type === 'wideimage');
   const renderedOutput =
     <> {
       projectContentSplitByOutput.map((projectContents, pcId) =>
         <Fragment key={pcId}>{
           (projectContents.length === 1 && projectContents[0].type === 'output') ?
             <div className="project-output">
-              <p>{(projectContents[0] as ProjectContentOutput).value}</p>
+              <p>{fmt((projectContents[0] as ProjectContentOutput).value, locale!)}</p>
             </div> :
             (projectContents.length === 1 && projectContents[0].type === 'wideimage') ?
               <img
@@ -35,8 +35,7 @@ export default function ProjectBody({ project }: Prop): JSX.Element {
                   <Fragment key={contentId}>{
                     content.type === 'texts' ?
                       (content as ProjectContentTexts).value.map((text, textId) =>
-                        <p key={textId}>{typeof text === 'string' ? (text as string) : text[locale!]
-                        }</p>
+                        <p key={textId}>{fmt(text, locale!)}</p>
                       ) :
                       content.type === 'image' ?
                         <img
@@ -47,7 +46,7 @@ export default function ProjectBody({ project }: Prop): JSX.Element {
                         /> :
                         content.type === 'quote' &&
                         <div className="project-quote">
-                          <p className="project-quote--content">{(content as ProjectContentQuote).value.content}</p>
+                          <p className="project-quote--content">{fmt((content as ProjectContentQuote).value.content, locale!)}</p>
                           {(content as ProjectContentQuote).value.author &&
                             <span className="project-quote--author">- {(content as ProjectContentQuote).value.author}</span>
                           }

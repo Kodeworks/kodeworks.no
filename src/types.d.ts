@@ -10,12 +10,12 @@ export type Person = {
 
 export type Project = {
   name: string;
-  description: string;
+  description: DictText;
   image: string;
-  extras?: string;
+  extras?: DictText;
   urlName: string;
   technologies?: string[];
-  content?: ProjectContent[];
+  content?: DictProjectContents | ProjectContent[];
   published?: boolean;
 };
 
@@ -49,13 +49,13 @@ export type ProjectContentQuote = {
 }
 
 export type ProjectContentQuoteContent = {
-  content: string,
+  content: DictText,
   author?: string
 }
 
 export type ProjectContentOutput = {
   type: 'output',
-  value: string
+  value: DictText
 }
 
 export type SocialUrl = {
@@ -64,6 +64,10 @@ export type SocialUrl = {
 };
 
 // Dictionary Types
+
+type DictProjectContents = {
+  [key: string]: ProjectContent[]
+}
 
 type DictText = string | DictionaryTerm
 

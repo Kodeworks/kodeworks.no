@@ -279,7 +279,10 @@ export const projects: ProjectObjectType = {
   },
   sunlitsea: {
     name: 'Sunlit Sea',
-    description: "Sunlit Sea develops technology for floating solar cell installations that opens up a completely new market for solar cells at sea. KodeWorks develops sensor solutions for solar cell installation, as well as monitoring and enrichment of data from the sensors to optimize production and maintenance.",
+    description: {
+      en: "Sunlit Sea develops technology for floating solar cell installations that opens up a completely new market for solar cells at sea. KodeWorks develops sensor solutions for solar cell installation, as well as monitoring and enrichment of data from the sensors to optimize production and maintenance.",
+      no: "Sunlit Sea utvikler en ny type teknologi for flytende solcelleinstallasjoner som åpner et helt nytt marked for solceller på hav. Kodeworks utvikler sensorløsninger for solcelleinstallasjonen, samt overvåking og berikning av data fra sensorene for å optimalisere produksjon og vedlikehold."
+    },
     image: 'sunlitsea1.jpg',
     urlName: 'sunlitsea',
     technologies: [
@@ -295,60 +298,123 @@ export const projects: ProjectObjectType = {
       'ThreeJS',
       'Tailwind',
     ],
-    content: [
-      {
+    content: {
+      en: [
+        {
+          type: 'texts',
+          value: [
+            "With their extensive ambitions, Sunlit Sea is a central player in the field of floating solar power. A glance at the evolution they have undergone across their entire technology stack supports this.",
+            "A team from KodeWorks has been central to this development, and is today working on segments like hardware design and software development for monitoring, maintenance and optimization of power production. Rune in KodeWorks has worked on the electronics and sensorics of the float modules, and shares his experience in Sunlit Sea"
+          ]
+        },
+        {
+          type: 'quote',
+          value: {
+            content: "In Sunlit Sea, I’ve gotten the chance to discover solutions to problems. I’m not just implementing a function to satisfy a unit test, but instead I get to solve real problems, which requires me to utilize my full professional knowledge. I’m quite simply an inventor, producing real stuff. Here, I’m free to explore possible solutions and together with my colleagues, we find out how to e. g. establish a data stream of moisture measurements from the inside of a metal construction.",
+          }
+        },
+        {
+          type: 'texts',
+          value: [
+            "As co-founder of Sunlit Sea, KodeWorks has been part of the picture from the very beginning, in 2019. As a startup with huge ambitions, and in a demanding, interdisciplinary field that has yet to mature, there are a number of challenges that need to be overcome in order to write a success story."
+          ]
+        },
+        {
+          type: 'output',
+          value: "As co-founder of Sunlit Sea, KodeWorks has been part of the picture from the very beginning, in 2019."
+        },
+        {
+          type: 'texts',
+          value: [
+            "Sunlit Sea has on several occasions worked with KodeWorks on this, and we have contributed in a broad range of areas. From 3D renderings of production and deployment, and a website with Sunlit Sea’s Smart Quoter service, down to the sensor- and communication electronics put on every module, KodeWorks has designed and implemented necessary solutions from the ground up.",
+            "Through a collaborative partnership and mutual knowledge sharing, KodeWorks has been essential for Sunlit Sea’s technological edge."
+          ]
+        },
+        {
+          type: 'quote',
+          value: {
+            content: "In Sunlit Sea, I am solely accountable for the quality of the solutions I develop, and there is a lot of responsibility on the shoulders of each developer. There is no relying on other team members to catch weaknesses in my solutions, unless I specifically ask for a peer review of the systems. We all simply have to identify possible weaknesses in the systems and procedures that we develop, and ensure that more than one set of eyes are scanning it all for flaws."
+          }
+        },
+        {
+          type: 'texts',
+          value: [
+            "The engineering solutions that make up the base for the solar module, must meet requirements that evolve as the product moves towards the commercialization stage. That also applies for the processing and presentation of collected sensor data, and the use of data for further prediction of performance and behavior in various environments. This goes on in parallel with how Sunlit Sea pushes forward in competitiveness and scaling of production."
+          ]
+        },
+        {
+          type: 'quote',
+          value: {
+            content: "Before Sunlit Sea, I had little experience with how to define systems and procedures for getting the production of an actual product up and running. It has been very interesting to learn what works when designing a handful of prototypes, and what needs to be changed when moving towards mass production of the same product. An extremely important tool I keep in my mental toolbox is the ability to design a product in a way that allows a factory to produce it, without me being involved in the actual production."
+          }
+        },
+        {
+          type: 'texts',
+          value: [
+            "Broad and documentable domain expertise is important in a relatively young industry. For the purpose of extending specific domain knowledge, Sunlit Sea today works towards identifying the performance ratio of the solar panels in different sea states given a set of waves, in a collaboration between KodeWorks and IFE to combine historical weather data with bespoke sensorics and processing technology. This work is part of state-of-the-art research within the field, and is laying the foundation for speveral scientific publications from IFE.",
+            "KodeWorks continues to develop solutions for Sunlit Sea, and looks forward to collaborating on solving many exciting challenges in the future."
+          ]
+        },
+        {
+          type: 'image',
+          value: {
+            src: 'sunlitsea2.jpg'
+          }
+        }
+      ],
+      no: [{
         type: 'texts',
         value: [
-          "With their extensive ambitions, Sunlit Sea is a central player in the field of floating solar power. A glance at the evolution they have undergone across their entire technology stack supports this.",
-          "A team from KodeWorks has been central to this development, and is today working on segments like hardware design and software development for monitoring, maintenance and optimization of power production. Rune in KodeWorks has worked on the electronics and sensorics of the float modules, and shares his experience in Sunlit Sea"
+          "Med omfattende ambisjoner innen flytende solkraft er Sunlit Sea en sentral aktør innen feltet. Om man ser på utviklingen de har hatt på tvers av hele teknologi-stacken, underbygges dette ytterligere.",
+          "Kodeworks har stått sentralt i denne utviklingen, og jobber i dag på fronter som hardwaredesign og softwareutvikling for monitorering, vedlikehold og optimalisering av kraftproduksjon. Rune Holmgren i Kodeworks har jobbet med elektronikk og sensorikk i flottørmodulene, og forteller om sin erfaring fra Sunlit Sea."
         ]
       },
       {
         type: 'quote',
         value: {
-          content: "In Sunlit Sea, I’ve gotten the chance to discover solutions to problems. I’m not just implementing a function to satisfy a unit test, but instead I get to solve real problems, which requires me to utilize my full professional knowledge. I’m quite simply an inventor, producing real stuff. Here, I’m free to explore possible solutions and together with my colleagues, we find out how to e. g. establish a data stream of moisture measurements from the inside of a metal construction.",
+          content: "I Sunlit Sea har jeg fått muligheten til å få jobbe med å finne løsninger på problemer. Jeg skal ikke bare implementere en funksjon som gir en grønn unit test, men får istedenfor ekte problemer som jeg kan bruke den fulle bredden i fagkunnskapen min til å løse. Man blir rett og slett oppfinner på jobb, og skal lage ekte ting. Jeg står da fritt til å utforske mulige løsninger og sammen med kollegaene mine finner vi ut hvordan vi f.eks. får etablert en datastrøm med fuktmålinger fra innsiden av en metallkonstruksjon.",
         }
       },
       {
         type: 'texts',
         value: [
-          "As co-founder of Sunlit Sea, KodeWorks has been part of the picture from the very beginning, in 2019. As a startup with huge ambitions, and in a demanding, interdisciplinary field that has yet to mature, there are a number of challenges that need to be overcome in order to write a success story."
+          "Kodeworks har som medgrunnlegger av Sunlit Sea vært med fra starten i 2019. Som startup med store ambisjoner, og i et krevende, tverrfaglig felt som enda ikke har modnet, finnes mange barrierer som må overkommes for å kunne skrive en suksesshistorie."
         ]
       },
       {
         type: 'output',
-        value: "As co-founder of Sunlit Sea, KodeWorks has been part of the picture from the very beginning, in 2019."
+        value: "Kodeworks har som medgrunnlegger av Sunlit Sea vært med fra starten i 2019. Som startup med store ambisjoner, og i et krevende, tverrfaglig felt som enda ikke har modnet, finnes mange barrierer som må overkommes for å kunne skrive en suksesshistorie."
       },
       {
         type: 'texts',
         value: [
-          "Sunlit Sea has on several occasions worked with KodeWorks on this, and we have contributed in a broad range of areas. From 3D renderings of production and deployment, and a website with Sunlit Sea’s Smart Quoter service, down to the sensor- and communication electronics put on every module, KodeWorks has designed and implemented necessary solutions from the ground up.",
-          "Through a collaborative partnership and mutual knowledge sharing, KodeWorks has been essential for Sunlit Sea’s technological edge."
+          "Sunlit Sea har i flere omganger samarbeidet med Kodeworks om dette og vi har bidratt innen et bredt spekter av områder. Fra 3D-renderings av produksjon og deployment, og nettside med Sunlit Sea’s Smart Quoter-tjeneste, ned til sensor- og kommunikasjonselektronikken som sitter på hver modul, har Kodeworks designet og implementert nødvendig teknologi fra bunnen av.",
+          "Gjennom godt samarbeid og gjensidig kompetansebygging har Kodeworks vært essensielle for Sunlit Sea’s informasjonsteknologiske fortrinn."
         ]
       },
       {
         type: 'quote',
         value: {
-          content: "In Sunlit Sea, I am solely accountable for the quality of the solutions I develop, and there is a lot of responsibility on the shoulders of each developer. There is no relying on other team members to catch weaknesses in my solutions, unless I specifically ask for a peer review of the systems. We all simply have to identify possible weaknesses in the systems and procedures that we develop, and ensure that more than one set of eyes are scanning it all for flaws."
+          content: "I Sunlit Sea står jeg selv for kvaliteten til løsningene jeg utvikler, og det er mye ansvar på skuldrene til hver utvikler. Det er ikke mulig å støtte seg på at resten av teamet skal fange opp svakheter i løsningene mine med mindre jeg aktivt ber om hjelp til gjennomgang av systemene. Vi må alle sammen rett og slett selv identifisere mulige svakheter i systemene og prosedyrene vi utarbeider og sørge for at flere sett med øyne ser over alt som kan ha svakheter."
         }
       },
       {
         type: 'texts',
         value: [
-          "The engineering solutions that make up the base for the solar module, must meet requirements that evolve as the product moves towards the commercialization stage. That also applies for the processing and presentation of collected sensor data, and the use of data for further prediction of performance and behavior in various environments. This goes on in parallel with how Sunlit Sea pushes forward in competitiveness and scaling of production."
+          "De tekniske løsningene som danner grunnlaget for solcellemodulen svarer til krav som skjerpes etterhvert som produktet går mot kommersialisering. Det samme gjelder prosessering og presentasjon av innhentet data, og bruken av denne til videre predikasjon av ytelse og oppførsel i varierende omgivelser. Dette skjer i takt med at Sunlit Sea avanserer på produksjonsskalering og konkurransedyktighet."
         ]
       },
       {
         type: 'quote',
         value: {
-          content: "Before Sunlit Sea, I had little experience with how to define systems and procedures for getting the production of an actual product up and running. It has been very interesting to learn what works when designing a handful of prototypes, and what needs to be changed when moving towards mass production of the same product. An extremely important tool I keep in my mental toolbox is the ability to design a product in a way that allows a factory to produce it, without me being involved in the actual production."
+          content: "Før Sunlit Sea hadde jeg lite erfaring med å lage systemer og prosedyrer for å få opp produksjon av et ekte produkt. Det har vært svært interessant å lære seg hva som går bra når du lager en håndfull prototyper, og hva man da må endre når man sikter seg inn mot masseproduksjon av det samme produktet. Et kjempeviktig verktøy jeg har med meg videre i min mentale verktøykasse er evnen til å designe et produkt slik at en fabrikk kan lage produktet, uten at jeg selv er involvert i noen av stegene."
         }
       },
       {
         type: 'texts',
         value: [
-          "Broad and documentable domain expertise is important in a relatively young industry. For the purpose of extending specific domain knowledge, Sunlit Sea today works towards identifying the performance ratio of the solar panels in different sea states given a set of waves, in a collaboration between KodeWorks and IFE to combine historical weather data with bespoke sensorics and processing technology. This work is part of state-of-the-art research within the field, and is laying the foundation for speveral scientific publications from IFE.",
-          "KodeWorks continues to develop solutions for Sunlit Sea, and looks forward to collaborating on solving many exciting challenges in the future."
+          "Bred og dokumenterbar domenekunnskap er viktig i en relativt ung industri. I den hensikt jobber Sunlit Sea med å identifisere solcellepanelenes ytelsesgrad i ulike havtilstander gitt et sett bølger, i et samarbeid mellom Kodeworks og IFE for å kombinere historisk data med egen sensor- og prosesseringsteknologi. Dette arbeidet inngår i state-of-the-art forskning innen feltet og vil bli kilden til flere vitenskapelige publiseringer fra IFE.",
+          "Kodeworks fortsetter å levere utviklingstjenester for Sunlit Sea og ser fram til å sammen løse mange spennende utfordringer i tiden framover."
         ]
       },
       {
@@ -356,9 +422,8 @@ export const projects: ProjectObjectType = {
         value: {
           src: 'sunlitsea2.jpg'
         }
-      }
-
-    ],
+      }]
+    },
     published: true,
   },
   technipfmc: {
@@ -381,8 +446,15 @@ export const projects: ProjectObjectType = {
   },
   vaskehjelp: {
     name: 'Vaskehjelp',
-    description: "Vaskehjelp is a marketplace that connects cleaning personnel and customers and takes care of payment and other paperwork. With good help from Kodeworks, Vaskehjelp has created mobile applications for iOS and Android natively and an online store.",
+    description: {
+      en: "Vaskehjelp is a marketplace that connects cleaning personnel and customers and takes care of payment and other paperwork. With good help from Kodeworks, Vaskehjelp has created mobile applications for iOS and Android natively and an online store.",
+      no: "Vaskehjelp er en markedsplass som kobler rengjører og kunde sammen, samt tar av seg betaling og annet papirarbeid. Kodeworks har bistått med utvikling av iOS- og Android-applikasjon."
+    },
     image: 'vaskehjelp1.jpg',
+    extras: {
+      en: "The know-how and method of conduct as a customer or a service provider in the cleaning industry can be challenging. There is much consideration to be aware of with a confusing market with complicated rules and a great deal of illicit workforce. Vaskehjelp had the idea of creating a platform to ease the process for both the customer and the service provider to connect, make arrangements and, at the same time, be profitable.",
+      no: "Som kunde eller tilbyder av renholdstjenester kan det være utfordrende å bete seg korrekt. Gjeldende regler er kompliserte og det er dessverre en bransje med en del svart arbeid. Vaskehjelp hadde en idé om å digitalisere disse prosessene slik at kunde og tilbyder enkelt kunne benytte seg av tjenesten og operere trygt og lønnsomt."
+    },
     urlName: 'vaskehjelp',
     technologies: ['iOS', 'Android', '.NET', 'Blazor', 'Tailwind'],
     content: [
@@ -390,54 +462,81 @@ export const projects: ProjectObjectType = {
         type: 'texts',
         value: [
           {
-            en: "Peter Ringset in KodeWorks joined us last year, but we already knew him well from the time at Vaskehjelp, where we worked on a project together. Vaskehjelp is a marketplace that connects professional cleaners and customers. They offer a unique approach to digitizing cleaning services, and Peter is here to tell us a bit about what it was like working on this project.",
-            no: "Habbeloaaa"
+            en: "Peter Ringset joined Kodeworks in 2021, but we already knew him well from the time at Vaskehjelp, where we worked on a project together. Vaskehjelp is a marketplace that connects professional cleaners and customers, and they offer a unique approach to digitizing cleaning services. Peter is here to tell us a bit about what it was like working on this project.",
+            no: "Peter Ringset begynte i Kodeworks i 2021, men allerede på vei inn døra kjente vi ham godt fra før gjennom å ha jobbet sammen med Kodeworks på prosjekt hos Vaskehjelp. Vaskehjelp er en markedsplass for profesjonelle renholdere og kunder med en unik tilnærming til digitalisering av renholdstjenester. Peter skal fortelle litt om hvordan det var å jobbe med dette prosjektet."
           },
-          "After trying different solutions for their web application, KodeWorks were brought onboard during the summer of 2018. At this point in time, Vaskehjelp was already underway with the development of the web app, and had great ambitions of bringing their solution on the market in the not too distant future."
+          {
+            en: "After trying different solutions for their web application, Kodeworks was brought on board during the summer of 2018. Vaskehjelp was already underway with the web app development and had grand ambitions of getting their solution on the market in the not too distant future.",
+            no: "Kodeworks ble med inn i Vaskehjelp-teamet sommeren 2018. Utviklingen var på det tidspunkt sentrert rundt webapper, og kunden hadde store ambisjoner om å få løsningen snarlig ut i markedet."
+          }
         ]
       },
       {
         type: 'quote',
         value: {
-          content: "Some of the best parts of working with the Vaskehjelp application was seeing just how much we achieved in a short amount of time, and that feeling of accomplishment that emerged from collaboration. Especially in that time where we worked towards the release date, it was satisfying to see how the pieces fell into place one by one.",
+          content: {
+            en: "The best part of working with the Vaskehjelp application was seeing how much we achieved in a short amount of time and that feeling of accomplishment that emerged from collaboration. Especially when we worked towards the release date, it was satisfying to see how the pieces fell into place.",
+            no: "Det beste med å jobbe med Vaskehjelp-applikasjonen var å se hvor mye vi oppnådde på kort tid, og den følelsen av prestasjon som kom ut av godt samarbeid. Spesielt når vi jobbet mot utgivelsesdatoen var det tilfredsstillende å se hvordan brikkene falt på plass."
+          },
           author: "Peter Ringset"
         }
       },
       {
         type: 'texts',
         value: [
-          "In Vaskehjelp, have been central in both Android and iOS development. Peter has for the most part worked with iOS, while Tri from KodeWorks worked with Android development."
+          {
+            en: "Together with the team at Vaskehjelp, the developers then entered an intense period, where well-thought priorities ended in releasing the application before Christmas the same year.",
+            no: "Teamet gikk inn en intens crunch-periode som endte med release av applikasjonen før jul samme år."
+          }
         ]
       },
       {
         type: 'output',
-        value: "Together with developers in Vaskehjelp, the developers then entered an intense period, where well-thought priorities ended in release of the application before Christmas the same year."
+        value: {
+          en: "Together with the team at Vaskehjelp, the developers then entered an intense period, where well-thought priorities ended in releasing the application before Christmas the same year.",
+          no: "Teamet gikk inn en intens crunch-periode som endte med release av applikasjonen før jul samme år."
+        }
       },
       {
         type: 'quote',
         value: {
-          content: "The biggest challenge we faced was the amount of time we had to deliver. We wanted to get a lot done in a relatively short amount of time, with only a few months from starting fresh with a full crew, until the first version was to be released. Like most projects with intense final days, the intensity of the work increased as we moved towards the release date. Luckily, the team was communicating excellently, and we were able to make agile prioritizations, enabling us to emerge at the release date with a well-functioning application.",
+          content: {
+            en: "The biggest challenge we faced was the time we had to deliver. We wanted to get a lot done relatively quickly, with only a few months from starting fresh with an entire crew until the first version was released. Like most projects with intense final days, the intensity of the work increased as we moved toward the release date. Luckily, the team was communicating excellently. We made agile prioritizations, enabling us to arrive at the release date with a well-functioning application.",
+            no: "Kunden ønsket mange features raskt, og de få månedene vi hadde på å levere var utfordrende. Som de fleste prosjekter med intense siste dager, økte intensiteten i arbeidet etter hvert som vi gikk mot utgivelsesdatoen. Heldigvis kommuniserte teamet utmerket. Vi gjorde smidige prioriteringer, slik at vi kunne komme frem til utgivelsesdatoen med en velfungerende applikasjon."
+          },
           author: "Peter Ringset"
         }
       },
       {
         type: 'texts',
         value: [
-          "After the release of the first version, KodeWorks continued the work with Vaskehjelp, and became a source of continuity regarding the improvement and expansion of the app. The combination of Vaskehjelp setting high goals and providing market analysis, with the developers’ competence, became the key to create and further develop the product."
+          {
+            en: "After the release of the first version, Kodeworks continued the work with Vaskehjelp. They became a source of continuity regarding the improvement and expansion of the App. The combination of Vaskehjelp setting high goals and providing market analysis with the developers' competence became the key to creating and further developing the product.",
+            no: "Etter utgivelsen av den første versjonen fortsatte Kodeworks arbeidet med Vaskehjelp, og ble en kilde til kontinuerlig forbedring og utvidelse av appen. Kundens ambisiøse mål, backet av gode markedsanalyser, og kombinert med utviklernes høye kompetanse, ble nøkkelen til en kommersiell suksess."
+          }
         ]
       },
       {
         type: 'quote',
         value: {
-          content: "The people in Vaskehjelp were experienced in analytics and looking at usage data extracted from the app. By looking at how it was being done, I learned a lot about it myself in terms of using the insight from data in order to improve both the app and the service itself.",
+          content: {
+            en: "The people in Vaskehjelp were experienced in analytics and looking at usage data extracted from the App. By looking at how it was being done, I learned a lot about it myself, using the insight from data to improve both the App and the service itself.",
+            no: "Det var imponerende å se hvordan Vaskehjelp analysere og benyttet bruksdata hentet fra appen til strategisk planlegging og prioritering av utviklingsaktivitet. Ved å se på hvordan dette ble utført lærte jeg selv mye om bruksmønsteranalyse, og brukte innsikten fra brukerdata til å forbedre både appen og selve tjenesten."
+          },
           author: "Peter Ringset"
         }
       },
       {
         type: 'texts',
         value: [
-          "Over time, Vaskehjelp has utilized the .NET platform for their whole solution. By using Xamarin for app development and Blazor for web development, Vaskehjelp achieves reuse of business logic while at the same time using core competence in C# for development and maintenance of the whole solution.",
-          "Vaskehjelp continues to be a central player as a cleaning service platform, and KodeWorks says thanks for the opportunity to be a part of the commercialization of a very exciting startup."
+          {
+            en: "The Android and the iOS application was developed natively for their respective platforms to adopt the platforms' look and feel. Over time, Vaskehjelp has utilized the .NET platform for its complete solution. Using Xamarin for app development and Blazor for web development, Vaskehjelp achieves the reuse of business logic. At the same time, it uses core competence in C# to develop and maintain the complete solution.",
+            no: "Android- og iOS-appene ble opprinnelig utviklet native for å få benyttet plattformenes look-and-feel. Over tid har Vaskehjelp benyttet .NET-plattformen for sin komplette løsning. Ved å bruke Xamarin til apputvikling og Blazor til webutvikling oppnår Vaskehjelp gjenbruk av forretningslogikk samt god utnyttelse av sin interne kjernekompetanse i C#."
+          },
+          {
+            en: "Vaskehjelp continues to be a central player as a cleaning service platform, and Kodeworks says thanks for the opportunity to be a part of the commercialization of an inspiring startup.",
+            no: "Vaskehjelp er og blir en sentral aktør innen digitale renholdstjenester, og Kodeworks takker for muligheten til å være en del av kommersialiseringen av en inspirerende startup."
+          }
         ]
       },
       {

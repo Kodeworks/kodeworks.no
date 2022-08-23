@@ -1,6 +1,6 @@
 import { useContext, useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
-
+import { getLocale, fmt } from '../utils/useTranslation';
 import api from '../api';
 import { useClipText } from '../utils/useClipText';
 import { useTranslation } from '../utils/useTranslation';
@@ -16,8 +16,8 @@ function Home(): JSX.Element {
   const [highlightedPeople, setHighlightedPeople] = useState<Person[]>([]);
 
   const { changeClipMode } = useContext(ClipContentContext);
-  const { locale } = useRouter();
   const { t } = useTranslation(dictionary);
+  const locale = getLocale(useRouter());
 
   const people = api.people.getPeople();
   const highlightedProjects = api.projects.getPublishedProjects();
@@ -79,7 +79,7 @@ function Home(): JSX.Element {
           <h2 className="section-header-headline">
             {highlightedProject && highlightedProject.name}
           </h2>
-          <p>{highlightedProject && highlightedProject.description}</p>
+          <p>{highlightedProject && fmt( highlightedProject.description, locale!)}</p>
           <Button
             appearance={Button.appearances.DarkNoPadding}
             href={`/input/${highlightedProject && highlightedProject.urlName.toLowerCase()}`}

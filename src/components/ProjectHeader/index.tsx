@@ -1,4 +1,7 @@
 import { Project } from '../../types';
+import { getLocale, fmt } from '../../utils/useTranslation';
+import { useRouter } from 'next/router';
+
 
 import style from './projectheader.module.css';
 
@@ -7,6 +10,8 @@ interface Prop {
 }
 
 export default function ProjectHeader({ project }: Prop): JSX.Element {
+  const locale = getLocale(useRouter());
+
   return (
     <header>
       <div className={style.projectHeader__content}>
@@ -16,8 +21,8 @@ export default function ProjectHeader({ project }: Prop): JSX.Element {
           {project.technologies && <li>{project.technologies.join(', ')}</li>}
         </ul>
 
-        <p>{project.description}</p>
-        {project.extras && <p>{project.extras}</p>}
+        <p>{fmt(project.description, locale!)}</p>
+        {project.extras && <p>{fmt(project.extras, locale!)}</p>}
       </div>
 
       <img
