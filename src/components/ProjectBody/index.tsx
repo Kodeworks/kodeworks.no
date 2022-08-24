@@ -1,4 +1,4 @@
-import { Project, ProjectContent, DictProjectContents, ProjectContentImage, ProjectContentOutput, ProjectContentQuote, ProjectContentTexts, ProjectContentWideImage } from '../../types';
+import { Project, ProjectContent, DictProjectContents, ProjectContentImage, ProjectContentOutput, ProjectContentQuote, ProjectContentTexts, ProjectContentWideImage, DictText } from '../../types';
 
 import { useRouter } from 'next/router';
 import { Fragment } from 'react';
@@ -12,7 +12,7 @@ interface Prop {
 
 export default function ProjectBody({ project }: Prop): JSX.Element {
   const locale = getLocale(useRouter());
-  const content = Array.isArray(project.content) ? project.content as ProjectContent[] : (project.content as DictProjectContents)[locale!]
+  const content = project.content ? Array.isArray(project.content) ? project.content as ProjectContent[] : (project.content as DictProjectContents)[locale!] : [];
   const projectContentSplitByOutput = groupSplit(content, pc => pc.type === 'output' || pc.type === 'wideimage');
   const renderedOutput =
     <> {
