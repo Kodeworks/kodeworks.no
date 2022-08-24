@@ -3,9 +3,9 @@ export default function Privacy(): JSX.Element {
     <div className="privacy">
       <section className={`section section-hero section-text-center`}>
         <div className={`section-content`}>
-          <h1>Personvernerklæring for Kodeworks AS</h1>
+          <h1>Personvernerklæring for KodeWorks AS</h1>
           <h3>Sist endret 14. mars 2022</h3>
-          <p>Kodeworks AS vil i forbindelse med vår virksomhet behandle personopplysninger.</p>
+          <p>KodeWorks AS vil i forbindelse med vår virksomhet behandle personopplysninger.</p>
           <p>
             Informasjon om vår behandling av personopplysninger er nærmere beskrevet i denne
             personvernerklæringen.
@@ -24,19 +24,19 @@ export default function Privacy(): JSX.Element {
           <li>
             <h2>Ansvarlig for behandling av personopplysninger</h2>
             <p>
-              Kodeworks AS er behandlingsansvarlig, dvs. bestemmer hvorfor og hvordan
+              KodeWorks AS er behandlingsansvarlig, dvs. bestemmer hvorfor og hvordan
               personopplysningene som omtalt i denne personvernerklæringen skal behandles.
             </p>
             <p>Kontaktopplysninger for behandlingsansvarlig:</p>
             <ul>
-              <li>Kodeworks AS v/ Eirik Larsen </li>
+              <li>KodeWorks AS v/ Eirik Larsen </li>
               <li>Organisasjonsnr.: 820 478 452</li>
               <li>E-post: eirik.larsen@kodeworks.no</li>
             </ul>
           </li>
           <li>
             <h2>Hvem vi behandler personopplysninger om </h2>
-            <p>Kodeworks AS behandler personopplysninger om: </p>
+            <p>KodeWorks AS behandler personopplysninger om: </p>
             <ul className={`list-alphabet`}>
               <li>Kontaktpersoner hos kunder</li>
               <li>Kontaktpersoner hos våre leverandører og samarbeidspartnere </li>
@@ -109,7 +109,7 @@ export default function Privacy(): JSX.Element {
             </p>
 
             <p>
-              For å ta i bruk dine rettigheter må du sende din henvendelse til Kodeworks AS v/ Eirik
+              For å ta i bruk dine rettigheter må du sende din henvendelse til KodeWorks AS v/ Eirik
               Larsen. Vi vil svare på din henvendelse til oss så fort som mulig, og senest innen 30
               dager.
             </p>

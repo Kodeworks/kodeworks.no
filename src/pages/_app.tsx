@@ -1,12 +1,11 @@
-import React, { ReactElement, ReactNode, useContext, useEffect, useState, useRef } from 'react';
-import Head from 'next/head';
 import { NextPage } from 'next';
 import { AppProps } from 'next/app';
+import Head from 'next/head';
 import { useRouter } from 'next/router';
+import React, { ReactElement, ReactNode, useContext, useEffect, useState } from 'react';
 
-import { ClipContentContext } from '../context/ClipContentContext';
-import { ClipContentProvider } from '../context/ClipContentContext';
 import Navigation from '../components/Navigation';
+import { ClipContentContext, ClipContentProvider } from '../context/ClipContentContext';
 
 import '../styles/kw.css';
 
@@ -84,7 +83,7 @@ function Main(): JSX.Element {
     <>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta property="og:title" content="Kodeworks" />
+        <meta property="og:title" content="KodeWorks" />
         <meta property="og:type" content="website" />
         <meta
           property="og:description"
@@ -92,7 +91,7 @@ function Main(): JSX.Element {
         />
         <meta property="og:url" content="https://kodeworks.no" />
         <meta property="og:image" content="https://kodeworks.no/images/og-image-logo.jpg" />
-        <title>Kodeworks</title>
+        <title>KodeWorks</title>
       </Head>
       <button
         onClick={handleMenuButtonClick}

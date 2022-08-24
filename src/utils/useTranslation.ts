@@ -1,6 +1,6 @@
 import { NextRouter, useRouter } from 'next/router';
 
-import { Dictionary } from '../types';
+import { Dictionary, DictText } from '../types';
 
 export function useTranslation(dictionary: Dictionary) {
   const router = useRouter();
@@ -29,4 +29,8 @@ export function getLocale(router: NextRouter): string | undefined {
     : defaultLocale;
 
   return locale;
+}
+
+export function fmt(txt: DictText, loc: string): string {
+  return typeof txt === 'string' ? (txt as string) : txt[loc];
 }

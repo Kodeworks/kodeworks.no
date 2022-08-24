@@ -1,7 +1,9 @@
 import { useRouter } from 'next/router';
+
 import Link from 'next/link';
 
 import { Project } from '../../types';
+import { fmt, getLocale } from '../../utils/useTranslation';
 
 import style from './projecttile.module.css';
 
@@ -10,13 +12,13 @@ interface Prop {
 }
 
 export default function ProjectTile({ project }: Prop): JSX.Element {
-  const { locale } = useRouter();
+  const locale = getLocale(useRouter());
 
   return (
     <article>
       <img
         className={style['project-tile--image']}
-        src={project.image}
+        src={'/static/photos/projects/' + project.image}
         width="1200"
         height="1200"
         alt={project.name}
@@ -31,7 +33,7 @@ export default function ProjectTile({ project }: Prop): JSX.Element {
             project.name
           )}
         </h3>
-        <p>{project.description}</p>
+        <p>{fmt(project.description, locale!)}</p>
       </div>
     </article>
   );
