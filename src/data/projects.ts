@@ -124,53 +124,101 @@ export const projects: ProjectObjectType = {
   },
   lilbit: {
     name: 'lildog with lilbit',
-    description: "lilbit delivers products for tracking and monitoring pets, pursuing their goal of expanding the communication between pet and owner. They have achieved tremendous interest in current and future products and services with this ambition.",
+    description: {
+      en: "lilbit delivers products for tracking and monitoring pets, pursuing their goal of expanding the communication between pet and owner. They have achieved tremendous interest in current and future products and services with this ambition.",
+      no: "lilbit leverer GPS-sporing av kjæledyr med tilhørende digital plattform og app. Deres visjon er å kunne gi eiere informasjon om dyrets tilstand gjennom dets oppførsel. lilbit har oppnådd stor interesse blant hundeeiere i Norge og har ambisjoner om internasjonal ekspansjon."
+    },
     image: 'lilbit1.jpg',
     urlName: 'lildog-with-lilbit',
     technologies: ['Java', 'Spring', 'Android', 'iOS', 'JavaScript', 'ReactJS', 'Tailwind'],
-    content: [
-      {
-        type: 'texts',
-        value: [
-          "Through long-lasting collaboration, KodeWorks has yielded consultancy and knowledge boosting and development. Joachim Fasting in KodeWorks has been a central figure in this collaboration, especially within backend development and reducing complexity and costs in the technology stack."
-        ]
-      },
-      {
-        type: 'quote',
-        value: {
-          content: "I have appreciated the trust I have gotten from our clients in choosing between different technical solutions. I have had the opportunity to work with many other technologies, from high-level to low-level."
+    content: {
+      en: [
+        {
+          type: 'texts',
+          value: [
+            "Through long-lasting collaboration, KodeWorks has yielded consultancy and knowledge boosting and development. Joachim Fasting in KodeWorks has been a central figure in this collaboration, especially within backend development and reducing complexity and costs in the technology stack."
+          ]
+        },
+        {
+          type: 'quote',
+          value: {
+            content: "I have appreciated the trust I have gotten from our clients in choosing between different technical solutions. I have had the opportunity to work with many other technologies, from high-level to low-level."
+          }
+        },
+        {
+          type: 'texts',
+          value: ["lilbit is today a specialized company with ownership of its entire technology portfolio. An essential part of the process to achieve this has been cloud rationalization. Today, lilbit cloud services are built on the principle of infrastructure as code. Setup and configurations, resource usage and costs are thus transparent, modular and easy to test, develop and hand over. Another part has been moving the production chain to local environments, as opposed to most manufacturers."]
+        },
+        {
+          type: 'quote',
+          value: {
+            content: "The biggest challenge was keeping several parallel tasks. Upholding a structured approach to the work at hand has therefore been instrumental."
+          }
+        },
+        {
+          type: 'output',
+          value: "\"I have worked on several segments of the technology portfolio, and I hope to bring experience from all of it into further work.\""
+        },
+        {
+          type: 'image',
+          value: {
+            src: 'lilbit2.jpg',
+            alt: "lildog with lilbit"
+          }
+        },
+        {
+          type: 'texts',
+          value: [
+            "KodeWorks has also been part of cross-functional teams, with fluent communication between the developer and business sides - a property that in and by itself accelerates development and growth. On the business side of lilbit, the interest shown in products and services may best be described by a spread sale conducted on the public finance platform Folkeinvest. Lilbit collected 28 million NOK, thus marking a new record in Norwegian public spread sales. KodeWorks has further provided knowledge sharing on specific domains involved in the development of lilbit. This includes taking part in the hiring process of lilbit employees.",
+            "lilbit CEO Morten Sæthre describes Joachim from KodeWorks as the first truly autonomous developer he met who sees weaknesses and corresponding solutions in a system and implements these as they emerge. Today, Joachim works on developing the backend. lilbit develops and maintains backend solutions for both the IoT units and the cloud services. This is important since lilbit units contain sensors to facilitate expanded communication between a dog and its owner.",
+            "We at KodeWorks are thankful to be collaborating with lilbit on this and look forward to being part of the development in the time to come."
+          ]
         }
-      },
-      {
-        type: 'texts',
-        value: ["lilbit is today a specialized company with ownership of its entire technology portfolio. An essential part of the process to achieve this has been cloud rationalization. Today, lilbit cloud services are built on the principle of infrastructure as code. Setup and configurations, resource usage and costs are thus transparent, modular and easy to test, develop and hand over. Another part has been moving the production chain to local environments, as opposed to most manufacturers."]
-      },
-      {
-        type: 'quote',
-        value: {
-          content: "The biggest challenge was keeping several parallel tasks. Upholding a structured approach to the work at hand has therefore been instrumental."
+      ],
+      no: [
+        {
+          type: 'texts',
+          value: ["lilbit leverer produkter for monitorering av kjæledyr, med målsetningen om å utvide kommunikasjonen mellom kjæledyr og eier. Med denne ambisjonen har de oppnådd stor interesse for nåværende og kommende produkter og tjenester. Gjennom et langt samarbeid har Kodeworks bidratt med rådgivning og kompetansebygging, såvel som utvikling. Joachim Fasting i Kodeworks har stått sentralt i dette, og har spesielt bidratt på backend og i arbeidet med å redusere kompleksitet og kostnader i tech-stacken."]
+        },
+        {
+          type: 'quote',
+          value: {
+            content: "Det jeg har satt mest pris på er tilliten fra kunden med tanke på valg av tekniske løsninger.  Jeg har hatt muligheten til å jobbe med mange ulike teknologier, fra høyt til lavt i stacken.",
+            author: "Joachim Fasting"
+          }
+        },
+        {
+          type: 'texts',
+          value: ["lilbit er i dag en spesialisert bedrift med eierskap til hele teknologiporteføljen. En viktig del av å oppnå dette har vært en rasjonalisering av skyoppsettet. I dag bygger skyoppsettet på prinsippet om infrastruktur som kode. Oppsett og konfigurasjon, ressursbruk og kostnader er dermed transparent, modulært og lett å teste, videreutvikle og overlevere. Ellers har lilbit hatt fokus på å flytte produksjonskjeden lokalt, til forskjell fra hvordan mange leverandører gjør det."]
+        },
+        {
+          type: 'quote',
+          value: {
+            content: "For min egen del har den største utfordringen vært at jeg til tider har hatt mange tråder å holde i samtidig, som et resultat av at jeg har jobbet på flere deler av stacken. Det har derfor vært viktig å opprettholde en strukturert tilnærming til arbeidet.",
+            author: "Joachim Fasting"
+          }
+        },
+        {
+          type: 'output',
+          value: "Ettersom at jeg har jobbet med så mye forskjellig, håper jeg å ta med meg all erfaring jeg kan videre."
+        },
+        {
+          type: 'image',
+          value: {
+            src: 'lilbit2.jpg',
+            alt: "lildog with lilbit"
+          }
+        },
+        {
+          type: 'texts',
+          value: [
+            "Kodeworks har i lilbit også vært med på bygging av kryssfunksjonelle team, med god kommunikasjon mellom utviklings- og forretningssiden - en egenskap som akselererer utvikling og vekst. På forretningssiden lar interessen for lilbits produkter seg kanskje best gjenspeile i et spredningssalg som ble gjort gjennom folkefinansieringsplattformen Folkeinvest, der det ble hentet inn 28 millioner kroner, noe som er ny norsk rekord. Videre har Kodeworks bidratt med bygging av spesifikk kompetanse for utvikling innad i lilbit. Dette inkluderer både kunnskapsdeling og deltakelse i ansettelsesprosessen.",
+            "CEO i lilbit, Morten Sæthre, beskriver Joachim som sitt første møte med en autonom utvikler; noen som ser svakheter og tilsvarende løsninger i et system, og implementerer disse på løpende bånd. I dag jobber Joachim med utvikling av backend. lilbit utvikler og drifter backend til både IoT-enhetene og til skyløsningene. Dette er viktig, da produktene fra lilbit inneholder utvidet sensorikk som vil legge til rette for en forlenget kommunikasjon mellom hund og eier.",
+            "Kodeworks er takknemlige for rollen som samarbeidspartnere her, og vi ser videre frem til å være en del av utviklingen i tiden som kommer."
+          ]
         }
-      },
-      {
-        type: 'output',
-        value: "\"I have worked on several segments of the technology portfolio, and I hope to bring experience from all of it into further work.\""
-      },
-      {
-        type: 'image',
-        value: {
-          src: 'lilbit2.jpg',
-          alt: "lildog with lilbit"
-        }
-      },
-      {
-        type: 'texts',
-        value: [
-          "KodeWorks has also been part of cross-functional teams, with fluent communication between the developer and business sides - a property that in and by itself accelerates development and growth. On the business side of lilbit, the interest shown in products and services may best be described by a spread sale conducted on the public finance platform Folkeinvest. Lilbit collected 28 million NOK, thus marking a new record in Norwegian public spread sales. KodeWorks has further provided knowledge sharing on specific domains involved in the development of lilbit. This includes taking part in the hiring process of lilbit employees.",
-          "lilbit CEO Morten Sæthre describes Joachim from KodeWorks as the first truly autonomous developer he met who sees weaknesses and corresponding solutions in a system and implements these as they emerge. Today, Joachim works on developing the backend. lilbit develops and maintains backend solutions for both the IoT units and the cloud services. This is important since lilbit units contain sensors to facilitate expanded communication between a dog and its owner.",
-          "We at KodeWorks are thankful to be collaborating with lilbit on this and look forward to being part of the development in the time to come."
-        ]
-      }
-    ],
+      ]
+    },
     published: true,
   },
   mollerit: {
