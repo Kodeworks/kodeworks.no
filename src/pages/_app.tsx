@@ -1,12 +1,11 @@
-import React, { ReactElement, ReactNode, useContext, useEffect, useState, useRef } from 'react';
-import Head from 'next/head';
 import { NextPage } from 'next';
 import { AppProps } from 'next/app';
+import Head from 'next/head';
 import { useRouter } from 'next/router';
+import React, { ReactElement, ReactNode, useContext, useEffect, useState } from 'react';
 
-import { ClipContentContext } from '../context/ClipContentContext';
-import { ClipContentProvider } from '../context/ClipContentContext';
 import Navigation from '../components/Navigation';
+import { ClipContentContext, ClipContentProvider } from '../context/ClipContentContext';
 
 import '../styles/kw.css';
 
