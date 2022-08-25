@@ -253,9 +253,15 @@ export const projects: ProjectObjectType = {
   },
   sesam: {
     name: 'Sesam',
-    description: "Sesam is KodeWorks' own internal door lock and doorbell system, and is developed from the bottom up and maintained in full by KodeWorks.",
+    description: {
+      en: "Sesam is KodeWorks' own internal door lock and doorbell system, and is developed from the bottom up and maintained in full by KodeWorks.",
+      no: "Sesam er KodeWorks egenutviklede interne system for dørlås og ringeklokke. Både hardware og software er utviklet helt fra scratch av KodeWorks."
+    },
     image: 'Sesam-front.jpg',
-    extras: "When between customer assignments in KodeWorks, the focus is on professional and academic development. At the same time, some real value creation can also be achieved. At the KodeWorks office in Oslo, Jan and Simen received an interesting task in modernizing the existing door lock system.",
+    extras: {
+      en:"When between customer assignments in KodeWorks, the focus is on professional and academic development. At the same time, some real value creation can also be achieved. At the KodeWorks office in Oslo, Jan and Simen received an interesting task in modernizing the existing door lock system.",
+      no:"Når man er mellom kundeoppdrag i Kodeworks, er faglig utvikling i fokus. Samtidig kan også ekte verdiskapning være en del av det faglige opplegget. På kontoret i Oslo fikk Jan og Simen en interessant oppgave i det å modernisere dørlåssystemet på huset."
+    },
     urlName: 'sesam',
     technologies: [
       'Low voltage',
@@ -268,49 +274,102 @@ export const projects: ProjectObjectType = {
       'TypeScript',
       'React',
     ],
-    content: [
-      {
-        type: 'texts',
-        value: [
-          "Using conventional keys in an office setting has multiple downsides. Someone needs to be in control over which physical keys are in whose possession, renewing these if they are somehow lost. Loss of keys also makes it difficult for individuals to get access to the office, and could potentially constitute a serious security risk. Today’s existing solutions for door lock control offer code locks, key cards, alarm control via apps and related functionality, but also require that one physically intervenes with the doors in the building. Since our goal was a solution tailored to our needs, while also doing as little physical changes as possible to the existing door lock system, the most promising alternative turned out to be creating the solution from the bottom up ourselves.",
-          "Jan and Simen thus started the project with the goal of creating a solution that could allow for office door lock control using only a web app. It then became necessary to build a product from sketch, that on one end could join the circuits to two door locks, while also registering someone ringing the doorbell, and on the other end could offer the end user an intuitive user interface for this specific action. And so our own door lock system, Sesam, saw the light of day."
-        ]
-      },
-      {
-        type: 'image',
-        value: {
-          src: 'sesam-2.jpg'
+    content: {
+      en: [
+        {
+          type: 'texts',
+          value: [
+            "Using conventional keys in an office setting has multiple downsides. Someone needs to be in control over which physical keys are in whose possession, renewing these if they are somehow lost. Loss of keys also makes it difficult for individuals to get access to the office, and could potentially constitute a serious security risk. Today’s existing solutions for door lock control offer code locks, key cards, alarm control via apps and related functionality, but also require that one physically intervenes with the doors in the building. Since our goal was a solution tailored to our needs, while also doing as little physical changes as possible to the existing door lock system, the most promising alternative turned out to be creating the solution from the bottom up ourselves.",
+            "Jan and Simen thus started the project with the goal of creating a solution that could allow for office door lock control using only a web app. It then became necessary to build a product from sketch, that on one end could join the circuits to two door locks, while also registering someone ringing the doorbell, and on the other end could offer the end user an intuitive user interface for this specific action. And so our own door lock system, Sesam, saw the light of day."
+          ]
+        },
+        {
+          type: 'image',
+          value: {
+            src: 'sesam-2.jpg'
+          }
+        },
+        {
+          type: 'texts',
+          value: [
+            "In the existing physical implementation, the locks for the inner and outer door were deactivated momentarily by joining two different electrical circuits. The circuit for the inner door was already exposed through an existing relay, and the outer door circuit could be accessed through the office calling system. After some consultation with Thomas at KodeWorks, three soldering points to the calling system PCB were identified. One for grounding, one for joining the door lock circuit and one that would receive voltage when the doorbell was rung. It was then decided that these circuits would be joined using relays controlled by microcontrollers, such as an Arduino model. The Arduino controlling the outer door, whose close proximity to the calling system allowed for listening to the doorbell signal, was also set up to register when this signal was active, communicating this to the Sesam backend.",
+            "And so the solution for controlling the door locks and registering the doorbell was in place. On the local office network, three components were communicating - the Sesam server and two Arduinos. For this communication, the MQTT protocol was chosen. MQTT is typically preferred in IoT solutions with lots of units and large volumes of data, due to it being a relatively lightweight protocol, and since the MQTT pub/sub routine of a single unit runs independent of what other units are simultaneously connected. At the same time, MQTT offers high adjustability for parameters that increase the integrity of the message transmission, or keeps messages stored upon loss of connection. This lowers the performance in bigger systems, but is useful in small scale applications where the integrity of the message transfers must have some sort of guarantee.",
+            "The backend uses Node.js with Express, and offers a RESTful HTTP API to the frontend, which is a web app written using React. NextJS is used to offer all pages in the web app, which follows the new visual profile of KodeWorks. Further on, the backend communicates messages to the microcontrollers. A local MQTT broker runs in its own Docker container, and distributes messages on doorbells, unlocking and locking, and heartbeat messages back and forth between the network components."
+          ]
+        },
+        {
+          type: 'image',
+          value: {
+            src: 'sesam-3.jpg'
+          }
+        },
+        {
+          type: 'texts',
+          value: [
+            "For authentication and authorization, Google OAuth is used, so that only users with a valid KodeWorks mail are able to login and access Sesam. This was configured in Google Cloud Console, and Google Admin SDK was then used to check whether or not a user is part of either the Trondheim or the Oslo office in KodeWorks. This makes sure that only people with an actual connection to the company gains access to unlocking the doors. CI7CD Pipelines in Gitlab was used to automatically deploy the app to the server.",
+            "When a user presses the unlock button in the app, there is an expectation of getting some visual clue that the process of opening the door has begun, and has succeeded. In Sesam, this is done by the backend receiving a message from the given microcontroller that the door has been unlocked, which the backend then furthers to the frontend. The unlock button is then itself locked until the message is passed that the door is locked. This communication is done using Websockets, and a natural extension of this was making sure that the unlock button was locked for all users if one user attempted to unlock the door. One can of course make the case that this sort of real time update for an app that controls two doors in the same office isn’t highly necessary, but on the other hand, this functionality reflects user friendliness as a guiding principle, and is always worth keeping in mind. An admin view was also developed. This gives select users access to statistics on the usage of Sesam, as well as the ability to open/close the entire service.",
+            "Finally, an essential part of this project has been the effort in planning and describing the product before the start of the project. At the time of project start, Jan and Simen were presented with a very well prepared project description. This contained a clear description of the product, as well as functional and non-functional requirements for both the product and the project execution. Such a collection of requirements and descriptions gives the developer an excellent basis for asking critical questions, presenting alternative possibilities and creating a coherent image of the product in an early phase of the project. This facilitates a imperative process and productive communication. In summation, Jan and Simen can therefore look back at an instructive and well executed project."
+          ]
+        },
+        {
+          type: 'image',
+          value: {
+            src: 'sesam-1.jpg'
+          }
+        },
+      ],
+      no: [
+        {
+          type: 'texts',
+          value: [
+            "Bruken av konvensjonelle nøkler i en kontorsammenheng medfører ulemper. Man må ha oversikt over hvilke personer som har nøkler, og fornye disse om de går tapt. Tap av nøkler gjør det vanskeligere for enkeltpersoner å få tilgang på kontoret, og kan i verste fall utgjøre en stor sikkerhetsrisiko.",
+            "Dagens eksisterende løsninger for styring av dørlåser tilbyr kodelåser, adgangskort, alarmstyring via nettapp og annen funksjonalitet, men krever samtidig at man går fysisk til verks på dørene i bygget. Da vårt mål var en løsning tilpasset våre behov, og med lavest mulig grad av utvidelse av fysiske låser, dører og kretser i bygget, fremsto det å lage løsningen selv fra bunnen av som det beste alternativet."
+          ]
+        },
+        {
+          type: 'image',
+          value: {
+            src: 'sesam-2.jpg'
+          }
+        },
+        {
+          type: 'texts',
+          value: [
+            "Jan og Simen gikk dermed inn i prosjektet med mål om å lage en løsning som kunne styre dørlåsene på kontoret med en nettapplikasjon. Det ble altså nødvendig å bygge en løsning fra bunnen, som i én ende kunne slutte kretsene til to dørlåser og lese dørklokkesignalet, og på den andre enden kunne tilby sluttbrukeren et intuitivt brukergrensesnitt for nettopp dette.",
+            "Dermed skulle altså Sesam, vårt eget dørlåssystem, se dagens lys.",
+            "Etter daværende løsning ble dørlåsene for indre og ytre dør styrt ved å slutte to forskjellige elektriske kretser. Krets for indre dør lå eksponert i et eget eksisterende relé, og krets for ytre dør kunne aksesseres via callinganlegget på huset."
+          ]
+        },
+        {
+          type: 'image',
+          value: {
+            src: 'sesam-3.jpg'
+          }
+        },
+        {
+          type: 'texts',
+          value: [
+            "Etter litt konsultasjon med Thomas i Kodeworks ble tre loddepunkter på PCBen til callinganlegget identifisert. Ett til jording, et som slutter kretsen til dørlåsen og et som settes under spenning når dørklokka aktiveres fra utsiden. Det ble bestemt at disse kretsene skulle sluttes ved bruk av reléer, og en enkel måte å gjøre dette på er å styre disse feks med en Arduino. Dermed ble løsningen å sette opp to Arduinoer med hvert sitt relé, en til hver dør. Arduinoen for ytre dør, som med sin tilknytning til callinganlegget også kunne lytte pål dørklokkesignalet, ble også koblet opp til å registrere når dette signalet er aktivt, for å kunne melde dette videre til backend.",
+            "Dermed var løsningen for å kontrollere dørlåser og registrere dørklokkesignal på plass. På lokalnettet på huset var det altså tre komponenter som nå skulle kommunisere - Sesam-serveren og to Arduinos. Til kommunikasjon mellom disse komponentene ble MQTT-protokollen valgt. MQTT blir gjerne valgt i IoT-løsninger med mange enheter og store datamengder da den i utgangspunktet er en lettvekt-protokoll der pub/sub-rutinen hos en enkeltenhet skjer uavhengig av andre enheters tilkobling til en sentral MQTT-broker. Samtidig tilbyr MQTT høy justerbarhet for parametre som øker integriteten i dataoverføringen eller tar vare på pakker ved tapt forbindelse. Dette senker ytelsen i større systemer, men er nyttig i småskala applikasjoner der integriteten i dataoverføringen må kunne garanteres.",
+            "Backenden bruker Node.js med Express, og tilbyr et RESTful HTTP API til frontend, som er en nettapplikasjon skrevet med React. NextJS blir brukt til å tilby alle sider i nettappen, som følger det nye visuelle designet til Kodeworks. Videre kommuniserer backenden beskjeder til mikrokontrollere via MQTT-protokollen. En lokal MQTT-broker kjører i en egen Docker-container, og distribuerer meldinger om dørklokker, åpning og låsing av dører, og heartbeat-meldinger frem og tilbake mellom mikrokontrollere og backend."
+          ]
+        },
+        {
+          type: 'image',
+          value: {
+            src: 'sesam-1.jpg'
+          }
+        },
+        {
+          type: 'texts',
+          value: [
+            "Til autentisering og autorisering blir Google OAuth brukt, slik at kun brukere med Kodeworks-mail kan logge seg inn. Dette ble satt opp i Google Cloud Console, og Google Admin SDK ble deretter brukt til å sjekke om en bruker er en del av enten Trondheim eller Oslo-gruppa i Kodeworks. Dette er for å sikre at kun personer med faktisk tilknytning til bedriften får tilgang til å løse opp dørene. Gitlabs CI/CD Pipelines er blitt brukt til å deployere appen automatisk til serveren.",
+            "Når en bruker trykker på døråpningsknappen, forventer man å få en visuell tilbakemelding på at noe skjer. I Sesam er dette gjort ved at backend mottar en melding fra den aktuelle mikrokontrolleren i dét døra åpnes, og dermed låser knappen i appen helt til backend mottar melding om at dørlåsen igjen er lukket. Denne kommunikasjonen gjøres med Websockets, og en naturlig videreføring av dette ble at knappen hos samtligere brukere låses dersom én bruker aktiverer knappen i sin klient. En kan naturligvis argumentere for at sanntidsoppdatering på en app som styrer to dører i samme lokale ikke er høyst nødvendig, men på den annen side gjenspeiler det brukervennlighet som prinsipp, og det er alltid lurt å ha i hodet. Et eget administratorvindu ble også utviklet. Dette gir enkelte brukere tilgang til statistikk på bruken av Sesam, samt å stenge/åpne hele tjenesten for bruk.",
+            "Til slutt har dessuten en svært viktig del av prosjektet vært jobben som ble gjort i forkant. Ved prosjektstart ble Jan og Simen presentert en svært godt utarbeidet prosjektbeskrivelse. Denne inneholdt en klar beskrivelse av produktet, samt funksjonelle og ikke-funksjonelle krav til både produkt og gjennomføring av prosjektet. En såpass godt formulert samling av krav og rammer gir utvikleren muligheten til å stille kritiske spørsmål, presentere alternative løsninger og danne seg et helhetlig bilde av produktet i innledningsfasen, og legger til rette for en synlig prosess og produktiv kommunikasjon. Jan og Simen kan dermed se tilbake på et lærerikt prosjekt og godt gjennomført prosjekt."
+          ]
         }
-      },
-      {
-        type: 'texts',
-        value: [
-          "In the existing physical implementation, the locks for the inner and outer door were deactivated momentarily by joining two different electrical circuits. The circuit for the inner door was already exposed through an existing relay, and the outer door circuit could be accessed through the office calling system. After some consultation with Thomas at KodeWorks, three soldering points to the calling system PCB were identified. One for grounding, one for joining the door lock circuit and one that would receive voltage when the doorbell was rung. It was then decided that these circuits would be joined using relays controlled by microcontrollers, such as an Arduino model. The Arduino controlling the outer door, whose close proximity to the calling system allowed for listening to the doorbell signal, was also set up to register when this signal was active, communicating this to the Sesam backend.",
-          "And so the solution for controlling the door locks and registering the doorbell was in place. On the local office network, three components were communicating - the Sesam server and two Arduinos. For this communication, the MQTT protocol was chosen. MQTT is typically preferred in IoT solutions with lots of units and large volumes of data, due to it being a relatively lightweight protocol, and since the MQTT pub/sub routine of a single unit runs independent of what other units are simultaneously connected. At the same time, MQTT offers high adjustability for parameters that increase the integrity of the message transmission, or keeps messages stored upon loss of connection. This lowers the performance in bigger systems, but is useful in small scale applications where the integrity of the message transfers must have some sort of guarantee.",
-          "The backend uses Node.js with Express, and offers a RESTful HTTP API to the frontend, which is a web app written using React. NextJS is used to offer all pages in the web app, which follows the new visual profile of KodeWorks. Further on, the backend communicates messages to the microcontrollers. A local MQTT broker runs in its own Docker container, and distributes messages on doorbells, unlocking and locking, and heartbeat messages back and forth between the network components."
-        ]
-      },
-      {
-        type: 'image',
-        value: {
-          src: 'sesam-3.jpg'
-        }
-      },
-      {
-        type: 'texts',
-        value: [
-          "For authentication and authorization, Google OAuth is used, so that only users with a valid KodeWorks mail are able to login and access Sesam. This was configured in Google Cloud Console, and Google Admin SDK was then used to check whether or not a user is part of either the Trondheim or the Oslo office in KodeWorks. This makes sure that only people with an actual connection to the company gains access to unlocking the doors. CI7CD Pipelines in Gitlab was used to automatically deploy the app to the server.",
-          "When a user presses the unlock button in the app, there is an expectation of getting some visual clue that the process of opening the door has begun, and has succeeded. In Sesam, this is done by the backend receiving a message from the given microcontroller that the door has been unlocked, which the backend then furthers to the frontend. The unlock button is then itself locked until the message is passed that the door is locked. This communication is done using Websockets, and a natural extension of this was making sure that the unlock button was locked for all users if one user attempted to unlock the door. One can of course make the case that this sort of real time update for an app that controls two doors in the same office isn’t highly necessary, but on the other hand, this functionality reflects user friendliness as a guiding principle, and is always worth keeping in mind. An admin view was also developed. This gives select users access to statistics on the usage of Sesam, as well as the ability to open/close the entire service.",
-          "Finally, an essential part of this project has been the effort in planning and describing the product before the start of the project. At the time of project start, Jan and Simen were presented with a very well prepared project description. This contained a clear description of the product, as well as functional and non-functional requirements for both the product and the project execution. Such a collection of requirements and descriptions gives the developer an excellent basis for asking critical questions, presenting alternative possibilities and creating a coherent image of the product in an early phase of the project. This facilitates a imperative process and productive communication. In summation, Jan and Simen can therefore look back at an instructive and well executed project."
-        ]
-      },
-      {
-        type: 'image',
-        value: {
-          src: 'sesam-1.jpg'
-        }
-      },
-    ],
+      ]
+    },
     published: true,
   },
   skandiaenergi: {
