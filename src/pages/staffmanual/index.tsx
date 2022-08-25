@@ -218,7 +218,7 @@ export default function StaffManual(): JSX.Element {
 
             <p>
               Kodeworks setter av 7% til pensjonssparing. Dette gjelder allerede fra 0G og opp til
-              21G, der G er folketrygdens grunnbeløp.
+              12G, der G er folketrygdens grunnbeløp.
             </p>
             <p>
               I tillegg til vanlig yrkesreise- og yrkesskadeforsikring, har vi og reiseforsikring
