@@ -1,0 +1,148 @@
+.calculator {
+  max-width: 550px;
+  width: 100%;
+}
+
+.calculator h4 {
+  font-family: "Natural Grotesk", arial, sans-serif;
+  font-size: 16px;
+  margin-top: 35px;
+  margin-bottom: 15px;
+}
+
+/* Education
+------------------------------------------------------------------------------*/
+.calculator-education-label {
+  border-radius: 20px;
+  background: #000;
+  color: #fff;
+  height: 40px;
+  display: inline-block;
+  line-height: 40px;
+  padding-left: 40px;
+  padding-right: 15px;
+  margin-right: 4px;
+  cursor: pointer;
+  position: relative;
+}
+
+.calculator-education-input {
+  cursor: pointer;
+  -webkit-appearance: none;
+  background-color: #000;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+
+  border: 2px solid #fff;
+
+  margin: 0 0 0 -28px;
+  display: grid;
+  place-content: center;
+
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.calculator-education-input::before {
+  background-color: var(--color-green);
+  content: "";
+  height: 14px;
+  border-radius: 50%;
+  top: -2px;
+  left: 1px;
+  cursor: pointer;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  width: 14px;
+}
+
+.calculator-education-input:checked::before {
+  cursor: pointer;
+  transform: scale(1);
+}
+
+
+
+/* Seniority
+------------------------------------------------------------------------------*/
+.calculator-seniority-content {
+  display: flex;
+  align-items: center;
+}
+
+.calculator-seniority-content label {
+  margin-right: 25px;
+  width: 100%;
+}
+
+.calculator-seniority-range {
+  -webkit-appearance: none;
+  background-color: transparent;
+  height: 30px;
+  margin: 5px 0;
+  width: 100%;
+}
+
+.calculator-seniority-range:focus {
+  outline: none;
+}
+
+.calculator-seniority-range::-webkit-slider-runnable-track {
+  animate: 0.2s;
+  background: #000;
+  border-radius: 3.5px;
+  border: 1px solid #000000;
+  cursor: pointer;
+  height: 7px;
+  width: 100%;
+}
+
+.calculator-seniority-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background: var(--color-green);
+  border-radius: 19px;
+  border: 2px solid #000;
+  cursor: pointer;
+  height: 38px;
+  margin-top: -16px;
+  width: 50px;
+}
+
+.calculator-seniority-range:focus::-webkit-slider-runnable-track {
+  background: #000;
+}
+
+.calculator-seniority-range::-moz-range-track {
+  animate: 0.2s;
+  background: #000;
+  border-radius: 3.5px;
+  border: 1px solid #000000;
+  cursor: pointer;
+  height: 7px;
+  width: 100%;
+}
+.calculator-seniority-range::-moz-range-thumb {
+  background: var(--color-green);
+  border-radius: 19px;
+  border: 2px solid #000000;
+  cursor: pointer;
+  height: 38px;
+  width: 50px;
+}
+
+.calculator-seniority-input {
+  border-radius: 6px;
+  border: 2px solid #000;
+  font-size: 20px;
+  padding: 5px 10px;
+  margin-right: 5px;
+  width: 30px;
+}
+
+.calculator-salary {
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 0;
+}

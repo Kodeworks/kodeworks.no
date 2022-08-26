@@ -74,6 +74,18 @@ code {
 }
 
 
+.container {
+  padding-left: var(--gutter-size);
+  padding-right: var(--gutter-size);
+}
+
+@media (max-width: 660px) {
+  .container {
+    padding-left: var(--gutter-size-mobile);
+    padding-right: var(--gutter-size-mobile);
+  }
+}
+
 /* Section
 ------------------------------------------------------------------------------*/
 .section {
@@ -91,7 +103,6 @@ code {
 }
 
 .section-content {
-  width: 100%;
   max-width: var(--page-max-width);
   margin-left: auto;
   margin-right: auto;
