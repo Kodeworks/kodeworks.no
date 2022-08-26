@@ -2,7 +2,7 @@ export default {
   no: {
     'our people': 'Menneskene',
     projects: 'Prosjektene',
-    career: 'Jobb',
+    career: 'Jobb hos oss',
     'staff manual': 'Håndboka',
     'get in touch': 'Kontakt oss',
     'privacy policy': 'Personvernerklæring',
