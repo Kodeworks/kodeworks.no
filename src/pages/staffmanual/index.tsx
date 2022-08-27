@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { useClipContent } from '../../context/ClipContentContext';
 
 export default function StaffManual(): JSX.Element {
@@ -158,6 +159,13 @@ export default function StaffManual(): JSX.Element {
             <p>
               Lønn skal som hovedregel utbetales innen den 22. hver måned, eller siste virkedag før
               22. dersom det ikke er en vanlig virkedag.
+            </p>
+            <p>
+              Nysgjerrig på hva du kan tjene? Sjekk ut{' '}
+              <Link href="/career">
+                <a>kalkulatoren vår</a>
+              </Link>
+              .
             </p>
 
             <h4>Lønnstrinn og lønnsjustering</h4>
