@@ -5,9 +5,9 @@ export default function StaffManual(): JSX.Element {
 
   return (
     <>
-      <header className="section-hero section-content section-content-narrow">
-        <div className="handbook-mainheader-content">
-          <h1 className="section-header-headline">Personalhåndbok</h1>
+      <header className="handbook-mainheader">
+        <div className="section-content section-content-narrow handbook-mainheader-content">
+          <h1 className="section-header-headline">Personalhåndboka</h1>
           <p>
             Velkommen til håndboken vår! Vi ønsker i dette dokumentet å beskrive hvordan vi tenker
             og hvordan vi gjør ting i praksis. Her vil du finne informasjon om alt fra arbeidstid,
