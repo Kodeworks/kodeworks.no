@@ -21,16 +21,16 @@ export default function ProjectTile({ project }: Prop): JSX.Element {
         src={'/static/photos/projects/' + project.image}
         width="1200"
         height="1200"
-        alt={project.name}
+        alt={fmt(project.name, locale!)}
       />
       <div className={style['project-ingress']}>
         <h3>
           {project.published ? (
             <Link href={`input/${project.urlName}`} locale={locale}>
-              <a className={style['project-link']}>{project.name}</a>
+              <a className={style['project-link']}>{fmt(project.name, locale!)}</a>
             </Link>
           ) : (
-            project.name
+            fmt(project.name, locale!)
           )}
         </h3>
         <p>{fmt(project.description, locale!)}</p>

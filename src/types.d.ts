@@ -8,7 +8,7 @@ export type Person = {
 };
 
 export type Project = {
-  name: string;
+  name: DictText;
   description: DictText;
   image: string;
   extras?: DictText;

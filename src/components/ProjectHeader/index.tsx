@@ -15,7 +15,7 @@ export default function ProjectHeader({ project }: Prop): JSX.Element {
   return (
     <header>
       <div className={style.projectHeader__content}>
-        <h1>{project.name}</h1>
+        <h1>{fmt(project.name, locale!)}</h1>
 
         <ul className={style.projectHeader__technologies}>
           {project.technologies && <li>{project.technologies.join(', ')}</li>}

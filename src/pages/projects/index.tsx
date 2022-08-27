@@ -4,9 +4,12 @@ import api from '../../api';
 import dictionary from '../dict';
 import { useClipContent } from '../../context/ClipContentContext';
 import { useTranslation } from '../../utils/useTranslation';
+import { useRouter } from 'next/router';
+import { getLocale, fmt } from '../../utils/useTranslation';
 
 export default function Projects(): JSX.Element {
   useClipContent(true);
+  const locale = getLocale(useRouter());
   const { t } = useTranslation(dictionary);
 
   return (
@@ -18,7 +21,7 @@ export default function Projects(): JSX.Element {
       </header>
 
       {api.projects.getProjects().map((project) => (
-        <ProjectTile key={project.name} project={project} />
+        <ProjectTile key={fmt(project.name, locale!)} project={project} />
       ))}
     </div>
   );

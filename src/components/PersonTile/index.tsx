@@ -1,6 +1,8 @@
 import { Person } from '../../types';
 
 import Button from '../Button';
+import { useRouter } from 'next/router';
+import { getLocale, fmt } from '../../utils/useTranslation';
 
 import style from './persontile.module.css';
 
@@ -9,6 +11,8 @@ interface Prop {
 }
 
 export default function PersonTile({ person }: Prop): JSX.Element {
+  const locale = getLocale(useRouter());
+
   function getImage(person: Person) {
     return person.image || '/static/photos/people/placeholder-2.jpg';
   }
@@ -48,12 +52,12 @@ export default function PersonTile({ person }: Prop): JSX.Element {
 
       <ul className={`list-plain ${style['person-projects']}`}>
         {person.projects.map((project) => (
-          <li key={project.name}>
+          <li key={fmt(project.name, locale!)}>
             <Button
               href={`/input/${project.urlName.toLowerCase().replace(/ /i, '-')}`}
               disabled={!project.published}
             >
-              {project.name}
+              {fmt(project.name, locale!)}
             </Button>
           </li>
         ))}

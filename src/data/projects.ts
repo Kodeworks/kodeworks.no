@@ -7,119 +7,204 @@ interface ProjectObjectType {
 export const projects: ProjectObjectType = {
   aize: {
     name: 'Aize',
-    description: "Aize is a project specialist that offers engineering, procurement and construction services, as well as the delivery of advanced offshore platforms, onshore facilities, floating production units and renewable energy solutions.",
+    description: {
+      en: "Aize is a project specialist that offers engineering, procurement and construction services, as well as the delivery of advanced offshore platforms, onshore facilities, floating production units and renewable energy solutions.",
+      no: "Aize er en prosjektspesialist som tilbyr ingeniør-, anskaffelses-, og konstruksjonstjenester (EPC), samt leveranse av avanserte offshore plattformer, onshore anlegg, flytende produksjonsenheter og fornybare energiløsninger."
+    },
     image: 'aize.jpg',
     urlName: 'aize',
   },
   akerbp: {
     name: 'Aker BP',
-    description: "Aker BP ASA is a Norwegian oil extraction and development company, focusing on petroleum resources on the Norwegian continental sea floor. KodeWorks’ task has been to cooperate with resources from other companies on WITSML Explorer, an open-source web solution designed to visualize WITSML-data.",
+    description: {
+      en: "Aker BP ASA is a Norwegian oil extraction and development company, focusing on petroleum resources on the Norwegian continental sea floor. KodeWorks’ task has been to cooperate with resources from other companies on WITSML Explorer, an open-source web solution designed to visualize WITSML-data.",
+      no: "Aker BP ASA er et norsk oljeutvinning- og utviklingsselskap som fokuserer på petroleumsressurser på norsk kontinentalsokkel. Kodeworks oppgave har vært å samarbeide med ressurser fra flere andre selskaper på WITSML Explorer, en open-source nettløsning designet å visualisere WITSML-data."
+    },
     image: 'akerbp.jpg',
     urlName: 'akerbp',
   },
   avinor: {
     name: 'Avinor',
-    description: "Avinor’s social mission is to ensure good aviation services throughout Norway. This includes maintaining a good information flow to employees and air passengers. Avinor is subject to some of the country’s strictest requirements for safety and quality. KodeWorks has assisted with the integration of real-time information processing as well as testing and quality assurance of code.",
+    description: {
+      en: "Avinor’s social mission is to ensure good aviation services throughout Norway. This includes maintaining a good information flow to employees and air passengers. Avinor is subject to some of the country’s strictest requirements for safety and quality. KodeWorks has assisted with the integration of real-time information processing as well as testing and quality assurance of code.",
+      no: "Avinors samfunnsoppdrag er å sikre gode luftfartstjenester i hele Norge. Dette inkluderer å opprettholde en god informasjonsflyt til ansatte og flypassasjerer. Avinor er underlagt noen av landets strengeste krav til sikkerhet og kvalitet. Kodeworks har bistått med integrering av sanntids dataprosessering samt testing og kvalitetssikring av kode."
+    },
     image: 'avinor.jpg',
     urlName: 'avinor',
   },
   bnentreprenor: {
     name: 'BN Entreprenør',
-    description: "BN Entreprenør AS is a machine contractor company that was established in 1973. With a modern machine park, they are able to carry out assignments in a cost-effective way.",
+    description: {
+      en: "BN Entreprenør AS is a machine contractor company that was established in 1973. With a modern machine park, they are able to carry out assignments in a cost-effective way.",
+      no: "BN Entreprenør AS er et maskinentreprenørfirma som ble etablert i 1973. Med en moderne maskinpark er de i stand til å utføre oppdrag på en kostnadseffektiv måte."
+    },
     image: 'bnentreprenor-2.jpg',
     urlName: 'bnentreprenor',
   },
   equinor: {
     name: 'Equinor',
-    description: "Equinor is an international energy company, which in recent years has implemented a strategic investment in sustainable energy. This is a process that requires innovation, business understanding and a strong focus on quality. KodeWorks supports Equinor’s research and digitization activities through analysis, design, programming and testing.",
+    description: {
+      en: "Equinor is an international energy company, which in recent years has implemented a strategic investment in sustainable energy. This is a process that requires innovation, business understanding and a strong focus on quality. KodeWorks supports Equinor’s research and digitization activities through analysis, design, programming and testing.",
+      no: "Equinor er et internasjonalt energiselskap, og har de siste årene iverksatt en strategisk og betydelig satsing på bærekraftig energi. Dette er en prosess som krever innovasjon, forretningsforståelse og et stort fokus på kvalitet. Kodeworks støtter Equinors forsknings- og digitaliseringsaktiviteter gjennom analyse, design, programmering og testing."
+    },
     image: 'equinor.jpg',
     urlName: 'equinor',
   },
   dnb: {
     name: 'DNB',
-    description: "DNB as a company has worked for what is soon to be 200 years to find the best solutions for their customers, and is today one of the largest technology companies within the banking and financial sector. KodeWorks assists in this adaptation by establishing a central system for managing master- and reference data in DNB. In using a holistic end-to-end mindset and utilizing modern cloud services, KodeWorks helps DNB establish a robust solution for both operational and analytical usage.",
+    description: {
+      en: "DNB as a company has worked for what is soon to be 200 years to find the best solutions for their customers, and is today one of the largest technology companies within the banking and financial sector. KodeWorks assists in this adaptation by establishing a central system for managing master- and reference data in DNB. In using a holistic end-to-end mindset and utilizing modern cloud services, KodeWorks helps DNB establish a robust solution for both operational and analytical usage.",
+      no: "Gjennom snart 200 år har DNB jobbet for å finne de beste løsningene for kundene sine, og er i dag et ledende teknologiselskap innen bank- og finanssektoren. Kodeworks bidrar i denne utviklingen med å etablere et sentralt system for håndtering av master- og referansedata. Gjennom en helhetlig ende-til-ende tankegang og bruk av moderne skytjenester hjelper Kodeworks DNB med å etablere en robust løsning for både operasjonell og analytisk bruk."
+    },
     image: 'dnb.jpg',
     urlName: 'dnb',
   },
   flir: {
     name: 'Teledyne FLIR',
-    description: "Teledyne FLIR designs, develops, produces and distributes technologies that strive to create a more sustainable, effective and safe future by improving and extending human sensory capabilities through state-of-the-art intelligent sensorics and image processing solutions.",
+    description: {
+      en: "Teledyne FLIR designs, develops, produces and distributes technologies that strive to create a more sustainable, effective and safe future by improving and extending human sensory capabilities through state-of-the-art intelligent sensorics and image processing solutions.",
+      no: "Teledyne FLIR designer, utvikler, produserer og distribuerer teknologier som streber etter å skape en mer bærekraftig, mer effektiv og tryggere fremtid ved å forbedre menneskelig oppfatning gjennom intelligente sensor- og bildebehandlingsløsninger i verdensklasse."
+    },
     image: 'flir.jpg',
     urlName: 'flir',
   },
   gintel: {
     name: 'Gintel',
-    description: "Gintel AS is a Norwegian IT company producing software and applications within the field of telecommunication, that changes the way operatives compose and deliver services to business customers.",
+    description: {
+      en: "Gintel AS is a Norwegian IT company producing software and applications within the field of telecommunication, that changes the way operatives compose and deliver services to business customers.",
+      no: "Gintel AS er et norsk IT-selskap som produserer programvare og applikasjoner innenfor telekommunikasjon, som endrer måten operatører komponerer og leverer tjenester til bedriftskunder."
+    },
     image: 'gintel.jpg',
     urlName: 'gintel',
   },
   inatur: {
     name: 'Inatur',
-    description: "Inatur is Norway's largest online platform for selling hunting and fishing licenses, having offered their services for more than ten years. On their website, larger municipal bodies as well as hunting associations and ground owners can put hunting and fishing licenses out for sale. In this context, Inatur also offers the ability to put cabins out for rent, both for hunting and vacationing. Today, there are more than 1200 cabins registered for renting on Inatur's website.",
+    description: {
+      en: "Inatur is Norway's largest online platform for selling hunting and fishing licenses, having offered their services for more than ten years. On their website, larger municipal bodies as well as hunting associations and ground owners can put hunting and fishing licenses out for sale. In this context, Inatur also offers the ability to put cabins out for rent, both for hunting and vacationing. Today, there are more than 1200 cabins registered for renting on Inatur's website.",
+      no: "Inatur er Norges største portal for salg av jakt og fiske, og har formidlet kjøp og salg av jakt- og fiskekort i over ti år. På nettsiden kan både større fjellstyrer, samt jegerforeninger og grunneiere legge ut jaktkort og fiskekort. I den sammenheng gis også muligheten til å leie ut hytter, både til bruk under jakt og til annen fritidsbruk. Per nå er det over 1200 hytter registrert til utleie på Inaturs nettside."
+    },
     image: 'inatur-2.jpg',
     urlName: 'inatur',
     technologies: ['Java', 'Spring', 'MongoDB', 'JavaScript', 'React'],
-    content: [
-      {
-        type: 'texts',
-        value: [
-          "Inatur has built a solid platform for delivering their services, and since 2019, KodeWorks has been a part of their modernizing process. Here, KodeWorks has further developed and modernized their already existing Java Spring backend. Using tools like React and Storybook, the frontend has been modularized, removing a lot of the strong couplings in the code base. This makes further development quicker, as well as easier to document and maintain.",
-          "Technical consultancy is often a major part of our input to the projects we run. As consultants and developers, the people at KodeWorks have a good understanding of how to meet the expectations and needs of the end user, while still keeping the technical integrity of the code base and technical solutions in general at a high standard. Communicating the link between customer needs and technical integrity is key in enabling our clients to set goals that are ambitious, achievable and that serve a purpose. This is an important contribution in creating an environment where the business part and the technical part of Inatur builds on and strengthens each other - a requirement for furthering the process and accelerating development."
-        ]
-      },
-      {
-        type: 'wideimage',
-        value: {
-          src: 'inatur-3.jpg'
+    content: {
+      en: [
+        {
+          type: 'texts',
+          value: [
+            "Inatur has built a solid platform for delivering their services, and since 2019, KodeWorks has been a part of their modernizing process. Here, KodeWorks has further developed and modernized their already existing Java Spring backend. Using tools like React and Storybook, the frontend has been modularized, removing a lot of the strong couplings in the code base. This makes further development quicker, as well as easier to document and maintain.",
+            "Technical consultancy is often a major part of our input to the projects we run. As consultants and developers, the people at KodeWorks have a good understanding of how to meet the expectations and needs of the end user, while still keeping the technical integrity of the code base and technical solutions in general at a high standard. Communicating the link between customer needs and technical integrity is key in enabling our clients to set goals that are ambitious, achievable and that serve a purpose. This is an important contribution in creating an environment where the business part and the technical part of Inatur builds on and strengthens each other - a requirement for furthering the process and accelerating development."
+          ]
+        },
+        {
+          type: 'wideimage',
+          value: {
+            src: 'inatur-3.jpg'
+          }
+        },
+        {
+          type: 'texts',
+          value: [
+            "Today, KodeWorks drives the process of further modernization within Inatur's technological portfolio. In this process, there is a balance in the usage of resources, between renewing existing solutions, and developing entirely new features. KodeWorks has been central in a comprehensive renewal across Inatur's tech stack, and laid a robust base for both the current operation and further development of Inatur's services. We wish to thank Inatur for a great collaboration, and look forward to continuing the process."
+          ]
         }
-      },
-      {
-        type: 'texts',
-        value: [
-          "Today, KodeWorks drives the process of further modernization within Inatur's technological portfolio. In this process, there is a balance in the usage of resources, between renewing existing solutions, and developing entirely new features. KodeWorks has been central in a comprehensive renewal across Inatur's tech stack, and laid a robust base for both the current operation and further development of Inatur's services. We wish to thank Inatur for a great collaboration, and look forward to continuing the process."
-        ]
-      }
-    ],
+      ],
+      no: [
+        {
+          type: 'texts',
+          value: [
+            "Kodeworks har vært med på Inaturs moderniseringsprosess siden 2019. Her har Kodeworks bidratt med å bygge videre på og modernisere deres eksisterende Java 8 Spring backend. Frontend er skrevet om fra å være strukturert med CommonJS og require()-import, til å bruke ES6-standardisert praksis, for eksempel modulhenting ved import/export. Der store deler av den eksisterende koden var bygd opp med backbone.js og mustache templates, skrives i dag frontend-koden i React, med Hooks og Storybook for bygging av standard UI-komponenter.",
+            "Rådgivning på teknisk front er ofte en del av vårt arbeidsområde i prosjektene vi gjennomfører. Som konsulenter og utviklere har Kodeworks god forståelse for hvordan man imøtekommer sluttbrukerens forventninger og ønsker, og samtidig ivaretar den tekniske integriteten i kodebasen og tekniske løsninger generelt. Å kommunisere denne sammenhengen er viktig for å sikre at bedriften er i stand til å sette mål som både er ambisiøse, hensiktsmessige og gjennomførbare. Dette har bidratt til å skape en felles front på tvers av forretningsdelen og den tekniske delen av Inatur - en viktig forutsetning for videre prosess og akselerert utvikling."
+          ]
+        },
+        {
+          type: 'wideimage',
+          value: {
+            src: 'inatur-3.jpg'
+          }
+        },
+        {
+          type: 'texts',
+          value: [
+            "I dag driver Kodeworks prosessen med modernisering av Inaturs teknologiportefølje videre. I en slik prosess finnes det en balanse mellom fornying av eksisterende løsninger og utvikling av nye features. Kodeworks har bidratt med omfattende fornying på tvers av Inaturs teknologistack, og lagt et robust grunnlag for både drift og videre utvikling av Inaturs tjenester. Vi takker for et godt samarbeid og ser frem til videre utvikling med Inatur."
+          ]
+        }
+      ]
+    },
     published: true,
   },
   klp: {
     name: 'KLP',
-    description: "Kommunal Landspensjonskasse Gjensidig Forsikringsselskap is an Oslo-based pension company that manages the pensions of municipal employees in Norway.",
+    description: {
+      en: "Kommunal Landspensjonskasse Gjensidig Forsikringsselskap is an Oslo-based pension company that manages the pensions of municipal employees in Norway.",
+      no: "Kommunal Landspensjonskasse Gjensidig Forsikringsselskap er et Oslo-basert pensjonsselskap som administrerer pensjonsordningen til kommuneansatte i Norge."
+    },
     image: 'klp.jpg',
     urlName: 'klp',
   },
   kongsberg: {
     name: 'Kongsberg',
-    description: "Kongsberg digital offers digital solutions for customers within the maritime sector, including oil and gas, with autonomy, smart data and augmented reality as key elements. KodeWorks’ main effort is placed within development of maritime simulations used among other things in personnel training systems for customers all over the globe. Kongsberg A&D is a global technology leader within defense, surveillance, space travel, airplane structure and airplane maintenance.",
+    description: {
+      en: "Kongsberg digital offers digital solutions for customers within the maritime sector, including oil and gas, with autonomy, smart data and augmented reality as key elements. KodeWorks’ main effort is placed within development of maritime simulations used among other things in personnel training systems for customers all over the globe. Kongsberg A&D is a global technology leader within defense, surveillance, space travel, airplane structure and airplane maintenance.",
+      no: "Kongsberg Digital tilbyr digitale løsninger for kunder innen maritim, olje og gass, med autonomi, smarte data, og augmented reality som fellesnevner. Kodeworks jobber med utvikling av maritim simulering brukt i blant annet treningssystemer for kunder over hele verden. Kongsberg A&D er en global teknologileder innen forsvar, overvåking, romfart, flystrukturer og flyvedlikehold."
+    },
     image: 'kongsberg.jpg',
     urlName: 'kongsberg',
   },
   lawenforcementagency: {
-    name: 'Law Enforcement Agency',
-    description: "A law enforcement agency should prevent crime and maintain our safety as citizens. KodeWorks has been part of the development of two instrumental systems for a prominent Nordic law enforcement agency: System for Safety Alarm and Electronic Control; and System for Operative Law Enforcement.",
+    name: {
+      en: 'Law Enforcement Agency',
+      no: 'rettshåndhevelsesbyrå'
+    },
+    description: {
+      en: "A law enforcement agency should prevent crime and maintain our safety as citizens. KodeWorks has been part of the development of two instrumental systems for a prominent Nordic law enforcement agency: System for Safety Alarm and Electronic Control; and System for Operative Law Enforcement.",
+      no: "Et rettshåndhevelsesbyrå skal forebygge og bekjempe kriminalitet samt skape trygghet i samfunnet. For å klare oppdraget er de avhengig av gode datasystemer som understøtter den daglige driften på en smidig og effektiv måte. Kodeworks har vært med å utvikle to svært viktige systemer for et prominent nordisk rettshåndhevelsesbyrå: System for Trygghetsalarm og Elektronisk Kontroll og System for Operativ Rettshåndhevelse. Begge systemene har bidratt til å bedre responstiden til byråets operasjonssentraler, trygge hverdagen til trygghetsalarmbærere, og gjort byråets patruljer mer effektive."
+    },
     image: 'lawenforcementagency.jpg',
     urlName: 'lawenforcementagency',
-    content: [
-      {
-        type: 'texts',
-        value: [
-          "KodeWorks was engaged by the law enforcement agency in 2008. At this time, the agency's IT department was in the middle of modernizing their existing Safety Alarm system. In parallel, the entire IT system and interaction processes of the organization were receiving an increase in quality. The Safety Alarm had already in 2005 been proposed with an extension, with a corresponding legislation, by the name of Electronic Control. A general lack of technical solutions in the market, of the sort that could easily be integrated into existing operative systems, made it necessary for KodeWorks to assist in the integration of Safety Alarm and Electronic Control with the operative systems of the agency. This also necessitated a consideration of the case management system, as well as systems belonging to third party suppliers of equipment, as part of the development process.",
-          "KodeWorks then developed the next generation of the Safety Alarm for the law enforcement agency. This was done by modifying the Android operative system, so that all peripherals were disabled, and all external communication was routed through an end-to-end encrypted communication protocol connecting to the agency's services. These modifications touched on firmware as well, so that even hardware buttons with existing functionality were reprogrammed. The adjustments enabled the agency to run a dedicated Safety Alarm-app on standard phones, while at the same time utilizing state-of-the-art positioning technology and programming environment. Today, all Safety Alarm units within the agency's jurisdiction are standard mobile phones running on software that is a continuation of the work that KodeWorks, together with the law enforcement agency, laid down during 2008-2016."
-        ]
-      },
-      {
-        type: 'wideimage',
-        value: {
-          src: 'lawenforcementagency2.jpg'
+    content: {
+      en: [
+        {
+          type: 'texts',
+          value: [
+            "KodeWorks was engaged by the law enforcement agency in 2008. At this time, the agency's IT department was in the middle of modernizing their existing Safety Alarm system. In parallel, the entire IT system and interaction processes of the organization were receiving an increase in quality. The Safety Alarm had already in 2005 been proposed with an extension, with a corresponding legislation, by the name of Electronic Control. A general lack of technical solutions in the market, of the sort that could easily be integrated into existing operative systems, made it necessary for KodeWorks to assist in the integration of Safety Alarm and Electronic Control with the operative systems of the agency. This also necessitated a consideration of the case management system, as well as systems belonging to third party suppliers of equipment, as part of the development process.",
+            "KodeWorks then developed the next generation of the Safety Alarm for the law enforcement agency. This was done by modifying the Android operative system, so that all peripherals were disabled, and all external communication was routed through an end-to-end encrypted communication protocol connecting to the agency's services. These modifications touched on firmware as well, so that even hardware buttons with existing functionality were reprogrammed. The adjustments enabled the agency to run a dedicated Safety Alarm-app on standard phones, while at the same time utilizing state-of-the-art positioning technology and programming environment. Today, all Safety Alarm units within the agency's jurisdiction are standard mobile phones running on software that is a continuation of the work that KodeWorks, together with the law enforcement agency, laid down during 2008-2016."
+          ]
+        },
+        {
+          type: 'wideimage',
+          value: {
+            src: 'lawenforcementagency2.jpg'
+          }
+        },
+        {
+          type: 'texts',
+          value: [
+            "The Safety Alarm and Electronic Control project went on for several years. Some of the time was also put in similar projects, specifically within the agency’s operative portfolio. Operative Law Enforcement is the most central of the agency’s operative systems, and was developed already in 1994. Before KodeWorks entered the picture, the agency had begun the task of mapping parts of the Operative Law Enforcement to separate modules, and KodeWorks extended this work by describing how data flow and consistency between the modules were to be ensured. Deep integration with distributed databases for each of the agency’s organizational units enabled an event-driven architecture, where the modules were modeled as microservices. This was the beginning of the modernization of the law enforcement agency’s operative portfolio that is used today."
+          ]
         }
-      },
-      {
-        type: 'texts',
-        value: [
-          "The Safety Alarm and Electronic Control project went on for several years. Some of the time was also put in similar projects, specifically within the agency’s operative portfolio. Operative Law Enforcement is the most central of the agency’s operative systems, and was developed already in 1994. Before KodeWorks entered the picture, the agency had begun the task of mapping parts of the Operative Law Enforcement to separate modules, and KodeWorks extended this work by describing how data flow and consistency between the modules were to be ensured. Deep integration with distributed databases for each of the agency’s organizational units enabled an event-driven architecture, where the modules were modeled as microservices. This was the beginning of the modernization of the law enforcement agency’s operative portfolio that is used today."
-        ]
-      }
-    ],
+      ],
+      no: [
+        {
+          type: 'texts',
+          value: [
+            "Kodeworks ble engasjert hos det prominente nordiske rettshåndhevelsesbyrået tilbake i 2008. På dette tidspunkt var byråets IT-avdeling midt i en omskriving av systemet Trygghetsalarm, parallelt med at et løft av hele organisasjonens IT system og samhandlingsprosesser pågikk. Trygghetsalarm hadde allerede tilbake i 2005 blitt forespeilet et tilleggsystem, og tilhørende lovgivning, i form av System for Elektronisk Kontroll. Mangel på tekniske løsninger i markedet som enkelt lot seg integrere i byråets operative systemer systemer, gjorde at Kodeworks måtte bistå i å integrere System for Trygghetsalarm og Elektronisk Kontroll de operative systemene, saksbehandlingssystemer, og systemer til tredjeparts leverandører av utstyr.",
+            "Kodeworks utviklet neste generasjons Trygghetsalarm for rettshåndhevelsesbyrået. Dette ble gjort ved å modifisere Android operativsystemet slik at alle “peripherals” ble koblet ut, og all ekstern kommunikasjon ble rutet gjennom en kryptert ende-til-ende kommunikasjonsprotokoll inn til rettshåndhevelsesbyråets tjenester. Modifikasjonene gikk helt ned på firmware-nivå, slik at til og med hardware-knapper med en eksisterende betydning ble omprogrammert. Tilpasningene gjorde rettshåndhevelsesbyrået i stand til å kjøre en dedikert Trygghetsalarm-app på standard smarttelefoner, og utnytte state-of-the-art posisjoneringsteknologi og programmeringsmiljø. I dag er alle Trygghetsalarm-enheter innen rettshåndhevelsesbyråets jurisdiksjon standard smarttelefoner, med programvare som er en videreføring av arbeidet Kodeworks la ned sammen med rettshåndhevelsesbyrået i 2008 - 2016."
+          ]
+        },
+        {
+          type: 'wideimage',
+          value: {
+            src: 'lawenforcementagency2.jpg'
+          }
+        },
+        {
+          type: 'texts',
+          value: [
+            "Prosjektet Trygghetsalarm og Elektronisk Kontroll gikk over flere år, og noe også lagt ned på nærliggende prosjekter, spesifikt innenfor den operative tjenesteporteføljen. Operativ Rettshåndhevelse er det mest sentrale operative systemet hos byrået, og ble utviklet allerede på 90-tallet. Rettshåndhevelsesbyrået hadde allerede før Kodeworks kom inn startet et kartleggingsarbeid for å splitte Operativ Rettshåndhevelse inn i moduler, og Kodeworks bygde videre på dette for å beskrive hvordan dataflyt og konsistens mellom modulene skulle sikres. Dyp integrasjon med distribuerte databaser for hver organisatoriske enhet muliggjorde en hendelsesdrevet arkitektur hvor modulene ble modellert som mikrotjenester, og dette ble starten på moderniseringen av den operative systemporteføljen som er i bruk i dag."
+          ]
+        }
+      ]
+    },
     published: true,
   },
   lilbit: {
@@ -223,31 +308,46 @@ export const projects: ProjectObjectType = {
   },
   mollerit: {
     name: 'Møller IT',
-    description: "Møller IT, part of the Møller Mobility Group, is the leading car group in the Nordic and Baltic countries with over 60 dealers and 750,000 customers. The company has traditionally operated within new car sales, leasing, financing, used car sales, and now more recently other types of mobility services.",
+    description: {
+      en: "Møller IT, part of the Møller Mobility Group, is the leading car group in the Nordic and Baltic countries with over 60 dealers and 750,000 customers. The company has traditionally operated within new car sales, leasing, financing, used car sales, and now more recently other types of mobility services.",
+      no: "Møller IT, del av Møller Mobility Group, er det ledende bilkonsernet i Norden og Baltikum med over 60 forhandlere og 750 000 kunder. Foretaket har tradisjonelt drevet med nybilsalg, leasing, finansiering, bruktbilsalg, og nå i nyere tid andre typer mobilitetstjenester."
+    },
     image: 'mollerit.jpg',
     urlName: 'mollerit',
   },
   nomono: {
     name: 'Nomono',
-    description: "Cloud-based audio collaboration and processing built specifically for podcasters, broadcast journalists, and audio storytellers.",
+    description: {
+      en: "Cloud-based audio collaboration and processing built specifically for podcasters, broadcast journalists, and audio storytellers.",
+      no: "Nomono er en podcastplattform som tilbyr løsninger for samarbeid rundt behandling av audio. KodeWorks utvikler en app som muliggjør dette slikt samarbeid på en intuitiv måte."
+    },
     image: 'nomono.jpg',
     urlName: 'nomono',
   },
   obos: {
     name: 'Obos',
-    description: "OBOS plays a big role in the Norwegian housing and property market, and offers customers - among other services - an easier path to the housing market through partial housing ownership. OBOS is also behind Nabohjelp, an app that makes it easier to ask your neighbors for assistance. KodeWorks assists in both maintenance and development of the app, which is written in native iOS and Android.",
+    description: {
+      en: "OBOS plays a big role in the Norwegian housing and property market, and offers customers - among other services - an easier path to the housing market through partial housing ownership. OBOS is also behind Nabohjelp, an app that makes it easier to ask your neighbors for assistance. KodeWorks assists in both maintenance and development of the app, which is written in native iOS and Android.",
+      no: "OBOS er en sentral aktør i det norske bolig- og eiendomsmarked, og tilbyr kunder blant annet lettere veier inn i boligmarkedet gjennom sin ordning for deleierskap. OBOS står bak Nabohjelp, appen som skal gjøre det enklere å spørre naboen om hjelp. Kodeworks bistår med både vedlikehold og videreutvikling av appen som er skrevet i native iOS og Android."
+    },
     image: 'obos.jpg',
     urlName: 'obos',
   },
   pexip: {
     name: 'Pexip',
-    description: "The start of 2020 was a world-changing era with the covid-19 pandemic. Relationships were maintained through strict official guidelines, which revolutionized the business. Less travel and fewer face-to-face meetings were a new reality, and video communication was the new standard. Pexip is a company with extensive experience in simplifying and optimizing video conferencing.",
+    description: {
+      en: "The start of 2020 was a world-changing era with the covid-19 pandemic. Relationships were maintained through strict official guidelines, which revolutionized the business. Less travel and fewer face-to-face meetings were a new reality, and video communication was the new standard. Pexip is a company with extensive experience in simplifying and optimizing video conferencing.",
+      no: "Starten på 2020 bemerket seg med covid-19-pandemien som en periode med store endringer for folk ved at mellommenneskelige relasjoner ble underlagt strenge offisielle retningslinjer. For for leverandører av videoteknologi, som Pexip, resulterte dette i økende etterspørsel. Mindre reiser og færre møter ansikt til ansikt var en ny realitet, og videokommunikasjon var den nye standarden. Pexip er et selskap med lang erfaring i å forenkle og optimalisere videokonferanser, og Kodeworks assisterer i å se på forbedring av ytelse samt tilpasning til mobile flater."
+    },
     image: 'pexip.jpg',
     urlName: 'viode-conferencing-with-pexip',
   },
   remarkable: {
     name: 'Remarkable',
-    description: "reMarkable is a Norwegian startup developing a tablet for writing and drawing, and aiming to give the user a sensation of writing on paper. The unique tablet is designed for use in academia as well as in professional settings. KodeWorks assists in development of reMarkable’s complex and international web platform.",
+    description: {
+      en: "reMarkable is a Norwegian startup developing a tablet for writing and drawing, and aiming to give the user a sensation of writing on paper. The unique tablet is designed for use in academia as well as in professional settings. KodeWorks assists in development of reMarkable’s complex and international web platform.",
+      no: "reMarkable er en norsk startup som utvikler en tablet for skriving og tegning, og som skal gi brukeren følelsen av å skrive på papir. Den unike tableten er designet for bruk i akademia så vel som i yrkessammenheng. Kodeworks bidrar til utvikling av den komplekse og internasjonale webplattformen til reMarkable."
+    },
     image: 'remarkable-2.jpg',
     urlName: 'remarkable',
   },
@@ -259,8 +359,8 @@ export const projects: ProjectObjectType = {
     },
     image: 'Sesam-front.jpg',
     extras: {
-      en:"When between customer assignments in KodeWorks, the focus is on professional and academic development. At the same time, some real value creation can also be achieved. At the KodeWorks office in Oslo, Jan and Simen received an interesting task in modernizing the existing door lock system.",
-      no:"Når man er mellom kundeoppdrag i Kodeworks, er faglig utvikling i fokus. Samtidig kan også ekte verdiskapning være en del av det faglige opplegget. På kontoret i Oslo fikk Jan og Simen en interessant oppgave i det å modernisere dørlåssystemet på huset."
+      en: "When between customer assignments in KodeWorks, the focus is on professional and academic development. At the same time, some real value creation can also be achieved. At the KodeWorks office in Oslo, Jan and Simen received an interesting task in modernizing the existing door lock system.",
+      no: "Når man er mellom kundeoppdrag i Kodeworks, er faglig utvikling i fokus. Samtidig kan også ekte verdiskapning være en del av det faglige opplegget. På kontoret i Oslo fikk Jan og Simen en interessant oppgave i det å modernisere dørlåssystemet på huset."
     },
     urlName: 'sesam',
     technologies: [
@@ -374,13 +474,19 @@ export const projects: ProjectObjectType = {
   },
   skandiaenergi: {
     name: 'SkandiaEnergi',
-    description: "SkandiaEnergi develops solutions for the power market of the future. They offer unique and smart energy solutions for solar power and energy saving. KodeWorks assists in developing an app that makes daily life as a customer more manageable, and that offers smart solutions for power management and electric vehicle charging.",
+    description: {
+      en: "SkandiaEnergi develops solutions for the power market of the future. They offer unique and smart energy solutions for solar power and energy saving. KodeWorks assists in developing an app that makes daily life as a customer more manageable, and that offers smart solutions for power management and electric vehicle charging.",
+      no: "SkandiaEnergi utvikler løsninger for fremtidens strømmarked. De tilbyr unike og smarte energiløsninger for solstrøm og energisparing. Kodeworks bistår til å utvikle en app som gjør hverdagen som kunde mer oversiktlig, og som tilbyr smarte løsninger for strømstyring og lading av elbil."
+    },
     image: 'skandiaenergi.jpg',
     urlName: 'skandiaenergi',
   },
   statkraft: {
     name: 'Statkraft',
-    description: "Statkraft is Europe’s largest producer of renewable energy and a global company within power market operations. KodeWorks has assisted with coordination and development of a common platform for booking, risk evaluation and reporting of power purchase agreements.",
+    description: {
+      en:"Statkraft is Europe’s largest producer of renewable energy and a global company within power market operations. KodeWorks has assisted with coordination and development of a common platform for booking, risk evaluation and reporting of power purchase agreements.",
+      no: "Statkraft er Europas største produsent av fornybar energi og et globalt selskap innen energimarkedsoperasjoner. Kodeworks har bistått med koordinering og utvikling av en samlet plattform for booking, risikoevaluering og rapportering av kraftkjøpsavtaler."
+    },
     image: 'statkraft.jpg',
     urlName: 'statkraft',
   },
@@ -535,19 +641,28 @@ export const projects: ProjectObjectType = {
   },
   technipfmc: {
     name: 'TechnipFMC',
-    description: "As a worldwide energy service company, TechnipFMC has large customers in Norway. Sensors are used for real-time monitoring of flow through installations, and heavy mathematical data modeling to optimize operations. KodeWorks assists in increasing the scalability and performance of the application portfolio, as well as modernizing the deployment system in the cloud.",
+    description: {
+      en: "As a worldwide energy service company, TechnipFMC has large customers in Norway. Sensors are used for real-time monitoring of flow through installations, and heavy mathematical data modeling to optimize operations. KodeWorks assists in increasing the scalability and performance of the application portfolio, as well as modernizing the deployment system in the cloud.",
+      no: "Som et verdensomspennende energi-serviceselskap har TechnipFMC store kunder i Norge. Sensorer brukes til sanntids overvåking av flyt gjennom installasjoner, og tung matematisk datamodellering for å optimalisere driften. Kodeworks bistår med å øke skalerbarhet og ytelse i applikasjonsporteføljen, samt å modernisere systemet for deployment i skyen."
+    },
     image: 'technipfmc.jpg',
     urlName: 'technipfmc',
   },
   thalesnorway: {
     name: 'THALES Norway',
-    description: "Thales Group is a French, multi-national company that designs and builds electronic systems and delivers services for aviation, defense, transport and security.",
+    description: {
+      en: "Thales Group is a French, multi-national company that designs and builds electronic systems and delivers services for aviation, defense, transport and security.",
+      no: "Thales Group er et fransk multinasjonalt selskap som designer og bygger systemer og leverer tjenester for luftfart, forsvar, transport og sikkerhet."
+    },
     image: 'thales.jpg',
     urlName: 'thalesnorway',
   },
   thomsonreuters: {
     name: 'Thomson Reuters',
-    description: "Through various digital platforms for energy and commodity trading, Thomson Reuters delivers analysis tools intended for investors and companies. The information presented in these solutions is time-critical, the amounts of data are large, the sources are many and the algorithms are complex.",
+    description: {
+      en: "Through various digital platforms for energy and commodity trading, Thomson Reuters delivers analysis tools intended for investors and companies. The information presented in these solutions is time-critical, the amounts of data are large, the sources are many and the algorithms are complex.",
+      no: "Gjennom ulike digitale plattformer for energi- og råvarehandel leverer Thomson Reuters analyseverktøy beregnet på investorer og firmaer. Informasjonen som presenteres i disse løsningene er svært tidskritisk, datamengdene er store, kildene er mange og algoritmene er komplekse."
+    },
     image: 'thomasonreuters.jpg',
     urlName: 'thomsonreuters',
   },
