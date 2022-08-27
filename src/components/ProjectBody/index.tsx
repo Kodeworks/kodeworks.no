@@ -5,6 +5,7 @@ import {
   DictProjectContents,
   Project,
   ProjectContent,
+  ProjectContentHeading,
   ProjectContentImage,
   ProjectContentOutput,
   ProjectContentQuote,
@@ -45,20 +46,22 @@ export default function ProjectBody({ project }: Prop): JSX.Element {
                       (content as ProjectContentTexts).value.map((text, textId) =>
                         <p key={textId}>{fmt(text, locale!)}</p>
                       ) :
-                      content.type === 'image' ?
-                        <img
-                          src={'/static/photos/projects/' + (content as ProjectContentImage).value.src}
-                          width="320"
-                          height="200"
-                          alt={(content as ProjectContentImage).value.alt ? (content as ProjectContentImage).value.alt : ''}
-                        /> :
-                        content.type === 'quote' &&
-                        <div className="project-quote">
-                          <p className="project-quote--content">{fmt((content as ProjectContentQuote).value.content, locale!)}</p>
-                          {(content as ProjectContentQuote).value.author &&
-                            <span className="project-quote--author">- {(content as ProjectContentQuote).value.author}</span>
-                          }
-                        </div>
+                      content.type === 'heading' ?
+                        <p className='project-content-heading'>{fmt((content as ProjectContentHeading).value, locale!)}</p>:
+                        content.type === 'image' ?
+                          <img
+                            src={'/static/photos/projects/' + (content as ProjectContentImage).value.src}
+                            width="320"
+                            height="200"
+                            alt={(content as ProjectContentImage).value.alt ? (content as ProjectContentImage).value.alt : ''}
+                          /> :
+                          content.type === 'quote' &&
+                          <div className="project-quote">
+                            <p className="project-quote--content">{fmt((content as ProjectContentQuote).value.content, locale!)}</p>
+                            {(content as ProjectContentQuote).value.author &&
+                              <span className="project-quote--author">- {(content as ProjectContentQuote).value.author}</span>
+                            }
+                          </div>
                   }</Fragment>)}
               </article>
         }</Fragment>

@@ -687,6 +687,49 @@ export const projects: ProjectObjectType = {
     },
     image: 'thomasonreuters.jpg',
     urlName: 'thomsonreuters',
+    technologies: ['Java', 'Akka', 'VertX', 'Oracle SQL', 'Hbase'],
+    content: {
+      en: [],
+      no: [
+        {
+          type: 'heading',
+          value: 'Reuters: By the (milli)second',
+        },
+        {
+          type: 'texts',
+          value: [
+            'Thomson Reuters er et kanadisk multimediaselskap med HQ i Toronto, har kontorer i hele verden og er en av verdenslederne innen informasjonsformidling. Kundene av Thomson Reuters Point Carbon inkluderer banker, tradere, porteføljeforvaltere, selskaper og myndigheter; kort sagt alle med behov for dyp innsikt på tvers av karbon-, forsynings-, olje-, gass- og industrimarkedene. Data fra mange ulike kilder innhentes, behandles og berikes ved å ses i sammenheng. Prosjektet gikk ut på å tilgjengeliggjøre utsnitt av dataene for klienter på en rask og effektiv måte.',
+            'Kodeworks ble engasjert hos Reuters for å bidra i utvikling av et nytt web-grensesnitt for tidseffektive klientforespørsler om prognoser på energidata. Sammen med en prosjektleder fra Thomson og to utviklere fra et annet konsulentfirma',
+          ],
+        },
+        {
+          type: 'heading',
+          value: 'Når millisekundene teller',
+        },
+        {
+          type: 'texts',
+          value: [
+            'Oppgaven fra Reuters var “enkel”; make it faster! I denne bransjen kan millisekunder være forskjellen på store tap eller heftig gevinst. På tidssensitiv informasjon av ulike typer finansielle transaksjoner var målet near-realtime nivå. Stor kunde, klare instrukser og store økonomiske betydninger for det man leverer, kan slå ut høyt på stressfaktoren.',
+            'Store utfordringer, kan også bety gode utfordringer. En god strategi og ledelse kan løse det meste. Eirik Larsen som var vår mann på jobben forteller at det mest positive med prosjektet var at gjengen i Reuters var mennesker med skikkelig driv og passion for faget. Dette har stor betydning for prosessen.  Om ikke man fikk løst problemene ved skrivebordet og tastaturet, kunne det komme et godt forslag ved kaffeautomaten; “Hva om vi kun bruker 8-bits integers til å lagre disse flyttallene? Hva om vi vurderer delta-lagring av tidspunkt? Hva om vi bygger indeksen basert på disse feltene i stedet?”',
+            'Vi opprettholdte strikt kontroll på belastningen tjenesten var utsatt for til enhver tid, og sørget for å videre-henvise nye forespørsler dersom belastningen var for høy. Det var også svært viktig å minimere tiden fra en klientforespørsel traff webgrensesnittet til et svar ble servert. Svar bestående av et mindre antall bytes kunne serveres direkte, mens større svar skulle streames, på bakgrunn av klientens preferanser. Dette førte til at alle steg i pipeline ned til datalaget måtte optimaliseres.',
+          ],
+        },
+        {
+          type: 'output',
+          value: 'Å jobbe med cutting edge tech trigget nerden i meg!',
+        },
+        {
+          type: 'texts',
+          value: [
+            'For dette prosjektet var teknologivalget en essensiell del av prosjektet. Mesteparten av prosjektet dreide seg om å finne, analysere, tilpasse og implementere riktig teknologi for å tilfredsstille kravene og problemstillingene.',
+            'Akka HTTP ble vurdert opp mot VertX i forhold til effektiv ressursbruk i JVMen. De to rammeverkene angriper problemstillingen rundt asynkronitet og parallellitet ganske ulikt. Begge rammeverkene hadde et teoretisk grunnlag for optimal ytelse. Implementasjonen med Akka HTTP gav den beste ytelsen, men VertX hadde flest synergier med kompetansen i organisasjonen som var viktig i forhold til vedlikeholdbarhet.',
+            'På databasenivå ble ulike tidsseriedatabaser vurdert, og til slutt falt valget på Hbase som tilbød stor grad av kontroll på hvordan data ble lagret. Ytelsen ble dermed mulig å gjøre en del bedre enn de konkurrerende alternativene.',
+            'Det var veldig enkelt å se for seg nytten sluttkunden hadde (altså vår kundes kunde). Larsen beskriver at prosjekter som dette motiverende. Den rette sluttkunden ville ganske enkelt kunne gjøre bedre handler på bakgrunn av informasjonen enn sine konkurrenter, noe som gjorde systemet essensielt for Reuters.',
+          ],
+        },
+      ],
+    },
+    published: true,
   },
   vaskehjelp: {
     name: 'Vaskehjelp',

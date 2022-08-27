@@ -64,6 +64,14 @@
   color: var(--color-grey);
 }
 
+.project-content-heading:first-child {
+  margin-top: 0px;
+}
+
+.project-content-heading {
+  margin-top: 25px;
+  font-weight: bold;
+}
 
 @media (max-width: 660px),
 (max-device-width: 850px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {

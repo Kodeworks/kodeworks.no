@@ -18,9 +18,14 @@ export type Project = {
   published?: boolean;
 };
 
-export type ProjectContent = ProjectContentTexts | ProjectContentImage | ProjectContentWideImage | ProjectContentQuote | ProjectContentOutput
+export type ProjectContent = ProjectContentTexts | ProjectContentHeading | ProjectContentImage | ProjectContentWideImage | ProjectContentQuote | ProjectContentOutput
 
-export type ProjectContentDescriptor = 'texts' | 'image' | 'wideimage' | 'quote' | 'output'
+export type ProjectContentDescriptor = 'texts' | 'heading' | 'image' | 'wideimage' | 'quote' | 'output'
+
+export type ProjectContentHeading = {
+  type: 'heading',
+  value: DictText;
+}
 
 export type ProjectContentTexts = {
   type: 'texts';
