@@ -70,14 +70,14 @@ function Home(): JSX.Element {
       <article id="projects">
         <img
           src={highlightedProject && '/static/photos/projects/' + highlightedProject.image}
-          alt={highlightedProject && highlightedProject.name}
+          alt={highlightedProject && fmt(highlightedProject.name, locale!)}
           width="400"
           height="400"
         />
 
         <div>
           <h2 className="section-header-headline">
-            {highlightedProject && highlightedProject.name}
+            {highlightedProject && fmt(highlightedProject.name, locale!)}
           </h2>
           <p>{highlightedProject && fmt( highlightedProject.description, locale!)}</p>
           <Button
