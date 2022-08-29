@@ -79,13 +79,13 @@ function Home(): JSX.Element {
           <h2 className="section-header-headline">
             {highlightedProject && fmt(highlightedProject.name, locale!)}
           </h2>
-          <p>{highlightedProject && fmt( highlightedProject.description, locale!)}</p>
+          <p>{highlightedProject && fmt(highlightedProject.description, locale!)}</p>
           <Button
             appearance={Button.appearances.DarkNoPadding}
             href={`/input/${highlightedProject && highlightedProject.urlName.toLowerCase()}`}
             disabled={!(highlightedProject && highlightedProject.published)}
           >
-            Go to project page
+            {t('go_to_project_page_button')}
           </Button>
         </div>
       </article>
