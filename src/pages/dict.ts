@@ -13,6 +13,7 @@ export default {
     what: 'Hva gjør vi?',
     what_description:
       'Vi har utført prosjekter med og for kunder av varierende størrelse og på tvers av et bredt spekter av domener. Konsulentene våre sitter inne med mye kunnskap som vi gjerne deler med andre. Nedenfor finner du hvilke typer løsninger vi har utviklet for våre kunder.',
+    go_to_project_page_button: 'Les mer om prosjektet',
   },
   en: {
     people: 'Our Developers',
@@ -29,5 +30,6 @@ export default {
     what: 'Our Projects',
     what_description:
       'By adopting our value oriented approach we have carried out projects with and for clients of varying size, and across a wide spectrum of domains. Below you can find the types of solutions we have developed for our customers.',
+    go_to_project_page_button: 'Read more about the project',
   },
 };
