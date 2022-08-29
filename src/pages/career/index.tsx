@@ -1,16 +1,18 @@
-import Head from 'next/head';
 import Link from 'next/link';
+import { ReactElement } from 'react';
+
 import Calculator from './Calculator';
+import Layout from '../../components/Layout';
+import { NextPageWithLayout } from '../_app';
+import { usePageTitle } from '../../utils/usePageTitle';
 
 import style from './career.module.css';
 
-export default function Jobb(): JSX.Element {
+const Jobb: NextPageWithLayout = () => {
+  usePageTitle('Career');
+
   return (
     <>
-      <Head>
-        <meta property="og:image" content="https://kodeworks.no/static/photos/EOSR7759.jpg" />
-      </Head>
-
       <header className="section-hero section-content section-content-narrow container">
         <div className={`${style['career-mainheader']}`}>
           <h1>
@@ -51,4 +53,10 @@ export default function Jobb(): JSX.Element {
       <section className={`section section-content section-content-narrow`}></section>
     </>
   );
-}
+};
+
+Jobb.getLayout = function getLayout(page: ReactElement) {
+  return <Layout socialProps={{ image: '/static/photos/EOSR7759.jpg' }}>{page}</Layout>;
+};
+
+export default Jobb;

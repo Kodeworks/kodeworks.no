@@ -4,21 +4,26 @@ import Head from 'next/head';
 import { useRouter } from 'next/router';
 import React, { ReactElement, ReactNode, useContext, useEffect, useState } from 'react';
 
+import Layout from '../components/Layout';
 import Navigation from '../components/Navigation';
 import { ClipContentContext, ClipContentProvider } from '../context/ClipContentContext';
 
 import '../styles/kw.css';
 
-type NextPageWithLayout = NextPage & {
+export type NextPageWithLayout<P = {}, IP = P> = NextPage<P, IP> & {
   getLayout?: (page: ReactElement) => ReactNode;
 };
 
-type Prop = AppProps & {
+type AppPropsWithLayout = AppProps & {
   Component: NextPageWithLayout;
 };
 
-export default function App({ Component, pageProps }: Prop): JSX.Element {
-  const getLayout = Component.getLayout ?? ((page: ReactElement) => page);
+function defaultLayout(page: ReactElement) {
+  return <Layout>{page}</Layout>;
+}
+
+export default function App({ Component, pageProps }: AppPropsWithLayout): JSX.Element {
+  const getLayout = Component.getLayout ?? defaultLayout;
 
   return (
     <ClipContentProvider>
@@ -83,14 +88,6 @@ function Main(): JSX.Element {
     <>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta property="og:title" content="KodeWorks" />
-        <meta property="og:type" content="website" />
-        <meta
-          property="og:description"
-          content="We commit ourselves to delivering good solutions and value in collaboration with our clients, and strive each day to create an invigorating and giving workplace."
-        />
-        <meta property="og:url" content="https://kodeworks.no" />
-        <meta property="og:image" content="https://kodeworks.no/images/og-image-logo.jpg" />
         <title>KodeWorks</title>
       </Head>
       <button

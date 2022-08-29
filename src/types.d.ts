@@ -81,3 +81,13 @@ type DictionaryKey = {
 type Dictionary = {
   [key: string]: DictionaryTerm;
 };
+
+// Social stuff
+
+type SocialProps = {
+  title?: string;
+  type?: string;
+  description?: string;
+  url?: string;
+  image?: string;
+};
