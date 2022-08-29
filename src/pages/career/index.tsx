@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import Link from 'next/link';
 import Calculator from './Calculator';
 
@@ -6,6 +7,10 @@ import style from './career.module.css';
 export default function Jobb(): JSX.Element {
   return (
     <>
+      <Head>
+        <meta property="og:image" content="https://kodeworks.no/static/photos/EOSR7759.jpg" />
+      </Head>
+
       <header className="section-hero section-content section-content-narrow container">
         <div className={`${style['career-mainheader']}`}>
           <h1>
