@@ -56,7 +56,9 @@ const Jobb: NextPageWithLayout = () => {
 };
 
 Jobb.getLayout = function getLayout(page: ReactElement) {
-  return <Layout socialProps={{ image: '/static/photos/EOSR7759.jpg' }}>{page}</Layout>;
+  return (
+    <Layout socialProps={{ title: 'Career', image: '/static/photos/EOSR7759.jpg' }}>{page}</Layout>
+  );
 };
 
 export default Jobb;

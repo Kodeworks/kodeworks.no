@@ -10,7 +10,10 @@ export default function Layout({ socialProps, children }: Prop): JSX.Element {
   return (
     <>
       <Head>
-        <meta property="og:title" content={socialProps?.title ?? 'KodeWorks'} />
+        <meta
+          property="og:title"
+          content={socialProps?.title ? `${socialProps.title} | KodeWorks` : 'KodeWorks'}
+        />
         <meta property="og:type" content={socialProps?.type ?? 'website'} />
         <meta
           property="og:description"
