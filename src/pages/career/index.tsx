@@ -32,7 +32,7 @@ const Jobb: NextPageWithLayout = () => {
                 lønn. Alle våre betingelser, rutiner og tanker om hvordan ting i Kodeworks fungerer
                 finner i{' '}
                 <Link href="staffmanual">
-                  <a>personalhådboka</a>
+                  <a>personalhåndboka</a>
                 </Link>{' '}
                 vår.
               </p>
