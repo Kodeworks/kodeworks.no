@@ -30,7 +30,7 @@ const Jobb: NextPageWithLayout = () => {
               <p>
                 Vi tror på det å ha en åpen kultur. Skulle det være salgsarbeid, bestemmelser eller
                 lønn. Alle våre betingelser, rutiner og tanker om hvordan ting i Kodeworks fungerer
-                finner i{' '}
+                finner du i{' '}
                 <Link href="staffmanual">
                   <a>personalhådboka</a>
                 </Link>{' '}
