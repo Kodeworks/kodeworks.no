@@ -82,6 +82,11 @@ export default function Navigation({ isOpened, toggleNavigationOpened }: Prop): 
                 <a>{t('staff manual')}</a>
               </Link>
             </li>
+            <li>
+              <Link href="https://blog.kodeworks.no/" locale={locale}>
+                <a>{t('blog')}</a>
+              </Link>
+            </li>
           </ul>
         </nav>
 

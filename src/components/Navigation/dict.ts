@@ -6,6 +6,7 @@ export default {
     'staff manual': 'Håndboka',
     'get in touch': 'Kontakt oss',
     'privacy policy': 'Personvernerklæring',
+    blog: 'Blogg',
   },
   en: {
     'our people': 'Our People',
@@ -14,5 +15,6 @@ export default {
     'staff manual': 'Staff Manual',
     'get in touch': 'Get in Touch',
     'privacy policy': 'Privacy Policy',
+    blog: 'Blog',
   },
 };
