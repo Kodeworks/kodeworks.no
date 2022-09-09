@@ -69,7 +69,7 @@ const people: Person[] = [
   {
     name: 'Simen Moen Storvik',
     email: 'simen@kodeworks.no',
-    projects: [projects.sunlitsea, projects.sesam],
+    projects: [projects.inatur, projects.sunlitsea, projects.sesam],
     image: '/static/photos/people/simen.jpg',
   },
   {
