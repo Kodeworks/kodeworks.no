@@ -40,6 +40,15 @@ function Home(): JSX.Element {
     <>
       <header id="main-header">
         <img className="logo" src="/static/logo.svg" alt="Logo" width="280" height="59" />
+
+        <section className={`section section-content section-content-narrow main-header-content`}>
+          <h2>Jobbe i KodeWorks? Vi ser etter både erfarene og nyutdannede utviklere.</h2>
+          <p>
+            <a className="btn btn-black btn-big" href="/career">
+              Søk fast jobb
+            </a>
+          </p>
+        </section>
       </header>
 
       <article id="about">
