@@ -36,8 +36,11 @@ const Jobb: NextPageWithLayout = () => {
                 </Link>{' '}
                 vår.
               </p>
+              <p>Vi ser etter både erfarne og nyutdannende utviklere i Oslo og Trondheim.</p>
               <p>
-                Ta gjerne kontakt for en prat. Du kan nå oss på <strong>jobb@kodeworks.no</strong>.
+                <a className="btn btn-black" href="#ledige-stillinger">
+                  Se Ledige Stillinger
+                </a>
               </p>
             </div>
           </div>
@@ -50,7 +53,54 @@ const Jobb: NextPageWithLayout = () => {
         </div>
       </section>
 
-      <section className={`section section-content section-content-narrow`}></section>
+      <section
+        className={`section section-content section-content-narrow ${style['career-section']} container`}
+        id="ledige-stillinger"
+      >
+        <h2>Ledige stillinger</h2>
+        <div className={`${style['career-opportunity']}`}>
+          <Link href="/career/nyutdannede">
+            <a>
+              <h4>Nyutdannede utviklere</h4>
+            </a>
+          </Link>
+          <span>Oslo eller Trondheim</span>
+        </div>
+        <div className={style['career-opportunity']}>
+          <Link href="/career/erfarne">
+            <a>
+              <h4>Erfarne utviklere</h4>
+            </a>
+          </Link>
+          <span>Oslo eller Trondheim</span>
+        </div>
+      </section>
+
+      <section className={`section ${style['career-footer']}`}>
+        <div
+          className={`section-content section-content-narrow container ${style['career-footer-content']}`}
+        >
+          <img
+            src="/static/photos/people/lasse.jpg"
+            alt="Lasse Holanger"
+            width="100"
+            height="200"
+          />
+          <div>
+            <h2>Kontakt</h2>
+            <p>Har du spørsmål om hvordan det er å jobbe i KodeWorks?</p>
+            <p>
+              Lasse Holanger,{' '}
+              <span className={`${style['career-footer-position']}`}>Daglig leder i Trondheim</span>
+            </p>
+            <p className={`${style['career-footer-position']}`}>
+              405 45 500
+              <br />
+              <a href="mailto:lasse.holanger@kodeworks.no">lasse.holanger@kodeworks.no</a>
+            </p>
+          </div>
+        </div>
+      </section>
     </>
   );
 };
