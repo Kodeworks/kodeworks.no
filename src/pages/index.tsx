@@ -10,6 +10,7 @@ import dictionary from './dict';
 
 import Button from '../components/Button';
 import PeopleList from '../components/PeopleList';
+import Link from 'next/link';
 
 function Home(): JSX.Element {
   const [highlightedProject, setHighlightedProject] = useState<Project>();
@@ -44,9 +45,9 @@ function Home(): JSX.Element {
         <section className={`section section-content section-content-narrow main-header-content`}>
           <h2>Jobbe i KodeWorks? Vi ser etter både erfarene og nyutdannede utviklere.</h2>
           <p>
-            <a className="btn btn-black btn-big" href="/career">
-              Søk fast jobb
-            </a>
+            <Link href="/career">
+              <a className="btn btn-black btn-big">Søk fast jobb</a>
+            </Link>
           </p>
         </section>
       </header>

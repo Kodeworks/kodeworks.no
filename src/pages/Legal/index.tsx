@@ -20,7 +20,7 @@ export default function Legal(): JSX.Element {
           </p>
           <p>
             <Link href="/legal/privacy">
-              <a>Les Kodeworks' Personvernerklæring</a>
+              <a>Les Kodeworks&apos; Personvernerklæring</a>
             </Link>
           </p>
         </div>

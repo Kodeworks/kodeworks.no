@@ -17,13 +17,17 @@
     "start": "next start",
     "build": "next build",
     "export": "next export",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "next lint"
   },
   "eslintConfig": {
     "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+      "next"
+    ],
+    "rules": {
+      "@next/next/no-img-element": "off",
+      "import/no-anonymous-default-export": "off"
+    }
   },
   "browserslist": {
     "production": [
@@ -39,6 +43,7 @@
   },
   "devDependencies": {
     "eslint": "^8.22.0",
-    "eslint-config-react-app": "^7.0.1"
+    "eslint-config-react-app": "^7.0.1",
+    "eslint-config-next": "^12.3.0"
   }
 }
