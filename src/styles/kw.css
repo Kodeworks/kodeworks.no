@@ -5,10 +5,10 @@
 /* Pages
 ------------------------------------------------------------------------------*/
 @import url("_page_home.css");
-
-@import url("_privacy.css");
-@import url("_projects.css");
-@import url("_project.css");
-
-@import url("_people.css");
-@import url("_staffmanual.css");
+@import url("_page_career.css");
+@import url("_page_legal.css");
+@import url("_page_privacy.css");
+@import url("_page_projects.css");
+@import url("_page_project.css");
+@import url("_page_people.css");
+@import url("_page_staffmanual.css");

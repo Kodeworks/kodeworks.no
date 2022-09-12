@@ -1,11 +1,9 @@
 import Link from 'next/link';
 
-import style from './legal.module.css';
-
 export default function Legal(): JSX.Element {
   return (
     <>
-      <section className={`section ${style['section-legal']}`}>
+      <section className={`section section-legal`}>
         <header className="section-hero">
           <div className="section-content section-content-narrow">
             <h1>Juridisk informasjon fra Kodeworks</h1>

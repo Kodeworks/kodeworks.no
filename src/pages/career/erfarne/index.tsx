@@ -1,10 +1,8 @@
-import style from '../career.module.css';
-
 export default function Nyutdannede(): JSX.Element {
   return (
     <>
       <header className="section-hero section-content section-content-narrow container">
-        <div className={`${style['career-mainheader']}`}>
+        <div className={`career-mainheader`}>
           <h1>Erfarne Utviklere</h1>
           <span>i Oslo eller Trondheim</span>
         </div>
