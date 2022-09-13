@@ -20,7 +20,7 @@ export default function StaffManual(): JSX.Element {
 
       <section className="section-content section-content-narrow handbook-wrapper">
         <nav className="handbook-sidebar">
-          <h3>Generelt</h3>
+          <h4>Generelt</h4>
           <ul className="list-plain handbook-sidebar-list">
             <li>
               <a href="#handbok-arbeidstid">Arbeidstid</a>
@@ -48,7 +48,7 @@ export default function StaffManual(): JSX.Element {
             </li>
           </ul>
 
-          <h3>Ansettelse</h3>
+          <h4>Ansettelse</h4>
           <ul className="list-plain handbook-sidebar-list">
             <li>
               <a href="#handbok-employment">Ansettelse</a>
@@ -92,7 +92,7 @@ export default function StaffManual(): JSX.Element {
               endringer med prosjektet man er på.
             </p>
 
-            <h3>Ferie</h3>
+            <h4>Ferie</h4>
 
             <p>Vi har vanlig 5-ukers betalt ferie.</p>
             <p>
@@ -144,7 +144,7 @@ export default function StaffManual(): JSX.Element {
               på best mulig måte.
             </p>
 
-            <h3>Lønn</h3>
+            <h4>Lønn</h4>
 
             <p>
               I Kodeworks har vi som mål at lønn ikke skal være noe du trenger å bekymre deg for. Vi
@@ -192,7 +192,7 @@ export default function StaffManual(): JSX.Element {
               ved oppstart, og det vil være den samme måneden for resten av arbeidsforholdet.
             </p>
 
-            <h3>Feriepenger</h3>
+            <h4>Feriepenger</h4>
 
             <p>
               Feriepenger utbetales i juni. Alle 25 feriedagene vil bli trukket denne måneden. Juni
@@ -204,7 +204,7 @@ export default function StaffManual(): JSX.Element {
               informere om dette i god tid før utbetalingen skal skje.
             </p>
 
-            <h3>Overtid og overtidslønn</h3>
+            <h4>Overtid og overtidslønn</h4>
 
             <p>
               Fra tid til annen kan det hende at man må jobbe noen timer ekstra i uken. Dette
@@ -222,7 +222,7 @@ export default function StaffManual(): JSX.Element {
               annet er avklart på forhånd.
             </p>
 
-            <h3>Pensjon og forsikring</h3>
+            <h4>Pensjon og forsikring</h4>
 
             <p>
               Kodeworks setter av 7% til pensjonssparing. Dette gjelder allerede fra 0G og opp til
@@ -241,7 +241,7 @@ export default function StaffManual(): JSX.Element {
               under “Forsikringer” i fellesmappen på Google Drive.
             </p>
 
-            <h3>Datamaskin og programvare</h3>
+            <h4>Datamaskin og programvare</h4>
 
             <p>
               Vi dekker arbeidsmaskin og programvare du behøver for å gjøre jobben din. Hva du
@@ -254,7 +254,7 @@ export default function StaffManual(): JSX.Element {
               bestille dette og føre det som utlegg i regnskapssystemet.
             </p>
 
-            <h3>Litteratur og læringsmateriale</h3>
+            <h4>Litteratur og læringsmateriale</h4>
 
             <p>
               Det finnes endeløse ressurser for å slukke læringstørsten. Hvis du ønsker å benytte
@@ -264,7 +264,7 @@ export default function StaffManual(): JSX.Element {
               utgiften i regnskapssystemet, så vil du få det tilbakeført.
             </p>
 
-            <h3>Kurs og konferanse</h3>
+            <h4>Kurs og konferanse</h4>
 
             <p>
               Kodeworks oppfordrer deg til å delta på kurs og konferanser. Tidligere har vi alle
@@ -278,7 +278,7 @@ export default function StaffManual(): JSX.Element {
               Kodeworks også dekke utgifter til dette innen rimelighetens grenser.
             </p>
 
-            <h3>Helse</h3>
+            <h4>Helse</h4>
 
             <p>
               Vår yrkesgruppe er utsatt for belastningsskader knyttet til å sitte for mye i ro foran
@@ -296,7 +296,7 @@ export default function StaffManual(): JSX.Element {
               velge treningssenter, så vil man få dekket et beløp i henhold til ansattbudsjettet.
             </p>
 
-            <h3>Sykedager</h3>
+            <h4>Sykedager</h4>
 
             <p>
               Vi har et utvidet egenmeldingssystem, som er mer fleksibelt enn det normale systemet i
@@ -356,7 +356,7 @@ export default function StaffManual(): JSX.Element {
               Drive.
             </p>
 
-            <h3>Ansattgoder</h3>
+            <h4>Ansattgoder</h4>
 
             <p>
               Kodeworks har en rekke goder som gjør at du som ansatt kan ha en fleksibel, trygg og
@@ -391,7 +391,7 @@ export default function StaffManual(): JSX.Element {
               <li>Full lønn under foreldrepermisjon.</li>
             </ul>
 
-            <h3>Velferdspermisjon</h3>
+            <h4>Velferdspermisjon</h4>
 
             <p>
               For å hjelpe til med å gjøre både planlagte og uforutsette hendelser i livet litt
