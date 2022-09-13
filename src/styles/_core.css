@@ -132,6 +132,7 @@ code {
 ul, ol {
   list-style-type: disc;
   margin-left: 30px;
+  margin-bottom: 15px;
 }
 
 .list-plain {

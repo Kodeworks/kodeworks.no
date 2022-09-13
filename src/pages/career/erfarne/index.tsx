@@ -33,9 +33,9 @@ export default function Nyutdannede(): JSX.Element {
             <li>HTML og CSS</li>
             <li>C og C++</li>
             <li>Mobil (Swift og Java/Kotlin)</li>
-            <li>Skytjenester (AWS, Azure, GCP og Vercel mm.)</li>
+            <li>Skytjenester (Vercel, Heroku, AWS, Azure, GCP mm.)</li>
             <li>Plattform og infrastruktur (Kubernetes og Docker)</li>
-            <li>CI/CD (GitLab CI, GitHub Action, Jenkins og Circle mm.)</li>
+            <li>CI/CD (GitLab CI, GitHub Action, Jenkins, CircleCI mm.)</li>
           </ul>
 
           <p>Noen av våre prosjekter har også sterkt fokus på</p>
@@ -45,6 +45,8 @@ export default function Nyutdannede(): JSX.Element {
             <li>MQTT og SNMP</li>
             <li>Visuelle fremstillinger (Unity og Unreal)</li>
           </ul>
+
+          <p>Fant du ikke noen av dine teknologiske interesser? Ta kontakt med oss likevel!</p>
         </article>
 
         <article className="article">
