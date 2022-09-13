@@ -79,7 +79,7 @@ export default function StaffManual(): JSX.Element {
             <h2>Arbeidstid</h2>
 
             <p>
-              Kontraktsfestet arbeidstid er 8 timer per dag, med en 30 minutters lunsjpause. I
+              Arbeidstid er 8 timer per dag, med en 30 minutters lunsjpause. I
               Kodeworks opererer vi med en kjernetid mellom 9-15, med mulighet og rom til å kunne
               være fleksibel under arbeidstiden. I et selskap der mennesker med kompetanse er
               hovedproduktet, vet vi at å jobbe tett med kollegaene våre gir det beste resultatet.
@@ -130,7 +130,7 @@ export default function StaffManual(): JSX.Element {
             </p>
             <p>
               For eksempel vil det bety for oppdrag som faller utenfor Sone A i Trondheim eller Sone
-              1 i oslo.
+              1 i Oslo.
             </p>
           </article>
 
@@ -312,7 +312,7 @@ export default function StaffManual(): JSX.Element {
                 tilgjengelig.
               </li>
               <li>
-                Meld fra til nærmeste leder så snart du må benytte deg av en sykedag. Husk også å
+                Meld fra til nærmeste leder hvis du må ta en sykedag. Husk også å
                 melde i fra til kunden eller prosjektledelsen så snart som mulig.
               </li>
               <li>
@@ -336,7 +336,7 @@ export default function StaffManual(): JSX.Element {
                 informasjon om hva som dekkes finnes i mappen “Forsikring” på Google Drive.
               </li>
               <li>
-                Sykedager er ikke det samme som feriedager, så ubrukte egenmeldingsdager vil ikke
+                Egenmeldingsdager er ikke det samme som feriedager, så ubrukte egenmeldingsdager vil ikke
                 overføres til neste periode.
               </li>
             </ul>
@@ -446,9 +446,8 @@ export default function StaffManual(): JSX.Element {
               Som ansatt kan man også bli medeier i avdelingen man jobber i. Vi tror på at ansatte
               som har medeierskap får sterkere insentiver for å skape vekst og trivsel i selskapet,
               som kommer alle til gode. Medeierskap i form av aksjer vil bli distribuert fra et sett
-              av aksjer som er eid av selskapet, eller morselskapet. Aksjene kjøpes og selges til
-              kostpris. Når man tiltrer som aksjonær i selskapet, blir man underlagt selskapets
-              aksjonæravtale.
+              av aksjer som er eid av selskapet, eller morselskapet. Når man tiltrer som aksjonær
+              i selskapet, blir man underlagt selskapets aksjonæravtale.
             </p>
             <p>
               Alle ansatte vil bli tilbudt aksjer ved neste oppdatering av aksjeeierboken, etter at
