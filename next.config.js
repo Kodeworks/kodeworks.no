@@ -4,5 +4,6 @@ module.exports = {
     localeDetection: false,
     defaultLocale: 'no'
   },
-  pageExtensions: ['tsx']
+  pageExtensions: ['tsx'],
+  swcMinify: true,
 };
