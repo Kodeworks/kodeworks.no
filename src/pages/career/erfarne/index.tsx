@@ -27,10 +27,9 @@ export default function Nyutdannede(): JSX.Element {
 
           <ul>
             <li>
-              JavaScript og TypeScript (av alle slag, om det er React eller Angular, eller noe
-              annet)
+              HTML, CSS, JavaScript og TypeScript (av alle slag, om det er React eller Angular eller
+              TailwindCSS, eller noe annet)
             </li>
-            <li>HTML og CSS</li>
             <li>C og C++</li>
             <li>Mobil (Swift og Java/Kotlin)</li>
             <li>Skytjenester (Vercel, Heroku, AWS, Azure, GCP mm.)</li>
@@ -44,6 +43,7 @@ export default function Nyutdannede(): JSX.Element {
             <li>Linux kernel-moduler</li>
             <li>MQTT og SNMP</li>
             <li>Visuelle fremstillinger (Unity og Unreal)</li>
+            <li>Qt (i mobilapplikasjoner og desktop)</li>
           </ul>
 
           <p>Fant du ikke noen av dine teknologiske interesser? Ta kontakt med oss likevel!</p>
