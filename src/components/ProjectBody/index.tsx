@@ -1,10 +1,18 @@
-import { Project, ProjectContent, DictProjectContents, ProjectContentImage, ProjectContentOutput, ProjectContentQuote, ProjectContentTexts, ProjectContentWideImage, DictText } from '../../types';
-
-import { useRouter } from 'next/router';
 import { Fragment } from 'react';
+import { useRouter } from 'next/router';
+
+import {
+  DictProjectContents,
+  Project,
+  ProjectContent,
+  ProjectContentImage,
+  ProjectContentOutput,
+  ProjectContentQuote,
+  ProjectContentTexts,
+  ProjectContentWideImage,
+} from '../../types';
 import { groupSplit } from '../../utils/groupSplit';
 import { getLocale, fmt } from '../../utils/useTranslation';
-
 
 interface Prop {
   project: Project;

@@ -1,7 +1,7 @@
-import { Project } from '../../types';
-import { getLocale, fmt } from '../../utils/useTranslation';
 import { useRouter } from 'next/router';
 
+import { Project } from '../../types';
+import { getLocale, fmt } from '../../utils/useTranslation';
 
 import style from './projectheader.module.css';
 
