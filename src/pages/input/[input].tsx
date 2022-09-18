@@ -25,9 +25,13 @@ Input.getLayout = function getLayout(page: ReactElement) {
 export default Input;
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const params = api.projects.getProjects().map((project) => {
-    return { params: { input: project.urlName } };
-  });
+  const locales = ['no', 'en'];
+  const params = api.projects.getProjects().reduce((arr, project) => {
+    return [
+      ...arr,
+      ...locales.map((locale) => ({ params: { input: project.urlName }, locale: locale })),
+    ];
+  }, []);
 
   return {
     paths: params,
