@@ -16,6 +16,7 @@ export type Project = {
   technologies?: string[];
   content?: DictProjectContents | ProjectContent[];
   published?: boolean;
+  output?: string[];
 };
 
 export type ProjectContent = ProjectContentTexts | ProjectContentHeading | ProjectContentImage | ProjectContentWideImage | ProjectContentQuote | ProjectContentOutput
