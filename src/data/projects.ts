@@ -685,7 +685,7 @@ export const projects: ProjectObjectType = {
       en: 'Through various digital platforms for energy and commodity trading, Thomson Reuters delivers analysis tools intended for investors and companies. The information presented in these solutions is time-critical, the amounts of data are large, the sources are many and the algorithms are complex.',
       no: 'Gjennom ulike digitale plattformer for energi- og råvarehandel leverer Thomson Reuters analyseverktøy beregnet på investorer og firmaer. Informasjonen som presenteres i disse løsningene er svært tidskritisk, datamengdene er store, kildene er mange og algoritmene er komplekse.',
     },
-    image: 'thomasonreuters.jpg',
+    image: 'thomsonreuters/blockchain.jpg',
     urlName: 'thomsonreuters',
     technologies: ['Java', 'Akka', 'VertX', 'Oracle SQL', 'Hbase'],
     content: {
@@ -703,6 +703,12 @@ export const projects: ProjectObjectType = {
           ],
         },
         {
+          type: 'image',
+          value: {
+            src: 'thomsonreuters/buildings.jpg',
+          },
+        },
+        {
           type: 'heading',
           value: 'Når millisekundene teller',
         },
@@ -717,6 +723,12 @@ export const projects: ProjectObjectType = {
         {
           type: 'output',
           value: 'Å jobbe med cutting edge tech trigget nerden i meg!',
+        },
+        {
+          type: 'image',
+          value: {
+            src: 'thomsonreuters/greenhouse.jpg',
+          },
         },
         {
           type: 'texts',
