@@ -75,7 +75,7 @@ const people: Person[] = [
   {
     name: 'Joachim Fasting',
     email: 'joachim@kodeworks.no',
-    projects: [projects.lilbit],
+    projects: [projects['lildog-with-lilbit']],
     image: '/static/photos/people/joachim.jpg',
   },
   {
