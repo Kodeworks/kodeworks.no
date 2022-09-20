@@ -131,7 +131,7 @@ const people: Person[] = [
   {
     name: 'Ørjan Bostad Vesterlid',
     email: 'orjan@kodeworks.no',
-    projects: [projects.lilbit, projects.skandiaenergi],
+    projects: [projects['lildog-with-lilbit'], projects.skandiaenergi],
     image: '/static/photos/people/orjan.jpg',
   },
   {
