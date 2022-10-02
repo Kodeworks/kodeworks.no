@@ -28,7 +28,7 @@ export const projects: ProjectObjectType = {
     name: 'Aker BP',
     description: {
       en: 'Aker BP ASA is a Norwegian oil extraction and development company, focusing on petroleum resources on the Norwegian continental sea floor. KodeWorks’ task has been to cooperate with resources from other companies on WITSML Explorer, an open-source web solution designed to visualize WITSML-data.',
-      no: 'Aker BP ASA er et norsk oljeutvinning- og utviklingsselskap som fokuserer på petroleumsressurser på norsk kontinentalsokkel. Kodeworks oppgave har vært å samarbeide med ressurser fra flere andre selskaper på WITSML Explorer, en open-source nettløsning designet å visualisere WITSML-data.',
+      no: 'Aker BP ASA er et norsk oljeutvinning- og utviklingsselskap som fokuserer på petroleumsressurser på norsk kontinentalsokkel. KodeWorks oppgave har vært å samarbeide med ressurser fra flere andre selskaper på WITSML Explorer, en open-source nettløsning designet å visualisere WITSML-data.',
     },
     image: 'akerbp.jpg',
     urlName: 'akerbp',
@@ -45,7 +45,7 @@ export const projects: ProjectObjectType = {
     name: 'Avinor',
     description: {
       en: 'Avinor’s social mission is to ensure good aviation services throughout Norway. This includes maintaining a good information flow to employees and air passengers. Avinor is subject to some of the country’s strictest requirements for safety and quality. KodeWorks has assisted with the integration of real-time information processing as well as testing and quality assurance of code.',
-      no: 'Avinors samfunnsoppdrag er å sikre gode luftfartstjenester i hele Norge. Dette inkluderer å opprettholde en god informasjonsflyt til ansatte og flypassasjerer. Avinor er underlagt noen av landets strengeste krav til sikkerhet og kvalitet. Kodeworks har bistått med integrering av sanntids dataprosessering samt testing og kvalitetssikring av kode.',
+      no: 'Avinors samfunnsoppdrag er å sikre gode luftfartstjenester i hele Norge. Dette inkluderer å opprettholde en god informasjonsflyt til ansatte og flypassasjerer. Avinor er underlagt noen av landets strengeste krav til sikkerhet og kvalitet. KodeWorks har bistått med integrering av sanntids dataprosessering samt testing og kvalitetssikring av kode.',
     },
     image: 'avinor.jpg',
     urlName: 'avinor',
@@ -83,7 +83,7 @@ export const projects: ProjectObjectType = {
     name: 'Equinor',
     description: {
       en: 'Equinor is an international energy company, which in recent years has implemented a strategic investment in sustainable energy. This is a process that requires innovation, business understanding and a strong focus on quality. KodeWorks supports Equinor’s research and digitization activities through analysis, design, programming and testing.',
-      no: 'Equinor er et internasjonalt energiselskap, og har de siste årene iverksatt en strategisk og betydelig satsing på bærekraftig energi. Dette er en prosess som krever innovasjon, forretningsforståelse og et stort fokus på kvalitet. Kodeworks støtter Equinors forsknings- og digitaliseringsaktiviteter gjennom analyse, design, programmering og testing.',
+      no: 'Equinor er et internasjonalt energiselskap, og har de siste årene iverksatt en strategisk og betydelig satsing på bærekraftig energi. Dette er en prosess som krever innovasjon, forretningsforståelse og et stort fokus på kvalitet. KodeWorks støtter Equinors forsknings- og digitaliseringsaktiviteter gjennom analyse, design, programmering og testing.',
     },
     image: 'equinor.jpg',
     urlName: 'equinor',
@@ -116,7 +116,7 @@ export const projects: ProjectObjectType = {
     name: 'DNB',
     description: {
       en: 'DNB as a company has worked for what is soon to be 200 years to find the best solutions for their customers, and is today one of the largest technology companies within the banking and financial sector. KodeWorks assists in this adaptation by establishing a central system for managing master- and reference data in DNB. In using a holistic end-to-end mindset and utilizing modern cloud services, KodeWorks helps DNB establish a robust solution for both operational and analytical usage.',
-      no: 'Gjennom snart 200 år har DNB jobbet for å finne de beste løsningene for kundene sine, og er i dag et ledende teknologiselskap innen bank- og finanssektoren. Kodeworks bidrar i denne utviklingen med å etablere et sentralt system for håndtering av master- og referansedata. Gjennom en helhetlig ende-til-ende tankegang og bruk av moderne skytjenester hjelper Kodeworks DNB med å etablere en robust løsning for både operasjonell og analytisk bruk.',
+      no: 'Gjennom snart 200 år har DNB jobbet for å finne de beste løsningene for kundene sine, og er i dag et ledende teknologiselskap innen bank- og finanssektoren. KodeWorks bidrar i denne utviklingen med å etablere et sentralt system for håndtering av master- og referansedata. Gjennom en helhetlig ende-til-ende tankegang og bruk av moderne skytjenester hjelper KodeWorks DNB med å etablere en robust løsning for både operasjonell og analytisk bruk.',
     },
     image: 'dnb.jpg',
     urlName: 'dnb',
@@ -222,8 +222,8 @@ export const projects: ProjectObjectType = {
         {
           type: 'texts',
           value: [
-            'Kodeworks har vært med på Inaturs moderniseringsprosess siden 2019. Her har Kodeworks bidratt med å bygge videre på og modernisere deres eksisterende Java 8 Spring backend. Frontend er skrevet om fra å være strukturert med CommonJS og require()-import, til å bruke ES6-standardisert praksis, for eksempel modulhenting ved import/export. Der store deler av den eksisterende koden var bygd opp med backbone.js og mustache templates, skrives i dag frontend-koden i React, med Hooks og Storybook for bygging av standard UI-komponenter.',
-            'Rådgivning på teknisk front er ofte en del av vårt arbeidsområde i prosjektene vi gjennomfører. Som konsulenter og utviklere har Kodeworks god forståelse for hvordan man imøtekommer sluttbrukerens forventninger og ønsker, og samtidig ivaretar den tekniske integriteten i kodebasen og tekniske løsninger generelt. Å kommunisere denne sammenhengen er viktig for å sikre at bedriften er i stand til å sette mål som både er ambisiøse, hensiktsmessige og gjennomførbare. Dette har bidratt til å skape en felles front på tvers av forretningsdelen og den tekniske delen av Inatur - en viktig forutsetning for videre prosess og akselerert utvikling.',
+            'KodeWorks har vært med på Inaturs moderniseringsprosess siden 2019. Her har KodeWorks bidratt med å bygge videre på og modernisere deres eksisterende Java 8 Spring backend. Frontend er skrevet om fra å være strukturert med CommonJS og require()-import, til å bruke ES6-standardisert praksis, for eksempel modulhenting ved import/export. Der store deler av den eksisterende koden var bygd opp med backbone.js og mustache templates, skrives i dag frontend-koden i React, med Hooks og Storybook for bygging av standard UI-komponenter.',
+            'Rådgivning på teknisk front er ofte en del av vårt arbeidsområde i prosjektene vi gjennomfører. Som konsulenter og utviklere har KodeWorks god forståelse for hvordan man imøtekommer sluttbrukerens forventninger og ønsker, og samtidig ivaretar den tekniske integriteten i kodebasen og tekniske løsninger generelt. Å kommunisere denne sammenhengen er viktig for å sikre at bedriften er i stand til å sette mål som både er ambisiøse, hensiktsmessige og gjennomførbare. Dette har bidratt til å skape en felles front på tvers av forretningsdelen og den tekniske delen av Inatur - en viktig forutsetning for videre prosess og akselerert utvikling.',
           ],
         },
         {
@@ -235,7 +235,7 @@ export const projects: ProjectObjectType = {
         {
           type: 'texts',
           value: [
-            'I dag driver Kodeworks prosessen med modernisering av Inaturs teknologiportefølje videre. I en slik prosess finnes det en balanse mellom fornying av eksisterende løsninger og utvikling av nye features. Kodeworks har bidratt med omfattende fornying på tvers av Inaturs teknologistack, og lagt et robust grunnlag for både drift og videre utvikling av Inaturs tjenester. Vi takker for et godt samarbeid og ser frem til videre utvikling med Inatur.',
+            'I dag driver KodeWorks prosessen med modernisering av Inaturs teknologiportefølje videre. I en slik prosess finnes det en balanse mellom fornying av eksisterende løsninger og utvikling av nye features. KodeWorks har bidratt med omfattende fornying på tvers av Inaturs teknologistack, og lagt et robust grunnlag for både drift og videre utvikling av Inaturs tjenester. Vi takker for et godt samarbeid og ser frem til videre utvikling med Inatur.',
           ],
         },
       ],
@@ -264,7 +264,7 @@ export const projects: ProjectObjectType = {
     name: 'Kongsberg',
     description: {
       en: 'Kongsberg digital offers digital solutions for customers within the maritime sector, including oil and gas, with autonomy, smart data and augmented reality as key elements. KodeWorks’ main effort is placed within development of maritime simulations used among other things in personnel training systems for customers all over the globe. Kongsberg A&D is a global technology leader within defense, surveillance, space travel, airplane structure and airplane maintenance.',
-      no: 'Kongsberg Digital tilbyr digitale løsninger for kunder innen maritim, olje og gass, med autonomi, smarte data, og augmented reality som fellesnevner. Kodeworks jobber med utvikling av maritim simulering brukt i blant annet treningssystemer for kunder over hele verden. Kongsberg A&D er en global teknologileder innen forsvar, overvåking, romfart, flystrukturer og flyvedlikehold.',
+      no: 'Kongsberg Digital tilbyr digitale løsninger for kunder innen maritim, olje og gass, med autonomi, smarte data, og augmented reality som fellesnevner. KodeWorks jobber med utvikling av maritim simulering brukt i blant annet treningssystemer for kunder over hele verden. Kongsberg A&D er en global teknologileder innen forsvar, overvåking, romfart, flystrukturer og flyvedlikehold.',
     },
     image: 'kongsberg.jpg',
     urlName: 'kongsberg',
@@ -284,11 +284,11 @@ export const projects: ProjectObjectType = {
   lawenforcementagency: {
     name: {
       en: 'Law Enforcement Agency',
-      no: 'rettshåndhevelsesbyrå',
+      no: 'Rettshåndhevelsesbyrå',
     },
     description: {
       en: 'A law enforcement agency should prevent crime and maintain our safety as citizens. KodeWorks has been part of the development of two instrumental systems for a prominent Nordic law enforcement agency: System for Safety Alarm and Electronic Control; and System for Operative Law Enforcement.',
-      no: 'Et rettshåndhevelsesbyrå skal forebygge og bekjempe kriminalitet samt skape trygghet i samfunnet. For å klare oppdraget er de avhengig av gode datasystemer som understøtter den daglige driften på en smidig og effektiv måte. Kodeworks har vært med å utvikle to svært viktige systemer for et prominent nordisk rettshåndhevelsesbyrå: System for Trygghetsalarm og Elektronisk Kontroll og System for Operativ Rettshåndhevelse. Begge systemene har bidratt til å bedre responstiden til byråets operasjonssentraler, trygge hverdagen til trygghetsalarmbærere, og gjort byråets patruljer mer effektive.',
+      no: 'Et rettshåndhevelsesbyrå skal forebygge og bekjempe kriminalitet samt skape trygghet i samfunnet. For å klare oppdraget er de avhengig av gode datasystemer som understøtter den daglige driften på en smidig og effektiv måte. KodeWorks har vært med å utvikle to svært viktige systemer for et prominent nordisk rettshåndhevelsesbyrå: System for Trygghetsalarm og Elektronisk Kontroll og System for Operativ Rettshåndhevelse. Begge systemene har bidratt til å bedre responstiden til byråets operasjonssentraler, trygge hverdagen til trygghetsalarmbærere, og gjort byråets patruljer mer effektive.',
     },
     image: 'lawenforcementagency.jpg',
     urlName: 'lawenforcementagency',
@@ -335,8 +335,8 @@ export const projects: ProjectObjectType = {
         {
           type: 'texts',
           value: [
-            'Kodeworks ble engasjert hos det prominente nordiske rettshåndhevelsesbyrået tilbake i 2008. På dette tidspunkt var byråets IT-avdeling midt i en omskriving av systemet Trygghetsalarm, parallelt med at et løft av hele organisasjonens IT system og samhandlingsprosesser pågikk. Trygghetsalarm hadde allerede tilbake i 2005 blitt forespeilet et tilleggsystem, og tilhørende lovgivning, i form av System for Elektronisk Kontroll. Mangel på tekniske løsninger i markedet som enkelt lot seg integrere i byråets operative systemer systemer, gjorde at Kodeworks måtte bistå i å integrere System for Trygghetsalarm og Elektronisk Kontroll de operative systemene, saksbehandlingssystemer, og systemer til tredjeparts leverandører av utstyr.',
-            'Kodeworks utviklet neste generasjons Trygghetsalarm for rettshåndhevelsesbyrået. Dette ble gjort ved å modifisere Android operativsystemet slik at alle “peripherals” ble koblet ut, og all ekstern kommunikasjon ble rutet gjennom en kryptert ende-til-ende kommunikasjonsprotokoll inn til rettshåndhevelsesbyråets tjenester. Modifikasjonene gikk helt ned på firmware-nivå, slik at til og med hardware-knapper med en eksisterende betydning ble omprogrammert. Tilpasningene gjorde rettshåndhevelsesbyrået i stand til å kjøre en dedikert Trygghetsalarm-app på standard smarttelefoner, og utnytte state-of-the-art posisjoneringsteknologi og programmeringsmiljø. I dag er alle Trygghetsalarm-enheter innen rettshåndhevelsesbyråets jurisdiksjon standard smarttelefoner, med programvare som er en videreføring av arbeidet Kodeworks la ned sammen med rettshåndhevelsesbyrået i 2008 - 2016.',
+            'KodeWorks ble engasjert hos det prominente nordiske rettshåndhevelsesbyrået tilbake i 2008. På dette tidspunkt var byråets IT-avdeling midt i en omskriving av systemet Trygghetsalarm, parallelt med at et løft av hele organisasjonens IT system og samhandlingsprosesser pågikk. Trygghetsalarm hadde allerede tilbake i 2005 blitt forespeilet et tilleggsystem, og tilhørende lovgivning, i form av System for Elektronisk Kontroll. Mangel på tekniske løsninger i markedet som enkelt lot seg integrere i byråets operative systemer systemer, gjorde at KodeWorks måtte bistå i å integrere System for Trygghetsalarm og Elektronisk Kontroll de operative systemene, saksbehandlingssystemer, og systemer til tredjeparts leverandører av utstyr.',
+            'KodeWorks utviklet neste generasjons Trygghetsalarm for rettshåndhevelsesbyrået. Dette ble gjort ved å modifisere Android operativsystemet slik at alle “peripherals” ble koblet ut, og all ekstern kommunikasjon ble rutet gjennom en kryptert ende-til-ende kommunikasjonsprotokoll inn til rettshåndhevelsesbyråets tjenester. Modifikasjonene gikk helt ned på firmware-nivå, slik at til og med hardware-knapper med en eksisterende betydning ble omprogrammert. Tilpasningene gjorde rettshåndhevelsesbyrået i stand til å kjøre en dedikert Trygghetsalarm-app på standard smarttelefoner, og utnytte state-of-the-art posisjoneringsteknologi og programmeringsmiljø. I dag er alle Trygghetsalarm-enheter innen rettshåndhevelsesbyråets jurisdiksjon standard smarttelefoner, med programvare som er en videreføring av arbeidet KodeWorks la ned sammen med rettshåndhevelsesbyrået i 2008 - 2016.',
           ],
         },
         {
@@ -348,7 +348,7 @@ export const projects: ProjectObjectType = {
         {
           type: 'texts',
           value: [
-            'Prosjektet Trygghetsalarm og Elektronisk Kontroll gikk over flere år, og noe også lagt ned på nærliggende prosjekter, spesifikt innenfor den operative tjenesteporteføljen. Operativ Rettshåndhevelse er det mest sentrale operative systemet hos byrået, og ble utviklet allerede på 90-tallet. Rettshåndhevelsesbyrået hadde allerede før Kodeworks kom inn startet et kartleggingsarbeid for å splitte Operativ Rettshåndhevelse inn i moduler, og Kodeworks bygde videre på dette for å beskrive hvordan dataflyt og konsistens mellom modulene skulle sikres. Dyp integrasjon med distribuerte databaser for hver organisatoriske enhet muliggjorde en hendelsesdrevet arkitektur hvor modulene ble modellert som mikrotjenester, og dette ble starten på moderniseringen av den operative systemporteføljen som er i bruk i dag.',
+            'Prosjektet Trygghetsalarm og Elektronisk Kontroll gikk over flere år, og noe også lagt ned på nærliggende prosjekter, spesifikt innenfor den operative tjenesteporteføljen. Operativ Rettshåndhevelse er det mest sentrale operative systemet hos byrået, og ble utviklet allerede på 90-tallet. Rettshåndhevelsesbyrået hadde allerede før KodeWorks kom inn startet et kartleggingsarbeid for å splitte Operativ Rettshåndhevelse inn i moduler, og KodeWorks bygde videre på dette for å beskrive hvordan dataflyt og konsistens mellom modulene skulle sikres. Dyp integrasjon med distribuerte databaser for hver organisatoriske enhet muliggjorde en hendelsesdrevet arkitektur hvor modulene ble modellert som mikrotjenester, og dette ble starten på moderniseringen av den operative systemporteføljen som er i bruk i dag.',
           ],
         },
       ],
@@ -425,7 +425,7 @@ export const projects: ProjectObjectType = {
         {
           type: 'texts',
           value: [
-            'lilbit leverer produkter for monitorering av kjæledyr, med målsetningen om å utvide kommunikasjonen mellom kjæledyr og eier. Med denne ambisjonen har de oppnådd stor interesse for nåværende og kommende produkter og tjenester. Gjennom et langt samarbeid har Kodeworks bidratt med rådgivning og kompetansebygging, såvel som utvikling. Joachim Fasting i Kodeworks har stått sentralt i dette, og har spesielt bidratt på backend og i arbeidet med å redusere kompleksitet og kostnader i tech-stacken.',
+            'lilbit leverer produkter for monitorering av kjæledyr, med målsetningen om å utvide kommunikasjonen mellom kjæledyr og eier. Med denne ambisjonen har de oppnådd stor interesse for nåværende og kommende produkter og tjenester. Gjennom et langt samarbeid har KodeWorks bidratt med rådgivning og kompetansebygging, såvel som utvikling. Joachim Fasting i KodeWorks har stått sentralt i dette, og har spesielt bidratt på backend og i arbeidet med å redusere kompleksitet og kostnader i tech-stacken.',
           ],
         },
         {
@@ -465,9 +465,9 @@ export const projects: ProjectObjectType = {
         {
           type: 'texts',
           value: [
-            'Kodeworks har i lilbit også vært med på bygging av kryssfunksjonelle team, med god kommunikasjon mellom utviklings- og forretningssiden - en egenskap som akselererer utvikling og vekst. På forretningssiden lar interessen for lilbits produkter seg kanskje best gjenspeile i et spredningssalg som ble gjort gjennom folkefinansieringsplattformen Folkeinvest, der det ble hentet inn 28 millioner kroner, noe som er ny norsk rekord. Videre har Kodeworks bidratt med bygging av spesifikk kompetanse for utvikling innad i lilbit. Dette inkluderer både kunnskapsdeling og deltakelse i ansettelsesprosessen.',
+            'KodeWorks har i lilbit også vært med på bygging av kryssfunksjonelle team, med god kommunikasjon mellom utviklings- og forretningssiden - en egenskap som akselererer utvikling og vekst. På forretningssiden lar interessen for lilbits produkter seg kanskje best gjenspeile i et spredningssalg som ble gjort gjennom folkefinansieringsplattformen Folkeinvest, der det ble hentet inn 28 millioner kroner, noe som er ny norsk rekord. Videre har KodeWorks bidratt med bygging av spesifikk kompetanse for utvikling innad i lilbit. Dette inkluderer både kunnskapsdeling og deltakelse i ansettelsesprosessen.',
             'CEO i lilbit, Morten Sæthre, beskriver Joachim som sitt første møte med en autonom utvikler; noen som ser svakheter og tilsvarende løsninger i et system, og implementerer disse på løpende bånd. I dag jobber Joachim med utvikling av backend. lilbit utvikler og drifter backend til både IoT-enhetene og til skyløsningene. Dette er viktig, da produktene fra lilbit inneholder utvidet sensorikk som vil legge til rette for en forlenget kommunikasjon mellom hund og eier.',
-            'Kodeworks er takknemlige for rollen som samarbeidspartnere her, og vi ser videre frem til å være en del av utviklingen i tiden som kommer.',
+            'KodeWorks er takknemlige for rollen som samarbeidspartnere her, og vi ser videre frem til å være en del av utviklingen i tiden som kommer.',
           ],
         },
       ],
@@ -518,7 +518,7 @@ export const projects: ProjectObjectType = {
     name: 'OBOS',
     description: {
       en: 'OBOS plays a big role in the Norwegian housing and property market, and offers customers - among other services - an easier path to the housing market through partial housing ownership. OBOS is also behind Nabohjelp, an app that makes it easier to ask your neighbors for assistance. KodeWorks assists in both maintenance and development of the app, which is written in native iOS and Android.',
-      no: 'OBOS er en sentral aktør i det norske bolig- og eiendomsmarked, og tilbyr kunder blant annet lettere veier inn i boligmarkedet gjennom sin ordning for deleierskap. OBOS står bak Nabohjelp, appen som skal gjøre det enklere å spørre naboen om hjelp. Kodeworks bistår med både vedlikehold og videreutvikling av appen som er skrevet i native iOS og Android.',
+      no: 'OBOS er en sentral aktør i det norske bolig- og eiendomsmarked, og tilbyr kunder blant annet lettere veier inn i boligmarkedet gjennom sin ordning for deleierskap. OBOS står bak Nabohjelp, appen som skal gjøre det enklere å spørre naboen om hjelp. KodeWorks bistår med både vedlikehold og videreutvikling av appen som er skrevet i native iOS og Android.',
     },
     image: 'obos.jpg',
     urlName: 'obos',
@@ -539,7 +539,7 @@ export const projects: ProjectObjectType = {
     name: 'Pexip',
     description: {
       en: 'The start of 2020 was a world-changing era with the covid-19 pandemic. Relationships were maintained through strict official guidelines, which revolutionized the business. Less travel and fewer face-to-face meetings were a new reality, and video communication was the new standard. Pexip is a company with extensive experience in simplifying and optimizing video conferencing.',
-      no: 'Starten på 2020 bemerket seg med covid-19-pandemien som en periode med store endringer for folk ved at mellommenneskelige relasjoner ble underlagt strenge offisielle retningslinjer. For for leverandører av videoteknologi, som Pexip, resulterte dette i økende etterspørsel. Mindre reiser og færre møter ansikt til ansikt var en ny realitet, og videokommunikasjon var den nye standarden. Pexip er et selskap med lang erfaring i å forenkle og optimalisere videokonferanser, og Kodeworks assisterer i å se på forbedring av ytelse samt tilpasning til mobile flater.',
+      no: 'Starten på 2020 bemerket seg med covid-19-pandemien som en periode med store endringer for folk ved at mellommenneskelige relasjoner ble underlagt strenge offisielle retningslinjer. For for leverandører av videoteknologi, som Pexip, resulterte dette i økende etterspørsel. Mindre reiser og færre møter ansikt til ansikt var en ny realitet, og videokommunikasjon var den nye standarden. Pexip er et selskap med lang erfaring i å forenkle og optimalisere videokonferanser, og KodeWorks assisterer i å se på forbedring av ytelse samt tilpasning til mobile flater.',
     },
     image: 'pexip.jpg',
     urlName: 'pexip',
@@ -557,7 +557,7 @@ export const projects: ProjectObjectType = {
     name: 'Remarkable',
     description: {
       en: 'reMarkable is a Norwegian startup developing a tablet for writing and drawing, and aiming to give the user a sensation of writing on paper. The unique tablet is designed for use in academia as well as in professional settings. KodeWorks assists in development of reMarkable’s complex and international web platform.',
-      no: 'reMarkable er en norsk startup som utvikler en tablet for skriving og tegning, og som skal gi brukeren følelsen av å skrive på papir. Den unike tableten er designet for bruk i akademia så vel som i yrkessammenheng. Kodeworks bidrar til utvikling av den komplekse og internasjonale webplattformen til reMarkable.',
+      no: 'reMarkable er en norsk startup som utvikler en tablet for skriving og tegning, og som skal gi brukeren følelsen av å skrive på papir. Den unike tableten er designet for bruk i akademia så vel som i yrkessammenheng. KodeWorks bidrar til utvikling av den komplekse og internasjonale webplattformen til reMarkable.',
     },
     image: 'remarkable-2.jpg',
     urlName: 'remarkable',
@@ -578,7 +578,7 @@ export const projects: ProjectObjectType = {
     image: 'Sesam-front.jpg',
     extras: {
       en: 'When between customer assignments in KodeWorks, the focus is on professional and academic development. At the same time, some real value creation can also be achieved. At the KodeWorks office in Oslo, Jan and Simen received an interesting task in modernizing the existing door lock system.',
-      no: 'Når man er mellom kundeoppdrag i Kodeworks, er faglig utvikling i fokus. Samtidig kan også ekte verdiskapning være en del av det faglige opplegget. På kontoret i Oslo fikk Jan og Simen en interessant oppgave i det å modernisere dørlåssystemet på huset.',
+      no: 'Når man er mellom kundeoppdrag i KodeWorks, er faglig utvikling i fokus. Samtidig kan også ekte verdiskapning være en del av det faglige opplegget. På kontoret i Oslo fikk Jan og Simen en interessant oppgave i det å modernisere dørlåssystemet på huset.',
     },
     urlName: 'sesam',
     technologies: [
@@ -667,9 +667,9 @@ export const projects: ProjectObjectType = {
         {
           type: 'texts',
           value: [
-            'Etter litt konsultasjon med Thomas i Kodeworks ble tre loddepunkter på PCBen til callinganlegget identifisert. Ett til jording, et som slutter kretsen til dørlåsen og et som settes under spenning når dørklokka aktiveres fra utsiden. Det ble bestemt at disse kretsene skulle sluttes ved bruk av reléer, og en enkel måte å gjøre dette på er å styre disse feks med en Arduino. Dermed ble løsningen å sette opp to Arduinoer med hvert sitt relé, en til hver dør. Arduinoen for ytre dør, som med sin tilknytning til callinganlegget også kunne lytte pål dørklokkesignalet, ble også koblet opp til å registrere når dette signalet er aktivt, for å kunne melde dette videre til backend.',
+            'Etter litt konsultasjon med Thomas i KodeWorks ble tre loddepunkter på PCBen til callinganlegget identifisert. Ett til jording, et som slutter kretsen til dørlåsen og et som settes under spenning når dørklokka aktiveres fra utsiden. Det ble bestemt at disse kretsene skulle sluttes ved bruk av reléer, og en enkel måte å gjøre dette på er å styre disse feks med en Arduino. Dermed ble løsningen å sette opp to Arduinoer med hvert sitt relé, en til hver dør. Arduinoen for ytre dør, som med sin tilknytning til callinganlegget også kunne lytte pål dørklokkesignalet, ble også koblet opp til å registrere når dette signalet er aktivt, for å kunne melde dette videre til backend.',
             'Dermed var løsningen for å kontrollere dørlåser og registrere dørklokkesignal på plass. På lokalnettet på huset var det altså tre komponenter som nå skulle kommunisere - Sesam-serveren og to Arduinos. Til kommunikasjon mellom disse komponentene ble MQTT-protokollen valgt. MQTT blir gjerne valgt i IoT-løsninger med mange enheter og store datamengder da den i utgangspunktet er en lettvekt-protokoll der pub/sub-rutinen hos en enkeltenhet skjer uavhengig av andre enheters tilkobling til en sentral MQTT-broker. Samtidig tilbyr MQTT høy justerbarhet for parametre som øker integriteten i dataoverføringen eller tar vare på pakker ved tapt forbindelse. Dette senker ytelsen i større systemer, men er nyttig i småskala applikasjoner der integriteten i dataoverføringen må kunne garanteres.',
-            'Backenden bruker Node.js med Express, og tilbyr et RESTful HTTP API til frontend, som er en nettapplikasjon skrevet med React. NextJS blir brukt til å tilby alle sider i nettappen, som følger det nye visuelle designet til Kodeworks. Videre kommuniserer backenden beskjeder til mikrokontrollere via MQTT-protokollen. En lokal MQTT-broker kjører i en egen Docker-container, og distribuerer meldinger om dørklokker, åpning og låsing av dører, og heartbeat-meldinger frem og tilbake mellom mikrokontrollere og backend.',
+            'Backenden bruker Node.js med Express, og tilbyr et RESTful HTTP API til frontend, som er en nettapplikasjon skrevet med React. NextJS blir brukt til å tilby alle sider i nettappen, som følger det nye visuelle designet til KodeWorks. Videre kommuniserer backenden beskjeder til mikrokontrollere via MQTT-protokollen. En lokal MQTT-broker kjører i en egen Docker-container, og distribuerer meldinger om dørklokker, åpning og låsing av dører, og heartbeat-meldinger frem og tilbake mellom mikrokontrollere og backend.',
           ],
         },
         {
@@ -681,7 +681,7 @@ export const projects: ProjectObjectType = {
         {
           type: 'texts',
           value: [
-            'Til autentisering og autorisering blir Google OAuth brukt, slik at kun brukere med Kodeworks-mail kan logge seg inn. Dette ble satt opp i Google Cloud Console, og Google Admin SDK ble deretter brukt til å sjekke om en bruker er en del av enten Trondheim eller Oslo-gruppa i Kodeworks. Dette er for å sikre at kun personer med faktisk tilknytning til bedriften får tilgang til å løse opp dørene. Gitlabs CI/CD Pipelines er blitt brukt til å deployere appen automatisk til serveren.',
+            'Til autentisering og autorisering blir Google OAuth brukt, slik at kun brukere med KodeWorks-mail kan logge seg inn. Dette ble satt opp i Google Cloud Console, og Google Admin SDK ble deretter brukt til å sjekke om en bruker er en del av enten Trondheim eller Oslo-gruppa i KodeWorks. Dette er for å sikre at kun personer med faktisk tilknytning til bedriften får tilgang til å løse opp dørene. Gitlabs CI/CD Pipelines er blitt brukt til å deployere appen automatisk til serveren.',
             'Når en bruker trykker på døråpningsknappen, forventer man å få en visuell tilbakemelding på at noe skjer. I Sesam er dette gjort ved at backend mottar en melding fra den aktuelle mikrokontrolleren i dét døra åpnes, og dermed låser knappen i appen helt til backend mottar melding om at dørlåsen igjen er lukket. Denne kommunikasjonen gjøres med Websockets, og en naturlig videreføring av dette ble at knappen hos samtligere brukere låses dersom én bruker aktiverer knappen i sin klient. En kan naturligvis argumentere for at sanntidsoppdatering på en app som styrer to dører i samme lokale ikke er høyst nødvendig, men på den annen side gjenspeiler det brukervennlighet som prinsipp, og det er alltid lurt å ha i hodet. Et eget administratorvindu ble også utviklet. Dette gir enkelte brukere tilgang til statistikk på bruken av Sesam, samt å stenge/åpne hele tjenesten for bruk.',
             'Til slutt har dessuten en svært viktig del av prosjektet vært jobben som ble gjort i forkant. Ved prosjektstart ble Jan og Simen presentert en svært godt utarbeidet prosjektbeskrivelse. Denne inneholdt en klar beskrivelse av produktet, samt funksjonelle og ikke-funksjonelle krav til både produkt og gjennomføring av prosjektet. En såpass godt formulert samling av krav og rammer gir utvikleren muligheten til å stille kritiske spørsmål, presentere alternative løsninger og danne seg et helhetlig bilde av produktet i innledningsfasen, og legger til rette for en synlig prosess og produktiv kommunikasjon. Jan og Simen kan dermed se tilbake på et lærerikt prosjekt og godt gjennomført prosjekt.',
           ],
@@ -694,7 +694,7 @@ export const projects: ProjectObjectType = {
     name: 'SkandiaEnergi',
     description: {
       en: 'SkandiaEnergi develops solutions for the power market of the future. They offer unique and smart energy solutions for solar power and energy saving. KodeWorks assists in developing an app that makes daily life as a customer more manageable, and that offers smart solutions for power management and electric vehicle charging.',
-      no: 'SkandiaEnergi utvikler løsninger for fremtidens strømmarked. De tilbyr unike og smarte energiløsninger for solstrøm og energisparing. Kodeworks bistår til å utvikle en app som gjør hverdagen som kunde mer oversiktlig, og som tilbyr smarte løsninger for strømstyring og lading av elbil.',
+      no: 'SkandiaEnergi utvikler løsninger for fremtidens strømmarked. De tilbyr unike og smarte energiløsninger for solstrøm og energisparing. KodeWorks bistår til å utvikle en app som gjør hverdagen som kunde mer oversiktlig, og som tilbyr smarte løsninger for strømstyring og lading av elbil.',
     },
     image: 'skandiaenergi.jpg',
     urlName: 'skandiaenergi',
@@ -718,7 +718,7 @@ export const projects: ProjectObjectType = {
     name: 'Statkraft',
     description: {
       en: 'Statkraft is Europe’s largest producer of renewable energy and a global company within power market operations. KodeWorks has assisted with coordination and development of a common platform for booking, risk evaluation and reporting of power purchase agreements.',
-      no: 'Statkraft er Europas største produsent av fornybar energi og et globalt selskap innen energimarkedsoperasjoner. Kodeworks har bistått med koordinering og utvikling av en samlet plattform for booking, risikoevaluering og rapportering av kraftkjøpsavtaler.',
+      no: 'Statkraft er Europas største produsent av fornybar energi og et globalt selskap innen energimarkedsoperasjoner. KodeWorks har bistått med koordinering og utvikling av en samlet plattform for booking, risikoevaluering og rapportering av kraftkjøpsavtaler.',
     },
     image: 'statkraft.jpg',
     urlName: 'statkraft',
@@ -741,7 +741,7 @@ export const projects: ProjectObjectType = {
     name: 'Sunlit Sea',
     description: {
       en: 'Sunlit Sea develops technology for floating solar cell installations that opens up a completely new market for solar cells at sea. KodeWorks develops sensor solutions for solar cell installation, as well as monitoring and enrichment of data from the sensors to optimize production and maintenance.',
-      no: 'Sunlit Sea utvikler en ny type teknologi for flytende solcelleinstallasjoner som åpner et helt nytt marked for solceller på hav. Kodeworks utvikler sensorløsninger for solcelleinstallasjonen, samt overvåking og berikning av data fra sensorene for å optimalisere produksjon og vedlikehold.',
+      no: 'Sunlit Sea utvikler en ny type teknologi for flytende solcelleinstallasjoner som åpner et helt nytt marked for solceller på hav. KodeWorks utvikler sensorløsninger for solcelleinstallasjonen, samt overvåking og berikning av data fra sensorene for å optimalisere produksjon og vedlikehold.',
     },
     image: 'sunlitsea1.jpg',
     urlName: 'sunlitsea',
@@ -831,7 +831,7 @@ export const projects: ProjectObjectType = {
           type: 'texts',
           value: [
             'Med omfattende ambisjoner innen flytende solkraft er Sunlit Sea en sentral aktør innen feltet. Om man ser på utviklingen de har hatt på tvers av hele teknologi-stacken, underbygges dette ytterligere.',
-            'Kodeworks har stått sentralt i denne utviklingen, og jobber i dag på fronter som hardwaredesign og softwareutvikling for monitorering, vedlikehold og optimalisering av kraftproduksjon. Rune Holmgren i Kodeworks har jobbet med elektronikk og sensorikk i flottørmodulene, og forteller om sin erfaring fra Sunlit Sea.',
+            'KodeWorks har stått sentralt i denne utviklingen, og jobber i dag på fronter som hardwaredesign og softwareutvikling for monitorering, vedlikehold og optimalisering av kraftproduksjon. Rune Holmgren i KodeWorks har jobbet med elektronikk og sensorikk i flottørmodulene, og forteller om sin erfaring fra Sunlit Sea.',
           ],
         },
         {
@@ -844,19 +844,19 @@ export const projects: ProjectObjectType = {
         {
           type: 'texts',
           value: [
-            'Kodeworks har som medgrunnlegger av Sunlit Sea vært med fra starten i 2019. Som startup med store ambisjoner, og i et krevende, tverrfaglig felt som enda ikke har modnet, finnes mange barrierer som må overkommes for å kunne skrive en suksesshistorie.',
+            'KodeWorks har som medgrunnlegger av Sunlit Sea vært med fra starten i 2019. Som startup med store ambisjoner, og i et krevende, tverrfaglig felt som enda ikke har modnet, finnes mange barrierer som må overkommes for å kunne skrive en suksesshistorie.',
           ],
         },
         {
           type: 'output',
           value:
-            'Kodeworks har som medgrunnlegger av Sunlit Sea vært med fra starten i 2019. Som startup med store ambisjoner, og i et krevende, tverrfaglig felt som enda ikke har modnet, finnes mange barrierer som må overkommes for å kunne skrive en suksesshistorie.',
+            'KodeWorks har som medgrunnlegger av Sunlit Sea vært med fra starten i 2019. Som startup med store ambisjoner, og i et krevende, tverrfaglig felt som enda ikke har modnet, finnes mange barrierer som må overkommes for å kunne skrive en suksesshistorie.',
         },
         {
           type: 'texts',
           value: [
-            'Sunlit Sea har i flere omganger samarbeidet med Kodeworks om dette og vi har bidratt innen et bredt spekter av områder. Fra 3D-renderings av produksjon og deployment, og nettside med Sunlit Sea’s Smart Quoter-tjeneste, ned til sensor- og kommunikasjonselektronikken som sitter på hver modul, har Kodeworks designet og implementert nødvendig teknologi fra bunnen av.',
-            'Gjennom godt samarbeid og gjensidig kompetansebygging har Kodeworks vært essensielle for Sunlit Sea’s informasjonsteknologiske fortrinn.',
+            'Sunlit Sea har i flere omganger samarbeidet med KodeWorks om dette og vi har bidratt innen et bredt spekter av områder. Fra 3D-renderings av produksjon og deployment, og nettside med Sunlit Sea’s Smart Quoter-tjeneste, ned til sensor- og kommunikasjonselektronikken som sitter på hver modul, har KodeWorks designet og implementert nødvendig teknologi fra bunnen av.',
+            'Gjennom godt samarbeid og gjensidig kompetansebygging har KodeWorks vært essensielle for Sunlit Sea’s informasjonsteknologiske fortrinn.',
           ],
         },
         {
@@ -882,8 +882,8 @@ export const projects: ProjectObjectType = {
         {
           type: 'texts',
           value: [
-            'Bred og dokumenterbar domenekunnskap er viktig i en relativt ung industri. I den hensikt jobber Sunlit Sea med å identifisere solcellepanelenes ytelsesgrad i ulike havtilstander gitt et sett bølger, i et samarbeid mellom Kodeworks og IFE for å kombinere historisk data med egen sensor- og prosesseringsteknologi. Dette arbeidet inngår i state-of-the-art forskning innen feltet og vil bli kilden til flere vitenskapelige publiseringer fra IFE.',
-            'Kodeworks fortsetter å levere utviklingstjenester for Sunlit Sea og ser fram til å sammen løse mange spennende utfordringer i tiden framover.',
+            'Bred og dokumenterbar domenekunnskap er viktig i en relativt ung industri. I den hensikt jobber Sunlit Sea med å identifisere solcellepanelenes ytelsesgrad i ulike havtilstander gitt et sett bølger, i et samarbeid mellom KodeWorks og IFE for å kombinere historisk data med egen sensor- og prosesseringsteknologi. Dette arbeidet inngår i state-of-the-art forskning innen feltet og vil bli kilden til flere vitenskapelige publiseringer fra IFE.',
+            'KodeWorks fortsetter å levere utviklingstjenester for Sunlit Sea og ser fram til å sammen løse mange spennende utfordringer i tiden framover.',
           ],
         },
         {
@@ -900,7 +900,7 @@ export const projects: ProjectObjectType = {
     name: 'TechnipFMC',
     description: {
       en: 'As a worldwide energy service company, TechnipFMC has large customers in Norway. Sensors are used for real-time monitoring of flow through installations, and heavy mathematical data modeling to optimize operations. KodeWorks assists in increasing the scalability and performance of the application portfolio, as well as modernizing the deployment system in the cloud.',
-      no: 'Som et verdensomspennende energi-serviceselskap har TechnipFMC store kunder i Norge. Sensorer brukes til sanntids overvåking av flyt gjennom installasjoner, og tung matematisk datamodellering for å optimalisere driften. Kodeworks bistår med å øke skalerbarhet og ytelse i applikasjonsporteføljen, samt å modernisere systemet for deployment i skyen.',
+      no: 'Som et verdensomspennende energi-serviceselskap har TechnipFMC store kunder i Norge. Sensorer brukes til sanntids overvåking av flyt gjennom installasjoner, og tung matematisk datamodellering for å optimalisere driften. KodeWorks bistår med å øke skalerbarhet og ytelse i applikasjonsporteføljen, samt å modernisere systemet for deployment i skyen.',
     },
     image: 'technipfmc.jpg',
     urlName: 'technipfmc',
@@ -959,7 +959,7 @@ export const projects: ProjectObjectType = {
           type: 'texts',
           value: [
             'Thomson Reuters er et kanadisk multimediaselskap med HQ i Toronto, har kontorer i hele verden og er en av verdenslederne innen informasjonsformidling. Kundene av Thomson Reuters Point Carbon inkluderer banker, tradere, porteføljeforvaltere, selskaper og myndigheter; kort sagt alle med behov for dyp innsikt på tvers av karbon-, forsynings-, olje-, gass- og industrimarkedene. Data fra mange ulike kilder innhentes, behandles og berikes ved å ses i sammenheng. Prosjektet gikk ut på å tilgjengeliggjøre utsnitt av dataene for klienter på en rask og effektiv måte.',
-            'Kodeworks ble engasjert hos Reuters for å bidra i utvikling av et nytt web-grensesnitt for tidseffektive klientforespørsler om prognoser på energidata. Sammen med en prosjektleder fra Thomson og to utviklere fra et annet konsulentfirma',
+            'KodeWorks ble engasjert hos Reuters for å bidra i utvikling av et nytt web-grensesnitt for tidseffektive klientforespørsler om prognoser på energidata. Sammen med en prosjektleder fra Thomson og to utviklere fra et annet konsulentfirma',
           ],
         },
         {
@@ -1006,8 +1006,8 @@ export const projects: ProjectObjectType = {
   vaskehjelp: {
     name: 'Vaskehjelp',
     description: {
-      en: 'Vaskehjelp is a marketplace that connects cleaning personnel and customers and takes care of payment and other paperwork. With good help from Kodeworks, Vaskehjelp has created mobile applications for iOS and Android natively and an online store.',
-      no: 'Vaskehjelp er en markedsplass som kobler rengjører og kunde sammen, samt tar av seg betaling og annet papirarbeid. Kodeworks har bistått med utvikling av iOS- og Android-applikasjon.',
+      en: 'Vaskehjelp is a marketplace that connects cleaning personnel and customers and takes care of payment and other paperwork. With good help from KodeWorks, Vaskehjelp has created mobile applications for iOS and Android natively and an online store.',
+      no: 'Vaskehjelp er en markedsplass som kobler rengjører og kunde sammen, samt tar av seg betaling og annet papirarbeid. KodeWorks har bistått med utvikling av iOS- og Android-applikasjon.',
     },
     image: 'vaskehjelp1.jpg',
     extras: {
@@ -1027,12 +1027,12 @@ export const projects: ProjectObjectType = {
         type: 'texts',
         value: [
           {
-            en: 'Peter Ringset joined Kodeworks in 2021, but we already knew him well from the time at Vaskehjelp, where we worked on a project together. Vaskehjelp is a marketplace that connects professional cleaners and customers, and they offer a unique approach to digitizing cleaning services. Peter is here to tell us a bit about what it was like working on this project.',
-            no: 'Peter Ringset begynte i Kodeworks i 2021, men allerede på vei inn døra kjente vi ham godt fra før gjennom å ha jobbet sammen med Kodeworks på prosjekt hos Vaskehjelp. Vaskehjelp er en markedsplass for profesjonelle renholdere og kunder med en unik tilnærming til digitalisering av renholdstjenester. Peter skal fortelle litt om hvordan det var å jobbe med dette prosjektet.',
+            en: 'Peter Ringset joined KodeWorks in 2021, but we already knew him well from the time at Vaskehjelp, where we worked on a project together. Vaskehjelp is a marketplace that connects professional cleaners and customers, and they offer a unique approach to digitizing cleaning services. Peter is here to tell us a bit about what it was like working on this project.',
+            no: 'Peter Ringset begynte i KodeWorks i 2021, men allerede på vei inn døra kjente vi ham godt fra før gjennom å ha jobbet sammen med KodeWorks på prosjekt hos Vaskehjelp. Vaskehjelp er en markedsplass for profesjonelle renholdere og kunder med en unik tilnærming til digitalisering av renholdstjenester. Peter skal fortelle litt om hvordan det var å jobbe med dette prosjektet.',
           },
           {
-            en: 'After trying different solutions for their web application, Kodeworks was brought on board during the summer of 2018. Vaskehjelp was already underway with the web app development and had grand ambitions of getting their solution on the market in the not too distant future.',
-            no: 'Kodeworks ble med inn i Vaskehjelp-teamet sommeren 2018. Utviklingen var på det tidspunkt sentrert rundt webapper, og kunden hadde store ambisjoner om å få løsningen snarlig ut i markedet.',
+            en: 'After trying different solutions for their web application, KodeWorks was brought on board during the summer of 2018. Vaskehjelp was already underway with the web app development and had grand ambitions of getting their solution on the market in the not too distant future.',
+            no: 'KodeWorks ble med inn i Vaskehjelp-teamet sommeren 2018. Utviklingen var på det tidspunkt sentrert rundt webapper, og kunden hadde store ambisjoner om å få løsningen snarlig ut i markedet.',
           },
         ],
       },
@@ -1076,8 +1076,8 @@ export const projects: ProjectObjectType = {
         type: 'texts',
         value: [
           {
-            en: "After the release of the first version, Kodeworks continued the work with Vaskehjelp. They became a source of continuity regarding the improvement and expansion of the App. The combination of Vaskehjelp setting high goals and providing market analysis with the developers' competence became the key to creating and further developing the product.",
-            no: 'Etter utgivelsen av den første versjonen fortsatte Kodeworks arbeidet med Vaskehjelp, og ble en kilde til kontinuerlig forbedring og utvidelse av appen. Kundens ambisiøse mål, backet av gode markedsanalyser, og kombinert med utviklernes høye kompetanse, ble nøkkelen til en kommersiell suksess.',
+            en: "After the release of the first version, KodeWorks continued the work with Vaskehjelp. They became a source of continuity regarding the improvement and expansion of the App. The combination of Vaskehjelp setting high goals and providing market analysis with the developers' competence became the key to creating and further developing the product.",
+            no: 'Etter utgivelsen av den første versjonen fortsatte KodeWorks arbeidet med Vaskehjelp, og ble en kilde til kontinuerlig forbedring og utvidelse av appen. Kundens ambisiøse mål, backet av gode markedsanalyser, og kombinert med utviklernes høye kompetanse, ble nøkkelen til en kommersiell suksess.',
           },
         ],
       },
@@ -1099,8 +1099,8 @@ export const projects: ProjectObjectType = {
             no: 'Android- og iOS-appene ble opprinnelig utviklet native for å få benyttet plattformenes look-and-feel. Over tid har Vaskehjelp benyttet .NET-plattformen for sin komplette løsning. Ved å bruke Xamarin til apputvikling og Blazor til webutvikling oppnår Vaskehjelp gjenbruk av forretningslogikk samt god utnyttelse av sin interne kjernekompetanse i C#.',
           },
           {
-            en: 'Vaskehjelp continues to be a central player as a cleaning service platform, and Kodeworks says thanks for the opportunity to be a part of the commercialization of an inspiring startup.',
-            no: 'Vaskehjelp er og blir en sentral aktør innen digitale renholdstjenester, og Kodeworks takker for muligheten til å være en del av kommersialiseringen av en inspirerende startup.',
+            en: 'Vaskehjelp continues to be a central player as a cleaning service platform, and KodeWorks says thanks for the opportunity to be a part of the commercialization of an inspiring startup.',
+            no: 'Vaskehjelp er og blir en sentral aktør innen digitale renholdstjenester, og KodeWorks takker for muligheten til å være en del av kommersialiseringen av en inspirerende startup.',
           },
         ],
       },

@@ -35,7 +35,7 @@ export default function Nyutdannede(): JSX.Element {
               Vi inviterer deg til en samtale for å bli kjent med oss, og du får bekreftet/avkreftet
               alt vi skryter av på hjemmesiden
             </li>
-            <li>Du blir overbevist at Kodeworks er den riktige plassen å jobbe</li>
+            <li>Du blir overbevist at KodeWorks er den riktige plassen å jobbe</li>
             <li>
               Vi gratulerer deg med jobb, du er superhappy over å ha tatt den beste beslutningen i
               ditt liv, og eventyret kan starte!

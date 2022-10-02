@@ -19,7 +19,7 @@ export default function Nyutdannede(): JSX.Element {
 
           <p>
             Prosjektene endrer seg stadig, og dine tanker og ønsker er med på å styre hvilke
-            prosjekter vi jobber med. Som erfaren utvikler i Kodeworks er du med på å utforme både
+            prosjekter vi jobber med. Som erfaren utvikler i KodeWorks er du med på å utforme både
             kundeprosjekter og interne prosjekter. Nedenfor finner du lister med noen teknologier
             som er sentralt på prosjektene våre i dag. Ingen kan alt, men kanskje du kjenner deg
             igjen i flere av dem?

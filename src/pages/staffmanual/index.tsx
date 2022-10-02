@@ -80,7 +80,7 @@ export default function StaffManual(): JSX.Element {
 
             <p>
               Arbeidstid er 8 timer per dag, med en 30 minutters lunsjpause. I
-              Kodeworks opererer vi med en kjernetid mellom 9-15, med mulighet og rom til å kunne
+              KodeWorks opererer vi med en kjernetid mellom 9-15, med mulighet og rom til å kunne
               være fleksibel under arbeidstiden. I et selskap der mennesker med kompetanse er
               hovedproduktet, vet vi at å jobbe tett med kollegaene våre gir det beste resultatet.
               Vi vet og at hverdagslivet kan by på utfordringer der man av og til må tilpasse
@@ -124,7 +124,7 @@ export default function StaffManual(): JSX.Element {
               hovedsak å finne oppdrag som ikke er for langt fra våre egne kontorer.
             </p>
             <p>
-              Kodeworks vil dekke eventuelle reiseutgifter for oppdrag som påløper ytterligere
+              KodeWorks vil dekke eventuelle reiseutgifter for oppdrag som påløper ytterligere
               kostnader og betydelig lengre reisevei enn det normalt ville vært til et av våre
               kontorer.
             </p>
@@ -147,12 +147,12 @@ export default function StaffManual(): JSX.Element {
             <h4>Lønn</h4>
 
             <p>
-              I Kodeworks har vi som mål at lønn ikke skal være noe du trenger å bekymre deg for. Vi
+              I KodeWorks har vi som mål at lønn ikke skal være noe du trenger å bekymre deg for. Vi
               har derfor ingen individuelle lønnsjusteringer der man må forhandle seg frem til bedre
               vilkår. Som ansatt skal du ikke behøve å be om å få det du fortjener. Det skal komme
               automatisk. Vi har derfor valgt en lønnsmodell som gir alle våre ansatte lik lønn for
               likt grunnlag, som baseres på den ansattes erfaring, i hovedsak antall års erfaring.
-              Alle Kodeworks-ansatte har innsikt i hva andre i selskapet tjener. En oversikt over
+              Alle KodeWorks-ansatte har innsikt i hva andre i selskapet tjener. En oversikt over
               lønnstabellen for inneværende og tidligere år finnes under “Lønn” i fellesmappen på
               Google Drive.
             </p>
@@ -171,8 +171,8 @@ export default function StaffManual(): JSX.Element {
             <h4>Lønnstrinn og lønnsjustering</h4>
 
             <p>
-              Kodeworks har en felles lønnsmodell som gir forutsigbarhet og trygghet for de ansatte.
-              Når man får et jobbtilbud fra Kodeworks vil man få presentert en årlig fastlønn som er
+              KodeWorks har en felles lønnsmodell som gir forutsigbarhet og trygghet for de ansatte.
+              Når man får et jobbtilbud fra KodeWorks vil man få presentert en årlig fastlønn som er
               gjeldende ved oppstartsdato. Lønnsnivået bestemmes ut i fra lønnstrinnet ditt i
               inneværende års lønnstabell.
             </p>
@@ -185,7 +185,7 @@ export default function StaffManual(): JSX.Element {
             </p>
             <p>
               Lønnstrinnet ditt fastsettes basert på det totale antallet måneder fulltids relevant
-              arbeidserfaring, i tillegg til ansiennitet opparbeidet i Kodeworks. Lønnstrinnet ditt
+              arbeidserfaring, i tillegg til ansiennitet opparbeidet i KodeWorks. Lønnstrinnet ditt
               heves med ett trinn hvert hele år med arbeidserfaring du opparbeider deg. Dette
               medfører at du i tillegg kan oppleve en lønnsjustering også utenfor den felles
               lønnsjusteringen som skjer i januar. Du vil få fastsatt hvilken måned dette faller på
@@ -225,7 +225,7 @@ export default function StaffManual(): JSX.Element {
             <h4>Pensjon og forsikring</h4>
 
             <p>
-              Kodeworks setter av 7% til pensjonssparing. Dette gjelder allerede fra 0G og opp til
+              KodeWorks setter av 7% til pensjonssparing. Dette gjelder allerede fra 0G og opp til
               12G, der G er folketrygdens grunnbeløp.
             </p>
             <p>
@@ -267,7 +267,7 @@ export default function StaffManual(): JSX.Element {
             <h4>Kurs og konferanse</h4>
 
             <p>
-              Kodeworks oppfordrer deg til å delta på kurs og konferanser. Tidligere har vi alle
+              KodeWorks oppfordrer deg til å delta på kurs og konferanser. Tidligere har vi alle
               dratt samlet på for eksempel JavaZone, men det er forventet at de ansattes interesser
               og preferanser for faglig forfriskning kan tilfredsstille best på andre steder også.
               Dersom du ønsker å delta på kurs eller konferanser flere ganger i året kan du gjerne
@@ -275,7 +275,7 @@ export default function StaffManual(): JSX.Element {
             </p>
             <p>
               Dersom du bidrar til fellesskapet gjennom å holde kurs, foredrag og liknende vil
-              Kodeworks også dekke utgifter til dette innen rimelighetens grenser.
+              KodeWorks også dekke utgifter til dette innen rimelighetens grenser.
             </p>
 
             <h4>Helse</h4>
@@ -289,7 +289,7 @@ export default function StaffManual(): JSX.Element {
             </p>
             <p>
               Vi legger også til rette for at du skal kunne være fysisk aktiv. I Trondheim har vi en
-              bedriftsavtale med 3T. Her har flere Kodeworks-ansatte for eksempel ukentlig
+              bedriftsavtale med 3T. Her har flere KodeWorks-ansatte for eksempel ukentlig
               Squash-trening. Du trenger ikke benytte deg av dette dersom det er mer praktisk for
               deg å trene andre steder. Vi dekker et tilsvarende beløp med andre tilbydere i
               tillegg. I Oslo er det ingen spesiell bedriftsavtale, så her står man fritt til å
@@ -318,7 +318,7 @@ export default function StaffManual(): JSX.Element {
               <li>
                 Dersom du blir syk underveis i arbeidsdagen, vil du kunne benytte velferdspermisjon
                 til dette. Dette vil ikke telle som en sykedag. Dette er en ekstra fleksibilitet til
-                deg som ansatt i Kodeworks.
+                deg som ansatt i KodeWorks.
               </li>
               <li>
                 Sykemelding fra lege kreves dersom du er syk i mer enn 3 sammenhengende dager. Du
@@ -359,7 +359,7 @@ export default function StaffManual(): JSX.Element {
             <h4>Ansattgoder</h4>
 
             <p>
-              Kodeworks har en rekke goder som gjør at du som ansatt kan ha en fleksibel, trygg og
+              KodeWorks har en rekke goder som gjør at du som ansatt kan ha en fleksibel, trygg og
               forutsigbar hverdag. Noen av disse godene må registreres i timeføringssystemet, slik
               som foreldrepermisjon og velferdspermisjon. Eventuelle utlegg man har, for eksempel
               knyttet til ansattbudsjettet, skal registreres i regnskapssystemet og vil utbetales
@@ -395,7 +395,7 @@ export default function StaffManual(): JSX.Element {
 
             <p>
               For å hjelpe til med å gjøre både planlagte og uforutsette hendelser i livet litt
-              lettere å håndtere, har Kodeworks en rekke velferdspermisjoner i tillegg til det som
+              lettere å håndtere, har KodeWorks en rekke velferdspermisjoner i tillegg til det som
               er påkrevd av loven.
             </p>
 
@@ -417,7 +417,7 @@ export default function StaffManual(): JSX.Element {
             <h2>Timeføring</h2>
 
             <p>
-              Timeføring er noe som kreves i de fleste konsulentselskaper, og Kodeworks er intet
+              Timeføring er noe som kreves i de fleste konsulentselskaper, og KodeWorks er intet
               unntak. Derimot har vi, i likhet med mange andre IT-konsulentselskaper, utviklet vårt
               eget timeføringssystem tilpasset oss for å gjøre prosessen enklere.
             </p>
@@ -509,10 +509,10 @@ export default function StaffManual(): JSX.Element {
             <h2>Ansettelse</h2>
 
             <p>
-              En ansettelse er en svært viktig investering for Kodeworks. De ansatte er ikke bare
-              personer som vil bidra til et godt arbeidsmiljø, men de er og det produktet Kodeworks
+              En ansettelse er en svært viktig investering for KodeWorks. De ansatte er ikke bare
+              personer som vil bidra til et godt arbeidsmiljø, men de er og det produktet KodeWorks
               leverer. Det er derfor et stort fokus på å ansatte dyktige medarbeidere som søker og
-              mestrer utfordringer. Det er de ansatte som utgjør Kodeworks.
+              mestrer utfordringer. Det er de ansatte som utgjør KodeWorks.
             </p>
           </article>
 
@@ -520,7 +520,7 @@ export default function StaffManual(): JSX.Element {
             <h2>Prosess og onboarding</h2>
 
             <p>
-              I Kodeworks vil vi at du som nyansatt skal føle at prosessen fra tiden du har tatt
+              I KodeWorks vil vi at du som nyansatt skal føle at prosessen fra tiden du har tatt
               kontakt med oss, til kontrakten er signert du har begynt å jobbe, har vært en god
               opplevelse.
             </p>
@@ -572,7 +572,7 @@ export default function StaffManual(): JSX.Element {
             <p>
               Som ny fulltidsansatt har du en prøvetid på 6 måneder fra kontraktsfestet
               oppstartsdato. Prøvetiden er gjensidig. Med dette menes at den er til både for deg som
-              nyansatt og Kodeworks som selskap for å eventuelt avslutte arbeidsforholdet dersom
+              nyansatt og KodeWorks som selskap for å eventuelt avslutte arbeidsforholdet dersom
               omstendighetene ikke var som forventet. Under prøveperioden har man oppsigelsestid på
               1 måned.
             </p>
@@ -589,7 +589,7 @@ export default function StaffManual(): JSX.Element {
             <h2>Stillingstyper og roller</h2>
 
             <p>
-              De aller fleste ansatte i Kodeworks er utviklere og har stilling som konsulent. I
+              De aller fleste ansatte i KodeWorks er utviklere og har stilling som konsulent. I
               tillegg finnes det noen stillinger under ledelse og administrasjon, mer spesifikt
               daglig leder, økonomimedarbeider og selger. Enkelte ansatte er i tillegg
               styremedlemmer i de ulike avdelingene. Hver avdeling har en ledergruppe, som normalt
@@ -615,14 +615,14 @@ export default function StaffManual(): JSX.Element {
 
             <p>
               Som konsulent vil du tilbringe mye av tiden ute på oppdrag hos kundene våre. For oss
-              er det viktig at alle våre konsulenter er gode ambassadører for Kodeworks. Dette
+              er det viktig at alle våre konsulenter er gode ambassadører for KodeWorks. Dette
               gjelder både i form av å levere resultater med høy kvalitet, utfordre kunden når det
               passer seg for å skape de beste løsningene, men også forsøke å forstå kunden og deres
               prosesser utover prosjektet. Ofte viser det seg at det er andre utfordringer kunden
-              også trenger hjelp til, som kan resultere i nye oppdrag for Kodeworks.
+              også trenger hjelp til, som kan resultere i nye oppdrag for KodeWorks.
             </p>
             <p>
-              En av hovedkarakteristikkene til konsulentene i Kodeworks er at de er brenner for
+              En av hovedkarakteristikkene til konsulentene i KodeWorks er at de er brenner for
               faget. Vi tilrettelegger for faglig utvikling gjennom blant annet fagdager,
               fagsamtaler, men håper også at du følger med og holder deg oppdatert på nye trender og
               teknologier utover dette.
@@ -664,10 +664,10 @@ export default function StaffManual(): JSX.Element {
               oppsigelsen ble sendt, med mindre annet er eksplisitt avtalt.
             </p>
             <p>
-              Dersom du skal forlate Kodeworks vil du måtte returnere utstyr du har fått utlevert.
-              Avhengig av hvor gammelt utstyret er og hvilken nytteverdi det har for Kodeworks vil
+              Dersom du skal forlate KodeWorks vil du måtte returnere utstyr du har fått utlevert.
+              Avhengig av hvor gammelt utstyret er og hvilken nytteverdi det har for KodeWorks vil
               du kunne kjøpe det ut etter gjeldende avskrivningsregler. Dette kan for eksempel være
-              arbeidsmaskinen din eller en mobiltelefon. Kodeworks ønsker i utgangspunktet ikke å
+              arbeidsmaskinen din eller en mobiltelefon. KodeWorks ønsker i utgangspunktet ikke å
               kreve tilbake utstyr som ikke enkelt kan benyttes av andre ansatte eller omgjøres til
               kapital.
             </p>

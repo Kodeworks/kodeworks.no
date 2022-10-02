@@ -15,19 +15,19 @@ const Jobb: NextPageWithLayout = () => {
         <div className={`career-mainheader`}>
           <h1>
             Jobbe
-            <br />i Kodeworks?
+            <br />i KodeWorks?
           </h1>
 
           <div className={`career-mainheader-content`}>
             <img src="/static/photos/EOSR7759.jpg" width="320" height="240" alt="" />
             <div className={`career-mainheader-content-text`}>
               <p>
-                Er du nyutdannet? I jobb? I Kodeworks ser vi etter deg som brenner for faget, er
+                Er du nyutdannet? I jobb? I KodeWorks ser vi etter deg som brenner for faget, er
                 nysgjerrig, og har lyst til å gjøre en forskjell!
               </p>
               <p>
                 Vi tror på det å ha en åpen kultur. Skulle det være salgsarbeid, bestemmelser eller
-                lønn. Alle våre betingelser, rutiner og tanker om hvordan ting i Kodeworks fungerer
+                lønn. Alle våre betingelser, rutiner og tanker om hvordan ting i KodeWorks fungerer
                 finner du i{' '}
                 <Link href="staffmanual">
                   <a>personalhåndboka</a>
