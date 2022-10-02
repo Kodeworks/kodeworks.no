@@ -18,10 +18,10 @@ export default function ProjectHeaderBody({ project }: Prop): JSX.Element {
   usePageTitle(fmt(project.name, locale!));
 
   return (
-    <div id="page-project">
+    <>
       <ProjectHeader project={project} />
       <ProjectBody project={project} />
-    </div>
+    </>
   );
 }
 
