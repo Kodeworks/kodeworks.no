@@ -144,6 +144,32 @@ export const projects: ProjectObjectType = {
       'Swagger',
     ],
   },
+  'dnb-developer-portal': {
+    name: 'developer.dnb.no',
+    description: {
+      en: 'DNB er Norges største bank, ledende finanskonsern og et av landets mest internasjonale selskaper, med over 2 millioner personkunder, 8000 ansatte fordelt på kontorer i over 18 land. Banken jobber hver dag for at kunden skal få en enklere hverdag, og tilbyr et komplett tilbud av finansielle tjenester gjennom mobil, nettbank, bankkontoer og internasjonale kontorer.',
+      no: 'DNB er Norges største bank, ledende finanskonsern og et av landets mest internasjonale selskaper, med over 2 millioner personkunder, 8000 ansatte fordelt på kontorer i over 18 land. Banken jobber hver dag for at kunden skal få en enklere hverdag, og tilbyr et komplett tilbud av finansielle tjenester gjennom mobil, nettbank, bankkontoer og internasjonale kontorer.',
+    },
+    image: 'dnb-developer-portal.jpg',
+    urlName: 'dnb',
+    technologies: [
+      'Node',
+      'TypeScript',
+      'JavaScript',
+      'Vue.js',
+      'Jest',
+      'Jenkins',
+      'Git',
+      'BitBucket',
+      'Jira',
+      'AuroraDB',
+      'PostgreSQL',
+      'DynamoDB',
+      'NoSQL',
+      'Lambda',
+      'Swagger',
+    ],
+  },
   flir: {
     name: 'Teledyne FLIR',
     description: {
