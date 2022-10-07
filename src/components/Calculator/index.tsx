@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import {useState} from 'react';
 
 import style from './calculator.module.css';
 
@@ -40,7 +40,8 @@ export default function Calculator(): JSX.Element {
   const [education, setEducation] = useState<Education>(Education.Bachelor);
 
   function handleSeniorityChange(event: React.FormEvent<HTMLInputElement>) {
-    setSeniority(+event.currentTarget.value);
+    if (event.currentTarget.value)
+      setSeniority(+event.currentTarget.value);
   }
 
   function handleEducationChange(event: React.FormEvent<HTMLInputElement>) {
@@ -61,6 +62,7 @@ export default function Calculator(): JSX.Element {
     return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ');
   }
 
+  wages.hasOwnProperty(seniority + education) ? wages[seniority + education] : wages[20]
   return (
     <div className={`${style['calculator']}`}>
       <h2>Hva kommer du til å tjene?</h2>
@@ -111,7 +113,7 @@ export default function Calculator(): JSX.Element {
 
       <h4>Det vil gi en årslønn på</h4>
       <p className={`${style['calculator-salary']}`}>
-        {numberWithSeperators(+wages[seniority + education])} kr
+        {numberWithSeperators(wages.hasOwnProperty(seniority + education) ? +wages[seniority + education] : +wages[Object.keys(wages).length - 1])} kr
       </p>
     </div>
   );
