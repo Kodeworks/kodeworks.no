@@ -169,6 +169,12 @@ const people: Person[] = [
     email: 'andreas@kodeworks.no',
     projects: [projects.inatur, projects.dnb],
     image: '/static/photos/people/andreas.jpg',
+    urls: [
+      {
+        url: 'https://www.linkedin.com/in/andreas-norstein/',
+        name: 'linkedin',
+      },
+    ],
   },
   {
     name: 'Lars Ødegaard',
