@@ -63,8 +63,9 @@ export type ProjectContentOutput = {
   value: DictText
 }
 
+type SocialMediaName = 'twitter' | 'linkedin' | 'github';
 export type SocialUrl = {
-  name: string;
+  name: SocialMediaName;
   url: string;
 };
 
