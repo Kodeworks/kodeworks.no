@@ -62,7 +62,6 @@ export default function Calculator(): JSX.Element {
     return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ');
   }
 
-  wages.hasOwnProperty(seniority + education) ? wages[seniority + education] : wages[20]
   return (
     <div className={`${style['calculator']}`}>
       <h2>Hva kommer du til å tjene?</h2>
