@@ -1,4 +1,4 @@
-import {useState} from 'react';
+import { useState } from 'react';
 
 import style from './calculator.module.css';
 
@@ -40,8 +40,7 @@ export default function Calculator(): JSX.Element {
   const [education, setEducation] = useState<Education>(Education.Bachelor);
 
   function handleSeniorityChange(event: React.FormEvent<HTMLInputElement>) {
-    if (event.currentTarget.value)
-      setSeniority(+event.currentTarget.value);
+    setSeniority(+event.currentTarget.value);
   }
 
   function handleEducationChange(event: React.FormEvent<HTMLInputElement>) {
