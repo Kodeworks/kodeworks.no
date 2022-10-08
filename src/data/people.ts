@@ -199,31 +199,41 @@ const people: Person[] = [
     email: 'thomas@kodeworks.no',
     projects: [projects.sunlitsea],
     image: '/static/photos/people/thomas.jpg',
-  },  
+  },
   {
     name: 'Hanne Ødegård',
-    email: 'hanne@kodeworks.no',
+    email: 'hanne.odegard@kodeworks.no',
     projects: [],
     image: '',
-  }, 
+    urls: [
+      {
+        name: 'github',
+        url: 'https://github.com/hannekodegard',
+      },
+      {
+        name: 'linkedin',
+        url: 'https://www.linkedin.com/in/hanne-odegard/',
+      },
+    ],
+  },
   {
     name: 'Jakob Almelid',
     email: 'jakob@kodeworks.no',
     projects: [projects.administration],
     image: '',
-  }, 
-   {
+  },
+  {
     name: 'Thomas Wold',
     email: 'thomas.wold@kodeworks.no',
     projects: [],
     image: '',
-  }, 
-   {
+  },
+  {
     name: 'Jonas Myren Mo',
     email: 'jonas@kodeworks.no',
     projects: [projects.obos],
     image: '',
-  },  
+  },
   {
     name: 'Espen Hellerud',
     email: 'espen@kodeworks.no',
