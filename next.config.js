@@ -2,7 +2,7 @@ module.exports = {
   i18n: {
     locales: ['no', 'en'],
     localeDetection: false,
-    defaultLocale: 'no'
+    defaultLocale: 'no',
   },
   pageExtensions: ['tsx'],
   swcMinify: true,

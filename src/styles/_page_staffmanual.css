@@ -1,5 +1,4 @@
 .search-results-container {
-
 }
 
 .search {
@@ -124,11 +123,10 @@
 .handbook-sidebar i {
   color: var(--color-green);
   font-weight: bolder;
-
 }
 
 .handbook-sidebar a {
-  border-bottom: 2px solid  var(--color-green);
+  border-bottom: 2px solid var(--color-green);
   line-height: 32px;
   text-decoration: none;
 }
@@ -155,7 +153,6 @@
   margin-bottom: 120px;
 }
 
-
 .handbook-content h2 {
   margin-top: 55px;
 }
@@ -169,7 +166,7 @@
 }
 
 @media (max-width: 660px),
-(max-device-width: 850px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  (max-device-width: 850px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
   .handbook-mainheader-content {
     padding-left: var(--gutter-size-mobile);
     padding-right: var(--gutter-size-mobile);

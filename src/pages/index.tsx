@@ -1,5 +1,7 @@
 import { useContext, useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
+import Link from 'next/link';
+
 import { getLocale, fmt } from '../utils/useTranslation';
 import api from '../api';
 import { useClipText } from '../utils/useClipText';
@@ -10,7 +12,6 @@ import dictionary from './dict';
 
 import Button from '../components/Button';
 import PeopleList from '../components/PeopleList';
-import Link from 'next/link';
 
 function Home(): JSX.Element {
   const [highlightedProject, setHighlightedProject] = useState<Project>();

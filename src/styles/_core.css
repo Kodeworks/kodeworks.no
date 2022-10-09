@@ -9,7 +9,7 @@
   --spacer-medium: 60px;
 
   --color-green: #b7ff9f;
-  --color-grey: #E8E7E6;
+  --color-grey: #e8e7e6;
 }
 
 body {
@@ -36,24 +36,38 @@ strong {
   font-weight: bold;
 }
 
-
 /* Typography
 ------------------------------------------------------------------------------*/
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Natural Grotesk Bold", arial, sans-serif;
   font-weight: 600;
   line-height: 1.1;
   margin: 0 0 5px 0;
 }
 
-h1 { font-size: 42px; }
-h2 { font-size: 40px; }
-h3 { font-size: 28px; }
-h4 { font-size: 18px; }
-h5 { font-size: 14px;}
+h1 {
+  font-size: 42px;
+}
+h2 {
+  font-size: 40px;
+}
+h3 {
+  font-size: 28px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 14px;
+}
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
 .section-header-headline {
@@ -61,18 +75,27 @@ code {
 }
 
 @media (max-width: 660px),
-(max-device-width: 850px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
-  h1 { font-size: 36px; }
-  h2 { font-size: 28px; }
-  h3 { font-size: 20px; }
-  h4 { font-size: 16px; }
-  h5 { font-size: 14px;}
+  (max-device-width: 850px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  h1 {
+    font-size: 36px;
+  }
+  h2 {
+    font-size: 28px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  h4 {
+    font-size: 16px;
+  }
+  h5 {
+    font-size: 14px;
+  }
 
-  .section-header-headline  {
+  .section-header-headline {
     font-size: 42px;
   }
 }
-
 
 .container {
   padding-left: var(--gutter-size);
@@ -112,14 +135,12 @@ code {
   max-width: var(--page-max-width-narrow);
 }
 
-
 @media (max-width: 660px),
-(max-device-width: 850px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  (max-device-width: 850px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
   .section-hero {
     font-size: 18px;
   }
 }
-
 
 /* Article
 ------------------------------------------------------------------------------*/
@@ -129,7 +150,8 @@ code {
 
 /* List
 ------------------------------------------------------------------------------*/
-ul, ol {
+ul,
+ol {
   list-style-type: disc;
   margin-left: 30px;
   margin-bottom: 15px;
@@ -259,7 +281,6 @@ ul, ol {
   bottom: 15px;
 }
 
-
 /* Utilities
 ------------------------------------------------------------------------------*/
 .no-scroll {
@@ -268,7 +289,6 @@ ul, ol {
   position: fixed;
   width: 100%;
 }
-
 
 .btn {
   padding: 10px 10px 14px 10px;

@@ -7,7 +7,6 @@
   widht: 100%;
 }
 
-
 @media (max-width: 660px) {
   .section-legal {
     padding-left: var(--gutter-size);

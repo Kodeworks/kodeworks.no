@@ -16,7 +16,6 @@
   left: var(--gutter-size);
 }
 
-
 #main-header .main-header-content {
   background-color: var(--color-green);
   position: absolute;
@@ -33,14 +32,12 @@
   overflow: hidden;
 }
 
-
 #work > div {
   box-sizing: border-box;
   margin: 70px auto 70px auto;
   max-width: var(--page-max-width);
   padding: 60px var(--gutter-size) 60px var(--gutter-size);
 }
-
 
 /* About
 ------------------------------------------------------------------------------*/
@@ -73,7 +70,6 @@
   width: 80%;
 }
 
-
 /* People
 ------------------------------------------------------------------------------*/
 #people {
@@ -95,7 +91,6 @@
   max-width: 720px;
   width: 100%;
 }
-
 
 /* Projects
 ------------------------------------------------------------------------------*/
@@ -119,7 +114,6 @@
   width: 100%;
 }
 
-
 /* Work
 ------------------------------------------------------------------------------*/
 #work {
@@ -134,9 +128,8 @@
   font-size: 22px;
 }
 
-
 @media (max-width: 660px),
-(max-device-width: 850px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  (max-device-width: 850px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
   #projects,
   #about {
     width: auto;

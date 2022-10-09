@@ -32,10 +32,8 @@
   margin-bottom: 15px;
 }
 
-
 @media (max-width: 660px),
-(max-device-width: 850px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
-
+  (max-device-width: 850px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
   .privacy {
     padding-left: var(--gutter-size-mobile);
     padding-right: var(--gutter-size-mobile);

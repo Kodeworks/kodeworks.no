@@ -32,14 +32,7 @@ export const projects: ProjectObjectType = {
     },
     image: 'akerbp.jpg',
     urlName: 'akerbp',
-    technologies: [
-      'C#',
-      '.Net',
-      'Git',
-      'Visual Studio',
-      'React',
-      'XML',
-    ],
+    technologies: ['C#', '.Net', 'Git', 'Visual Studio', 'React', 'XML'],
   },
   avinor: {
     name: 'Avinor',
@@ -49,16 +42,7 @@ export const projects: ProjectObjectType = {
     },
     image: 'avinor.jpg',
     urlName: 'avinor',
-    technologies: [
-      'Java',
-      'Camel',
-      'Fuse',
-      'XML',
-      'Hazelcast',
-      'Scala',
-      'Akka',
-      'Nagios',
-    ],
+    technologies: ['Java', 'Camel', 'Fuse', 'XML', 'Hazelcast', 'Scala', 'Akka', 'Nagios'],
   },
   bnentreprenor: {
     name: 'BN Entreprenør',
@@ -178,13 +162,7 @@ export const projects: ProjectObjectType = {
     },
     image: 'flir.jpg',
     urlName: 'flir',
-    technologies: [
-      'Linux',
-      'Android',
-      'Unity',
-      'USB',
-      'Network',
-    ],
+    technologies: ['Linux', 'Android', 'Unity', 'USB', 'Network'],
   },
   gintel: {
     name: 'Gintel',
@@ -215,13 +193,7 @@ export const projects: ProjectObjectType = {
     },
     image: 'inatur-2.jpg',
     urlName: 'inatur',
-    technologies: [
-      'Java',
-      'Spring',
-      'MongoDB',
-      'JavaScript',
-      'React',
-    ],
+    technologies: ['Java', 'Spring', 'MongoDB', 'JavaScript', 'React'],
     content: {
       en: [
         {
@@ -389,15 +361,7 @@ export const projects: ProjectObjectType = {
     },
     image: 'lilbit1.jpg',
     urlName: 'lildog-with-lilbit',
-    technologies: [
-      'Java',
-      'Spring',
-      'Android',
-      'iOS',
-      'JavaScript',
-      'ReactJS',
-      'Tailwind',
-    ],
+    technologies: ['Java', 'Spring', 'Android', 'iOS', 'JavaScript', 'ReactJS', 'Tailwind'],
     content: {
       en: [
         {
@@ -569,15 +533,7 @@ export const projects: ProjectObjectType = {
     },
     image: 'pexip.jpg',
     urlName: 'pexip',
-    technologies: [
-      'Android',
-      'iOS',
-      'Gstreamer',
-      'Kotlin',
-      'Swift',
-      'UIKit',
-      'C',
-    ],
+    technologies: ['Android', 'iOS', 'Gstreamer', 'Kotlin', 'Swift', 'UIKit', 'C'],
   },
   remarkable: {
     name: 'Remarkable',
@@ -587,13 +543,7 @@ export const projects: ProjectObjectType = {
     },
     image: 'remarkable-2.jpg',
     urlName: 'remarkable',
-    technologies: [
-      'React',
-      'Node',
-      'TypeScript',
-      'Sanity',
-      'Google Cloud Platform',
-    ],
+    technologies: ['React', 'Node', 'TypeScript', 'Sanity', 'Google Cloud Platform'],
   },
   sesam: {
     name: 'Sesam',
@@ -737,7 +687,7 @@ export const projects: ProjectObjectType = {
       'Swift Package Manager',
       'Bambora',
       'UIKit',
-      'Data visualization'
+      'Data visualization',
     ],
   },
   statkraft: {
@@ -930,13 +880,7 @@ export const projects: ProjectObjectType = {
     },
     image: 'technipfmc.jpg',
     urlName: 'technipfmc',
-    technologies: [
-      'Java',
-      'Spring',
-      'Maven',
-      'Influx',
-      'CQRS',
-    ],
+    technologies: ['Java', 'Spring', 'Maven', 'Influx', 'CQRS'],
   },
   thalesnorway: {
     name: 'THALES Norway',
@@ -967,13 +911,7 @@ export const projects: ProjectObjectType = {
     },
     image: 'thomsonreuters/blockchain.jpg',
     urlName: 'thomsonreuters',
-    technologies: [
-      'Java',
-      'Akka',
-      'VertX',
-      'Oracle SQL',
-      'Hbase',
-    ],
+    technologies: ['Java', 'Akka', 'VertX', 'Oracle SQL', 'Hbase'],
     content: {
       en: [],
       no: [
@@ -1041,13 +979,7 @@ export const projects: ProjectObjectType = {
       no: 'Som kunde eller tilbyder av renholdstjenester kan det være utfordrende å bete seg korrekt. Gjeldende regler er kompliserte og det er dessverre en bransje med en del svart arbeid. Vaskehjelp hadde en idé om å digitalisere disse prosessene slik at kunde og tilbyder enkelt kunne benytte seg av tjenesten og operere trygt og lønnsomt.',
     },
     urlName: 'vaskehjelp',
-    technologies: [
-      'iOS',
-      'Android',
-      '.NET',
-      'Blazor',
-      'Tailwind',
-    ],
+    technologies: ['iOS', 'Android', '.NET', 'Blazor', 'Tailwind'],
     content: [
       {
         type: 'texts',

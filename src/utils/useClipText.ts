@@ -1,11 +1,11 @@
-import { useEffect,  useState } from 'react';
+import { useEffect, useState } from 'react';
 
 export function useClipText(ids: string[]): boolean {
   const [shouldClipText, setShouldClipText] = useState(false);
 
   useEffect(() => {
     function shouldClipText(): void {
-      let offsets: { top: number, bottom: number }[] = [];
+      let offsets: { top: number; bottom: number }[] = [];
 
       for (let id of ids) {
         const element = getElement(id);
@@ -18,7 +18,10 @@ export function useClipText(ids: string[]): boolean {
       let clipText = false;
 
       for (let i = 0; i < offsets.length; i++) {
-        if (window.pageYOffset + 40 > offsets[i].top && window.pageYOffset + 40 < offsets[i].bottom) {
+        if (
+          window.pageYOffset + 40 > offsets[i].top &&
+          window.pageYOffset + 40 < offsets[i].bottom
+        ) {
           clipText = true;
         }
       }
@@ -30,7 +33,7 @@ export function useClipText(ids: string[]): boolean {
 
     return function cleanupListener() {
       document.removeEventListener('scroll', shouldClipText);
-    }
+    };
   });
 
   return shouldClipText;

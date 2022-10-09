@@ -6,7 +6,7 @@
 #menu {
   height: 100;
   overflow: hidden;
-  transition: visibility .2s ease-in-out .1s, z-index .2s ease-in-out .1s;
+  transition: visibility 0.2s ease-in-out 0.1s, z-index 0.2s ease-in-out 0.1s;
   width: 100vw;
 
   position: fixed;
@@ -45,7 +45,7 @@
   right: 100%;
   bottom: 0;
   top: 0;
-  background-image: url('/static/photos/EOSR7735.jpg');
+  background-image: url("/static/photos/EOSR7735.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -122,7 +122,6 @@
   font-size: 14px;
 }
 
-
 /* Menu Footer - Links
 ------------------------------------------------------------------------------*/
 .menu-footer-links {
@@ -189,7 +188,6 @@
   margin: 4px;
   cursor: pointer;
 }
-
 
 /* Menu Headings
 ------------------------------------------------------------------------------*/

@@ -79,12 +79,12 @@ export default function StaffManual(): JSX.Element {
             <h2>Arbeidstid</h2>
 
             <p>
-              Arbeidstid er 8 timer per dag, med en 30 minutters lunsjpause. I
-              KodeWorks opererer vi med en kjernetid mellom 9-15, med mulighet og rom til å kunne
-              være fleksibel under arbeidstiden. I et selskap der mennesker med kompetanse er
-              hovedproduktet, vet vi at å jobbe tett med kollegaene våre gir det beste resultatet.
-              Vi vet og at hverdagslivet kan by på utfordringer der man av og til må tilpasse
-              arbeidstiden litt utenom kjernetiden.
+              Arbeidstid er 8 timer per dag, med en 30 minutters lunsjpause. I KodeWorks opererer vi
+              med en kjernetid mellom 9-15, med mulighet og rom til å kunne være fleksibel under
+              arbeidstiden. I et selskap der mennesker med kompetanse er hovedproduktet, vet vi at å
+              jobbe tett med kollegaene våre gir det beste resultatet. Vi vet og at hverdagslivet
+              kan by på utfordringer der man av og til må tilpasse arbeidstiden litt utenom
+              kjernetiden.
             </p>
             <p>
               Som konsulenter må vi uansett ta høyde for at kundene våre har sin egen kjernetid, og
@@ -312,8 +312,8 @@ export default function StaffManual(): JSX.Element {
                 tilgjengelig.
               </li>
               <li>
-                Meld fra til nærmeste leder hvis du må ta en sykedag. Husk også å
-                melde i fra til kunden eller prosjektledelsen så snart som mulig.
+                Meld fra til nærmeste leder hvis du må ta en sykedag. Husk også å melde i fra til
+                kunden eller prosjektledelsen så snart som mulig.
               </li>
               <li>
                 Dersom du blir syk underveis i arbeidsdagen, vil du kunne benytte velferdspermisjon
@@ -336,8 +336,8 @@ export default function StaffManual(): JSX.Element {
                 informasjon om hva som dekkes finnes i mappen “Forsikring” på Google Drive.
               </li>
               <li>
-                Egenmeldingsdager er ikke det samme som feriedager, så ubrukte egenmeldingsdager vil ikke
-                overføres til neste periode.
+                Egenmeldingsdager er ikke det samme som feriedager, så ubrukte egenmeldingsdager vil
+                ikke overføres til neste periode.
               </li>
             </ul>
 
@@ -446,8 +446,8 @@ export default function StaffManual(): JSX.Element {
               Som ansatt kan man også bli medeier i avdelingen man jobber i. Vi tror på at ansatte
               som har medeierskap får sterkere insentiver for å skape vekst og trivsel i selskapet,
               som kommer alle til gode. Medeierskap i form av aksjer vil bli distribuert fra et sett
-              av aksjer som er eid av selskapet, eller morselskapet. Når man tiltrer som aksjonær
-              i selskapet, blir man underlagt selskapets aksjonæravtale.
+              av aksjer som er eid av selskapet, eller morselskapet. Når man tiltrer som aksjonær i
+              selskapet, blir man underlagt selskapets aksjonæravtale.
             </p>
             <p>
               Alle ansatte vil bli tilbudt aksjer ved neste oppdatering av aksjeeierboken, etter at

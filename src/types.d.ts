@@ -1,4 +1,3 @@
-
 export type Person = {
   name: string;
   image: string;
@@ -19,49 +18,61 @@ export type Project = {
   output?: string[];
 };
 
-export type ProjectContent = ProjectContentTexts | ProjectContentHeading | ProjectContentImage | ProjectContentWideImage | ProjectContentQuote | ProjectContentOutput
+export type ProjectContent =
+  | ProjectContentTexts
+  | ProjectContentHeading
+  | ProjectContentImage
+  | ProjectContentWideImage
+  | ProjectContentQuote
+  | ProjectContentOutput;
 
-export type ProjectContentDescriptor = 'texts' | 'heading' | 'image' | 'wideimage' | 'quote' | 'output'
+export type ProjectContentDescriptor =
+  | 'texts'
+  | 'heading'
+  | 'image'
+  | 'wideimage'
+  | 'quote'
+  | 'output';
 
 export type ProjectContentHeading = {
-  type: 'heading',
+  type: 'heading';
   value: DictText;
-}
+};
 
 export type ProjectContentTexts = {
   type: 'texts';
   value: DictText[];
-}
+};
 
 export type ProjectContentImage = {
   type: 'image';
-  value: ProjectContentImageContent
-}
+  value: ProjectContentImageContent;
+};
 
 export type ProjectContentWideImage = {
   type: 'wideimage';
-  value: ProjectContentImageContent
-}
+  value: ProjectContentImageContent;
+};
 
 export type ProjectContentImageContent = {
-  src: string,
-  alt?: string
-}
+  src: string;
+  alt?: string;
+};
 
 export type ProjectContentQuote = {
   type: 'quote';
-  value: ProjectContentQuoteContent
-}
+  value: ProjectContentQuoteContent;
+};
 
 export type ProjectContentQuoteContent = {
-  content: DictText,
-  author?: string
-}
+  content: DictText;
+  author?: string;
+};
 
 export type ProjectContentOutput = {
-  type: 'output',
-  value: DictText
-}
+  type: 'output';
+  value: DictText;
+};
 
 type SocialMediaName = 'twitter' | 'linkedin' | 'github';
 export type SocialUrl = {
@@ -72,10 +83,10 @@ export type SocialUrl = {
 // Dictionary Types
 
 type DictProjectContents = {
-  [key: string]: ProjectContent[]
-}
+  [key: string]: ProjectContent[];
+};
 
-type DictText = string | DictionaryTerm
+type DictText = string | DictionaryTerm;
 
 type DictionaryTerm = {
   [key: string]: string;

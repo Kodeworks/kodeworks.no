@@ -7,5 +7,11 @@
   "semi": true,
   "trailingComma": "es5",
   "printWidth": 100,
-  "proseWrap": "never"
+  "proseWrap": "never",
+  "overrides": [
+    {
+      "files": ["*.css"],
+      "options": { "parser": "css", "singleQuote": false }
+    }
+  ]
 }

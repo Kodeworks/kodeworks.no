@@ -3,7 +3,7 @@ import projects from './data/projects';
 
 const api = {
   people,
-  projects
+  projects,
 };
 
 export default api;
