@@ -204,7 +204,7 @@ const people: Person[] = [
     name: 'Hanne Ødegård',
     email: 'hanne.odegard@kodeworks.no',
     projects: [],
-    image: '',
+    image: '/static/photos/people/hanne.jpg',
     urls: [
       {
         name: 'github',
@@ -215,6 +215,13 @@ const people: Person[] = [
         url: 'https://www.linkedin.com/in/hanne-odegard/',
       },
     ],
+  },
+  {
+    name: 'Paal Urdahl',
+    email: 'paal.urdahl@kodeworks.no',
+    projects: [],
+    image: '/static/photos/people/paalurdahl.jpg',
+    urls: [],
   },
   {
     name: 'Jakob Almelid',
@@ -256,7 +263,7 @@ const people: Person[] = [
     name: 'Jan-Marius Vatle',
     email: 'janmarius@kodeworks.no',
     projects: [projects.sunlitsea],
-    image: '',
+    image: '/static/photos/people/janmarius.jpg',
   },
   {
     name: 'Ole Marius Forbord',
