@@ -529,7 +529,7 @@ export const projects: ProjectObjectType = {
     name: 'Pexip',
     description: {
       en: 'The start of 2020 was a world-changing era with the covid-19 pandemic. Relationships were maintained through strict official guidelines, which revolutionized the business. Less travel and fewer face-to-face meetings were a new reality, and video communication was the new standard. Pexip is a company with extensive experience in simplifying and optimizing video conferencing.',
-      no: 'Starten på 2020 bemerket seg med covid-19-pandemien som en periode med store endringer for folk ved at mellommenneskelige relasjoner ble underlagt strenge offisielle retningslinjer. For for leverandører av videoteknologi, som Pexip, resulterte dette i økende etterspørsel. Mindre reiser og færre møter ansikt til ansikt var en ny realitet, og videokommunikasjon var den nye standarden. Pexip er et selskap med lang erfaring i å forenkle og optimalisere videokonferanser, og KodeWorks assisterer i å se på forbedring av ytelse samt tilpasning til mobile flater.',
+      no: 'Starten på 2020 bemerket seg med covid-19-pandemien som en periode med store endringer for folk ved at mellommenneskelige relasjoner ble underlagt strenge offisielle retningslinjer. For leverandører av videoteknologi, som Pexip, resulterte dette i økende etterspørsel. Mindre reiser og færre møter ansikt til ansikt var en ny realitet, og videokommunikasjon var den nye standarden. Pexip er et selskap med lang erfaring i å forenkle og optimalisere videokonferanser, og KodeWorks assisterer i å se på forbedring av ytelse samt tilpasning til mobile flater.',
     },
     image: 'pexip.jpg',
     urlName: 'pexip',
