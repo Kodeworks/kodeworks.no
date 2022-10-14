@@ -250,8 +250,9 @@ export default function StaffManual(): JSX.Element {
               jobben effektivt er det på tide med en ny.
             </p>
             <p>
-              Dersom du trenger tilrettelagt programvare for å gjøre jobben din, kan du bare
-              bestille dette og føre det som utlegg i regnskapssystemet.
+              Dersom du trenger tilrettelagt programvare for å gjøre jobben din så skal du få dette.
+              Husk å sjekke med nærmeste leder om vi har en gruppeavtale på det du trenger før du 
+              bestiller, hvis ikke bare bestiller du selv og fører utlegg for dette.
             </p>
 
             <h4>Litteratur og læringsmateriale</h4>
