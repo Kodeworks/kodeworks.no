@@ -28,11 +28,7 @@ const Jobb: NextPageWithLayout = () => {
               <p>
                 Vi tror på det å ha en åpen kultur. Skulle det være salgsarbeid, bestemmelser eller
                 lønn. Alle våre betingelser, rutiner og tanker om hvordan ting i KodeWorks fungerer
-                finner du i{' '}
-                <Link href="staffmanual">
-                  <a>personalhåndboka</a>
-                </Link>{' '}
-                vår.
+                finner du i <Link href="staffmanual">personalhåndboka</Link> vår.
               </p>
               <p>Vi ser etter både erfarne og nyutdannende utviklere i Oslo og Trondheim.</p>
               <p>
@@ -58,17 +54,13 @@ const Jobb: NextPageWithLayout = () => {
         <h2>Ledige stillinger</h2>
         <div className={`career-opportunity`}>
           <Link href="/career/nyutdannede">
-            <a>
-              <h4>Nyutdannede utviklere</h4>
-            </a>
+            <h4>Nyutdannede utviklere</h4>
           </Link>
           <span>Oslo eller Trondheim</span>
         </div>
         <div className={`career-opportunity`}>
           <Link href="/career/erfarne">
-            <a>
-              <h4>Erfarne utviklere</h4>
-            </a>
+            <h4>Erfarne utviklere</h4>
           </Link>
           <span>Oslo eller Trondheim</span>
         </div>

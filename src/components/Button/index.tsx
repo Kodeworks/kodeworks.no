@@ -38,14 +38,14 @@ function DarkButton({ appearance, onClick, href, disabled, children }: ButtonPro
 
   if (href != null) {
     return (
-      <Link href={href} locale={locale}>
-        <a
-          className={`${style.btn} ${style['btn-dark']} ${disabled ? style['btn-disabled'] : ''} ${
-            appearance === Appearance.DarkNoPadding ? style['btn--noPadding'] : ''
-          }`}
-        >
-          <span>{children}</span>
-        </a>
+      <Link
+        href={href}
+        locale={locale}
+        className={`${style.btn} ${style['btn-dark']} ${disabled ? style['btn-disabled'] : ''} ${
+          appearance === Appearance.DarkNoPadding ? style['btn--noPadding'] : ''
+        }`}
+      >
+        <span>{children}</span>
       </Link>
     );
   } else {
@@ -58,14 +58,14 @@ function LightButton({ appearance, onClick, href, disabled, children }: ButtonPr
 
   if (href != null) {
     return (
-      <Link href={href} locale={locale}>
-        <a
-          className={`${style.btn} ${style['btn-light']} ${disabled ? style['btn-disabled'] : ''} ${
-            appearance === Appearance.LightNoPadding ? 'btn--noPadding' : ''
-          }`}
-        >
-          <span>{children}</span>
-        </a>
+      <Link
+        href={href}
+        locale={locale}
+        className={`${style.btn} ${style['btn-light']} ${disabled ? style['btn-disabled'] : ''} ${
+          appearance === Appearance.LightNoPadding ? 'btn--noPadding' : ''
+        }`}
+      >
+        <span>{children}</span>
       </Link>
     );
   } else {

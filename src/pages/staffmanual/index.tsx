@@ -161,11 +161,7 @@ export default function StaffManual(): JSX.Element {
               22. dersom det ikke er en vanlig virkedag.
             </p>
             <p>
-              Nysgjerrig på hva du kan tjene? Sjekk ut{' '}
-              <Link href="/career">
-                <a>kalkulatoren vår</a>
-              </Link>
-              .
+              Nysgjerrig på hva du kan tjene? Sjekk ut <Link href="/career">kalkulatoren vår</Link>.
             </p>
 
             <h4>Lønnstrinn og lønnsjustering</h4>

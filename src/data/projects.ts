@@ -1,4 +1,3 @@
-import { platform } from 'os';
 import { Project } from '../types';
 
 interface ProjectObjectType {

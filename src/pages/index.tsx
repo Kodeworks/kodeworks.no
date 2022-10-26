@@ -46,8 +46,8 @@ function Home(): JSX.Element {
         <section className={`section section-content section-content-narrow main-header-content`}>
           <h2>Jobbe i KodeWorks? Vi ser etter både erfarene og nyutdannede utviklere.</h2>
           <p>
-            <Link href="/career">
-              <a className="btn btn-black btn-big">Søk fast jobb</a>
+            <Link href="/career" className="btn btn-black btn-big">
+              Søk fast jobb
             </Link>
           </p>
         </section>

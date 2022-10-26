@@ -58,33 +58,33 @@ export default function Navigation({ isOpened, toggleNavigationOpened }: Prop): 
         <nav className={style['menu-navigation']}>
           <h4>
             <Link href="/" locale={locale}>
-              <a>KodeWorks</a>
+              KodeWorks
             </Link>
           </h4>
           <ul className="list-plain">
             <li>
               <Link href="/people" locale={locale}>
-                <a>{t('our people')}</a>
+                {t('our people')}
               </Link>
             </li>
             <li>
               <Link href="/projects" locale={locale}>
-                <a>{t('projects')}</a>
+                {t('projects')}
               </Link>
             </li>
             <li>
               <Link href="/career" locale={locale}>
-                <a>{t('career')}</a>
+                {t('career')}
               </Link>
             </li>
             <li>
               <Link href="/staffmanual" locale={locale}>
-                <a>{t('staff manual')}</a>
+                {t('staff manual')}
               </Link>
             </li>
             <li>
               <Link href="https://blog.kodeworks.no/" locale={locale}>
-                <a>{t('blog')}</a>
+                {t('blog')}
               </Link>
             </li>
           </ul>
@@ -106,25 +106,19 @@ export default function Navigation({ isOpened, toggleNavigationOpened }: Prop): 
           <div className={`${style['menu-footer-links']}`}>
             <ul className={`list-plain ${style['menu-list-booring']}`}>
               <li>
-                <Link href="/legal/privacy">
-                  <a>{t('privacy policy')}</a>
-                </Link>
+                <Link href="/legal/privacy">{t('privacy policy')}</Link>
               </li>
             </ul>
 
             <ul className={`list-plain ${style['menu-list-languages']}`}>
               <li>
                 <Link href={pathname} locale="no">
-                  <a>
-                    <div>Norsk</div>
-                  </a>
+                  <div>Norsk</div>
                 </Link>
               </li>
               <li>
                 <Link href={pathname} locale="en">
-                  <a>
-                    <div>English</div>
-                  </a>
+                  <div>English</div>
                 </Link>
               </li>
             </ul>

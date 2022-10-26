@@ -26,22 +26,13 @@ const Input: NextPageWithLayout = ({ project }: Prop) => {
           <div className="page-project-footer-description">
             <h3>Hva annet har vi gjort?</h3>
             <p>
-              Ta gjerne en titt innom{' '}
-              <Link href="/projects">
-                <a>prosjektoversikten</a>
-              </Link>{' '}
-              vår for å lese mer om våre andre prosjekter.
+              Ta gjerne en titt innom <Link href="/projects">prosjektoversikten</Link> vår for å
+              lese mer om våre andre prosjekter.
             </p>
             <p>
               Vi ser også etter utviklere til kontorene våre i Oslo og Trondheim. Sjekk ut{' '}
-              <Link href="/career">
-                <a>lønnskalkulatoren</a>
-              </Link>
-              , og våre{' '}
-              <Link href="/career">
-                <a>ledige stillinger</a>
-              </Link>
-              .
+              <Link href="/career">lønnskalkulatoren</Link>, og våre{' '}
+              <Link href="/career">ledige stillinger</Link>.
             </p>
           </div>
           <div className="page-project-footer-contact">
