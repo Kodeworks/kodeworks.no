@@ -135,7 +135,7 @@ const people: Person[] = [
     image: '/static/photos/people/orjan.jpg',
   },
   {
-    name: 'Ole Johan Adersen',
+    name: 'Ole Johan Andersen',
     email: 'ole@kodeworks.no',
     projects: [projects.inatur, projects.equinor],
     image: '/static/photos/people/ole.jpg',
