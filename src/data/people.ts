@@ -6,22 +6,6 @@ const stories = [projects.inatur, projects.sunlitsea, projects.vaskehjelp];
 
 const people: Person[] = [
   {
-    name: 'Tri Nguyen',
-    email: 'tri@kodeworks.no',
-    projects: [projects.vaskehjelp, projects.inatur, projects.flir],
-    image: '/static/photos/people/tri.jpg',
-    urls: [
-      {
-        name: 'github',
-        url: 'https://github.com/tmn',
-      },
-      {
-        name: 'linkedin',
-        url: 'https://www.linkedin.com/in/trimn/',
-      },
-    ],
-  },
-  {
     name: 'Aleksander Skraastad',
     email: 'aleksander@kodeworks.no',
     projects: [projects.statkraft, projects.dnb],
@@ -145,12 +129,6 @@ const people: Person[] = [
     email: 'jan@kodeworks.no',
     projects: [projects.sunlitsea, projects.aize, projects.sesam],
     image: '/static/photos/people/jan.jpg',
-  },
-  {
-    name: 'Håkon Hesselberg',
-    email: 'hakon@kodeworks.no',
-    projects: [projects.kongsberg],
-    image: '',
   },
   {
     name: 'Ferdy Wessing',
