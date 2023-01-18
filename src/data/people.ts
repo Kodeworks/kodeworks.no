@@ -255,6 +255,12 @@ const people: Person[] = [
     projects: [],
     image: '',
   },
+  {
+    name: 'David Vimo Garner',
+    email: 'david@kodeworks.no',
+    projects: [],
+    image: '/static/photos/people/david.jpg',
+  },
 ];
 
 function getPeople(): Person[] {
