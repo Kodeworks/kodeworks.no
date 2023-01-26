@@ -344,7 +344,7 @@ export default function StaffManual(): JSX.Element {
               NAV dekker lønn for sykefravær når sykemeldingsperioden overstiger 16 dager. NAV
               dekker derimot ikke lønn over 6G (ca 640000 NOK i 2022). For å håndtere dette har vi
               en sykelønnsforsikring som dekker differansen mellom 6G og din lønn, såfremt du
-              oppfyller krave NAV har satt for{' '}
+              oppfyller kravene NAV har satt for{' '}
               <a href="https://www.nav.no/no/person/arbeid/sykmeldt-arbeidsavklaringspenger-og-yrkesskade/sykepenger/sykepenger-til-arbeidstakere">
                 Sykepenger til arbeidstakere
               </a>{' '}

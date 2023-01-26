@@ -223,7 +223,7 @@ const people: Person[] = [
     name: 'Espen Hellerud',
     email: 'espen@kodeworks.no',
     projects: [],
-    image: '',
+    image: '/static/photos/people/espen.jpg',
   },
   {
     name: 'Pål Nødseth',
