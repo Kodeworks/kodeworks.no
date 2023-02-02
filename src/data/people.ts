@@ -256,6 +256,12 @@ const people: Person[] = [
     image: '',
   },
   {
+    name: 'Sigve Skaugvoll',
+    email: 'sigve@kodeworks.no',
+    projects: [],
+    image: '',
+  },
+  {
     name: 'David Vimo Garner',
     email: 'david@kodeworks.no',
     projects: [],
