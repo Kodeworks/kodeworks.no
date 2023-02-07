@@ -217,12 +217,12 @@ const people: Person[] = [
     name: 'Jonas Myren Mo',
     email: 'jonas@kodeworks.no',
     projects: [projects.obos],
-    image: '',
+    image: '/static/photos/people/jonas.jpg',
   },
   {
     name: 'Espen Hellerud',
     email: 'espen@kodeworks.no',
-    projects: [],
+    projects: [projects.dnb],
     image: '/static/photos/people/espen.jpg',
   },
   {
@@ -252,7 +252,7 @@ const people: Person[] = [
   {
     name: 'Eirik Baug',
     email: 'eirik.baug@kodeworks.no',
-    projects: [],
+    projects: [projects.ruter],
     image: '',
   },
   {
@@ -264,7 +264,7 @@ const people: Person[] = [
   {
     name: 'David Vimo Garner',
     email: 'david@kodeworks.no',
-    projects: [],
+    projects: [projects.administration],
     image: '/static/photos/people/david.jpg',
   },
 ];
