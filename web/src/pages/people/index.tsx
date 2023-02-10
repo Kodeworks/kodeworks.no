@@ -1,21 +1,13 @@
-import { useEffect, useState } from 'react';
-
-import api from '../../api';
 import dictionary from '../dict';
-import { Person } from '../../types';
-import { useClipContent } from '../../context/ClipContentContext';
-import { useTranslation } from '../../utils/useTranslation';
+import {useClipContent} from '../../context/ClipContentContext';
+import {useTranslation} from '../../utils/useTranslation';
 
 import PeopleList from '../../components/PeopleList';
+import {client} from "../../lib/client";
 
-export default function People(): JSX.Element {
-  const [people, setPeople] = useState<Person[]>([]);
-  const { t } = useTranslation(dictionary);
+export default function People({people}): JSX.Element {
+  const {t} = useTranslation(dictionary);
   useClipContent(false);
-
-  useEffect(() => {
-    setPeople(api.people.getPeople());
-  }, []);
 
   return (
     <div id="page-people">
@@ -24,8 +16,18 @@ export default function People(): JSX.Element {
 
         <p>{t('people_description', people.length)}</p>
 
-        <PeopleList people={people} />
+        <PeopleList people={people}/>
+
       </div>
     </div>
   );
+}
+
+export async function getStaticProps() {
+  const people = await client.fetch('*[_type == "people"]{firstName, lastName, email, projects, socials, "imageUrl": image.asset->url}')
+  return {
+    props: {
+      people,
+    },
+  }
 }

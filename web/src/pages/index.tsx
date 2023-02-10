@@ -21,15 +21,15 @@ function Home(): JSX.Element {
   const { t } = useTranslation(dictionary);
   const locale = getLocale(useRouter());
 
-  const people = api.people.getPeople();
+  //const people = api.people.getPeople();
   const highlightedProjects = api.projects.getPublishedProjects();
 
   useEffect(() => {
     const project = highlightedProjects[Math.ceil(Math.random() * highlightedProjects.length) - 1];
-    const people = api.people.getHighligtedPeople().slice(0, 6);
+    //const people = api.people.getHighligtedPeople().slice(0, 6);
 
     setHighlightedProject(project);
-    setHighlightedPeople(people);
+    //setHighlightedPeople(people);
   }, []);
 
   const shouldClipText = useClipText(['projects']);
@@ -67,7 +67,7 @@ function Home(): JSX.Element {
         <div>
           <header className="people-header">
             <h2 className="section-header-headline">{t('people')}</h2>
-            <p>{t('people_description', people.length)}</p>
+            <p>{t('people_description', 0/*people.length*/)}</p>
             <p>
               <Button appearance={Button.appearances.LightNoPadding} href="/people">
                 {t('who_button')}

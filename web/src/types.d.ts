@@ -1,9 +1,10 @@
 export type Person = {
-  name: string;
-  image: string;
+  firstName: string;
+  lastName: string;
+  imageUrl: string;
   email: string;
-  urls?: SocialUrl[];
-  projects: Project[];
+  socials?: SocialUrl[];
+  projects: string[];
 };
 
 export type Project = {
@@ -76,7 +77,7 @@ export type ProjectContentOutput = {
 
 type SocialMediaName = 'twitter' | 'linkedin' | 'github';
 export type SocialUrl = {
-  name: SocialMediaName;
+  type: SocialMediaName;
   url: string;
 };
 
