@@ -544,6 +544,16 @@ export const projects: ProjectObjectType = {
     urlName: 'remarkable',
     technologies: ['React', 'Node', 'TypeScript', 'Sanity', 'Google Cloud Platform'],
   },
+  ruter: {
+    name: 'Ruter',
+    description: {
+      en: 'Ruter plan, coordinate, order and market public transport in Oslo and former Akershus',
+      no: 'Ruter er et felles administrasjonsselskap for kollektivtrafikken i Oslo og deler av Viken (tidligere Akershus fylke).',
+    },
+    image: 'ruter.jpg',
+    urlName: 'ruter',
+    technologies: [],
+  },
   sesam: {
     name: 'Sesam',
     description: {
