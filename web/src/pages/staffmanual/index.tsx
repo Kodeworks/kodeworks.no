@@ -247,7 +247,7 @@ export default function StaffManual(): JSX.Element {
             </p>
             <p>
               Dersom du trenger tilrettelagt programvare for å gjøre jobben din så skal du få dette.
-              Husk å sjekke med nærmeste leder om vi har en gruppeavtale på det du trenger før du 
+              Husk å sjekke med nærmeste leder om vi har en gruppeavtale på det du trenger før du
               bestiller, hvis ikke bare bestiller du selv og fører utlegg for dette.
             </p>
 
