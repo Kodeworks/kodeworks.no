@@ -4,7 +4,7 @@
 	"private": true,
 	"workspaces": [
 		"web",
-		"admin"
+		"studio"
 	],
 	"scripts": {
 		"build": "turbo run build",
