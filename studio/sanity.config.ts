@@ -5,7 +5,7 @@ import {schemaTypes} from './schemas'
 
 export default defineConfig({
   name: 'default',
-  title: 'admin.kodeworks.no',
+  title: 'studio.kodeworks.no',
 
   projectId: 'zkl0178p',
   dataset: 'production',
