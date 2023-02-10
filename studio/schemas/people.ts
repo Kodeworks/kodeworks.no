@@ -26,7 +26,7 @@ export default {
     {
       name: 'projects',
       type: 'array',
-      of: [{type: 'project'}],
+      of: [{type: 'string'}],
       title: 'Projects'
     },
     {
