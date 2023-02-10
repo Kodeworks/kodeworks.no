@@ -111,7 +111,12 @@ export default function Calculator(): JSX.Element {
 
       <h4>Det vil gi en årslønn på</h4>
       <p className={`${style['calculator-salary']}`}>
-        {numberWithSeperators(wages.hasOwnProperty(seniority + education) ? +wages[seniority + education] : +wages[Object.keys(wages).length - 1])} kr
+        {numberWithSeperators(
+          wages.hasOwnProperty(seniority + education)
+            ? +wages[seniority + education]
+            : +wages[Object.keys(wages).length - 1]
+        )}{' '}
+        kr
       </p>
     </div>
   );
