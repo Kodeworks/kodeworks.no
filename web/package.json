@@ -1,0 +1,51 @@
+{
+  "name": "web",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@sanity/client": "^4.0.1",
+    "@sanity/image-url": "^1.0.2",
+    "@types/node": "^18.7.23",
+    "@types/react": "^18.0.21",
+    "@types/react-dom": "^18.0.6",
+    "express": "^4.18.1",
+    "next": "^13.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^4.8.4"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "start": "next start",
+    "build": "next build",
+    "export": "next export",
+    "eject": "react-scripts eject",
+    "lint": "next lint"
+  },
+  "eslintConfig": {
+    "extends": [
+      "next"
+    ],
+    "rules": {
+      "@next/next/no-img-element": "off",
+      "import/no-anonymous-default-export": "off"
+    }
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "eslint": "^8.24.0",
+    "eslint-config-next": "^13.0.0",
+    "eslint-config-react-app": "^7.0.1"
+  }
+}

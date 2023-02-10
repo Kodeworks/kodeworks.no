@@ -24,3 +24,7 @@ yarn-error.log*
 
 # next
 .next
+
+# turbo
+.turbo
+.idea
