@@ -12,7 +12,7 @@ interface Prop {
 
 export default function PersonTile({person}: Prop): JSX.Element {
   const locale = getLocale(useRouter());
-  console.log(person)
+
   return (
     <>
       <header className={style.person}>
