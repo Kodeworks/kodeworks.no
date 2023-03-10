@@ -15,7 +15,7 @@ import PeopleList from '../components/PeopleList';
 import {client} from "../lib/client";
 
 export async function getStaticProps() {
-  const people = await client.fetch('*[_type == "people"]{firstName, lastName, email, projects[] -> {name, slug}, socials, "imageUrl": image.asset->url}')
+  const people = await client.fetch('*[_type == "people" && !(_id in path(\'drafts.**\'))]{firstName, lastName, email, projects[] -> {name, slug}, socials, "imageUrl": image.asset->url}')
   return {
     props: {
       people,
@@ -76,7 +76,7 @@ function Home({people}): JSX.Element {
         <div>
           <header className="people-header">
             <h2 className="section-header-headline">{t('people')}</h2>
-            <p>{t('people_description', highlightedPeople.length)}</p>
+            <p>{t('people_description', people.length)}</p>
             <p>
               <Button appearance={Button.appearances.LightNoPadding} href="/people">
                 {t('who_button')}
