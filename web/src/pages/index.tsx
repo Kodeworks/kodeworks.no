@@ -12,8 +12,18 @@ import dictionary from './dict';
 
 import Button from '../components/Button';
 import PeopleList from '../components/PeopleList';
+import {client} from "../lib/client";
 
-function Home(): JSX.Element {
+export async function getStaticProps() {
+  const people = await client.fetch('*[_type == "people"]{firstName, lastName, email, projects[] -> {name, slug}, socials, "imageUrl": image.asset->url}')
+  return {
+    props: {
+      people,
+    },
+  }
+}
+
+function Home({people}): JSX.Element {
   const [highlightedProject, setHighlightedProject] = useState<Project>();
   const [highlightedPeople, setHighlightedPeople] = useState<Person[]>([]);
 
@@ -21,15 +31,14 @@ function Home(): JSX.Element {
   const { t } = useTranslation(dictionary);
   const locale = getLocale(useRouter());
 
-  //const people = api.people.getPeople();
   const highlightedProjects = api.projects.getPublishedProjects();
 
   useEffect(() => {
     const project = highlightedProjects[Math.ceil(Math.random() * highlightedProjects.length) - 1];
-    //const people = api.people.getHighligtedPeople().slice(0, 6);
+    const randomPeople = people.slice(0, 6);
 
     setHighlightedProject(project);
-    //setHighlightedPeople(people);
+    setHighlightedPeople(randomPeople);
   }, []);
 
   const shouldClipText = useClipText(['projects']);
@@ -67,7 +76,7 @@ function Home(): JSX.Element {
         <div>
           <header className="people-header">
             <h2 className="section-header-headline">{t('people')}</h2>
-            <p>{t('people_description', 0/*people.length*/)}</p>
+            <p>{t('people_description', highlightedPeople.length)}</p>
             <p>
               <Button appearance={Button.appearances.LightNoPadding} href="/people">
                 {t('who_button')}

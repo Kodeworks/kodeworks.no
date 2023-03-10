@@ -12,7 +12,7 @@ interface Prop {
 
 export default function PersonTile({person}: Prop): JSX.Element {
   const locale = getLocale(useRouter());
-
+  console.log(person)
   return (
     <>
       <header className={style.person}>
@@ -50,8 +50,7 @@ export default function PersonTile({person}: Prop): JSX.Element {
         {person.projects.map((project) => (
           <li key={fmt(project.name, locale!)}>
             <Button
-              href={`/input/${project.name.toString().toLowerCase().replace(/ /i, '-')}`}
-              //disabled={!project.published}
+              href={`/input/${project.slug.current.toString().toLowerCase().replace(/ /i, '-')}`}
             >
               {fmt(project.name, locale!)}
             </Button>
