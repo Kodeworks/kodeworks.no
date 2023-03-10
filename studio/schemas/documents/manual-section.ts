@@ -7,10 +7,17 @@ export default defineType({
   fields: [
     defineField({name: 'title', title: 'Title', type: 'string'}),
     defineField({
+      title: 'Group label',
+      name: 'label',
+      type: 'reference',
+      to: [{type: 'section-label'}],
+    }),
+    defineField({
       name: 'content',
       title: 'Content',
       type: 'array',
       of: [{type: 'block'}],
+      validation: (Rule) => Rule.unique(),
     }),
     defineField({
       title: 'Slug',
