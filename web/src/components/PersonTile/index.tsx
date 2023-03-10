@@ -46,7 +46,7 @@ export default function PersonTile({person}: Prop): JSX.Element {
         </div>
       </header>
 
-      {/*<ul className={`list-plain ${style['person-projects']}`}>
+      {<ul className={`list-plain ${style['person-projects']}`}>
         {person.projects.map((project) => (
           <li key={fmt(project.name, locale!)}>
             <Button
@@ -57,7 +57,7 @@ export default function PersonTile({person}: Prop): JSX.Element {
             </Button>
           </li>
         ))}
-      </ul>*/}
+      </ul>}
     </>
   );
 }

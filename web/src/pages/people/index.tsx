@@ -24,7 +24,7 @@ export default function People({people}): JSX.Element {
 }
 
 export async function getStaticProps() {
-  const people = await client.fetch('*[_type == "people"]{firstName, lastName, email, projects, socials, "imageUrl": image.asset->url}')
+  const people = await client.fetch('*[_type == "people"]{firstName, lastName, email, projects[] ->, socials, "imageUrl": image.asset->url}')
   return {
     props: {
       people,
