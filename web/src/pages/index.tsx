@@ -13,23 +13,24 @@ import dictionary from './dict';
 import Button from '../components/Button';
 import PeopleList from '../components/PeopleList';
 
-function Home(): JSX.Element {
+interface IPageProps {
+  people: Person[];
+}
+
+function Home(props: IPageProps): JSX.Element {
+  const { people: highlightedPeople } = props;
+
   const [highlightedProject, setHighlightedProject] = useState<Project>();
-  const [highlightedPeople, setHighlightedPeople] = useState<Person[]>([]);
 
   const { changeClipMode } = useContext(ClipContentContext);
   const { t } = useTranslation(dictionary);
   const locale = getLocale(useRouter());
 
-  //const people = api.people.getPeople();
   const highlightedProjects = api.projects.getPublishedProjects();
 
   useEffect(() => {
     const project = highlightedProjects[Math.ceil(Math.random() * highlightedProjects.length) - 1];
-    //const people = api.people.getHighligtedPeople().slice(0, 6);
-
     setHighlightedProject(project);
-    //setHighlightedPeople(people);
   }, []);
 
   const shouldClipText = useClipText(['projects']);
@@ -67,7 +68,7 @@ function Home(): JSX.Element {
         <div>
           <header className="people-header">
             <h2 className="section-header-headline">{t('people')}</h2>
-            <p>{t('people_description', 0/*people.length*/)}</p>
+            <p>{t('people_description', highlightedPeople.length ?? 0)}</p>
             <p>
               <Button appearance={Button.appearances.LightNoPadding} href="/people">
                 {t('who_button')}
@@ -110,6 +111,16 @@ function Home(): JSX.Element {
       </article>
     </>
   );
+}
+
+export async function getStaticProps() {
+  const people = await api.people.get({ limit: 6 });
+
+  return {
+    props: {
+      people,
+    },
+  };
 }
 
 export default Home;
