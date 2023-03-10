@@ -4,7 +4,7 @@ export type Person = {
   imageUrl: string;
   email: string;
   socials?: SocialUrl[];
-  projects: string[];
+  projects: Project[];
 };
 
 export type Project = {
