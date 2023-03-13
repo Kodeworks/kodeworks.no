@@ -385,7 +385,7 @@ export default function StaffManual(): JSX.Element {
                 ansattbudsjettet.
               </li>
               <li>2 ukers betalt permisjon ved fødsel.</li>
-              <li>Full lønn under foreldrepermisjon.</li>
+              <li>I foreldrepermisjon dekker vi lønnen som er mellom det NAV betaler ut og opp til 100% av Kodeworks-lønn i 49 uker, eller 80% av Kodeworks-lønn i 59 uker, avhengig av hvilken ordning man velger.</li>
             </ul>
 
             <h4>Velferdspermisjon</h4>
