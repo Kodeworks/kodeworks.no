@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { ManualSection, StaffManual } from '../../lib/sanity-api';
 
 interface GroupedSectionLabel {
@@ -20,7 +20,7 @@ const StaffManualNavigation = ({ manual }: Props) => {
   return (
     <nav className="handbook-sidebar">
       {Object.entries(groupedSectionsByLabel).map(([label, sections]) => (
-        <>
+        <Fragment key={label}>
           <h4>{label}</h4>
           <ul className="list-plain handbook-sidebar-list">
             {sections.map(({ title, slug }) => (
@@ -29,7 +29,7 @@ const StaffManualNavigation = ({ manual }: Props) => {
               </li>
             ))}
           </ul>
-        </>
+        </Fragment>
       ))}
     </nav>
   );
