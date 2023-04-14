@@ -8,7 +8,7 @@ export default defineConfig({
   title: 'studio.kodeworks.no',
 
   projectId: 'zkl0178p',
-  dataset: 'development',
+  dataset: 'production',
 
   plugins: [deskTool(), visionTool()],
 
