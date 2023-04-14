@@ -1,3 +1,5 @@
+import {Image} from "./lib/client";
+
 export type Person = {
   name: string;
   image: string;
@@ -16,6 +18,21 @@ export type Project = {
   content?: DictProjectContents | ProjectContent[];
   published?: boolean;
   output?: string[];
+};
+
+// New type from sanity. TODO remove the old Project type when it's phased out, and rename Projectv2 to Project
+export type Projectv2 = {
+  _id: string;
+  name: string;
+  description: {
+    en: string;
+    no: string;
+  };
+  image: Image;
+  slug: {
+    current: string;
+  };
+  technologies: string[];
 };
 
 export type ProjectContent =

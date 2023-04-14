@@ -49,5 +49,12 @@ export default defineType({
         layout: 'tags',
       },
     }),
+    defineField({
+      name: 'hidden',
+      type: 'boolean',
+      description: 'Hide this project in the public project list',
+      initialValue: false,
+      validation: (R) => R.required(),
+    }),
   ],
 })

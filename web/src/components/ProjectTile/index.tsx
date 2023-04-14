@@ -1,53 +1,53 @@
 import { useRouter } from 'next/router';
 
-import { Project } from '../../types';
+import { Projectv2 } from '../../types';
 import { fmt, getLocale } from '../../utils/useTranslation';
 
-import Button from '../../components/Button';
-
 import style from './projecttile.module.css';
+import { urlFor } from '../../lib/client';
+import projectsApi from '../../data/projects';
+import Button from '../Button';
 
 interface Prop {
-  project: Project;
+  project: Projectv2;
 }
+
+const legacyProjects = projectsApi.getProjects();
 
 export default function ProjectTile({ project }: Prop): JSX.Element {
   const locale = getLocale(useRouter());
+  const correspondingLegacyProject = legacyProjects.find(
+    (_) => _.name === project.name || _.name?.['no'] === project.name
+  );
 
   return (
     <article className={style['project']}>
       <div className={style['projecttile-image-container']}>
-        <img
+        <img // todo fix this image
           className={style['project-tile--image']}
-          src={'/static/photos/projects/' + project.image}
+          src={urlFor(project.image).width(1200).url()}
           width="1200"
           height="1200"
-          alt={fmt(project.name, locale!)}
+          // alt={fmt(project.name, locale!)} todo support intl
+          alt={project.name}
         />
       </div>
 
       <div className={style['projecttile-content']}>
-        <h3>{fmt(project.name, locale!)}</h3>
+        {/*todo support intl*/}
+        {/*<h3>{fmt(project.name, locale!)}</h3>*/}
+        <h3>{project.name}</h3>
         <p>{fmt(project.description, locale!)}</p>
 
-        {project.published ? (
+        {correspondingLegacyProject?.published ? (
           <p>
-            <Button appearance={Button.appearances.DarkNoPadding} href={`input/${project.urlName}`}>
+            <Button
+              appearance={Button.appearances.DarkNoPadding}
+              href={`input/${correspondingLegacyProject.urlName}`}
+            >
               Les mer om prosjektet
             </Button>
           </p>
-        ) : null}
-
-        {project.output ? (
-          <div className={style['projecttile-technologies']}>
-            <h5>Verdi</h5>
-
-            <ul className={style['projecttile-list']}>
-              {project.output?.map((output, index) => (
-                <li key={`${index}`}>{output}</li>
-              ))}
-            </ul>
-          </div>
         ) : null}
 
         {project.technologies ? (
