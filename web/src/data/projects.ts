@@ -1,7 +1,7 @@
 import { Project } from '../types';
 
 interface ProjectObjectType {
-  [key: string]: Project;
+  [key: string]: Omit<Project, 'slug'>;
 }
 
 export const projects: ProjectObjectType = {
