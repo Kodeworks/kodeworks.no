@@ -9,7 +9,7 @@ export type Person = {
 
 export type Project = {
   name: DictText;
-  slug: any;
+  slug?: any; // FIXME: should not be optional
   description: DictText;
   image: string;
   extras?: DictText;
