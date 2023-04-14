@@ -3,7 +3,7 @@ import imageUrlBuilder from '@sanity/image-url';
 
 export const client = sanityClient({
   projectId: 'zkl0178p',
-  dataset: 'production',
+  dataset: 'development',
   apiVersion: '2023-02-06',
   token: process.env.NEXT_PUBLIC_SANITY_TOKEN,
   useCdn: true,
@@ -11,8 +11,7 @@ export const client = sanityClient({
 
 const builder = imageUrlBuilder(client);
 
-interface Image {
-  _key: string;
+export interface Image {
   _type: string;
   asset: Asset;
 }

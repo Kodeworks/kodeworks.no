@@ -32,5 +32,6 @@ export function getLocale(router: NextRouter): string | undefined {
 }
 
 export function fmt(txt: DictText, loc: string): string {
+  console.log('fmt called on', txt);
   return typeof txt === 'string' ? (txt as string) : txt[loc];
 }
