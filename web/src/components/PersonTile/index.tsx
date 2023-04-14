@@ -47,7 +47,7 @@ export default function PersonTile({person}: Prop): JSX.Element {
       </header>
 
       {<ul className={`list-plain ${style['person-projects']}`}>
-        {person.projects.map((project) => (
+        {person.projects?.map((project) => (
           <li key={fmt(project.name, locale!)}>
             <Button
               href={`/input/${project.slug.current.toString().toLowerCase().replace(/ /i, '-')}`}
