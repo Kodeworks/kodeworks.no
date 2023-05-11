@@ -1,0 +1,40 @@
+.yearly-retirement {
+  min-width: 25%;
+  min-height: 50px;
+  background-color: var(--color-green);
+  border: 1px solid #000;
+  border-left: none;
+  border-radius: 0 5px 5px 0;
+  transition: all 1s;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
+}
+
+.yearly-retirement span {
+  line-height: 1;
+  margin-right: 8px;
+}
+
+.retirement-grid {
+  display: grid;
+  grid-template-areas: 
+    'info retirement';
+  grid-template-columns: 1fr 1fr;
+  gap: 0 64px;
+  align-items: center;
+}
+
+.info {
+  grid-area: info;
+  display: flex;
+  flex-direction: column;
+}
+
+.retirement {
+  grid-area: retirement;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}

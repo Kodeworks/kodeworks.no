@@ -1,0 +1,25 @@
+.benefits-grid {
+  display: grid;
+  grid-template-areas: 
+    'benefits info';
+  grid-template-columns: 1fr 1fr;
+  gap: 0 64px;
+  align-items: center;
+}
+
+.info {
+  grid-area: info;
+  display: flex;
+  flex-direction: column;
+}
+
+.benefits {
+  grid-area: benefits;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+/* Lønnsjustering i eget kapittel
+alternating backgrounds
+chart på ansattgoder
+størrelse tekst */

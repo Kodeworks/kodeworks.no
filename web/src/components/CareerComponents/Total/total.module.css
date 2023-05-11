@@ -1,0 +1,16 @@
+.total-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.total-subtext {
+  font-size: 14px;
+  line-height: 1;
+}
+
+.total-number {
+  font-size: 80px;
+  line-height: 1;
+  padding-top: 12px;
+}

@@ -9,7 +9,7 @@
 	"scripts": {
 		"build": "turbo run build",
 		"dev": "turbo run dev --parallel",
-    "deploy": "turbo run deploy",
+		"deploy": "turbo run deploy",
 		"lint": "turbo run lint",
 		"format": "prettier --write \"**/*.{ts,tsx,md}\""
 	},
@@ -20,5 +20,9 @@
 	"engines": {
 		"npm": ">=7.0.0"
 	},
-	"packageManager": "npm@9.4.0"
+	"packageManager": "npm@9.4.0",
+	"dependencies": {
+		"react-countup": "^6.4.1",
+		"reveal-on-scroll-react": "^0.0.6"
+	}
 }

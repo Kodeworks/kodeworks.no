@@ -1,10 +1,10 @@
 .career-section {
-  padding-bottom: 120px;
-  padding-top: 120px;
+  padding-bottom: 80px;
+  padding-top: 80px;
 }
 
 .career-calculator-section {
-  background-color: var(--color-grey);
+  /* background-color: var(--color-grey); */
   padding-bottom: 55px;
   padding-top: 55px;
 }
@@ -75,19 +75,65 @@
 
 .career-opportunity {
   box-sizing: border-box;
-  font-size: 14px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   margin-top: 20px;
   color: #888;
 }
 
 .career-opportunity a {
   text-decoration-color: var(--color-green);
+  margin: 0 16px;
 }
 .career-opportunity h4 {
   font-family: "Natural Grotesk", sans-serif;
   font-size: 24px;
   text-decoration: none;
   color: #000;
+}
+
+.employee-benefits {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 32px;
+}
+
+.monthly-benefit {
+  font-size: 128px;
+  position: relative;
+  width: fit-content;
+  height: 128px;
+}
+
+.about-section {
+  position: sticky;
+  top: 0;
+  padding: 0;
+}
+
+.info-box-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.info-box-container-right {
+  flex-direction: row-reverse;
+}
+
+.info-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-green);
+  width: 450px;
+  height: 200px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px 0px #000;
+
 }
 
 @media (max-width: 660px) {

@@ -1,0 +1,35 @@
+.salary-grid {
+  display: grid;
+  grid-template-areas: 
+    'salary info';
+  gap: 0 64px;
+  align-items: center;
+
+}
+
+.info {
+  grid-area: info;
+  display: flex;
+  flex-direction: column;
+}
+
+.salary {
+  grid-area: salary;
+}
+
+.numbers {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.number-container {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.number {
+  display: flex;
+  flex-direction: column;
+}

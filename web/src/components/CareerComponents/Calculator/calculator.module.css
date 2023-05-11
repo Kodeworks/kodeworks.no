@@ -1,5 +1,5 @@
 .calculator {
-  max-width: 550px;
+  max-width: 750px;
   width: 100%;
 }
 
@@ -7,9 +7,120 @@
   font-family: "Natural Grotesk", arial, sans-serif;
   font-size: 16px;
   margin-top: 35px;
-  margin-bottom: 15px;
+  margin-bottom: 8px;
 }
 
+.calculator-result {
+  display: flex;
+  flex-direction: row;
+  gap: 64px;
+}
+
+/* Checkbox
+------------------------------------------------------------------------------*/
+.calculator-education-checkbox-label {
+  border-radius: 20px;
+  background: #000;
+  color: #fff;
+  height: 40px;
+  display: inline-block;
+  line-height: 40px;
+  padding-left: 40px;
+  padding-right: 15px;
+  margin: 12px 0;
+  cursor: pointer;
+  position: relative;
+}
+
+.calculator-education-checkbox {
+  cursor: pointer;
+  -webkit-appearance: none;
+  background-color: #000;
+  border: 1.5px solid #fff;
+  border-radius: 5px;
+  width: 24px;
+  height: 24px;
+
+  margin: 0 0 0 -28px;
+  display: grid;
+  place-content: center;
+
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.calculator-education-checkbox::before {
+  background-color: var(--color-green);
+  content: "";
+  height: 14px;
+  border-radius: 50%;
+  top: -2px;
+  left: 1px;
+  cursor: pointer;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  width: 14px;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+}
+
+.calculator-education-checkbox:checked::before {
+  cursor: pointer;
+  transform: scale(1);
+}
+
+/* Education
+------------------------------------------------------------------------------*/
+.calculator-education-label {
+  border-radius: 20px;
+  background: #000;
+  color: #fff;
+  height: 40px;
+  display: inline-block;
+  line-height: 40px;
+  padding-left: 40px;
+  padding-right: 15px;
+  margin-right: 4px;
+  cursor: pointer;
+  position: relative;
+}
+
+.calculator-education-input {
+  cursor: pointer;
+  -webkit-appearance: none;
+  background-color: #000;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+
+  border: 2px solid #fff;
+
+  margin: 0 0 0 -28px;
+  display: grid;
+  place-content: center;
+
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.calculator-education-input::before {
+  background-color: var(--color-green);
+  content: "";
+  height: 14px;
+  border-radius: 50%;
+  top: -2px;
+  left: 1px;
+  cursor: pointer;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  width: 14px;
+}
+
+.calculator-education-input:checked::before {
+  cursor: pointer;
+  transform: scale(1);
+}
 /* Education
 ------------------------------------------------------------------------------*/
 .calculator-education-label {
@@ -75,6 +186,11 @@
   width: 100%;
 }
 
+.calculator-seniority-content span {
+  margin-right: 25px;
+  width: 100%;
+}
+
 .calculator-seniority-range {
   -webkit-appearance: none;
   background-color: transparent;
@@ -103,8 +219,8 @@
   border-radius: 19px;
   border: 2px solid #000;
   cursor: pointer;
-  height: 38px;
-  margin-top: -16px;
+  height: 28.5px;
+  margin-top: -12px;
   width: 50px;
 }
 
@@ -140,7 +256,7 @@
 }
 
 .calculator-salary {
-  font-size: 40px;
+  font-size: 32px;
   font-weight: 800;
   margin-bottom: 0;
 }

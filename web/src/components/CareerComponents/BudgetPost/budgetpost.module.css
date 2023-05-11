@@ -1,0 +1,58 @@
+.budget-post {
+  max-width: 500px;
+  display: grid;
+  grid-template-areas: 
+    'title title title'
+    '. bar .';
+  gap: 0 8px;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+}
+
+.total {
+  display: flex;
+  align-items: flex-start;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 8px;
+}
+
+.bar {
+  height: 175px;
+  width: 75px;
+  border-radius: 3px;
+  background-color: #000;
+  box-shadow: 0 0 2px 1px #000;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.year-bar {
+  width: 100%;
+  background-color: var(--color-green);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bar span {
+  line-height: 1;
+  font-size: 14px;
+  text-align: center;
+  padding-top: 4px;
+}
+
+.year-bar span {
+  text-align: center;
+  line-height: 1;
+  font-size: 14px;
+  color: #000;
+}

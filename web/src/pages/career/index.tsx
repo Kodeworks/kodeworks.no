@@ -1,13 +1,22 @@
 import Link from 'next/link';
-import { ReactElement } from 'react';
+import { ReactElement, useState } from 'react';
 
-import Calculator from '../../components/Calculator';
 import Layout from '../../components/Layout';
 import { NextPageWithLayout } from '../_app';
 import { usePageTitle } from '../../utils/usePageTitle';
+import CareerContext from '../../context/careerContext';
+import AboutPerson from '../../components/CareerComponents/AboutPerson';
+import Salayr from '../../components/CareerComponents/Salary';
+import Retirement from '../../components/CareerComponents/Retirement';
+import Total from '../../components/CareerComponents/Total';
+import Benefits from '../../components/CareerComponents/Benefits';
 
 const Jobb: NextPageWithLayout = () => {
   usePageTitle('Career');
+
+  const [mastersDegree, setMastersDegree] = useState(false)
+  const [seniority, setSeniority] = useState(0)
+  const [salary, setSalary] = useState(596345)
 
   return (
     <>
@@ -30,24 +39,80 @@ const Jobb: NextPageWithLayout = () => {
                 lønn. Alle våre betingelser, rutiner og tanker om hvordan ting i KodeWorks fungerer
                 finner du i <Link href="staffmanual">personalhåndboka</Link> vår.
               </p>
-              <p>Vi ser etter både erfarne og nyutdannende utviklere i Oslo og Trondheim.</p>
-              <p>
-                <a className="btn btn-black" href="#ledige-stillinger">
-                  Se Ledige Stillinger
-                </a>
-              </p>
+              <p>Vi ser etter både nyutdannende og erfarne utviklere i Oslo og Trondheim.</p>
+              <div className={`career-opportunity`}>
+                <Link href="/career/nyutdannede">
+                  <h4>Nyutdannede utviklere</h4>
+                </Link>
+                <Link href="/career/erfarne">
+                  <h4>Erfarne utviklere</h4>
+                </Link>
+              </div>
             </div>
           </div>
         </div>
       </header>
 
+      <div>
+        <CareerContext.Provider value={{ mastersDegree, setMastersDegree, seniority, setSeniority, salary, setSalary }}>
+        <section className={`section`}>
+            <div className={`section-content section-content-narrow container about-section`}>
+              <Total/>
+            </div>
+        </section>
+        
+        <section className={`section about-section`}>
+            <div className={`section-content section-content-narrow container about-section`}>
+              <AboutPerson/>
+            </div>
+        </section>
+        
+        <section className={`section career-section`}>
+          <div className={`section-content section-content-narrow container`}>
+            <Salayr />
+          </div>
+        </section>
+        <section className={`section career-section`}>
+          <div className={`section-content section-content-narrow container`}>
+            <Retirement />
+          </div>
+        </section>
+        </CareerContext.Provider>
+      </div>
+
       <section className={`section career-calculator-section`}>
         <div className={`section-content section-content-narrow container`}>
-          <Calculator />
+          <h2>Ansattgoder</h2>
+          <br />
+          <Benefits/>
+
+          {/* <h3>Innkjøp</h3>
+          <p>I Kodeworks har de ansatte sitt eget ansattbudsjett med ett beløp man får hvert år, som man enten kan bruke eller spare opp til ett visst beløp</p>
+          <div className={`employee-benefits`}>
+            <BudgetPost total={15000} yearly={5000} title='Telefon'/>
+            <BudgetPost total={48000} yearly={12000} title='Laptop'/>
+            <BudgetPost total={30000} yearly={15000} title='Diverse utstyr'/>
+            <BudgetPost total={30000} yearly={15000} title='Kurs og konferanser'/>
+          </div>
+          <br />          
+
+          <h3>Andre goder</h3>
+          <ul>
+            <li>Mobilabonnement - Inntil 500 / mnd </li>
+            <li>Treningsabonnement - Inntil 500 / mnd</li>
+            <li>Bredbånd - Inntil 500 / mnd</li>
+            <li>Yrkesreise- og yrkesskadeforsikring</li>
+            <li>Reiseforsikring for fritidsreiser som dekker deg og din nærmeste familie</li>
+            <li>Dekker mellomlegget fra hva NAV betaler under foreldrepermisjon og sykefravær</li>
+            <li>2 ukers betalt permisjon ved fødsel.</li>
+          </ul> */}
+
         </div>
+
+
       </section>
 
-      <section
+      {/* <section
         className={`section section-content section-content-narrow career-section contar`}
         id="ledige-stillinger"
       >
@@ -64,7 +129,7 @@ const Jobb: NextPageWithLayout = () => {
           </Link>
           <span>Oslo eller Trondheim</span>
         </div>
-      </section>
+      </section> */}
 
       <section className={`section career-footer`}>
         <div className={`section-content section-content-narrow container career-footer-content`}>

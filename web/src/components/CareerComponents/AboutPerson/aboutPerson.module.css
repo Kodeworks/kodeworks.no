@@ -1,0 +1,157 @@
+.about-container {
+  padding: 12px 0 12px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 64px;
+  background-color: #fff;
+}
+
+.bottom {
+  background-image: linear-gradient(to bottom, rgba(255,255,255,1), rgba(255,0,0,0));
+  height: 24px;
+  background-color: none;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.calculator-education-checkbox-label {
+  border-radius: 20px;
+  background: #000;
+  color: #fff;
+  height: 40px;
+  display: inline-block;
+  line-height: 40px;
+  padding-left: 40px;
+  padding-right: 15px;
+  font-size: 16px;
+  margin: 12px 0;
+  cursor: pointer;
+  position: relative;
+}
+
+.about-education-checkbox {
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  background-color: #cccc;
+  border: 1.5px solid #000;
+  border-radius: 5px;
+  width: 24px;
+  height: 24px;
+
+  margin: 0 0 0 -28px;
+  display: grid;
+  place-content: center;
+}
+
+.about-education-checkbox::before {
+  background-color: var(--color-green);
+  content: "";
+  height: 14px;
+  border-radius: 50%;
+  top: -2px;
+  left: 1px;
+  cursor: pointer;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  width: 14px;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+}
+
+.about-education-checkbox:checked::before {
+  cursor: pointer;
+  transform: scale(1);
+}
+
+
+/* Seniority
+------------------------------------------------------------------------------*/
+.about-seniority-input {
+  border: none;
+  border-bottom: 2px solid #000;
+  font-size: 20px;
+  padding: 5px 10px;
+  margin-right: 5px;
+  width: 50px;
+}
+
+.about-work-month-select {
+  background-color: none;
+  border: none;
+  border-bottom: 2px solid #000;
+  font-size: 20px;
+  padding: 5px 10px;
+  margin-right: 5px;
+  width: 50%px;
+}
+
+
+.calculator-seniority-range {
+  -webkit-appearance: none;
+  background-color: transparent;
+  height: 30px;
+  margin: 5px 0;
+  width: 100%;
+}
+
+.calculator-seniority-range:focus {
+  outline: none;
+}
+
+.calculator-seniority-range::-webkit-slider-runnable-track {
+  animate: 0.2s;
+  background: #000;
+  border-radius: 3.5px;
+  border: 1px solid #000000;
+  cursor: pointer;
+  height: 7px;
+  width: 100%;
+}
+
+.calculator-seniority-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background: var(--color-green);
+  border-radius: 19px;
+  border: 2px solid #000;
+  cursor: pointer;
+  height: 28.5px;
+  margin-top: -12px;
+  width: 50px;
+}
+
+.calculator-seniority-range:focus::-webkit-slider-runnable-track {
+  background: #000;
+}
+
+.calculator-seniority-range::-moz-range-track {
+  animation-duration: 0.2s;
+  background: #000;
+  border-radius: 3.5px;
+  border: 1px solid #000000;
+  cursor: pointer;
+  height: 7px;
+  width: 100%;
+  ;
+}
+.calculator-seniority-range::-moz-range-thumb {
+  background: var(--color-green);
+  border-radius: 19px;
+  border: 2px solid #000000;
+  cursor: pointer;
+  height: 38px;
+  width: 50px;
+}
+
+.range {
+  display: flex;
+  gap: 16px;
+  width: 100%;
+  align-items: center;
+  font-size: 20px;
+}
