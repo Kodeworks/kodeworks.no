@@ -2,28 +2,25 @@ import { useContext, useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
 
-import { getLocale, fmt } from '../utils/useTranslation';
+import { fmt, getLocale, useTranslation } from '../utils/useTranslation';
 import api from '../api';
 import { useClipText } from '../utils/useClipText';
-import { useTranslation } from '../utils/useTranslation';
 import { Person, Project } from '../types';
 import { ClipContentContext } from '../context/ClipContentContext';
 import dictionary from './dict';
 
 import Button from '../components/Button';
 import PeopleList from '../components/PeopleList';
-import {client} from "../lib/client";
+import { getPeople } from '../lib/sanity-api';
 
 export async function getStaticProps() {
-  const people = await client.fetch('*[_type == "people" && !(_id in path(\'drafts.**\'))]{firstName, lastName, email, projects[] -> {name, slug}, socials, "imageUrl": image.asset->url}')
+  const people = await getPeople();
   return {
-    props: {
-      people,
-    },
-  }
+    props: { people },
+  };
 }
 
-function Home({people}): JSX.Element {
+function Home({ people }): JSX.Element {
   const [highlightedProject, setHighlightedProject] = useState<Project>();
   const [highlightedPeople, setHighlightedPeople] = useState<Person[]>([]);
 

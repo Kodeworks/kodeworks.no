@@ -6,12 +6,12 @@ export default {
     {
       name: 'type',
       type: 'string',
-      title: 'Social type'
+      title: 'Social type',
     },
     {
       name: 'url',
       type: 'string',
-      title: 'url'
-    }
-  ]
+      title: 'url',
+    },
+  ],
 }
