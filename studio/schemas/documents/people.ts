@@ -6,34 +6,34 @@ export default {
     {
       name: 'firstName',
       type: 'string',
-      title: 'First name'
+      title: 'First name',
     },
     {
       name: 'lastName',
       type: 'string',
-      title: 'Last name'
+      title: 'Last name',
     },
     {
       name: 'email',
       type: 'string',
-      title: 'Email'
+      title: 'Email',
     },
     {
       name: 'image',
       type: 'image',
-      title: 'Image'
+      title: 'Image',
     },
     {
       name: 'projects',
       type: 'array',
-      of: [{type: 'string'}],
-      title: 'Projects'
+      of: [{type: 'reference', to: [{type: 'project'}]}],
+      title: 'Projects',
     },
     {
       name: 'socials',
       type: 'array',
       of: [{type: 'social'}],
-      title: 'Socials'
-    }
-  ]
+      title: 'Socials',
+    },
+  ],
 }

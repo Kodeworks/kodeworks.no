@@ -12,7 +12,7 @@ export default function PeopleList({ people }: Prop): JSX.Element {
   return (
     <ul className={style['people-list']}>
       {people.map((person) => (
-        <li key={person.name}>
+        <li key={person.firstName}>
           <PersonTile person={person} />
         </li>
       ))}

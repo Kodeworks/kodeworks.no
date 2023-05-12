@@ -1,13 +1,15 @@
 export type Person = {
-  name: string;
-  image: string;
+  firstName: string;
+  lastName: string;
+  imageUrl: string;
   email: string;
-  urls?: SocialUrl[];
-  projects: Project[];
+  socials?: SocialUrl[];
+  projects?: null[] | Project[];
 };
 
 export type Project = {
   name: DictText;
+  slug?: any; // FIXME: should not be optional
   description: DictText;
   image: string;
   extras?: DictText;
@@ -76,7 +78,7 @@ export type ProjectContentOutput = {
 
 type SocialMediaName = 'twitter' | 'linkedin' | 'github';
 export type SocialUrl = {
-  name: SocialMediaName;
+  type: SocialMediaName;
   url: string;
 };
 

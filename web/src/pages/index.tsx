@@ -2,18 +2,25 @@ import { useContext, useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
 
-import { getLocale, fmt } from '../utils/useTranslation';
+import { fmt, getLocale, useTranslation } from '../utils/useTranslation';
 import api from '../api';
 import { useClipText } from '../utils/useClipText';
-import { useTranslation } from '../utils/useTranslation';
 import { Person, Project } from '../types';
 import { ClipContentContext } from '../context/ClipContentContext';
 import dictionary from './dict';
 
 import Button from '../components/Button';
 import PeopleList from '../components/PeopleList';
+import { getPeople } from '../lib/sanity-api';
 
-function Home(): JSX.Element {
+export async function getStaticProps() {
+  const people = await getPeople();
+  return {
+    props: { people },
+  };
+}
+
+function Home({ people }): JSX.Element {
   const [highlightedProject, setHighlightedProject] = useState<Project>();
   const [highlightedPeople, setHighlightedPeople] = useState<Person[]>([]);
 
@@ -21,15 +28,14 @@ function Home(): JSX.Element {
   const { t } = useTranslation(dictionary);
   const locale = getLocale(useRouter());
 
-  const people = api.people.getPeople();
   const highlightedProjects = api.projects.getPublishedProjects();
 
   useEffect(() => {
     const project = highlightedProjects[Math.ceil(Math.random() * highlightedProjects.length) - 1];
-    const people = api.people.getHighligtedPeople().slice(0, 6);
+    const randomPeople = people.slice(0, 6);
 
     setHighlightedProject(project);
-    setHighlightedPeople(people);
+    setHighlightedPeople(randomPeople);
   }, []);
 
   const shouldClipText = useClipText(['projects']);

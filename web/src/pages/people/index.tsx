@@ -1,21 +1,14 @@
-import { useEffect, useState } from 'react';
-
-import api from '../../api';
 import dictionary from '../dict';
-import { Person } from '../../types';
 import { useClipContent } from '../../context/ClipContentContext';
 import { useTranslation } from '../../utils/useTranslation';
 
 import PeopleList from '../../components/PeopleList';
+import { getPeople } from '../../lib/sanity-api';
+import { Person } from '../../types';
 
-export default function People(): JSX.Element {
-  const [people, setPeople] = useState<Person[]>([]);
+export default function People({ people }: { people: Person[] }): JSX.Element {
   const { t } = useTranslation(dictionary);
   useClipContent(false);
-
-  useEffect(() => {
-    setPeople(api.people.getPeople());
-  }, []);
 
   return (
     <div id="page-people">
@@ -28,4 +21,13 @@ export default function People(): JSX.Element {
       </div>
     </div>
   );
+}
+
+export async function getStaticProps() {
+  const people = await getPeople();
+  return {
+    props: {
+      people,
+    },
+  };
 }
