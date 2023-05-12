@@ -12,7 +12,6 @@ interface Prop {
 
 export default function PersonTile({ person }: Prop): JSX.Element {
   const locale = getLocale(useRouter());
-  console.log(person.projects)
   return (
     <>
       <header className={style.person}>
@@ -47,19 +46,24 @@ export default function PersonTile({ person }: Prop): JSX.Element {
         </div>
       </header>
 
-      {
-        <ul className={`list-plain ${style['person-projects']}`}>
-          {person.projects?.map((project) => (
-            <li key={fmt(project.name, locale!)}>
-              <Button
-                href={`/input/${project.slug.current.toString().toLowerCase().replace(/ /i, '-')}`}
-              >
-                {fmt(project.name, locale!)}
-              </Button>
-            </li>
-          ))}
-        </ul>
-      }
+      <ul className={`list-plain ${style['person-projects']}`}>
+        {person?.projects
+          ?.filter((p) => p)
+          ?.map((project) => {
+            return (
+              <li key={fmt(project.name, locale!)}>
+                <Button
+                  href={`/input/${project.slug.current
+                    .toString()
+                    .toLowerCase()
+                    .replace(/ /i, '-')}`}
+                >
+                  {fmt(project.name, locale!)}
+                </Button>
+              </li>
+            );
+          })}
+      </ul>
     </>
   );
 }

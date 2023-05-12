@@ -4,8 +4,9 @@ import { useTranslation } from '../../utils/useTranslation';
 
 import PeopleList from '../../components/PeopleList';
 import { getPeople } from '../../lib/sanity-api';
+import { Person } from '../../types';
 
-export default function People({ people }): JSX.Element {
+export default function People({ people }: { people: Person[] }): JSX.Element {
   const { t } = useTranslation(dictionary);
   useClipContent(false);
 
