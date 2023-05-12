@@ -32,8 +32,7 @@ function Home({ people }): JSX.Element {
 
   useEffect(() => {
     const project = highlightedProjects[Math.ceil(Math.random() * highlightedProjects.length) - 1];
-    const peopleShuffled = people.sort(() => 0.5 - Math.random());
-    const randomPeople = peopleShuffled.slice(0, 6);
+    const randomPeople = people.sort(() => 0.5 - Math.random()).slice(0, 6);
 
     setHighlightedProject(project);
     setHighlightedPeople(randomPeople);
