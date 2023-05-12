@@ -1,12 +1,13 @@
 import { useRouter } from 'next/router';
 
-import { Project } from '../../types';
+import { Project, SanityProject } from '../../types';
 import { getLocale, fmt } from '../../utils/useTranslation';
 
 import style from './projectheader.module.css';
+import { urlFor } from '../../lib/client';
 
 interface Prop {
-  project: Project;
+  project: SanityProject;
 }
 
 export default function ProjectHeader({ project }: Prop): JSX.Element {
@@ -22,12 +23,12 @@ export default function ProjectHeader({ project }: Prop): JSX.Element {
         </ul>
 
         <p>{fmt(project.description, locale!)}</p>
-        {project.extras && <p>{fmt(project.extras, locale!)}</p>}
+        {/* {project.extras && <p>{fmt(project.extras, locale!)}</p>} */}
       </div>
 
       <img
         className={style.projectHeader__image}
-        src={'/static/photos/projects/' + project.image}
+        src={urlFor(project.image).width(1200).url()}
         width="1200"
         height="1200"
         alt=""

@@ -34,7 +34,7 @@ export default defineType({
           type: 'text',
         }),
         defineField({
-          title: 'Norewgian',
+          title: 'Norwegian',
           name: 'no',
           type: 'text',
         }),
@@ -48,6 +48,31 @@ export default defineType({
       options: {
         layout: 'tags',
       },
+    }),
+    defineField({
+      name: 'hasOwnPage',
+      type: 'boolean',
+      description:
+        "Should the project have it's own page on kodeworks.no? Uses 'content' field for the content of the page",
+      initialValue: false,
+      validation: (R) => R.required(),
+    }),
+    defineField({
+      name: 'content',
+      type: 'object',
+      title: 'Content',
+      fields: [
+        defineField({
+          title: 'English',
+          name: 'en',
+          type: 'projectsPortableText',
+        }),
+        defineField({
+          title: 'Norwegian',
+          name: 'no',
+          type: 'projectsPortableText',
+        }),
+      ],
     }),
     defineField({
       name: 'hidden',

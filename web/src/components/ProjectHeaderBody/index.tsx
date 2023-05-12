@@ -1,7 +1,7 @@
 import { ReactElement } from 'react';
 import { useRouter } from 'next/router';
 
-import { Project } from '../../types';
+import { Project, SanityProject } from '../../types';
 import { getLocale, fmt } from '../../utils/useTranslation';
 import { usePageTitle } from '../../utils/usePageTitle';
 
@@ -10,7 +10,7 @@ import ProjectHeader from '../ProjectHeader';
 import ProjectLayout from '../layouts/ProjectLayout';
 
 interface Prop {
-  project: Project;
+  project: SanityProject;
 }
 
 export default function ProjectHeaderBody({ project }: Prop): JSX.Element {
@@ -20,7 +20,7 @@ export default function ProjectHeaderBody({ project }: Prop): JSX.Element {
   return (
     <>
       <ProjectHeader project={project} />
-      <ProjectBody project={project} />
+      {/* <ProjectBody project={project} /> */}
     </>
   );
 }

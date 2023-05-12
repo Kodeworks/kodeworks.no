@@ -9,10 +9,11 @@ import { useClipContent } from '../../context/ClipContentContext';
 import Layout from '../../components/Layout';
 import ProjectHeaderBody from '../../components/ProjectHeaderBody';
 
-import { Project } from '../../types';
+import { Project, SanityProject } from '../../types';
+import { client } from '../../lib/client';
 
 interface Prop {
-  project: Project;
+  project: SanityProject;
 }
 
 const Input: NextPageWithLayout = ({ project }: Prop) => {
@@ -69,13 +70,15 @@ export default Input;
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const locales = ['no', 'en'];
-  const params = api.projects.getProjects().reduce((arr, project) => {
-    return [
-      ...arr,
-      ...locales.map((locale) => ({ params: { input: project.urlName }, locale: locale })),
-    ];
-  }, []);
-
+  const params = (
+    await client.fetch("* [_type == 'project' && !hidden && hasOwnPage].slug.current")
+  ).reduce(
+    (accumulator, slug) => [
+      ...accumulator,
+      ...locales.map((locale) => ({ params: { input: slug }, locale })),
+    ],
+    []
+  );
   return {
     paths: params,
     fallback: false,
@@ -83,9 +86,14 @@ export const getStaticPaths: GetStaticPaths = async () => {
 };
 
 export const getStaticProps: GetStaticProps = async (context: GetStaticPropsContext) => {
-  return {
+  console.log(context);
+  const z = {
     props: {
-      project: await api.projects.getProject(context.params.input),
+      project: await client.fetch(`* [_type == 'project' && slug.current == $slug][0]`, {
+        slug: context.params.input,
+      }),
     },
   };
+  console.log('the return', z);
+  return z;
 };
