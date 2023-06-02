@@ -1,5 +1,13 @@
-import { client } from './client';
-import { JobDescription, Person, StaffManual } from '../../types';
+import { createClient } from '@sanity/client';
+import { JobDescription, Person, StaffManual } from '../types';
+
+export const client = createClient({
+  projectId: 'zkl0178p',
+  dataset: 'production',
+  apiVersion: '2023-02-06',
+  token: process.env.NEXT_PUBLIC_SANITY_TOKEN,
+  useCdn: true,
+});
 
 export const getStaffManual = () =>
   client.fetch<StaffManual>(

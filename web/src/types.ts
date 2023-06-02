@@ -86,27 +86,27 @@ export type SocialUrl = {
 
 // Dictionary Types
 
-type DictProjectContents = {
+export type DictProjectContents = {
   [key: string]: ProjectContent[];
 };
 
-type DictText = string | DictionaryTerm;
+export type DictText = string | DictionaryTerm;
 
-type DictionaryTerm = {
+export type DictionaryTerm = {
   [key: string]: string;
 };
 
-type DictionaryKey = {
+export type DictionaryKey = {
   [key: string]: string;
 };
 
-type Dictionary = {
+export type Dictionary = {
   [key: string]: DictionaryTerm;
 };
 
 // Social stuff
 
-type SocialProps = {
+export type SocialProps = {
   title?: string;
   type?: string;
   description?: string;

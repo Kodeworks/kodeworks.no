@@ -1,6 +1,7 @@
-import { getStaffManual, StaffManual } from '../../lib/sanity/sanity-api';
 import { PortableText } from '@portabletext/react';
 import StaffManualNavigation from '../../components/StaffManual/StaffManualNavigation';
+import { StaffManual } from '../../types';
+import { getStaffManual } from '../../lib/sanity';
 
 interface Props {
   manual: StaffManual;
