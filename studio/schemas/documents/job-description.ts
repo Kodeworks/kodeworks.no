@@ -15,23 +15,25 @@ export default defineType({
       title: 'Slug',
       type: 'slug',
       options: {
-        source: 'name',
+        source: 'title',
       },
     }),
     defineField({
       name: 'label',
       title: 'Location label',
-      type: 'string'
+      type: 'string',
     }),
     defineField({
       name: 'subtitle',
       title: 'Subtitle',
-      type: 'string'
+      type: 'string',
     }),
     defineField({
-      name: 'description',
-      title: 'Description',
-      type: 'text'
+      name: 'content',
+      title: 'Content',
+      type: 'array',
+      of: [{type: 'block'}],
+      validation: (Rule) => Rule.unique(),
     }),
   ],
 })
