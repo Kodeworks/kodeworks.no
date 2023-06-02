@@ -21,5 +21,9 @@ export const getPeople = () =>
 
 export const getJobDescriptions = () =>
   client.fetch<JobDescription>(
-    `*[_type == "job-description"][0]{ title, slug, label, subtitle, description}`
+    `*[_type == "job-description"]{ title, slug, label, subtitle, content}`
+  );
+export const getJobDescriptionBySlug = (slug: string) =>
+  client.fetch<JobDescription>(
+    `*[_type == "job-description" && slug.current == "${slug}"][0]{ title, slug, label, subtitle, content}`
   );
