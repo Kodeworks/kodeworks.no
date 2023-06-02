@@ -5,12 +5,18 @@ import Calculator from '../../components/Calculator';
 import Layout from '../../components/Layout';
 import { NextPageWithLayout } from '../_app';
 import { usePageTitle } from '../../utils/usePageTitle';
+import { getJobDescriptions } from '../../lib/sanity';
+import { JobDescription } from '../../types';
 
-const Jobb: NextPageWithLayout = () => {
+interface Props {
+  jobs: Array<JobDescription>;
+}
+
+const CareerPage: NextPageWithLayout = ({ jobs }: Props) => {
   usePageTitle('Career');
 
   return (
-    <>
+    <main>
       <header className="section-hero section-content section-content-narrow container">
         <div className={`career-mainheader`}>
           <h1>
@@ -48,22 +54,18 @@ const Jobb: NextPageWithLayout = () => {
       </section>
 
       <section
-        className={`section section-content section-content-narrow career-section contar`}
+        className={`section section-content section-content-narrow career-section`}
         id="ledige-stillinger"
       >
         <h2>Ledige stillinger</h2>
-        <div className={`career-opportunity`}>
-          <Link href="/career/nyutdannede">
-            <h4>Nyutdannede utviklere</h4>
-          </Link>
-          <span>Oslo eller Trondheim</span>
-        </div>
-        <div className={`career-opportunity`}>
-          <Link href="/career/erfarne">
-            <h4>Erfarne utviklere</h4>
-          </Link>
-          <span>Oslo eller Trondheim</span>
-        </div>
+        {jobs.map((job) => (
+          <div key={job.slug.current} className={`career-opportunity`}>
+            <Link href={`/career/${job.slug.current}`}>
+              <h4>{job.title}</h4>
+            </Link>
+            <span>{job.label}</span>
+          </div>
+        ))}
       </section>
 
       <section className={`section career-footer`}>
@@ -89,14 +91,22 @@ const Jobb: NextPageWithLayout = () => {
           </div>
         </div>
       </section>
-    </>
+    </main>
   );
 };
 
-Jobb.getLayout = function getLayout(page: ReactElement) {
+CareerPage.getLayout = function getLayout(page: ReactElement) {
   return (
     <Layout socialProps={{ title: 'Career', image: '/static/photos/EOSR7759.jpg' }}>{page}</Layout>
   );
 };
 
-export default Jobb;
+export async function getServerSideProps() {
+  const jobs = await getJobDescriptions();
+
+  return {
+    props: { jobs },
+  };
+}
+
+export default CareerPage;

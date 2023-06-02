@@ -3,8 +3,8 @@ import { useClipContent } from '../../context/ClipContentContext';
 import { useTranslation } from '../../utils/useTranslation';
 
 import PeopleList from '../../components/PeopleList';
-import { getPeople } from '../../lib/sanity-api';
 import { Person } from '../../types';
+import { getPeople } from '../../lib/sanity';
 
 export default function People({ people }: { people: Person[] }): JSX.Element {
   const { t } = useTranslation(dictionary);

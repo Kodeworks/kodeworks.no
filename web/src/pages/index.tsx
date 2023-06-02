@@ -11,7 +11,7 @@ import dictionary from './dict';
 
 import Button from '../components/Button';
 import PeopleList from '../components/PeopleList';
-import { getPeople } from '../lib/sanity-api';
+import { getPeople } from '../lib/sanity';
 
 export async function getStaticProps() {
   const people = await getPeople();
