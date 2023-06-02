@@ -1,4 +1,4 @@
-import { getStaffManual, StaffManual } from '../../lib/sanity-api';
+import { getStaffManual, StaffManual } from '../../lib/sanity/sanity-api';
 import { PortableText } from '@portabletext/react';
 import StaffManualNavigation from '../../components/StaffManual/StaffManualNavigation';
 

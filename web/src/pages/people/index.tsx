@@ -3,7 +3,7 @@ import { useClipContent } from '../../context/ClipContentContext';
 import { useTranslation } from '../../utils/useTranslation';
 
 import PeopleList from '../../components/PeopleList';
-import { getPeople } from '../../lib/sanity-api';
+import { getPeople } from '../../lib/sanity/sanity-api';
 import { Person } from '../../types';
 
 export default function People({ people }: { people: Person[] }): JSX.Element {

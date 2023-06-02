@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import { ManualSection, StaffManual } from '../../lib/sanity-api';
+import { ManualSection, StaffManual } from '../../lib/sanity/sanity-api';
 
 interface GroupedSectionLabel {
   [key: string]: Array<ManualSection>;

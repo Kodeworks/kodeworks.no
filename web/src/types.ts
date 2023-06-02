@@ -1,3 +1,5 @@
+import { PortableTextBlock, Slug } from '@sanity/types';
+
 export type Person = {
   firstName: string;
   lastName: string;
@@ -111,3 +113,24 @@ type SocialProps = {
   url?: string;
   image?: string;
 };
+
+export interface ManualSection {
+  title: string;
+  label: string;
+  slug: Slug;
+  content: Array<PortableTextBlock>;
+}
+
+export interface StaffManual {
+  title: string;
+  intro: string;
+  sections: Array<ManualSection>;
+}
+
+export interface JobDescription {
+  title: string;
+  slug: Slug;
+  label: string;
+  subtitle: string;
+  content: Array<PortableTextBlock>;
+}
