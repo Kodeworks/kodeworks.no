@@ -1,0 +1,46 @@
+.hero {
+}
+
+.callToAction {
+  border: none;
+  display: inline-block;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  padding: 16px 32px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #000;
+  background-color: #b6ff9e;
+  width: fit-content;
+}
+
+.listSection li {
+  list-style-image: url("/static/icons/list-marker.svg");
+  margin-top: 8px;
+}
+/*.listSection ul {
+  list-style: circle;
+}
+.listSection ul ::marker {
+  font-size: 200%;
+  background: #b6ff9e;
+  border: 2px solid black;
+}
+
+/*
+.listSection ul {
+  list-style: none;
+}
+
+
+.listSection li::before {
+  content: "";
+  background: #b6ff9e;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 0.5rem;
+  border: 2px solid black;
+}*/

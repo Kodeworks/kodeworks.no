@@ -1,5 +1,6 @@
 import { createClient } from '@sanity/client';
 import { JobDescription, Person, StaffManual } from '../types';
+import imageUrlBuilder from '@sanity/image-url';
 
 export const client = createClient({
   projectId: 'zkl0178p',
@@ -8,6 +9,12 @@ export const client = createClient({
   token: process.env.NEXT_PUBLIC_SANITY_TOKEN,
   useCdn: true,
 });
+
+const builder = imageUrlBuilder(client);
+
+export const urlFor = (source) => {
+  return builder.image(source);
+};
 
 export const getStaffManual = () =>
   client.fetch<StaffManual>(
@@ -27,3 +34,6 @@ export const getJobDescriptionBySlug = (slug: string) =>
   client.fetch<JobDescription>(
     `*[_type == "job-description" && slug.current == "${slug}"][0]{ title, slug, label, subtitle, content}`
   );
+
+export const getPage = (title: string) =>
+  client.fetch<Sanity.Default.Schema.Page>(`*[_type == "page" && title == "${title}"][0]`);

@@ -109,6 +109,11 @@ code {
   }
 }
 
+/* Main -------------------------------------------*/
+.main {
+  margin-top: 150px;
+}
+
 /* Section
 ------------------------------------------------------------------------------*/
 .section {
@@ -302,4 +307,9 @@ ol {
 
 .btn.btn-black.btn-big {
   font-size: 20px;
+}
+
+.btn.btn-green {
+  color: #000;
+  background-color: #b6ff9e;
 }

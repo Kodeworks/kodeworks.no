@@ -1,4 +1,4 @@
-import { PortableTextBlock, Slug } from '@sanity/types';
+import { KeyedObject, PortableTextBlock, Slug, TypedObject } from '@sanity/types';
 
 export type Person = {
   firstName: string;
@@ -6,7 +6,7 @@ export type Person = {
   imageUrl: string;
   email: string;
   socials?: SocialUrl[];
-  projects?: null[] | Project[];
+  projects?: Array<Project | null>;
 };
 
 export type Project = {
@@ -134,3 +134,5 @@ export interface JobDescription {
   subtitle: string;
   content: Array<PortableTextBlock>;
 }
+
+export type PageContent<T> = TypedObject & KeyedObject & T;
