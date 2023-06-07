@@ -1,6 +1,3 @@
-.hero {
-}
-
 .callToAction {
   border: none;
   display: inline-block;
@@ -14,12 +11,17 @@
   background-color: #b6ff9e;
   width: fit-content;
 }
-
+.listSection {
+}
 .listSection li {
   list-style-image: url("/static/icons/list-marker.svg");
   margin-top: 8px;
 }
-/*.listSection ul {
+/*
+ /-----Keeping this stuff until we can decided on being ok with the image styled markers
+.listSection ul {
+
+
   list-style: circle;
 }
 .listSection ul ::marker {
@@ -28,11 +30,10 @@
   border: 2px solid black;
 }
 
-/*
+
 .listSection ul {
   list-style: none;
 }
-
 
 .listSection li::before {
   content: "";

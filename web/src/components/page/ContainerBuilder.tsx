@@ -1,48 +1,50 @@
 import {
   isCallToActionPageContent,
-  isContainerPageContent,
-  isHeroPageContent,
   isIllustrationPageContent,
   isListSectionPageContent,
   isParagraphPageContent,
   isTextSectionPageContent,
 } from '../../utils/type-guards';
-import Hero from './Hero';
 import TextSection from './TextSection';
 import ListSection from './ListSection';
-import ContainerBuilder from './ContainerBuilder';
 import CallToAction from './CallToAction';
 import Illustration from './Illustration';
 import Paragraph from './Paragraph';
+import classNames from 'classnames';
 
 interface Props {
-  pageSchema: NonNullable<Sanity.Default.Schema.Page>;
+  containerSchema: NonNullable<Sanity.Default.Schema.Container>;
 }
 
-export default function PageBuilder({ pageSchema }: Props) {
-  if (!pageSchema.content) {
+export default function ContainerBuilder({ containerSchema }: Props) {
+  if (!containerSchema.content) {
     return null;
   }
-  // TODO: We should tweak the layouts and styling when benefits and calculator is in place.
+
+  const classes = classNames('flex flex-col gap-8 relative', {
+    'col-span-1 lg:col-span-2': containerSchema.fullWidth,
+    'w-min': !containerSchema.fullWidth,
+    [`bg-[${containerSchema.background}]`]: containerSchema.background,
+  });
+
   return (
-    <article className="grid grid-cols-1 lg:grid-cols-2 gap-20">
-      {pageSchema.content.map(toComponent)}
-    </article>
+    <div className={classes}>
+      {containerSchema.fullWidth && (
+        <div
+          className={`full-screen-width h-full absolute bg-[${containerSchema.background}] -z-10`}
+        />
+      )}
+      <div className="p-8">{containerSchema.content.map(toComponent)}</div>
+    </div>
   );
 }
 
 const toComponent = (schema: unknown) => {
-  if (isHeroPageContent(schema)) {
-    return <Hero key={schema._key} heroSchema={schema} />;
-  }
   if (isTextSectionPageContent(schema)) {
     return <TextSection key={schema._key} textSectionSchema={schema} />;
   }
   if (isListSectionPageContent(schema)) {
     return <ListSection key={schema._key} listSectionSchema={schema} />;
-  }
-  if (isContainerPageContent(schema)) {
-    return <ContainerBuilder key={schema._key} containerSchema={schema} />;
   }
   if (isCallToActionPageContent(schema)) {
     return <CallToAction key={schema._key} ctaSchema={schema} />;
@@ -53,5 +55,6 @@ const toComponent = (schema: unknown) => {
   if (isParagraphPageContent(schema)) {
     return <Paragraph key={schema._key} paragraphSchema={schema} />;
   }
+
   return null;
 };

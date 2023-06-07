@@ -6,11 +6,10 @@ export default defineType({
   title: 'Container',
   fields: [
     defineField({
-      name: 'containerBuilder',
+      name: 'content',
       type: 'array',
-      title: 'Container builder',
+      title: 'Content',
       of: [
-        {type: 'hero'},
         {type: 'callToAction'},
         {type: 'listSection'},
         {type: 'textSection'},

@@ -16,3 +16,19 @@ export const isListSectionPageContent = (
   schema: unknown
 ): schema is PageContent<NonNullable<Sanity.Default.Schema.ListSection>> =>
   isPageContent(schema) && schema._type === 'listSection';
+export const isContainerPageContent = (
+  schema: unknown
+): schema is PageContent<NonNullable<Sanity.Default.Schema.Container>> =>
+  isPageContent(schema) && schema._type === 'container';
+export const isCallToActionPageContent = (
+  schema: unknown
+): schema is PageContent<NonNullable<Sanity.Default.Schema.CallToAction>> =>
+  isPageContent(schema) && schema._type === 'callToAction';
+export const isIllustrationPageContent = (
+  schema: unknown
+): schema is PageContent<NonNullable<Sanity.Default.Schema.Illustration>> =>
+  isPageContent(schema) && schema._type === 'illustration';
+export const isParagraphPageContent = (
+  schema: unknown
+): schema is PageContent<NonNullable<Sanity.Default.Schema.Paragraph>> =>
+  isPageContent(schema) && schema._type === 'paragraph';

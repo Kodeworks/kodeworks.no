@@ -4,7 +4,7 @@ interface Props {
 
 export default function ListSection({ listSectionSchema }: Props) {
   return (
-    <section className="listSection">
+    <section className="listSection max-w-sm">
       <h2>{listSectionSchema.heading}</h2>
       {listSectionSchema.list && (
         <ul>

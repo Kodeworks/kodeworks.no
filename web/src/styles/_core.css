@@ -313,3 +313,9 @@ ol {
   color: #000;
   background-color: #b6ff9e;
 }
+
+.full-screen-width {
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  width: 100vw;
+}
