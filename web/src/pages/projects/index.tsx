@@ -1,7 +1,7 @@
 import ProjectTile from '../../components/ProjectTile';
 
 import api from '../../api';
-import dictionary from '../dict';
+import dictionary from '../../utils/dict';
 import { useClipContent } from '../../context/ClipContentContext';
 import { useTranslation } from '../../utils/useTranslation';
 import { useRouter } from 'next/router';
