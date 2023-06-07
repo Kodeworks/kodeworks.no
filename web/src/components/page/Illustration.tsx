@@ -5,10 +5,9 @@ interface Props {
 }
 
 export default function Illustration({ illustrationSchema }: Props) {
-  return null;
   return (
     <img
-      src={urlFor(illustrationSchema.image).width(400).height(400).url()}
+      src={urlFor(illustrationSchema.image).width(300).height(300).url()}
       alt={illustrationSchema.image?.alt}
     />
   );

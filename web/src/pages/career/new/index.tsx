@@ -11,7 +11,7 @@ export default function NewCareerPage({ page }: Props) {
 
   // TODO We can add section for calculator and benefits under page builder
   return (
-    <main className="main container section-content">
+    <main className="main">
       <PageBuilder pageSchema={page} />
     </main>
   );
