@@ -1,12 +1,17 @@
 import { useContext, useEffect } from 'react';
 import CareerContext from '../../../context/careerContext';
 import style from './aboutPerson.module.css';
+import { getSalaryInfo, SalaryInfo } from '../../../lib/sanity-api';
 
 type Wage = {
   [key: number]: number;
 };
 
-export default function BudgetPost(): JSX.Element {
+interface Props {
+  salaryInfo: SalaryInfo;
+}
+
+export default function AboutPerson({ salaryInfo }: Props): JSX.Element {
   const { mastersDegree, setMastersDegree, seniority, setSeniority, salary, setSalary } = useContext(CareerContext)
 
   const wages: Wage = {
@@ -39,6 +44,8 @@ export default function BudgetPost(): JSX.Element {
   
   function handleSeniorityChange(event: React.ChangeEvent<HTMLInputElement>) {
     setSeniority(+event.currentTarget.value);
+    console.log(salaryInfo.yearlyPension)
+
   }
 
   useEffect(() => {
@@ -50,6 +57,7 @@ export default function BudgetPost(): JSX.Element {
     ? +wages[mastersDegree ? seniority + 1 : seniority]
     : +wages[Object.keys(wages).length - 1]
   }
+
 
   return (
     <div className={`${style['abb']}`}>
@@ -83,4 +91,12 @@ export default function BudgetPost(): JSX.Element {
       </div>
     </div>
   );
+}
+
+export async function getServerSideProps() {
+  const salaryInfo = await getSalaryInfo();
+  console.log(salaryInfo.yearlyPension);
+  return {
+    props: { salaryInfo },
+  };
 }
