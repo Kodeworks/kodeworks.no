@@ -1,4 +1,4 @@
-import { Person } from '../../types';
+import { Person, Project } from '../../types';
 
 import Button from '../Button';
 import { useRouter } from 'next/router';
@@ -48,7 +48,7 @@ export default function PersonTile({ person }: Prop): JSX.Element {
 
       <ul className={`list-plain ${style['person-projects']}`}>
         {person?.projects
-          ?.filter((p) => p)
+          ?.filter((s): s is Project => Boolean(s))
           ?.map((project) => {
             return (
               <li key={fmt(project.name, locale!)}>

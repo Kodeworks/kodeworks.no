@@ -1,24 +1,26 @@
 {
-	"name": "kodeworks",
-	"version": "0.0.0",
-	"private": true,
-	"workspaces": [
-		"web",
-		"studio"
-	],
-	"scripts": {
-		"build": "turbo run build",
-		"dev": "turbo run dev --parallel",
+  "name": "kodeworks",
+  "version": "0.0.0",
+  "private": true,
+  "workspaces": [
+    "web",
+    "studio"
+  ],
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev --parallel",
     "deploy": "turbo run deploy",
-		"lint": "turbo run lint",
-		"format": "prettier --write \"**/*.{ts,tsx,md}\""
-	},
-	"devDependencies": {
-		"prettier": "^2.5.1",
-		"turbo": "latest"
-	},
-	"engines": {
-		"npm": ">=7.0.0"
-	},
-	"packageManager": "npm@9.4.0"
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "codegen": "sanity-codegen codegen"
+  },
+  "devDependencies": {
+    "prettier": "^2.5.1",
+    "sanity-codegen": "^1.0.0-alpha.45",
+    "turbo": "latest"
+  },
+  "engines": {
+    "npm": ">=7.0.0"
+  },
+  "packageManager": "npm@9.4.0"
 }

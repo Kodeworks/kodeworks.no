@@ -82,7 +82,10 @@ export const getStaticPaths: GetStaticPaths = async () => {
   };
 };
 
-export const getStaticProps: GetStaticProps = async (context: GetStaticPropsContext) => {
+export const getStaticProps: GetStaticProps<Prop, { input: string }> = async (context) => {
+  if (!context.params) {
+    throw new Error('Params missing');
+  }
   return {
     props: {
       project: await api.projects.getProject(context.params.input),

@@ -1,4 +1,4 @@
-import dictionary from '../dict';
+import dictionary from '../../utils/dict';
 import { useClipContent } from '../../context/ClipContentContext';
 import { useTranslation } from '../../utils/useTranslation';
 

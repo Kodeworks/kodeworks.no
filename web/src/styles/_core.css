@@ -109,6 +109,23 @@ code {
   }
 }
 
+/* Main -------------------------------------------*/
+.main {
+  margin-top: 150px;
+  max-width: var(--page-max-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--gutter-size);
+  padding-right: var(--gutter-size);
+}
+
+@media (max-width: 660px) {
+  .main {
+    padding-left: var(--gutter-size-mobile);
+    padding-right: var(--gutter-size-mobile);
+  }
+}
+
 /* Section
 ------------------------------------------------------------------------------*/
 .section {
@@ -302,4 +319,15 @@ ol {
 
 .btn.btn-black.btn-big {
   font-size: 20px;
+}
+
+.btn.btn-green {
+  color: #000;
+  background-color: #b6ff9e;
+}
+
+.full-screen-width {
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  width: 100vw;
 }

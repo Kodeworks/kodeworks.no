@@ -7,7 +7,7 @@ import api from '../api';
 import { useClipText } from '../utils/useClipText';
 import { Person, Project } from '../types';
 import { ClipContentContext } from '../context/ClipContentContext';
-import dictionary from './dict';
+import dictionary from '../utils/dict';
 
 import Button from '../components/Button';
 import PeopleList from '../components/PeopleList';

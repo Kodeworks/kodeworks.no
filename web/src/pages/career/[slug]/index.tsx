@@ -3,12 +3,26 @@ import { PortableText } from '@portabletext/react';
 import { usePageTitle } from '../../../utils/usePageTitle';
 import { JobDescription } from '../../../types';
 import { getJobDescriptionBySlug } from '../../../lib/sanity';
+import { useRouter } from 'next/router';
+import { useEffect } from 'react';
 
 interface Props {
-  job: JobDescription;
+  job?: JobDescription;
 }
-export default function Job({ job }: Props): JSX.Element {
-  usePageTitle(job.title);
+export default function Job({ job }: Props) {
+  const router = useRouter();
+
+  usePageTitle(job?.title || '');
+
+  useEffect(() => {
+    if (!job) {
+      router.replace('/career');
+    }
+  });
+
+  if (!job) {
+    return null;
+  }
 
   return (
     <main>
@@ -32,7 +46,7 @@ export default function Job({ job }: Props): JSX.Element {
 }
 
 export const getServerSideProps: GetServerSideProps<Props, { slug: string }> = async (context) => {
-  const job = await getJobDescriptionBySlug(context.params.slug);
+  const job = context.params && (await getJobDescriptionBySlug(context.params.slug));
 
   return {
     props: { job },
