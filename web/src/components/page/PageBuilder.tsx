@@ -19,7 +19,6 @@ import Calculator from './Calculator';
 
 interface Props {
   pageSchema: NonNullable<Sanity.Default.Schema.Page>;
-
 }
 
 export default function PageBuilder({ pageSchema }: Props) {
@@ -57,7 +56,6 @@ const toComponent = (schema: unknown) => {
     return <Paragraph key={schema._key} paragraphSchema={schema} />;
   }
   if (isCalculatorPageContent(schema)) {
-    console.log(schema)
     return <Calculator key={schema._key} careerSchema={schema} />;
   }
   return null;

@@ -38,5 +38,4 @@ export const getJobDescriptionBySlug = (slug: string) =>
 export const getPage = (title: string) =>
   client.fetch<Sanity.Default.Schema.Page>(`*[_type == "page" && title == "${title}"][0]`);
 
-  export const getCareerValues = () =>
-  client.fetch<CareerValues>(`*[_type == "career-values"][0]`);
+export const getCareerValues = () => client.fetch<CareerValues>(`*[_type == "career-values"][0]`);

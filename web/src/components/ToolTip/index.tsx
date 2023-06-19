@@ -10,8 +10,10 @@ export default function TooltipComponent({ tooltipContainer, children }: Tooltip
   const tooltipId = useId();
 
   return (
-    <button className="self-start text-start" style={{background: 'none', border: 'none'}}>
-      <div id={tooltipId} className='flex items-start'>{tooltipContainer}</div>
+    <button className="self-start text-start" style={{ background: 'none', border: 'none' }}>
+      <div id={tooltipId} className="flex items-start">
+        {tooltipContainer}
+      </div>
 
       <Tooltip anchorId={tooltipId} place="top" className="tooltip" offset={25}>
         {children}

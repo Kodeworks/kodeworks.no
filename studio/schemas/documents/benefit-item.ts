@@ -32,7 +32,11 @@ export default defineType({
       title: 'Beløp årlig',
       type: 'number',
     }),
-    defineField({name: 'fixedBenefits', type: 'boolean', title: 'Beregn i faste goder', initialValue: false}),
-
-  ]
+    defineField({
+      name: 'fixedBenefits',
+      type: 'boolean',
+      title: 'Beregn i faste goder',
+      initialValue: false,
+    }),
+  ],
 })

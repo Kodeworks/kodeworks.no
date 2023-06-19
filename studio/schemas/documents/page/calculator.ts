@@ -11,7 +11,8 @@ export default defineType({
       title: 'Title',
     }),
     defineField({
-      name: 'basicPensionAmount', title: 'Grunnbeløpet i folketrygden',
+      name: 'basicPensionAmount',
+      title: 'Grunnbeløpet i folketrygden',
       type: 'object',
       fields: [
         defineField({
@@ -27,9 +28,14 @@ export default defineType({
       ],
     }),
     defineField({name: 'yearlyPensionSaving', title: 'Årlig pensjonssparing (%)', type: 'number'}),
-    defineField({name: 'estimatedSalaryIncrease', title: 'Estimert lønnsjustering', type: 'number'}),
     defineField({
-      name: 'employeeBudget', title: 'Ansattbudsjetter',
+      name: 'estimatedSalaryIncrease',
+      title: 'Estimert lønnsjustering',
+      type: 'number',
+    }),
+    defineField({
+      name: 'employeeBudget',
+      title: 'Ansattbudsjetter',
       type: 'object',
       fields: [
         defineField({
@@ -46,12 +52,13 @@ export default defineType({
           name: 'epolyeeBudgetsPosts',
           title: 'Ansatt budsjetter',
           type: 'array',
-          of: [{type: 'employeeBudgetPost'}]
+          of: [{type: 'employeeBudgetPost'}],
         }),
       ],
     }),
     defineField({
-      name: 'benefits', title: 'Andre goder',
+      name: 'benefits',
+      title: 'Andre goder',
       type: 'object',
       fields: [
         defineField({
@@ -68,7 +75,7 @@ export default defineType({
           name: 'benefitItems',
           title: 'Andre goder',
           type: 'array',
-          of: [{type: 'benefitItem'}]
+          of: [{type: 'benefitItem'}],
         }),
       ],
     }),
@@ -76,8 +83,7 @@ export default defineType({
       name: 'salaryStpes',
       title: 'Lønnstrinn (Stigende rekkefølge)',
       type: 'array',
-      of: [{type: 'number'}]
+      of: [{type: 'number'}],
     }),
-  ]
+  ],
 })
- 
