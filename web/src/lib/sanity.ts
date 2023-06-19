@@ -1,5 +1,5 @@
 import { createClient } from '@sanity/client';
-import { JobDescription, Person, StaffManual } from '../types';
+import { JobDescription, Person, StaffManual, CareerValues } from '../types';
 import imageUrlBuilder from '@sanity/image-url';
 
 export const client = createClient({
@@ -37,3 +37,6 @@ export const getJobDescriptionBySlug = (slug: string) =>
 
 export const getPage = (title: string) =>
   client.fetch<Sanity.Default.Schema.Page>(`*[_type == "page" && title == "${title}"][0]`);
+
+  export const getCareerValues = () =>
+  client.fetch<CareerValues>(`*[_type == "career-values"][0]`);

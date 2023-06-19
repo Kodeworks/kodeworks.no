@@ -73,7 +73,7 @@ export default function Navigation({ isOpened, toggleNavigationOpened }: Prop): 
               </Link>
             </li>
             <li>
-              <Link href="/career" locale={locale}>
+              <Link href="/career/new" locale={locale}>
                 {t('career')}
               </Link>
             </li>

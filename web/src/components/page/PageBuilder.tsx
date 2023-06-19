@@ -6,6 +6,7 @@ import {
   isListSectionPageContent,
   isParagraphPageContent,
   isTextSectionPageContent,
+  isCalculatorPageContent,
 } from '../../utils/type-guards';
 import Hero from './Hero';
 import TextSection from './TextSection';
@@ -14,9 +15,11 @@ import ContainerBuilder from './ContainerBuilder';
 import CallToAction from './CallToAction';
 import Illustration from './Illustration';
 import Paragraph from './Paragraph';
+import Calculator from './Calculator';
 
 interface Props {
   pageSchema: NonNullable<Sanity.Default.Schema.Page>;
+
 }
 
 export default function PageBuilder({ pageSchema }: Props) {
@@ -52,6 +55,10 @@ const toComponent = (schema: unknown) => {
   }
   if (isParagraphPageContent(schema)) {
     return <Paragraph key={schema._key} paragraphSchema={schema} />;
+  }
+  if (isCalculatorPageContent(schema)) {
+    console.log(schema)
+    return <Calculator key={schema._key} careerSchema={schema} />;
   }
   return null;
 };

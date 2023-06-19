@@ -22,6 +22,7 @@ export default defineType({
         {type: 'textSection'},
         {type: 'paragraph'},
         {type: 'illustration'},
+        {type: 'calculator'},
       ],
     }),
   ],

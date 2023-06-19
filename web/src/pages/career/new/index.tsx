@@ -24,6 +24,7 @@ export const getServerSideProps: GetServerSideProps<Props> = async () => {
     throw new Error('Page not found');
   }
 
+  
   return {
     props: { page },
   };

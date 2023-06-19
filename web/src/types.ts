@@ -1,5 +1,11 @@
 import { KeyedObject, PortableTextBlock, Slug, TypedObject } from '@sanity/types';
 
+export type CareerValues = {
+  basicPensionAmount: object;
+  estimatedSalaryIncrease: number;
+  salaryStpes: Array<number>;
+  yearlyPensionSaving: number;
+};
 export type Person = {
   firstName: string;
   lastName: string;
