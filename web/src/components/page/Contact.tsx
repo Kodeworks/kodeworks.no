@@ -13,9 +13,9 @@ export default function Contact({ contactSchema }: Props) {
       <h2 className="">{contactSchema.title}</h2>
       <p className="">{contactSchema.subText}</p>
       <div className="flex flex-col lg:flex-row lg:justify-between items-start gap-4">
-        {contactSchema.contactInfos?.map((person) => {
+        {contactSchema.contactInfos?.map((person, index) => {
           return (
-            <div className="flex flex-col lg:flex-row gap-x-4 lg:items-end">
+            <div key={index} className="flex flex-col lg:flex-row gap-x-4 lg:items-end">
               <img
                 className="w-[250px] h-[350px]"
                 style={{ aspectRatio: 'auto 250 / 350' }}
