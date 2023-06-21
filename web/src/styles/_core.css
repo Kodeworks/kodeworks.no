@@ -185,6 +185,32 @@ ol {
 
 /* Menu Button
 ------------------------------------------------------------------------------*/
+#menu-bar {
+  background-color: white;
+  border: none;
+  color: #000;
+  cursor: pointer;
+  height: 44px;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-link {
+  border: none;
+  text-decoration: none;
+  background-image: linear-gradient(#B6FF9E,#B6FF9E);
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-size: 0 2px;
+  transition: background-size .3s;
+}
+
+.nav-link:hover {
+  background-size: 100% 2px;
+}
+
 #menu-button {
   background-color: transparent;
   border-radius: 22px;

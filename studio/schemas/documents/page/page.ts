@@ -23,6 +23,7 @@ export default defineType({
         {type: 'paragraph'},
         {type: 'illustration'},
         {type: 'calculator'},
+        {type: 'contact'},
       ],
     }),
   ],

@@ -48,7 +48,7 @@ export default function Navigation({ isOpened, toggleNavigationOpened }: Prop): 
   }
 
   return (
-    <menu id={style['menu']} className={isOpened ? style['menu--opened'] : ''}>
+    <menu id={style['menu']} className={`${isOpened ? style['menu--opened'] : ''}`}>
       <div className={style['menu-hero']}>
         <img className={style['menu-hero-logo']} src="/static/logo-white.svg" width="100" alt="" />
         <div className={style['menu-hero-overlay']}></div>
@@ -73,7 +73,7 @@ export default function Navigation({ isOpened, toggleNavigationOpened }: Prop): 
               </Link>
             </li>
             <li>
-              <Link href="/career/new" locale={locale}>
+              <Link href="/career" locale={locale}>
                 {t('career')}
               </Link>
             </li>

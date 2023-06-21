@@ -7,6 +7,7 @@ import {
   isParagraphPageContent,
   isTextSectionPageContent,
   isCalculatorPageContent,
+  isContactPageContent,
 } from '../../utils/type-guards';
 import Hero from './Hero';
 import TextSection from './TextSection';
@@ -16,6 +17,7 @@ import CallToAction from './CallToAction';
 import Illustration from './Illustration';
 import Paragraph from './Paragraph';
 import Calculator from './Calculator';
+import Contact from './Contact';
 
 interface Props {
   pageSchema: NonNullable<Sanity.Default.Schema.Page>;
@@ -57,6 +59,9 @@ const toComponent = (schema: unknown) => {
   }
   if (isCalculatorPageContent(schema)) {
     return <Calculator key={schema._key} careerSchema={schema} />;
+  }
+  if (isContactPageContent(schema)) {
+    return <Contact key={schema._key} contactSchema={schema} />;
   }
   return null;
 };

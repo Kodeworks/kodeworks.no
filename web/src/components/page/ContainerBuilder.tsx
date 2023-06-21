@@ -34,7 +34,7 @@ export default function ContainerBuilder({ containerSchema }: Props) {
           className={`full-screen-width h-full absolute bg-[${containerSchema.background}] -z-10`}
         />
       )}
-      <div className="p-8">{containerSchema.content.map(toComponent)}</div>
+      <div className="py-8">{containerSchema.content.map(toComponent)}</div>
     </div>
   );
 }
