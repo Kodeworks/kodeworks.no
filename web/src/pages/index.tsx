@@ -92,7 +92,7 @@ function Home({ people }): JSX.Element {
             </div>
           </article>
         </section>
-        <section className={`grid grid-cols-1 lg:grid-cols-2 `}>
+        <section className={`grid grid-cols-1 lg:grid-cols-2 `} id="projects">
           <article className="relative col-span-1 lg:col-span-2 grid grid-cols-[1fr] lg:grid-cols-[repeat(2,1fr)] flex py-24 items-center gap-10 text-white">
             <div className="full-screen-width h-full absolute bg-[#000] -z-10"></div>
             <div className="flex justify-center lg:justify-start order-last lg:order-first">

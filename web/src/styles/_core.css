@@ -186,7 +186,7 @@ ol {
 /* Menu Button
 ------------------------------------------------------------------------------*/
 #menu-bar {
-  background-color: white;
+  background-color: transparent;
   border: none;
   color: #000;
   cursor: pointer;
@@ -195,6 +195,15 @@ ol {
   position: fixed;
   top: 0;
   z-index: 1000;
+}
+
+#menu-bar-logo {
+  background-color: #B6FF9E;
+  background-color: black;
+  -webkit-mask: url(/static/logo.svg) no-repeat center;
+  mask: url(/static/logo.svg) no-repeat center;
+  width: 240px;
+  height: 30px;
 }
 
 .nav-link {
@@ -227,6 +236,14 @@ ol {
   top: 15px;
   right: 15px;
   z-index: 1000;
+}
+
+#menu-bar.dark-mode span{
+  color: var(--color-green) !important;
+}
+
+#menu-bar.dark-mode #menu-bar-logo {
+  background-color: #B6FF9E;
 }
 
 #menu-button.dark-mode {
