@@ -12,10 +12,11 @@ export default function Hero({ heroSchema }: Props) {
       <h1>{heroSchema.heading}</h1>
       <div className="flex flex-col md:flex-row gap-10">
         <img
-          src={urlFor(heroSchema.image).width(458).height(286).url()}
+          style={{ aspectRatio: '16/9', height: '320px' }}
+          src={urlFor(heroSchema.image).url()}
           alt={heroSchema.image?.alt}
         />
-        <div className="flex flex-col gap-20">
+        <div className="flex flex-col gap-10">
           {heroSchema.text && (
             <div className="max-w-lg">
               <PortableText value={heroSchema.text} />

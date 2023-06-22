@@ -50,13 +50,13 @@
 
 /* About
 ------------------------------------------------------------------------------*/
-#about {
+/* #about {
   box-sizing: border-box;
   font-size: 22px;
   margin: 70px auto 0 auto;
   max-width: 1600px;
   padding: 60px var(--gutter-size) 60px 50px;
-}
+} */
 
 #about > div {
   margin-bottom: 80px;
