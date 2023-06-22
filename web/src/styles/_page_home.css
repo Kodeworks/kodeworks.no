@@ -8,12 +8,21 @@
   position: relative;
 }
 
+#main-header .pattern {
+  line-height: 1;
+  bottom: 20px;
+  height: 100%;
+  aspect-ratio: 9/16;
+  left: var(--gutter-size);
+  max-width: 75%;
+}
+
 #main-header .logo {
   line-height: 1;
   position: absolute;
-  bottom: 20px;
-  width: 160px;
-  left: var(--gutter-size);
+  aspect-ratio: 16/9;
+  width: 300px;
+  max-width: 65%;
 }
 
 #main-header .main-header-content {
@@ -189,11 +198,6 @@
 
   #projects > div {
     padding: 60px var(--gutter-size-mobile);
-  }
-
-  #main-header .logo {
-    height: auto;
-    width: 200px;
   }
 
   #work > div {

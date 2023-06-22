@@ -94,22 +94,22 @@ function Main(): JSX.Element {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>KodeWorks</title>
       </Head>
-      <div className='lg:visible invisible flex justify-between items-center' id='menu-bar'>
-          <Link href="/" className='leading-none pl-8'>
-            <img className="logo" src="/static/logo.svg" alt="Logo" width="240" height="30" />
+      <div className="lg:visible invisible flex justify-between items-center" id="menu-bar">
+        <Link href="/" className="leading-none pl-8" id="menu-bar-logo">
+          <img className="logo" src="/static/logo.svg" alt="Logo" width="240" height="30" />
+        </Link>
+        <div className="flex gap-x-8 pr-8">
+          <Link href="/people" className="no-underline leading-none nav-link">
+            <span className="text-xl text-[#000] hover:text-[#666]">{t('our people')}</span>
           </Link>
-        <div className='flex gap-x-8 pr-8'>
-          <Link href="/people" className='no-underline leading-none nav-link'>
-            <span className='text-xl text-[#000] hover:text-[#666]'>{t('our people')}</span>
+          <Link href="/projects" className="no-underline leading-none nav-link">
+            <span className="text-xl text-[#000] hover:text-[#666]">{t('projects')}</span>
           </Link>
-          <Link href="/projects"  className='no-underline leading-none nav-link'>
-            <span className='text-xl text-[#000] hover:text-[#666]'>{t('projects')}</span>
+          <Link href="/career" className="no-underline leading-none nav-link">
+            <span className="text-xl text-[#000] hover:text-[#666]">{t('career')}</span>
           </Link>
-          <Link href="/career"  className='no-underline leading-none nav-link'>
-            <span className='text-xl text-[#000] hover:text-[#666]'>{t('career')}</span>
-          </Link>
-          <Link href="/staffmanual"  className='no-underline leading-none nav-link'>
-            <span className='text-xl text-[#000] hover:text-[#666]'>{t('staff manual')}</span>
+          <Link href="/staffmanual" className="no-underline leading-none nav-link">
+            <span className="text-xl text-[#000] hover:text-[#666]">{t('staff manual')}</span>
           </Link>
         </div>
       </div>

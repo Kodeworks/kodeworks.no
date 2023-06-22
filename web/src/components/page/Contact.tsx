@@ -12,10 +12,10 @@ export default function Contact({ contactSchema }: Props) {
       <div className="full-screen-width h-full absolute bg-[#E8E7E6] -z-10"></div>
       <h2 className="">{contactSchema.title}</h2>
       <p className="">{contactSchema.subText}</p>
-      <div className="flex flex-col lg:flex-row lg:justify-between items-start gap-4">
+      <div className="flex flex-col lg:flex-row lg:justify-between items-start gap-8">
         {contactSchema.contactInfos?.map((person, index) => {
           return (
-            <div key={index} className="flex flex-col lg:flex-row gap-x-4 lg:items-end">
+            <div key={index} className="flex flex-col lg:flex-row gap-4 lg:items-end">
               <img
                 className="w-[250px] h-[350px]"
                 style={{ aspectRatio: 'auto 250 / 350' }}

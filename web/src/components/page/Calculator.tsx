@@ -53,10 +53,10 @@ export default function Calculator({ careerSchema }: Props) {
     const yearThree = yearTwo?.map((step) => step + Math.floor((step * increasePercent!) / 100));
     const newSalary =
       yearsToIncrease === 1
-        ? yearOne![salaryLevel]
+        ? yearOne![salaryLevel > 19 ? 19 : salaryLevel]
         : yearsToIncrease === 2
-        ? yearTwo![salaryLevel + 1]
-        : yearThree![salaryLevel + 2];
+        ? yearTwo![salaryLevel + 1 > 19 ? 19 : salaryLevel + 1]
+        : yearThree![salaryLevel + 2 > 19 ? 19 : salaryLevel + 2];
     return (
       <NumberWithSeperators startValue={newSalary - 10000} endValue={newSalary} showCurrency />
     );
@@ -79,10 +79,10 @@ export default function Calculator({ careerSchema }: Props) {
   }
 
   return (
-    <section className="col-span-1 lg:col-span-2 flex flex-col gap-10">
+    <section className="col-span-1 lg:col-span-2 flex flex-col">
       <h2 className="text-center lg:text-start">Hva kommer du til å tjene</h2>
-      <div className={`${style['calculator-grid']}`}>
-        <div className={`${style['about']} flex flex-col gap-y-4 justify-center lg:justify-start`}>
+      <div className="col-span-1 lg:col-span-2 grid grid-cols-[1fr] lg:grid-cols-[repeat(2,1fr)] my-16">
+        <div className={`flex flex-col gap-y-4 justify-center lg:justify-start`}>
           <h4 className="text-center lg:text-start">Hvilken utdanning har du?</h4>
           <div className="flex justify-center lg:justify-start gap-3">
             <label className={`${style['calculator-education-label']}`}>
@@ -134,6 +134,8 @@ export default function Calculator({ careerSchema }: Props) {
             />
           </div>
         </div>
+      </div>
+      <div className="col-span-1 lg:col-span-2 grid grid-cols-[1fr] lg:grid-cols-[repeat(2,1fr)]">
         <div className={`${style['total']} flex flex-col items-center lg:items-start`}>
           <h4>Totalpakke</h4>
           <div className={`border-2 border-solid border-[#B6FF9E] gap-y-4 flex flex-col w-min`}>
@@ -199,7 +201,7 @@ export default function Calculator({ careerSchema }: Props) {
               </div>
             </div>
           </div>
-          <Link href="/staffmanual">
+          <Link href="/staffmanual" className="mt-6">
             <div className="mt-4 px-10 py-3 bg-[#B6FF9E] text-[#000] hover:text-[#666] ">
               Se håndboka
             </div>
@@ -244,109 +246,109 @@ export default function Calculator({ careerSchema }: Props) {
             Lønnsjusteringen estimeres til {careerSchema.estimatedSalaryIncrease} % økning per år.
           </div>
         </div>
-        <div
-          className={`relative ${style['pension']} flex flex-col lg:flex-row lg:justify-between justify-center lg:items-center py-16 gap-y-10 text-white`}
-        >
-          <div className="full-screen-width h-full absolute bg-[#000] -z-10"></div>
-          <div className="flex flex-col">
-            <h3>Pensjon</h3>
-            <span>{careerSchema.yearlyPensionSaving} % årlig pensjonssparing opp til 12G.</span>
-            <span>
-              Grunnbeløpet (G) per {dateString} er kr{' '}
-              {
-                <NumberWithSeperators
-                  startValue={careerSchema.basicPensionAmount!.amount!}
-                  endValue={careerSchema.basicPensionAmount!.amount!}
-                  showCurrency
-                />
-              }
-              .
-            </span>
-          </div>
-          <div className="flex flex-col items-center">
-            <h4 className="pb-2">Årlig pensjon basert på årslønn</h4>
-            <div
-              className={`border-2 border-solid border-[#B6FF9E] text-5xl leading-none flex p-2 justify-center w-min whitespace-nowrap`}
-            >
+      </div>
+      <div
+        className={`relative flex flex-col lg:flex-row lg:justify-between justify-center lg:items-center py-16 gap-y-10 text-white`}
+      >
+        <div className={'full-screen-width h-full absolute bg-[#000] -z-10 '}></div>
+        <div className="flex flex-col">
+          <h3>Pensjon</h3>
+          <span>{careerSchema.yearlyPensionSaving} % årlig pensjonssparing opp til 12G.</span>
+          <span>
+            Grunnbeløpet (G) per {dateString} er kr{' '}
+            {
               <NumberWithSeperators
-                startValue={getPension() - 10000}
-                endValue={getPension()}
+                startValue={careerSchema.basicPensionAmount!.amount!}
+                endValue={careerSchema.basicPensionAmount!.amount!}
                 showCurrency
               />
-            </div>
+            }
+            .
+          </span>
+        </div>
+        <div className="flex flex-col items-center">
+          <h4 className="pb-2">Årlig pensjon basert på årslønn</h4>
+          <div
+            className={`border-2 border-solid border-[#B6FF9E] text-5xl leading-none flex p-2 justify-center w-min whitespace-nowrap`}
+          >
+            <NumberWithSeperators
+              startValue={getPension() - 10000}
+              endValue={getPension()}
+              showCurrency
+            />
           </div>
         </div>
-        <div
-          className={`relative ${style['employee-budgets']} flex flex-col gap-y-4 justify-center py-16`}
-        >
-          <div className="full-screen-width h-full absolute bg-[#B6FF9E] -z-10"></div>
-          <h3>{careerSchema.employeeBudget!.title}</h3>
-          <span className="max-w-xl">{careerSchema.employeeBudget!.subTitle}</span>
-          <div className="flex flex-col md:flex-row justify-between gap-10">
-            {careerSchema.employeeBudget?.epolyeeBudgetsPosts!.map((post, index) => {
-              return (
-                <div
-                  className="flex flex-col justify-start lg:justify-center items-center text-center"
-                  key={index}
-                >
-                  <img
-                    className={`${style['employee-budgets-icon']} py-4`}
-                    src={urlFor(post.image).width(458).height(286).url()}
-                    alt={''}
-                  />
-                  <h3 className="py-4">{post.title}</h3>
-                  <span>
-                    <strong>
-                      <NumberWithSeperators
-                        startValue={post.amountYearly!}
-                        endValue={post.amountYearly!}
-                        showCurrency
-                      />
-                    </strong>{' '}
-                    per år.
-                  </span>
-                  <span>Kan spare opp til</span>
-                  <span>
-                    <strong>
-                      <NumberWithSeperators
-                        startValue={post.amountTotal!}
-                        endValue={post.amountTotal!}
-                        showCurrency
-                      />
-                    </strong>
-                  </span>
-                </div>
-              );
-            })}
-          </div>
+      </div>
+      <div
+        className={`relative ${style['employee-budgets']} flex flex-col gap-y-4 justify-center py-16`}
+      >
+        <div className="full-screen-width h-full absolute bg-[#B6FF9E] -z-10"></div>
+        <h3>{careerSchema.employeeBudget!.title}</h3>
+        <span className="max-w-xl mb-8">{careerSchema.employeeBudget!.subTitle}</span>
+        <div className="flex flex-col md:flex-row justify-between gap-10">
+          {careerSchema.employeeBudget?.epolyeeBudgetsPosts!.map((post, index) => {
+            return (
+              <div
+                className="flex flex-col justify-start lg:justify-center items-center text-center"
+                key={index}
+              >
+                <img
+                  className={`${style['employee-budgets-icon']} py-4`}
+                  src={urlFor(post.image).width(458).height(286).url()}
+                  alt={''}
+                />
+                <h3 className="py-4">{post.title}</h3>
+                <span>
+                  <strong>
+                    <NumberWithSeperators
+                      startValue={post.amountYearly!}
+                      endValue={post.amountYearly!}
+                      showCurrency
+                    />
+                  </strong>{' '}
+                  per år.
+                </span>
+                <span>Kan spare opp til</span>
+                <span>
+                  <strong>
+                    <NumberWithSeperators
+                      startValue={post.amountTotal!}
+                      endValue={post.amountTotal!}
+                      showCurrency
+                    />
+                  </strong>
+                </span>
+              </div>
+            );
+          })}
         </div>
-        <div className={`${style['other-benefits']}`}>
-          <h3>{careerSchema.benefits?.title}</h3>
-          <span className="max-w-xl">{careerSchema.benefits!.subTitle}</span>
-          <div className="full-screen-width flex  justify-start lg:justify-center gap-x-10 overflow-x-scroll">
-            {careerSchema.benefits?.benefitItems!.map((item, index) => {
-              return (
-                <div
-                  className={`${style['benefit-box']} relative flex flex-col justify-center items-center text-center `}
-                  key={index}
-                >
-                  <div className="h-full w-full absolute bg-[#00000066] -z-10"></div>
-                  <img
-                    className={`${style['benefit-image']} h-full w-full absolute -z-20`}
-                    src={urlFor(item.image).width(458).height(286).url()}
-                    alt={''}
-                  />
-                  <div className="-z-0 p-8">
-                    <h4 className="py-4">{item.title}</h4>
-                    <div className="flex">
-                      <span className="text-2xl leading-none text-[#B6FF9E] mr-2">*</span>
-                      <span className="text-xs leading-none">{item.text}</span>
-                    </div>
+      </div>
+      <div className={`col-span-1 lg:col-span-2 flex flex-col gap-y-4 py-16 justify-center`}>
+        <h3>{careerSchema.benefits?.title}</h3>
+        <span className="max-w-xl mb-8">{careerSchema.benefits!.subTitle}</span>
+        <div className="full-screen-width flex  justify-start lg:justify-center gap-x-10 overflow-x-scroll">
+          {careerSchema.benefits?.benefitItems!.map((item, index) => {
+            return (
+              <div
+                className={`${style['benefit-box']} relative flex flex-col justify-center items-center text-center `}
+                key={index}
+              >
+                <div className="h-full w-full absolute bg-[#00000066] -z-10"></div>
+                <img
+                  className={`${style['benefit-image']} h-full w-full absolute -z-20`}
+                  src={urlFor(item.image).width(458).height(286).url()}
+                  alt={''}
+                />
+                <div className="-z-0 p-8">
+                  <h4 className="py-4">{item.title}</h4>
+                  <div className="flex">
+                    <span className="text-2xl leading-none text-[#B6FF9E] mr-2">*</span>
+                    <span className="text-xs leading-none">{item.text}</span>
                   </div>
                 </div>
-              );
-            })}
-          </div>
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>

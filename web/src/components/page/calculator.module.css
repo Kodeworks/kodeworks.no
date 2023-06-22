@@ -1,52 +1,3 @@
-.calculator {
-  max-width: 550px;
-  width: 100%;
-}
-
-.calculator h4 {
-  font-family: "Natural Grotesk", arial, sans-serif;
-  font-size: 16px;
-  margin-top: 35px;
-  margin-bottom: 15px;
-}
-
-.calculator-grid {
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas: 
-  'about salary'
-  'total salary-adjustments'
-  'pension pension'
-  'employee-budgets employee-budgets'
-  'other-benefits other-benefits';
-}
-
-@media (max-width: 1024px) {
-  .calculator-grid {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas: 
-    'about'
-    'salary'
-    'total'
-    'salary-adjustments'
-    'pension'
-    'employee-budgets'
-    'other-benefits';
-  }
-}
-
-.about {
-  grid-area: about;
-  margin: 24px 0;
-}
-
-.salary {
-  grid-area: salary;
-  margin: 24px 0;
-}
 
 .salary-box {
   border: 2px solid var(--color-green);
@@ -59,8 +10,7 @@
 }
 
 .total {
-  grid-area: total;
-  margin: 24px 0;
+  margin: 64px 0;
 }
 
 .total span{
@@ -69,26 +19,9 @@
   line-height: 1;
 }
 
-.pension {
-  grid-area: pension;
-}
-
-.employee-budgets {
-  grid-area: employee-budgets;
-}
-
 .employee-budgets-icon {
   aspect-ratio: 16 / 9;
   max-width: 150px;
-}
-
-.other-benefits {
-  grid-area: other-benefits;
-  display: flex;
-  flex-direction: column;
-  row-gap: 16px;
-  padding: 64px 0;
-  justify-content: center;
 }
 
 .benefit-box {
@@ -108,7 +41,6 @@
 }
 
 .salary-adjustments {
-  grid-area: salary-adjustments;
   display: grid;
   margin: 24px 0;
   grid-template-columns: 1fr 1fr 1fr;

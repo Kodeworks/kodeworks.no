@@ -21,6 +21,7 @@ export async function getStaticProps() {
 }
 
 function Home({ people }): JSX.Element {
+  const router = useRouter();
   const [highlightedProject, setHighlightedProject] = useState<Project>();
   const [highlightedPeople, setHighlightedPeople] = useState<Person[]>([]);
 
@@ -46,17 +47,18 @@ function Home({ people }): JSX.Element {
 
   return (
     <>
-      <header id="main-header">
-        <img className="logo" src="/static/logo.svg" alt="Logo" width="280" height="59" />
+      <header id="main-header" className="flex justify-center items-center">
+        <img className="pattern" src="/static/pattern_green.svg" alt="Logo" />
+        <img className="logo" src="/static/logo.svg" alt="Logo" />
 
-        <section className={`section section-content section-content-narrow main-header-content`}>
+        {/* <section className={`section section-content section-content-narrow main-header-content`}>
           <h2>Jobbe i KodeWorks? Vi ser etter både erfarene og nyutdannede utviklere.</h2>
           <p>
             <Link href="/career" className="btn btn-black btn-big">
               Søk fast jobb
             </Link>
           </p>
-        </section>
+        </section> */}
       </header>
 
       <article id="about">
