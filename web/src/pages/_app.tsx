@@ -94,7 +94,12 @@ function Main(): JSX.Element {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>KodeWorks</title>
       </Head>
-      <div className={`${clipMode ? 'dark-mode' : ''} lg:visible invisible flex justify-between items-center`} id="menu-bar">
+      <div
+        className={`${
+          clipMode ? 'dark-mode' : ''
+        } lg:visible invisible flex justify-between items-center`}
+        id="menu-bar"
+      >
         <Link href="/" className="leading-none pl-8">
           <div id="menu-bar-logo" />
           {/* <img className="logo" src="/static/logo.svg" alt="Logo" width="240" height="30" /> */}
