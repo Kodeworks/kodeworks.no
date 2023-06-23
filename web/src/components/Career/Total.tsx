@@ -31,7 +31,7 @@ export default function Total({ careerSchema }: Props) {
   }
 
   return (
-    <div className={`${style['total']} flex flex-col items-center lg:items-start`}>
+    <div className={`${style['total']} flex flex-col items-center lg:items-start my-16`}>
       <h4>Totalpakke</h4>
       <div className={`border-2 border-solid border-[#B6FF9E] gap-y-4 flex flex-col w-min`}>
         <div className="flex flex-col px-5 py-2">

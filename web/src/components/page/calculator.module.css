@@ -1,18 +1,4 @@
 
-.salary-box {
-  border: 2px solid var(--color-green);
-  padding: 8px 12px;
-}
-
-.salary-box span{
-  font-size: 48px;
-  line-height: 1;
-}
-
-.total {
-  margin: 64px 0;
-}
-
 .total span{
   font-size: 48px;
   white-space:nowrap;
