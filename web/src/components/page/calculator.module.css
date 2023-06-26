@@ -1,12 +1,4 @@
 
-.benefit-box:first-of-type {
-  padding-left: 12px;
-}
-
-.benefit-box:last-of-type {
-  padding-right: 12px;
-}
-
 .salary-adjustments {
   display: grid;
   margin: 24px 0;
