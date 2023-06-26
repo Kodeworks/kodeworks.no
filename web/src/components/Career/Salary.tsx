@@ -1,7 +1,6 @@
 import { useContext } from 'react';
 import CareerContext from '../../context/CareerContext';
 import NumberWithSeperators from '../NumberWithSeparator';
-import style from '../page/calculator.module.css';
 
 export default function Salary() {
   const { salary } = useContext(CareerContext);

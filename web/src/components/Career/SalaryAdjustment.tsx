@@ -34,43 +34,36 @@ export default function SalaryAdjustment({ careerSchema }: Props) {
     );
   }
 
+  const years = [
+    { class: 'year-one', align: 'items-end' },
+    { class: 'year-two', align: 'items-center' },
+    { class: 'year-three', align: 'items-start' },
+  ];
   return (
     <div className={`${style['salary-adjustments']}`}>
-      <div className={`${style['info-top']}`}>
+      <div style={{ gridArea: 'info-top' }}>
         <h3>Lønnsjusteringer over tid (estimert)</h3>
         <span>KodeWorks følger Tekna sine retningslinjer for lønninger. </span>
       </div>
-      <div className={`${style['year-one']} flex flex-col h-full`}>
-        <div className="flex items-end justify-center h-full py-4 min-h-[150px]">
-          <div
-            className={`border-2 border-solid border-[#B6FF9E] text-s leading-none flex p-2 justify-center w-min whitespace-nowrap`}
-          >
-            {getSalaryIncreace(1)}
+      {years.map((year, index) => {
+        return (
+          <div key={index} style={{ gridArea: year.class }} className={`flex flex-col h-full`}>
+            <div className={`${year.align} flex justify-center h-full py-4 min-h-[150px]`}>
+              <div
+                className={`border-2 border-solid border-[#B6FF9E] text-s leading-none flex p-2 justify-center w-min whitespace-nowrap`}
+              >
+                {getSalaryIncreace(index + 1)}
+              </div>
+            </div>
+            <div
+              className={`border-t-2 border-solid border-[#000] p-4 flex justify-center items-center h-[50px]`}
+            >
+              {new Date().getFullYear() + index}
+            </div>
           </div>
-        </div>
-        <div className={`${style['year']} p-4 flex justify-center items-center`}>2024</div>
-      </div>
-      <div className={`${style['year-two']} flex flex-col h-full`}>
-        <div className="flex items-center justify-center h-full py-4 min-h-[150px]">
-          <div
-            className={`border-2 border-solid border-[#B6FF9E] text-s leading-none flex p-2 justify-center w-min whitespace-nowrap`}
-          >
-            {getSalaryIncreace(2)}
-          </div>
-        </div>
-        <div className={`${style['year']} p-4 flex justify-center items-center`}>2025</div>
-      </div>
-      <div className={`${style['year-three']} flex flex-col h-full`}>
-        <div className="flex items-start justify-center h-full py-4 min-h-[150px]">
-          <div
-            className={`border-2 border-solid border-[#B6FF9E] text-s leading-none flex p-2 justify-center w-min whitespace-nowrap`}
-          >
-            {getSalaryIncreace(3)}
-          </div>
-        </div>
-        <div className={`${style['year']} p-4 flex justify-center items-center`}>2026</div>
-      </div>
-      <div className={`${style['info-bottom']}`}>
+        );
+      })}
+      <div style={{ gridArea: 'info-bottom' }}>
         Lønnsjusteringen estimeres til {careerSchema.estimatedSalaryIncrease} % økning per år.
       </div>
     </div>

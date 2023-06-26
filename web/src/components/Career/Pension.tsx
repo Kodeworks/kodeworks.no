@@ -24,7 +24,6 @@ export default function Pension({ careerSchema }: Props) {
     changeClipMode(shouldClipText);
   }, [shouldClipText]);
 
-
   function setContextPension() {
     const twelveG = 12 * careerSchema.basicPensionAmount!.amount!;
     const retirementBasis = salary > twelveG ? twelveG : salary;
@@ -33,7 +32,7 @@ export default function Pension({ careerSchema }: Props) {
 
   return (
     <div
-      id='pension'
+      id="pension"
       className={`relative flex flex-col lg:flex-row lg:justify-between justify-center lg:items-center py-16 gap-y-10 text-white`}
     >
       <div className={'full-screen-width h-full absolute bg-[#000] -z-10 '}></div>
@@ -66,4 +65,3 @@ export default function Pension({ careerSchema }: Props) {
 function changeClipMode(shouldClipText: boolean) {
   throw new Error('Function not implemented.');
 }
-

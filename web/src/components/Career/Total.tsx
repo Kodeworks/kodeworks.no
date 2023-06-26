@@ -31,12 +31,14 @@ export default function Total({ careerSchema }: Props) {
   }
 
   return (
-    <div className={`${style['total']} flex flex-col items-center lg:items-start my-16`}>
+    <div className={`flex flex-col items-center lg:items-start my-16`}>
       <h4>Totalpakke</h4>
       <div className={`border-2 border-solid border-[#B6FF9E] gap-y-4 flex flex-col w-min`}>
         <div className="flex flex-col px-5 py-2">
           <h4>Fastlønn</h4>
-          <NumberWithSeperators startValue={salary - 100000} endValue={salary} showCurrency />
+          <div className="text-5xl whitespace-nowrap">
+            <NumberWithSeperators startValue={salary - 100000} endValue={salary} showCurrency />
+          </div>
         </div>
         <div className="flex flex-col px-5 py-2">
           <div className="flex">
@@ -53,11 +55,13 @@ export default function Total({ careerSchema }: Props) {
               </p>
             </TooltipComponent>
           </div>
-          <NumberWithSeperators
-            startValue={getPermanentBenefits()}
-            endValue={getPermanentBenefits()}
-            showCurrency
-          />
+          <div className="text-5xl whitespace-nowrap">
+            <NumberWithSeperators
+              startValue={getPermanentBenefits()}
+              endValue={getPermanentBenefits()}
+              showCurrency
+            />
+          </div>
         </div>
         <div className="flex flex-col px-5 py-2">
           <div className="flex">
@@ -72,18 +76,22 @@ export default function Total({ careerSchema }: Props) {
               </p>
             </TooltipComponent>
           </div>
-          <NumberWithSeperators startValue={pension - 10000} endValue={pension} showCurrency />
+          <div className="text-5xl whitespace-nowrap">
+            <NumberWithSeperators startValue={pension - 10000} endValue={pension} showCurrency />
+          </div>
         </div>
         <div
           className={`border-t-2 border-solid border-[#B6FF9E] gap-y-4 flex flex-col whitespace-nowrap`}
         >
           <div className="flex flex-col px-4 py-3">
             <h4>Dette vil gi en totalpakke på</h4>
-            <NumberWithSeperators
-              startValue={getTotal() - 10000}
-              endValue={getTotal()}
-              showCurrency
-            />
+            <div className="text-5xl whitespace-nowrap">
+              <NumberWithSeperators
+                startValue={getTotal() - 10000}
+                endValue={getTotal()}
+                showCurrency
+              />
+            </div>
           </div>
         </div>
       </div>

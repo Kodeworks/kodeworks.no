@@ -60,9 +60,7 @@ export default function About({ careerSchema }: Props) {
         </label>
       </div>
       <h4 className="text-center lg:text-start">Hvor lang arbeidserfaring har du?</h4>
-      <div
-        className={`${style['calculator-seniority-content']} justify-center lg:justify-start flex`}
-      >
+      <div className={`gap-4 items-center justify-center lg:justify-start flex`}>
         <label>
           <input
             type="range"

@@ -1,23 +1,4 @@
 
-.total span{
-  font-size: 48px;
-  white-space:nowrap;
-  line-height: 1;
-}
-
-.employee-budgets-icon {
-  aspect-ratio: 16 / 9;
-  max-width: 150px;
-}
-
-.benefit-box {
-  width: 300px;
-  min-width: 300px;
-  height: 225px;
-  max-width: 300px;
-  max-height: 225px;
-  color: #fff;
-}
 .benefit-box:first-of-type {
   padding-left: 12px;
 }
@@ -34,28 +15,6 @@
   'info-top info-top info-top'
   'year-one year-two year-three'
   'info-bottom . .';
-}
-
-.year {
-  height: 50px;
-  border-top: 2px solid#000;
-}
-
-.year-one {
-  grid-area: year-one;
-}
-.year-two {
-  grid-area: year-two;
-}
-.year-three {
-  grid-area: year-three;
-}
-
-.info-top {
-  grid-area: info-top;
-}
-.info-bottom {
-  grid-area: info-bottom;
 }
 
 /* Education
@@ -81,13 +40,10 @@
   border-radius: 50%;
   width: 20px;
   height: 20px;
-
   border: 2px solid #fff;
-
   margin: 0 0 0 -28px;
   display: grid;
   place-content: center;
-
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -113,11 +69,6 @@
 
 /* Seniority
 ------------------------------------------------------------------------------*/
-.calculator-seniority-content {
-  display: flex;
-  align-items: center;
-}
-
 .calculator-seniority-content label {
   margin-right: 25px;
 }
@@ -173,11 +124,4 @@
   cursor: pointer;
   height: 25px;
   width: 50px;
-}
-
-
-.calculator-salary {
-  font-size: 40px;
-  font-weight: 800;
-  margin-bottom: 0;
 }

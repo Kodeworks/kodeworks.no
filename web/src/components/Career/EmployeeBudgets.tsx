@@ -1,5 +1,4 @@
 import NumberWithSeperators from '../NumberWithSeparator';
-import style from '../page/calculator.module.css';
 import { urlFor } from '../../lib/sanity';
 
 interface Props {
@@ -8,9 +7,7 @@ interface Props {
 
 export default function EmployeeBudgets({ careerSchema }: Props) {
   return (
-    <div
-      className={`relative ${style['employee-budgets']} flex flex-col gap-y-4 justify-center py-16`}
-    >
+    <div className={`relative flex flex-col gap-y-4 justify-center py-16`}>
       <div className="full-screen-width h-full absolute bg-[#B6FF9E] -z-10"></div>
       <h3>{careerSchema.employeeBudget!.title}</h3>
       <span className="max-w-xl mb-8">{careerSchema.employeeBudget!.subTitle}</span>
@@ -22,7 +19,7 @@ export default function EmployeeBudgets({ careerSchema }: Props) {
               key={index}
             >
               <img
-                className={`${style['employee-budgets-icon']} py-4`}
+                className="aspect-[16/9] py-4 max-w-[150px]"
                 src={urlFor(post.image).width(458).height(286).url()}
                 alt={''}
               />

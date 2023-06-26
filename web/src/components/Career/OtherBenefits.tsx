@@ -1,5 +1,3 @@
-import NumberWithSeperators from '../NumberWithSeparator';
-import style from '../page/calculator.module.css';
 import { urlFor } from '../../lib/sanity';
 
 interface Props {
@@ -15,12 +13,12 @@ export default function OtherBenefits({ careerSchema }: Props) {
         {careerSchema.benefits?.benefitItems!.map((item, index) => {
           return (
             <div
-              className={`${style['benefit-box']} relative flex flex-col justify-center items-center text-center `}
+              className={`last-of-type:pr-3 first-of-type:pl-3 text-[#fff] relative flex flex-col justify-center items-center text-center max-w-[300px] min-w-[300px] max-h-[225px] min-h-[225px]`}
               key={index}
             >
               <div className="h-full w-full absolute bg-[#00000066] -z-10"></div>
               <img
-                className={`${style['benefit-image']} h-full w-full absolute -z-20`}
+                className={`h-full w-full absolute -z-20`}
                 src={urlFor(item.image).width(458).height(286).url()}
                 alt={''}
               />
