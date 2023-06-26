@@ -21,7 +21,6 @@ export async function getStaticProps() {
 }
 
 function Home({ people }): JSX.Element {
-  const router = useRouter();
   const [highlightedProject, setHighlightedProject] = useState<Project>();
   const [highlightedPeople, setHighlightedPeople] = useState<Person[]>([]);
 

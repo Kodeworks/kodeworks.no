@@ -8,7 +8,7 @@ interface Props {
 
 export default function Contact({ contactSchema }: Props) {
   return (
-    <section className="col-span-1 lg:col-span-2 flex flex-col gap-5 relative py-5 justify-center">
+    <section className="col-span-1 lg:col-span-2 flex flex-col gap-5 relative py-16 justify-center">
       <div className="full-screen-width h-full absolute bg-[#E8E7E6] -z-10"></div>
       <h2 className="">{contactSchema.title}</h2>
       <p className="">{contactSchema.subText}</p>

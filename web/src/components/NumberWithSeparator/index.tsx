@@ -1,4 +1,3 @@
-import style from './number.module.css';
 import dynamic from 'next/dynamic';
 
 const CountUp = dynamic(() => import('react-countup'), { ssr: false });

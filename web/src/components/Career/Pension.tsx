@@ -1,5 +1,7 @@
-import { useContext, useEffect } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import CareerContext from '../../context/CareerContext';
+import { ClipContentContext } from '../../context/ClipContentContext';
+import { useClipText } from '../../utils/useClipText';
 import NumberWithSeperators from '../NumberWithSeparator';
 
 interface Props {
@@ -8,12 +10,20 @@ interface Props {
 
 export default function Pension({ careerSchema }: Props) {
   const { salary, pension, setPension } = useContext(CareerContext);
+  const { changeClipMode } = useContext(ClipContentContext);
+  const [date, setDate] = useState('');
+
   useEffect(() => {
+    setDate(new Date(careerSchema.basicPensionAmount?.fromDate!).toLocaleDateString());
     setContextPension();
   });
 
-  // const dateString = new Date(careerSchema.basicPensionAmount?.fromDate!).toLocaleDateString();
-  const dateString = careerSchema.basicPensionAmount?.fromDate!;
+  const shouldClipText = useClipText(['pension']);
+
+  useEffect(() => {
+    changeClipMode(shouldClipText);
+  }, [shouldClipText]);
+
 
   function setContextPension() {
     const twelveG = 12 * careerSchema.basicPensionAmount!.amount!;
@@ -23,6 +33,7 @@ export default function Pension({ careerSchema }: Props) {
 
   return (
     <div
+      id='pension'
       className={`relative flex flex-col lg:flex-row lg:justify-between justify-center lg:items-center py-16 gap-y-10 text-white`}
     >
       <div className={'full-screen-width h-full absolute bg-[#000] -z-10 '}></div>
@@ -30,7 +41,7 @@ export default function Pension({ careerSchema }: Props) {
         <h3>Pensjon</h3>
         <span>{careerSchema.yearlyPensionSaving} % årlig pensjonssparing opp til 12G.</span>
         <span>
-          Grunnbeløpet (G) per {dateString} er kr{' '}
+          Grunnbeløpet (G) per {date && date} er kr{' '}
           {
             <NumberWithSeperators
               startValue={careerSchema.basicPensionAmount!.amount!}
@@ -52,3 +63,7 @@ export default function Pension({ careerSchema }: Props) {
     </div>
   );
 }
+function changeClipMode(shouldClipText: boolean) {
+  throw new Error('Function not implemented.');
+}
+

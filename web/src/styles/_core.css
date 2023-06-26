@@ -109,6 +109,26 @@ code {
   }
 }
 
+/* Footer -------------------------------------------*/
+.footer-container {
+  background: #000;
+  color: #fff;
+  display: grid;
+  grid-template-columns: 1fr min-content;
+  gap: 48px;
+  grid-template-areas: 
+  'navigation logo'
+  'contact other';
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    grid-template-areas: 
+    'contact logo'
+    'other logo';
+  }
+}
+
 /* Main -------------------------------------------*/
 .main {
   margin-top: 150px;
@@ -214,6 +234,7 @@ ol {
   background-repeat: no-repeat;
   background-size: 0 2px;
   transition: background-size .3s;
+  white-space: nowrap;
 }
 
 .nav-link:hover {

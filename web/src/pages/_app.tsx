@@ -12,6 +12,7 @@ import dictionary from '../components/Navigation/dict';
 
 import '../styles/kw.css';
 import { useTranslation } from '../utils/useTranslation';
+import Footer from '../components/Footer';
 
 export type NextPageWithLayout<P = {}, IP = P> = NextPage<P, IP> & {
   getLayout?: (page: ReactElement) => ReactNode;
@@ -33,6 +34,7 @@ export default function App({ Component, pageProps }: AppPropsWithLayout): JSX.E
       <>
         <Main />
         {getLayout(<Component {...pageProps} />)}
+        <Footer />
       </>
     </ClipContentProvider>
   );
