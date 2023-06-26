@@ -4,11 +4,11 @@
     url("/static/fonts/NON Natural Grotesk-Regular.woff") format("woff");
 }
 
-/* @font-face {
+@font-face {
   font-family: "Natural Grotesk Bold";
   src: url("/static/fonts/NON Natural Grotesk-Bold.woff2") format("woff2"),
     url("/static/fonts/NON Natural Grotesk-Bold.woff") format("woff");
-} */
+}
 
 @font-face {
   font-family: "Natural Grotesk Light";
