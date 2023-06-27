@@ -34,7 +34,7 @@ export default function ContainerBuilder({ containerSchema }: Props) {
           className={`full-screen-width h-full absolute -z-10`}
         />
       )}
-      <div className="py-8 gap-y-2 flex flex-col">{containerSchema.content.map(toComponent)}</div>
+      <div className="py-16 gap-y-6 flex flex-col">{containerSchema.content.map(toComponent)}</div>
     </div>
   );
 }

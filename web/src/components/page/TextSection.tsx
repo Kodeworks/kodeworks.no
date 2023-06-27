@@ -6,8 +6,8 @@ interface Props {
 
 export default function TextSection({ textSectionSchema }: Props) {
   return (
-    <section className="max-w-4xl">
-      <h2 className="mb-">{textSectionSchema.heading}</h2>
+    <section className="max-w-4xl text-section">
+      <h2 className="mb-6">{textSectionSchema.heading}</h2>
       {textSectionSchema.text && <PortableText value={textSectionSchema.text} />}
     </section>
   );

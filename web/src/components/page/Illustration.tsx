@@ -7,7 +7,7 @@ interface Props {
 export default function Illustration({ illustrationSchema }: Props) {
   return (
     <img
-      style={{ aspectRatio: '16/9', maxWidth: '100%' }}
+      style={{ maxWidth: '100%' }}
       src={urlFor(illustrationSchema.image).url()}
       alt={illustrationSchema.image?.alt}
     />

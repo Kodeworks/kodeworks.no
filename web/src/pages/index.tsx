@@ -55,11 +55,7 @@ function Home({ people }): JSX.Element {
           <article className="relative col-span-1 lg:col-span-2 grid grid-cols-[1fr] lg:grid-cols-[repeat(2,1fr)] flex py-24 items-center gap-10">
             <div className="full-screen-width h-full absolute bg-[var(--color-green)] -z-10"></div>
             <div className="flex justify-center lg:justify-start order-last lg:order-first">
-              <img
-                style={{ aspectRatio: '16/9', maxWidth: '100%' }}
-                src="/static/photos/Kodeworks-482.jpg"
-                alt="About"
-              />
+              <img style={{ maxWidth: '100%' }} src="/static/photos/gruppe_c.jpg" alt="About" />
             </div>
             <div className=" flex flex-col items-start">
               <h2>Ønsker du å jobbe i KodeWorks?</h2>
@@ -83,11 +79,7 @@ function Home({ people }): JSX.Element {
               <p>{t('who_description')}</p>
             </div>
             <div className="text-center flex flex-col items-center">
-              <img
-                style={{ aspectRatio: '16/9', maxWidth: '100%' }}
-                src="/static/photos/gruppe_f.jpg"
-                alt="About"
-              />
+              <img style={{ maxWidth: '100%' }} src="/static/photos/gruppe_f.jpg" alt="About" />
             </div>
           </article>
         </section>
@@ -96,7 +88,7 @@ function Home({ people }): JSX.Element {
             <div className="full-screen-width h-full absolute bg-black -z-10"></div>
             <div className="flex justify-center lg:justify-start order-last lg:order-first">
               <img
-                style={{ aspectRatio: '16/9', maxWidth: '100%' }}
+                style={{ maxWidth: '100%' }}
                 src={highlightedProject && '/static/photos/projects/' + highlightedProject.image}
                 alt={highlightedProject && fmt(highlightedProject.name, locale!)}
               />

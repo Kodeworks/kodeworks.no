@@ -12,7 +12,7 @@ export default function Hero({ heroSchema }: Props) {
       <h1>{heroSchema.heading}</h1>
       <div className="flex flex-col lg:flex-row gap-10 grid grid-cols-[1fr] lg:grid-cols-[repeat(2,1fr)] ">
         <img
-          style={{ aspectRatio: '16/9', maxWidth: '100%', borderRadius: '5px' }}
+          style={{ maxWidth: '100%' }}
           src={urlFor(heroSchema.image).url()}
           alt={heroSchema.image?.alt}
         />

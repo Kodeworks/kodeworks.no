@@ -6,14 +6,14 @@ interface Props {
 
 export default function OtherBenefits({ careerSchema }: Props) {
   return (
-    <div className={`col-span-1 lg:col-span-2 flex flex-col gap-y-4 py-16 justify-center`}>
+    <div className={`col-span-1 lg:col-span-2 flex flex-col gap-y-4 pt-16 justify-center`}>
       <h3>{careerSchema.benefits?.title}</h3>
       <span className="max-w-xl mb-8">{careerSchema.benefits!.subTitle}</span>
-      <div className="full-screen-width flex  justify-start lg:justify-center gap-x-10 overflow-x-scroll">
+      <div className="flex justify-start gap-x-10 overflow-x-scroll">
         {careerSchema.benefits?.benefitItems!.map((item, index) => {
           return (
             <div
-              className={`last-of-type:pr-3 first-of-type:pl-3 text-white relative flex flex-col justify-center items-center text-center max-w-[300px] min-w-[300px] max-h-[225px] min-h-[225px]`}
+              className={`text-white relative flex flex-col justify-center items-center text-center max-w-[300px] min-w-[300px] max-h-[225px] min-h-[225px]`}
               key={index}
             >
               <div className="h-full w-full absolute bg-black/50 -z-10"></div>

@@ -28,7 +28,7 @@ export default function PageBuilder({ pageSchema }: Props) {
     return null;
   }
   return (
-    <article className="grid grid-cols-1 lg:grid-cols-2 gap-20">
+    <article className="grid grid-cols-1 lg:grid-cols-2 gap-16">
       {pageSchema.content.map(toComponent)}
     </article>
   );
