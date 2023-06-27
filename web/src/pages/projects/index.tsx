@@ -13,8 +13,8 @@ export default function Projects(): JSX.Element {
   const { t } = useTranslation(dictionary);
 
   return (
-    <div className="bg-[#000] text-white">
-      <main className="main bg-[#000] mt-0 pt-40">
+    <div className="bg-black text-white">
+      <main className="main bg-black mt-0 pt-40">
         <section className={`grid grid-cols-1 lg:grid-cols-2 `}>
           <article className="relative col-span-1 lg:col-span-2 grid grid-cols-[1fr] flex py-24 items-center gap-10">
             <header>

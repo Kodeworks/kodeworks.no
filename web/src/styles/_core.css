@@ -10,6 +10,7 @@
 
   --color-green: #b7ff9f;
   --color-grey: #e8e7e6;
+  --color-dark-grey: #666;
 }
 
 body {
@@ -19,7 +20,7 @@ body {
 }
 
 a {
-  color: #666;
+  color: var(--color-dark-grey);
   text-decoration: underline;
 }
 
@@ -218,7 +219,7 @@ ol {
 }
 
 #menu-bar-logo {
-  background-color: #B6FF9E;
+  background-color: var(--color-green);
   background-color: black;
   -webkit-mask: url(/static/logo.svg) no-repeat center;
   mask: url(/static/logo.svg) no-repeat center;
@@ -229,7 +230,7 @@ ol {
 .nav-link {
   border: none;
   text-decoration: none;
-  background-image: linear-gradient(#B6FF9E,#B6FF9E);
+  background-image: linear-gradient(var(--color-green),var(--color-green));
   background-position: 0 100%;
   background-repeat: no-repeat;
   background-size: 0 2px;
@@ -264,7 +265,7 @@ ol {
 }
 
 #menu-bar.dark-mode #menu-bar-logo {
-  background-color: #B6FF9E;
+  background-color: var(--color-green);
 }
 
 #menu-button.dark-mode {

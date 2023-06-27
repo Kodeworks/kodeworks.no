@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { useContext } from 'react';
+import { useContext, useMemo } from 'react';
 import CareerContext from '../../context/CareerContext';
 import NumberWithSeperators from '../NumberWithSeparator';
 import style from '../page/calculator.module.css';
@@ -14,10 +14,10 @@ export default function Total({ careerSchema }: Props) {
   const dateString = careerSchema.basicPensionAmount?.fromDate!;
 
   function getTotal() {
-    return getPermanentBenefits() + salary + pension;
+    return permanentBenefits + salary + pension;
   }
 
-  function getPermanentBenefits() {
+  const permanentBenefits = useMemo(() => {
     const totalEmployeeBudgetAmount = careerSchema.employeeBudget
       ?.epolyeeBudgetsPosts!.filter((post) => post.fixedBenefits)
       .map((post) => post.amountYearly)
@@ -28,12 +28,14 @@ export default function Total({ careerSchema }: Props) {
       .map((item) => item.amountYearly)
       .reduce((accumulator, currentValue) => accumulator! + currentValue!);
     return totalEmployeeBudgetAmount! + totalBenefitsAmount!;
-  }
+  }, [careerSchema]);
 
   return (
     <div className={`flex flex-col items-center lg:items-start my-16`}>
       <h4>Totalpakke</h4>
-      <div className={`border-2 border-solid border-[#B6FF9E] gap-y-4 flex flex-col w-min`}>
+      <div
+        className={`border-2 border-solid border-[var(--color-green)] gap-y-4 flex flex-col w-min`}
+      >
         <div className="flex flex-col px-5 py-2">
           <h4>Fastlønn</h4>
           <div className="text-5xl whitespace-nowrap">
@@ -57,8 +59,8 @@ export default function Total({ careerSchema }: Props) {
           </div>
           <div className="text-5xl whitespace-nowrap">
             <NumberWithSeperators
-              startValue={getPermanentBenefits()}
-              endValue={getPermanentBenefits()}
+              startValue={permanentBenefits}
+              endValue={permanentBenefits}
               showCurrency
             />
           </div>
@@ -81,7 +83,7 @@ export default function Total({ careerSchema }: Props) {
           </div>
         </div>
         <div
-          className={`border-t-2 border-solid border-[#B6FF9E] gap-y-4 flex flex-col whitespace-nowrap`}
+          className={`border-t-2 border-solid border-[var(--color-green)] gap-y-4 flex flex-col whitespace-nowrap`}
         >
           <div className="flex flex-col px-4 py-3">
             <h4>Dette vil gi en totalpakke på</h4>
@@ -96,7 +98,7 @@ export default function Total({ careerSchema }: Props) {
         </div>
       </div>
       <Link href="/staffmanual" className="mt-6">
-        <div className="mt-4 px-10 py-3 bg-[#B6FF9E] text-[#000] hover:text-[#666] ">
+        <div className="mt-4 px-10 py-3 bg-[var(--color-green)] text-black hover:text-[var(--color-dark-grey)] ">
           Se håndboka
         </div>
       </Link>

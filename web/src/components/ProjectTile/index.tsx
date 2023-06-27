@@ -34,12 +34,15 @@ export default function ProjectTile({ project, reverse }: Prop): JSX.Element {
         ) : null}
 
         {project.technologies ? (
-          <div className="text-[#999] text-sm">
+          <div className="text-white text-sm">
             <h5>Teknologier</h5>
 
             <div className="flex flex-wrap  text-sm gap-4">
               {project.technologies?.map((tech, index) => (
-                <div key={`${index}`} className="border-2 border-solid border-[#B6FF9E] py-1 px-2">
+                <div
+                  key={`${index}`}
+                  className="border-2 border-solid border-[var(--color-green)] py-1 px-2"
+                >
                   {tech}
                 </div>
               ))}

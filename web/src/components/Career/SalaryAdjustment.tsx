@@ -47,16 +47,16 @@ export default function SalaryAdjustment({ careerSchema }: Props) {
       </div>
       {years.map((year, index) => {
         return (
-          <div key={index} style={{ gridArea: year.class }} className={`flex flex-col h-full`}>
+          <div key={year.class} style={{ gridArea: year.class }} className={`flex flex-col h-full`}>
             <div className={`${year.align} flex justify-center h-full py-4 min-h-[150px]`}>
               <div
-                className={`border-2 border-solid border-[#B6FF9E] text-s leading-none flex p-2 justify-center w-min whitespace-nowrap`}
+                className={`border-2 border-solid border-[var(--color-green)] text-s leading-none flex p-2 justify-center w-min whitespace-nowrap`}
               >
                 {getSalaryIncreace(index + 1)}
               </div>
             </div>
             <div
-              className={`border-t-2 border-solid border-[#000] p-4 flex justify-center items-center h-[50px]`}
+              className={`border-t-2 border-solid border-black p-4 flex justify-center items-center h-[50px]`}
             >
               {new Date().getFullYear() + index}
             </div>

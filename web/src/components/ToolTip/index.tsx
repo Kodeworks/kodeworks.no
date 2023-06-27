@@ -10,7 +10,7 @@ export default function TooltipComponent({ tooltipContainer, children }: Tooltip
   const tooltipId = useId();
 
   return (
-    <button className="self-start text-start" style={{ background: 'none', border: 'none' }}>
+    <button className="self-start text-start bg-transparent border-none">
       <div id={tooltipId} className="flex items-start">
         {tooltipContainer}
       </div>

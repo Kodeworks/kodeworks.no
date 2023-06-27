@@ -104,20 +104,27 @@ function Main(): JSX.Element {
       >
         <Link href="/" className="leading-none pl-8">
           <div id="menu-bar-logo" />
-          {/* <img className="logo" src="/static/logo.svg" alt="Logo" width="240" height="30" /> */}
         </Link>
         <div className="flex gap-x-8 pr-8">
           <Link href="/people" className="no-underline leading-none nav-link">
-            <span className="text-xl text-[#000] hover:text-[#666]">{t('our people')}</span>
+            <span className="text-xl text-black hover:text-[var(--color-dark-grey)]">
+              {t('our people')}
+            </span>
           </Link>
           <Link href="/projects" className="no-underline leading-none nav-link">
-            <span className="text-xl text-[#000] hover:text-[#666]">{t('projects')}</span>
+            <span className="text-xl text-black hover:text-[var(--color-dark-grey)]">
+              {t('projects')}
+            </span>
           </Link>
           <Link href="/career" className="no-underline leading-none nav-link">
-            <span className="text-xl text-[#000] hover:text-[#666]">{t('career')}</span>
+            <span className="text-xl text-black hover:text-[var(--color-dark-grey)]">
+              {t('career')}
+            </span>
           </Link>
           <Link href="/staffmanual" className="no-underline leading-none nav-link">
-            <span className="text-xl text-[#000] hover:text-[#666]">{t('staff manual')}</span>
+            <span className="text-xl text-black hover:text-[var(--color-dark-grey)]">
+              {t('staff manual')}
+            </span>
           </Link>
         </div>
       </div>

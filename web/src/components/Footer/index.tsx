@@ -12,22 +12,22 @@ export default function Footer() {
         className="md:flex flex-col text-white gap-y-2 hidden"
       >
         <Link href="/career" className="no-underline leading-none nav-link w-min">
-          <span className="text-xl text-[#fff] hover:text-[#fff]">Jobb hos oss</span>
+          <span className="text-xl text-white hover:text-white">Jobb hos oss</span>
         </Link>
         <Link href="/staffmanual" className="no-underline leading-none nav-link w-min">
-          <span className="text-xl text-[#fff] hover:text-[#fff]">Håndboka</span>
+          <span className="text-xl text-white hover:text-white">Håndboka</span>
         </Link>
         <Link href="/people" className="no-underline leading-none nav-link w-min">
-          <span className="text-xl text-[#fff] hover:text-[#fff]">Menneskene</span>
+          <span className="text-xl text-white hover:text-white">Menneskene</span>
         </Link>
         <Link href="/projects" className="no-underline leading-none nav-link w-min">
-          <span className="text-xl text-[#fff] hover:text-[#fff]">Prosjektene</span>
+          <span className="text-xl text-white hover:text-white">Prosjektene</span>
         </Link>
         <Link
           href="https://blog.kodeworks.no/"
           className="no-underline leading-none nav-link w-min"
         >
-          <span className="text-xl text-[#fff] hover:text-[#fff]">Blogg</span>
+          <span className="text-xl text-white hover:text-white">Blogg</span>
         </Link>
       </div>
       <div style={{ gridArea: 'logo' }} className="flex justify-end">
@@ -39,7 +39,7 @@ export default function Footer() {
       </div>
       <div style={{ gridArea: 'contact' }} className="flex flex-col md:flex-row gap-x-20 gap-y-10">
         <div className="flex flex-col">
-          <span className="text-[#B6FF9E]">Kontakt oss</span>
+          <span className="text-[var(--color-green)]">Kontakt oss</span>
           <span>
             post@kodeworks.no
             <br />
@@ -47,7 +47,7 @@ export default function Footer() {
           </span>
         </div>
         <div className="flex flex-col">
-          <span className="text-[#B6FF9E]">Oslo</span>
+          <span className="text-[var(--color-green)]">Oslo</span>
           <span>
             Grønnegata 10
             <br />
@@ -55,7 +55,7 @@ export default function Footer() {
           </span>
         </div>
         <div className="flex flex-col">
-          <span className="text-[#B6FF9E]">Trondheim</span>
+          <span className="text-[var(--color-green)]">Trondheim</span>
           <span>
             Fjordgata 30
             <br />
@@ -67,17 +67,19 @@ export default function Footer() {
         <ul className={`list-plain ${style['menu-list-languages']}`}>
           <li>
             <Link href={pathname} locale="no">
-              <div className="text-[#fff] hover:text-[#fff]">Norsk</div>
+              <div className="text-white hover:text-white">Norsk</div>
             </Link>
           </li>
           <li>
             <Link href={pathname} locale="en">
-              <div className="text-[#fff] hover:text-[#fff]">English</div>
+              <div className="text-white hover:text-white">English</div>
             </Link>
           </li>
         </ul>
         <Link href="/legal/privacy" className="no-underline leading-none nav-link">
-          <span className="text-[#B6FF9E] hover:text-[#B6FF9E]">Personvernerklæring</span>
+          <span className="text-[var(--color-green)] hover:text-[var(--color-green)]">
+            Personvernerklæring
+          </span>
         </Link>
       </div>
     </footer>

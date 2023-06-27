@@ -13,19 +13,21 @@ export default function OtherBenefits({ careerSchema }: Props) {
         {careerSchema.benefits?.benefitItems!.map((item, index) => {
           return (
             <div
-              className={`last-of-type:pr-3 first-of-type:pl-3 text-[#fff] relative flex flex-col justify-center items-center text-center max-w-[300px] min-w-[300px] max-h-[225px] min-h-[225px]`}
+              className={`last-of-type:pr-3 first-of-type:pl-3 text-white relative flex flex-col justify-center items-center text-center max-w-[300px] min-w-[300px] max-h-[225px] min-h-[225px]`}
               key={index}
             >
-              <div className="h-full w-full absolute bg-[#00000066] -z-10"></div>
-              <img
-                className={`h-full w-full absolute -z-20`}
-                src={urlFor(item.image).width(458).height(286).url()}
-                alt={''}
-              />
+              <div className="h-full w-full absolute bg-black/50 -z-10"></div>
+              {item.image && (
+                <img
+                  className={`h-full w-full absolute -z-20`}
+                  src={urlFor(item.image).width(458).height(286).url()}
+                  alt={''}
+                />
+              )}
               <div className="-z-0 p-8">
                 <h4 className="py-4">{item.title}</h4>
                 <div className="flex">
-                  <span className="text-2xl leading-none text-[#B6FF9E] mr-2">*</span>
+                  <span className="text-2xl leading-none text-[var(--color-green)] mr-2">*</span>
                   <span className="text-xs leading-none">{item.text}</span>
                 </div>
               </div>

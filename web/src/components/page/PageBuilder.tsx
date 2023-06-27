@@ -27,7 +27,6 @@ export default function PageBuilder({ pageSchema }: Props) {
   if (!pageSchema.content) {
     return null;
   }
-  // TODO: We should tweak the layouts and styling when benefits and calculator is in place.
   return (
     <article className="grid grid-cols-1 lg:grid-cols-2 gap-20">
       {pageSchema.content.map(toComponent)}
