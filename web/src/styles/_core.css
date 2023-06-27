@@ -206,7 +206,7 @@ ol {
 /* Menu Button
 ------------------------------------------------------------------------------*/
 #menu-bar {
-  background-color: transparent;
+  background-color: white;
   border: none;
   color: #000;
   cursor: pointer;
@@ -257,6 +257,10 @@ ol {
   top: 15px;
   right: 15px;
   z-index: 1000;
+}
+
+#menu-bar.dark-mode{
+  background-color: #000;
 }
 
 #menu-bar.dark-mode span{

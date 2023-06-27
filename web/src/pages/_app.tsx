@@ -107,24 +107,16 @@ function Main(): JSX.Element {
         </Link>
         <div className="flex gap-x-8 pr-8">
           <Link href="/people" className="no-underline leading-none nav-link">
-            <span className="text-xl text-black hover:text-[var(--color-dark-grey)]">
-              {t('our people')}
-            </span>
+            <span className="text-xl text-black hover:text-black">{t('our people')}</span>
           </Link>
           <Link href="/projects" className="no-underline leading-none nav-link">
-            <span className="text-xl text-black hover:text-[var(--color-dark-grey)]">
-              {t('projects')}
-            </span>
+            <span className="text-xl text-black hover:text-black">{t('projects')}</span>
           </Link>
           <Link href="/career" className="no-underline leading-none nav-link">
-            <span className="text-xl text-black hover:text-[var(--color-dark-grey)]">
-              {t('career')}
-            </span>
+            <span className="text-xl text-black hover:text-black">{t('career')}</span>
           </Link>
           <Link href="/staffmanual" className="no-underline leading-none nav-link">
-            <span className="text-xl text-black hover:text-[var(--color-dark-grey)]">
-              {t('staff manual')}
-            </span>
+            <span className="text-xl text-black hover:text-black">{t('staff manual')}</span>
           </Link>
         </div>
       </div>

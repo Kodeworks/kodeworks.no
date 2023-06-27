@@ -31,10 +31,11 @@ export default function ContainerBuilder({ containerSchema }: Props) {
     <div className={classes}>
       {containerSchema.fullWidth && (
         <div
-          className={`full-screen-width h-full absolute bg-[${containerSchema.background}] -z-10`}
+          style={{ backgroundColor: `${containerSchema.background}` }}
+          className={`full-screen-width h-full absolute -z-10`}
         />
       )}
-      <div className="py-8">{containerSchema.content.map(toComponent)}</div>
+      <div className="py-8 gap-y-2 flex flex-col">{containerSchema.content.map(toComponent)}</div>
     </div>
   );
 }

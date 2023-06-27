@@ -110,7 +110,7 @@ export default function Navigation({ isOpened, toggleNavigationOpened }: Prop): 
               </li>
             </ul>
 
-            <ul className={`list-plain ${style['menu-list-languages']}`}>
+            {/* <ul className={`list-plain ${style['menu-list-languages']}`}>
               <li>
                 <Link href={pathname} locale="no">
                   <div>Norsk</div>
@@ -121,7 +121,7 @@ export default function Navigation({ isOpened, toggleNavigationOpened }: Prop): 
                   <div>English</div>
                 </Link>
               </li>
-            </ul>
+            </ul> */}
           </div>
         </footer>
       </div>

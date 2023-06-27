@@ -63,19 +63,7 @@ export default function Footer() {
           </span>
         </div>
       </div>
-      <div style={{ gridArea: 'other' }} className="flex flex-col">
-        <ul className={`list-plain ${style['menu-list-languages']}`}>
-          <li>
-            <Link href={pathname} locale="no">
-              <div className="text-white hover:text-white">Norsk</div>
-            </Link>
-          </li>
-          <li>
-            <Link href={pathname} locale="en">
-              <div className="text-white hover:text-white">English</div>
-            </Link>
-          </li>
-        </ul>
+      <div style={{ gridArea: 'other' }} className="flex flex-col justify-end">
         <Link href="/legal/privacy" className="no-underline leading-none nav-link">
           <span className="text-[var(--color-green)] hover:text-[var(--color-green)]">
             Personvernerklæring

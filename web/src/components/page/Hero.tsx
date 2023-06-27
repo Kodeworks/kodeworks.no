@@ -10,9 +10,9 @@ export default function Hero({ heroSchema }: Props) {
   return (
     <section className="col-span-1 lg:col-span-2 flex flex-col gap-10">
       <h1>{heroSchema.heading}</h1>
-      <div className="flex flex-col lg:flex-row gap-10">
+      <div className="flex flex-col lg:flex-row gap-10 grid grid-cols-[1fr] lg:grid-cols-[repeat(2,1fr)] ">
         <img
-          style={{ aspectRatio: '16/9', height: '320px', maxWidth: 'min-content' }}
+          style={{ aspectRatio: '16/9', maxWidth: '100%', borderRadius: '5px' }}
           src={urlFor(heroSchema.image).url()}
           alt={heroSchema.image?.alt}
         />

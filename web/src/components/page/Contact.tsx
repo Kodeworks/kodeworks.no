@@ -16,9 +16,9 @@ export default function Contact({ contactSchema }: Props) {
             <div key={person.phone} className="flex flex-col lg:flex-row gap-4 lg:items-end">
               {person.image && (
                 <img
-                  className="w-[250px] h-[350px]"
+                  className="max-w-[250px]"
                   style={{ aspectRatio: 'auto 250 / 350' }}
-                  src={urlFor(person.image).height(350).width(250).url()}
+                  src={urlFor(person.image).url()}
                   alt={''}
                 />
               )}

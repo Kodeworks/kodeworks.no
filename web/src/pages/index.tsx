@@ -56,8 +56,8 @@ function Home({ people }): JSX.Element {
             <div className="full-screen-width h-full absolute bg-[var(--color-green)] -z-10"></div>
             <div className="flex justify-center lg:justify-start order-last lg:order-first">
               <img
-                style={{ aspectRatio: '16/9', width: '75%', borderRadius: '5px' }}
-                src="/static/photos/Kodeworks-506.jpg"
+                style={{ aspectRatio: '16/9', maxWidth: '100%' }}
+                src="/static/photos/Kodeworks-482.jpg"
                 alt="About"
               />
             </div>
@@ -84,8 +84,8 @@ function Home({ people }): JSX.Element {
             </div>
             <div className="text-center flex flex-col items-center">
               <img
-                style={{ aspectRatio: '16/9', width: '75%', borderRadius: '5px' }}
-                src="/static/photos/EOSR7695.jpg"
+                style={{ aspectRatio: '16/9', maxWidth: '100%' }}
+                src="/static/photos/gruppe_f.jpg"
                 alt="About"
               />
             </div>
@@ -96,7 +96,7 @@ function Home({ people }): JSX.Element {
             <div className="full-screen-width h-full absolute bg-black -z-10"></div>
             <div className="flex justify-center lg:justify-start order-last lg:order-first">
               <img
-                style={{ aspectRatio: '16/9', width: '75%', borderRadius: '5px' }}
+                style={{ aspectRatio: '16/9', maxWidth: '100%' }}
                 src={highlightedProject && '/static/photos/projects/' + highlightedProject.image}
                 alt={highlightedProject && fmt(highlightedProject.name, locale!)}
               />
