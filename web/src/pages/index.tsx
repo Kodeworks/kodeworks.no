@@ -17,6 +17,7 @@ export async function getStaticProps() {
   const people = await getPeople();
   return {
     props: { people },
+    revalidate: 10
   };
 }
 
