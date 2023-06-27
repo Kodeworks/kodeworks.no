@@ -23,7 +23,6 @@ export default function ContainerBuilder({ containerSchema }: Props) {
 
   const classes = classNames('flex flex-col gap-8 relative', {
     'col-span-1 lg:col-span-2': containerSchema.fullWidth,
-    'w-min': !containerSchema.fullWidth,
     [`bg-[${containerSchema.background}]`]: containerSchema.background,
   });
 
