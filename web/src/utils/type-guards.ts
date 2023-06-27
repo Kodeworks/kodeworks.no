@@ -32,3 +32,11 @@ export const isParagraphPageContent = (
   schema: unknown
 ): schema is PageContent<NonNullable<Sanity.Default.Schema.Paragraph>> =>
   isPageContent(schema) && schema._type === 'paragraph';
+export const isCalculatorPageContent = (
+  schema: unknown
+): schema is PageContent<NonNullable<Sanity.Default.Schema.Calculator>> =>
+  isPageContent(schema) && schema._type === 'calculator';
+export const isContactPageContent = (
+  schema: unknown
+): schema is PageContent<NonNullable<Sanity.Default.Schema.Calculator>> =>
+  isPageContent(schema) && schema._type === 'contact';

@@ -48,7 +48,7 @@ export default function Navigation({ isOpened, toggleNavigationOpened }: Prop): 
   }
 
   return (
-    <menu id={style['menu']} className={isOpened ? style['menu--opened'] : ''}>
+    <menu id={style['menu']} className={`${isOpened ? style['menu--opened'] : ''}`}>
       <div className={style['menu-hero']}>
         <img className={style['menu-hero-logo']} src="/static/logo-white.svg" width="100" alt="" />
         <div className={style['menu-hero-overlay']}></div>
@@ -110,7 +110,7 @@ export default function Navigation({ isOpened, toggleNavigationOpened }: Prop): 
               </li>
             </ul>
 
-            <ul className={`list-plain ${style['menu-list-languages']}`}>
+            {/* <ul className={`list-plain ${style['menu-list-languages']}`}>
               <li>
                 <Link href={pathname} locale="no">
                   <div>Norsk</div>
@@ -121,7 +121,7 @@ export default function Navigation({ isOpened, toggleNavigationOpened }: Prop): 
                   <div>English</div>
                 </Link>
               </li>
-            </ul>
+            </ul> */}
           </div>
         </footer>
       </div>

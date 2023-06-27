@@ -1,14 +1,18 @@
 import { NextPage } from 'next';
 import { AppProps } from 'next/app';
 import Head from 'next/head';
+import Link from 'next/link';
 import { useRouter } from 'next/router';
 import React, { ReactElement, ReactNode, useContext, useEffect, useState } from 'react';
 
 import Layout from '../components/Layout';
 import Navigation from '../components/Navigation';
 import { ClipContentContext, ClipContentProvider } from '../context/ClipContentContext';
+import dictionary from '../components/Navigation/dict';
 
 import '../styles/kw.css';
+import { useTranslation } from '../utils/useTranslation';
+import Footer from '../components/Footer';
 
 export type NextPageWithLayout<P = {}, IP = P> = NextPage<P, IP> & {
   getLayout?: (page: ReactElement) => ReactNode;
@@ -30,12 +34,14 @@ export default function App({ Component, pageProps }: AppPropsWithLayout): JSX.E
       <>
         <Main />
         {getLayout(<Component {...pageProps} />)}
+        <Footer />
       </>
     </ClipContentProvider>
   );
 }
 
 function Main(): JSX.Element {
+  const { t } = useTranslation(dictionary);
   const [isNavigationOpen, setIsNavigationOpen] = useState(false);
   const [scrollTop, setScrollTop] = useState(0);
   const router = useRouter();
@@ -90,10 +96,34 @@ function Main(): JSX.Element {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>KodeWorks</title>
       </Head>
+      <div
+        className={`${
+          clipMode ? 'dark-mode' : ''
+        } lg:visible invisible flex justify-between items-center`}
+        id="menu-bar"
+      >
+        <Link href="/" className="leading-none pl-8">
+          <div id="menu-bar-logo" />
+        </Link>
+        <div className="flex gap-x-8 pr-8">
+          <Link href="/people" className="no-underline leading-none nav-link">
+            <span className="text-xl text-black hover:text-black">{t('our people')}</span>
+          </Link>
+          <Link href="/projects" className="no-underline leading-none nav-link">
+            <span className="text-xl text-black hover:text-black">{t('projects')}</span>
+          </Link>
+          <Link href="/career" className="no-underline leading-none nav-link">
+            <span className="text-xl text-black hover:text-black">{t('career')}</span>
+          </Link>
+          <Link href="/staffmanual" className="no-underline leading-none nav-link">
+            <span className="text-xl text-black hover:text-black">{t('staff manual')}</span>
+          </Link>
+        </div>
+      </div>
       <button
         onClick={handleMenuButtonClick}
         id="menu-button"
-        className={clipMode ? 'dark-mode' : ''}
+        className={`${clipMode ? 'dark-mode' : ''} lg:invisible`}
       >
         <label className="menuicon-label">
           <span

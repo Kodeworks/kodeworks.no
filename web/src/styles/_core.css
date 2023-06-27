@@ -7,9 +7,9 @@
 
   --spacer-large: 120px;
   --spacer-medium: 60px;
-
-  --color-green: #b7ff9f;
+  --color-green: #B6FF9E;
   --color-grey: #e8e7e6;
+  --color-dark-grey: #666;
 }
 
 body {
@@ -19,7 +19,7 @@ body {
 }
 
 a {
-  color: #666;
+  color: var(--color-dark-grey);
   text-decoration: underline;
 }
 
@@ -109,6 +109,26 @@ code {
   }
 }
 
+/* Footer -------------------------------------------*/
+.footer-container {
+  background: #000;
+  color: #fff;
+  display: grid;
+  grid-template-columns: 1fr min-content;
+  gap: 48px;
+  grid-template-areas: 
+  'navigation logo'
+  'contact other';
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    grid-template-areas: 
+    'contact logo'
+    'other logo';
+  }
+}
+
 /* Main -------------------------------------------*/
 .main {
   margin-top: 150px;
@@ -185,6 +205,42 @@ ol {
 
 /* Menu Button
 ------------------------------------------------------------------------------*/
+#menu-bar {
+  background-color: white;
+  border: none;
+  color: #000;
+  cursor: pointer;
+  height: 44px;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+#menu-bar-logo {
+  background-color: var(--color-green);
+  background-color: black;
+  -webkit-mask: url(/static/logo.svg) no-repeat center;
+  mask: url(/static/logo.svg) no-repeat center;
+  width: 240px;
+  height: 30px;
+}
+
+.nav-link {
+  border: none;
+  text-decoration: none;
+  background-image: linear-gradient(var(--color-green),var(--color-green));
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-size: 0 2px;
+  transition: background-size .3s;
+  white-space: nowrap;
+}
+
+.nav-link:hover {
+  background-size: 100% 2px;
+}
+
 #menu-button {
   background-color: transparent;
   border-radius: 22px;
@@ -201,6 +257,18 @@ ol {
   top: 15px;
   right: 15px;
   z-index: 1000;
+}
+
+#menu-bar.dark-mode{
+  background-color: #000;
+}
+
+#menu-bar.dark-mode span{
+  color: var(--color-green) !important;
+}
+
+#menu-bar.dark-mode #menu-bar-logo {
+  background-color: var(--color-green);
 }
 
 #menu-button.dark-mode {

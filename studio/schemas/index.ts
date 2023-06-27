@@ -11,10 +11,20 @@ import hero from './documents/page/hero'
 import listSection from './documents/page/listSection'
 import paragraph from './documents/page/paragraph'
 import textSection from './documents/page/textSection'
+import calculator from './documents/page/calculator'
 import container from './documents/page/container'
 import illustration from './documents/page/illustration'
+import employeeBudgetPost from './documents/employee-budget-post'
+import benefitItem from './documents/benefit-item'
+import contactInfo from './documents/contact-info'
+import contact from './documents/page/contact'
 
 export const schemaTypes = [
+  contact,
+  contactInfo,
+  calculator,
+  employeeBudgetPost,
+  benefitItem,
   people,
   social,
   project,

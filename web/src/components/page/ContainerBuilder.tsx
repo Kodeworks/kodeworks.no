@@ -23,7 +23,6 @@ export default function ContainerBuilder({ containerSchema }: Props) {
 
   const classes = classNames('flex flex-col gap-8 relative', {
     'col-span-1 lg:col-span-2': containerSchema.fullWidth,
-    'w-min': !containerSchema.fullWidth,
     [`bg-[${containerSchema.background}]`]: containerSchema.background,
   });
 
@@ -31,10 +30,11 @@ export default function ContainerBuilder({ containerSchema }: Props) {
     <div className={classes}>
       {containerSchema.fullWidth && (
         <div
-          className={`full-screen-width h-full absolute bg-[${containerSchema.background}] -z-10`}
+          style={{ backgroundColor: `${containerSchema.background}` }}
+          className={`full-screen-width h-full absolute -z-10`}
         />
       )}
-      <div className="p-8">{containerSchema.content.map(toComponent)}</div>
+      <div className="py-16 gap-y-6 flex flex-col">{containerSchema.content.map(toComponent)}</div>
     </div>
   );
 }
