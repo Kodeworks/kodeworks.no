@@ -5,14 +5,19 @@ export function useClipText(objects: object[]): string {
 
   useEffect(() => {
     function shouldClipText(): void {
-      let offsets: { top: number; bottom: number; colorMode: string }[] = [];
+      let offsets: { top: number; bottom: number; colorMode: string; elementt: any }[] = [];
 
       for (let object of objects) {
         const element = getElement(object['id']);
         const elementTop = element ? element.offsetTop : 0;
         const elementBottom = element ? elementTop + element.offsetHeight : 0;
 
-        offsets.push({ top: elementTop, bottom: elementBottom, colorMode: object['colorMode'] });
+        offsets.push({
+          top: elementTop,
+          bottom: elementBottom,
+          colorMode: object['colorMode'],
+          elementt: element,
+        });
       }
       let clipText = '';
 

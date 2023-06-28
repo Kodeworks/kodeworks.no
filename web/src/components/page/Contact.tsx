@@ -1,12 +1,25 @@
+import { useContext, useEffect } from 'react';
+import { ClipContentContext } from '../../context/ClipContentContext';
 import { urlFor } from '../../lib/sanity';
+import { useClipText } from '../../utils/useClipText';
 
 interface Props {
   contactSchema: NonNullable<Sanity.Default.Schema.Contact>;
 }
 
 export default function Contact({ contactSchema }: Props) {
+  const { changeClipMode } = useContext(ClipContentContext);
+
+  const shouldClipText = useClipText([{ id: 'contact', colorMode: 'grey-mode' }]);
+
+  useEffect(() => {
+    changeClipMode(shouldClipText);
+  }, [shouldClipText]);
   return (
-    <section className="col-span-1 lg:col-span-2 flex flex-col gap-5 relative py-16 justify-center">
+    <section
+      className="col-span-1 lg:col-span-2 flex flex-col gap-5 relative py-16 justify-center"
+      id="contact"
+    >
       <div className="full-screen-width h-full absolute bg-[var(--color-grey)] -z-10"></div>
       <h2 className="">{contactSchema.title}</h2>
       <p className="">{contactSchema.subText}</p>

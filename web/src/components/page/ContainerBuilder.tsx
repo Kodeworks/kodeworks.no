@@ -11,12 +11,37 @@ import CallToAction from './CallToAction';
 import Illustration from './Illustration';
 import Paragraph from './Paragraph';
 import classNames from 'classnames';
+import { useContext, useEffect, useId } from 'react';
+import { useClipText } from '../../utils/useClipText';
+import { ClipContentContext } from '../../context/ClipContentContext';
 
 interface Props {
   containerSchema: NonNullable<Sanity.Default.Schema.Container>;
 }
 
 export default function ContainerBuilder({ containerSchema }: Props) {
+  const { changeClipMode } = useContext(ClipContentContext);
+  const componentId = useId();
+  let colorMode = getColorMode(containerSchema);
+
+  function getColorMode(containerSchema) {
+    if (containerSchema.background === '#B6FF9E') {
+      return 'green-mode';
+    } else if (containerSchema.background === '#E8E7E6') {
+      return 'grey-mode';
+    }
+
+    return '';
+  }
+
+  let shouldClipText = useClipText([{ id: componentId, colorMode: colorMode }]);
+
+  useEffect(() => {
+    if (colorMode) {
+      changeClipMode(shouldClipText);
+    }
+  }, [shouldClipText]);
+
   if (!containerSchema.content) {
     return null;
   }
@@ -27,7 +52,7 @@ export default function ContainerBuilder({ containerSchema }: Props) {
   });
 
   return (
-    <div className={classes}>
+    <div className={classes} id={componentId}>
       {containerSchema.fullWidth && (
         <div
           style={{ backgroundColor: `${containerSchema.background}` }}
