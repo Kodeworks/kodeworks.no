@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { useClipContent } from '../../context/ClipContentContext';
 
 export default function StaffManual(): JSX.Element {
-  useClipContent(false);
+  useClipContent('');
 
   return (
     <>

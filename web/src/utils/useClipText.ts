@@ -1,28 +1,27 @@
 import { useEffect, useState } from 'react';
 
-export function useClipText(ids: string[]): boolean {
-  const [shouldClipText, setShouldClipText] = useState(false);
+export function useClipText(objects: object[]): string {
+  const [shouldClipText, setShouldClipText] = useState('');
 
   useEffect(() => {
     function shouldClipText(): void {
-      let offsets: { top: number; bottom: number }[] = [];
+      let offsets: { top: number; bottom: number; colorMode: string }[] = [];
 
-      for (let id of ids) {
-        const element = getElement(id);
+      for (let object of objects) {
+        const element = getElement(object['id']);
         const elementTop = element ? element.offsetTop : 0;
         const elementBottom = element ? elementTop + element.offsetHeight : 0;
 
-        offsets.push({ top: elementTop, bottom: elementBottom });
+        offsets.push({ top: elementTop, bottom: elementBottom, colorMode: object['colorMode'] });
       }
-
-      let clipText = false;
+      let clipText = '';
 
       for (let i = 0; i < offsets.length; i++) {
         if (
           window.pageYOffset + 40 > offsets[i].top &&
           window.pageYOffset + 40 < offsets[i].bottom
         ) {
-          clipText = true;
+          clipText = offsets[i].colorMode;
         }
       }
 

@@ -97,9 +97,7 @@ function Main(): JSX.Element {
         <title>KodeWorks</title>
       </Head>
       <div
-        className={`${
-          clipMode ? 'dark-mode' : ''
-        } lg:visible invisible flex justify-between items-center`}
+        className={`${clipMode} lg:visible invisible flex justify-between items-center`}
         id="menu-bar"
       >
         <Link href="/" className="leading-none pl-8">

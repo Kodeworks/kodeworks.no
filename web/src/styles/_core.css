@@ -260,7 +260,7 @@ ol {
 }
 
 #menu-bar.dark-mode{
-  background-color: #000;
+  background-color: black;
 }
 
 #menu-bar.dark-mode span{
@@ -274,8 +274,25 @@ ol {
 #menu-button.dark-mode {
   color: var(--color-green);
 }
+
 #menu-button.dark-mode .menuicon-line {
   background-color: var(--color-green);
+}
+
+#menu-bar.grey-mode{
+  background-color: var(--color-grey);
+}
+
+#menu-bar.grey-mode .nav-link{
+  background-image: linear-gradient(black,black);
+}
+
+#menu-bar.green-mode{
+  background-color: var(--color-green);
+}
+
+#menu-bar.green-mode .nav-link{
+  background-image: linear-gradient(black,black);
 }
 
 .theme-dark #menu-button {

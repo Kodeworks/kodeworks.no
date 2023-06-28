@@ -8,7 +8,7 @@ import { useRouter } from 'next/router';
 import { getLocale, fmt } from '../../utils/useTranslation';
 
 export default function Projects(): JSX.Element {
-  useClipContent(true);
+  useClipContent('dark-mode');
   const locale = getLocale(useRouter());
   const { t } = useTranslation(dictionary);
 

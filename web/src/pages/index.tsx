@@ -17,7 +17,7 @@ export async function getStaticProps() {
   const people = await getPeople();
   return {
     props: { people },
-    revalidate: 10
+    revalidate: 10,
   };
 }
 
@@ -39,7 +39,11 @@ function Home({ people }): JSX.Element {
     setHighlightedPeople(randomPeople);
   }, []);
 
-  const shouldClipText = useClipText(['projects']);
+  const shouldClipText = useClipText([
+    { id: 'projects', colorMode: 'dark-mode' },
+    { id: 'who-section', colorMode: 'grey-mode' },
+    { id: 'work-section', colorMode: 'green-mode' },
+  ]);
 
   useEffect(() => {
     changeClipMode(shouldClipText);
@@ -52,7 +56,7 @@ function Home({ people }): JSX.Element {
         <img className="logo" src="/static/logo.svg" alt="Logo" />
       </header>
       <main className="main">
-        <section className={`grid grid-cols-1 lg:grid-cols-2 `}>
+        <section className={`grid grid-cols-1 lg:grid-cols-2 `} id="work-section">
           <article className="relative col-span-1 lg:col-span-2 grid grid-cols-[1fr] lg:grid-cols-[repeat(2,1fr)] flex py-24 items-center gap-10">
             <div className="full-screen-width h-full absolute bg-[var(--color-green)] -z-10"></div>
             <div className="flex justify-center lg:justify-start order-last lg:order-first">
@@ -72,7 +76,7 @@ function Home({ people }): JSX.Element {
             </div>
           </article>
         </section>
-        <section className={`grid grid-cols-1 lg:grid-cols-2 `}>
+        <section className={`grid grid-cols-1 lg:grid-cols-2 `} id="who-section">
           <article className="relative col-span-1 lg:col-span-2 grid grid-cols-[1fr] lg:grid-cols-[repeat(2,1fr)] flex py-24 items-center gap-10">
             <div className="full-screen-width h-full absolute bg-[var(--color-grey)] -z-10"></div>
             <div>
