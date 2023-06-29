@@ -227,7 +227,7 @@ ol {
 }
 
 .nav-link {
-  border: none;
+  border-top: 5px solid transparent;
   text-decoration: none;
   background-image: linear-gradient(var(--color-green),var(--color-green));
   background-position: 0 100%;
@@ -235,6 +235,10 @@ ol {
   background-size: 0 2px;
   transition: background-size .3s;
   white-space: nowrap;
+}
+
+.nav-link.active {
+  border-color: var(--color-green);
 }
 
 .nav-link:hover {
@@ -284,7 +288,7 @@ ol {
 }
 
 #menu-bar.grey-mode .nav-link{
-  background-image: linear-gradient(black,black);
+  background-image: linear-gradient(var(--color-green),var(--color-green));
 }
 
 #menu-bar.green-mode{
@@ -293,6 +297,10 @@ ol {
 
 #menu-bar.green-mode .nav-link{
   background-image: linear-gradient(black,black);
+}
+
+#menu-bar.green-mode .nav-link.active {
+    border-color:  black;
 }
 
 .theme-dark #menu-button {

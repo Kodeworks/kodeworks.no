@@ -5,7 +5,7 @@ interface Prop {
 }
 
 export default function ProjectLayout({ children }: Prop): JSX.Element {
-  useClipContent(true);
+  useClipContent('dark-mode');
 
   return <>{children}</>;
 }

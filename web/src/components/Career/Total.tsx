@@ -50,7 +50,7 @@ export default function Total({ careerSchema }: Props) {
                 <img src="/static/icons/marker.svg" alt="Logo" width="12" height="12" />
               }
             >
-              <p>
+              <p className="max-w-[70vw]">
                 Er summen av faster godene som du får som ansatt hos KodeWorks blant annet Telefon,
                 lapton, annet utstyr, kurs og konferanse, telefonabonnement, bredbånd og
                 treningsmedlemskap
@@ -73,7 +73,7 @@ export default function Total({ careerSchema }: Props) {
                 <img src="/static/icons/marker.svg" alt="Logo" width="12" height="12" />
               }
             >
-              <p>
+              <p className="max-w-[70vw]">
                 Grunnbeløpet (G) per {dateString} er kr {careerSchema.basicPensionAmount!.amount!}.
               </p>
             </TooltipComponent>

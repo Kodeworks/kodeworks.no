@@ -13,8 +13,8 @@ interface Props {
 }
 
 export default function Calculator({ careerSchema }: Props) {
-  const [seniority, setSeniority] = useState(0);
-  const [education, setEducation] = useState(0);
+  const [seniority, setSeniority] = useState(5);
+  const [education, setEducation] = useState(1);
   const [salary, setSalary] = useState(0);
   const [pension, setPension] = useState(0);
 
