@@ -50,32 +50,26 @@ export default function SalaryAdjustment({ careerSchema }: Props) {
     };
   });
 
-  function calculateLines() {
-    const box1 = document.getElementById('year-one');
-    const box2 = document.getElementById('year-two');
-    const box3 = document.getElementById('year-three');
-
-    return [
-      {
-        x1: (box1!.offsetLeft + box1!.offsetWidth).toString(),
-        y1: (box1!.offsetTop + box1!.offsetHeight / 2).toString(),
-        x2: box2!.offsetLeft.toString(),
-        y2: (box2!.offsetTop + box2!.offsetHeight / 2).toString(),
-      },
-      {
-        x1: (box2!.offsetLeft + box2!.offsetWidth).toString(),
-        y1: (box2!.offsetTop + box2!.offsetHeight / 2).toString(),
-        x2: box3!.offsetLeft.toString(),
-        y2: (box3!.offsetTop + box3!.offsetHeight / 2).toString(),
-      },
-    ];
-  }
-
   const years = [
     { class: 'year-one', align: 'items-end' },
     { class: 'year-two', align: 'items-center' },
     { class: 'year-three', align: 'items-start' },
   ];
+
+  function calculateLines() {
+    let lineList: Object[] = [];
+    for (let i = 0; i < years.length - 1; i++) {
+      const fromBox = document.getElementById(years[i]['class']);
+      const toBox = document.getElementById(years[i + 1]['class']);
+      lineList.push({
+        x1: (fromBox!.offsetLeft + fromBox!.offsetWidth).toString(),
+        y1: (fromBox!.offsetTop + fromBox!.offsetHeight / 2).toString(),
+        x2: toBox!.offsetLeft.toString(),
+        y2: (toBox!.offsetTop + toBox!.offsetHeight / 2).toString(),
+      });
+    }
+    return lineList;
+  }
 
   return (
     <div className={`${style['salary-adjustments']} relative`}>
@@ -115,7 +109,7 @@ export default function SalaryAdjustment({ careerSchema }: Props) {
             <div
               className={`border-t-2 border-solid border-black p-4 flex justify-center items-center h-[50px]`}
             >
-              {new Date().getFullYear() + index}
+              {new Date().getFullYear() + index + 1}
             </div>
           </div>
         );

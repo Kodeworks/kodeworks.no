@@ -5,7 +5,7 @@ export function useClipText(objects: object[]): string {
 
   useEffect(() => {
     function shouldClipText(): void {
-      let offsets: { top: number; bottom: number; colorMode: string; elementt: any }[] = [];
+      let offsets: { top: number; bottom: number; colorMode: string }[] = [];
 
       for (let object of objects) {
         const element = getElement(object['id']);
@@ -16,7 +16,6 @@ export function useClipText(objects: object[]): string {
           top: elementTop,
           bottom: elementBottom,
           colorMode: object['colorMode'],
-          elementt: element,
         });
       }
       let clipText = '';
