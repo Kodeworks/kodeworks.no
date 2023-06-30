@@ -16,7 +16,7 @@ interface Prop {
 }
 
 const Input: NextPageWithLayout = ({ project }: Prop) => {
-  useClipContent(true);
+  useClipContent('dark-mode');
   return (
     <>
       <div id="page-project">

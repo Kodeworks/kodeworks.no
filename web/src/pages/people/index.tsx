@@ -8,7 +8,7 @@ import { getPeople } from '../../lib/sanity';
 
 export default function People({ people }: { people: Person[] }): JSX.Element {
   const { t } = useTranslation(dictionary);
-  useClipContent(false);
+  useClipContent('');
 
   return (
     <div id="page-people">
@@ -29,6 +29,6 @@ export async function getStaticProps() {
     props: {
       people,
     },
-    revalidate: 10
+    revalidate: 10,
   };
 }

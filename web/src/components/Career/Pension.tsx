@@ -18,7 +18,7 @@ export default function Pension({ careerSchema }: Props) {
     setContextPension();
   });
 
-  const shouldClipText = useClipText(['pension']);
+  const shouldClipText = useClipText([{ id: 'pension', colorMode: 'dark-mode' }]);
 
   useEffect(() => {
     changeClipMode(shouldClipText);

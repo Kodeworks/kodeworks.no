@@ -1,13 +1,23 @@
 import NumberWithSeperators from '../NumberWithSeparator';
 import { urlFor } from '../../lib/sanity';
+import { useContext, useEffect } from 'react';
+import { useClipText } from '../../utils/useClipText';
+import { ClipContentContext } from '../../context/ClipContentContext';
 
 interface Props {
   careerSchema: NonNullable<Sanity.Default.Schema.Calculator>;
 }
 
 export default function EmployeeBudgets({ careerSchema }: Props) {
+  const { changeClipMode } = useContext(ClipContentContext);
+  const shouldClipText = useClipText([{ id: 'employeeBudgets', colorMode: 'green-mode' }]);
+
+  useEffect(() => {
+    changeClipMode(shouldClipText);
+  }, [shouldClipText]);
+
   return (
-    <div className={`relative flex flex-col gap-y-4 justify-center py-16`}>
+    <div className={`relative flex flex-col gap-y-4 justify-center py-16`} id="employeeBudgets">
       <div className="full-screen-width h-full absolute bg-[var(--color-green)] -z-10"></div>
       <h3>{careerSchema.employeeBudget!.title}</h3>
       <span className="max-w-xl mb-8">{careerSchema.employeeBudget!.subTitle}</span>

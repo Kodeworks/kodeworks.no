@@ -12,8 +12,7 @@ enum Education {
 }
 
 export default function About({ careerSchema }: Props) {
-  const { education, setEducation, seniority, setSeniority, salary, setSalary } =
-    useContext(CareerContext);
+  const { education, setEducation, seniority, setSeniority, setSalary } = useContext(CareerContext);
   useEffect(() => {
     setContextSalary();
   });
@@ -37,7 +36,6 @@ export default function About({ careerSchema }: Props) {
             className={`${style['calculator-education-input']}`}
             name="education"
             value={Education.Bachelor}
-            defaultChecked
             onChange={(event) => {
               setEducation(+event.target.value);
               setContextSalary();
@@ -51,6 +49,7 @@ export default function About({ careerSchema }: Props) {
             className={`${style['calculator-education-input']}`}
             name="education"
             value={Education.Master}
+            defaultChecked
             onChange={(event) => {
               setEducation(+event.target.value);
               setContextSalary();
