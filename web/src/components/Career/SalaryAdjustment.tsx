@@ -78,7 +78,6 @@ export default function SalaryAdjustment({ careerSchema }: Props) {
         <span>
           KodeWorks justerer lønnstabellen årlig basert på Tekna sine lønnsvekstrapporter.
         </span>
-        <p>halloen{years.length}</p>
       </div>
 
       {lines.length > 1 &&
