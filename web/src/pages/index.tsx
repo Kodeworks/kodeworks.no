@@ -2,15 +2,14 @@ import { useContext, useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 
 import { fmt, getLocale, useTranslation } from '../utils/useTranslation';
-import api from '../api';
 import { useClipText } from '../utils/useClipText';
-import { Person, Project, ProjectV2 } from '../types';
+import { Person, ProjectV2 } from '../types';
 import { ClipContentContext } from '../context/ClipContentContext';
 import dictionary from '../utils/dict';
 
 import Button from '../components/Button';
 import PeopleList from '../components/PeopleList';
-import { getPeople, getProject, getProjects } from '../lib/sanity';
+import { getPeople, getProjects } from '../lib/sanity';
 import Link from 'next/link';
 
 export async function getStaticProps() {

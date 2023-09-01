@@ -1,20 +1,16 @@
 import ProjectTile from '../../components/ProjectTile';
-
-import api from '../../api';
 import dictionary from '../../utils/dict';
 import { useClipContent } from '../../context/ClipContentContext';
-import { useTranslation } from '../../utils/useTranslation';
+import { fmt, getLocale, useTranslation } from '../../utils/useTranslation';
 import { useRouter } from 'next/router';
-import { getLocale, fmt } from '../../utils/useTranslation';
-import { getPeople, getProjects } from '../../lib/sanity';
-import { Person, ProjectV2 } from '../../types';
-import { Any } from '@sanity/client';
+import { getProjects } from '../../lib/sanity';
+import { ProjectV2 } from '../../types';
 
 export default function Projects({ projects }: { projects: ProjectV2[] }): JSX.Element {
   useClipContent('dark-mode');
   const locale = getLocale(useRouter());
   const { t } = useTranslation(dictionary);
-  console.log(projects);
+
   return (
     <div className="bg-black text-white">
       <main className="main bg-black mt-0 pt-40">
