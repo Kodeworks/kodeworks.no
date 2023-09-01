@@ -1,5 +1,5 @@
-import { Any, createClient } from '@sanity/client';
-import { JobDescription, Person, StaffManual, CareerValues, Project, ProjectV2 } from '../types';
+import { createClient } from '@sanity/client';
+import { CareerValues, JobDescription, Person, ProjectV2, StaffManual } from '../types';
 import imageUrlBuilder from '@sanity/image-url';
 
 export const client = createClient({
