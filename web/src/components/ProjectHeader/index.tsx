@@ -11,7 +11,7 @@ interface Prop {
 
 export default function ProjectHeader({ project }: Prop): JSX.Element {
   const locale = getLocale(useRouter());
-  console.log(project);
+
   return (
     <header>
       <div className={style.projectHeader__content}>
