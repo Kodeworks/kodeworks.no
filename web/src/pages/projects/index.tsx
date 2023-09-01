@@ -1,13 +1,12 @@
 import ProjectTile from '../../components/ProjectTile';
-
-import api from '../../api';
 import dictionary from '../../utils/dict';
 import { useClipContent } from '../../context/ClipContentContext';
-import { useTranslation } from '../../utils/useTranslation';
+import { fmt, getLocale, useTranslation } from '../../utils/useTranslation';
 import { useRouter } from 'next/router';
-import { getLocale, fmt } from '../../utils/useTranslation';
+import { getProjects } from '../../lib/sanity';
+import { ProjectV2 } from '../../types';
 
-export default function Projects(): JSX.Element {
+export default function Projects({ projects }: { projects: ProjectV2[] }): JSX.Element {
   useClipContent('dark-mode');
   const locale = getLocale(useRouter());
   const { t } = useTranslation(dictionary);
@@ -23,7 +22,7 @@ export default function Projects(): JSX.Element {
               <p>{t('what_description')}</p>
             </header>
             <div className="flex flex-col gap-y-36">
-              {api.projects.getProjects().map((project, index) => (
+              {projects.map((project, index) => (
                 <ProjectTile
                   key={fmt(project.name, locale!)}
                   project={project}
@@ -36,4 +35,15 @@ export default function Projects(): JSX.Element {
       </main>
     </div>
   );
+}
+
+export async function getStaticProps() {
+  const projects = await getProjects();
+
+  return {
+    props: {
+      projects,
+    },
+    revalidate: 10,
+  };
 }

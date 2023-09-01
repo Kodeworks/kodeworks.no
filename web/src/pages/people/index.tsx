@@ -25,6 +25,7 @@ export default function People({ people }: { people: Person[] }): JSX.Element {
 
 export async function getStaticProps() {
   const people = await getPeople();
+
   return {
     props: {
       people,

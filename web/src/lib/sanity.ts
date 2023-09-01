@@ -1,5 +1,5 @@
 import { createClient } from '@sanity/client';
-import { JobDescription, Person, StaffManual, CareerValues } from '../types';
+import { CareerValues, JobDescription, Person, ProjectV2, StaffManual } from '../types';
 import imageUrlBuilder from '@sanity/image-url';
 
 export const client = createClient({
@@ -22,8 +22,18 @@ export const getStaffManual = () =>
   );
 
 export const getPeople = () =>
-  client.fetch<Person>(
+  client.fetch<Person[]>(
     '*[_type == "people" && !(_id in path(\'drafts.**\'))]{firstName, lastName, email, projects[] -> {name, slug}, socials, "imageUrl": image.asset->url}'
+  );
+
+export const getProjects = () =>
+  client.fetch<ProjectV2[]>(
+    '*[_type == "project" && !(_id in path(\'drafts.**\'))]{name, description, "slug":slug.current, "imageUrl": image.asset->url, technologies[]}'
+  );
+
+export const getProject = (projectSlug: String) =>
+  client.fetch<ProjectV2>(
+    `*[_type == "project" && slug.current == "${projectSlug}" && !(_id in path('drafts.**'))][0]{name, description, "slug":slug.current, "imageUrl": image.asset->url, technologies[]}`
   );
 
 export const getJobDescriptions = () =>
