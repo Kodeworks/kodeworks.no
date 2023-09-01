@@ -52,7 +52,7 @@ export default function Total({ careerSchema }: Props) {
             >
               <p className="max-w-[70vw]">
                 Er summen av faster godene som du får som ansatt hos KodeWorks blant annet Telefon,
-                lapton, annet utstyr, kurs og konferanse, telefonabonnement, bredbånd og
+                laptop, annet utstyr, kurs og konferanse, telefonabonnement, bredbånd og
                 treningsmedlemskap
               </p>
             </TooltipComponent>
