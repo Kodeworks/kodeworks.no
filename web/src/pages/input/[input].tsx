@@ -1,18 +1,17 @@
 import { ReactElement } from 'react';
-import { GetStaticPaths, GetStaticProps, GetStaticPropsContext } from 'next';
+import { GetStaticPaths, GetStaticProps } from 'next';
 import Link from 'next/link';
-
-import api from '../../api';
 import { NextPageWithLayout } from '../_app';
 import { useClipContent } from '../../context/ClipContentContext';
 
 import Layout from '../../components/Layout';
 import ProjectHeaderBody from '../../components/ProjectHeaderBody';
 
-import { Project } from '../../types';
+import { ProjectV2 } from '../../types';
+import { getProject, getProjects } from '../../lib/sanity';
 
 interface Prop {
-  project: Project;
+  project: ProjectV2;
 }
 
 const Input: NextPageWithLayout = ({ project }: Prop) => {
@@ -69,10 +68,12 @@ export default Input;
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const locales = ['no', 'en'];
-  const params = api.projects.getProjects().reduce((arr, project) => {
+
+  const projects = await getProjects();
+  const params = projects.reduce((arr, project) => {
     return [
       ...arr,
-      ...locales.map((locale) => ({ params: { input: project.urlName }, locale: locale })),
+      ...locales.map((locale) => ({ params: { input: project.slug }, locale: locale })),
     ];
   }, []);
 
@@ -88,7 +89,8 @@ export const getStaticProps: GetStaticProps<Prop, { input: string }> = async (co
   }
   return {
     props: {
-      project: await api.projects.getProject(context.params.input),
+      project: await getProject(context.params.input),
     },
+    revalidate: 10,
   };
 };

@@ -6,12 +6,15 @@ import { useClipContent } from '../../context/ClipContentContext';
 import { useTranslation } from '../../utils/useTranslation';
 import { useRouter } from 'next/router';
 import { getLocale, fmt } from '../../utils/useTranslation';
+import { getPeople, getProjects } from '../../lib/sanity';
+import { Person, ProjectV2 } from '../../types';
+import { Any } from '@sanity/client';
 
-export default function Projects(): JSX.Element {
+export default function Projects({ projects }: { projects: ProjectV2[] }): JSX.Element {
   useClipContent('dark-mode');
   const locale = getLocale(useRouter());
   const { t } = useTranslation(dictionary);
-
+  console.log(projects);
   return (
     <div className="bg-black text-white">
       <main className="main bg-black mt-0 pt-40">
@@ -23,7 +26,7 @@ export default function Projects(): JSX.Element {
               <p>{t('what_description')}</p>
             </header>
             <div className="flex flex-col gap-y-36">
-              {api.projects.getProjects().map((project, index) => (
+              {projects.map((project, index) => (
                 <ProjectTile
                   key={fmt(project.name, locale!)}
                   project={project}
@@ -36,4 +39,15 @@ export default function Projects(): JSX.Element {
       </main>
     </div>
   );
+}
+
+export async function getStaticProps() {
+  const projects = await getProjects();
+
+  return {
+    props: {
+      projects,
+    },
+    revalidate: 10,
+  };
 }

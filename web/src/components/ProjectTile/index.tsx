@@ -1,12 +1,12 @@
 import { useRouter } from 'next/router';
 
-import { Project } from '../../types';
+import { ProjectV2 } from '../../types';
 import { fmt, getLocale } from '../../utils/useTranslation';
 
 import Button from '../../components/Button';
 
 interface Prop {
-  project: Project;
+  project: ProjectV2;
   reverse: boolean;
 }
 
@@ -18,20 +18,18 @@ export default function ProjectTile({ project, reverse }: Prop): JSX.Element {
       <img
         className={`${reverse ? 'lg:order-last' : 'order-first'}`}
         style={{ aspectRatio: '16/9', maxHeight: '400px', maxWidth: '100%' }}
-        src={'/static/photos/projects/' + project.image}
+        src={project.imageUrl}
         alt={fmt(project.name, locale!)}
       />
       <div className="w-9/12">
-        <h3>{fmt(project.name, locale!)}</h3>
-        <p>{fmt(project.description, locale!)}</p>
+        <h3>{project.name}</h3>
+        {project.description && <p>{fmt(project.description, locale!)}</p>}
 
-        {project.published ? (
-          <p>
-            <Button appearance={Button.appearances.DarkNoPadding} href={`input/${project.urlName}`}>
-              Les mer om prosjektet
-            </Button>
-          </p>
-        ) : null}
+        <p>
+          <Button appearance={Button.appearances.DarkNoPadding} href={`input/${project.slug}`}>
+            Les mer om prosjektet
+          </Button>
+        </p>
 
         {project.technologies ? (
           <div className="text-white text-sm">

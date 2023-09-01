@@ -4,35 +4,34 @@ import { useRouter } from 'next/router';
 import { fmt, getLocale, useTranslation } from '../utils/useTranslation';
 import api from '../api';
 import { useClipText } from '../utils/useClipText';
-import { Person, Project } from '../types';
+import { Person, Project, ProjectV2 } from '../types';
 import { ClipContentContext } from '../context/ClipContentContext';
 import dictionary from '../utils/dict';
 
 import Button from '../components/Button';
 import PeopleList from '../components/PeopleList';
-import { getPeople } from '../lib/sanity';
+import { getPeople, getProject, getProjects } from '../lib/sanity';
 import Link from 'next/link';
 
 export async function getStaticProps() {
   const people = await getPeople();
+  const projects = await getProjects();
   return {
-    props: { people },
+    props: { people, projects },
     revalidate: 10,
   };
 }
 
-function Home({ people }): JSX.Element {
-  const [highlightedProject, setHighlightedProject] = useState<Project>();
+function Home({ people, projects }: { people: Person[]; projects: ProjectV2[] }): JSX.Element {
+  const [highlightedProject, setHighlightedProject] = useState<ProjectV2>();
   const [highlightedPeople, setHighlightedPeople] = useState<Person[]>([]);
 
   const { changeClipMode } = useContext(ClipContentContext);
   const { t } = useTranslation(dictionary);
   const locale = getLocale(useRouter());
 
-  const highlightedProjects = api.projects.getPublishedProjects();
-
   useEffect(() => {
-    const project = highlightedProjects[Math.ceil(Math.random() * highlightedProjects.length) - 1];
+    const project = projects[Math.ceil(Math.random() * projects.length) - 1];
     const randomPeople = people.sort(() => 0.5 - Math.random()).slice(0, 6);
 
     setHighlightedProject(project);
@@ -94,18 +93,21 @@ function Home({ people }): JSX.Element {
             <div className="flex justify-center lg:justify-start order-last lg:order-first">
               <img
                 style={{ maxWidth: '100%' }}
-                src={highlightedProject && '/static/photos/projects/' + highlightedProject.image}
-                alt={highlightedProject && fmt(highlightedProject.name, locale!)}
+                src={highlightedProject && highlightedProject.imageUrl}
+                alt={highlightedProject && highlightedProject.name}
               />
             </div>
 
             <div>
-              <h2>{highlightedProject && fmt(highlightedProject.name, locale!)}</h2>
-              <p>{highlightedProject && fmt(highlightedProject.description, locale!)}</p>
+              <h2>{highlightedProject && highlightedProject.name}</h2>
+              <p>
+                {highlightedProject &&
+                  highlightedProject.description &&
+                  fmt(highlightedProject.description, locale!)}
+              </p>
               <Button
                 appearance={Button.appearances.DarkNoPadding}
-                href={`/input/${highlightedProject && highlightedProject.urlName.toLowerCase()}`}
-                disabled={!(highlightedProject && highlightedProject.published)}
+                href={`/input/${highlightedProject && highlightedProject.slug}`}
               >
                 {t('go_to_project_page_button')}
               </Button>

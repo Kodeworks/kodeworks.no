@@ -28,6 +28,14 @@ export type Project = {
   output?: string[];
 };
 
+export type ProjectV2 = {
+  name: string;
+  slug: string;
+  description?: DictText;
+  imageUrl: string;
+  technologies?: string[];
+};
+
 export type ProjectContent =
   | ProjectContentTexts
   | ProjectContentHeading
