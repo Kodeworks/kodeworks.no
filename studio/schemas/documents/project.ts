@@ -49,6 +49,7 @@ export default defineType({
       title: 'Show on front page',
       name: 'showOnFrontPage',
       type: 'boolean',
+      initialValue: true
     }),
     defineField({
       title: 'Content',

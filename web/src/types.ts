@@ -45,62 +45,6 @@ export type ImageContent = {
   alt: string;
 };
 
-export type ProjectContent =
-  | ProjectContentTexts
-  | ProjectContentHeading
-  | ProjectContentImage
-  | ProjectContentWideImage
-  | ProjectContentQuote
-  | ProjectContentOutput;
-
-export type ProjectContentDescriptor =
-  | 'texts'
-  | 'heading'
-  | 'image'
-  | 'wideimage'
-  | 'quote'
-  | 'output';
-
-export type ProjectContentHeading = {
-  type: 'heading';
-  value: DictText;
-};
-
-export type ProjectContentTexts = {
-  type: 'texts';
-  value: DictText[];
-};
-
-export type ProjectContentImage = {
-  type: 'image';
-  value: ProjectContentImageContent;
-};
-
-export type ProjectContentWideImage = {
-  type: 'wideimage';
-  value: ProjectContentImageContent;
-};
-
-export type ProjectContentImageContent = {
-  src: string;
-  alt?: string;
-};
-
-export type ProjectContentQuote = {
-  type: 'quote';
-  value: ProjectContentQuoteContent;
-};
-
-export type ProjectContentQuoteContent = {
-  content: DictText;
-  author?: string;
-};
-
-export type ProjectContentOutput = {
-  type: 'output';
-  value: DictText;
-};
-
 type SocialMediaName = 'twitter' | 'linkedin' | 'github';
 export type SocialUrl = {
   type: SocialMediaName;
@@ -108,10 +52,6 @@ export type SocialUrl = {
 };
 
 // Dictionary Types
-
-export type DictProjectContents = {
-  [key: string]: ProjectContent[];
-};
 
 export type DictText = string | DictionaryTerm;
 
