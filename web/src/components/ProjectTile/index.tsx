@@ -1,12 +1,12 @@
 import { useRouter } from 'next/router';
 
-import { ProjectV2 } from '../../types';
+import { Project } from '../../types';
 import { fmt, getLocale } from '../../utils/useTranslation';
 
 import Button from '../../components/Button';
 
 interface Prop {
-  project: ProjectV2;
+  project: Project;
   reverse: boolean;
 }
 

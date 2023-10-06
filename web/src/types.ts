@@ -16,24 +16,33 @@ export type Person = {
 };
 
 export type Project = {
-  name: DictText;
-  slug?: any; // FIXME: should not be optional
-  description: DictText;
-  image: string;
-  extras?: DictText;
-  urlName: string;
-  technologies?: string[];
-  content?: DictProjectContents | ProjectContent[];
-  published?: boolean;
-  output?: string[];
-};
-
-export type ProjectV2 = {
   name: string;
   slug: string;
   description?: DictText;
+  extraDescription?: string;
   imageUrl: string;
   technologies?: string[];
+  showOnFrontPage?: boolean;
+  content?: Content[];
+};
+
+export type Content = {
+  type: string;
+  value: TextContent | QuoteContent | ImageContent;
+};
+
+export type TextContent = {
+  text: string;
+};
+
+export type QuoteContent = {
+  text: string;
+  author?: string;
+};
+
+export type ImageContent = {
+  url: string;
+  alt: string;
 };
 
 export type ProjectContent =
