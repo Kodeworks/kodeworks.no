@@ -31,13 +31,16 @@ function Home({ people, projects }: { people: Person[]; projects: Project[] }): 
   const locale = getLocale(useRouter());
 
   useEffect(() => {
-    const project = projects.filter((project) => project.showOnFrontPage)[
-      Math.ceil(Math.random() * projects.length) - 1
-    ];
+    const projectsToSelectFrom = projects.filter(
+      (project) => project.showOnFrontPage && project.content
+    );
+    const highlightedProject =
+      projectsToSelectFrom[Math.ceil(Math.random() * projectsToSelectFrom.length) - 1];
     const randomPeople = people.sort(() => 0.5 - Math.random()).slice(0, 6);
-    setHighlightedProject(project);
+
+    setHighlightedProject(highlightedProject);
     setHighlightedPeople(randomPeople);
-  }, []);
+  }, [people, projects]);
 
   const shouldClipText = useClipText([
     { id: 'projects', colorMode: 'dark-mode' },
