@@ -52,14 +52,7 @@ export default function PersonTile({ person }: Prop): JSX.Element {
           ?.map((project) => {
             return (
               <li key={fmt(project.name, locale!)}>
-                <Button
-                  href={`/input/${project.slug.current
-                    .toString()
-                    .toLowerCase()
-                    .replace(/ /i, '-')}`}
-                >
-                  {fmt(project.name, locale!)}
-                </Button>
+                <Button href={`/input/${project.slug}`}>{fmt(project.name, locale!)}</Button>
               </li>
             );
           })}

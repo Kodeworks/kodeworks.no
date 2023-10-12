@@ -1,17 +1,16 @@
 import { useRouter } from 'next/router';
 
-import { ProjectV2 } from '../../types';
+import { Project } from '../../types';
 import { fmt, getLocale } from '../../utils/useTranslation';
 
 import style from './projectheader.module.css';
 
 interface Prop {
-  project: ProjectV2;
+  project: Project;
 }
 
 export default function ProjectHeader({ project }: Prop): JSX.Element {
   const locale = getLocale(useRouter());
-
   return (
     <header>
       <div className={style.projectHeader__content}>
@@ -22,7 +21,7 @@ export default function ProjectHeader({ project }: Prop): JSX.Element {
         </ul>
 
         {project.description && <p>{fmt(project.description, locale!)}</p>}
-        {/*project.extras && <p>{fmt(project.extras, locale!)}</p>*/}
+        {project.extraDescription && <p>{project.extraDescription}</p>}
       </div>
 
       <img

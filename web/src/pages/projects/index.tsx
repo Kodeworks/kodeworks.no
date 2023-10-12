@@ -4,9 +4,9 @@ import { useClipContent } from '../../context/ClipContentContext';
 import { fmt, getLocale, useTranslation } from '../../utils/useTranslation';
 import { useRouter } from 'next/router';
 import { getProjects } from '../../lib/sanity';
-import { ProjectV2 } from '../../types';
+import { Project } from '../../types';
 
-export default function Projects({ projects }: { projects: ProjectV2[] }): JSX.Element {
+export default function Projects({ projects }: { projects: Project[] }): JSX.Element {
   useClipContent('dark-mode');
   const locale = getLocale(useRouter());
   const { t } = useTranslation(dictionary);

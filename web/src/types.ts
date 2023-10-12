@@ -16,80 +16,33 @@ export type Person = {
 };
 
 export type Project = {
-  name: DictText;
-  slug?: any; // FIXME: should not be optional
-  description: DictText;
-  image: string;
-  extras?: DictText;
-  urlName: string;
-  technologies?: string[];
-  content?: DictProjectContents | ProjectContent[];
-  published?: boolean;
-  output?: string[];
-};
-
-export type ProjectV2 = {
   name: string;
   slug: string;
   description?: DictText;
+  extraDescription?: string;
   imageUrl: string;
   technologies?: string[];
+  showOnFrontPage?: boolean;
+  content?: Content[];
 };
 
-export type ProjectContent =
-  | ProjectContentTexts
-  | ProjectContentHeading
-  | ProjectContentImage
-  | ProjectContentWideImage
-  | ProjectContentQuote
-  | ProjectContentOutput;
-
-export type ProjectContentDescriptor =
-  | 'texts'
-  | 'heading'
-  | 'image'
-  | 'wideimage'
-  | 'quote'
-  | 'output';
-
-export type ProjectContentHeading = {
-  type: 'heading';
-  value: DictText;
+export type Content = {
+  type: string;
+  value: TextContent | QuoteContent | ImageContent;
 };
 
-export type ProjectContentTexts = {
-  type: 'texts';
-  value: DictText[];
+export type TextContent = {
+  text: string;
 };
 
-export type ProjectContentImage = {
-  type: 'image';
-  value: ProjectContentImageContent;
-};
-
-export type ProjectContentWideImage = {
-  type: 'wideimage';
-  value: ProjectContentImageContent;
-};
-
-export type ProjectContentImageContent = {
-  src: string;
-  alt?: string;
-};
-
-export type ProjectContentQuote = {
-  type: 'quote';
-  value: ProjectContentQuoteContent;
-};
-
-export type ProjectContentQuoteContent = {
-  content: DictText;
+export type QuoteContent = {
+  text: string;
   author?: string;
 };
 
-export type ProjectContentOutput = {
-  type: 'output';
-  value: DictText;
+export type ImageContent = {
+  url: string;
+  alt: string;
 };
 
 type SocialMediaName = 'twitter' | 'linkedin' | 'github';
@@ -99,10 +52,6 @@ export type SocialUrl = {
 };
 
 // Dictionary Types
-
-export type DictProjectContents = {
-  [key: string]: ProjectContent[];
-};
 
 export type DictText = string | DictionaryTerm;
 

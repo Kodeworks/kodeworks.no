@@ -1,12 +1,12 @@
 import { useRouter } from 'next/router';
 
-import { ProjectV2 } from '../../types';
+import { Project } from '../../types';
 import { fmt, getLocale } from '../../utils/useTranslation';
 
 import Button from '../../components/Button';
 
 interface Prop {
-  project: ProjectV2;
+  project: Project;
   reverse: boolean;
 }
 
@@ -25,11 +25,13 @@ export default function ProjectTile({ project, reverse }: Prop): JSX.Element {
         <h3>{project.name}</h3>
         {project.description && <p>{fmt(project.description, locale!)}</p>}
 
-        <p>
-          <Button appearance={Button.appearances.DarkNoPadding} href={`input/${project.slug}`}>
-            Les mer om prosjektet
-          </Button>
-        </p>
+        {project.content && (
+          <p>
+            <Button appearance={Button.appearances.DarkNoPadding} href={`input/${project.slug}`}>
+              Les mer om prosjektet
+            </Button>
+          </p>
+        )}
 
         {project.technologies ? (
           <div className="text-white text-sm">

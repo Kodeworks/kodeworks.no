@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 
 import { fmt, getLocale, useTranslation } from '../utils/useTranslation';
 import { useClipText } from '../utils/useClipText';
-import { Person, ProjectV2 } from '../types';
+import { Person, Project } from '../types';
 import { ClipContentContext } from '../context/ClipContentContext';
 import dictionary from '../utils/dict';
 
@@ -15,14 +15,15 @@ import Link from 'next/link';
 export async function getStaticProps() {
   const people = await getPeople();
   const projects = await getProjects();
+
   return {
     props: { people, projects },
     revalidate: 10,
   };
 }
 
-function Home({ people, projects }: { people: Person[]; projects: ProjectV2[] }): JSX.Element {
-  const [highlightedProject, setHighlightedProject] = useState<ProjectV2>();
+function Home({ people, projects }: { people: Person[]; projects: Project[] }): JSX.Element {
+  const [highlightedProject, setHighlightedProject] = useState<Project>();
   const [highlightedPeople, setHighlightedPeople] = useState<Person[]>([]);
 
   const { changeClipMode } = useContext(ClipContentContext);
@@ -30,12 +31,16 @@ function Home({ people, projects }: { people: Person[]; projects: ProjectV2[] })
   const locale = getLocale(useRouter());
 
   useEffect(() => {
-    const project = projects[Math.ceil(Math.random() * projects.length) - 1];
+    const projectsToSelectFrom = projects.filter(
+      (project) => project.showOnFrontPage && project.content
+    );
+    const highlightedProject =
+      projectsToSelectFrom[Math.ceil(Math.random() * projectsToSelectFrom.length) - 1];
     const randomPeople = people.sort(() => 0.5 - Math.random()).slice(0, 6);
 
-    setHighlightedProject(project);
+    setHighlightedProject(highlightedProject);
     setHighlightedPeople(randomPeople);
-  }, []);
+  }, [people, projects]);
 
   const shouldClipText = useClipText([
     { id: 'projects', colorMode: 'dark-mode' },

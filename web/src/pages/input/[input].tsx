@@ -7,11 +7,11 @@ import { useClipContent } from '../../context/ClipContentContext';
 import Layout from '../../components/Layout';
 import ProjectHeaderBody from '../../components/ProjectHeaderBody';
 
-import { ProjectV2 } from '../../types';
+import { Project } from '../../types';
 import { getProject, getProjects } from '../../lib/sanity';
 
 interface Prop {
-  project: ProjectV2;
+  project: Project;
 }
 
 const Input: NextPageWithLayout = ({ project }: Prop) => {

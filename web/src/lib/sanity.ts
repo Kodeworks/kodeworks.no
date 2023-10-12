@@ -1,5 +1,5 @@
 import { createClient } from '@sanity/client';
-import { CareerValues, JobDescription, Person, ProjectV2, StaffManual } from '../types';
+import { CareerValues, JobDescription, Person, Project, StaffManual } from '../types';
 import imageUrlBuilder from '@sanity/image-url';
 
 export const client = createClient({
@@ -23,17 +23,48 @@ export const getStaffManual = () =>
 
 export const getPeople = () =>
   client.fetch<Person[]>(
-    '*[_type == "people" && !(_id in path(\'drafts.**\'))]{firstName, lastName, email, projects[] -> {name, slug}, socials, "imageUrl": image.asset->url}'
+    '*[_type == "people" && !(_id in path(\'drafts.**\'))]{firstName, lastName, email, projects[] -> {name, "slug":slug.current}, socials, "imageUrl": image.asset->url}'
   );
 
 export const getProjects = () =>
-  client.fetch<ProjectV2[]>(
-    '*[_type == "project" && !(_id in path(\'drafts.**\'))]{name, description, "slug":slug.current, "imageUrl": image.asset->url, technologies[]}'
+  client.fetch<Project[]>(
+    `*
+            [
+              _type == "project" && !(_id in path('drafts.**'))
+            ]{
+              name, 
+                description,
+                extraDescription, 
+                "slug":slug.current, 
+                "imageUrl": image.asset->url, 
+                technologies[], 
+                showOnFrontPage, 
+                content[] {
+                  "type":_type,
+                  "value": select(_type == 'quote' => {text, author}, _type == 'image' => asset->{url, "alt":originalFilename}, _type == 'wideimage' => asset->{url, "alt":originalFilename}, {text}),
+                }
+            }`
   );
 
 export const getProject = (projectSlug: String) =>
-  client.fetch<ProjectV2>(
-    `*[_type == "project" && slug.current == "${projectSlug}" && !(_id in path('drafts.**'))][0]{name, description, "slug":slug.current, "imageUrl": image.asset->url, technologies[]}`
+  client.fetch<Project>(
+    `*
+    [
+    _type == "project" && slug.current == "${projectSlug}" && !(_id in path('drafts.**'))
+    ][0]
+    {
+      name, 
+      description, 
+      extraDescription,
+      "slug":slug.current, 
+      "imageUrl": image.asset->url, 
+      technologies[], 
+      showOnFrontPage, 
+      content[] {
+      "type":_type,
+      "value": select(_type == 'quote' => {text, author}, _type == 'image' => asset->{url, "alt":originalFilename}, _type == 'wideimage' => asset->{url, "alt":originalFilename}, {text}),
+    }
+    }`
   );
 
 export const getJobDescriptions = () =>
