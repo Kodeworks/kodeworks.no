@@ -87,6 +87,7 @@ export const getStaticProps: GetStaticProps<Prop, { input: string }> = async (co
   if (!context.params) {
     throw new Error('Params missing');
   }
+  
   return {
     props: {
       project: await getProject(context.params.input),
