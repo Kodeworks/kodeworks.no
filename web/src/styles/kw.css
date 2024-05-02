@@ -17,3 +17,7 @@
 @import url("_page_people.css");
 @import url("_page_staffmanual.css");
 @import url("_page_schema.css");
+
+body {
+    overflow-x: hidden;
+}
