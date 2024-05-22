@@ -1,0 +1,11 @@
+export { default as Header } from './Header';
+export { default as LogoReel } from './LogoReel';
+export { default as Tjenester } from './Tjenester';
+export { default as TeknologiReel } from './Tjenester/TeknologiReel';
+export { default as Kundeomtaler } from './Kundeomtaler';
+export { default as Oppdrag } from './Oppdrag';
+export { default as Prosjekter } from './Prosjekter';
+export { default as Rekruttering } from './Rekruttering';
+export { default as Konsulenter } from './Konsulenter';
+export { default as Kontakt } from './Kontakt';
+export { GreenArrowLeft, GreenArrowRight } from './Icons';

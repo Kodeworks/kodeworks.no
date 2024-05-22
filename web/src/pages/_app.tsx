@@ -6,9 +6,9 @@ import { useRouter } from 'next/router';
 import React, { ReactElement, ReactNode, useContext, useEffect, useState } from 'react';
 
 import Layout from '../components/Layout';
-import Navigation from '../components/Navigation';
+import MobileNavigation from '../components/MobileNavigation';
 import { ClipContentContext, ClipContentProvider } from '../context/ClipContentContext';
-import dictionary from '../components/Navigation/dict';
+import dictionary from '../components/MobileNavigation/dict';
 
 import '../styles/kw.css';
 import { useTranslation } from '../utils/useTranslation';
@@ -97,22 +97,15 @@ function Main(): JSX.Element {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>KodeWorks</title>
       </Head>
+      
       <div
-        className={`${clipMode} lg:visible invisible flex justify-between items-center`}
+        className={`${clipMode} lg:visible invisible flex justify-between items-center divide-y`}
         id="menu-bar"
       >
         <Link href="/" className="leading-none pl-8">
           <div id="menu-bar-logo" />
         </Link>
         <div className="flex gap-x-8 pr-8">
-          <Link
-            href="/people"
-            className={`no-underline leading-none nav-link ${
-              router.pathname === '/people' ? 'active' : ''
-            }`}
-          >
-            <span className="text-xl text-black hover:text-black">{t('our people')}</span>
-          </Link>
           <Link
             href="/projects"
             className={`no-underline leading-none nav-link ${
@@ -122,6 +115,14 @@ function Main(): JSX.Element {
             <span className="text-xl text-black hover:text-black">{t('projects')}</span>
           </Link>
           <Link
+            href="/people"
+            className={`no-underline leading-none nav-link ${
+              router.pathname === '/people' ? 'active' : ''
+            }`}
+          >
+            <span className="text-xl text-black hover:text-black">{t('our people')}</span>
+          </Link>
+          <Link
             href="/career"
             className={`no-underline leading-none nav-link ${
               router.pathname === '/career' ? 'active' : ''
@@ -129,14 +130,9 @@ function Main(): JSX.Element {
           >
             <span className="text-xl text-black hover:text-black">{t('career')}</span>
           </Link>
-          <Link
-            href="/staffmanual"
-            className={`no-underline leading-none nav-link ${
-              router.pathname === '/staffmanual' ? 'active' : ''
-            }`}
-          >
-            <span className="text-xl text-black hover:text-black">{t('staff manual')}</span>
-          </Link>
+          <button className="button rounded-xl px-2.5 py-1 border-none">
+            Forespørsel
+          </button>
         </div>
       </div>
       <button
@@ -166,7 +162,7 @@ function Main(): JSX.Element {
         </label>
       </button>
 
-      <Navigation isOpened={isNavigationOpen} toggleNavigationOpened={handleMenuButtonClick} />
+      <MobileNavigation isOpened={isNavigationOpen} toggleNavigationOpened={handleMenuButtonClick} />
     </>
   );
 }

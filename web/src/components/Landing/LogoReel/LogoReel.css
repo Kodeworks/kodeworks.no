@@ -1,0 +1,32 @@
+.logo-reel-container {
+  height: 115px;
+  width: 100%;
+  overflow: hidden;
+  background-color: #fad5d5;
+  display: flex;
+  justify-content: center;
+  position: relative; /* Ensure the container's children are positioned relatively to it */
+}
+
+.logo-reel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: scroll 50s linear infinite;
+}
+
+.logo {
+  position: relative;
+  width: 140px;
+  height: auto;
+  margin: 0 10px; /* Optional: add some spacing between logos */
+}
+
+@keyframes scroll {
+  0% {
+      transform: translateX(0%);
+  }
+  100% {
+      transform: translateX(-50%); /* Only scroll half the width to loop seamlessly */
+  }
+}

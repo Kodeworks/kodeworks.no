@@ -10,22 +10,21 @@
   --color-green: #B6FF9E;
   --color-grey: #e8e7e6;
   --color-dark-grey: #666;
-}
 
-body {
-  font-family: arial, sans-serif;
-  font-size: 17px;
-  line-height: 1.625;
+  --color-new-green: #ACFFC3;
+  --color-new-pink: #fad5d5;
+  --color-new-green-dark: #2efe69;
+
 }
 
 a {
   color: var(--color-dark-grey);
   text-decoration: underline;
+  text-underline-offset: 0.4rem;
 }
 
 a:hover {
   color: #000;
-  text-decoration: none;
 }
 
 p {
@@ -37,17 +36,28 @@ strong {
 }
 
 /* Typography
+- `-apple-system` targets the San Francisco font on macOS and iOS.
+- `BlinkMacSystemFont` targets the system font on macOS and iOS for Blink-based browsers.
+- `Segoe UI` is the default font for Windows.
+- `Roboto` is the default font for Android and Chrome OS.
+- `Oxygen-Sans` is used on some Linux distributions.
+- `Ubuntu` is used on Ubuntu Linux.
+- `Cantarell` is used on GNOME.
+- `Helvetica Neue` is a fallback for macOS.
+- `sans-serif` is the generic fallback font.
 ------------------------------------------------------------------------------*/
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Natural Grotesk Bold", arial, sans-serif;
-  font-weight: 600;
-  line-height: 1.1;
-  margin: 0 0 5px 0;
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  line-height: 1.6;
+}
+
+p, a, li, blockquote, pre, code {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  line-height: 1.3;
 }
 
 h1 {
@@ -423,4 +433,42 @@ ol {
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
   width: 100vw;
+}
+
+.button {
+  color: #000;
+  background-color: var(--color-new-green);
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  border-style: none;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.section-spacer {
+  padding-top: 20vh;
+}
+
+.section-padding {
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  line-height: 3.5rem;
+  margin-bottom: 3.5rem;
+  text-transform: uppercase;
+  align-self: center;
+}
+
+.button-unstyled {
+  appearance: none;
+  border: none;
+  background: none;
+  cursor: pointer;
 }
