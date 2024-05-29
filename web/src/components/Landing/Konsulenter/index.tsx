@@ -14,7 +14,6 @@ const Konsulenter = ({ people }: { people: Person[] }) => {
     const randomStart = Math.floor(Math.random() * people.length);
     const randomPeople = people.sort(() => 0.5 - Math.random()).slice(0, 3);
     
-    console.log(randomPeople);
     setHighlightedPeople(randomPeople);
   }, [people]);
 
