@@ -105,7 +105,7 @@ function Main(): JSX.Element {
         <Link href="/" className="pl-16">
           <div id="menu-bar-logo" />
         </Link>
-        <div className="flex gap-x-12 pr-16">
+        <div className="flex xl:gap-x-12 gap-x-6 pr-16">
           <Link
             href="/people"
             className={`no-underline leading-none nav-link ${
@@ -142,7 +142,7 @@ function Main(): JSX.Element {
             <span className="text-xl text-black hover:text-black">Håndboka</span>
           </Link>
 
-          <button className="button px-8 py-2 border-none">
+          <button className="button xl:px-8 px-4 py-2 border-none">
             Kontakt oss
           </button>
         </div>

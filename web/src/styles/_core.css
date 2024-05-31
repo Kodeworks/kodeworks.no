@@ -232,7 +232,7 @@ ol {
   background-color: black;
   -webkit-mask: url(/static/logo.svg) no-repeat center;
   mask: url(/static/logo.svg) no-repeat center;
-  width: 240px;
+  width: 120px;
   height: 30px;
 }
 
