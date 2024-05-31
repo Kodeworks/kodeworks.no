@@ -11,7 +11,7 @@
   --color-grey: #e8e7e6;
   --color-dark-grey: #666;
 
-  --color-new-green: #ACFFC3;
+  --color-new-green: #35664C;
   --color-new-pink: #fad5d5;
   --color-new-green-dark: #2efe69;
 
@@ -47,17 +47,17 @@ strong {
 - `sans-serif` is the generic fallback font.
 ------------------------------------------------------------------------------*/
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-family: "Natural Grotesk";
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  line-height: 1.6;
+  font-family: "Natural Grotesk Light";
 }
 
-p, a, li, blockquote, pre, code {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  line-height: 1.3;
+p, blockquote, pre, code {
+  /* font-family: "arial", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif; */
+  font-family: "Natural Grotesk Light";
+  line-height: 1.4;
 }
 
 h1 {
@@ -436,14 +436,13 @@ ol {
 }
 
 .button {
-  color: #000;
+  color: white;
   background-color: var(--color-new-green);
   padding-left: 0.625rem;
   padding-right: 0.625rem;
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
   border-style: none;
-  border-radius: 0.75rem;
   cursor: pointer;
   font-size: 1.25rem;
   line-height: 1.75rem;

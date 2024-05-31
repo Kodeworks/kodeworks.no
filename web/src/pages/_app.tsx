@@ -99,39 +99,51 @@ function Main(): JSX.Element {
       </Head>
       
       <div
-        className={`${clipMode} lg:visible invisible flex justify-between items-center divide-y`}
+        className={`${clipMode} lg:visible invisible flex justify-between items-center pt-8 pb-8`}
         id="menu-bar"
       >
-        <Link href="/" className="leading-none pl-8">
+        <Link href="/" className="pl-16">
           <div id="menu-bar-logo" />
         </Link>
-        <div className="flex gap-x-8 pr-8">
-          <Link
-            href="/projects"
-            className={`no-underline leading-none nav-link ${
-              router.pathname === '/projects' ? 'active' : ''
-            }`}
-          >
-            <span className="text-xl text-black hover:text-black">{t('projects')}</span>
-          </Link>
+        <div className="flex gap-x-12 pr-16">
           <Link
             href="/people"
             className={`no-underline leading-none nav-link ${
               router.pathname === '/people' ? 'active' : ''
             }`}
           >
-            <span className="text-xl text-black hover:text-black">{t('our people')}</span>
+            <span className="text-xl text-black hover:text-black">Våre eksperter</span>
           </Link>
+          
+          <Link
+            href="/projects"
+            className={`no-underline leading-none nav-link ${
+              router.pathname === '/projects' ? 'active' : ''
+            }`}
+          >
+            <span className="text-xl text-black hover:text-black">Våre prosjekter</span>
+          </Link>
+
           <Link
             href="/career"
             className={`no-underline leading-none nav-link ${
               router.pathname === '/career' ? 'active' : ''
             }`}
           >
-            <span className="text-xl text-black hover:text-black">{t('career')}</span>
+            <span className="text-xl text-black hover:text-black">Jobbe i KodeWorks</span>
           </Link>
-          <button className="button rounded-xl px-2.5 py-1 border-none">
-            Forespørsel
+          
+          <Link
+            href="/career"
+            className={`no-underline leading-none nav-link ${
+              router.pathname === '/career' ? 'active' : ''
+            }`}
+          >
+            <span className="text-xl text-black hover:text-black">Håndboka</span>
+          </Link>
+
+          <button className="button px-8 py-2 border-none">
+            Kontakt oss
           </button>
         </div>
       </div>

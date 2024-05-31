@@ -34,14 +34,20 @@ const AnimatedHeader = () => {
   }, []);
 
   return (
-    <header className="flex flex-col md:mt-[15%] mt-[30%] gap-36">
-      <div className="flex items-center md:ml-[20%] ml-[5%] md:text-[64px] text-[48px] uppercase">
-        <span className="mr-8">Dine </span>
-        <span className="animated-word pink-text">{dine[dineIndex]}</span>
+    <header className="flex flex-col mt-16 pt-28 mx-16">
+      <div className="flex items-center md:text-8xl text-3xl mb-7">
+        <h2 className="mr-8">Dine </h2>
+        <h2 className="animated-word green-text">{dine[dineIndex]}</h2>
       </div>
-      <div className="flex items-center md:ml-[35%] ml-[20%] md:text-[64px] text-[48px] uppercase">
-        <span className="mr-8">Våre </span>
-        <span className="animated-word green-text">{vaare[vaareIndex]}</span>
+      <div className="flex items-center md:text-[64px] text-[48px] mb-28">
+        <h2 className="mr-8 green-text">Våre </h2>
+        <h2 className="animated-word">{vaare[vaareIndex]}</h2>
+      </div>
+      <div className="flex self-end w-[50%]">
+        <p>
+          Vi er en gjeng teknologer som tror på verdiskapning gjennom åpenhet, kompetanse og dedikasjon.
+          Som din teknologipartner er vi opptatt av å forstå dine behov og skape de beste løsningene for deg.
+        </p>
       </div>
     </header>
   );
