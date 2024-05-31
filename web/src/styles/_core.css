@@ -48,6 +48,7 @@ strong {
 ------------------------------------------------------------------------------*/
 body {
   font-family: "Natural Grotesk";
+  line-height: 1.4;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -57,7 +58,6 @@ h1, h2, h3, h4, h5, h6 {
 p, blockquote, pre, code {
   /* font-family: "arial", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif; */
   font-family: "Natural Grotesk Light";
-  line-height: 1.4;
 }
 
 h1 {
@@ -449,20 +449,16 @@ ol {
 }
 
 .section-spacer {
-  padding-top: 20vh;
+  @apply pt-16;
 }
 
 .section-padding {
-  padding-left: 5vw;
-  padding-right: 5vw;
+  @apply px-16;
 }
 
 .section-title {
-  font-size: 2.5rem;
+  @apply text-5xl xl:mb-16 lg:mb-10 mb-6;
   line-height: 3.5rem;
-  margin-bottom: 3.5rem;
-  text-transform: uppercase;
-  align-self: center;
 }
 
 .button-unstyled {

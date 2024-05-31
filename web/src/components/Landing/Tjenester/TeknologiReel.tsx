@@ -54,6 +54,22 @@ const TeknologiReel = () => {
         
         })
     }
+    {
+        logos.map((logo, index) => {
+        return (
+            <div key={logo.alt} className="logo">
+            <Image
+                src={logo.src}
+                alt={logo.alt}
+                width={140}
+                height={30}
+                style={imageStyle}
+            />
+            </div>
+        )
+        
+        })
+    }
 
     </div>
   );

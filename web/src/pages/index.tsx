@@ -47,13 +47,13 @@ function Home({ people, projects }: { people: Person[]; projects: Project[] }): 
     <>
       <div className="h-[100vh] flex flex-col justify-between">
         <Header />
+        <LogoReel />
       </div>
-      
       <div className="section-spacer"></div>
-
+      
       <Tjenester />
       <div className="section-spacer"></div>
-      <TeknologiReel />
+      
 
       <div className="section-spacer"></div>
 

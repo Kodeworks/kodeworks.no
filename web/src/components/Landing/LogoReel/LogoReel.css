@@ -11,22 +11,25 @@
 .logo-reel {
   display: flex;
   align-items: center;
-  justify-content: center;
-  animation: scroll 50s linear infinite;
+  justify-content: flex-start;
+  animation: scroll 30s linear infinite;
+  width: fit-content;
+  transform: translate3d(0, 0, 0); /* Engage GPU rendering */
+  will-change: transform;
 }
 
 .logo {
   position: relative;
   width: 140px;
   height: auto;
-  margin: 0 10px; /* Optional: add some spacing between logos */
+  margin: 0 10px;
 }
 
 @keyframes scroll {
   0% {
-      transform: translateX(0%);
+    transform: translateX(0%);
   }
   100% {
-      transform: translateX(-50%); /* Only scroll half the width to loop seamlessly */
+    transform: translateX(-50%);
   }
 }

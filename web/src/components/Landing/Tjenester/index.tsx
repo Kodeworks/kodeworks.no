@@ -6,17 +6,17 @@ const Tjenester = () => {
     {
       tittel: 'Utvikling',
       tekst: 'Fra ide til teknisk løsning. Vi hjelper i alle ledd.',
-      bilde: '/images/tjenester_utvikling.webp',
+      bilde: '/static/photos/tjenester/kodeworks-tjenester1.png',
     },
     {
       tittel: 'Kompetanse',
       tekst: 'Trenger du teknisk kompetanse for en kortere eller lengre periode, vi er klare.',
-      bilde: '/images/tjenester_utvikling.webp',
+      bilde: '/static/photos/tjenester/kodeworks-tjenester2.png',
     },
     {
       tittel: 'Samarbeid',
       tekst: 'Vi hjelper deg med å lansere ditt tidligfase prosjekt.',
-      bilde: '/images/tjenester_utvikling.webp',
+      bilde: '/static/photos/tjenester/kodeworks-tjenester3.png',
     },
   ];
 
@@ -33,21 +33,26 @@ const Tjenester = () => {
     );
   };
   return (
-    <div className="flex flex-col items-center gap-12 section-padding">
+    <div className="flex flex-col section-padding">
       <h2 className="section-title">Våre tjenester</h2>
       <div className="hidden md:flex flex-row space-x-8">
         {tjenesteAlternativer.map((tjeneste) => (
           <article
             key={tjeneste.tittel}
-            className="flex flex-col w-1/3 items-center text-center gap-2"
+            className="flex flex-col w-1/3 items-start gap-2"
           >
-            <img
-              className="md:w-[200px] lg:w-[250px] xl:w-[300px] rounded-2xl"
-              src={tjeneste.bilde}
-              alt={tjeneste.tittel}
-            />
-            <h3>{tjeneste.tittel}</h3>
-            <p>{tjeneste.tekst}</p>
+            <div className="">
+              <img
+                className='w-full'
+                src={tjeneste.bilde}
+                alt={tjeneste.tittel}
+              />
+            </div>
+            <div className="w-full">
+              <h3 className="mb-4">{tjeneste.tittel}</h3>
+              <p>{tjeneste.tekst}</p>
+            </div>
+            
           </article>
         ))}
       </div>

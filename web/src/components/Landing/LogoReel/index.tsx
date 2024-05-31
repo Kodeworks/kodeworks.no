@@ -37,26 +37,40 @@ const logos = [
 
 const LogoReel = () => {
   return (
-    <div className="logo-reel-container">
-      <div className="logo-reel gap-12">
-        {
-          logos.map((logo, index) => {
-            return (
-              <div key={index} className="logo">
-                <Image
-                  src={logo.src}
-                  alt={logo.alt}
-                  width={140}
-                  height={30}
-                  style={imageStyle}
-                />
-              </div>
-            )
-          
-          })
-        }
+    <div className="logo-reel gap-12">
+    {
+        logos.map((logo, index) => {
+        return (
+            <div key={index} className="logo">
+            <Image
+                src={logo.src}
+                alt={logo.alt}
+                width={140}
+                height={30}
+                style={imageStyle}
+            />
+            </div>
+        )
+        
+        })
+    }
+    {
+        logos.map((logo, index) => {
+        return (
+            <div key={logo.alt} className="logo">
+            <Image
+                src={logo.src}
+                alt={logo.alt}
+                width={140}
+                height={30}
+                style={imageStyle}
+            />
+            </div>
+        )
+        
+        })
+    }
 
-      </div>
     </div>
   );
 };

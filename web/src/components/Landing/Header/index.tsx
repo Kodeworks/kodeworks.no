@@ -34,7 +34,7 @@ const AnimatedHeader = () => {
   }, []);
 
   return (
-    <header className="flex flex-col mt-16 pt-28 mx-16">
+    <header className="flex flex-col mt-16 pt-28 section-padding">
       <div className="flex items-center md:text-8xl text-3xl mb-7">
         <h2 className="mr-8">Dine </h2>
         <h2 className="animated-word green-text">{dine[dineIndex]}</h2>
@@ -43,8 +43,8 @@ const AnimatedHeader = () => {
         <h2 className="mr-8 green-text">Våre </h2>
         <h2 className="animated-word">{vaare[vaareIndex]}</h2>
       </div>
-      <div className="flex self-end w-[50%]">
-        <p>
+      <div className="flex self-end w-[60%]">
+        <p className="lg:text-4xl md:text-xl text-lg">
           Vi er en gjeng teknologer som tror på verdiskapning gjennom åpenhet, kompetanse og dedikasjon.
           Som din teknologipartner er vi opptatt av å forstå dine behov og skape de beste løsningene for deg.
         </p>
