@@ -1,4 +1,4 @@
-import { useContext, useEffect } from 'react';
+import { useContext, useEffect, useState } from 'react';
 
 import { useClipText } from '../utils/useClipText';
 import { Person, Project } from '../types';
@@ -18,6 +18,7 @@ import {
   Kontakt,
   TeknologiReel,
 } from '../components/Landing/';
+import Teknologier from '../components/Landing/Teknologi';
 
 export async function getStaticProps() {
   const people = await getPeople();
@@ -30,16 +31,19 @@ export async function getStaticProps() {
 }
 
 function Home({ people, projects }: { people: Person[]; projects: Project[] }): JSX.Element {
-
-  const { changeClipMode } = useContext(ClipContentContext);
-
-  const shouldClipText = useClipText([
-    { id: 'who-section', colorMode: 'grey-mode' },
-  ]);
+  const [technologies, setTechnologies] = useState<string[]>([]);
 
   useEffect(() => {
-    changeClipMode(shouldClipText);
-  }, [shouldClipText]);
+    const uniqueSet: Set<string> = new Set();
+    projects.forEach((project) => {
+      if (project.technologies) {
+        project.technologies.forEach((tech) => {
+          uniqueSet.add(tech);
+        });
+      };
+    });
+    setTechnologies(Array.from(uniqueSet));
+  }, [projects]);
 
   console.log(people);
 
@@ -54,6 +58,7 @@ function Home({ people, projects }: { people: Person[]; projects: Project[] }): 
       <Tjenester />
       <div className="section-spacer"></div>
       
+      <Teknologier technologies={technologies} />
 
       <div className="section-spacer"></div>
 
