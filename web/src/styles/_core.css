@@ -11,9 +11,10 @@
   --color-grey: #e8e7e6;
   --color-dark-grey: #666;
 
-  --color-new-green: #35664C;
   --color-new-pink: #fad5d5;
-  --color-new-green-dark: #2efe69;
+
+  --color-new-green: #35664C;
+  --color-new-green-dark: #254333;
 
 }
 
@@ -466,4 +467,30 @@ ol {
   border: none;
   background: none;
   cursor: pointer;
+}
+
+.green-link {
+  @apply text-2xl text-black;
+  text-decoration: none; /* Removes the default underline */
+  position: relative; /* Required for positioning the pseudo-element */
+}
+
+.green-link::after {
+  content: ''; /* Creates an empty pseudo-element */
+  position: absolute; /* Positions the pseudo-element relative to the link */
+  left: 0;
+  right: 0;
+  bottom: 5px; /* Adjust this value to position the underline correctly */
+  height: 6px; /* Thickness of the underline */
+  background-color: var(--color-green); /* Color of the underline */
+  display: block;
+  z-index: -1;
+}
+
+.green-link:hover {
+  text-decoration: none; /* Ensures that no default underline appears on hover */
+}
+
+.green-link:hover::after {
+  background-color: white; /* Changes the underline color on hover */
 }

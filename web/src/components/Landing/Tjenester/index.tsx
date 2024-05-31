@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import { GreenArrowLeft, GreenArrowRight } from '../Icons';
+import Button from '../../Button';
+import Link from 'next/link';
 
 const Tjenester = () => {
   const tjenesteAlternativer = [
@@ -52,6 +54,9 @@ const Tjenester = () => {
               <h3 className="mb-4">{tjeneste.tittel}</h3>
               <p>{tjeneste.tekst}</p>
             </div>
+            <Link href="/tjenester" className="green-link">
+              Les mer
+            </Link>
             
           </article>
         ))}

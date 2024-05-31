@@ -45,8 +45,6 @@ function Home({ people, projects }: { people: Person[]; projects: Project[] }): 
     setTechnologies(Array.from(uniqueSet));
   }, [projects]);
 
-  console.log(people);
-
   return (
     <>
       <div className="h-[100vh] flex flex-col justify-between">
@@ -62,6 +60,10 @@ function Home({ people, projects }: { people: Person[]; projects: Project[] }): 
 
       <div className="section-spacer"></div>
 
+      <Prosjekter projects={projects} />
+
+      <div className="section-spacer"></div>
+
       <Kundeomtaler />
 
       <div className="section-spacer"></div>
@@ -70,9 +72,7 @@ function Home({ people, projects }: { people: Person[]; projects: Project[] }): 
 
       <div className="section-spacer"></div>
 
-      <Prosjekter projects={projects} />
-
-      <div className="section-spacer"></div>
+     
       
       <Rekruttering />
 

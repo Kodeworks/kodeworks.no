@@ -11,7 +11,6 @@ const Teknologier = ({ technologies }: Props) => {
             <div className="border-[2px] border-solid  p-2 h-4">
                 {tek}
             </div>
-         
         ))}
       </div>
     </div>
