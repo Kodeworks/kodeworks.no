@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import { Person } from '../../../types';
 import PersonTile from '../../PersonTile';
 import { GreenArrowLeft, GreenArrowRight } from '../Icons';
+import Link from 'next/link';
 
 const Konsulenter = ({ people }: { people: Person[] }) => {
   const [highlightedPeople, setHighlightedPeople] = useState<Person[]>([]);
@@ -36,46 +37,35 @@ const Konsulenter = ({ people }: { people: Person[] }) => {
   };
 
   return (
-    <div className="flex flex-col items-center gap-12 section-padding">
+    <div className="flex flex-col section-padding">
       <h2 className="section-title">Våre Eksperter</h2>
-      <div className="hidden md:flex flex-row ">
-        <div className="flex items-center justify-between w-full space-x-12">
-          <button onClick={handlePrevious} className="button-unstyled">
-            <GreenArrowLeft />
-          </button>
+      <div className="flex flex-col">
+        <div className="flex lg:flex-row flex-col lg:items-center justify-between w-full">
         {highlightedPeople.length > 0 && highlightedPeople.map((person, index) => (
           <article
             key={index}
-            className="flex flex-col w-1/3 items-center justify-center text-center gap-12"
+            className="flex flex-col lg:w-1/3 w-full  text-center"
           >
-            <div className="w-[300px] h-[400px] overflow-hidden rounded-2xl">
+            <div className="lg:w-[25vw] h-[60vh] overflow-hidden">
               <img
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover overflow-hidden"
                 src={person.imageUrl}
                 alt={person.firstName + ' ' + person.lastName}
               />
             </div>
+            <div className="flex items-start flex-col">
+              <p className="text-lg font-bold mt-2">
+                {person.firstName} {person.lastName}
+              </p>
+            </div>
           </article>
         ))}
-          <button onClick={handleNext} className="button-unstyled">
-            <GreenArrowRight />
-          </button>
         </div>
-
       </div>
-      {/* Mobile */}
-      <div className="md:hidden flex items-center justify-between w-full">
-        <button onClick={handlePrevious} className="button-unstyled">
-          <GreenArrowLeft />
-        </button>
-        <div className="flex flex-col items-center text-center gap-2 w-4/5 max-w-xs mx-auto">
-          {
-            highlightedPeople.length > 0 && <PersonTile person={highlightedPeople[0]} />
-          }
-        </div>
-        <button onClick={handleNext} className="button-unstyled">
-          <GreenArrowRight />
-        </button>
+      <div className="lg:mt-8 mt-4">
+          <Link href="/projects" className="green-link">
+            Se alle våre eksperter
+          </Link>
       </div>
     </div>
   );

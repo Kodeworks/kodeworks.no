@@ -141,10 +141,11 @@ function Main(): JSX.Element {
           >
             <span className="text-xl text-black hover:text-black">Håndboka</span>
           </Link>
-
-          <button className="button xl:px-8 px-4 py-2 border-none">
-            Kontakt oss
-          </button>
+          <Link href="/#kontaktoss">
+            <button className="button xl:px-8 px-4 py-2 border-none">
+                Kontakt oss
+            </button>
+          </Link>
         </div>
       </div>
       <button

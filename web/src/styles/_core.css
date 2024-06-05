@@ -450,7 +450,7 @@ ol {
 }
 
 .section-spacer {
-  @apply pt-16;
+  @apply pt-24 pb-24;
 }
 
 .section-padding {

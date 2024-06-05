@@ -24,10 +24,10 @@ const Projects = ({ projects }: { projects: Project[] }) => {
     return (
       <div className="flex flex-col section-padding">
         <h2 className="section-title">Våre prosjekter</h2>
-        <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
+        <div className="grid lg:grid-cols-2 grid-cols-1 gap-y-12 gap-x-4">
             {projectsToShow.map((project) => (
                 <div className="flex flex-col w-full">
-                    <h3 className="text-4xl lg:mb-8 mb-4">{project.name}</h3>
+                    <h3 className="text-4xl lg:mb-6 mb-4">{project.name}</h3>
                     <img src={project.imageUrl} alt={project.name} className="h-96 object-cover w-full" />
                 </div>
             ))}

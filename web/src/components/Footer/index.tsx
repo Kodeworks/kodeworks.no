@@ -6,7 +6,7 @@ export default function Footer() {
   const { locale, pathname } = useRouter();
 
   return (
-    <footer className={`footer-container p-8`}>
+    <footer className="footer-container p-8 mt-12">
       <div
         style={{ gridArea: 'navigation' }}
         className="md:flex flex-col text-white gap-y-2 hidden"

@@ -19,6 +19,7 @@ import {
   TeknologiReel,
 } from '../components/Landing/';
 import Teknologier from '../components/Landing/Teknologi';
+import Kunder from '../components/Landing/Kunder';
 
 export async function getStaticProps() {
   const people = await getPeople();
@@ -32,6 +33,28 @@ export async function getStaticProps() {
 
 function Home({ people, projects }: { people: Person[]; projects: Project[] }): JSX.Element {
   const [technologies, setTechnologies] = useState<string[]>([]);
+  const staticTechnologies = [
+    "React",
+    "Next",
+    "Vue",
+    "Nuxt",
+    "Flutter",
+    "Swift",
+    "TypeScript",
+    "JavaScript",
+    "HTML",
+    "CSS",
+    "Node",
+    "Kotlin",
+    "Java",
+    "Python",
+    "C++",
+    "Docker",
+    "Kubernetes",
+    "AWS",
+    "GCP",
+    "Azure",
+  ]
 
   useEffect(() => {
     const uniqueSet: Set<string> = new Set();
@@ -56,15 +79,15 @@ function Home({ people, projects }: { people: Person[]; projects: Project[] }): 
       <Tjenester />
       <div className="section-spacer"></div>
       
-      <Teknologier technologies={technologies} />
+      <Teknologier technologies={staticTechnologies} />
 
       <div className="section-spacer"></div>
 
       <Prosjekter projects={projects} />
 
-      <div className="section-spacer"></div>
+      {/* <div className="section-spacer"></div>
 
-      <Kundeomtaler />
+      <Kundeomtaler /> */}
 
       <div className="section-spacer"></div>
 
@@ -72,9 +95,7 @@ function Home({ people, projects }: { people: Person[]; projects: Project[] }): 
 
       <div className="section-spacer"></div>
 
-     
-      
-      <Rekruttering />
+      <Kunder />
 
       <div className="section-spacer"></div>
 
