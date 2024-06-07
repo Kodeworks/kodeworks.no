@@ -11,8 +11,6 @@ import Button from '../components/Button';
 import PeopleList from '../components/PeopleList';
 import { getPeople, getProjects } from '../lib/sanity';
 import Link from 'next/link';
-import AnimatedHeader from '../components/Landing/Header/AnimatedHeader';
-import LogoReel from '../components/Landing/LogoReel/LogoReel';
 
 export async function getStaticProps() {
   const people = await getPeople();
@@ -42,7 +40,7 @@ function Home({ people, projects }: { people: Person[]; projects: Project[] }): 
 
     setHighlightedProject(highlightedProject);
     setHighlightedPeople(randomPeople);
-  }, [people, projects]);
+  }, [people, projects, changeClipMode]);
 
   const shouldClipText = useClipText([
     { id: 'projects', colorMode: 'dark-mode' },
@@ -52,17 +50,10 @@ function Home({ people, projects }: { people: Person[]; projects: Project[] }): 
 
   useEffect(() => {
     changeClipMode(shouldClipText);
-  }, [shouldClipText]);
+  }, [shouldClipText, changeClipMode]);
 
   return (
     <>
-      <div className="h-[100vh] flex flex-col justify-between">
-        <AnimatedHeader />
-        <LogoReel />
-      </div>
-      
-      
-      
       <main className="main">
         <section className={`grid grid-cols-1 lg:grid-cols-2 `} id="work-section">
           <article className="relative col-span-1 lg:col-span-2 grid grid-cols-[1fr] lg:grid-cols-[repeat(2,1fr)] flex py-24 items-center gap-10">

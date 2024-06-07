@@ -52,8 +52,8 @@ const Tjenester = () => {
               />
             </div>
             <div className="w-full">
-              <h3 className="mb-4">{tjeneste.tittel}</h3>
-              <p>{tjeneste.tekst}</p>
+              <h3 className="mb-4 text-3xl">{tjeneste.tittel}</h3>
+              <p className="text-xl">{tjeneste.tekst}</p>
             </div>
             {/* <Link href="/tjenester" className="green-link">
               Les mer

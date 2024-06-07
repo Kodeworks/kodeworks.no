@@ -1,7 +1,7 @@
 const Oppdrag = () => {
     return (
         <div className="flex flex-col section-padding">
-            <div className="flex md:flex-row flex-col w-full justify-start gap-8">
+            <div className="flex md:flex-row flex-col w-full justify-between gap-8">
                 <div className="self-start">
                     <video src="/static/videos/david.mov" autoPlay loop muted className="h-[600px] object-fit"></video>
                 </div>
@@ -14,7 +14,7 @@ const Oppdrag = () => {
                         </p>
                         
                     </div>
-                    <div className="flex flex-col">
+                    <div className="flex flex-col self-start">
                         <h3>David Vimo Garner</h3>
                         <p>david@kodeworks.no</p>
                         <p>99 49 99 00</p>

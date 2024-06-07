@@ -43,7 +43,7 @@ const Kontakt = () => {
     if (!hasMountedForm) {
       mountFormDispatcher();
     }
-  }, []);
+  });
 
 
   return (
@@ -62,11 +62,11 @@ const Kontakt = () => {
         </p>
         <div className="flex flex-col items-start">
           <p className="flex items-center justify-center gap-4">
-            <img src="/static/icons/email.svg" />
+            <img src="/static/icons/email.svg" alt="Email icon" />
             post@kodeworks.no
           </p>
           <p className="flex items-center justify-center gap-4">
-            <img src="/static/icons/phone.svg" />
+            <img src="/static/icons/phone.svg" alt="Phone icon" />
             +47 416 70 269
           </p>
         </div>

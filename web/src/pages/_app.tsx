@@ -7,7 +7,6 @@ import React, { ReactElement, ReactNode, useContext, useEffect, useState } from 
 
 import Layout from '../components/Layout';
 import MobileNavigation from '../components/MobileNavigation';
-import { ClipContentContext, ClipContentProvider } from '../context/ClipContentContext';
 import dictionary from '../components/MobileNavigation/dict';
 
 import '../styles/kw.css';
@@ -30,13 +29,11 @@ export default function App({ Component, pageProps }: AppPropsWithLayout): JSX.E
   const getLayout = Component.getLayout ?? defaultLayout;
 
   return (
-    <ClipContentProvider>
       <>
         <Main />
         {getLayout(<Component {...pageProps} />)}
         <Footer />
       </>
-    </ClipContentProvider>
   );
 }
 
@@ -45,8 +42,6 @@ function Main(): JSX.Element {
   const [isNavigationOpen, setIsNavigationOpen] = useState(false);
   const [scrollTop, setScrollTop] = useState(0);
   const router = useRouter();
-
-  const { clipMode } = useContext(ClipContentContext);
 
   useEffect(() => {
     function onRouteChangeStart(): void {
@@ -99,20 +94,20 @@ function Main(): JSX.Element {
       </Head>
       
       <div
-        className={`${clipMode} lg:visible invisible flex justify-between items-center pt-8 pb-8`}
+        className="lg:visible invisible flex justify-between items-center pt-8 pb-8"
         id="menu-bar"
       >
-        <Link href="/" className="pl-16">
+        <Link href="/" className="xl:pl-16 pl-8">
           <div id="menu-bar-logo" />
         </Link>
-        <div className="flex xl:gap-x-12 gap-x-6 pr-16">
+        <div className="flex xl:gap-x-12 lg:gap-x-6 gap-x-4 xl:pr-16 pr-8">
           <Link
             href="/people"
             className={`no-underline leading-none nav-link ${
               router.pathname === '/people' ? 'active' : ''
             }`}
           >
-            <span className="text-xl text-black hover:text-black">Våre eksperter</span>
+            <span className="lg:text-2xl text-lg text-black hover:text-black">Våre eksperter</span>
           </Link>
           
           <Link
@@ -121,7 +116,7 @@ function Main(): JSX.Element {
               router.pathname === '/projects' ? 'active' : ''
             }`}
           >
-            <span className="text-xl text-black hover:text-black">Våre prosjekter</span>
+            <span className="lg:text-2xl text-lg text-black hover:text-black">Våre prosjekter</span>
           </Link>
 
           <Link
@@ -130,7 +125,7 @@ function Main(): JSX.Element {
               router.pathname === '/career' ? 'active' : ''
             }`}
           >
-            <span className="text-xl text-black hover:text-black">Jobbe i KodeWorks</span>
+            <span className="lg:text-2xl text-lg text-black hover:text-black">Jobbe i KodeWorks</span>
           </Link>
           
           <Link
@@ -139,7 +134,7 @@ function Main(): JSX.Element {
               router.pathname === '/staffmanual' ? 'active' : ''
             }`}
           >
-            <span className="text-xl text-black hover:text-black">Håndboka</span>
+            <span className="lg:text-2xl text-lg text-black hover:text-black">Håndboka</span>
           </Link>
           <Link href="/#kontaktoss">
             <button className="button xl:px-8 px-4 py-2 border-none">
@@ -151,7 +146,7 @@ function Main(): JSX.Element {
       <button
         onClick={handleMenuButtonClick}
         id="menu-button"
-        className={`${clipMode} lg:invisible`}
+        className="lg:invisible"
       >
         <label className="menuicon-label">
           <span

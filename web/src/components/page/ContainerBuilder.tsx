@@ -40,7 +40,7 @@ export default function ContainerBuilder({ containerSchema }: Props) {
     if (colorMode) {
       changeClipMode(shouldClipText);
     }
-  }, [shouldClipText]);
+  }, [shouldClipText, changeClipMode, colorMode]);
 
   if (!containerSchema.content) {
     return null;

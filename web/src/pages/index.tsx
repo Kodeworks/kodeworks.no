@@ -1,22 +1,15 @@
-import { useContext, useEffect, useState } from 'react';
-
-import { useClipText } from '../utils/useClipText';
+import { useEffect, useState } from 'react';
 import { Person, Project } from '../types';
-import { ClipContentContext } from '../context/ClipContentContext';
-
 import { getPeople, getProjects } from '../lib/sanity';
 
 import {
   Header,
   LogoReel,
   Tjenester,
-  Kundeomtaler,
   Oppdrag,
   Prosjekter,
-  Rekruttering,
   Konsulenter,
   Kontakt,
-  TeknologiReel,
 } from '../components/Landing/';
 import Teknologier from '../components/Landing/Teknologi';
 import Kunder from '../components/Landing/Kunder';
@@ -54,7 +47,8 @@ function Home({ people, projects }: { people: Person[]; projects: Project[] }): 
     "AWS",
     "GCP",
     "Azure",
-  ]
+  ];
+  // Bruker statiske teknologier istedet for alle som hører til prosjektene
 
   useEffect(() => {
     const uniqueSet: Set<string> = new Set();
@@ -72,9 +66,8 @@ function Home({ people, projects }: { people: Person[]; projects: Project[] }): 
     <div className="w-full">
       <div className="h-[100vh] flex flex-col justify-between">
         <Header />
-        <LogoReel />
+        {/* <LogoReel /> */}
       </div>
-      <div className="section-spacer"></div>
       
       <Tjenester />
       <div className="section-spacer"></div>
@@ -84,10 +77,6 @@ function Home({ people, projects }: { people: Person[]; projects: Project[] }): 
       <div className="section-spacer"></div>
 
       <Prosjekter projects={projects} />
-
-      {/* <div className="section-spacer"></div>
-
-      <Kundeomtaler /> */}
 
       <div className="section-spacer"></div>
 

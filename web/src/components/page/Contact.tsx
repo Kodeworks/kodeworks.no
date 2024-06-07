@@ -14,7 +14,7 @@ export default function Contact({ contactSchema }: Props) {
 
   useEffect(() => {
     changeClipMode(shouldClipText);
-  }, [shouldClipText]);
+  }, [shouldClipText, changeClipMode]);
   return (
     <section
       className="col-span-1 lg:col-span-2 flex flex-col gap-5 relative py-16 justify-center"

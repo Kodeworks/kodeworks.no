@@ -458,7 +458,7 @@ ol {
 }
 
 .section-title {
-  @apply text-5xl xl:mb-16 lg:mb-10 mb-6;
+  @apply text-5xl lg:mb-16 mb-6;
   line-height: 3.5rem;
 }
 
@@ -493,4 +493,12 @@ ol {
 
 .green-link:hover::after {
   background-color: white; /* Changes the underline color on hover */
+}
+
+.groteks-normal {
+  font-family: "Natural Grotesk";
+}
+
+.green-text {
+  color: var(--color-new-green);
 }
