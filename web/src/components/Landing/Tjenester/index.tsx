@@ -7,18 +7,19 @@ const Tjenester = () => {
   const tjenesteAlternativer = [
     {
       tittel: 'Utvikling',
-      tekst: 'Fra ide til teknisk løsning. Vi hjelper i alle ledd.',
+      // tekst: 'Fra ide til teknisk løsning. Vi hjelper i alle ledd.',
+      tekst: 'Innleie av konsulenter for å dekke deres kapasitetsbehov for nøkkelkompetanse og rask verdiskapning.',
       bilde: '/static/photos/tjenester/kodeworks-tjenester1.png',
     },
     {
-      tittel: 'Kompetanse',
-      tekst: 'Trenger du teknisk kompetanse for en kortere eller lengre periode, vi er klare.',
-      bilde: '/static/photos/tjenester/kodeworks-tjenester2.png',
+      tittel: 'Prosjekt',
+      tekst: 'Har dere behov for at vi tar oss av alt det tekniske i et utviklingsprosjekt? Vi hjelper deg å levere.',
+      bilde: '/static/photos/tjenester/kodeworks-tjenester3.png',
     },
     {
-      tittel: 'Samarbeid',
-      tekst: 'Vi hjelper deg med å lansere ditt tidligfase prosjekt.',
-      bilde: '/static/photos/tjenester/kodeworks-tjenester3.png',
+      tittel: 'Effektivisere',
+      tekst: 'AI har kommet for fullt og vi kan hjelpe deg med å effektivisere prosesser og ta i bruk ny teknologi.',
+      bilde: '/static/photos/tjenester/kodeworks-tjenester2.png',
     },
   ];
 
@@ -54,9 +55,9 @@ const Tjenester = () => {
               <h3 className="mb-4">{tjeneste.tittel}</h3>
               <p>{tjeneste.tekst}</p>
             </div>
-            <Link href="/tjenester" className="green-link">
+            {/* <Link href="/tjenester" className="green-link">
               Les mer
-            </Link>
+            </Link> */}
             
           </article>
         ))}

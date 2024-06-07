@@ -10,7 +10,7 @@ const Kunder = () => {
 
   return (
     <div className="flex flex-col section-padding">
-      <h2 className="section-title">Kunder</h2>
+      <h2 className="section-title">Våre Kunder</h2>
       <div className="flex flex-row flex-wrap items-center justify-start gap-x-12 gap-y-12">
         {logos.map((logo, index) => {
           return (

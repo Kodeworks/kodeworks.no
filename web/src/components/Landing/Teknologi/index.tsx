@@ -8,7 +8,7 @@ const Teknologier = ({ technologies }: Props) => {
       <h2 className="section-title">Teknologi</h2>
       <div className="flex flex-row flex-wrap gap-3">
         {technologies.map((tek) => (
-            <div className="border-[2px] border-solid  p-2 h-4">
+            <div className="border-[2px] border-solid p-2 text-center">
                 {tek}
             </div>
         ))}

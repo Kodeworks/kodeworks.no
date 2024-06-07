@@ -134,9 +134,9 @@ function Main(): JSX.Element {
           </Link>
           
           <Link
-            href="/career"
+            href="/staffmanual"
             className={`no-underline leading-none nav-link ${
-              router.pathname === '/career' ? 'active' : ''
+              router.pathname === '/staffmanual' ? 'active' : ''
             }`}
           >
             <span className="text-xl text-black hover:text-black">Håndboka</span>
