@@ -1,8 +1,54 @@
+import { useEffect, useState } from "react";
 import "./styles.css";
 
 const Kontakt = () => {
+  const [ dispatchSuccess, setDispatchSuccess ] = useState(false);
+  const [ hasMountedForm, setHasMountedForm ] = useState(false);
+  const [ isDispatching, setIsDispatching ] = useState(false);
+   
+  function mountFormDispatcher() {
+    const form = document.querySelector("form");
+    if (!form) return;
+    setHasMountedForm(true);
+    form.addEventListener("submit", async (e) => {
+      setIsDispatching(true);
+      e.preventDefault();
+
+      try {
+        const formData = new FormData(form);
+        const formObject = Object.fromEntries(formData);
+        const jsonPayload = JSON.stringify(formObject);
+        const response = await fetch("https://api.web3forms.com/submit", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+          },
+          body: jsonPayload,
+        });
+        if (response.ok) {
+          setDispatchSuccess(true);
+        }
+      } catch (err) {
+        console.error(err);
+      } finally {
+        setTimeout(() => {
+          setIsDispatching(false);
+        }, 2000);
+      }
+    });
+  }
+
+  useEffect(() => {
+    if (!hasMountedForm) {
+      mountFormDispatcher();
+    }
+  }, []);
+
+
   return (
-    <div id="kontaktoss" className="flex lg:flex-row flex-col section-padding gap-10 w-full">
+    <>
+    <div id="kontaktoss" className={dispatchSuccess ? 'hidden' : 'flex lg:flex-row flex-col section-padding gap-10 w-full'}>
       <img
         src="/static/photos/kontoret.jpeg"
         alt="Kodeworks kontoret Oslo"
@@ -25,43 +71,59 @@ const Kontakt = () => {
           </p>
         </div>
 
+        <form className="w-full" id="form">
+          <input type="hidden" name="access_key" value="29fcd946-7f81-4245-a679-9437992a0869" />
+          <input type="hidden" name="subject" value="Ny kontakt webside" />
+          <input type="hidden" name="from_name" value="kodeworks.no" />
+          <input type="hidden" name="redirect" value="https://kodeworks.no/#kontaktoss" />
+          <div className="flex lg:flex-row flex-col gap-4 w-full">
+            <div className="flex flex-col lg:w-1/3 w-2/3 gap-4">
+                <div className="flex flex-col gap-2">
+                  <label htmlFor="navn">
+                    Navn
+                  </label>
+                  <input type="text" required id="navn" name="navn" placeholder="Ola Nordmann" className="kontakt-input" />
+                </div>
 
-        <div className="flex lg:flex-row flex-col gap-4 w-full">
-          <div className="flex flex-col lg:w-1/3 w-2/3 gap-4">
-              <div className="flex flex-col gap-2">
-                <label htmlFor="navn">
-                  Navn
-                </label>
-                <input type="text" id="navn" placeholder="Ola Nordmann" className="kontakt-input" />
-              </div>
+                <div className="flex flex-col gap-2">
+                  <label htmlFor="email">
+                    E-mail
+                  </label>
+                  <input type="email" required id="email" name="epost" placeholder="ola@gmail.no" className="kontakt-input" />
+                </div>
 
-              <div className="flex flex-col gap-2">
-                <label htmlFor="email">
-                  E-mail
-                </label>
-                <input type="email" id="email" placeholder="ola@gmail.no" className="kontakt-input" />
-              </div>
-
-              <div className="flex flex-col gap-2">
-                <label htmlFor="navn">
-                  Telefon nummer
-                </label>
-                <input type="tel" id="navn" placeholder="99 99 99 99" className="kontakt-input" />
-              </div>
-          </div>
-
-            <div className="flex flex-col gap-2 lg:w-1/2 w-2/3">
-              <label htmlFor="melding">
-                Melding
-              </label>
-              <textarea id="navn" placeholder="Skriv en melding til oss" rows={10} className="kontakt-input h-full" />
+                <div className="flex flex-col gap-2">
+                  <label htmlFor="navn">
+                    Telefon nummer
+                  </label>
+                  <input type="tel" id="navn" required name="telefon" placeholder="99 99 99 99" className="kontakt-input" />
+                </div>
             </div>
-          </div>
 
-          <button className="button text-xl px-20 py-3 lg:w-1/3 w-2/3">Send</button>
+              <div className="flex flex-col gap-2 lg:w-1/2 w-2/3">
+                <label htmlFor="melding">
+                  Melding
+                </label>
+                <textarea id="navn" name="melding" placeholder="Skriv en melding til oss" rows={10} className="kontakt-input h-full" />
+              </div>
+            </div>
+
+            <button type="submit" disabled={isDispatching} className="button text-xl mt-4 px-20 py-3 lg:w-1/3 w-2/3">
+              {isDispatching ? "Sender..." : "Send melding"}
+            </button>
+          </form>
 
       </div>
     </div>
+    <div id="kontaktoss_suksess" className={dispatchSuccess ? 'flex flex-col text-center section-padding gap-10 w-full mb-32' : 'hidden'}>
+      <h2>
+        Takk for din henvendelse! <br></br>
+      </h2>
+      <p>
+        Vi har mottatt din melding og vil ta kontakt med deg så raskt som mulig.
+      </p>
+    </div>
+    </>
   );
 };
 

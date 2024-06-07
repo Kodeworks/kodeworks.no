@@ -69,7 +69,7 @@ function Home({ people, projects }: { people: Person[]; projects: Project[] }): 
   }, [projects]);
 
   return (
-    <>
+    <div className="w-full">
       <div className="h-[100vh] flex flex-col justify-between">
         <Header />
         <LogoReel />
@@ -105,7 +105,7 @@ function Home({ people, projects }: { people: Person[]; projects: Project[] }): 
 
       <Kontakt />
 
-    </>
+    </div>
   );
 }
 

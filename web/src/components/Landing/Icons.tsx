@@ -4,7 +4,7 @@ export const GreenArrowLeft = () => {
       <path
         d="M7 12C3.667 9 2 7.333 2 7c0-.333 1.667-2 5-5"
         stroke="#ACFFC3"
-        stroke-width="1.3"
+        strokeWidth="1.3"
         fill="none"
       />
     </svg>
@@ -18,7 +18,7 @@ export const GreenArrowRight = () => {
         transform="rotate(180) translate(-8 -15)"
         d="M7 12C3.667 9 2 7.333 2 7c0-.333 1.667-2 5-5"
         stroke="#ACFFC3"
-        stroke-width="1.3"
+        strokeWidth="1.3"
         fill="none"
       />
     </svg>
