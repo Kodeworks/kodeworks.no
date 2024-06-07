@@ -72,7 +72,7 @@ const Kontakt = () => {
         </div>
 
         <form className="w-full" id="form">
-          <input type="hidden" name="access_key" value="29fcd946-7f81-4245-a679-9437992a0869" />
+          <input type="hidden" name="access_key" value="462247df-28ef-4e87-a5c8-8f4fc7263636" />
           <input type="hidden" name="subject" value="Ny kontakt webside" />
           <input type="hidden" name="from_name" value="kodeworks.no" />
           <input type="hidden" name="redirect" value="https://kodeworks.no/#kontaktoss" />
