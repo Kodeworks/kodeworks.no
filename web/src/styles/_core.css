@@ -52,6 +52,10 @@ body {
   line-height: 1.4;
 }
 
+html {
+  scroll-behavior: smooth !important;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: "Natural Grotesk Light";
 }
@@ -480,7 +484,7 @@ ol {
   position: absolute; /* Positions the pseudo-element relative to the link */
   left: 0;
   right: 0;
-  bottom: 5px; /* Adjust this value to position the underline correctly */
+  bottom: 0px; /* Adjust this value to position the underline correctly */
   height: 6px; /* Thickness of the underline */
   background-color: var(--color-green); /* Color of the underline */
   display: block;
