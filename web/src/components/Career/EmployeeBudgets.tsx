@@ -14,7 +14,7 @@ export default function EmployeeBudgets({ careerSchema }: Props) {
 
   useEffect(() => {
     changeClipMode(shouldClipText);
-  }, [shouldClipText]);
+  }, [shouldClipText, changeClipMode]);
 
   return (
     <div className={`relative flex flex-col gap-y-4 justify-center py-16`} id="employeeBudgets">

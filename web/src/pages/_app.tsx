@@ -6,9 +6,8 @@ import { useRouter } from 'next/router';
 import React, { ReactElement, ReactNode, useContext, useEffect, useState } from 'react';
 
 import Layout from '../components/Layout';
-import Navigation from '../components/Navigation';
-import { ClipContentContext, ClipContentProvider } from '../context/ClipContentContext';
-import dictionary from '../components/Navigation/dict';
+import MobileNavigation from '../components/MobileNavigation';
+import dictionary from '../components/MobileNavigation/dict';
 
 import '../styles/kw.css';
 import { useTranslation } from '../utils/useTranslation';
@@ -30,13 +29,11 @@ export default function App({ Component, pageProps }: AppPropsWithLayout): JSX.E
   const getLayout = Component.getLayout ?? defaultLayout;
 
   return (
-    <ClipContentProvider>
       <>
         <Main />
         {getLayout(<Component {...pageProps} />)}
         <Footer />
       </>
-    </ClipContentProvider>
   );
 }
 
@@ -45,8 +42,6 @@ function Main(): JSX.Element {
   const [isNavigationOpen, setIsNavigationOpen] = useState(false);
   const [scrollTop, setScrollTop] = useState(0);
   const router = useRouter();
-
-  const { clipMode } = useContext(ClipContentContext);
 
   useEffect(() => {
     function onRouteChangeStart(): void {
@@ -97,52 +92,61 @@ function Main(): JSX.Element {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>KodeWorks</title>
       </Head>
+      
       <div
-        className={`${clipMode} lg:visible invisible flex justify-between items-center`}
+        className="lg:visible invisible flex justify-between items-center pt-8 pb-8"
         id="menu-bar"
       >
-        <Link href="/" className="leading-none pl-8">
+        <Link href="/" className="xl:pl-16 pl-8">
           <div id="menu-bar-logo" />
         </Link>
-        <div className="flex gap-x-8 pr-8">
+        <div className="flex xl:gap-x-12 lg:gap-x-6 gap-x-4 xl:pr-16 pr-8">
           <Link
             href="/people"
             className={`no-underline leading-none nav-link ${
               router.pathname === '/people' ? 'active' : ''
             }`}
           >
-            <span className="text-xl text-black hover:text-black">{t('our people')}</span>
+            <span className="lg:text-2xl text-lg text-black hover:text-black">Våre eksperter</span>
           </Link>
+          
           <Link
             href="/projects"
             className={`no-underline leading-none nav-link ${
               router.pathname === '/projects' ? 'active' : ''
             }`}
           >
-            <span className="text-xl text-black hover:text-black">{t('projects')}</span>
+            <span className="lg:text-2xl text-lg text-black hover:text-black">Våre prosjekter</span>
           </Link>
+
           <Link
             href="/career"
             className={`no-underline leading-none nav-link ${
               router.pathname === '/career' ? 'active' : ''
             }`}
           >
-            <span className="text-xl text-black hover:text-black">{t('career')}</span>
+            <span className="lg:text-2xl text-lg text-black hover:text-black">Jobbe i KodeWorks</span>
           </Link>
+          
           <Link
             href="/staffmanual"
             className={`no-underline leading-none nav-link ${
               router.pathname === '/staffmanual' ? 'active' : ''
             }`}
           >
-            <span className="text-xl text-black hover:text-black">{t('staff manual')}</span>
+            <span className="lg:text-2xl text-lg text-black hover:text-black">Håndboka</span>
+          </Link>
+          <Link href="/#kontaktoss">
+            <button className="button xl:px-8 px-4 py-2 border-none">
+                Kontakt oss
+            </button>
           </Link>
         </div>
       </div>
       <button
         onClick={handleMenuButtonClick}
         id="menu-button"
-        className={`${clipMode} lg:invisible`}
+        className="lg:invisible"
       >
         <label className="menuicon-label">
           <span
@@ -166,7 +170,7 @@ function Main(): JSX.Element {
         </label>
       </button>
 
-      <Navigation isOpened={isNavigationOpen} toggleNavigationOpened={handleMenuButtonClick} />
+      <MobileNavigation isOpened={isNavigationOpen} toggleNavigationOpened={handleMenuButtonClick} />
     </>
   );
 }

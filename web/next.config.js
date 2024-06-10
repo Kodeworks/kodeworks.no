@@ -1,4 +1,6 @@
-module.exports = {
+const withImages = require('next-images');
+
+module.exports = withImages({
   i18n: {
     locales: ['no', 'en'],
     localeDetection: false,
@@ -6,4 +8,7 @@ module.exports = {
   },
   reactStrictMode: true,
   swcMinify: true,
-};
+  webpack(config, options) {
+    return config;
+  },
+});

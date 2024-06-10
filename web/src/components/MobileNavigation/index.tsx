@@ -36,7 +36,7 @@ export default function Navigation({ isOpened, toggleNavigationOpened }: Prop): 
     return function cleanupListener() {
       document.removeEventListener('keydown', escKeyListener);
     };
-  }, [isOpened]);
+  }, [isOpened, toggleNavigationOpened]);
 
   function onLinkClick(event: React.MouseEvent<HTMLAnchorElement>) {
     event.preventDefault();

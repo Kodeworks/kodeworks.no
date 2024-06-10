@@ -10,22 +10,22 @@
   --color-green: #B6FF9E;
   --color-grey: #e8e7e6;
   --color-dark-grey: #666;
-}
 
-body {
-  font-family: arial, sans-serif;
-  font-size: 17px;
-  line-height: 1.625;
+  --color-new-pink: #fad5d5;
+
+  --color-new-green: #35664C;
+  --color-new-green-dark: #254333;
+
 }
 
 a {
   color: var(--color-dark-grey);
   text-decoration: underline;
+  text-underline-offset: 0.4rem;
 }
 
 a:hover {
   color: #000;
-  text-decoration: none;
 }
 
 p {
@@ -37,17 +37,28 @@ strong {
 }
 
 /* Typography
+- `-apple-system` targets the San Francisco font on macOS and iOS.
+- `BlinkMacSystemFont` targets the system font on macOS and iOS for Blink-based browsers.
+- `Segoe UI` is the default font for Windows.
+- `Roboto` is the default font for Android and Chrome OS.
+- `Oxygen-Sans` is used on some Linux distributions.
+- `Ubuntu` is used on Ubuntu Linux.
+- `Cantarell` is used on GNOME.
+- `Helvetica Neue` is a fallback for macOS.
+- `sans-serif` is the generic fallback font.
 ------------------------------------------------------------------------------*/
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Natural Grotesk Bold", arial, sans-serif;
-  font-weight: 600;
-  line-height: 1.1;
-  margin: 0 0 5px 0;
+body {
+  font-family: "Natural Grotesk Light";
+  line-height: 1.4;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Natural Grotesk Light";
+}
+
+p, blockquote, pre, code {
+  /* font-family: "arial", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif; */
+  font-family: "Natural Grotesk Light";
 }
 
 h1 {
@@ -222,7 +233,7 @@ ol {
   background-color: black;
   -webkit-mask: url(/static/logo.svg) no-repeat center;
   mask: url(/static/logo.svg) no-repeat center;
-  width: 240px;
+  width: 120px;
   height: 30px;
 }
 
@@ -423,4 +434,75 @@ ol {
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
   width: 100vw;
+}
+
+.button {
+  color: white;
+  background-color: var(--color-new-green);
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  border-style: none;
+  cursor: pointer;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.section-spacer {
+  @apply pt-24 pb-24;
+}
+
+.section-padding {
+  @apply xl:px-16 md:px-8 px-4;
+}
+
+.section-title {
+  @apply text-5xl lg:mb-16 mb-10;
+  line-height: 3.5rem;
+}
+
+.button-unstyled {
+  appearance: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.green-link {
+  @apply text-2xl text-black;
+  text-decoration: none; /* Removes the default underline */
+  position: relative; /* Required for positioning the pseudo-element */
+}
+
+.green-link::after {
+  content: ''; /* Creates an empty pseudo-element */
+  position: absolute; /* Positions the pseudo-element relative to the link */
+  left: 0;
+  right: 0;
+  bottom: 0px; /* Adjust this value to position the underline correctly */
+  height: 6px; /* Thickness of the underline */
+  background-color: var(--color-green); /* Color of the underline */
+  display: block;
+  z-index: -1;
+}
+
+.green-link:hover {
+  text-decoration: none; /* Ensures that no default underline appears on hover */
+}
+
+.green-link:hover::after {
+  background-color: white; /* Changes the underline color on hover */
+}
+
+.groteks-normal {
+  font-family: "Natural Grotesk";
+}
+
+.green-text {
+  color: var(--color-new-green);
+}
+
+#__next {
+  overflow: hidden;
 }

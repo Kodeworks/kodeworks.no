@@ -1,0 +1,39 @@
+.sentence {
+    display: flex;
+    align-items: center;
+    font-size: 64px;
+    margin: 10px 0;
+}
+  
+.animated-word {
+    display: inline-block;
+    margin-left: 5px;
+    animation: slide 3s infinite;
+}
+
+.pink-text {
+    color: var(--color-new-pink);
+}
+
+.green-text {
+    color: var(--color-new-green);
+}
+  
+@keyframes slide {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    10% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    90% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+}
