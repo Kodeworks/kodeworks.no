@@ -22,18 +22,15 @@ export default function Projects({ projects }: { projects: Project[] }): JSX.Ele
 
           <p className="md:w-3/5 lg:w-1/2 xl:w-1/3 md:self-end self-start">{t('what_description')}</p>
         </header>
-        <article className="relative col-span-1 lg:col-span-2 grid grid-cols-[1fr] py-24 items-center gap-10">
-          
-          <div className="flex flex-col gap-y-36">
-            {projects.map((project, index) => (
-              <ProjectTile
-                key={fmt(project.name, locale!)}
-                project={project}
-                reverse={index % 2 !== 0}
-              />
-            ))}
-          </div>
-        </article>
+        <div className="flex flex-col gap-y-36 lg:mt-36 md:mt-24 mt-12 w-full">
+          {projects.map((project, index) => (
+            <ProjectTile
+              key={fmt(project.name, locale!)}
+              project={project}
+              reverse={index % 2 !== 0}
+            />
+          ))}
+        </div>
       </section>
     </main>
 );
