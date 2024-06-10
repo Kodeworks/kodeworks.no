@@ -29,7 +29,7 @@ const Projects = ({ projects }: { projects: Project[] }) => {
                   alt={project.name}
                   className="h-96 object-cover w-full"
                 />
-                <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-75 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-60 opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-300">
                   <p className="text-white text-center px-4 text-xl">
                     {project.description?.['no']}
                   </p>

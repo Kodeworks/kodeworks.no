@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { logos } from '../../../utils/kunderLogos';
 
 const imageStyle: React.CSSProperties = {
-  height: 'unset',
+  height: 'auto',
   width: '140px',
 }
 

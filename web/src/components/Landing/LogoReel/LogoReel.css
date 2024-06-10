@@ -12,7 +12,7 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  animation: scroll 30s linear infinite;
+  animation: scroll 180s linear infinite;
   width: fit-content;
   transform: translate3d(0, 0, 0); /* Engage GPU rendering */
   will-change: transform;

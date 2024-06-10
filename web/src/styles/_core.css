@@ -52,10 +52,6 @@ body {
   line-height: 1.4;
 }
 
-html {
-  scroll-behavior: smooth !important;
-}
-
 h1, h2, h3, h4, h5, h6 {
   font-family: "Natural Grotesk Light";
 }
@@ -458,7 +454,7 @@ ol {
 }
 
 .section-padding {
-  @apply px-16;
+  @apply xl:px-16 md:px-8 px-4;
 }
 
 .section-title {
@@ -505,4 +501,8 @@ ol {
 
 .green-text {
   color: var(--color-new-green);
+}
+
+#__next {
+  overflow: hidden;
 }

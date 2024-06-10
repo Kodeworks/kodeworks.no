@@ -1,15 +1,16 @@
 import { useEffect, useState } from 'react';
 import { Person, Project } from '../types';
 import { getPeople, getProjects } from '../lib/sanity';
+import '../styles/_page_landing.css';
 
 import {
   Header,
-  LogoReel,
   Tjenester,
   Oppdrag,
   Prosjekter,
   Konsulenter,
   Kontakt,
+  LogoReel,
 } from '../components/Landing/';
 import Teknologier from '../components/Landing/Teknologi';
 import Kunder from '../components/Landing/Kunder';
@@ -66,11 +67,14 @@ function Home({ people, projects }: { people: Person[]; projects: Project[] }): 
     <div className="w-full">
       <div className="h-[100vh] flex flex-col justify-between">
         <Header />
-        {/* <LogoReel /> */}
+        <LogoReel />
       </div>
+      
+      <div className="section-spacer"></div>
       
       <Tjenester />
       <div className="section-spacer"></div>
+      
       
       <Teknologier technologies={staticTechnologies} />
 
