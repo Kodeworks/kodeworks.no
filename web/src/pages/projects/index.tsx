@@ -12,29 +12,28 @@ export default function Projects({ projects }: { projects: Project[] }): JSX.Ele
   const { t } = useTranslation(dictionary);
 
   return (
-    <div className="bg-black text-white">
-      <main className="main bg-black mt-0 pt-40">
-        <section className={`grid grid-cols-1 lg:grid-cols-2 `}>
-          <article className="relative col-span-1 lg:col-span-2 grid grid-cols-[1fr] flex py-24 items-center gap-10">
-            <header>
-              <h1 className="section-header-headline">{t('what')}</h1>
+    <main className="main mt-0 pt-40">
+      <section>
+        <header className="flex flex-col w-full">
+          <div className="flex items-center mb-16">
+            <h2 className="mr-8 md:text-7xl text-4xl">Våre </h2>
+            <h2 className="green-text md:text-7xl text-4xl">prosjekter</h2>
+          </div>
 
-              <p>{t('what_description')}</p>
-            </header>
-            <div className="flex flex-col gap-y-36">
-              {projects.map((project, index) => (
-                <ProjectTile
-                  key={fmt(project.name, locale!)}
-                  project={project}
-                  reverse={index % 2 === 0}
-                />
-              ))}
-            </div>
-          </article>
-        </section>
-      </main>
-    </div>
-  );
+          <p className="md:w-3/5 lg:w-1/2 xl:w-1/3 md:self-end self-start">{t('what_description')}</p>
+        </header>
+        <div className="flex flex-col gap-y-36 lg:mt-36 md:mt-24 mt-12 w-full">
+          {projects.map((project, index) => (
+            <ProjectTile
+              key={fmt(project.name, locale!)}
+              project={project}
+              reverse={index % 2 !== 0}
+            />
+          ))}
+        </div>
+      </section>
+    </main>
+);
 }
 
 export async function getStaticProps() {

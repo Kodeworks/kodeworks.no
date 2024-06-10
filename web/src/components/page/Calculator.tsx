@@ -38,7 +38,9 @@ export default function Calculator({ careerSchema }: Props) {
           <Salary />
         </div>
         <div className="col-span-1 lg:col-span-2 grid grid-cols-[1fr] lg:grid-cols-[repeat(2,1fr)]">
-          <Total careerSchema={careerSchema} />
+          {
+            careerSchema && <Total careerSchema={careerSchema} />
+          }
           <SalaryAdjustment careerSchema={careerSchema} />
         </div>
         <Pension careerSchema={careerSchema} />

@@ -18,16 +18,18 @@ export default function Total({ careerSchema }: Props) {
   }
 
   const permanentBenefits = useMemo(() => {
-    const totalEmployeeBudgetAmount = careerSchema.employeeBudget
-      ?.epolyeeBudgetsPosts!.filter((post) => post.fixedBenefits)
-      .map((post) => post.amountYearly)
-      .reduce((accumulator, currentValue) => accumulator! + currentValue!);
+    if (Array.isArray(careerSchema.employeeBudget?.epolyeeBudgetsPosts) && Array.isArray(careerSchema.benefits?.benefitItems)) {
+      const totalEmployeeBudgetAmount = careerSchema.employeeBudget?.epolyeeBudgetsPosts.filter((post) => post.fixedBenefits)
+        .map((post) => post.amountYearly)
+        .reduce((accumulator, currentValue) => accumulator! + currentValue!);
 
-    const totalBenefitsAmount = careerSchema.benefits
-      ?.benefitItems!.filter((item) => item.fixedBenefits)
-      .map((item) => item.amountYearly)
-      .reduce((accumulator, currentValue) => accumulator! + currentValue!);
-    return totalEmployeeBudgetAmount! + totalBenefitsAmount!;
+      const totalBenefitsAmount = careerSchema.benefits?.benefitItems.filter((item) => item.fixedBenefits)
+        .map((item) => item.amountYearly)
+        .reduce((accumulator, currentValue) => accumulator! + currentValue!);
+      return totalEmployeeBudgetAmount! + totalBenefitsAmount!;
+    } else {
+      return 0;
+    }
   }, [careerSchema]);
 
   return (
