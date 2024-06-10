@@ -2,9 +2,7 @@ import { useRouter } from 'next/router';
 
 import { Project } from '../../types';
 import { fmt, getLocale } from '../../utils/useTranslation';
-
-import Button from '../../components/Button';
-
+import Link from 'next/link';
 interface Prop {
   project: Project;
   reverse: boolean;
@@ -14,41 +12,39 @@ export default function ProjectTile({ project, reverse }: Prop): JSX.Element {
   const locale = getLocale(useRouter());
 
   return (
-    <article className="grid grid-cols-[1fr] lg:grid-cols-[repeat(2,1fr)] gap-6 items-start mt-24">
+    <article className="flex lg:flex-row flex-col gap-10">
       <img
         className={`${reverse ? 'lg:order-last' : 'order-first'}`}
-        style={{ aspectRatio: '16/9', maxHeight: '400px', maxWidth: '100%' }}
+        style={{ aspectRatio: '16/9', maxHeight: '300px', maxWidth: '100%' }}
         src={project.imageUrl}
         alt={fmt(project.name, locale!)}
       />
-      <div className="w-9/12">
-        <h3>{project.name}</h3>
-        {project.description && <p>{fmt(project.description, locale!)}</p>}
+      <div className="w-1/3 flex flex-col justify-between">
+        <div className="flex flex-col gap-4">
+          <h3>{project.name}</h3>
+          {project.description && <p>{fmt(project.description, locale!)}</p>}
 
-        {project.content && (
-          <p>
-            <Button appearance={Button.appearances.DarkNoPadding} href={`input/${project.slug}`}>
-              Les mer om prosjektet
-            </Button>
-          </p>
-        )}
-
-        {project.technologies ? (
-          <div className="text-white text-sm">
-            <h5>Teknologier</h5>
-
-            <div className="flex flex-wrap  text-sm gap-4">
+          {project.technologies ? (
+            <div className="flex flex-wrap text-sm gap-4">
               {project.technologies?.map((tech, index) => (
                 <div
                   key={`${index}`}
-                  className="border-2 border-solid border-[var(--color-green)] py-1 px-2"
+                  className="border-[1.25px] border-solid py-1 px-2 text-center"
                 >
                   {tech}
                 </div>
               ))}
             </div>
+          ) : null}
+        </div>
+
+        {project.content && (
+          <div className="mt-4">
+            <Link href={`input/${project.slug}`} className="green-link text-base">
+              Les mer om prosjektet
+            </Link>
           </div>
-        ) : null}
+        )}
       </div>
     </article>
   );
