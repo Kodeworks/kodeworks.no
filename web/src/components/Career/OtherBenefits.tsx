@@ -10,7 +10,7 @@ export default function OtherBenefits({ careerSchema }: Props) {
       <h3>{careerSchema.benefits?.title}</h3>
       <span className="max-w-xl mb-8">{careerSchema.benefits!.subTitle}</span>
       <div className="flex justify-start gap-x-10 overflow-x-scroll">
-        {careerSchema.benefits?.benefitItems!.map((item, index) => {
+        {careerSchema.benefits?.benefitItems?.map((item, index) => {
           return (
             <div
               className={`text-white relative flex flex-col justify-center items-center text-center max-w-[300px] min-w-[300px] max-h-[225px] min-h-[225px]`}

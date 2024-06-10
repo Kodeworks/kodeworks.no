@@ -22,7 +22,7 @@ export default function EmployeeBudgets({ careerSchema }: Props) {
       <h3>{careerSchema.employeeBudget!.title}</h3>
       <span className="max-w-xl mb-8">{careerSchema.employeeBudget!.subTitle}</span>
       <div className="flex flex-col md:flex-row justify-between gap-10">
-        {careerSchema.employeeBudget?.epolyeeBudgetsPosts!.map((post, index) => {
+        {careerSchema.employeeBudget?.epolyeeBudgetsPosts?.map((post, index) => {
           return (
             <div
               className="flex flex-col justify-start lg:justify-center items-center text-center"
