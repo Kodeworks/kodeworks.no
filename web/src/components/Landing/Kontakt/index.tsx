@@ -52,7 +52,7 @@ const Kontakt = () => {
       <img
         src="/static/photos/kontoret.jpeg"
         alt="Kodeworks kontoret Oslo"
-        className="w-3/6 h-full object-cover overflow-hidden"
+        className="md:w-3/6 w-4/5 h-full object-cover overflow-hidden"
       />
       <div className="flex flex-col items-start lg:justify-between justify-start gap-4 w-full">
         <h2>Kontakt oss</h2>
@@ -77,7 +77,7 @@ const Kontakt = () => {
           <input type="hidden" name="from_name" value="kodeworks.no" />
           <input type="hidden" name="redirect" value="https://kodeworks.no/#kontaktoss" />
           <div className="flex lg:flex-row flex-col gap-4 w-full">
-            <div className="flex flex-col lg:w-1/3 w-2/3 gap-4">
+            <div className="flex flex-col lg:w-1/3 w-4/5 gap-4">
                 <div className="flex flex-col gap-2">
                   <label htmlFor="navn">
                     Navn
@@ -100,7 +100,7 @@ const Kontakt = () => {
                 </div>
             </div>
 
-              <div className="flex flex-col gap-2 lg:w-1/2 w-2/3">
+              <div className="flex flex-col gap-2 lg:w-1/2 w-4/5">
                 <label htmlFor="melding">
                   Melding
                 </label>
@@ -108,7 +108,7 @@ const Kontakt = () => {
               </div>
             </div>
 
-            <button type="submit" disabled={isDispatching} className="button text-xl mt-4 px-20 py-3 lg:w-1/3 w-2/3">
+            <button type="submit" disabled={isDispatching} className="button text-xl mt-4 px-20 py-3 lg:w-1/3 w-4/5">
               {isDispatching ? "Sender..." : "Send melding"}
             </button>
           </form>
