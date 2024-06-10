@@ -458,7 +458,7 @@ ol {
 }
 
 .section-title {
-  @apply text-5xl lg:mb-16 mb-6;
+  @apply text-5xl lg:mb-16 mb-10;
   line-height: 3.5rem;
 }
 
