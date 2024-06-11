@@ -11,7 +11,7 @@ export default function People({ people }: { people: Person[] }): JSX.Element {
             <h2 className="green-text md:text-7xl text-4xl">eksperter</h2>
           </div>
           <p className="md:w-3/5 lg:w-1/2 xl:w-1/3 md:self-end self-start">
-            I Kodeworks er vi 33 fantastiske mennesker som brenner for faget, fordelt på kontorer i Oslo og Trondheim. Vi tror på verdiskapning gjennom åpenhet, kompetanse og dedikasjon, og vi er engasjerte i å levere førsteklasses løsninger til våre kunder.
+            I Kodeworks er vi { people.length } fantastiske mennesker som brenner for faget, fordelt på kontorer i Oslo og Trondheim. Vi tror på verdiskapning gjennom åpenhet, kompetanse og dedikasjon, og vi er engasjerte i å levere førsteklasses løsninger til våre kunder.
           </p>
         </header>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 w-full">
