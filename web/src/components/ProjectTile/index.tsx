@@ -12,10 +12,10 @@ export default function ProjectTile({ project, reverse }: Prop): JSX.Element {
   const locale = getLocale(useRouter());
 
   return (
-    <article className={`${reverse ? 'justify-end' : ''} flex lg:flex-row flex-col gap-10`}>
+    <article className={`${reverse ? 'justify-end' : ''} flex lg:flex-row flex-col gap-[44px]`}>
       <img
         className={`${reverse ? 'lg:order-last' : 'order-first'}`}
-        style={{ aspectRatio: '16/9', maxHeight: '300px', maxWidth: '100%' }}
+        style={{ aspectRatio: '16/9', maxHeight: '300px', width: '30%' }}
         src={project.imageUrl}
         alt={fmt(project.name, locale!)}
       />
