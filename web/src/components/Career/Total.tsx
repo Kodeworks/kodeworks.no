@@ -99,7 +99,7 @@ export default function Total({ careerSchema }: Props) {
           </div>
         </div>
       </div>
-      <Link href="/staffmanual" className="mt-6">
+      <Link href="/handboka" className="mt-6">
         <div className="mt-4 px-10 py-3 bg-[var(--color-green)] text-black hover:text-[var(--color-dark-grey)] ">
           Se håndboka
         </div>

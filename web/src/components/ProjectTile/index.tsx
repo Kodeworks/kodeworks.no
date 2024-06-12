@@ -40,7 +40,7 @@ export default function ProjectTile({ project, reverse }: Prop): JSX.Element {
 
         {project.content && (
           <div className="mt-4">
-            <Link href={`input/${project.slug}`} className="green-link text-base">
+            <Link href={`prosjekter/${project.slug}`} className="green-link text-base">
               Les mer om prosjektet
             </Link>
           </div>

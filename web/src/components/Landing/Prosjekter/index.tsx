@@ -20,7 +20,7 @@ const Projects = ({ projects }: { projects: Project[] }) => {
       <h2 className="section-title">Våre prosjekter</h2>
       <div className="grid lg:grid-cols-2 grid-cols-1 gap-y-12 gap-x-4">
         {projectsToShow.map((project) => (
-          <Link href={`input/${project.slug}`} className="no-underline" key={project.slug}>
+          <Link href={`prosjekter/${project.slug}`} className="no-underline" key={project.slug}>
             <div className="flex flex-col w-full relative group cursor-pointer">
               <h3 className="text-4xl lg:mb-6 mb-4">{project.name}</h3>
               <div className="relative">
@@ -40,7 +40,7 @@ const Projects = ({ projects }: { projects: Project[] }) => {
         ))}
       </div>
       <div className="lg:mt-16 mt-8">
-        <Link href="/projects" className="green-link">
+        <Link href="/prosjekter" className="green-link">
           Se alle våre prosjekter
         </Link>
       </div>

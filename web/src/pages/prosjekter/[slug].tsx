@@ -14,7 +14,7 @@ interface Prop {
     project: Project;
 }
 
-const Input: NextPageWithLayout = ({project}: Prop) => {
+const ProjectPage: NextPageWithLayout = ({project}: Prop) => {
     useClipContent('dark-mode');
 
     return (
@@ -25,13 +25,13 @@ const Input: NextPageWithLayout = ({project}: Prop) => {
                     <div className="page-project-footer-description">
                         <h3>Hva annet har vi gjort?</h3>
                         <p>
-                            Ta gjerne en titt innom <Link href="/projects">prosjektoversikten</Link> vår for å
+                            Ta gjerne en titt innom <Link href="/prosjekter">prosjektoversikten</Link> vår for å
                             lese mer om våre andre prosjekter.
                         </p>
                         <p>
                             Vi ser også etter utviklere til kontorene våre i Oslo og Trondheim. Sjekk ut{' '}
-                            <Link href="/career">lønnskalkulatoren</Link>, og våre{' '}
-                            <Link href="/career">ledige stillinger</Link>.
+                            <Link href="/karriere">lønnskalkulatoren</Link>, og våre{' '}
+                            <Link href="/karriere">ledige stillinger</Link>.
                         </p>
                     </div>
                     <div className="page-project-footer-contact">
@@ -60,28 +60,28 @@ const Input: NextPageWithLayout = ({project}: Prop) => {
     );
 };
 
-Input.getLayout = function getLayout(page: ReactElement) {
+ProjectPage.getLayout = function getLayout(page: ReactElement) {
     return <Layout>{page}</Layout>;
 };
 
-export default Input;
+export default ProjectPage;
 
 export const getStaticPaths: GetStaticPaths = async () => {
     const projects = await getProjects();
     return {
-        paths: projects.map((project) => ({params: {input: project.slug}})),
+        paths: projects.map((project) => ({params: {slug: project.slug}})),
         fallback: "blocking"
     };
 };
 
-export const getStaticProps: GetStaticProps<Prop, { input: string }> = async (context) => {
+export const getStaticProps: GetStaticProps<Prop, { slug: string }> = async (context) => {
     if (!context.params) {
         throw new Error('Params missing');
     }
 
     return {
         props: {
-            project: await getProject(context.params.input),
+            project: await getProject(context.params.slug),
         },
         revalidate: 10,
     };

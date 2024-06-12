@@ -7,7 +7,7 @@ const Rekruttering = () => {
         <div className="full-screen-width h-full absolute bg-[var(--color-new-pink)] -z-10"></div>
         <div className=" flex flex-col items-center">
           <h2>Er du også en IT ekspert?</h2>
-          <Link href="/career" className="mt-6">
+          <Link href="/karriere" className="mt-6">
             <button className="button px-3 py-2">Søk jobb hos oss</button>
           </Link>
         </div>

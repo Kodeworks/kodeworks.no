@@ -67,7 +67,7 @@ function Home({ people, projects }: { people: Person[]; projects: Project[] }): 
                 I KodeWorks ser vi etter deg som brenner for faget, er nysgjerrig, og har lyst til å
                 gjøre en forskjell!
               </p>
-              <Link href="/career" className="mt-6">
+              <Link href="/karriere" className="mt-6">
                 <div className="px-10 py-3 bg-[var(--color-grey)] text-black hover:text-[var(--color-dark-grey)] ">
                   Søk på stilling
                 </div>
@@ -107,7 +107,7 @@ function Home({ people, projects }: { people: Person[]; projects: Project[] }): 
               </p>
               <Button
                 appearance={Button.appearances.DarkNoPadding}
-                href={`/input/${highlightedProject && highlightedProject.slug}`}
+                href={`/prosjekter/${highlightedProject && highlightedProject.slug}`}
               >
                 {t('go_to_project_page_button')}
               </Button>
@@ -121,7 +121,7 @@ function Home({ people, projects }: { people: Person[]; projects: Project[] }): 
                 <h2 className="section-header-headline">{t('people')}</h2>
                 <p>{t('people_description', people.length)}</p>
                 <p>
-                  <Button appearance={Button.appearances.LightNoPadding} href="/people">
+                  <Button appearance={Button.appearances.LightNoPadding} href="/eksperter">
                     {t('who_button')}
                   </Button>
                 </p>

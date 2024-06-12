@@ -63,7 +63,7 @@ const Konsulenter = ({ people }: { people: Person[] }) => {
         </div>
       </div>
       <div className="lg:mt-8 mt-4">
-          <Link href="/people" className="green-link">
+          <Link href="/eksperter" className="green-link">
             Se alle våre eksperter
           </Link>
       </div>
