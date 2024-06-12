@@ -461,6 +461,11 @@ ol {
   line-height: 3.5rem;
 }
 
+.section-text {
+  @apply text-lg;
+  line-height: 1.5;
+}
+
 .button-unstyled {
   appearance: none;
   border: none;
