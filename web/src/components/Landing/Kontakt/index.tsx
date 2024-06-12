@@ -48,7 +48,7 @@ const Kontakt = () => {
 
   return (
     <>
-    <div className={dispatchSuccess ? 'hidden' : 'flex lg:flex-row flex-col gap-10 w-full'}>
+    <div id="kontaktoss" className={dispatchSuccess ? 'hidden' : 'flex lg:flex-row flex-col gap-10 w-full'}>
       <img
         src="/static/photos/kontoret.jpeg"
         alt="Kodeworks kontoret Oslo"
