@@ -16,7 +16,7 @@ export default function Job({ job }: Props) {
 
   useEffect(() => {
     if (!job) {
-      router.replace('/career');
+      router.replace('/karriere');
     }
   });
 

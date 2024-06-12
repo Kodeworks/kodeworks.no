@@ -2,7 +2,6 @@ import {ReactElement} from 'react';
 import {GetStaticPaths, GetStaticProps} from 'next';
 import Link from 'next/link';
 import {NextPageWithLayout} from '../_app';
-import {useClipContent} from '../../context/ClipContentContext';
 
 import Layout from '../../components/Layout';
 import ProjectHeaderBody from '../../components/ProjectHeaderBody';
@@ -15,8 +14,6 @@ interface Prop {
 }
 
 const ProjectPage: NextPageWithLayout = ({project}: Prop) => {
-    useClipContent('dark-mode');
-
     return (
         <>
             <div id="page-project">

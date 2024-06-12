@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import { useRouter } from 'next/router';
 import { Project } from '../../../types';
 import Link from 'next/link';
 

@@ -2,15 +2,12 @@ import { PortableText } from '@portabletext/react';
 import StaffManualNavigation from '../../components/StaffManual/StaffManualNavigation';
 import { StaffManual } from '../../types';
 import { getStaffManual } from '../../lib/sanity';
-import { useClipContent } from '../../context/ClipContentContext';
 
 interface Props {
   manual: StaffManual;
 }
 
 export default function NewStaffManual({ manual }: Props): JSX.Element {
-  useClipContent('');
-
   return (
     <>
       <header className="handbook-mainheader">
