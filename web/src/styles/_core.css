@@ -462,7 +462,7 @@ ol {
 }
 
 .section-text {
-  @apply text-lg;
+  @apply text-xl;
   line-height: 1.5;
 }
 
