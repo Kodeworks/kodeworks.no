@@ -11,16 +11,16 @@ export default function Footer() {
         style={{ gridArea: 'navigation' }}
         className="md:flex flex-col text-white gap-y-2 hidden"
       >
-        <Link href="/career" className="no-underline leading-none nav-link w-min">
+        <Link href="/karriere" className="no-underline leading-none nav-link w-min">
           <span className="text-xl text-white hover:text-white">Jobb hos oss</span>
         </Link>
-        <Link href="/staffmanual" className="no-underline leading-none nav-link w-min">
+        <Link href="/handboka" className="no-underline leading-none nav-link w-min">
           <span className="text-xl text-white hover:text-white">Håndboka</span>
         </Link>
-        <Link href="/people" className="no-underline leading-none nav-link w-min">
+        <Link href="/eksperter" className="no-underline leading-none nav-link w-min">
           <span className="text-xl text-white hover:text-white">Menneskene</span>
         </Link>
-        <Link href="/projects" className="no-underline leading-none nav-link w-min">
+        <Link href="/prosjekter" className="no-underline leading-none nav-link w-min">
           <span className="text-xl text-white hover:text-white">Prosjektene</span>
         </Link>
         <Link

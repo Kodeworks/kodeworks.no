@@ -63,22 +63,22 @@ export default function Navigation({ isOpened, toggleNavigationOpened }: Prop): 
           </h4>
           <ul className="list-plain">
             <li>
-              <Link href="/people" locale={locale}>
+              <Link href="/eksperter" locale={locale}>
                 {t('our people')}
               </Link>
             </li>
             <li>
-              <Link href="/projects" locale={locale}>
+              <Link href="/prosjekter" locale={locale}>
                 {t('projects')}
               </Link>
             </li>
             <li>
-              <Link href="/career" locale={locale}>
+              <Link href="/karriere" locale={locale}>
                 {t('career')}
               </Link>
             </li>
             <li>
-              <Link href="/staffmanual" locale={locale}>
+              <Link href="/handboka" locale={locale}>
                 {t('staff manual')}
               </Link>
             </li>

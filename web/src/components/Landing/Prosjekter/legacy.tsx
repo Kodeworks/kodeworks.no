@@ -82,7 +82,7 @@ const Projects = ({ projects }: { projects: Project[] }) => {
                 </p>
               </div>
               <div>
-                <a href={`/input/${selectedProject && selectedProject.slug}`}
+                <a href={`/prosjekter/${selectedProject && selectedProject.slug}`}
                   className='underline decoration-[var(--color-new-green)]'
                 >
                     {t('go_to_project_page_button')}

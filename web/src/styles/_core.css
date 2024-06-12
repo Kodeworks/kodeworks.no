@@ -505,3 +505,15 @@ ol {
 #__next {
   overflow: hidden;
 }
+
+.header-text-container {
+  @apply flex self-end lg:w-[60%] w-full;
+}
+
+.header-text {
+  @apply lg:text-4xl text-xl;
+}
+
+.header-title {
+  @apply md:text-7xl text-4xl;
+}

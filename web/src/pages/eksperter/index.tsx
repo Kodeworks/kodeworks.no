@@ -7,12 +7,14 @@ export default function People({ people }: { people: Person[] }): JSX.Element {
       <section className="w-full">
         <header className="flex flex-col w-full lg:mb-20 mb-10">
           <div className="flex items-center mb-16">
-            <h2 className="mr-8 md:text-7xl text-4xl">Våre </h2>
-            <h2 className="green-text md:text-7xl text-4xl">eksperter</h2>
+            <h2 className="mr-8 header-title">Våre </h2>
+            <h2 className="green-text header-title">eksperter</h2>
           </div>
-          <p className="md:w-3/5 lg:w-1/2 xl:w-1/3 md:self-end self-start">
-            I Kodeworks er vi { people.length } fantastiske mennesker som brenner for faget, fordelt på kontorer i Oslo og Trondheim. Vi tror på verdiskapning gjennom åpenhet, kompetanse og dedikasjon, og vi er engasjerte i å levere førsteklasses løsninger til våre kunder.
-          </p>
+          <div className="header-text-container">
+            <p className="header-text">
+              I Kodeworks er vi { people.length } fantastiske mennesker som brenner for faget, fordelt på kontorer i Oslo og Trondheim. Vi tror på verdiskapning gjennom åpenhet, kompetanse og dedikasjon, og vi er engasjerte i å levere førsteklasses løsninger til våre kunder.
+            </p>
+          </div>
         </header>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 w-full">
           {

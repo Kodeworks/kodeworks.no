@@ -1,42 +1,7 @@
-import { useEffect, useState } from 'react';
-import { GreenArrowLeft, GreenArrowRight } from '../Icons';
-import Button from '../../Button';
 import Link from 'next/link';
+import { tjenesteAlternativer } from '../../../constants/tjenesteAlternativer';
 
 const Tjenester = () => {
-  const tjenesteAlternativer = [
-    {
-      tittel: 'Utvikling',
-      tekst: 'Innleie av konsulenter for å dekke deres kapasitetsbehov for nøkkelkompetanse og rask verdiskapning.',
-      bilde: '/static/photos/tjenester/kodeworks-tjenester1.png',
-    },
-    {
-      tittel: 'Prosjekt',
-      tekst: 'Har dere behov for at vi tar oss av alt det tekniske i et utviklingsprosjekt? Vi hjelper deg å levere.',
-      bilde: '/static/photos/tjenester/kodeworks-tjenester3.png',
-    },
-    {
-      tittel: 'Effektivisere',
-      tekst: 'AI har kommet for fullt og vi kan hjelpe deg med å effektivisere prosesser og ta i bruk ny teknologi.',
-      bilde: '/static/photos/tjenester/kodeworks-tjenester2.png',
-    },
-  ];
-
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  const handlePrevious = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? tjenesteAlternativer.length - 1 : prevIndex - 1
-    );
-  };
-
-  const handleNext = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === tjenesteAlternativer.length - 1 ? 0 : prevIndex + 1
-    );
-  };
-
-
   return (
     <div className="flex flex-col section-padding">
       <h2 className="section-title">Våre tjenester</h2>
@@ -55,7 +20,14 @@ const Tjenester = () => {
               <h3 className="mb-4 text-3xl">{tjeneste.tittel}</h3>
               <p className="text-xl">{tjeneste.tekst}</p>
             </div>
+            {/* Kommentert ut inntil vi har skrevet ferdig tekstene 
+              <div className="lg:mt-8 mt-4">
+                <Link href={`/tjenester/${tjeneste.slug}`} className="green-link">
+                  Les mer
+                </Link>
+            </div> */}
           </article>
+          
         ))}
       </div>
       {/* Mobile */}

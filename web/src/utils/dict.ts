@@ -8,7 +8,7 @@ export default {
     who_button: 'Se dem alle her',
     career: 'Bli med på laget!',
     career_description:
-      'Vi vil bli bedre kjent med deg! Ta gjerne kontakt for en uformell prat over en kaffe. Titt innom <a href="/staffmanual">håndboka</a> vår og se hva vi kan tilby.',
+      'Vi vil bli bedre kjent med deg! Ta gjerne kontakt for en uformell prat over en kaffe. Titt innom <a href="/handboka">håndboka</a> vår og se hva vi kan tilby.',
     career_contact: 'Gi oss gjerne en lyd på <strong>jobb@kodeworks.no</strong>.',
     what: 'Hva gjør vi?',
     what_description:
@@ -25,7 +25,7 @@ export default {
     who_button: 'See all of them',
     career: 'Join the Team!',
     career_description:
-      'We want to get to know you! Let\'s grab a cup of coffee, and feel free to have a look at <a href="/staffmanual">Staff Manual</a> for a better grasp of what we offer.',
+      'We want to get to know you! Let\'s grab a cup of coffee, and feel free to have a look at <a href="/handboka">Staff Manual</a> for a better grasp of what we offer.',
     career_contact: 'You can reach us at <strong>jobb@kodeworks.no</strong>.',
     what: 'Our Projects',
     what_description:

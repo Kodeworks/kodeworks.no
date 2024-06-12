@@ -1,40 +1,14 @@
 import { useEffect, useState } from 'react';
-
 import { Person } from '../../../types';
-import PersonTile from '../../PersonTile';
-import { GreenArrowLeft, GreenArrowRight } from '../Icons';
 import Link from 'next/link';
 
 const Konsulenter = ({ people }: { people: Person[] }) => {
   const [highlightedPeople, setHighlightedPeople] = useState<Person[]>([]);
 
-  const [startIndex, setStartIndex] = useState(0);
-  const [endIndex, setEndIndex] = useState(3);
-
   useEffect(() => {
-    const randomStart = Math.floor(Math.random() * people.length);
     const randomPeople = people.sort(() => 0.5 - Math.random()).slice(0, 3);
-    
     setHighlightedPeople(randomPeople);
   }, [people]);
-
-  const handlePrevious = () => {
-    setStartIndex((prevIndex) =>
-      prevIndex === 0 ? people.length - 1 : prevIndex - 1
-    );
-    setEndIndex((prevIndex) =>
-      prevIndex === 0 ? people.length - 1 : prevIndex - 1
-    );
-  };
-  
-  const handleNext = () => {
-    setStartIndex((prevIndex) =>
-      prevIndex === people.length - 1 ? 0 : prevIndex + 1
-    );
-    setEndIndex((prevIndex) =>
-      prevIndex === people.length - 1 ? 0 : prevIndex + 1
-    );
-  };
 
   return (
     <div className="flex flex-col section-padding">
@@ -63,7 +37,7 @@ const Konsulenter = ({ people }: { people: Person[] }) => {
         </div>
       </div>
       <div className="lg:mt-8 mt-4">
-          <Link href="/people" className="green-link">
+          <Link href="/eksperter" className="green-link">
             Se alle våre eksperter
           </Link>
       </div>

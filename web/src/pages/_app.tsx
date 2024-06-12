@@ -102,36 +102,36 @@ function Main(): JSX.Element {
         </Link>
         <div className="flex xl:gap-x-12 lg:gap-x-6 gap-x-4 xl:pr-16 pr-8">
           <Link
-            href="/people"
+            href="/eksperter"
             className={`no-underline leading-none nav-link ${
-              router.pathname === '/people' ? 'active' : ''
+              router.pathname === '/eksperter' ? 'active' : ''
             }`}
           >
             <span className="lg:text-2xl text-lg text-black hover:text-black">Våre eksperter</span>
           </Link>
           
           <Link
-            href="/projects"
+            href="/prosjekter"
             className={`no-underline leading-none nav-link ${
-              router.pathname === '/projects' ? 'active' : ''
+              router.pathname === '/prosjekter' ? 'active' : ''
             }`}
           >
             <span className="lg:text-2xl text-lg text-black hover:text-black">Våre prosjekter</span>
           </Link>
 
           <Link
-            href="/career"
+            href="/karriere"
             className={`no-underline leading-none nav-link ${
-              router.pathname === '/career' ? 'active' : ''
+              router.pathname === '/karriere' ? 'active' : ''
             }`}
           >
             <span className="lg:text-2xl text-lg text-black hover:text-black">Jobbe i KodeWorks</span>
           </Link>
           
           <Link
-            href="/staffmanual"
+            href="/handboka"
             className={`no-underline leading-none nav-link ${
-              router.pathname === '/staffmanual' ? 'active' : ''
+              router.pathname === '/handboka' ? 'active' : ''
             }`}
           >
             <span className="lg:text-2xl text-lg text-black hover:text-black">Håndboka</span>
