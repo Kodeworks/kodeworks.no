@@ -72,11 +72,11 @@ export default function Navigation({ isOpened, toggleNavigationOpened }: Prop): 
                 {t('projects')}
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link href="/karriere" locale={locale}>
                 {t('career')}
               </Link>
-            </li>
+            </li> */}
             <li>
               <Link href="/handboka" locale={locale}>
                 {t('staff manual')}

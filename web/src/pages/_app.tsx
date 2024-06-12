@@ -119,14 +119,14 @@ function Main(): JSX.Element {
             <span className="lg:text-2xl text-lg text-black hover:text-black">Våre prosjekter</span>
           </Link>
 
-          <Link
+          {/* <Link
             href="/karriere"
             className={`no-underline leading-none nav-link ${
               router.pathname === '/karriere' ? 'active' : ''
             }`}
           >
             <span className="lg:text-2xl text-lg text-black hover:text-black">Jobbe i KodeWorks</span>
-          </Link>
+          </Link> */}
           
           <Link
             href="/handboka"
