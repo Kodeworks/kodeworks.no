@@ -48,7 +48,7 @@ const Kontakt = () => {
 
   return (
     <>
-    <div id="kontaktoss" className={dispatchSuccess ? 'hidden' : 'flex lg:flex-row flex-col section-padding gap-10 w-full'}>
+    <div className={dispatchSuccess ? 'hidden' : 'flex lg:flex-row flex-col gap-10 w-full'}>
       <img
         src="/static/photos/kontoret.jpeg"
         alt="Kodeworks kontoret Oslo"
@@ -108,14 +108,14 @@ const Kontakt = () => {
               </div>
             </div>
 
-            <button type="submit" disabled={isDispatching} className="button text-xl mt-4 px-20 py-3 lg:w-1/3 w-4/5">
+            <button type="submit" disabled={isDispatching} className="button text-xl mt-4 py-3 pl-2 px-2 lg:w-1/3 w-4/5">
               {isDispatching ? "Sender..." : "Send melding"}
             </button>
           </form>
 
       </div>
     </div>
-    <div id="kontaktoss_suksess" className={dispatchSuccess ? 'flex flex-col text-center section-padding gap-10 w-full mb-32' : 'hidden'}>
+    <div className={dispatchSuccess ? 'flex flex-col text-center section-padding gap-10 w-full mb-32' : 'hidden'}>
       <h2>
         Takk for din henvendelse! <br></br>
       </h2>

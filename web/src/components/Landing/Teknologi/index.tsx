@@ -4,7 +4,7 @@ interface Props {
 
 const Teknologier = ({ technologies }: Props) => {
   return (
-    <div className="flex flex-col section-padding">
+    <div className="flex flex-col">
       <h2 className="section-title">Teknologi</h2>
       <div className="flex flex-row flex-wrap gap-3 justify-center">
         {technologies.map((tek) => (

@@ -11,7 +11,7 @@ const Konsulenter = ({ people }: { people: Person[] }) => {
   }, [people]);
 
   return (
-    <div className="flex flex-col section-padding">
+    <div className="flex flex-col">
       <h2 className="section-title">Våre Eksperter</h2>
       <div className="flex flex-col">
         <div className="flex lg:flex-row flex-col lg:items-center justify-between w-full">

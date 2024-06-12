@@ -34,7 +34,7 @@ const AnimatedHeader = () => {
   }, []);
 
   return (
-    <header className="flex flex-col mt-16 pt-28 section-padding">
+    <header className="flex flex-col mt-16 pt-28">
       <div className="flex items-center mb-7">
         <h2 className="mr-8 header-title">Dine </h2>
         <h2 className="animated-word green-text header-title">{dine[dineIndex]}</h2>
