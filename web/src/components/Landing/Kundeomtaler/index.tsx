@@ -36,7 +36,7 @@ const Kundeomtaler = () => {
     );
   };
   return (
-    <div className="flex flex-col gap-12 section-padding">
+    <div className="flex flex-col gap-12">
       <h2 className="section-title">Kundeomtaler</h2>
       <div className="hidden md:flex flex-row space-x-8">
         {

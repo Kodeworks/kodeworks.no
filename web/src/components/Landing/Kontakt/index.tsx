@@ -115,7 +115,7 @@ const Kontakt = () => {
 
       </div>
     </div>
-    <div className={dispatchSuccess ? 'flex flex-col text-center section-padding gap-10 w-full mb-32' : 'hidden'}>
+    <div className={dispatchSuccess ? 'flex flex-col text-center gap-10 w-full mb-32' : 'hidden'}>
       <h2>
         Takk for din henvendelse! <br></br>
       </h2>

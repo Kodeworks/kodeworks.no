@@ -140,7 +140,7 @@ function Main(): JSX.Element {
           >
             <span className="lg:text-2xl text-lg text-black hover:text-black">Håndboka</span>
           </Link>
-          <Link href="/#kontaktoss">
+          <Link href="#kontaktoss">
             <button className="button xl:px-8 px-4 py-2 border-none">
                 Kontakt oss
             </button>

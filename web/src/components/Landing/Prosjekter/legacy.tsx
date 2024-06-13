@@ -47,7 +47,7 @@ const Projects = ({ projects }: { projects: Project[] }) => {
   };
 
     return (
-      <div className="flex flex-col gap-12 section-padding">
+      <div className="flex flex-col gap-12">
         <h2 className="uppercase">Prosjekter</h2>
         <div className="flex items-center justify-center gap-8 w-full">
         <button onClick={handlePrev} className="button-unstyled">
