@@ -4,6 +4,7 @@ import { Project } from '../../types';
 import { fmt, getLocale } from '../../utils/useTranslation';
 
 import style from './projectheader.module.css';
+import TechList from '../TechList';
 
 interface Prop {
   project: Project;
@@ -12,25 +13,17 @@ interface Prop {
 export default function ProjectHeader({ project }: Prop): JSX.Element {
   const locale = getLocale(useRouter());
   return (
-    <header>
-      <div className={style.projectHeader__content}>
-        <h1>{project.name}</h1>
+    <header className="flex flex-col justify-start lg:mt-52 mt-28 lg:mb-16 mb-12">
+        <h1 className="mb-8">{project.name}</h1>
+        <div className="lg:w-1/2 w-full">
+          {project.description &&
+            <p className="mb-3">{fmt(project.description, locale!)}</p>
+          }
 
-        <ul className={style.projectHeader__technologies}>
-          {project.technologies && <li>{project.technologies.join(', ')}</li>}
-        </ul>
-
-        {project.description && <p>{fmt(project.description, locale!)}</p>}
-        {project.extraDescription && <p>{project.extraDescription}</p>}
-      </div>
-
-      <img
-        className={style.projectHeader__image}
-        src={project.imageUrl}
-        width="1200"
-        height="1200"
-        alt=""
-      />
+          {project.technologies ? (
+              <TechList technologies={project.technologies} />
+            ) : null}
+        </div>
     </header>
   );
 }

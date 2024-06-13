@@ -3,6 +3,7 @@ import { useRouter } from 'next/router';
 import { Project } from '../../types';
 import { fmt, getLocale } from '../../utils/useTranslation';
 import Link from 'next/link';
+import TechList from '../TechList';
 interface Prop {
   project: Project;
   reverse: boolean;
@@ -25,16 +26,7 @@ export default function ProjectTile({ project, reverse }: Prop): JSX.Element {
           {project.description && <p className="section-text">{fmt(project.description, locale!)}</p>}
 
           {project.technologies ? (
-            <div className="flex flex-wrap text-sm gap-4">
-              {project.technologies?.map((tech, index) => (
-                <div
-                  key={`${index}`}
-                  className="border-[1.25px] border-solid py-1 px-2 text-center"
-                >
-                  {tech}
-                </div>
-              ))}
-            </div>
+            <TechList technologies={project.technologies} />
           ) : null}
         </div>
 
