@@ -22,11 +22,20 @@ const ProjectPage: NextPageWithLayout = ({project}: Prop) => {
             { project ?  (
                 <>
                     <ProjectHeader project={project} />
+                    <div className="w-full h-96 overflow-hidden mb-16"> 
+                        <img
+                            className="w-full h-full object-cover"
+                            src={project.imageUrl}
+                            width="1200"
+                            height="1200"
+                            alt=""
+                        />
+                    </div>
                     <ProjectBody project={project} />
                 </>
              ) : "404 Not found"}
             <footer>
-                <div className="page-project-footer-description">
+                <div className="page-project-footer-description mt-8 flex flex-col gap-4">
                     <h3>Hva annet har vi gjort?</h3>
                     <p>
                         Ta gjerne en titt innom <Link href="/prosjekter">prosjektoversikten</Link> vår for å

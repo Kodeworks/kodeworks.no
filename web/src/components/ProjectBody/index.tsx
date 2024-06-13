@@ -24,14 +24,14 @@ export default function ProjectBody({ project }: Prop): JSX.Element {
               </div>
             ) : projectContents.length === 1 && projectContents[0].type === 'wideimage' ? (
               <img
-                className="project-image-wide"
+                className="project-image-wide my-12"
                 src={(projectContents[0].value as ImageContent).url}
                 width="320"
                 height="200"
                 alt={(projectContents[0].value as ImageContent).alt}
               />
             ) : (
-              <article>
+              <article className="flex flex-col gap-10">
                 {projectContents.map((content, contentId) => (
                   <Fragment key={contentId}>
                     {content.type === 'paragraph' ? (
