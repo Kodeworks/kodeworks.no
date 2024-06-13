@@ -12,6 +12,7 @@ import dictionary from '../components/MobileNavigation/dict';
 import '../styles/kw.css';
 import { useTranslation } from '../utils/useTranslation';
 import Footer from '../components/Footer';
+import { Kontakt } from '../components/Landing';
 
 export type NextPageWithLayout<P = {}, IP = P> = NextPage<P, IP> & {
   getLayout?: (page: ReactElement) => ReactNode;
@@ -32,6 +33,9 @@ export default function App({ Component, pageProps }: AppPropsWithLayout): JSX.E
       <>
         <Main />
         {getLayout(<Component {...pageProps} />)}
+        <div className="section-padding lg:mt-24 mt-12">
+          <Kontakt />
+        </div>
         <Footer />
       </>
   );
@@ -136,7 +140,7 @@ function Main(): JSX.Element {
           >
             <span className="lg:text-2xl text-lg text-black hover:text-black">Håndboka</span>
           </Link>
-          <Link href="/#kontaktoss">
+          <Link href="#kontaktoss">
             <button className="button xl:px-8 px-4 py-2 border-none">
                 Kontakt oss
             </button>

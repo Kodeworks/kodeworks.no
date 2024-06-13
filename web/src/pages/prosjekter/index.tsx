@@ -40,10 +40,11 @@ export default function Projects({ projects }: { projects: Project[] }): JSX.Ele
 
 export async function getStaticProps() {
   const projects = await getProjects();
+  const projectsToShow = projects.filter(p => p.name !== 'Administration');
 
   return {
     props: {
-      projects,
+      projects: projectsToShow,
     },
     revalidate: 10,
   };

@@ -18,7 +18,7 @@ const Oppdrag = () => {
                         <p>david@kodeworks.no</p>
                         <p>99 49 99 00</p>
                         <div>
-                            <Link href="/#kontaktoss">
+                            <Link href="#kontaktoss">
                                 <button className="button xl:px-8 px-6 py-3 border-none">Kontakt oss</button>
                             </Link>
                         </div>

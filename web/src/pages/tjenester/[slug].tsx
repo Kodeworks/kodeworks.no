@@ -25,8 +25,6 @@ export default function Tjenester({ slug }: Props): JSX.Element {
           ))}
         </div>
       </section>
-
-      <Kontakt />
     </main>
   );
 }
