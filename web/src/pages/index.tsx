@@ -93,11 +93,6 @@ function Home({ people, projects }: { people: Person[]; projects: Project[] }): 
       <div className="section-spacer"></div>
 
       <Konsulenter people={people} />
-
-      <div className="section-spacer"></div>
-
-      <Kontakt />
-
     </div>
   );
 }
