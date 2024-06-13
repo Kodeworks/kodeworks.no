@@ -25,11 +25,11 @@ const ProjectPage: NextPageWithLayout = ({project}: Prop) => {
                             Ta gjerne en titt innom <Link href="/prosjekter">prosjektoversikten</Link> vår for å
                             lese mer om våre andre prosjekter.
                         </p>
-                        <p>
+                        {/* <p>
                             Vi ser også etter utviklere til kontorene våre i Oslo og Trondheim. Sjekk ut{' '}
                             <Link href="/karriere">lønnskalkulatoren</Link>, og våre{' '}
                             <Link href="/karriere">ledige stillinger</Link>.
-                        </p>
+                        </p> */}
                     </div>
                     <div className="page-project-footer-contact">
                         <div className="page-project-footer-contact-column">

@@ -1,3 +1,4 @@
+import { Kontakt } from '../../components/Landing';
 import Seksjon from '../../components/tjenester/Seksjon';
 import { tjenesteAlternativer } from '../../constants/tjenesteAlternativer';
 
@@ -9,7 +10,7 @@ export default function Tjenester({ slug }: Props): JSX.Element {
   const tjeneste = tjenesteAlternativer.find((tjeneste) => tjeneste.slug === slug) ?? tjenesteAlternativer[0];
   return (
     <main className="main mt-0 pt-40">
-      <section>
+      <section className='lg:mb-40 mb-24'>
         <header className="flex flex-col w-full">
           <div className="flex items-center mb-16">
             <h2 className="mr-8 header-title"> {tjeneste.tittel} </h2>
@@ -24,6 +25,8 @@ export default function Tjenester({ slug }: Props): JSX.Element {
           ))}
         </div>
       </section>
+
+      <Kontakt />
     </main>
   );
 }

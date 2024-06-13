@@ -461,6 +461,11 @@ ol {
   line-height: 3.5rem;
 }
 
+.section-text {
+  @apply text-xl;
+  line-height: 1.5;
+}
+
 .button-unstyled {
   appearance: none;
   border: none;
@@ -515,5 +520,5 @@ ol {
 }
 
 .header-title {
-  @apply md:text-7xl text-4xl;
+  @apply md:text-7xl text-6xl;
 }

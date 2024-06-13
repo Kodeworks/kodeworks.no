@@ -3,7 +3,7 @@ import { tjenesteAlternativer } from '../../../constants/tjenesteAlternativer';
 
 const Tjenester = () => {
   return (
-    <div className="flex flex-col section-padding">
+    <div className="flex flex-col">
       <h2 className="section-title">Våre tjenester</h2>
       <div className="hidden md:flex flex-row space-x-8">
         {tjenesteAlternativer.map((tjeneste) => (

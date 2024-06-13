@@ -15,7 +15,7 @@ const Projects = ({ projects }: { projects: Project[] }) => {
   }, [projects]);
 
   return (
-    <div className="flex flex-col section-padding">
+    <div className="flex flex-col">
       <h2 className="section-title">Våre prosjekter</h2>
       <div className="grid lg:grid-cols-2 grid-cols-1 gap-y-12 gap-x-4">
         {projectsToShow.map((project) => (

@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Oppdrag = () => {
     return (
-        <div className="flex flex-col section-padding">
+        <div className="flex flex-col">
             <div className="flex md:flex-row flex-col w-full justify-start gap-8">
                 {/* Text section initially placed first but will move based on order in CSS */}
                 <div className="flex flex-col justify-between w-full md:order-2 order-1">
