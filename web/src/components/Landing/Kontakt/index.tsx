@@ -58,7 +58,7 @@ const Kontakt = () => {
         <h2>Kontakt oss</h2>
         <p>
           Vil du ha rask hjelp eller ekspertråd? <br></br>
-          Ta kontakt med oss for generell støtte, eller ring David direkte.
+          Ta kontakt med oss så hjelper vi deg.
         </p>
         <div className="flex flex-col items-start">
           <p className="flex items-center justify-center gap-4">
