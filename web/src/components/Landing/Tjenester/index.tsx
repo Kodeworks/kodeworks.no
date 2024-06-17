@@ -20,12 +20,11 @@ const Tjenester = () => {
               <h3 className="mb-4 text-3xl">{tjeneste.tittel}</h3>
               <p className="text-xl">{tjeneste.tekst}</p>
             </div>
-            {/* Kommentert ut inntil vi har skrevet ferdig tekstene 
               <div className="lg:mt-8 mt-4">
                 <Link href={`/tjenester/${tjeneste.slug}`} className="green-link">
                   Les mer
                 </Link>
-            </div> */}
+            </div>
           </article>
           
         ))}
