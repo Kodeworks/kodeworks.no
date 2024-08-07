@@ -38,7 +38,7 @@ const Tjenester = () => {
               className="snap-start flex-shrink-0 w-4/5 max-w-xs"
             >
               <img
-                className="w-full rounded-2xl"
+                className="w-full"
                 src={tjeneste.bilde}
                 alt={tjeneste.tittel}
               />
