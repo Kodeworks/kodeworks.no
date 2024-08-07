@@ -3,7 +3,7 @@ import { AppProps } from 'next/app';
 import Head from 'next/head';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import React, { ReactElement, ReactNode, useContext, useEffect, useState } from 'react';
+import React, { FC, ReactElement, ReactNode, useContext, useEffect, useState } from 'react';
 
 import Layout from '../components/Layout';
 import MobileNavigation from '../components/MobileNavigation';
@@ -24,19 +24,26 @@ type AppPropsWithLayout = AppProps & {
   Component: NextPageWithLayout;
 };
 
+
 function defaultLayout(page: ReactElement) {
   return <Layout>{page}</Layout>;
 }
 
+interface KontaktProps {
+  title: string;
+  subject: string;
+}
+
 export default function App({ Component, pageProps }: AppPropsWithLayout): JSX.Element {
   const getLayout = Component.getLayout ?? defaultLayout;
+  const kontakt = pageProps.kontakt as KontaktProps;
 
   return (
       <>
         <Main />
         {getLayout(<Component {...pageProps} />)}
         <div className="section-padding lg:mt-24 mt-12">
-          <Kontakt />
+          <Kontakt title={kontakt ? kontakt.title : ''} subject={kontakt ? kontakt.subject : ''} />
         </div>
         <Footer />
       </>

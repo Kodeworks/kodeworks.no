@@ -1,7 +1,14 @@
 import { useEffect, useState } from "react";
 import "./styles.css";
 
-const Kontakt = () => {
+interface Props {
+  title?: string;
+  body?: string;
+  subject?: string;
+  redirect?: string;
+}
+
+const Kontakt = ({ title, subject, body, redirect }: Props) => {
   const [ dispatchSuccess, setDispatchSuccess ] = useState(false);
   const [ hasMountedForm, setHasMountedForm ] = useState(false);
   const [ isDispatching, setIsDispatching ] = useState(false);
@@ -45,9 +52,9 @@ const Kontakt = () => {
     }
   });
 
-
-  return (
-    <>
+  if (!title) {
+    return (
+<>
     <div id="kontaktoss" className={dispatchSuccess ? 'hidden' : 'flex lg:flex-row flex-col gap-10 w-full'}>
       <img
         src="/static/photos/kontoret.jpeg"
@@ -70,7 +77,6 @@ const Kontakt = () => {
             +47 416 70 269
           </p>
         </div>
-
         <form className="w-full" id="form">
           <input type="hidden" name="access_key" value="462247df-28ef-4e87-a5c8-8f4fc7263636" />
           <input type="hidden" name="subject" value="Ny kontakt webside" />
@@ -124,7 +130,77 @@ const Kontakt = () => {
       </p>
     </div>
     </>
-  );
+    )
+  } else {
+    return (
+      <>
+          <div id="kontaktoss" className={dispatchSuccess ? 'hidden' : 'flex lg:flex-row flex-col gap-10 w-full'}>
+            <div className="flex flex-col items-start lg:justify-between justify-start gap-4 w-full">
+              <h2>{title}</h2>
+              {
+                body && (
+                  <p>
+                    Vil du ha rask hjelp eller ekspertråd? <br></br>
+                    Ta kontakt med oss så hjelper vi deg.
+                  </p>
+                )
+              }
+              <form className="w-full" id="form">
+                <input type="hidden" name="access_key" value="462247df-28ef-4e87-a5c8-8f4fc7263636" />
+                <input type="hidden" name="subject" value={subject} />
+                <input type="hidden" name="from_name" value="kodeworks.no" />
+                <input type="hidden" name="redirect" value={redirect ?? 'https://kodeworks.no/#kontaktoss'} />
+                <div className="flex lg:flex-row flex-col gap-4 w-full">
+                  <div className="flex flex-col lg:w-1/3 w-4/5 gap-4">
+                      <div className="flex flex-col gap-2">
+                        <label htmlFor="navn">
+                          Navn
+                        </label>
+                        <input type="text" required id="navn" name="navn" placeholder="Ola Nordmann" className="kontakt-input" />
+                      </div>
+      
+                      <div className="flex flex-col gap-2">
+                        <label htmlFor="email">
+                          E-mail
+                        </label>
+                        <input type="email" required id="email" name="epost" placeholder="ola@gmail.no" className="kontakt-input" />
+                      </div>
+      
+                      <div className="flex flex-col gap-2">
+                        <label htmlFor="navn">
+                          Telefon nummer
+                        </label>
+                        <input type="tel" id="navn" required name="telefon" placeholder="99 99 99 99" className="kontakt-input" />
+                      </div>
+                  </div>
+      
+                    <div className="flex flex-col gap-2 lg:w-1/2 w-4/5">
+                      <label htmlFor="melding">
+                        Melding
+                      </label>
+                      <textarea id="navn" name="melding" placeholder="Si noe kort om prosjektet (valgfritt)" rows={5} className="kontakt-input h-full" />
+                    </div>
+                  </div>
+      
+                  <button type="submit" disabled={isDispatching} className="button text-xl mt-4 py-3 pl-2 px-2 lg:w-1/3 w-4/5">
+                    {isDispatching ? "Sender..." : "Send melding"}
+                  </button>
+                </form>
+      
+            </div>
+          </div>
+          <div className={dispatchSuccess ? 'flex flex-col text-center gap-10 w-full mb-32' : 'hidden'}>
+            <h2>
+              Takk for din henvendelse! <br></br>
+            </h2>
+            <p>
+              Vi vil kontakte deg snart for å avtale tid for gratis konsultasjon.
+            </p>
+          </div>
+          </>
+          )
+  }
 };
+
 
 export default Kontakt;
