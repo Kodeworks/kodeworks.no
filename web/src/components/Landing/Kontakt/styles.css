@@ -1,3 +1,4 @@
 .kontakt-input {
     @apply py-4 px-3 border-black border-[1.25px];
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
