@@ -13,11 +13,11 @@ const StartupPage: NextPageWithLayout = () => {
     {
       title: 'Hva får du?',
       text: 'Sammen gjennomgår vi dine prosjektkrav, og kommer med anbefalinger for hvordan du kan realisere prosjektet. Vi gir deg en oversikt over hva som er mulig å få til, og hva som er realistisk innenfor din tidsramme og budsjett.',
-      imageUrl: 'https://cdn.sanity.io/images/zkl0178p/production/d763f0c01be6aea31f7da09052738ded1db0db73-960x522.jpg',
+      imageUrl:
+        'https://cdn.sanity.io/images/zkl0178p/production/d763f0c01be6aea31f7da09052738ded1db0db73-960x522.jpg',
       imageAlt: 'Håndtrykk mellom to personer.',
       reverse: true,
     },
-
   ];
 
   return (
@@ -45,7 +45,9 @@ const StartupPage: NextPageWithLayout = () => {
                 } flex lg:flex-row flex-col items-center gap-[44px]`}
               >
                 <img
-                  className={`${section.reverse ? 'lg:order-last' : 'order-first'} lg:w-[30%] w-full`}
+                  className={`${
+                    section.reverse ? 'lg:order-last' : 'order-first'
+                  } lg:w-[30%] w-full`}
                   style={{ aspectRatio: '16/9', maxHeight: '300px' }}
                   src={section.imageUrl}
                   alt={section.imageAlt}
@@ -53,9 +55,7 @@ const StartupPage: NextPageWithLayout = () => {
                 <div className="lg:w-1/3 w-full flex flex-col justify-between">
                   <div className="flex flex-col gap-4">
                     <h3 className="section-title">{section.title}</h3>
-                    {section.text && (
-                      <p className="section-text">{section.text}</p>
-                    )}
+                    {section.text && <p className="section-text">{section.text}</p>}
                   </div>
                 </div>
               </article>

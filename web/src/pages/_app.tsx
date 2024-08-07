@@ -15,7 +15,6 @@ import Footer from '../components/Footer';
 import { Kontakt } from '../components/Landing';
 import useGtag from '../components/useGtag';
 
-
 export type NextPageWithLayout<P = {}, IP = P> = NextPage<P, IP> & {
   getLayout?: (page: ReactElement) => ReactNode;
 };
@@ -23,7 +22,6 @@ export type NextPageWithLayout<P = {}, IP = P> = NextPage<P, IP> & {
 type AppPropsWithLayout = AppProps & {
   Component: NextPageWithLayout;
 };
-
 
 function defaultLayout(page: ReactElement) {
   return <Layout>{page}</Layout>;
@@ -39,14 +37,14 @@ export default function App({ Component, pageProps }: AppPropsWithLayout): JSX.E
   const kontakt = pageProps.kontakt as KontaktProps;
 
   return (
-      <>
-        <Main />
-        {getLayout(<Component {...pageProps} />)}
-        <div className="section-padding lg:mt-24 mt-12">
-          <Kontakt title={kontakt ? kontakt.title : ''} subject={kontakt ? kontakt.subject : ''} />
-        </div>
-        <Footer />
-      </>
+    <>
+      <Main />
+      {getLayout(<Component {...pageProps} />)}
+      <div className="section-padding lg:mt-24 mt-12">
+        <Kontakt title={kontakt ? kontakt.title : ''} subject={kontakt ? kontakt.subject : ''} />
+      </div>
+      <Footer />
+    </>
   );
 }
 
@@ -107,7 +105,7 @@ function Main(): JSX.Element {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>KodeWorks</title>
       </Head>
-      
+
       <div
         className="lg:visible invisible flex justify-between items-center pt-8 pb-8"
         id="menu-bar"
@@ -124,7 +122,7 @@ function Main(): JSX.Element {
           >
             <span className="lg:text-2xl text-lg text-black hover:text-black">Våre eksperter</span>
           </Link>
-          
+
           <Link
             href="/prosjekter"
             className={`no-underline leading-none nav-link ${
@@ -142,7 +140,7 @@ function Main(): JSX.Element {
           >
             <span className="lg:text-2xl text-lg text-black hover:text-black">Jobbe i KodeWorks</span>
           </Link> */}
-          
+
           <Link
             href="/handboka"
             className={`no-underline leading-none nav-link ${
@@ -152,17 +150,11 @@ function Main(): JSX.Element {
             <span className="lg:text-2xl text-lg text-black hover:text-black">Håndboka</span>
           </Link>
           <Link href="#kontaktoss">
-            <button className="button xl:px-8 px-4 py-2 border-none">
-                Kontakt oss
-            </button>
+            <button className="button xl:px-8 px-4 py-2 border-none">Kontakt oss</button>
           </Link>
         </div>
       </div>
-      <button
-        onClick={handleMenuButtonClick}
-        id="menu-button"
-        className="lg:invisible"
-      >
+      <button onClick={handleMenuButtonClick} id="menu-button" className="lg:invisible">
         <label className="menuicon-label">
           <span
             className={`menuicon-line-container menuicon-line-container-top${
@@ -185,7 +177,10 @@ function Main(): JSX.Element {
         </label>
       </button>
 
-      <MobileNavigation isOpened={isNavigationOpen} toggleNavigationOpened={handleMenuButtonClick} />
+      <MobileNavigation
+        isOpened={isNavigationOpen}
+        toggleNavigationOpened={handleMenuButtonClick}
+      />
     </>
   );
 }
