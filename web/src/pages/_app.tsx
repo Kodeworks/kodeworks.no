@@ -107,13 +107,13 @@ function Main(): JSX.Element {
       </Head>
 
       <div
-        className="lg:visible invisible flex justify-between items-center py-5"
+        className="flex justify-between items-center py-5"
         id="menu-bar"
       >
         <Link href="/" className="xl:pl-16 pl-8">
           <div id="menu-bar-logo" />
         </Link>
-        <div className="flex xl:gap-x-12 lg:gap-x-6 gap-x-4 xl:pr-16 pr-8">
+        <div className="flex xl:gap-x-12 lg:gap-x-6 gap-x-4 xl:pr-16 pr-8 lg:visible invisible ">
           <Link
             href="/eksperter"
             className={`no-underline leading-none nav-link ${
