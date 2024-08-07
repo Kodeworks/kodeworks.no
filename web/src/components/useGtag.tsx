@@ -15,7 +15,7 @@ const useGtag = () => {
 						// TODO Bytt ut med ekte cookie consent banner som trigger dispatchCookieConsentEvent basert på brukerens valg
 						setTimeout(() => {
 							dispatchCookieConsentEvent(ConsentStatus.GRANTED);
-						}, 5000);
+						}, 2000);
 					}
         }
       }, []);
