@@ -235,7 +235,7 @@ const Kontakt = ({ title, subject, body, redirect }: Props) => {
                 disabled={isDispatching}
                 className="button text-xl mt-4 py-3 pl-2 px-2 lg:w-1/3 w-4/5"
               >
-                {isDispatching ? 'Sender...' : 'Send melding'}
+                {isDispatching ? 'Booker...' : 'Book nå'}
               </button>
             </form>
           </div>
