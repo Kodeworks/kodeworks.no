@@ -11,7 +11,6 @@ const useGtag = () => {
 						loadGtag();
 						console.log('Gtag loaded');
 						cookieConsentListener();
-						console.log('Cookie consent listener added');
 						setIsGtagLoaded(true);
 						// TODO Bytt ut med ekte cookie consent banner som trigger dispatchCookieConsentEvent basert på brukerens valg
 						setTimeout(() => {
@@ -30,7 +29,7 @@ const useGtag = () => {
 			function loadGtag() {
 				const script = document.createElement('script');
 				script.id = 'gtag';
-				script.src = `https://www.googletagmanager.com/gtag/js?id=G-FLXYDD6Z0S`;
+				script.src = `https://www.googletagmanager.com/gtag/js?id=G-BRWDETNRQE`;
 				script.async = true;
 				script.onload = () => {
 					initializeGtag();
