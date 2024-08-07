@@ -167,8 +167,7 @@ const Kontakt = ({ title, subject, body, redirect }: Props) => {
             <h2>{title}</h2>
             {body && (
               <p>
-                Vil du ha rask hjelp eller ekspertråd? <br></br>
-                Ta kontakt med oss så hjelper vi deg.
+                {body}
               </p>
             )}
             <form className="w-full" id="form">
