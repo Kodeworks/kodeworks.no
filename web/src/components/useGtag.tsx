@@ -28,7 +28,7 @@ const useGtag = () => {
   function loadGtag() {
     const script = document.createElement('script');
     script.id = 'gtag';
-    script.src = `https://www.googletagmanager.com/gtag/js?id=G-BRWDETNRQE`;
+    script.src = `https://www.googletagmanager.com/gtag/js?id=G-FLXYDD6Z0S`;
     script.async = true;
     script.onload = () => {
       initializeGtag();
