@@ -107,7 +107,7 @@ function Main(): JSX.Element {
       </Head>
 
       <div
-        className="lg:visible invisible flex justify-between items-center pt-8 pb-8"
+        className="lg:visible invisible flex justify-between items-center py-5"
         id="menu-bar"
       >
         <Link href="/" className="xl:pl-16 pl-8">
