@@ -14,6 +14,7 @@ import {
 } from '../components/Landing/';
 import Teknologier from '../components/Landing/Teknologi';
 import Kunder from '../components/Landing/Kunder';
+import Office from '../components/Landing/Office';
 
 export async function getStaticProps() {
   const people = await getPeople();
@@ -87,6 +88,10 @@ function Home({ people, projects }: { people: Person[]; projects: Project[] }): 
       <div className="section-spacer"></div>
 
       <Konsulenter people={people} />
+      
+      <div className="section-spacer"></div>
+
+      <Office />
     </div>
   );
 }
