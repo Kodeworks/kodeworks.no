@@ -35,11 +35,11 @@ const AnimatedHeader = () => {
 
   return (
     <header className="flex flex-col mt-16 pt-20">
-      <div className="flex items-center mb-7">
+      <div className="flex flex-col sm:flex-row items-start sm:items-center mb-7">
         <h2 className="mr-8 header-title">Dine </h2>
         <h2 className="animated-word green-text header-title">{dine[dineIndex]}</h2>
       </div>
-      <div className="flex items-center mb-20">
+      <div className="flex flex-col sm:flex-row items-start sm:items-center mb-20">
         <h2 className="mr-8 green-text header-title">Våre </h2>
         <h2 className="animated-word header-title">{vaare[vaareIndex]}</h2>
       </div>

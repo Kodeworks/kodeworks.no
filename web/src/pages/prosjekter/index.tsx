@@ -4,6 +4,7 @@ import { fmt, getLocale, useTranslation } from '../../utils/useTranslation';
 import { useRouter } from 'next/router';
 import { getProjects } from '../../lib/sanity';
 import { Project } from '../../types';
+import PageHeader from '../../components/PageHeader';
 
 export default function Projects({ projects }: { projects: Project[] }): JSX.Element {
   const locale = getLocale(useRouter());
@@ -13,10 +14,7 @@ export default function Projects({ projects }: { projects: Project[] }): JSX.Ele
     <main className="main mt-0 pt-40">
       <section>
         <header className="flex flex-col w-full">
-          <div className="flex items-center mb-16">
-            <h2 className="mr-8 header-title">Våre </h2>
-            <h2 className="green-text header-title">prosjekter</h2>
-          </div>
+          <PageHeader firstWord={'Våre '} secondWord={'prosjekter'}/>
 
           <div className="header-text-container">
             <p className="header-text">

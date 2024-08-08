@@ -527,5 +527,5 @@ ol {
 }
 
 .header-title {
-  @apply md:text-7xl text-6xl;
+  @apply md:text-7xl sm:text-6xl text-5xl;
 }
