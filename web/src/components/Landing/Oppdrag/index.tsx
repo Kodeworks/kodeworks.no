@@ -16,7 +16,7 @@ const Oppdrag = () => {
                     <div className="flex flex-col">
                         <h3>David Vimo Garner</h3>
                         <p>david@kodeworks.no</p>
-                        <p>99 49 99 00</p>
+                        <p>+47 957 29 666</p>
                         <div>
                             <Link href="#kontaktoss">
                                 <button className="button xl:px-8 px-6 py-3 border-none">Kontakt oss</button>

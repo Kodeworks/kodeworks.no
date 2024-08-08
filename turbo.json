@@ -1,18 +1,18 @@
 {
-	"baseBranch": "origin/master",
-	"pipeline": {
-		"build": {
-			"dependsOn": ["^build"],
-			"outputs": [".next/**", "dist/**"]
-		},
+  "baseBranch": "origin/master",
+  "pipeline": {
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": [".next/**", "dist/**"]
+    },
     "deploy": {
       "dependsOn": ["build"]
     },
-		"lint": {
-			"outputs": []
-		},
-		"dev": {
-			"cache": false
-		}
-	}
+    "lint": {
+      "outputs": []
+    },
+    "dev": {
+      "cache": false
+    }
+  }
 }

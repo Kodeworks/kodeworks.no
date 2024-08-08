@@ -516,7 +516,7 @@ ol {
 }
 
 .header-text {
-  @apply lg:text-4xl text-xl;
+  @apply lg:text-4xl text-xl leading-relaxed;
 }
 
 .header-title {

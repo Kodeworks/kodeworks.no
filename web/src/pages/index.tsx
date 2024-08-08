@@ -69,27 +69,21 @@ function Home({ people, projects }: { people: Person[]; projects: Project[] }): 
         <Header />
         <LogoReel />
       </div>
-      
       <div className="section-spacer"></div>
-      
+
       <Tjenester />
       <div className="section-spacer"></div>
-      
-      
-      <Teknologier technologies={staticTechnologies} />
 
+      <Teknologier technologies={staticTechnologies} />
       <div className="section-spacer"></div>
 
       <Prosjekter projects={projects} />
-
       <div className="section-spacer"></div>
 
       <Oppdrag />
-
       <div className="section-spacer"></div>
 
       <Kunder />
-
       <div className="section-spacer"></div>
 
       <Konsulenter people={people} />
