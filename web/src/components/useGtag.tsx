@@ -12,7 +12,7 @@ const useGtag = () => {
         console.log('Gtag loaded');
         cookieConsentListener();
         setIsGtagLoaded(true);
-        // TODO Bytt ut med ekte cookie consent banner som trigger dispatchCookieConsentEvent basert på brukerens valg
+        // TODO: Swap with a proper cookie consent banner tiggering dispatchCookieConsentEvent based on user choice
         setTimeout(() => {
           dispatchCookieConsentEvent(ConsentStatus.GRANTED);
         }, 2000);

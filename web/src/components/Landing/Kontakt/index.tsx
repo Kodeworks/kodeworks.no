@@ -61,7 +61,7 @@ const Kontakt = ({ title, subject, body, redirect }: Props) => {
         >
           <img
             src="/static/photos/kontoret.jpeg"
-            alt="Kodeworks kontoret Oslo"
+            alt="KodeWorks Oslo"
             className="md:w-3/6 w-4/5 h-full object-cover overflow-hidden"
           />
           <div className="flex flex-col items-start lg:justify-between justify-start gap-4 w-full">
@@ -88,11 +88,11 @@ const Kontakt = ({ title, subject, body, redirect }: Props) => {
               <div className="flex lg:flex-row flex-col gap-4 w-full">
                 <div className="flex flex-col lg:w-1/3 w-4/5 gap-4">
                   <div className="flex flex-col gap-2">
-                    <label htmlFor="navn">Navn</label>
+                    <label htmlFor="name">Navn</label>
                     <input
                       type="text"
                       required
-                      id="navn"
+                      id="name"
                       name="navn"
                       placeholder="Ola Nordmann"
                       className="kontakt-input"
@@ -100,34 +100,34 @@ const Kontakt = ({ title, subject, body, redirect }: Props) => {
                   </div>
 
                   <div className="flex flex-col gap-2">
-                    <label htmlFor="email">E-mail</label>
+                    <label htmlFor="email">Epost</label>
                     <input
                       type="email"
                       required
                       id="email"
                       name="epost"
-                      placeholder="ola@gmail.no"
+                      placeholder="din@epost.no"
                       className="kontakt-input"
                     />
                   </div>
 
                   <div className="flex flex-col gap-2">
-                    <label htmlFor="navn">Telefon nummer</label>
+                    <label htmlFor="telephone">Telefon</label>
                     <input
                       type="tel"
-                      id="navn"
+                      id="telephone"
                       required
                       name="telefon"
-                      placeholder="99 99 99 99"
+                      placeholder="+47"
                       className="kontakt-input"
                     />
                   </div>
                 </div>
 
                 <div className="flex flex-col gap-2 lg:w-1/2 w-4/5">
-                  <label htmlFor="melding">Melding</label>
+                  <label htmlFor="message">Melding</label>
                   <textarea
-                    id="navn"
+                    id="message"
                     name="melding"
                     placeholder="Skriv en melding til oss"
                     rows={10}
@@ -182,11 +182,11 @@ const Kontakt = ({ title, subject, body, redirect }: Props) => {
               <div className="flex lg:flex-row flex-col gap-4 w-full">
                 <div className="flex flex-col lg:w-1/3 w-4/5 gap-4">
                   <div className="flex flex-col gap-2">
-                    <label htmlFor="navn">Navn</label>
+                    <label htmlFor="name">Navn</label>
                     <input
                       type="text"
                       required
-                      id="navn"
+                      id="name"
                       name="navn"
                       placeholder="Ola Nordmann"
                       className="kontakt-input"
@@ -194,34 +194,34 @@ const Kontakt = ({ title, subject, body, redirect }: Props) => {
                   </div>
 
                   <div className="flex flex-col gap-2">
-                    <label htmlFor="email">E-mail</label>
+                    <label htmlFor="email">Epost</label>
                     <input
                       type="email"
                       required
                       id="email"
                       name="epost"
-                      placeholder="ola@gmail.no"
+                      placeholder="din@epost.no"
                       className="kontakt-input"
                     />
                   </div>
 
                   <div className="flex flex-col gap-2">
-                    <label htmlFor="navn">Telefon nummer</label>
+                    <label htmlFor="telephone">Telefon</label>
                     <input
                       type="tel"
-                      id="navn"
                       required
+                      id="telephone"
                       name="telefon"
-                      placeholder="99 99 99 99"
+                      placeholder="+47"
                       className="kontakt-input"
                     />
                   </div>
                 </div>
 
                 <div className="flex flex-col gap-2 lg:w-1/2 w-4/5">
-                  <label htmlFor="melding">Melding</label>
+                  <label htmlFor="message">Melding</label>
                   <textarea
-                    id="navn"
+                    id="message"
                     name="melding"
                     placeholder="Si noe kort om prosjektet (valgfritt)"
                     rows={5}

@@ -31,7 +31,7 @@ const StartupPage: NextPageWithLayout = () => {
 
           <div className="header-text-container">
             <p className="header-text">
-              Vi tilbyr gratis konsulenttime for selskap som ønsker å realisere IT-prosjekter.
+              Vi tilbyr gratis konsulenttime for selskap som ønsker å realisere sine IT-prosjekter.
             </p>
           </div>
         </header>
@@ -68,7 +68,7 @@ const StartupPage: NextPageWithLayout = () => {
 };
 
 const CustomKontakt = () => {
-  return <div className="section-padding">Kontakt side</div>;
+  return <div className="section-padding">Kontakt oss</div>;
 };
 
 StartupPage.getInitialProps = async () => {
