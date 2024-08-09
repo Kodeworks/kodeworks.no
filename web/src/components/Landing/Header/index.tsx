@@ -15,7 +15,6 @@ const dine = [
 const vaare = [
   'utviklere',
   'eksperter',
-  'kunnskaper',
   'erfaringer',
   'konsulenter'
 ];
@@ -23,25 +22,29 @@ const vaare = [
 const AnimatedHeader = () => {
   const [dineIndex, setDineIndex] = useState(0);
   const [vaareIndex, setVaareIndex] = useState(0);
+  const [backwardsAnimation, setBackwardsAnimation] = useState(false);
+  const [startAnimate, setStartAnimate] = useState(false);
 
   useEffect(() => {
     const intervalId = setInterval(() => {
       setDineIndex((prevIndex) => (prevIndex + 1) % dine.length);
       setVaareIndex((prevIndex) => (prevIndex + 1) % vaare.length);
-    }, 3000);
+      setStartAnimate(true);
+      setBackwardsAnimation(!backwardsAnimation);
+    }, 4000);
 
     return () => clearInterval(intervalId);
-  }, []);
+  });
 
   return (
-    <header className="flex flex-col mt-16 pt-20">
+    <header className="flex flex-col mt-16 pt-20 overflow-hidden">
       <div className="flex flex-col sm:flex-row items-start sm:items-center mb-7">
-        <h2 className="mr-8 header-title">Dine </h2>
-        <h2 className="animated-word green-text header-title">{dine[dineIndex]}</h2>
+        <h2 className="mr-3 header-title">Dine </h2>
+        <h2 className={`${startAnimate ? backwardsAnimation ? 'animated-word-reversed': 'animated-word' : ''} singleSlide header-title green-text `}>{dine[dineIndex]}</h2>
       </div>
       <div className="flex flex-col sm:flex-row items-start sm:items-center mb-20">
-        <h2 className="mr-8 green-text header-title">Våre </h2>
-        <h2 className="animated-word header-title">{vaare[vaareIndex]}</h2>
+        <h2 className="mr-3 green-text header-title">Våre </h2>
+        <h2 className={`${startAnimate ? backwardsAnimation ? 'animated-word-reversed': 'animated-word' : ''} singleSlide header-title`}>{vaare[vaareIndex]}</h2>
       </div>
       <div className="header-text-container">
         <p className="header-text">

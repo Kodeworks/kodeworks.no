@@ -8,7 +8,19 @@
 .animated-word {
     display: inline-block;
     margin-left: 5px;
-    animation: slide 3s infinite;
+    animation: slide 4s infinite;
+}
+
+.singleSlide {
+    display: inline-block;
+    margin-left: 5px;
+    animation: slide 4.5s;
+}
+
+.animated-word-reversed {
+    display: inline-block;
+    margin-left: 5px;
+    animation: slideBackwards 4s infinite ;
 }
 
 .pink-text {
@@ -24,16 +36,35 @@
       transform: translateY(100%);
       opacity: 0;
     }
-    10% {
+    20% {
       transform: translateY(0);
       opacity: 1;
     }
-    90% {
+    80% {
       transform: translateY(0);
       opacity: 1;
     }
     100% {
       transform: translateY(-100%);
+      opacity: 0;
+    }
+}
+
+@keyframes slideBackwards {
+    0% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    20% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    80% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(100%);
       opacity: 0;
     }
 }
