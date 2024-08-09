@@ -19,7 +19,10 @@ const Office = () => {
     <div className="flex flex-col gap-y-16">
       {offices.map((office, index) => {
         return (
-          <div className={`${index % 2 === 0 ? 'items-start' : 'items-end'} flex flex-col w-full justify-end gap-2`}>
+          <div 
+            key={office.title}
+            className={`${index % 2 === 0 ? 'items-start' : 'items-end'} flex flex-col w-full justify-end gap-2`}
+          >
             <h3>{office.title}</h3>
             <div className={`${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} flex md:flex-row flex-col justify-between md:items-end items-start w-full gap-6`}>
               <img
