@@ -22,6 +22,9 @@ const useGtag = () => {
 
   // Check if window exists, so it only runs on client side
   function gtag(...args: any[]) {
+    if (window && !window.dataLayer) {
+      window.dataLayer = [];
+    }
     window && window.dataLayer.push(args);
   }
 
@@ -31,6 +34,7 @@ const useGtag = () => {
     script.src = `https://www.googletagmanager.com/gtag/js?id=G-FLXYDD6Z0S`;
     script.async = true;
     script.onload = () => {
+      window.dataLayer = window.dataLayer || [];
       initializeGtag();
       defaultConsent();
     };
