@@ -13,7 +13,7 @@ import '../styles/kw.css';
 import { useTranslation } from '../utils/useTranslation';
 import Footer from '../components/Footer';
 import { Kontakt } from '../components/Landing';
-import useGtag from '../components/useGtag';
+// import useGtag from '../components/useGtag';
 
 export type NextPageWithLayout<P = {}, IP = P> = NextPage<P, IP> & {
   getLayout?: (page: ReactElement) => ReactNode;
@@ -53,8 +53,8 @@ function Main(): JSX.Element {
   const [isNavigationOpen, setIsNavigationOpen] = useState(false);
   const [scrollTop, setScrollTop] = useState(0);
   const router = useRouter();
-  // Add google analytics
-  useGtag();
+
+  // useGtag();
 
   useEffect(() => {
     function onRouteChangeStart(): void {
