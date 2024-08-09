@@ -244,7 +244,6 @@ ol {
 }
 
 .nav-link {
-  border-top: 5px solid transparent;
   text-decoration: none;
   background-image: linear-gradient(var(--color-green), var(--color-green));
   background-position: 0 100%;
@@ -255,11 +254,20 @@ ol {
 }
 
 .nav-link.active {
-  border-color: var(--color-green);
+  background-size: 100% 2px;
 }
 
 .nav-link:hover {
-  background-size: 100% 2px;
+  animation: backgroundHover 0.3s forwards;
+}
+
+@keyframes backgroundHover {
+  0% {
+    background-size: 0% 2px;
+  }
+  100% {
+    background-size: 100% 2px;
+  }
 }
 
 #menu-button {
