@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router';
 import { NextPageWithLayout } from '../../_app';
 
-const StartupPage: NextPageWithLayout = () => {
+const CompanyPage: NextPageWithLayout = () => {
   const sections = [
     {
       title: 'Realisere din idé',
@@ -67,11 +67,11 @@ const StartupPage: NextPageWithLayout = () => {
   );
 };
 
-const CustomKontakt = () => {
+const CustomContact = () => {
   return <div className="section-padding">Kontakt oss</div>;
 };
 
-StartupPage.getInitialProps = async () => {
+CompanyPage.getInitialProps = async () => {
   return {
     kontakt: {
       title: 'Book gratis konsulenttime',
@@ -81,4 +81,4 @@ StartupPage.getInitialProps = async () => {
   };
 };
 
-export default StartupPage;
+export default CompanyPage;

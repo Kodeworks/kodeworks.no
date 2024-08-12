@@ -7,15 +7,14 @@
 
   --spacer-large: 120px;
   --spacer-medium: 60px;
-  --color-green: #B6FF9E;
+  --color-green: #b6ff9e;
   --color-grey: #e8e7e6;
   --color-dark-grey: #666;
 
   --color-new-pink: #fad5d5;
 
-  --color-new-green: #35664C;
+  --color-new-green: #35664c;
   --color-new-green-dark: #254333;
-
 }
 
 a {
@@ -52,11 +51,19 @@ body {
   line-height: 1.4;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Natural Grotesk Light";
 }
 
-p, blockquote, pre, code {
+p,
+blockquote,
+pre,
+code {
   /* font-family: "arial", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif; */
   font-family: "Natural Grotesk Light";
 }
@@ -127,16 +134,16 @@ code {
   display: grid;
   grid-template-columns: 1fr min-content;
   gap: 48px;
-  grid-template-areas: 
-  'navigation logo'
-  'contact other';
+  grid-template-areas:
+    "navigation logo"
+    "contact other";
 }
 
 @media (max-width: 768px) {
   .footer-container {
-    grid-template-areas: 
-    'contact logo'
-    'other logo';
+    grid-template-areas:
+      "contact logo"
+      "other logo";
   }
 }
 
@@ -232,27 +239,35 @@ ol {
   background-color: black;
   -webkit-mask: url(/static/logo.svg) no-repeat center;
   mask: url(/static/logo.svg) no-repeat center;
-  width: 120px;
-  height: 30px;
+  width: 160px;
+  height: 40px;
 }
 
 .nav-link {
-  border-top: 5px solid transparent;
   text-decoration: none;
-  background-image: linear-gradient(var(--color-green),var(--color-green));
+  background-image: linear-gradient(var(--color-green), var(--color-green));
   background-position: 0 100%;
   background-repeat: no-repeat;
   background-size: 0 2px;
-  transition: background-size .3s;
+  transition: background-size 0.3s;
   white-space: nowrap;
 }
 
 .nav-link.active {
-  border-color: var(--color-green);
+  background-size: 100% 2px;
 }
 
 .nav-link:hover {
-  background-size: 100% 2px;
+  animation: backgroundHover 0.3s forwards;
+}
+
+@keyframes backgroundHover {
+  0% {
+    background-size: 0% 2px;
+  }
+  100% {
+    background-size: 100% 2px;
+  }
 }
 
 #menu-button {
@@ -268,16 +283,16 @@ ol {
   width: 140px;
 
   position: fixed;
-  top: 15px;
+  top: 20px;
   right: 15px;
   z-index: 1000;
 }
 
-#menu-bar.dark-mode{
+#menu-bar.dark-mode {
   background-color: black;
 }
 
-#menu-bar.dark-mode span{
+#menu-bar.dark-mode span {
   color: var(--color-green) !important;
 }
 
@@ -293,24 +308,24 @@ ol {
   background-color: var(--color-green);
 }
 
-#menu-bar.grey-mode{
+#menu-bar.grey-mode {
   background-color: var(--color-grey);
 }
 
-#menu-bar.grey-mode .nav-link{
-  background-image: linear-gradient(var(--color-green),var(--color-green));
+#menu-bar.grey-mode .nav-link {
+  background-image: linear-gradient(var(--color-green), var(--color-green));
 }
 
-#menu-bar.green-mode{
+#menu-bar.green-mode {
   background-color: var(--color-green);
 }
 
-#menu-bar.green-mode .nav-link{
-  background-image: linear-gradient(black,black);
+#menu-bar.green-mode .nav-link {
+  background-image: linear-gradient(black, black);
 }
 
 #menu-bar.green-mode .nav-link.active {
-    border-color:  black;
+  border-color: black;
 }
 
 .theme-dark #menu-button {
@@ -480,7 +495,7 @@ ol {
 }
 
 .green-link::after {
-  content: ''; /* Creates an empty pseudo-element */
+  content: ""; /* Creates an empty pseudo-element */
   position: absolute; /* Positions the pseudo-element relative to the link */
   left: 0;
   right: 0;
@@ -520,5 +535,5 @@ ol {
 }
 
 .header-title {
-  @apply md:text-7xl text-6xl;
+  @apply md:text-7xl sm:text-6xl text-5xl;
 }

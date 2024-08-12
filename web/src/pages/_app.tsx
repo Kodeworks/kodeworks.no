@@ -12,8 +12,10 @@ import dictionary from '../components/MobileNavigation/dict';
 import '../styles/kw.css';
 import { useTranslation } from '../utils/useTranslation';
 import Footer from '../components/Footer';
-import { Kontakt } from '../components/Landing';
-// import useGtag from '../components/useGtag';
+import ContactSection from '../components/HomePage/ContactSection';
+// import useGtag from '../components/useGtag';´
+
+
 
 export type NextPageWithLayout<P = {}, IP = P> = NextPage<P, IP> & {
   getLayout?: (page: ReactElement) => ReactNode;
@@ -41,7 +43,7 @@ export default function App({ Component, pageProps }: AppPropsWithLayout): JSX.E
       <Main />
       {getLayout(<Component {...pageProps} />)}
       <div className="section-padding lg:mt-24 mt-12">
-        <Kontakt title={kontakt ? kontakt.title : ''} subject={kontakt ? kontakt.subject : ''} />
+        <ContactSection title={kontakt ? kontakt.title : ''} subject={kontakt ? kontakt.subject : ''} />
       </div>
       <Footer />
     </>
@@ -107,13 +109,13 @@ function Main(): JSX.Element {
       </Head>
 
       <div
-        className="lg:visible invisible flex justify-between items-center pt-8 pb-8"
+        className="flex justify-between items-center py-5"
         id="menu-bar"
       >
         <Link href="/" className="xl:pl-16 pl-8">
           <div id="menu-bar-logo" />
         </Link>
-        <div className="flex xl:gap-x-12 lg:gap-x-6 gap-x-4 xl:pr-16 pr-8">
+        <div className="flex xl:gap-x-12 lg:gap-x-6 gap-x-4 xl:pr-16 pr-8 lg:visible invisible ">
           <Link
             href="/eksperter"
             className={`no-underline leading-none nav-link ${

@@ -1,15 +1,13 @@
 import { Person } from '../../types';
 import { getPeople } from '../../lib/sanity';
+import PageHeader from '../../components/PageHeader';
 
 export default function People({ people }: { people: Person[] }): JSX.Element {
   return (
     <main className="main mt-0 pt-40">
       <section className="w-full">
         <header className="flex flex-col w-full lg:mb-20 mb-10">
-          <div className="flex items-center mb-16">
-            <h2 className="mr-8 header-title">Våre </h2>
-            <h2 className="green-text header-title">eksperter</h2>
-          </div>
+          <PageHeader firstWord={'Våre'} secondWord={'eksperter'}/>
           <div className="header-text-container">
             <p className="header-text">
               I Kodeworks er vi { people.length } fantastiske mennesker som brenner for faget, fordelt på kontorer i Oslo og Trondheim. Vi tror på verdiskapning gjennom åpenhet, kompetanse og dedikasjon, og vi er engasjerte i å levere førsteklasses løsninger til våre kunder.

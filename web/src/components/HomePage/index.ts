@@ -1,0 +1,11 @@
+export { default as Header } from './Header';
+export { default as LogoReel } from './LogoReel';
+export { default as Services } from './Services';
+export { default as TechnologyReel } from './Services/TechnologyReel';
+export { default as CustomerReviews } from './CustomerReviews';
+export { default as Sales } from './Sales';
+export { default as Projects } from './Projects';
+export { default as Recruitment } from './Recruitment';
+export { default as Consultants } from './Consultants';
+export { default as ContactSection } from './ContactSection';
+export { GreenArrowLeft, GreenArrowRight } from './Icons';
