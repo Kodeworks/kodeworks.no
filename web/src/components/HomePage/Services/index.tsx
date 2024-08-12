@@ -33,9 +33,10 @@ const Services = () => {
       <div className="md:hidden flex items-center justify-between w-full overflow-x-scroll">
         <div className="flex gap-6">
           {serviceAlternatives.map((service, index) => (
-            <div
+            <Link
+              href={`/tjenester/${service.slug}`}
               key={index}
-              className="snap-start flex-shrink-0 w-4/5 max-w-xs"
+              className="snap-start flex-shrink-0 w-4/5 max-w-xs no-underline"
             >
               <img
                 className="w-full"
@@ -44,7 +45,7 @@ const Services = () => {
               />
               <h3 className="text-base">{service.title}</h3>
               <p className="text-sm">{service.text}</p>
-            </div>
+            </Link>
           ))}
         </div>
       </div>
