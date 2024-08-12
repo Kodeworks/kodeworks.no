@@ -35,7 +35,7 @@ const logos = [
 ];
 
 
-const TeknologiReel = () => {
+const TechnologyReel = () => {
   return (
     <div className="logo-reel gap-12">
     {
@@ -75,4 +75,4 @@ const TeknologiReel = () => {
   );
 };
 
-export default TeknologiReel;
+export default TechnologyReel;

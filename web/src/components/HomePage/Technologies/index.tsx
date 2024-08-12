@@ -2,7 +2,7 @@ interface Props {
     technologies: string[];
 }
 
-const Teknologier = ({ technologies }: Props) => {
+const Technologies = ({ technologies }: Props) => {
   return (
     <div className="flex flex-col">
       <h2 className="section-title">Teknologi</h2>
@@ -17,4 +17,4 @@ const Teknologier = ({ technologies }: Props) => {
   );
 };
 
-export default Teknologier;
+export default Technologies;

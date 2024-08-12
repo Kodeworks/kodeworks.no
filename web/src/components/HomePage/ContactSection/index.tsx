@@ -8,7 +8,7 @@ interface Props {
   redirect?: string;
 }
 
-const Kontakt = ({ title, subject, body, redirect }: Props) => {
+const ContactSection = ({ title, subject, body, redirect }: Props) => {
   const [dispatchSuccess, setDispatchSuccess] = useState(false);
   const [hasMountedForm, setHasMountedForm] = useState(false);
   const [isDispatching, setIsDispatching] = useState(false);
@@ -253,4 +253,4 @@ const Kontakt = ({ title, subject, body, redirect }: Props) => {
   }
 };
 
-export default Kontakt;
+export default ContactSection;

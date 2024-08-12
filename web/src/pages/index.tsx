@@ -1,20 +1,19 @@
 import { useEffect, useState } from 'react';
 import { Person, Project } from '../types';
 import { getPeople, getProjects } from '../lib/sanity';
-import '../styles/_page_landing.css';
+import '../styles/_page_home_page.css';
 
 import {
   Header,
-  Tjenester,
-  Oppdrag,
-  Prosjekter,
-  Konsulenter,
-  Kontakt,
+  Services,
+  Sales,
+  Projects,
+  Consultants,
   LogoReel,
-} from '../components/Landing/';
-import Teknologier from '../components/Landing/Teknologi';
-import Kunder from '../components/Landing/Kunder';
-import Office from '../components/Landing/Office';
+} from '../components/HomePage';
+import Technologies from '../components/HomePage/Technologies';
+import Customers from '../components/HomePage/Customers';
+import Office from '../components/HomePage/Office';
 
 export async function getStaticProps() {
   const people = await getPeople();
@@ -72,22 +71,22 @@ function Home({ people, projects }: { people: Person[]; projects: Project[] }): 
       </div>
       <div className="section-spacer"></div>
 
-      <Tjenester />
+      <Services />
       <div className="section-spacer"></div>
 
-      <Teknologier technologies={staticTechnologies} />
+      <Technologies technologies={staticTechnologies} />
       <div className="section-spacer"></div>
 
-      <Prosjekter projects={projects} />
+      <Projects projects={projects} />
       <div className="section-spacer"></div>
 
-      <Oppdrag />
+      <Sales />
       <div className="section-spacer"></div>
 
-      <Kunder />
+      <Customers />
       <div className="section-spacer"></div>
 
-      <Konsulenter people={people} />
+      <Consultants people={people} />
       
       <div className="section-spacer"></div>
 

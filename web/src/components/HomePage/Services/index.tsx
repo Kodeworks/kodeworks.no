@@ -1,27 +1,27 @@
 import Link from 'next/link';
-import { tjenesteAlternativer } from '../../../constants/tjenesteAlternativer';
+import { serviceAlternatives } from '../../../constants/serviceAlternatives';
 
-const Tjenester = () => {
+const Services = () => {
   return (
     <div className="flex flex-col">
       <h2 className="section-title">Våre tjenester</h2>
       <div className="hidden md:flex flex-row space-x-8">
-        {tjenesteAlternativer.map((tjeneste) => (
+        {serviceAlternatives.map((service) => (
           <article
-            key={tjeneste.tittel}
+            key={service.title}
             className="flex flex-col w-1/3 items-start gap-2"
           >
             <img
               className='w-full'
-              src={tjeneste.bilde}
-              alt={tjeneste.tittel}
+              src={service.picture}
+              alt={service.title}
             />
             <div className="w-full">
-              <h3 className="mb-4 text-3xl">{tjeneste.tittel}</h3>
-              <p className="text-xl">{tjeneste.tekst}</p>
+              <h3 className="mb-4 text-3xl">{service.title}</h3>
+              <p className="text-xl">{service.text}</p>
             </div>
               <div className="lg:mt-8 mt-4">
-                <Link href={`/tjenester/${tjeneste.slug}`} className="green-link">
+                <Link href={`/tjenester/${service.slug}`} className="green-link">
                   Les mer
                 </Link>
             </div>
@@ -32,18 +32,18 @@ const Tjenester = () => {
       {/* Mobile */}
       <div className="md:hidden flex items-center justify-between w-full overflow-x-scroll">
         <div className="flex gap-6">
-          {tjenesteAlternativer.map((tjeneste, index) => (
+          {serviceAlternatives.map((service, index) => (
             <div
-              key={tjeneste.tittel}
+              key={service.title}
               className="snap-start flex-shrink-0 w-4/5 max-w-xs"
             >
               <img
                 className="w-full"
-                src={tjeneste.bilde}
-                alt={tjeneste.tittel}
+                src={service.picture}
+                alt={service.title}
               />
-              <h3 className="text-base">{tjeneste.tittel}</h3>
-              <p className="text-sm">{tjeneste.tekst}</p>
+              <h3 className="text-base">{service.title}</h3>
+              <p className="text-sm">{service.text}</p>
             </div>
           ))}
         </div>
@@ -52,4 +52,4 @@ const Tjenester = () => {
   );
 };
 
-export default Tjenester;
+export default Services;

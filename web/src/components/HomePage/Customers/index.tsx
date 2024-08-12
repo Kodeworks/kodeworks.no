@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { logos } from '../../../utils/kunderLogos';
 
-const Kunder = () => {
+const Customers = () => {
 
   return (
     <div className="flex flex-col">
@@ -19,4 +19,4 @@ const Kunder = () => {
   );
 };
 
-export default Kunder;
+export default Customers;

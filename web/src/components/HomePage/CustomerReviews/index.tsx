@@ -1,38 +1,38 @@
 import { useState } from "react";
 import { GreenArrowLeft, GreenArrowRight } from "../Icons";
 
-const Kundeomtaler = () => {
-  const alleKundeOmtaler = [
+const CustomerReviews = () => {
+  const allCustomerReviews = [
     {
-      selskap: "Equinor",
-      tekst: "Kodeworks var helt fantastiske å jobbe med.",
-      signatur: "Signatur",
-      bilde: "/logos/equinor-logo.png",
+      customer: "Equinor",
+      text: "Kodeworks var helt fantastiske å jobbe med.",
+      signature: "Signatur",
+      picture: "/logos/equinor-logo.png",
     },
     {
-      selskap: "DNB",
-      tekst: "Kodeworks var helt fantastiske å jobbe med.",
-      signatur: "Signatur DNB ",
-      bilde: "/logos/dnb.png",
+      customer: "DNB",
+      text: "Kodeworks var helt fantastiske å jobbe med.",
+      signature: "Signatur DNB ",
+      picture: "/logos/dnb.png",
     },
     {
-      selskap: "Kongsberg",
-      tekst: "Kodeworks var helt fantastiske å jobbe med.",
-      signatur: "Signatur",
-      bilde: "/logos/kongsberg.png",
+      customer: "Kongsberg",
+      text: "Kodeworks var helt fantastiske å jobbe med.",
+      signature: "Signatur",
+      picture: "/logos/kongsberg.png",
     },
   ]
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const handlePrevious = () => {
     setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? alleKundeOmtaler.length - 1 : prevIndex - 1
+      prevIndex === 0 ? allCustomerReviews.length - 1 : prevIndex - 1
     );
   };
 
   const handleNext = () => {
     setCurrentIndex((prevIndex) =>
-      prevIndex === alleKundeOmtaler.length - 1 ? 0 : prevIndex + 1
+      prevIndex === allCustomerReviews.length - 1 ? 0 : prevIndex + 1
     );
   };
   return (
@@ -40,21 +40,21 @@ const Kundeomtaler = () => {
       <h2 className="section-title">Kundeomtaler</h2>
       <div className="hidden md:flex flex-row space-x-8">
         {
-          alleKundeOmtaler.map((kundeOmtale) => (
+          allCustomerReviews.map((review) => (
             <article
-              key={kundeOmtale.selskap}
+              key={review.customer}
               className="flex flex-col w-1/3 items-center text-center gap-12"
             >
               <img
                 className="md:w-[200px] lg:w-[250px] xl:w-[300px] rounded-2xl"
-                src={kundeOmtale.bilde}
-                alt={kundeOmtale.selskap}
+                src={review.picture}
+                alt={review.customer}
               />
               <p>
-                {kundeOmtale.tekst}
+                {review.text}
                 <br></br>
                 <br></br>
-                <i className="italic">{kundeOmtale.signatur}</i>
+                <i className="italic">{review.signature}</i>
               </p>
             </article>
           ))
@@ -66,19 +66,19 @@ const Kundeomtaler = () => {
           <GreenArrowLeft />
         </button>
           <article
-                key={alleKundeOmtaler[currentIndex].selskap}
+                key={allCustomerReviews[currentIndex].customer}
                 className="flex flex-col w-1/3 items-center text-center gap-12"
               >
                 <img
                   className="w-[250px] rounded-2xl"
-                  src={alleKundeOmtaler[currentIndex].bilde}
-                  alt={alleKundeOmtaler[currentIndex].selskap}
+                  src={allCustomerReviews[currentIndex].picture}
+                  alt={allCustomerReviews[currentIndex].customer}
                 />
                 <p>
-                  {alleKundeOmtaler[currentIndex].tekst}
+                  {allCustomerReviews[currentIndex].text}
                   <br></br>
                   <br></br>
-                  <i className="italic">{alleKundeOmtaler[currentIndex].signatur}</i>
+                  <i className="italic">{allCustomerReviews[currentIndex].signature}</i>
                 </p>
               </article>
         <button onClick={handleNext} className="button-unstyled">
@@ -89,4 +89,4 @@ const Kundeomtaler = () => {
   );
 };
 
-export default Kundeomtaler;
+export default CustomerReviews;

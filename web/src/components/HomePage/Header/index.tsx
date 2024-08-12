@@ -3,7 +3,7 @@ import './AnimatedHeader.css';
 
 
 
-const dine = [ 
+const firstWords = [ 
   'ideer',
   'prosjekter',
   'tanker',
@@ -12,7 +12,7 @@ const dine = [
   'drømmer',
 ];
 
-const vaare = [
+const secondWords = [
   'utviklere',
   'eksperter',
   'erfaringer',
@@ -20,15 +20,15 @@ const vaare = [
 ];
 
 const AnimatedHeader = () => {
-  const [dineIndex, setDineIndex] = useState(0);
-  const [vaareIndex, setVaareIndex] = useState(0);
+  const [firstWordsIndex, setFirstWordsIndex] = useState(0);
+  const [secondWordsIndex, setSecondWordsIndex] = useState(0);
   const [backwardsAnimation, setBackwardsAnimation] = useState(false);
   const [startAnimate, setStartAnimate] = useState(false);
 
   useEffect(() => {
     const intervalId = setInterval(() => {
-      setDineIndex((prevIndex) => (prevIndex + 1) % dine.length);
-      setVaareIndex((prevIndex) => (prevIndex + 1) % vaare.length);
+      setFirstWordsIndex((prevIndex) => (prevIndex + 1) % firstWords.length);
+      setSecondWordsIndex((prevIndex) => (prevIndex + 1) % secondWords.length);
       setStartAnimate(true);
       setBackwardsAnimation(!backwardsAnimation);
     }, 4000);
@@ -40,11 +40,11 @@ const AnimatedHeader = () => {
     <header className="flex flex-col mt-16 pt-20 overflow-hidden">
       <div className="flex flex-col sm:flex-row items-start sm:items-center mb-7">
         <h2 className="mr-3 header-title">Dine </h2>
-        <h2 className={`${startAnimate ? backwardsAnimation ? 'animated-word-reversed': 'animated-word' : ''} singleSlide header-title green-text `}>{dine[dineIndex]}</h2>
+        <h2 className={`${startAnimate ? backwardsAnimation ? 'animated-word-reversed': 'animated-word' : ''} singleSlide header-title green-text `}>{firstWords[firstWordsIndex]}</h2>
       </div>
       <div className="flex flex-col sm:flex-row items-start sm:items-center mb-20">
         <h2 className="mr-3 green-text header-title">Våre </h2>
-        <h2 className={`${startAnimate ? backwardsAnimation ? 'animated-word-reversed': 'animated-word' : ''} singleSlide header-title`}>{vaare[vaareIndex]}</h2>
+        <h2 className={`${startAnimate ? backwardsAnimation ? 'animated-word-reversed': 'animated-word' : ''} singleSlide header-title`}>{secondWords[secondWordsIndex]}</h2>
       </div>
       <div className="header-text-container">
         <p className="header-text">

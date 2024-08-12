@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { Person } from '../../../types';
 import Link from 'next/link';
 
-const Konsulenter = ({ people }: { people: Person[] }) => {
+const Consultants = ({ people }: { people: Person[] }) => {
   const [highlightedPeople, setHighlightedPeople] = useState<Person[]>([]);
 
   useEffect(() => {
@@ -45,4 +45,4 @@ const Konsulenter = ({ people }: { people: Person[] }) => {
   );
 };
 
-export default Konsulenter;
+export default Consultants;

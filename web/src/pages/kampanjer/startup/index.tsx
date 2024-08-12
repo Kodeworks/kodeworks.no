@@ -68,7 +68,7 @@ const StartupPage: NextPageWithLayout = () => {
   );
 };
 
-const CustomKontakt = () => {
+const CustomContact = () => {
   return <div className="section-padding">Kontakt oss</div>;
 };
 

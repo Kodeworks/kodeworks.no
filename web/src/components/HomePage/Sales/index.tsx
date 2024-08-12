@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const Oppdrag = () => {
+const Sales = () => {
     return (
         <div className="flex flex-col">
             <div className="flex md:flex-row flex-col w-full justify-start gap-8">
@@ -34,4 +34,4 @@ const Oppdrag = () => {
     );
 };
 
-export default Oppdrag;
+export default Sales;

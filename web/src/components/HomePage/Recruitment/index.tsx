@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-const Rekruttering = () => {
+const Recruitment = () => {
   return (
     <section className="grid grid-cols-1 lg:grid-cols-2" id="work-section">
       <article className="relative col-span-1 lg:col-span-2 grid-cols-[1fr] lg:grid-cols-[repeat(2,1fr)] flex py-16 items-center gap-10">
@@ -24,4 +24,4 @@ const Rekruttering = () => {
   );
 };
 
-export default Rekruttering;
+export default Recruitment;
