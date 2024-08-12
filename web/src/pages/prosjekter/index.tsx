@@ -14,7 +14,7 @@ export default function Projects({ projects }: { projects: Project[] }): JSX.Ele
     <main className="main mt-0 pt-40">
       <section>
         <header className="flex flex-col w-full">
-          <PageHeader firstWord={'Våre '} secondWord={'prosjekter'}/>
+          <PageHeader firstWord={'Våre'} secondWord={'prosjekter'}/>
 
           <div className="header-text-container">
             <p className="header-text">

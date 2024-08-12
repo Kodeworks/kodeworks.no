@@ -7,7 +7,7 @@ export default function People({ people }: { people: Person[] }): JSX.Element {
     <main className="main mt-0 pt-40">
       <section className="w-full">
         <header className="flex flex-col w-full lg:mb-20 mb-10">
-          <PageHeader firstWord={'Våre '} secondWord={'eksperter'}/>
+          <PageHeader firstWord={'Våre'} secondWord={'eksperter'}/>
           <div className="header-text-container">
             <p className="header-text">
               I Kodeworks er vi { people.length } fantastiske mennesker som brenner for faget, fordelt på kontorer i Oslo og Trondheim. Vi tror på verdiskapning gjennom åpenhet, kompetanse og dedikasjon, og vi er engasjerte i å levere førsteklasses løsninger til våre kunder.
