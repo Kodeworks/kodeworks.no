@@ -39,11 +39,11 @@ const AnimatedHeader = () => {
   return (
     <header className="flex flex-col mt-16 pt-20 overflow-hidden">
       <div className="flex flex-col sm:flex-row items-start sm:items-center mb-7">
-        <h2 className="mr-3 header-title">Dine </h2>
+        <h2 className="mr-3 header-title">Dine</h2>
         <h2 className={`${startAnimate ? backwardsAnimation ? 'animated-word-reversed': 'animated-word' : ''} singleSlide header-title green-text `}>{firstWords[firstWordsIndex]}</h2>
       </div>
       <div className="flex flex-col sm:flex-row items-start sm:items-center mb-20">
-        <h2 className="mr-3 green-text header-title">Våre </h2>
+        <h2 className="mr-3 green-text header-title">Våre</h2>
         <h2 className={`${startAnimate ? backwardsAnimation ? 'animated-word-reversed': 'animated-word' : ''} singleSlide header-title`}>{secondWords[secondWordsIndex]}</h2>
       </div>
       <div className="header-text-container">
