@@ -95,7 +95,7 @@ const ContactSection = ({ title, subject, body, redirect }: Props) => {
                       id="name"
                       name="navn"
                       placeholder="Ola Nordmann"
-                      className="kontakt-input"
+                      className="contact-input"
                     />
                   </div>
 
@@ -107,7 +107,7 @@ const ContactSection = ({ title, subject, body, redirect }: Props) => {
                       id="email"
                       name="epost"
                       placeholder="din@epost.no"
-                      className="kontakt-input"
+                      className="contact-input"
                     />
                   </div>
 
@@ -119,7 +119,7 @@ const ContactSection = ({ title, subject, body, redirect }: Props) => {
                       required
                       name="telefon"
                       placeholder="+47"
-                      className="kontakt-input"
+                      className="contact-input"
                     />
                   </div>
                 </div>
@@ -131,7 +131,7 @@ const ContactSection = ({ title, subject, body, redirect }: Props) => {
                     name="melding"
                     placeholder="Skriv en melding til oss"
                     rows={10}
-                    className="kontakt-input h-full"
+                    className="contact-input h-full"
                   />
                 </div>
               </div>
@@ -189,7 +189,7 @@ const ContactSection = ({ title, subject, body, redirect }: Props) => {
                       id="name"
                       name="navn"
                       placeholder="Ola Nordmann"
-                      className="kontakt-input"
+                      className="contact-input"
                     />
                   </div>
 
@@ -201,7 +201,7 @@ const ContactSection = ({ title, subject, body, redirect }: Props) => {
                       id="email"
                       name="epost"
                       placeholder="din@epost.no"
-                      className="kontakt-input"
+                      className="contact-input"
                     />
                   </div>
 
@@ -213,7 +213,7 @@ const ContactSection = ({ title, subject, body, redirect }: Props) => {
                       id="telephone"
                       name="telefon"
                       placeholder="+47"
-                      className="kontakt-input"
+                      className="contact-input"
                     />
                   </div>
                 </div>
@@ -225,7 +225,7 @@ const ContactSection = ({ title, subject, body, redirect }: Props) => {
                     name="melding"
                     placeholder="Si noe kort om prosjektet (valgfritt)"
                     rows={5}
-                    className="kontakt-input h-full"
+                    className="contact-input h-full"
                   />
                 </div>
               </div>
