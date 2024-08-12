@@ -13,7 +13,6 @@ import '../styles/kw.css';
 import { useTranslation } from '../utils/useTranslation';
 import Footer from '../components/Footer';
 import ContactSection from '../components/HomePage/ContactSection';
-// import useGtag from '../components/useGtag';´
 
 
 
