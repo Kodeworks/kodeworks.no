@@ -47,7 +47,7 @@ export const serviceAlternatives = [
         ],
     },
     {
-        tititlettel: 'AI',
+        title: 'AI',
         slug: 'ai',
         text: 'KodeWorks hjelper deg med å implementere AI agenter som effektiviserer din bedrift, og gjør det lettere for deg å fokusere.',
         picture: '/static/photos/tjenester/kodeworks-tjenester2.png',

@@ -18,7 +18,7 @@ const useGtag = () => {
         }, 2000);
       }
     }
-  }, []);
+  });
 
   // Check if window exists, so it only runs on client side
   function gtag(...args: any[]) {
