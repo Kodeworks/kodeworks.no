@@ -24,8 +24,8 @@ type AppPropsWithLayout = AppProps & {
   Component: NextPageWithLayout;
 };
 
-function defaultLayout(page: ReactElement) {
-  return <Layout>{page}</Layout>;
+function defaultLayout(page: ReactElement, pageProps) {
+  return <Layout socialProps={pageProps.socialProps}>{page}</Layout>;
 }
 
 interface KontaktProps {
@@ -40,7 +40,7 @@ export default function App({ Component, pageProps }: AppPropsWithLayout): JSX.E
   return (
     <>
       <Main />
-      {getLayout(<Component {...pageProps} />)}
+      {getLayout(<Component {...pageProps} />, pageProps)}
       <div className="section-padding lg:mt-24 mt-12">
         <ContactSection title={kontakt ? kontakt.title : ''} subject={kontakt ? kontakt.subject : ''} />
       </div>

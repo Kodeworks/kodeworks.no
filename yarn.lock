@@ -6335,7 +6335,7 @@ next-images@^1.8.5:
     file-loader "^6.2.0"
     url-loader "^4.1.0"
 
-"next@^13.0.0 || ^14.0.0", next@^13.4.0:
+next@^13.0.0, "next@^13.0.0 || ^14.0.0", next@^13.4.0:
   version "13.5.6"
   resolved "https://registry.npmjs.org/next/-/next-13.5.6.tgz"
   integrity sha512-Y2wTcTbO4WwEsVb4A8VSnOsG1I9ok+h74q0ZdxkwM3EODqrs4pasq7O0iUxbcS9VtWMicG7f3+HAj0r1+NtKSw==
@@ -8039,7 +8039,7 @@ strip-json-comments@^3.1.0, strip-json-comments@^3.1.1:
   resolved "https://registry.npmjs.org/strip-json-comments/-/strip-json-comments-3.1.1.tgz"
   integrity sha512-6fPc+R4ihwqP6N/aIv2f1gMH8lOVtWQHoqC4yK6oSDVVocumAsfCqjkXnqiYMhmMwS/mEHLp7Vehlt3ql6lEig==
 
-"studio@file:/Users/xcitic/coding/kodeworks/studio":
+"studio@file:/Users/thomaswold/Documents/projects/kw/kodeworks.no/studio":
   version "1.0.0"
   resolved "file:studio"
   dependencies:
@@ -8714,7 +8714,7 @@ wcwidth@^1.0.1:
   dependencies:
     defaults "^1.0.3"
 
-"web@file:/Users/xcitic/coding/kodeworks/web":
+"web@file:/Users/thomaswold/Documents/projects/kw/kodeworks.no/web":
   version "0.1.0"
   resolved "file:web"
   dependencies:
