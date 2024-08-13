@@ -1,7 +1,7 @@
-import { useRouter } from 'next/router';
 import { NextPageWithLayout } from '../../_app';
 
 const CompanyPage: NextPageWithLayout = () => {
+
   const sections = [
     {
       title: 'Realisere din idé',
@@ -78,6 +78,11 @@ CompanyPage.getInitialProps = async () => {
       subject: 'Kampanje større selskap',
       redirect: 'https://kodeworks.no/kampanjer/selskap/#kontaktoss',
     },
+    socialProps: {
+      title: 'Gratis konsulenttime',
+      description: 'Vi tilbyr gratis konsulenttime for selskap som ønsker å realisere sine IT-prosjekter.',
+      image: '/static/photos/tjenester/kodeworks-tjenester1.png',
+    }
   };
 };
 
