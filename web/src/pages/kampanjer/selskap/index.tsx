@@ -20,7 +20,7 @@ const CompanyPage: NextPageWithLayout = () => {
       reverse: true,
     },
   ];
-  const kontakt = {
+  const contact = {
     title: 'Book gratis konsulenttime',
     subject: 'Kampanje større selskap',
     redirect: 'https://kodeworks.no/takk',
@@ -35,7 +35,7 @@ const CompanyPage: NextPageWithLayout = () => {
             <h2 className="md:text-7xl text-5xl">konsulenttime</h2>
           </div>
 
-        <ContactSection title={kontakt.title} subject={kontakt.subject} redirect={kontakt.redirect} />
+        <ContactSection title={contact.title} subject={contact.subject} redirect={contact.redirect} />
 
         {/*
             <div className="header-text-container">
@@ -80,7 +80,7 @@ const CompanyPage: NextPageWithLayout = () => {
 
 CompanyPage.getInitialProps = async () => {
   return {
-    disableKontakt: true,
+    disableContact: true,
     socialProps: {
       title: 'Gratis konsulenttime',
       description: 'Vi tilbyr gratis konsulenttime for selskap som ønsker å realisere sine IT-prosjekter.',

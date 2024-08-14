@@ -28,15 +28,9 @@ function defaultLayout(page: ReactElement, pageProps) {
   return <Layout socialProps={pageProps.socialProps}>{page}</Layout>;
 }
 
-interface KontaktProps {
-  title: string;
-  subject: string;
-}
-
 export default function App({ Component, pageProps }: AppPropsWithLayout): JSX.Element {
   const getLayout = Component.getLayout ?? defaultLayout;
-  const kontakt = pageProps.kontakt as KontaktProps;
-  const disableKontakt = pageProps?.disableKontakt as boolean;
+  const disableContact = pageProps?.disableContact as boolean;
 
   return (
     <>
@@ -44,7 +38,7 @@ export default function App({ Component, pageProps }: AppPropsWithLayout): JSX.E
       {getLayout(<Component {...pageProps} />, pageProps)}
       <div className="section-padding lg:mt-24 mt-12">
         {
-          disableKontakt !== true && <ContactSection title={kontakt ? kontakt.title : ''} subject={kontakt ? kontakt.subject : ''} />
+          disableContact !== true && <ContactSection />
         }
       </div>
       <Footer />

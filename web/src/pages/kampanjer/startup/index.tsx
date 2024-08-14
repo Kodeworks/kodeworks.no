@@ -21,7 +21,7 @@ const StartupPage: NextPageWithLayout = () => {
     },
   ];
 
-  const kontakt = {
+  const contact = {
     title: 'Book gratis konsulenttime',
     subject: 'Kampanje startups',
     redirect: 'https://kodeworks.no/takk',
@@ -36,7 +36,7 @@ const StartupPage: NextPageWithLayout = () => {
             <h2 className="md:text-7xl text-5xl">konsulenttime</h2>
           </div>
 
-          <ContactSection title={kontakt.title} subject={kontakt.subject} redirect={kontakt.redirect} />
+          <ContactSection title={contact.title} subject={contact.subject} redirect={contact.redirect} />
 
         {/*
           <div className="header-text-container">
@@ -82,7 +82,7 @@ const StartupPage: NextPageWithLayout = () => {
 
 StartupPage.getInitialProps = async () => {
   return {
-    disableKontakt: true,
+    disableContact: true,
   };
 };
 
