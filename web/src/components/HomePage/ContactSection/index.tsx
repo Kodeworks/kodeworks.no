@@ -94,7 +94,7 @@ const ContactSection = ({ title, subject, body, redirect }: Props) => {
                       required
                       id="name"
                       name="navn"
-                      placeholder="Ola Nordmann"
+                      placeholder="Ditt navn"
                       className="contact-input"
                     />
                   </div>
@@ -118,7 +118,7 @@ const ContactSection = ({ title, subject, body, redirect }: Props) => {
                       id="telephone"
                       required
                       name="telefon"
-                      placeholder="+47"
+                      placeholder="Ditt telefonnummer"
                       className="contact-input"
                     />
                   </div>
@@ -164,7 +164,7 @@ const ContactSection = ({ title, subject, body, redirect }: Props) => {
           className={dispatchSuccess ? 'hidden' : 'flex lg:flex-row flex-col gap-10 w-full'}
         >
           <div className="flex flex-col items-start lg:justify-between justify-start gap-4 w-full">
-            <h2>{title}</h2>
+            {/* <h2>{title}</h2> */}
             {body && (
               <p>
                 {body}
@@ -177,7 +177,7 @@ const ContactSection = ({ title, subject, body, redirect }: Props) => {
               <input
                 type="hidden"
                 name="redirect"
-                value={redirect ?? 'https://kodeworks.no/#kontaktoss'}
+                value={redirect || 'https://kodeworks.no/#kontaktoss'}
               />
               <div className="flex lg:flex-row flex-col gap-4 w-full">
                 <div className="flex flex-col lg:w-1/3 w-4/5 gap-4">
@@ -188,7 +188,7 @@ const ContactSection = ({ title, subject, body, redirect }: Props) => {
                       required
                       id="name"
                       name="navn"
-                      placeholder="Ola Nordmann"
+                      placeholder="Ditt navn"
                       className="contact-input"
                     />
                   </div>
@@ -212,7 +212,7 @@ const ContactSection = ({ title, subject, body, redirect }: Props) => {
                       required
                       id="telephone"
                       name="telefon"
-                      placeholder="+47"
+                      placeholder="Ditt telefonnummer"
                       className="contact-input"
                     />
                   </div>

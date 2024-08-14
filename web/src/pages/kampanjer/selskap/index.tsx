@@ -1,3 +1,4 @@
+import { ContactSection } from '../../../components/HomePage';
 import { NextPageWithLayout } from '../../_app';
 
 const CompanyPage: NextPageWithLayout = () => {
@@ -19,6 +20,11 @@ const CompanyPage: NextPageWithLayout = () => {
       reverse: true,
     },
   ];
+  const contact = {
+    title: 'Book gratis konsulenttime',
+    subject: 'Kampanje større selskap',
+    redirect: 'https://kodeworks.no/takk',
+  };
 
   return (
     <main className="main mt-0 pt-40">
@@ -29,12 +35,17 @@ const CompanyPage: NextPageWithLayout = () => {
             <h2 className="md:text-7xl text-5xl">konsulenttime</h2>
           </div>
 
-          <div className="header-text-container">
-            <p className="header-text">
-              Vi tilbyr gratis konsulenttime for selskap som ønsker å realisere sine IT-prosjekter.
-            </p>
-          </div>
+        <ContactSection title={contact.title} subject={contact.subject} redirect={contact.redirect} />
+
+        {/*
+            <div className="header-text-container">
+              <p className="header-text">
+                Vi tilbyr gratis konsulenttime for selskap som ønsker å realisere sine IT-prosjekter.
+              </p>
+            </div>
+          */}
         </header>
+
         <div className="flex flex-col gap-y-36 lg:mt-36 md:mt-24 mt-12 w-full">
           {sections.map((section, index) => {
             return (
@@ -67,17 +78,9 @@ const CompanyPage: NextPageWithLayout = () => {
   );
 };
 
-const CustomContact = () => {
-  return <div className="section-padding">Kontakt oss</div>;
-};
-
 CompanyPage.getInitialProps = async () => {
   return {
-    kontakt: {
-      title: 'Book gratis konsulenttime',
-      subject: 'Kampanje større selskap',
-      redirect: 'https://kodeworks.no/kampanjer/selskap/#kontaktoss',
-    },
+    disableContact: true,
     socialProps: {
       title: 'Gratis konsulenttime',
       description: 'Vi tilbyr gratis konsulenttime for selskap som ønsker å realisere sine IT-prosjekter.',
