@@ -36,13 +36,16 @@ interface KontaktProps {
 export default function App({ Component, pageProps }: AppPropsWithLayout): JSX.Element {
   const getLayout = Component.getLayout ?? defaultLayout;
   const kontakt = pageProps.kontakt as KontaktProps;
+  const disableKontakt = pageProps?.disableKontakt as boolean;
 
   return (
     <>
       <Main />
       {getLayout(<Component {...pageProps} />, pageProps)}
       <div className="section-padding lg:mt-24 mt-12">
-        <ContactSection title={kontakt ? kontakt.title : ''} subject={kontakt ? kontakt.subject : ''} />
+        {
+          disableKontakt !== true && <ContactSection title={kontakt ? kontakt.title : ''} subject={kontakt ? kontakt.subject : ''} />
+        }
       </div>
       <Footer />
     </>

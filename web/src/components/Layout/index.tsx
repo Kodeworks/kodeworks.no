@@ -32,7 +32,7 @@ export default function Layout({ socialProps, children }: Prop): JSX.Element {
               : 'https://kodeworks.no/images/og-image-logo.jpg'
           }
         />
-        <GoogleAnalytics gaId="G-FLXYDD6Z0S" />
+        <GoogleAnalytics gaId="G-BRWDETNRQE" />
       </Head>
 
       {children}

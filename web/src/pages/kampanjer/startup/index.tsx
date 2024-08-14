@@ -1,5 +1,6 @@
 import { useRouter } from 'next/router';
 import { NextPageWithLayout } from '../../_app';
+import { ContactSection } from '../../../components/HomePage';
 
 const StartupPage: NextPageWithLayout = () => {
   const sections = [
@@ -20,6 +21,12 @@ const StartupPage: NextPageWithLayout = () => {
     },
   ];
 
+  const kontakt = {
+    title: 'Book gratis konsulenttime',
+    subject: 'Kampanje startups',
+    redirect: 'https://kodeworks.no/takk',
+  }
+
   return (
     <main className="main mt-0 pt-40">
       <section>
@@ -29,12 +36,17 @@ const StartupPage: NextPageWithLayout = () => {
             <h2 className="md:text-7xl text-5xl">konsulenttime</h2>
           </div>
 
+          <ContactSection title={kontakt.title} subject={kontakt.subject} redirect={kontakt.redirect} />
+
+        {/*
           <div className="header-text-container">
             <p className="header-text">
               Vi tilbyr gratis konsulenttime for start-ups og scale-ups som ønsker å realisere sine
               IT-prosjekter.
             </p>
           </div>
+          */}
+
         </header>
         <div className="flex flex-col gap-y-36 lg:mt-36 md:mt-24 mt-12 w-full">
           {sections.map((section, index) => {
@@ -68,17 +80,9 @@ const StartupPage: NextPageWithLayout = () => {
   );
 };
 
-const CustomContact = () => {
-  return <div className="section-padding">Kontakt oss</div>;
-};
-
 StartupPage.getInitialProps = async () => {
   return {
-    kontakt: {
-      title: 'Book gratis konsulenttime',
-      subject: 'Kampanje startups',
-      redirect: 'https://kodeworks.no/kampanje/startups/#kontaktoss',
-    },
+    disableKontakt: true,
   };
 };
 
