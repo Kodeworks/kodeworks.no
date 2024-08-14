@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import { SocialProps } from '../../types';
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 interface Prop {
   children: React.ReactNode;
@@ -31,6 +32,7 @@ export default function Layout({ socialProps, children }: Prop): JSX.Element {
               : 'https://kodeworks.no/images/og-image-logo.jpg'
           }
         />
+        <GoogleAnalytics gaId="G-FLXYDD6Z0S" />
       </Head>
 
       {children}

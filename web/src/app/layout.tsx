@@ -1,5 +1,4 @@
 import { Metadata } from 'next';
-import { GoogleAnalytics } from '@next/third-parties/google'
 
 export const metadata: Metadata = {
   title: 'KodeWorks',
@@ -12,7 +11,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body>{children}</body>
-      <GoogleAnalytics gaId="G-FLXYDD6Z0S" />
     </html>
   );
 }
