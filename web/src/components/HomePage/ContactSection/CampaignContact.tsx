@@ -48,78 +48,78 @@ const CampaignContact = ({ subject }: Props) => {
       mountFormDispatcher();
     }
   });
-    return (
-      <>
-        <div
-          id="kontaktoss"
-          className={dispatchSuccess ? 'hidden' : 'flex lg:flex-row flex-col items-center justify-center gap-10 w-full'}
-        >
-            <form className="w-full flex flex-col items-center" id="form">
-              <input type="hidden" name="access_key" value="462247df-28ef-4e87-a5c8-8f4fc7263636" />
-              <input type="hidden" name="subject" value={subject} />
-              <input type="hidden" name="from_name" value="kodeworks.no" />
-              <div className="flex flex-col items-center gap-4 w-full">
-                <div className="flex flex-col lg:w-1/3 w-4/5 gap-4 ">
-                  <div className="flex flex-col gap-2">
-                    <label htmlFor="name">Navn</label>
-                    <input
-                      type="text"
-                      required
-                      id="name"
-                      name="navn"
-                      autoComplete='name'
-                      placeholder="Ditt navn"
-                      className="contact-input"
-                    />
-                  </div>
-
-                  <div className="flex flex-col gap-2">
-                    <label htmlFor="email">Epost</label>
-                    <input
-                      type="email"
-                      required
-                      id="email"
-                      name="epost"
-                      autoComplete='email'
-                      placeholder="din@epost.no"
-                      className="contact-input"
-                    />
-                  </div>
-
-                  <div className="flex flex-col gap-2">
-                    <label htmlFor="telephone">Telefon</label>
-                    <input
-                      type="tel"
-                      required
-                      id="telephone"
-                      name="telefon"
-                      autoComplete='tel'
-                      placeholder="Ditt telefonnummer"
-                      className="contact-input"
-                    />
-                  </div>
-                </div>
+  return (
+    <>
+      <div
+        id="kontaktoss"
+        className={dispatchSuccess ? 'hidden' : 'flex lg:flex-row flex-col items-center justify-center gap-10 w-full'}
+      >
+        <form className="w-full flex flex-col items-center" id="form">
+          <input type="hidden" name="access_key" value="462247df-28ef-4e87-a5c8-8f4fc7263636" />
+          <input type="hidden" name="subject" value={subject} />
+          <input type="hidden" name="from_name" value="kodeworks.no" />
+          <div className="flex flex-col items-center gap-4 w-full">
+            <div className="flex flex-col lg:w-1/3 w-4/5 gap-4 ">
+              <div className="flex flex-col gap-2">
+                <label htmlFor="name">Navn</label>
+                <input
+                  type="text"
+                  required
+                  id="name"
+                  name="navn"
+                  autoComplete='name'
+                  placeholder="Ditt navn"
+                  className="contact-input"
+                />
               </div>
 
-              <button
-                type="submit"
-                disabled={isDispatching}
-                className="button text-xl mt-4 py-3 pl-2 px-2 lg:w-1/3 w-4/5"
-              >
-                {isDispatching ? 'Booker...' : 'Book nå'}
-              </button>
-            </form>
-        </div>
-        <div
-          className={dispatchSuccess ? 'flex flex-col text-center gap-10 w-full mb-32' : 'hidden'}
-        >
-          <h2>
-            Takk for din henvendelse! <br></br>
-          </h2>
-          <p>Vi vil kontakte deg snart for å avtale tid for gratis konsultasjon.</p>
-        </div>
-      </>
-    );
-  }
+              <div className="flex flex-col gap-2">
+                <label htmlFor="email">Epost</label>
+                <input
+                  type="email"
+                  required
+                  id="email"
+                  name="epost"
+                  autoComplete='email'
+                  placeholder="din@epost.no"
+                  className="contact-input"
+                />
+              </div>
+
+              <div className="flex flex-col gap-2">
+                <label htmlFor="telephone">Telefon</label>
+                <input
+                  type="tel"
+                  required
+                  id="telephone"
+                  name="telefon"
+                  autoComplete='tel'
+                  placeholder="Ditt telefonnummer"
+                  className="contact-input"
+                />
+              </div>
+            </div>
+          </div>
+
+          <button
+            type="submit"
+            disabled={isDispatching}
+            className="button text-xl mt-4 py-3 pl-2 px-2 lg:w-1/3 w-4/5"
+          >
+            {isDispatching ? 'Booker...' : 'Book nå'}
+          </button>
+        </form>
+      </div>
+      <div
+        className={dispatchSuccess ? 'flex flex-col text-center gap-10 w-full mb-32' : 'hidden'}
+      >
+        <h2>
+          Takk for din henvendelse! <br></br>
+        </h2>
+        <p>Vi vil kontakte deg snart for å avtale tid for gratis konsultasjon.</p>
+      </div>
+    </>
+  );
+}
 
 export default CampaignContact;

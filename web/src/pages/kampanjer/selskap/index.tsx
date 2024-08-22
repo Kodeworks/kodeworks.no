@@ -57,7 +57,7 @@ const CompanyPage: NextPageWithLayout = () => {
               {/* Vi hjelper deg med å finne ut hvordan du kan <span className="green-text">realisere ditt prosjekt.</span> */}
 
               Vi ser ofte at selskaper står ovenfor utfordringer med å realisere sine prosjekter <span className="green-text">raskt </span>
-               og <span className="green-text">kostnadseffektivt.</span>
+              og <span className="green-text">kostnadseffektivt.</span>
             </p>
 
             <BookNowBtn handleClick={scrollToContact} />
