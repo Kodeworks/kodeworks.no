@@ -102,7 +102,7 @@ function Main(): JSX.Element {
   return (
     <>
       <Head>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
         <title>KodeWorks</title>
       </Head>
 
@@ -116,7 +116,7 @@ function Main(): JSX.Element {
         <Link href="/" className="xl:pl-16 pl-8">
           <div id="menu-bar-logo" />
         </Link>
-        <div className="flex xl:gap-x-12 lg:gap-x-6 gap-x-4 xl:pr-16 pr-8 lg:visible invisible ">
+        <div className="flex xl:gap-x-12 lg:gap-x-6 gap-x-4 xl:pr-16 pr-8 lg:visible invisible items-center">
           <Link
             href="/eksperter"
             className={`no-underline leading-none nav-link ${

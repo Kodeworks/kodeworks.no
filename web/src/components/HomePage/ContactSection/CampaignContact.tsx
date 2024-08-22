@@ -43,6 +43,13 @@ const CampaignContact = ({ subject }: Props) => {
     });
   }
 
+  const handleFocus = (event) => {
+    const element = event.target;
+    setTimeout(() => {
+      element.scrollIntoView({ behavior: 'auto', block: 'center', inline: 'nearest' });
+    }, 50);
+  };
+
   useEffect(() => {
     if (!hasMountedForm) {
       mountFormDispatcher();
@@ -55,14 +62,15 @@ const CampaignContact = ({ subject }: Props) => {
         className={dispatchSuccess ? 'hidden' : 'flex lg:flex-row flex-col items-center justify-center gap-10 w-full'}
       >
         <form className="w-full flex flex-col items-center" id="form">
-          <input type="hidden" name="access_key" value="462247df-28ef-4e87-a5c8-8f4fc7263636" />
-          <input type="hidden" name="subject" value={subject} />
-          <input type="hidden" name="from_name" value="kodeworks.no" />
+          <input type="hidden" name="access_key" value="462247df-28ef-4e87-a5c8-8f4fc7263636" style={{ fontSize: '16px' }}  />
+          <input type="hidden" name="subject" value={subject} style={{ fontSize: '16px' }}  />
+          <input type="hidden" name="from_name" value="kodeworks.no" style={{ fontSize: '16px' }}  />
           <div className="flex flex-col items-center gap-4 w-full">
             <div className="flex flex-col lg:w-1/3 w-4/5 gap-4 ">
               <div className="flex flex-col gap-2">
                 <label htmlFor="name">Navn</label>
                 <input
+                  onFocus={handleFocus}
                   type="text"
                   required
                   id="name"
@@ -76,6 +84,7 @@ const CampaignContact = ({ subject }: Props) => {
               <div className="flex flex-col gap-2">
                 <label htmlFor="email">Epost</label>
                 <input
+                  onFocus={handleFocus}
                   type="email"
                   required
                   id="email"
@@ -89,6 +98,7 @@ const CampaignContact = ({ subject }: Props) => {
               <div className="flex flex-col gap-2">
                 <label htmlFor="telephone">Telefon</label>
                 <input
+                  onFocus={handleFocus}
                   type="tel"
                   required
                   id="telephone"

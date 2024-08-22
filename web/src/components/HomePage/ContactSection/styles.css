@@ -1,3 +1,4 @@
 .contact-input {
     @apply py-4 px-3 border-black border-[1.25px] text-lg;
+    font-size: 1.25rem;
 }
