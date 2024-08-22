@@ -38,9 +38,9 @@ const StartupPage: NextPageWithLayout = () => {
   };
 
   return (
-    <main className="main">
+    <main className="main mt-[100px]">
 
-      <section className="flex flex-col w-full h-[100vh] mt-20">
+      <section className="flex flex-col w-full h-[calc(var(--vh, 1vh) * 100)]">
         <div className="flex flex-col lg:flex-row w-full">
           <div className="max-h-xl max-w-lg flex lg:items-start items-center justify-center">
             <img src="/images/workshop.png" className="rounded-3xl max-w-full max-h-full" />
@@ -73,7 +73,7 @@ const StartupPage: NextPageWithLayout = () => {
         </div>
       </section>
 
-      <section ref={section2Ref} className="flex flex-col w-full h-[100vh] items-center mt-20">
+      <section ref={section2Ref} className="flex flex-col w-full h-[calc(var(--vh, 1vh) * 100)] items-center mt-20 mb-20">
         <h1 className="text-4xl font-black text-center mb-12 lg:mb-20">
           Selskaper som bruker Kodeworks
         </h1>
@@ -97,7 +97,7 @@ const StartupPage: NextPageWithLayout = () => {
             <img src="/logos/obos.png" className="max-w-full max-h-6" />
           </div>
         </div>
-        <h1 className="text-4xl font-black text-center mt-20 relative">
+        <h1 className="text-4xl font-black text-center lg:mt-20 mt-12 relative">
           Hva får du?
           <span
             className="absolute w-1/2 h-[2px] bg-current"
@@ -108,7 +108,7 @@ const StartupPage: NextPageWithLayout = () => {
             }}
           />
         </h1>
-        <div className="space-y-4 mt-12 mb-20">
+        <div className="space-y-4 lg:mt-12 mt-6 mb-10">
           <div className="flex items-center">
             <div className="relative">
               <input
