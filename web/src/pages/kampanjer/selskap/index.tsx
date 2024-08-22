@@ -1,27 +1,9 @@
 import { useRef } from 'react';
-import { ContactSection } from '../../../components/HomePage';
 import { NextPageWithLayout } from '../../_app';
 import CampaignContact from '../../../components/HomePage/ContactSection/CampaignContact';
 
 const CompanyPage: NextPageWithLayout = () => {
 
-  const sections = [
-    {
-      title: 'Realisere din idé',
-      text: 'Vi ser ofte at selskaper står ovenfor utfordringer med å realisere sine prosjekter raskt og kostnadseffektivt. Å leie inn et team av konsulenter som jobber digitalt eller in-house kan ofte være en mer lønnsom og bedre løsning enn å ansette flere folk for enkeltstående prosjekter.',
-      imageUrl: '/static/photos/tjenester/kodeworks-tjenester1.png',
-      imageAlt: 'Bilde av tech folk som sitter rundt et bord med pcer.',
-      reverse: false,
-    },
-    {
-      title: 'Hva får du?',
-      text: 'Sammen gjennomgår vi dine prosjektkrav, og kommer med anbefalinger for hvordan du kan realisere prosjektet. Vi gir deg en oversikt over hva som er mulig å få til, og hva som er realistisk innenfor din tidsramme og budsjett.',
-      imageUrl:
-        'https://cdn.sanity.io/images/zkl0178p/production/d763f0c01be6aea31f7da09052738ded1db0db73-960x522.jpg',
-      imageAlt: 'Håndtrykk mellom to personer.',
-      reverse: true,
-    },
-  ];
   const contact = {
     title: 'Book gratis konsulenttime',
     subject: 'Kampanje større selskap',
@@ -29,7 +11,6 @@ const CompanyPage: NextPageWithLayout = () => {
   };
 
   const section2Ref = useRef<HTMLElement>(null);
-  const section3Ref = useRef<HTMLElement>(null);
 
   const contactRef = useRef<HTMLElement>(null);
   const headerHeight = 85 + 10; // Height of the fixed header in pixels
@@ -43,15 +24,6 @@ const CompanyPage: NextPageWithLayout = () => {
     if (section2Ref.current) {
       window.scrollTo({
         top: calcOffsetPosition(section2Ref.current),
-        behavior: 'smooth'
-      });
-    }
-  };
-
-  const scrollToSection3 = () => {
-    if (section3Ref.current) {
-      window.scrollTo({
-        top: calcOffsetPosition(section3Ref.current),
         behavior: 'smooth'
       });
     }
