@@ -2,7 +2,6 @@ export const logos = [
     { alt: 'fremtind logo', src: '/logos/fremtind.png' },
     { alt: 'dnb logo', src: '/logos/dnb.png' },
     { alt: 'ruter logo', src: '/logos/ruter.png' },
-    { alt: 'equinor logo', src: '/logos/equinor-logo.png' },
     { alt: 'thales logo', src: '/logos/thales.png' },
     { alt: 'kongsberg logo', src: '/logos/kongsberg.png' },
     { alt: 'remarkable logo', src: '/logos/remarkable.png' },
