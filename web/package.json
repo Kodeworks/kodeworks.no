@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "@next/third-parties": "^15.5.12",
-    "@portabletext/react": "^2.0.2",
+    "@portabletext/react": "^6.0.2",
     "@sanity/client": "^5.2.2",
     "@sanity/image-url": "^1.0.2",
     "@types/node": "^18.7.23",
@@ -51,10 +51,10 @@
   },
   "devDependencies": {
     "@sanity/types": "^3.6.0",
-    "@typescript-eslint/eslint-plugin": "5.51.0",
-    "@typescript-eslint/parser": "5.51.0",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
+    "@typescript-eslint/eslint-plugin": "5.51.0",
+    "@typescript-eslint/parser": "5.51.0",
     "autoprefixer": "^10.4.14",
     "eslint": "^8.57.1",
     "eslint-config-next": "^15.5.12",
