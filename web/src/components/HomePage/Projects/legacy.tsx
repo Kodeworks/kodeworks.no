@@ -65,7 +65,7 @@ const Projects = ({ projects }: { projects: Project[] }) => {
                   projectsToShow.map((project, index) => (
                     <span 
                       key={index} 
-                      className={`w-4 h-4 rounded-full ${index === pIndex ? 'bg-[var(--color-new-green-dark)]' : 'bg-[var(--color-new-green)]'}`}>
+                      className={`w-4 h-4 rounded-full ${index === pIndex ? 'bg-(--color-new-green-dark)' : 'bg-(--color-new-green)'}`}>
                     </span>
                   ))
                 }
@@ -83,7 +83,7 @@ const Projects = ({ projects }: { projects: Project[] }) => {
               </div>
               <div>
                 <a href={`/prosjekter/${selectedProject && selectedProject.slug}`}
-                  className='underline decoration-[var(--color-new-green)]'
+                  className='underline decoration-(--color-new-green)'
                 >
                     {t('go_to_project_page_button')}
                 </a>

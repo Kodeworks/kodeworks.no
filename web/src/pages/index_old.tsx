@@ -57,7 +57,7 @@ function Home({ people, projects }: { people: Person[]; projects: Project[] }) {
       <main className="main">
         <section className={`grid grid-cols-1 lg:grid-cols-2 `} id="work-section">
           <article className="relative col-span-1 lg:col-span-2 grid grid-cols-[1fr] lg:grid-cols-[repeat(2,1fr)] flex py-24 items-center gap-10">
-            <div className="full-screen-width h-full absolute bg-[var(--color-green)] -z-10"></div>
+            <div className="full-screen-width h-full absolute bg-(--color-green) -z-10"></div>
             <div className="flex justify-center lg:justify-start order-last lg:order-first">
               <img style={{ maxWidth: '100%' }} src="/static/photos/gruppe_c.jpg" alt="About" />
             </div>
@@ -68,7 +68,7 @@ function Home({ people, projects }: { people: Person[]; projects: Project[] }) {
                 gjøre en forskjell!
               </p>
               <Link href="/karriere" className="mt-6">
-                <div className="px-10 py-3 bg-[var(--color-grey)] text-black hover:text-[var(--color-dark-grey)] ">
+                <div className="px-10 py-3 bg-(--color-grey) text-black hover:text-(--color-dark-grey) ">
                   Søk på stilling
                 </div>
               </Link>
@@ -77,7 +77,7 @@ function Home({ people, projects }: { people: Person[]; projects: Project[] }) {
         </section>
         <section className={`grid grid-cols-1 lg:grid-cols-2 `} id="who-section">
           <article className="relative col-span-1 lg:col-span-2 grid grid-cols-[1fr] lg:grid-cols-[repeat(2,1fr)] flex py-24 items-center gap-10">
-            <div className="full-screen-width h-full absolute bg-[var(--color-grey)] -z-10"></div>
+            <div className="full-screen-width h-full absolute bg-(--color-grey) -z-10"></div>
             <div>
               <h2 className="section-header-headline">{t('who')}</h2>
               <p>{t('who_description')}</p>

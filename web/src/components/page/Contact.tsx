@@ -20,7 +20,7 @@ export default function Contact({ contactSchema }: Props) {
       className="col-span-1 lg:col-span-2 flex flex-col gap-5 relative py-16 justify-center"
       id="contact"
     >
-      <div className="full-screen-width h-full absolute bg-[var(--color-grey)] -z-10"></div>
+      <div className="full-screen-width h-full absolute bg-(--color-grey) -z-10"></div>
       <h2 className="">{contactSchema.title}</h2>
       <p className="">{contactSchema.subText}</p>
       <div className="flex flex-col lg:flex-row lg:justify-between items-start gap-8">

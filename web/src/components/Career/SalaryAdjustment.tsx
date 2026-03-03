@@ -100,7 +100,7 @@ export default function SalaryAdjustment({ careerSchema }: Props) {
             <div className={`${year.align} flex justify-center h-full py-4 min-h-[150px]`}>
               <div
                 id={year.class}
-                className={`border-2 border-solid border-[var(--color-green)] text-s leading-none flex p-2 justify-center w-min whitespace-nowrap bg-white`}
+                className={`border-2 border-solid border-(--color-green) text-s leading-none flex p-2 justify-center w-min whitespace-nowrap bg-white`}
               >
                 {getSalaryIncreace(index + 1)}
               </div>

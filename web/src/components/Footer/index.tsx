@@ -39,7 +39,7 @@ export default function Footer() {
       </div>
       <div style={{ gridArea: 'contact' }} className="flex flex-col md:flex-row gap-x-20 gap-y-10">
         <div className="flex flex-col">
-          <span className="text-[var(--color-green)]">Kontakt oss</span>
+          <span className="text-(--color-green)">Kontakt oss</span>
           <span>
             post@kodeworks.no
             <br />
@@ -47,7 +47,7 @@ export default function Footer() {
           </span>
         </div>
         <div className="flex flex-col">
-          <span className="text-[var(--color-green)]">Oslo</span>
+          <span className="text-(--color-green)">Oslo</span>
           <span>
             Grønnegata 10
             <br />
@@ -55,7 +55,7 @@ export default function Footer() {
           </span>
         </div>
         <div className="flex flex-col">
-          <span className="text-[var(--color-green)]">Trondheim</span>
+          <span className="text-(--color-green)">Trondheim</span>
           <span>
             Fjordgata 30
             <br />
@@ -65,7 +65,7 @@ export default function Footer() {
       </div>
       <div style={{ gridArea: 'other' }} className="flex flex-col justify-end">
         <Link href="/legal/privacy" className="no-underline leading-none nav-link">
-          <span className="text-[var(--color-green)] hover:text-[var(--color-green)]">
+          <span className="text-(--color-green) hover:text-(--color-green)">
             Personvernerklæring
           </span>
         </Link>

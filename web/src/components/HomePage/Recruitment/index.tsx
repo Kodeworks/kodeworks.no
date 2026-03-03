@@ -4,7 +4,7 @@ const Recruitment = () => {
   return (
     <section className="grid grid-cols-1 lg:grid-cols-2" id="work-section">
       <article className="relative col-span-1 lg:col-span-2 grid-cols-[1fr] lg:grid-cols-[repeat(2,1fr)] flex py-16 items-center gap-10">
-        <div className="full-screen-width h-full absolute bg-[var(--color-new-pink)] -z-10"></div>
+        <div className="full-screen-width h-full absolute bg-(--color-new-pink) -z-10"></div>
         <div className=" flex flex-col items-center">
           <h2>Er du også en IT ekspert?</h2>
           <Link href="/karriere" className="mt-6">

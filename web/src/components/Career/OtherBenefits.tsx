@@ -24,10 +24,10 @@ export default function OtherBenefits({ careerSchema }: Props) {
                   alt={''}
                 />
               )}
-              <div className="-z-0 p-8">
+              <div className="z-0 p-8">
                 <h4 className="py-4">{item.title}</h4>
                 <div className="flex">
-                  <span className="text-2xl leading-none text-[var(--color-green)] mr-2">*</span>
+                  <span className="text-2xl leading-none text-(--color-green) mr-2">*</span>
                   <span className="text-xs leading-none">{item.text}</span>
                 </div>
               </div>

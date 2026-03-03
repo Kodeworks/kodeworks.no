@@ -65,7 +65,7 @@ function Home({ people, projects }: { people: Person[]; projects: Project[] }) {
 
   return (
     <div className="section-padding">
-      <div className="h-[100vh] flex flex-col justify-between">
+      <div className="h-screen flex flex-col justify-between">
         <Header />
         <LogoReel />
       </div>

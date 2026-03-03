@@ -36,7 +36,7 @@ const Services = () => {
             <Link
               href={`/tjenester/${service.slug}`}
               key={index}
-              className="snap-start flex-shrink-0 w-4/5 max-w-xs no-underline"
+              className="snap-start shrink-0 w-4/5 max-w-xs no-underline"
             >
               <img
                 className="w-full"

@@ -1,21 +1,20 @@
 /* Tailwind --------------------------------------------------------------------*/
-@import url("_reset.css");
-@import url("_fonts.css");
-@import url("_core.css");
+@import url('_reset.css') layer(components);
+@import url('_fonts.css') layer(components);
+@import url('_core.css') layer(components);
 /* Pages -----------------------------------------------------------------------*/
-@import url("_page_home.css");
-@import url("_page_career.css");
-@import url("_page_legal.css");
-@import url("_page_privacy.css");
-@import url("_page_projects.css");
-@import url("_page_project.css");
-@import url("_page_people.css");
-@import url("_page_staffmanual.css");
-@import url("_page_schema.css");
+@import url('_page_home.css') layer(components);
+@import url('_page_career.css') layer(components);
+@import url('_page_legal.css') layer(components);
+@import url('_page_privacy.css') layer(components);
+@import url('_page_projects.css') layer(components);
+@import url('_page_project.css') layer(components);
+@import url('_page_people.css') layer(components);
+@import url('_page_staffmanual.css') layer(components);
+@import url('_page_schema.css') layer(components);
 
 /*@tailwind base;*/
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss/utilities' layer(utilities);
 
 body {
     overflow-x: hidden;

@@ -54,7 +54,7 @@ export default function Pension({ careerSchema }: Props) {
       <div className="flex flex-col items-center">
         <h4 className="pb-2">Årlig pensjon basert på årslønn</h4>
         <div
-          className={`border-2 border-solid border-[var(--color-green)] text-5xl leading-none flex p-2 justify-center w-min whitespace-nowrap`}
+          className={`border-2 border-solid border-(--color-green) text-5xl leading-none flex p-2 justify-center w-min whitespace-nowrap`}
         >
           <NumberWithSeperators startValue={pension - 10000} endValue={pension} showCurrency />
         </div>

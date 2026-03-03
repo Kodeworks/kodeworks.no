@@ -1,3 +1,5 @@
+@reference "tailwindcss";
+
 :root {
   --gutter-size: 30px;
   --gutter-size-mobile: 20px;
