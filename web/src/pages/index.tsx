@@ -25,7 +25,7 @@ export async function getStaticProps() {
   };
 }
 
-function Home({ people, projects }: { people: Person[]; projects: Project[] }): JSX.Element {
+function Home({ people, projects }: { people: Person[]; projects: Project[] }) {
   const [technologies, setTechnologies] = useState<string[]>([]);
   const staticTechnologies = [
     "React",

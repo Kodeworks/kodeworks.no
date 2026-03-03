@@ -7,7 +7,7 @@ interface Prop {
   socialProps?: SocialProps;
 }
 
-export default function Layout({ socialProps, children }: Prop): JSX.Element {
+export default function Layout({ socialProps, children }: Prop) {
   return (
     <>
       <Head>

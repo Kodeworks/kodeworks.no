@@ -7,7 +7,7 @@ interface Props {
   manual: StaffManual;
 }
 
-export default function NewStaffManual({ manual }: Props): JSX.Element {
+export default function NewStaffManual({ manual }: Props) {
   return (
     <>
       <header className="handbook-mainheader">

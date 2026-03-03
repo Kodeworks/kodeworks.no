@@ -1,12 +1,7 @@
 /* Tailwind --------------------------------------------------------------------*/
-/*@import "tailwindcss/base";*/
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
-
 @import url("_reset.css");
 @import url("_fonts.css");
 @import url("_core.css");
-
 /* Pages -----------------------------------------------------------------------*/
 @import url("_page_home.css");
 @import url("_page_career.css");
@@ -17,6 +12,10 @@
 @import url("_page_people.css");
 @import url("_page_staffmanual.css");
 @import url("_page_schema.css");
+
+/*@tailwind base;*/
+@tailwind components;
+@tailwind utilities;
 
 body {
     overflow-x: hidden;

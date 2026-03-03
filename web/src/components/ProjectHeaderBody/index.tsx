@@ -11,7 +11,7 @@ interface Prop {
   project: Project;
 }
 
-export default function ProjectHeaderBody({ project }: Prop): JSX.Element {
+export default function ProjectHeaderBody({ project }: Prop) {
   usePageTitle(project.name);
 
   return (

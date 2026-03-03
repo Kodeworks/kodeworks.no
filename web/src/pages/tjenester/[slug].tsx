@@ -5,7 +5,7 @@ interface Props {
   slug: string;
 }
 
-export default function Services({ slug }: Props): JSX.Element {
+export default function Services({ slug }: Props) {
   const service = serviceAlternatives.find((service) => service.slug === slug) ?? serviceAlternatives[0];
   return (
     <main className="main mt-0 pt-40">

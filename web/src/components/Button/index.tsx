@@ -20,7 +20,7 @@ interface ButtonProp {
   children?: React.ReactNode;
 }
 
-function Button({ appearance, ...props }: ButtonProp): JSX.Element {
+function Button({ appearance, ...props }: ButtonProp) {
   switch (appearance) {
     case Appearance.Light:
     case Appearance.LightNoPadding:
@@ -33,7 +33,7 @@ function Button({ appearance, ...props }: ButtonProp): JSX.Element {
   }
 }
 
-function DarkButton({ appearance, onClick, href, disabled, children }: ButtonProp): JSX.Element {
+function DarkButton({ appearance, onClick, href, disabled, children }: ButtonProp) {
   const { locale } = useRouter();
 
   if (href != null) {
@@ -53,7 +53,7 @@ function DarkButton({ appearance, onClick, href, disabled, children }: ButtonPro
   }
 }
 
-function LightButton({ appearance, onClick, href, disabled, children }: ButtonProp): JSX.Element {
+function LightButton({ appearance, onClick, href, disabled, children }: ButtonProp) {
   const { locale } = useRouter();
 
   if (href != null) {

@@ -4,5 +4,8 @@ module.exports = {
     localeDetection: false,
     defaultLocale: 'no',
   },
+  turbopack: {
+    root: __dirname,
+  },
   reactStrictMode: true,
 };

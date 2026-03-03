@@ -1,4 +1,4 @@
-import { createContext, useContext, useEffect, useState } from 'react';
+import { createContext, ReactNode, useContext, useEffect, useState } from 'react';
 
 interface ClipContentContextInterface {
   clipMode: string;
@@ -11,10 +11,10 @@ export const ClipContentContext = createContext<ClipContentContextInterface>({
 });
 
 interface Prop {
-  children: JSX.Element | JSX.Element[];
+  children: ReactNode;
 }
 
-export function ClipContentProvider({ children }: Prop): JSX.Element {
+export function ClipContentProvider({ children }: Prop) {
   const [clipMode, setClipMode] = useState('');
 
   function changeClipMode(mode: string): void {

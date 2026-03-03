@@ -30,7 +30,7 @@ function defaultLayout(page: ReactElement, pageProps) {
   return <Layout socialProps={pageProps.socialProps}>{page}</Layout>;
 }
 
-export default function App({ Component, pageProps }: AppPropsWithLayout): JSX.Element {
+export default function App({ Component, pageProps }: AppPropsWithLayout) {
   const getLayout = Component.getLayout ?? defaultLayout;
   const disableContact = pageProps?.disableContact as boolean;
 
@@ -48,7 +48,7 @@ export default function App({ Component, pageProps }: AppPropsWithLayout): JSX.E
   );
 }
 
-function Main(): JSX.Element {
+function Main() {
   const { t } = useTranslation(dictionary);
   const [isNavigationOpen, setIsNavigationOpen] = useState(false);
   const [scrollTop, setScrollTop] = useState(0);

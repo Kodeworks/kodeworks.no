@@ -3,7 +3,7 @@ interface Prop {
   secondWord: string;
 }
 
-export default function PageHeader({ firstWord, secondWord }: Prop): JSX.Element {
+export default function PageHeader({ firstWord, secondWord }: Prop) {
 
   return (
     <div className="flex flex-col sm:flex-row items-start sm:items-center mb-16">

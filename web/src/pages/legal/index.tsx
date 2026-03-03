@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-export default function Legal(): JSX.Element {
+export default function Legal() {
   return (
     <>
       <section className={`section section-legal`}>

@@ -12,7 +12,7 @@ interface Prop {
   reverse: boolean;
 }
 
-export default function Section({ section, reverse }: Prop): JSX.Element {
+export default function Section({ section, reverse }: Prop) {
   return (
     <article className={`${reverse ? 'justify-end' : ''} flex lg:flex-row flex-col gap-[44px]`}>
       <div
