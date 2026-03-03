@@ -4,6 +4,8 @@ import PersonTile from '../PersonTile';
 
 import style from './peopleList.module.css';
 
+import type { JSX } from "react";
+
 interface Prop {
   people: Person[];
 }

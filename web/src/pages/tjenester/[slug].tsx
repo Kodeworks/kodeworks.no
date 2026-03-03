@@ -1,6 +1,8 @@
 import Section from '../../components/Services/Section';
 import { serviceAlternatives } from '../../constants/serviceAlternatives';
 
+import type { JSX } from "react";
+
 interface Props {
   slug: string;
 }

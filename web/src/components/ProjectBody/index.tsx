@@ -1,4 +1,4 @@
-import { Fragment } from 'react';
+import { Fragment, type JSX } from 'react';
 
 import { Content, ImageContent, Project, QuoteContent, TextContent } from '../../types';
 import { groupSplit } from '../../utils/groupSplit';

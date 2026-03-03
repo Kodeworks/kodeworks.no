@@ -3,6 +3,8 @@ import StaffManualNavigation from '../../components/StaffManual/StaffManualNavig
 import { StaffManual } from '../../types';
 import { getStaffManual } from '../../lib/sanity';
 
+import type { JSX } from "react";
+
 interface Props {
   manual: StaffManual;
 }

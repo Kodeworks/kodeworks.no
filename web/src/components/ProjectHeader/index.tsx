@@ -4,6 +4,8 @@ import { Project } from '../../types';
 import { fmt, getLocale } from '../../utils/useTranslation';
 import TechList from '../TechList';
 
+import type { JSX } from "react";
+
 interface Prop {
   project: Project;
 }

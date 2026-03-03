@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import { useClipContent } from '../../context/ClipContentContext';
 
+import type { JSX } from "react";
+
 export default function StaffManual(): JSX.Element {
   useClipContent('');
 

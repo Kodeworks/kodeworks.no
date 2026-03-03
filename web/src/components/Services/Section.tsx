@@ -3,6 +3,7 @@ import { useRouter } from 'next/router';
 import { Project } from '../../types';
 import { fmt, getLocale } from '../../utils/useTranslation';
 import Link from 'next/link';
+import type { JSX } from "react";
 interface Prop {
   section: {
     picture: string;

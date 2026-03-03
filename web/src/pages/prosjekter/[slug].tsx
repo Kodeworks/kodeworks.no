@@ -72,7 +72,7 @@ const ProjectPage: NextPageWithLayout = ({project}: Prop) => {
     );
 };
 
-ProjectPage.getLayout = function getLayout(page: ReactElement) {
+ProjectPage.getLayout = function getLayout(page: ReactElement<any>) {
     return <Layout>{page}</Layout>;
 };
 

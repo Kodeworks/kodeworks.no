@@ -1,5 +1,7 @@
 import { useClipContent } from '../../context/ClipContentContext';
 
+import type { JSX } from "react";
+
 interface Prop {
   children: JSX.Element;
 }

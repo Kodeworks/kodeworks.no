@@ -3,7 +3,7 @@ import { AppProps } from 'next/app';
 import Head from 'next/head';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import React, { FC, ReactElement, ReactNode, useContext, useEffect, useState } from 'react';
+import React, { FC, ReactElement, ReactNode, useContext, useEffect, useState, type JSX } from 'react';
 
 import Layout from '../components/Layout';
 import MobileNavigation from '../components/MobileNavigation';
@@ -19,14 +19,14 @@ import { Analytics } from "@vercel/analytics/react"
 
 
 export type NextPageWithLayout<P = {}, IP = P> = NextPage<P, IP> & {
-  getLayout?: (page: ReactElement) => ReactNode;
+  getLayout?: (page: ReactElement<any>) => ReactNode;
 };
 
 type AppPropsWithLayout = AppProps & {
   Component: NextPageWithLayout;
 };
 
-function defaultLayout(page: ReactElement, pageProps) {
+function defaultLayout(page: ReactElement<any>, pageProps) {
   return <Layout socialProps={pageProps.socialProps}>{page}</Layout>;
 }
 

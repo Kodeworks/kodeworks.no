@@ -1,3 +1,4 @@
+import type { JSX } from "react";
 export default function TechList({ technologies }: { technologies: string[] }): JSX.Element {
   return (
     <div className="flex flex-wrap text-sm gap-4">

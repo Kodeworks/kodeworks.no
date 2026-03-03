@@ -6,6 +6,8 @@ import { fmt, getLocale } from '../../utils/useTranslation';
 
 import style from './persontile.module.css';
 
+import type { JSX } from "react";
+
 interface Prop {
   person: Person;
 }

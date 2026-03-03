@@ -2,6 +2,8 @@ import { Person } from '../../types';
 import { getPeople } from '../../lib/sanity';
 import PageHeader from '../../components/PageHeader';
 
+import type { JSX } from "react";
+
 export default function People({ people }: { people: Person[] }): JSX.Element {
   return (
     <main className="main mt-0 pt-40">

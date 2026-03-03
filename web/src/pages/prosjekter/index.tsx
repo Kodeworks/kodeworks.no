@@ -6,6 +6,8 @@ import { getProjects } from '../../lib/sanity';
 import { Project } from '../../types';
 import PageHeader from '../../components/PageHeader';
 
+import type { JSX } from "react";
+
 export default function Projects({ projects }: { projects: Project[] }): JSX.Element {
   const locale = getLocale(useRouter());
   const { t } = useTranslation(dictionary);

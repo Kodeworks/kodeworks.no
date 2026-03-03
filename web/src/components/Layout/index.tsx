@@ -2,6 +2,8 @@ import Head from 'next/head';
 import { SocialProps } from '../../types';
 import { GoogleAnalytics } from '@next/third-parties/google'
 
+import type { JSX } from "react";
+
 interface Prop {
   children: React.ReactNode;
   socialProps?: SocialProps;

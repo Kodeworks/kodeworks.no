@@ -1,4 +1,4 @@
-import { ReactElement } from 'react';
+import { ReactElement, type JSX } from 'react';
 
 import { Project } from '../../types';
 import { usePageTitle } from '../../utils/usePageTitle';
@@ -22,6 +22,6 @@ export default function ProjectHeaderBody({ project }: Prop): JSX.Element {
   );
 }
 
-ProjectHeaderBody.getLayout = function getLayout(page: ReactElement) {
+ProjectHeaderBody.getLayout = function getLayout(page: ReactElement<any>) {
   return <ProjectLayout>{page}</ProjectLayout>;
 };

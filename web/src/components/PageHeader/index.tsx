@@ -1,3 +1,4 @@
+import type { JSX } from "react";
 interface Prop {
   firstWord: string;
   secondWord: string;

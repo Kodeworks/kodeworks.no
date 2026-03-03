@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, type JSX } from 'react';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
 

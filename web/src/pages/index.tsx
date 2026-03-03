@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, type JSX } from 'react';
 import { Person, Project } from '../types';
 import { getPeople, getProjects } from '../lib/sanity';
 import '../styles/_page_home_page.css';

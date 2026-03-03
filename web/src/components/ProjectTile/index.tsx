@@ -4,6 +4,7 @@ import { Project } from '../../types';
 import { fmt, getLocale } from '../../utils/useTranslation';
 import Link from 'next/link';
 import TechList from '../TechList';
+import type { JSX } from "react";
 interface Prop {
   project: Project;
   reverse: boolean;

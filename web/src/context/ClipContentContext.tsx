@@ -1,4 +1,4 @@
-import { createContext, useContext, useEffect, useState } from 'react';
+import { createContext, useContext, useEffect, useState, type JSX } from 'react';
 
 interface ClipContentContextInterface {
   clipMode: string;
