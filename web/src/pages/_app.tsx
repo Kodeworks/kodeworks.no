@@ -49,7 +49,6 @@ export default function App({ Component, pageProps }: AppPropsWithLayout) {
 }
 
 function Main() {
-  const { t } = useTranslation(dictionary);
   const [isNavigationOpen, setIsNavigationOpen] = useState(false);
   const [scrollTop, setScrollTop] = useState(0);
   const router = useRouter();

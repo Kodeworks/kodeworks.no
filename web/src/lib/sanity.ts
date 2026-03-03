@@ -1,6 +1,6 @@
 import { createClient } from '@sanity/client';
 import { CareerValues, JobDescription, Person, Project, StaffManual } from '../types';
-import imageUrlBuilder from '@sanity/image-url';
+import { createImageUrlBuilder } from '@sanity/image-url';
 
 export const client = createClient({
   projectId: 'zkl0178p',
@@ -10,7 +10,7 @@ export const client = createClient({
   useCdn: true,
 });
 
-const builder = imageUrlBuilder(client);
+const builder = createImageUrlBuilder(client);
 
 export const urlFor = (source) => {
   return builder.image(source);
