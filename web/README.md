@@ -2,13 +2,11 @@
 
 ## Getting started
 
-KodeWorks.no is created using [Create React App](https://github.com/facebook/create-react-app). and is currently written in **TypeScript**.
+KodeWorks.no `web` is built with [Next.js](https://nextjs.org/) and is currently written in **TypeScript**.
 
 ### Building
 
-kodeworks.no is created using [Create React App](https://github.com/facebook/create-react-app).
-
-Recommended Node version: 16 Recommended NPM version: 8
+Recommended Node version: 20 (LTS). Recommended npm version: 9+.
 
 Install dependencies using
 
@@ -23,6 +21,12 @@ npm run dev
 ```
 
 Server starts at `http://localhost:3000`.
+
+Build `web`:
+
+```bash
+npm run build -w web
+```
 
 ### Image attributions
 
