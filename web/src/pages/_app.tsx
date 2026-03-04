@@ -13,7 +13,6 @@ import '../styles/kw.css';
 import { useTranslation } from '../utils/useTranslation';
 import Footer from '../components/Footer';
 import ContactSection from '../components/HomePage/ContactSection';
-import { GoogleAnalytics } from '@next/third-parties/google'
 import { Analytics } from "@vercel/analytics/react"
 
 
@@ -105,7 +104,6 @@ function Main() {
         <title>KodeWorks</title>
       </Head>
 
-      <GoogleAnalytics gaId="G-FLXYDD6Z0S" />
       <Analytics />
       
       <div
