@@ -37,6 +37,13 @@ npm run build -w web
 npm run build -w studio
 ```
 
+Validate Sanity documents against a specific dataset:
+
+```bash
+npm run studio:validate:development
+npm run studio:validate:production
+```
+
 ### Deployment
 
 Deployment is handle automatically by Vercel listening to webhooks from Github.  
