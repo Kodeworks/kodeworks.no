@@ -16,7 +16,7 @@
   },
   "devDependencies": {
     "prettier": "^2.5.1",
-    "sanity-codegen": "^1.0.0-alpha.45",
+    "sanity-codegen": "^0.9.8",
     "turbo": "latest"
   },
   "engines": {
