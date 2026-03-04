@@ -1,6 +1,9 @@
+const path = require("path");
+
 module.exports = {
   turbopack: {
-    root: __dirname,
+    // Allow resolving hoisted workspace dependencies from the monorepo root.
+    root: path.join(__dirname, ".."),
   },
   reactStrictMode: true,
 };
