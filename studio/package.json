@@ -21,6 +21,9 @@
     "sanity": "^5.13.0",
     "styled-components": "^6.1.18"
   },
+  "engines": {
+    "node": "24.x"
+  },
   "devDependencies": {
     "@sanity/eslint-config-studio": "^6.0.0",
     "eslint": "^9.39.3",
