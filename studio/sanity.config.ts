@@ -3,7 +3,7 @@ import {visionTool} from '@sanity/vision'
 import {schemaTypes} from './schemas'
 import {structureTool} from 'sanity/structure'
 
-const dataset = 'development' // TODO do not merge, switch back to production when done testing
+const dataset = 'production'
 
 export default defineConfig({
   name: 'default',

@@ -4,7 +4,7 @@ import { defineQuery } from 'groq';
 
 export const client = createClient({
   projectId: 'zkl0178p',
-  dataset: 'development', // TODO do not merge, switch back to production when done testing
+  dataset: 'production',
   apiVersion: '2023-02-06',
   token: process.env.NEXT_PUBLIC_SANITY_TOKEN,
   useCdn: true,
