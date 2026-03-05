@@ -3,7 +3,7 @@ import {visionTool} from '@sanity/vision'
 import {schemaTypes} from './schemas'
 import {structureTool} from 'sanity/structure'
 
-const dataset = 'production'
+const dataset = process.env.SANITY_STUDIO_DATASET ?? 'production'
 
 export default defineConfig({
   name: 'default',
