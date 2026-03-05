@@ -6,30 +6,18 @@ KodeWorks.no `web` is built with [Next.js](https://nextjs.org/) and is currently
 
 ### Building
 
-Recommended Node version: v22.22 (see `.npmrc` in project root).
+For recommended Node version see `.nvmrc` in project root.
 
-Install dependencies using
-```bash
-npm install
-```
+For dependency install, dev server and build commands, see Readme in the repository root.
 
-And run the server locally using
-```bash
-npm run dev
-```
-
-Server starts at `http://localhost:3000`.
-
-Build `web`:
-```bash
-npm run build
-```
+Feel free to run `npm install`, `npm run dev`, `npm run build` in this repository also.
 
 ### Image attributions
 
 Some images used across the site has been found at `https://unsplash.com/`.
 
-
 ## Sanity typegen
 
-Sanity typegen generates types on groq queries in this repository. For it to work, the query needs to be assigned to a constant with a unique name and needs to use `groq` template literal. See [documentation](https://www.sanity.io/docs/apis-and-sdks/sanity-typegen).
+This repository relies on automatic type generations for Sanity content and results of GROQ queries exetuded in this repository. See [Sanity Typegen documentation](https://www.sanity.io/docs/apis-and-sdks/sanity-typegen).
+ 
+For Sanity Typegen to work on GROQ queries, the query needs to be assigned to a constant with a unique name and needs to use `groq` template literal.
