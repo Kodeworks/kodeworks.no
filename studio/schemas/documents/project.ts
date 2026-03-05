@@ -9,6 +9,7 @@ export default defineType({
       title: 'Project name',
       name: 'name',
       type: 'string',
+      validation: (Rule) => Rule.required(),
     }),
     defineField({
       title: 'Slug',
@@ -17,6 +18,7 @@ export default defineType({
       options: {
         source: 'name',
       },
+      validation: (Rule) => Rule.required(),
     }),
     defineField({
       title: 'Image',

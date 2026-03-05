@@ -49,6 +49,6 @@ export const getServerSideProps: GetServerSideProps<Props, { slug: string }> = a
   const job = context.params && (await getJobDescriptionBySlug(context.params.slug));
 
   return {
-    props: { job },
+    props: { job: job as JobDescription }, // TODO typecasting should be fixed
   };
 };

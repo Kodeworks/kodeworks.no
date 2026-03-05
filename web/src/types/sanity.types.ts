@@ -675,10 +675,253 @@ export type GetStaffManualQueryResult = {
   }> | null;
 } | null;
 
+// Source: ../web/src/lib/sanity.ts
+// Variable: getPeopleQuery
+// Query: *[_type == "people" && !(_id in path('drafts.**'))]{firstName, lastName, email, projects[] -> {name, "slug":slug.current}, socials, "imageUrl": image.asset->url}
+export type GetPeopleQueryResult = Array<{
+  firstName: string | null;
+  lastName: string | null;
+  email: string | null;
+  projects: Array<{
+    name: string | null;
+    slug: string | null;
+  }> | null;
+  socials: Array<{
+    type?: string;
+    url?: string;
+    _type: 'social';
+    _key: string;
+  }> | null;
+  imageUrl: string | null;
+}>;
+
+// Source: ../web/src/lib/sanity.ts
+// Variable: getProjectsQuery
+// Query: *            [              _type == "project" && !(_id in path('drafts.**'))            ]{              name,                 description,                extraDescription,                 "slug":slug.current,                 "imageUrl": image.asset->url,                 technologies[],                 showOnFrontPage,                 content[] {                  "type":_type,                  "value": select(_type == 'quote' => {text, author}, _type == 'image' => asset->{url, "alt":originalFilename}, _type == 'wideimage' => asset->{url, "alt":originalFilename}, {text}),                }            }
+export type GetProjectsQueryResult = Array<{
+  name: string | null;
+  description: {
+    en?: string;
+    no?: string;
+  } | null;
+  extraDescription: string | null;
+  slug: string | null;
+  imageUrl: string | null;
+  technologies: Array<string> | null;
+  showOnFrontPage: boolean | null;
+  content: Array<
+    | {
+        type: 'heading';
+        value: {
+          text: string | null;
+        };
+      }
+    | {
+        type: 'image';
+        value: {
+          url: string | null;
+          alt: string | null;
+        } | null;
+      }
+    | {
+        type: 'output';
+        value: {
+          text: string | null;
+        };
+      }
+    | {
+        type: 'paragraph';
+        value: {
+          text: string | null;
+        };
+      }
+    | {
+        type: 'quote';
+        value: {
+          text: string | null;
+          author: string | null;
+        };
+      }
+    | {
+        type: 'wideimage';
+        value: {
+          url: string | null;
+          alt: string | null;
+        } | null;
+      }
+  > | null;
+}>;
+
+// Source: ../web/src/lib/sanity.ts
+// Variable: getProjectQuery
+// Query: *    [    _type == "project" && slug.current == $projectSlug && !(_id in path('drafts.**'))    ][0]    {      name,       description,       extraDescription,      "slug":slug.current,       "imageUrl": image.asset->url,       technologies[],       showOnFrontPage,       content[] {      "type":_type,      "value": select(_type == 'quote' => {text, author}, _type == 'image' => asset->{url, "alt":originalFilename}, _type == 'wideimage' => asset->{url, "alt":originalFilename}, {text}),    }    }
+export type GetProjectQueryResult = {
+  name: string | null;
+  description: {
+    en?: string;
+    no?: string;
+  } | null;
+  extraDescription: string | null;
+  slug: string | null;
+  imageUrl: string | null;
+  technologies: Array<string> | null;
+  showOnFrontPage: boolean | null;
+  content: Array<
+    | {
+        type: 'heading';
+        value: {
+          text: string | null;
+        };
+      }
+    | {
+        type: 'image';
+        value: {
+          url: string | null;
+          alt: string | null;
+        } | null;
+      }
+    | {
+        type: 'output';
+        value: {
+          text: string | null;
+        };
+      }
+    | {
+        type: 'paragraph';
+        value: {
+          text: string | null;
+        };
+      }
+    | {
+        type: 'quote';
+        value: {
+          text: string | null;
+          author: string | null;
+        };
+      }
+    | {
+        type: 'wideimage';
+        value: {
+          url: string | null;
+          alt: string | null;
+        } | null;
+      }
+  > | null;
+} | null;
+
+// Source: ../web/src/lib/sanity.ts
+// Variable: getJobDescriptionsQuery
+// Query: *[_type == "job-description"]{ title, slug, label, subtitle, content}
+export type GetJobDescriptionsQueryResult = Array<{
+  title: string | null;
+  slug: Slug | null;
+  label: string | null;
+  subtitle: string | null;
+  content: Array<{
+    children?: Array<{
+      marks?: Array<string>;
+      text?: string;
+      _type: 'span';
+      _key: string;
+    }>;
+    style?: 'blockquote' | 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'normal';
+    listItem?: 'bullet' | 'number';
+    markDefs?: Array<{
+      href?: string;
+      _type: 'link';
+      _key: string;
+    }>;
+    level?: number;
+    _type: 'block';
+    _key: string;
+  }> | null;
+}>;
+
+// Source: ../web/src/lib/sanity.ts
+// Variable: getJobDescriptionBySlugQuery
+// Query: *[_type == "job-description" && slug.current == $slug][0]{ title, slug, label, subtitle, content}
+export type GetJobDescriptionBySlugQueryResult = {
+  title: string | null;
+  slug: Slug | null;
+  label: string | null;
+  subtitle: string | null;
+  content: Array<{
+    children?: Array<{
+      marks?: Array<string>;
+      text?: string;
+      _type: 'span';
+      _key: string;
+    }>;
+    style?: 'blockquote' | 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'normal';
+    listItem?: 'bullet' | 'number';
+    markDefs?: Array<{
+      href?: string;
+      _type: 'link';
+      _key: string;
+    }>;
+    level?: number;
+    _type: 'block';
+    _key: string;
+  }> | null;
+} | null;
+
+// Source: ../web/src/lib/sanity.ts
+// Variable: getPageQuery
+// Query: *[_type == "page" && title == $title][0]
+export type GetPageQueryResult = {
+  _id: string;
+  _type: 'page';
+  _createdAt: string;
+  _updatedAt: string;
+  _rev: string;
+  title?: string;
+  content?: Array<
+    | ({
+        _key: string;
+      } & Calculator)
+    | ({
+        _key: string;
+      } & CallToAction)
+    | ({
+        _key: string;
+      } & Contact)
+    | ({
+        _key: string;
+      } & Container)
+    | ({
+        _key: string;
+      } & Hero)
+    | ({
+        _key: string;
+      } & Illustration)
+    | ({
+        _key: string;
+      } & ListSection)
+    | ({
+        _key: string;
+      } & Paragraph)
+    | ({
+        _key: string;
+      } & TextSection)
+  >;
+} | null;
+
+// Source: ../web/src/lib/sanity.ts
+// Variable: getCareerValuesQuery
+// Query: *[_type == "career-values"][0]
+export type GetCareerValuesQueryResult = null;
+
 // Query TypeMap
 import '@sanity/client';
 declare module '@sanity/client' {
   interface SanityQueries {
     '*[_type == "staff-manual"][0]{title, intro, sections[]->{title, \'label\': label->label, content, slug}}': GetStaffManualQueryResult;
+    '*[_type == "people" && !(_id in path(\'drafts.**\'))]{firstName, lastName, email, projects[] -> {name, "slug":slug.current}, socials, "imageUrl": image.asset->url}': GetPeopleQueryResult;
+    '*\n            [\n              _type == "project" && !(_id in path(\'drafts.**\'))\n            ]{\n              name, \n                description,\n                extraDescription, \n                "slug":slug.current, \n                "imageUrl": image.asset->url, \n                technologies[], \n                showOnFrontPage, \n                content[] {\n                  "type":_type,\n                  "value": select(_type == \'quote\' => {text, author}, _type == \'image\' => asset->{url, "alt":originalFilename}, _type == \'wideimage\' => asset->{url, "alt":originalFilename}, {text}),\n                }\n            }': GetProjectsQueryResult;
+    '*\n    [\n    _type == "project" && slug.current == $projectSlug && !(_id in path(\'drafts.**\'))\n    ][0]\n    {\n      name, \n      description, \n      extraDescription,\n      "slug":slug.current, \n      "imageUrl": image.asset->url, \n      technologies[], \n      showOnFrontPage, \n      content[] {\n      "type":_type,\n      "value": select(_type == \'quote\' => {text, author}, _type == \'image\' => asset->{url, "alt":originalFilename}, _type == \'wideimage\' => asset->{url, "alt":originalFilename}, {text}),\n    }\n    }': GetProjectQueryResult;
+    '*[_type == "job-description"]{ title, slug, label, subtitle, content}': GetJobDescriptionsQueryResult;
+    '*[_type == "job-description" && slug.current == $slug][0]{ title, slug, label, subtitle, content}': GetJobDescriptionBySlugQueryResult;
+    '*[_type == "page" && title == $title][0]': GetPageQueryResult;
+    '*[_type == "career-values"][0]': GetCareerValuesQueryResult;
   }
 }

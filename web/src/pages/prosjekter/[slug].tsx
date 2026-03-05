@@ -1,100 +1,112 @@
-import {ReactElement} from 'react';
-import {GetStaticPaths, GetStaticProps} from 'next';
+import { ReactElement } from 'react';
+import { GetStaticPaths, GetStaticProps } from 'next';
 import Link from 'next/link';
-import {NextPageWithLayout} from '../_app';
+import { NextPageWithLayout } from '../_app';
 
 import Layout from '../../components/Layout';
-import {Project} from '../../types';
-import {getProject, getProjects} from '../../lib/sanity';
+import { Project } from '../../types';
+import { getProject, getProjects } from '../../lib/sanity';
 import ProjectHeader from '../../components/ProjectHeader';
 import ProjectBody from '../../components/ProjectBody';
 import { usePageTitle } from '../../utils/usePageTitle';
+import { notFound } from 'next/navigation';
 
 interface Prop {
-    project: Project;
+  project: Project;
 }
 
-const ProjectPage: NextPageWithLayout = ({project}: Prop) => {
-    usePageTitle(project.name || '');
+const ProjectPage: NextPageWithLayout = ({ project }: Prop) => {
+  usePageTitle(project.name || '');
 
-    return (
-        <div className="section-padding">
-            { project ?  (
-                <>
-                    <ProjectHeader project={project} />
-                    <div className="w-full h-96 overflow-hidden mb-16"> 
-                        <img
-                            className="w-full h-full object-cover"
-                            src={project.imageUrl}
-                            width="1200"
-                            height="1200"
-                            alt=""
-                        />
-                    </div>
-                    <ProjectBody project={project} />
-                </>
-             ) : "404 Not found"}
-            <footer>
-                <div className="page-project-footer-description mt-8 flex flex-col gap-4">
-                    <h3>Hva annet har vi gjort?</h3>
-                    <p>
-                        Ta gjerne en titt innom <Link href="/prosjekter">prosjektoversikten</Link> vår for å
-                        lese mer om våre andre prosjekter.
-                    </p>
-                    {/* <p>
+  return (
+    <div className="section-padding">
+      {project ? (
+        <>
+          <ProjectHeader project={project} />
+          <div className="w-full h-96 overflow-hidden mb-16">
+            <img
+              className="w-full h-full object-cover"
+              src={project.imageUrl}
+              width="1200"
+              height="1200"
+              alt=""
+            />
+          </div>
+          <ProjectBody project={project} />
+        </>
+      ) : (
+        '404 Not found'
+      )}
+      <footer>
+        <div className="page-project-footer-description mt-8 flex flex-col gap-4">
+          <h3>Hva annet har vi gjort?</h3>
+          <p>
+            Ta gjerne en titt innom <Link href="/prosjekter">prosjektoversikten</Link> vår for å
+            lese mer om våre andre prosjekter.
+          </p>
+          {/* <p>
                         Vi ser også etter utviklere til kontorene våre i Oslo og Trondheim. Sjekk ut{' '}
                         <Link href="/karriere">lønnskalkulatoren</Link>, og våre{' '}
                         <Link href="/karriere">ledige stillinger</Link>.
                     </p> */}
-                </div>
-                <div className="page-project-footer-contact">
-                    <div className="page-project-footer-contact-column">
-                        <div>
-                            <strong>Oslo</strong>
-                            <br/> Grønnegata 10, 0380 Oslo
-                        </div>
-                        <div>
-                            <strong>Trondheim</strong>
-                            <br/> Fjordgata 30, 7010 Trondheim
-                        </div>
-                    </div>
-                    <div className="page-project-footer-contact-column">
-                        <div>
-                            <br/>
-                            <a href="mailto:post@kodeworks.no">post@kodeworks.no</a>
-                            <br/>
-                            +47 405 45 500
-                        </div>
-                    </div>
-                </div>
-            </footer>
         </div>
-    );
+        <div className="page-project-footer-contact">
+          <div className="page-project-footer-contact-column">
+            <div>
+              <strong>Oslo</strong>
+              <br /> Grønnegata 10, 0380 Oslo
+            </div>
+            <div>
+              <strong>Trondheim</strong>
+              <br /> Fjordgata 30, 7010 Trondheim
+            </div>
+          </div>
+          <div className="page-project-footer-contact-column">
+            <div>
+              <br />
+              <a href="mailto:post@kodeworks.no">post@kodeworks.no</a>
+              <br />
+              +47 405 45 500
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  );
 };
 
 ProjectPage.getLayout = function getLayout(page: ReactElement) {
-    return <Layout>{page}</Layout>;
+  return <Layout>{page}</Layout>;
 };
 
 export default ProjectPage;
 
 export const getStaticPaths: GetStaticPaths = async () => {
-    const projects = await getProjects();
-    return {
-        paths: projects.map((project) => ({params: {slug: project.slug}})),
-        fallback: "blocking"
-    };
+  const projects = (await getProjects()).filter((project) => {
+    if (project.slug === null) {
+      console.error(`Slug === null for project ${project.name}`);
+    }
+    return project.slug !== null;
+  });
+  return {
+    paths: projects.map((project) => ({ params: { slug: project.slug! } })),
+    fallback: 'blocking',
+  };
 };
 
 export const getStaticProps: GetStaticProps<Prop, { slug: string }> = async (context) => {
-    if (!context.params) {
-        throw new Error('Params missing');
-    }
+  if (!context.params) {
+    throw new Error('Params missing');
+  }
+  const project = await getProject(context.params.slug);
+  if (project === null) {
+    return notFound();
+  }
 
-    return {
-        props: {
-            project: await getProject(context.params.slug),
-        },
-        revalidate: 10,
-    };
+  return {
+    props: {
+      project: project as Project, // TODO typecasting needs to be fixed
+    },
+    revalidate: 10,
+  };
 };
