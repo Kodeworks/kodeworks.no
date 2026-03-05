@@ -100,7 +100,7 @@ export const getStaticProps: GetStaticProps<Prop, { slug: string }> = async (con
   }
   const project = await getProject(context.params.slug);
   if (project === null) {
-    return notFound();
+    return { notFound: true };
   }
 
   return {
