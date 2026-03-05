@@ -1,5 +1,6 @@
+import { CallToAction as CallToActionType } from '../../types/sanity.types';
 interface Props {
-  ctaSchema: NonNullable<Sanity.Default.Schema.CallToAction>;
+  ctaSchema: NonNullable<CallToActionType>;
 }
 export default function CallToAction({ ctaSchema }: Props) {
   return (

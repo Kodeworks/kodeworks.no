@@ -4,9 +4,10 @@ import CareerContext from '../../context/CareerContext';
 import NumberWithSeperators from '../NumberWithSeparator';
 import style from '../page/calculator.module.css';
 import TooltipComponent from '../ToolTip';
+import { Calculator } from '../../types/sanity.types';
 
 interface Props {
-  careerSchema: NonNullable<Sanity.Default.Schema.Calculator>;
+  careerSchema: NonNullable<Calculator>;
 }
 
 export default function Total({ careerSchema }: Props) {
@@ -18,12 +19,17 @@ export default function Total({ careerSchema }: Props) {
   }
 
   const permanentBenefits = useMemo(() => {
-    if (Array.isArray(careerSchema.employeeBudget?.epolyeeBudgetsPosts) && Array.isArray(careerSchema.benefits?.benefitItems)) {
-      const totalEmployeeBudgetAmount = careerSchema.employeeBudget?.epolyeeBudgetsPosts.filter((post) => post.fixedBenefits)
+    if (
+      Array.isArray(careerSchema.employeeBudget?.epolyeeBudgetsPosts) &&
+      Array.isArray(careerSchema.benefits?.benefitItems)
+    ) {
+      const totalEmployeeBudgetAmount = careerSchema.employeeBudget?.epolyeeBudgetsPosts
+        .filter((post) => post.fixedBenefits)
         .map((post) => post.amountYearly)
         .reduce((accumulator, currentValue) => accumulator! + currentValue!);
 
-      const totalBenefitsAmount = careerSchema.benefits?.benefitItems.filter((item) => item.fixedBenefits)
+      const totalBenefitsAmount = careerSchema.benefits?.benefitItems
+        .filter((item) => item.fixedBenefits)
         .map((item) => item.amountYearly)
         .reduce((accumulator, currentValue) => accumulator! + currentValue!);
       return totalEmployeeBudgetAmount! + totalBenefitsAmount!;

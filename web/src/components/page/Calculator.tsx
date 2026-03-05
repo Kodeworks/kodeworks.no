@@ -7,9 +7,10 @@ import Pension from '../Career/Pension';
 import Salary from '../Career/Salary';
 import SalaryAdjustment from '../Career/SalaryAdjustment';
 import Total from '../Career/Total';
+import { Calculator as CalculatorType } from '../../types/sanity.types';
 
 interface Props {
-  careerSchema: NonNullable<Sanity.Default.Schema.Calculator>;
+  careerSchema: NonNullable<CalculatorType>;
 }
 
 export default function Calculator({ careerSchema }: Props) {
@@ -38,9 +39,7 @@ export default function Calculator({ careerSchema }: Props) {
           <Salary />
         </div>
         <div className="col-span-1 lg:col-span-2 grid grid-cols-[1fr] lg:grid-cols-[repeat(2,1fr)]">
-          {
-            careerSchema && <Total careerSchema={careerSchema} />
-          }
+          {careerSchema && <Total careerSchema={careerSchema} />}
           <SalaryAdjustment careerSchema={careerSchema} />
         </div>
         <Pension careerSchema={careerSchema} />

@@ -28,3 +28,8 @@ npm run build
 ### Image attributions
 
 Some images used across the site has been found at `https://unsplash.com/`.
+
+
+## Sanity typegen
+
+Sanity typegen generates types on groq queries in this repository. For it to work, the query needs to be assigned to a constant with a unique name and needs to use `groq` template literal. See [documentation](https://www.sanity.io/docs/apis-and-sdks/sanity-typegen).

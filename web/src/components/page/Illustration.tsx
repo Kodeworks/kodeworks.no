@@ -1,7 +1,8 @@
 import { urlFor } from '../../lib/sanity';
+import { Illustration as IllustrationType } from '../../types/sanity.types';
 
 interface Props {
-  illustrationSchema: NonNullable<Sanity.Default.Schema.Illustration>;
+  illustrationSchema: NonNullable<IllustrationType>;
 }
 
 export default function Illustration({ illustrationSchema }: Props) {

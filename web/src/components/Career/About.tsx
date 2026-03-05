@@ -1,9 +1,10 @@
 import { useContext, useEffect } from 'react';
 import CareerContext from '../../context/CareerContext';
 import style from '../page/calculator.module.css';
+import { Calculator } from '../../types/sanity.types';
 
 interface Props {
-  careerSchema: NonNullable<Sanity.Default.Schema.Calculator>;
+  careerSchema: NonNullable<Calculator>;
 }
 
 enum Education {

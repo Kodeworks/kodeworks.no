@@ -8,10 +8,10 @@
     "dev": "sanity dev",
     "start": "sanity start",
     "build": "sanity build",
-    "studio:validate:development": "sanity documents validate --dataset development -y",
-    "studio:validate:production": "sanity documents validate --dataset production -y",
     "deploy": "sanity deploy",
-    "deploy-graphql": "sanity graphql deploy"
+    "typegen": "sanity schema extract && sanity typegen generate",
+    "studio:validate:development": "sanity documents validate --dataset development -y",
+    "studio:validate:production": "sanity documents validate --dataset production -y"
   },
   "keywords": [
     "sanity"

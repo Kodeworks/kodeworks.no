@@ -1,9 +1,10 @@
 import { urlFor } from '../../lib/sanity';
 import { PortableText } from '@portabletext/react';
 import CallToAction from './CallToAction';
+import { Hero as HeroType } from '../../types/sanity.types';
 
 interface Props {
-  heroSchema: NonNullable<Sanity.Default.Schema.Hero>;
+  heroSchema: NonNullable<HeroType>;
 }
 
 export default function Hero({ heroSchema }: Props) {

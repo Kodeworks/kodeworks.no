@@ -1,5 +1,7 @@
+import { ListSection as ListSectionType } from '../../types/sanity.types';
+
 interface Props {
-  listSectionSchema: NonNullable<Sanity.Default.Schema.ListSection>;
+  listSectionSchema: NonNullable<ListSectionType>;
 }
 
 export default function ListSection({ listSectionSchema }: Props) {

@@ -2,9 +2,10 @@ import { usePageTitle } from '../../utils/usePageTitle';
 import { GetServerSideProps } from 'next';
 import { getPage } from '../../lib/sanity';
 import PageBuilder from '../../components/page/PageBuilder';
+import { Page } from '../../types/sanity.types';
 
 interface Props {
-  page: NonNullable<Sanity.Default.Schema.Page>;
+  page: NonNullable<Page>;
 }
 export default function NewCareerPage({ page }: Props) {
   usePageTitle('Career');

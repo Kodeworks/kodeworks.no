@@ -3,9 +3,10 @@ import { urlFor } from '../../lib/sanity';
 import { useContext, useEffect } from 'react';
 import { useClipText } from '../../utils/useClipText';
 import { ClipContentContext } from '../../context/ClipContentContext';
+import { Calculator } from '../../types/sanity.types';
 
 interface Props {
-  careerSchema: NonNullable<Sanity.Default.Schema.Calculator>;
+  careerSchema: NonNullable<Calculator>;
 }
 
 export default function EmployeeBudgets({ careerSchema }: Props) {
