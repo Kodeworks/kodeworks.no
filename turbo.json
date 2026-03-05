@@ -34,7 +34,7 @@
 
     "studio#deploy": {
       "dependsOn": ["build"],
-      "inputs": ["$TURBO_DEFAULT$", ".env*"]
+      "cache": false
     },
 
     "typecheck": {
