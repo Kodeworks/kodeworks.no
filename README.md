@@ -29,7 +29,12 @@ npm run dev
 
 Server starts at `http://localhost:3000` for web and `http://localhost:3333/` for studio.
 
-Build _Web_ and _Studio_:
+Build web:
+```bash
+npm run build:web
+```
+
+Build web and studio:
 ```bash
 npm run build
 ```
