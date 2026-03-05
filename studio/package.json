@@ -11,7 +11,8 @@
     "deploy": "sanity deploy",
     "typegen": "sanity schema extract && sanity typegen generate",
     "studio:validate:development": "sanity documents validate --dataset development -y",
-    "studio:validate:production": "sanity documents validate --dataset production -y"
+    "studio:validate:production": "sanity documents validate --dataset production -y",
+    "typecheck": "tsc --noEmit"
   },
   "keywords": [
     "sanity"
