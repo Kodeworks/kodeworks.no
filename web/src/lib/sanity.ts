@@ -1,33 +1,37 @@
 import { createClient } from '@sanity/client';
-import { CareerValues, JobDescription, Person, Project, StaffManual } from '../types';
-import imageUrlBuilder from '@sanity/image-url';
+import { createImageUrlBuilder } from '@sanity/image-url';
+import { defineQuery } from 'groq';
 
 export const client = createClient({
   projectId: 'zkl0178p',
-  dataset: 'production',
+  dataset: process.env.NEXT_PUBLIC_SANITY_DATASET ?? 'production',
   apiVersion: '2023-02-06',
   token: process.env.NEXT_PUBLIC_SANITY_TOKEN,
   useCdn: true,
 });
 
-const builder = imageUrlBuilder(client);
+const builder = createImageUrlBuilder(client);
 
 export const urlFor = (source) => {
   return builder.image(source);
 };
 
-export const getStaffManual = () =>
-  client.fetch<StaffManual>(
+export const getStaffManual = () => {
+  const getStaffManualQuery = defineQuery(
     `*[_type == "staff-manual"][0]{title, intro, sections[]->{title, 'label': label->label, content, slug}}`
   );
+  return client.fetch(getStaffManualQuery);
+};
 
-export const getPeople = () =>
-  client.fetch<Person[]>(
-    '*[_type == "people" && !(_id in path(\'drafts.**\'))]{firstName, lastName, email, projects[] -> {name, "slug":slug.current}, socials, "imageUrl": image.asset->url}'
+export const getPeople = () => {
+  const getPeopleQuery = defineQuery(
+    `*[_type == "people" && !(_id in path('drafts.**'))]{firstName, lastName, email, projects[] -> {name, "slug":slug.current}, socials, "imageUrl": image.asset->url}`
   );
+  return client.fetch(getPeopleQuery);
+};
 
-export const getProjects = () =>
-  client.fetch<Project[]>(
+export const getProjects = () => {
+  const getProjectsQuery = defineQuery(
     `*
             [
               _type == "project" && !(_id in path('drafts.**'))
@@ -45,12 +49,14 @@ export const getProjects = () =>
                 }
             }`
   );
+  return client.fetch(getProjectsQuery);
+};
 
-export const getProject = (projectSlug: String) =>
-  client.fetch<Project>(
+export const getProject = (projectSlug: string) => {
+  const getProjectQuery = defineQuery(
     `*
     [
-    _type == "project" && slug.current == "${projectSlug}" && !(_id in path('drafts.**'))
+    _type == "project" && slug.current == $projectSlug && !(_id in path('drafts.**'))
     ][0]
     {
       name, 
@@ -66,17 +72,28 @@ export const getProject = (projectSlug: String) =>
     }
     }`
   );
+  return client.fetch(getProjectQuery, { projectSlug });
+};
 
-export const getJobDescriptions = () =>
-  client.fetch<JobDescription>(
+export const getJobDescriptions = () => {
+  const getJobDescriptionsQuery = defineQuery(
     `*[_type == "job-description"]{ title, slug, label, subtitle, content}`
   );
-export const getJobDescriptionBySlug = (slug: string) =>
-  client.fetch<JobDescription>(
-    `*[_type == "job-description" && slug.current == "${slug}"][0]{ title, slug, label, subtitle, content}`
+  return client.fetch(getJobDescriptionsQuery);
+};
+export const getJobDescriptionBySlug = (slug: string) => {
+  const getJobDescriptionBySlugQuery = defineQuery(
+    `*[_type == "job-description" && slug.current == $slug][0]{ title, slug, label, subtitle, content}`
   );
+  return client.fetch(getJobDescriptionBySlugQuery, { slug });
+};
 
-export const getPage = (title: string) =>
-  client.fetch<Sanity.Default.Schema.Page>(`*[_type == "page" && title == "${title}"][0]`);
+export const getPage = (title: string) => {
+  const getPageQuery = defineQuery(`*[_type == "page" && title == $title][0]`);
+  return client.fetch(getPageQuery, { title });
+};
 
-export const getCareerValues = () => client.fetch<CareerValues>(`*[_type == "career-values"][0]`);
+export const getCareerValues = () => {
+  const getCareerValuesQuery = defineQuery(`*[_type == "career-values"][0]`);
+  return client.fetch(getCareerValuesQuery);
+};

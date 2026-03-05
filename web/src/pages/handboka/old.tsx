@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { useClipContent } from '../../context/ClipContentContext';
 
-export default function StaffManual(): JSX.Element {
+export default function StaffManual() {
   useClipContent('');
 
   return (

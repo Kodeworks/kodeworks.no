@@ -18,9 +18,10 @@ import Illustration from './Illustration';
 import Paragraph from './Paragraph';
 import Calculator from './Calculator';
 import Contact from './Contact';
+import { Page } from '../../types/sanity.types';
 
 interface Props {
-  pageSchema: NonNullable<Sanity.Default.Schema.Page>;
+  pageSchema: NonNullable<Page>;
 }
 
 export default function PageBuilder({ pageSchema }: Props) {

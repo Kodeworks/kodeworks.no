@@ -22,7 +22,7 @@ export async function getStaticProps() {
   };
 }
 
-function Home({ people, projects }: { people: Person[]; projects: Project[] }): JSX.Element {
+function Home({ people, projects }: { people: Person[]; projects: Project[] }) {
   const [highlightedProject, setHighlightedProject] = useState<Project>();
   const [highlightedPeople, setHighlightedPeople] = useState<Person[]>([]);
 

@@ -2,9 +2,10 @@ import { useContext, useEffect } from 'react';
 import { ClipContentContext } from '../../context/ClipContentContext';
 import { urlFor } from '../../lib/sanity';
 import { useClipText } from '../../utils/useClipText';
+import { Contact as ContactType } from '../../types/sanity.types';
 
 interface Props {
-  contactSchema: NonNullable<Sanity.Default.Schema.Contact>;
+  contactSchema: NonNullable<ContactType>;
 }
 
 export default function Contact({ contactSchema }: Props) {

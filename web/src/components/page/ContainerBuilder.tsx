@@ -14,9 +14,10 @@ import classNames from 'classnames';
 import { useContext, useEffect, useId } from 'react';
 import { useClipText } from '../../utils/useClipText';
 import { ClipContentContext } from '../../context/ClipContentContext';
+import { Container } from '../../types/sanity.types';
 
 interface Props {
-  containerSchema: NonNullable<Sanity.Default.Schema.Container>;
+  containerSchema: NonNullable<Container>;
 }
 
 export default function ContainerBuilder({ containerSchema }: Props) {

@@ -1,4 +1,4 @@
-export default function Privacy(): JSX.Element {
+export default function Privacy() {
   return (
     <div className="privacy">
       <section className={`section section-hero section-text-center`}>

@@ -1,4 +1,4 @@
-export default function TechList({ technologies }: { technologies: string[] }): JSX.Element {
+export default function TechList({ technologies }: { technologies: string[] }) {
   return (
     <div className="flex flex-wrap text-sm gap-4">
       {technologies?.map((tech, index) => (

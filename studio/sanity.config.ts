@@ -1,17 +1,17 @@
 import {defineConfig} from 'sanity'
-import {deskTool} from 'sanity/desk'
 import {visionTool} from '@sanity/vision'
 import {schemaTypes} from './schemas'
+import {structureTool} from 'sanity/structure'
+
+const dataset = process.env.SANITY_STUDIO_DATASET ?? 'production'
 
 export default defineConfig({
   name: 'default',
-  title: 'studio.kodeworks.no',
-
+  title: `studio.kodeworks.no - ${dataset}`,
   projectId: 'zkl0178p',
-  dataset: 'production',
+  dataset: dataset,
 
-  plugins: [deskTool(), visionTool()],
-
+  plugins: [structureTool(), visionTool()],
   schema: {
     types: schemaTypes,
   },

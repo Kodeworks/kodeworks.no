@@ -18,7 +18,7 @@ interface Prop {
   ): void;
 }
 
-export default function Navigation({ isOpened, toggleNavigationOpened }: Prop): JSX.Element {
+export default function Navigation({ isOpened, toggleNavigationOpened }: Prop) {
   const { t } = useTranslation(dictionary);
   const { locale, pathname } = useRouter();
 

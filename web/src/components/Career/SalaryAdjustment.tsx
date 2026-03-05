@@ -2,9 +2,10 @@ import { useContext, useEffect, useRef, useState } from 'react';
 import CareerContext from '../../context/CareerContext';
 import NumberWithSeperators from '../NumberWithSeparator';
 import style from '../page/calculator.module.css';
+import { Calculator } from '../../types/sanity.types';
 
 interface Props {
-  careerSchema: NonNullable<Sanity.Default.Schema.Calculator>;
+  careerSchema: NonNullable<Calculator>;
 }
 
 export default function SalaryAdjustment({ careerSchema }: Props) {

@@ -1,18 +1,47 @@
 {
-  "baseBranch": "origin/master",
-  "pipeline": {
+  "$schema": "https://turborepo.dev/schema.json",
+  "tasks": {
     "build": {
       "dependsOn": ["^build"],
-      "outputs": [".next/**", "dist/**"]
+      "inputs": ["$TURBO_DEFAULT$", ".env*"]
     },
-    "deploy": {
-      "dependsOn": ["build"]
+    "web#build": {
+      "dependsOn": ["^build"],
+      "inputs": ["$TURBO_DEFAULT$", ".env*"],
+      "outputs": [".next/**", "!.next/cache/**"]
+    },
+
+    "start": {
+      "dependsOn": ["build"],
+      "persistent": true,
+      "cache": false
+    },
+
+    "dev": {
+      "dependsOn": ["^build"],
+      "cache": false,
+      "persistent": true
+    },
+    "web#dev": {
+      "dependsOn": ["^build", "studio#typegen"],
+      "cache": false,
+      "persistent": true
+    },
+
+    "studio#typegen": {
+      "inputs": ["$TURBO_ROOT$/web/src/**/*.{ts,tsx}"]
+    },
+
+    "studio#deploy": {
+      "dependsOn": ["build"],
+      "cache": false
+    },
+
+    "typecheck": {
+      "dependsOn": ["studio#typegen"]
     },
     "lint": {
-      "outputs": []
-    },
-    "dev": {
-      "cache": false
+      "dependsOn": ["^lint"]
     }
   }
 }

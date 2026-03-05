@@ -1,7 +1,8 @@
 import { urlFor } from '../../lib/sanity';
+import { Calculator } from '../../types/sanity.types';
 
 interface Props {
-  careerSchema: NonNullable<Sanity.Default.Schema.Calculator>;
+  careerSchema: NonNullable<Calculator>;
 }
 
 export default function OtherBenefits({ careerSchema }: Props) {

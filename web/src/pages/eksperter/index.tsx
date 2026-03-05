@@ -2,7 +2,7 @@ import { Person } from '../../types';
 import { getPeople } from '../../lib/sanity';
 import PageHeader from '../../components/PageHeader';
 
-export default function People({ people }: { people: Person[] }): JSX.Element {
+export default function People({ people }: { people: Person[] }) {
   return (
     <main className="main mt-0 pt-40">
       <section className="w-full">

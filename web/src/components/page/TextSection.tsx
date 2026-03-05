@@ -1,7 +1,8 @@
 import { PortableText } from '@portabletext/react';
+import { TextSection as TextSectionType } from '../../types/sanity.types';
 
 interface Props {
-  textSectionSchema: NonNullable<Sanity.Default.Schema.TextSection>;
+  textSectionSchema: NonNullable<TextSectionType>;
 }
 
 export default function TextSection({ textSectionSchema }: Props) {

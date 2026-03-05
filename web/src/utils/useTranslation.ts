@@ -7,7 +7,7 @@ export function useTranslation(dictionary: Dictionary) {
   const locale = getLocale(router);
 
   function translate(term: string, ...args: any[]): string {
-    let translation = dictionary[locale!][term];
+    let translation = dictionary[locale ?? 'no'][term]; // TODO This doesn't work in Next 16. I18n needs to be fixed
 
     args.forEach((arg, i) => {
       translation = translation.replaceAll(`%${i + 1}`, arg);

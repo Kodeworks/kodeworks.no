@@ -3,9 +3,10 @@ import CareerContext from '../../context/CareerContext';
 import { ClipContentContext } from '../../context/ClipContentContext';
 import { useClipText } from '../../utils/useClipText';
 import NumberWithSeperators from '../NumberWithSeparator';
+import { Calculator } from '../../types/sanity.types';
 
 interface Props {
-  careerSchema: NonNullable<Sanity.Default.Schema.Calculator>;
+  careerSchema: NonNullable<Calculator>;
 }
 
 export default function Pension({ careerSchema }: Props) {

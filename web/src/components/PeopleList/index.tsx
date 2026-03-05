@@ -8,7 +8,7 @@ interface Prop {
   people: Person[];
 }
 
-export default function PeopleList({ people }: Prop): JSX.Element {
+export default function PeopleList({ people }: Prop) {
   return (
     <ul className={style['people-list']}>
       {people.map((person) => (

@@ -8,7 +8,7 @@ interface Prop {
   project: Project;
 }
 
-export default function ProjectHeader({ project }: Prop): JSX.Element {
+export default function ProjectHeader({ project }: Prop) {
   const locale = getLocale(useRouter());
   return (
     <header className="flex flex-col justify-start lg:mt-52 mt-28 lg:mb-16 mb-12">

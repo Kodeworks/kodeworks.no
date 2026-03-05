@@ -7,7 +7,7 @@ interface Prop {
   project: Project;
 }
 
-export default function ProjectBody({ project }: Prop): JSX.Element {
+export default function ProjectBody({ project }: Prop) {
   const content = project.content as Content[] | null;
 
   const projectContentSplitByOutput =

@@ -9,22 +9,19 @@
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev --parallel",
-    "deploy": "turbo run deploy",
+    "studio:deploy": "turbo run deploy",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "codegen": "sanity-codegen codegen"
+    "studio:validate:development": "npm run studio:validate:development -w studio",
+    "studio:validate:production": "npm run studio:validate:production -w studio"
   },
   "devDependencies": {
     "prettier": "^2.5.1",
-    "sanity-codegen": "^1.0.0-alpha.45",
-    "turbo": "latest"
+    "turbo": "^2.8.13"
   },
   "engines": {
-    "npm": ">=7.0.0"
+    "node": ">=20.0.0",
+    "npm": ">=9.0.0"
   },
-  "packageManager": "npm@9.4.0",
-  "dependencies": {
-    "react-countup": "^6.4.2",
-    "react-tooltip": "^5.14.0"
-  }
+  "packageManager": "npm@9.4.0"
 }

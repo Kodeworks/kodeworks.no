@@ -10,7 +10,7 @@ interface Prop {
   person: Person;
 }
 
-export default function PersonTile({ person }: Prop): JSX.Element {
+export default function PersonTile({ person }: Prop) {
   const locale = getLocale(useRouter());
   return (
     <>

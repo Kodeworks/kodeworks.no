@@ -9,7 +9,7 @@ interface Prop {
   reverse: boolean;
 }
 
-export default function ProjectTile({ project, reverse }: Prop): JSX.Element {
+export default function ProjectTile({ project, reverse }: Prop) {
   const locale = getLocale(useRouter());
 
   return (

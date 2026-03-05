@@ -13,7 +13,6 @@ import '../styles/kw.css';
 import { useTranslation } from '../utils/useTranslation';
 import Footer from '../components/Footer';
 import ContactSection from '../components/HomePage/ContactSection';
-import { GoogleAnalytics } from '@next/third-parties/google'
 import { Analytics } from "@vercel/analytics/react"
 
 
@@ -30,7 +29,7 @@ function defaultLayout(page: ReactElement, pageProps) {
   return <Layout socialProps={pageProps.socialProps}>{page}</Layout>;
 }
 
-export default function App({ Component, pageProps }: AppPropsWithLayout): JSX.Element {
+export default function App({ Component, pageProps }: AppPropsWithLayout) {
   const getLayout = Component.getLayout ?? defaultLayout;
   const disableContact = pageProps?.disableContact as boolean;
 
@@ -48,8 +47,7 @@ export default function App({ Component, pageProps }: AppPropsWithLayout): JSX.E
   );
 }
 
-function Main(): JSX.Element {
-  const { t } = useTranslation(dictionary);
+function Main() {
   const [isNavigationOpen, setIsNavigationOpen] = useState(false);
   const [scrollTop, setScrollTop] = useState(0);
   const router = useRouter();
@@ -106,7 +104,6 @@ function Main(): JSX.Element {
         <title>KodeWorks</title>
       </Head>
 
-      <GoogleAnalytics gaId="G-FLXYDD6Z0S" />
       <Analytics />
       
       <div

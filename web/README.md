@@ -2,30 +2,22 @@
 
 ## Getting started
 
-KodeWorks.no is created using [Create React App](https://github.com/facebook/create-react-app). and is currently written in **TypeScript**.
-
-The project is currently in an early state and breaking changes will occur.
+KodeWorks.no `web` is built with [Next.js](https://nextjs.org/) and is currently written in **TypeScript**.
 
 ### Building
 
-kodeworks.no is created using [Create React App](https://github.com/facebook/create-react-app).
+For recommended Node version see `.nvmrc` in project root.
 
-Recommended Node version: 16 Recommended NPM version: 8
+For dependency install, dev server and build commands, see Readme in the repository root.
 
-Install dependencies using
-
-```bash
-npm install
-```
-
-And run the server locally using
-
-```bash
-npm run dev
-```
-
-Server starts at `http://localhost:3000`.
+Feel free to run `npm install`, `npm run dev`, `npm run build` in this repository also.
 
 ### Image attributions
 
 Some images used across the site has been found at `https://unsplash.com/`.
+
+## Sanity typegen
+
+This repository relies on automatic type generations for Sanity content and results of GROQ queries exetuded in this repository. See [Sanity Typegen documentation](https://www.sanity.io/docs/apis-and-sdks/sanity-typegen).
+ 
+For Sanity Typegen to work on GROQ queries, the query needs to be assigned to a constant with a unique name and needs to use `groq` template literal.

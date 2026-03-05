@@ -1,14 +1,14 @@
-const withImages = require('next-images');
+const path = require('path');
 
-module.exports = withImages({
+module.exports = {
   i18n: {
     locales: ['no', 'en'],
     localeDetection: false,
     defaultLocale: 'no',
   },
-  reactStrictMode: true,
-  swcMinify: true,
-  webpack(config, options) {
-    return config;
+  turbopack: {
+    // Allow resolving hoisted workspace dependencies from the monorepo root.
+    root: path.join(__dirname, '..'),
   },
-});
+  reactStrictMode: true,
+};

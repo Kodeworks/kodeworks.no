@@ -1,7 +1,8 @@
 import { PortableText } from '@portabletext/react';
+import { Paragraph as ParagraphType } from '../../types/sanity.types';
 
 interface Props {
-  paragraphSchema: NonNullable<Sanity.Default.Schema.Paragraph>;
+  paragraphSchema: NonNullable<ParagraphType>;
 }
 
 export default function Paragraph({ paragraphSchema }: Props) {
