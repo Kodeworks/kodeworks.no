@@ -4,7 +4,7 @@
 }
 
 #menu {
-  height: 100;
+  height: 100%;
   overflow: hidden;
   transition: visibility 0.2s ease-in-out 0.1s, z-index 0.2s ease-in-out 0.1s;
   width: 100vw;
