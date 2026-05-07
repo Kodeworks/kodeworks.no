@@ -13,9 +13,7 @@ import '../styles/kw.css';
 import { useTranslation } from '../utils/useTranslation';
 import Footer from '../components/Footer';
 import ContactSection from '../components/HomePage/ContactSection';
-import { Analytics } from "@vercel/analytics/react"
-
-
+import { Analytics } from '@vercel/analytics/react';
 
 export type NextPageWithLayout<P = {}, IP = P> = NextPage<P, IP> & {
   getLayout?: (page: ReactElement) => ReactNode;
@@ -38,9 +36,7 @@ export default function App({ Component, pageProps }: AppPropsWithLayout) {
       <Main />
       {getLayout(<Component {...pageProps} />, pageProps)}
       <div className="section-padding lg:mt-24 mt-12">
-        {
-          disableContact !== true && <ContactSection />
-        }
+        {disableContact !== true && <ContactSection />}
       </div>
       <Footer />
     </>
@@ -105,11 +101,8 @@ function Main() {
       </Head>
 
       <Analytics />
-      
-      <div
-        className="flex justify-between items-center py-5"
-        id="menu-bar"
-      >
+
+      <div className="flex justify-between items-center py-5" id="menu-bar">
         <Link href="/" className="xl:pl-16 pl-8">
           <div id="menu-bar-logo" />
         </Link>
@@ -132,14 +125,16 @@ function Main() {
             <span className="lg:text-2xl text-lg text-black hover:text-black">Våre prosjekter</span>
           </Link>
 
-          {/* <Link
+          <Link
             href="/karriere"
             className={`no-underline leading-none nav-link ${
               router.pathname === '/karriere' ? 'active' : ''
             }`}
           >
-            <span className="lg:text-2xl text-lg text-black hover:text-black">Jobbe i KodeWorks</span>
-          </Link> */}
+            <span className="lg:text-2xl text-lg text-black hover:text-black">
+              Jobbe i KodeWorks
+            </span>
+          </Link>
 
           <Link
             href="/handboka"
