@@ -18,6 +18,14 @@ export default function About({ careerSchema }: Props) {
     setContextSalary();
   });
 
+  // Max slider value differs between master and bachelors degree
+  function getSliderMaxLevel(education: Education) {
+    if (education == Education.Bachelor) {
+      return careerSchema.salaryStpes!.length - 1;
+    }
+    return careerSchema.salaryStpes!.length - 2;
+  }
+
   const maxSalaryLevel = careerSchema.salaryStpes!.length - 1;
 
   function setContextSalary() {
@@ -53,6 +61,11 @@ export default function About({ careerSchema }: Props) {
             defaultChecked
             onChange={(event) => {
               setEducation(+event.target.value);
+              // Edge case for switching from Bachelor to Master when slider is maxed out.
+              const newMaxLevel = getSliderMaxLevel(+event.target.value);
+              if (seniority > newMaxLevel) {
+                setSeniority(newMaxLevel);
+              }
               setContextSalary();
             }}
           />
@@ -66,7 +79,7 @@ export default function About({ careerSchema }: Props) {
             type="range"
             className={`${style['calculator-seniority-range']}`}
             min={0}
-            max={20}
+            max={getSliderMaxLevel(education)}
             onChange={(event) => {
               setSeniority(+event.target.value);
               setContextSalary();
