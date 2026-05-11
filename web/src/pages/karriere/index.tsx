@@ -3,6 +3,7 @@ import { GetServerSideProps } from 'next';
 import { getPage } from '../../lib/sanity';
 import PageBuilder from '../../components/page/PageBuilder';
 import { Page } from '../../types/sanity.types';
+import ScrollToHash from '../../components/ScrollToHash';
 
 interface Props {
   page: NonNullable<Page>;
@@ -12,6 +13,7 @@ export default function NewCareerPage({ page }: Props) {
 
   return (
     <main className="main">
+      <ScrollToHash />
       <PageBuilder pageSchema={page} />
     </main>
   );
