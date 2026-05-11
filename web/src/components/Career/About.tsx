@@ -1,4 +1,4 @@
-import { useContext, useEffect } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import CareerContext from '../../context/CareerContext';
 import style from '../page/calculator.module.css';
 import { Calculator } from '../../types/sanity.types';
@@ -18,7 +18,8 @@ export default function About({ careerSchema }: Props) {
     setContextSalary();
   });
 
-  // Max slider value differs between master and bachelors degree
+  const [sliderMaxLevel, setSliderMaxLevel] = useState(getSliderMaxLevel(Education.Master));
+
   function getSliderMaxLevel(education: Education) {
     if (education == Education.Bachelor) {
       return careerSchema.salaryStpes!.length - 1;
@@ -26,6 +27,16 @@ export default function About({ careerSchema }: Props) {
     return careerSchema.salaryStpes!.length - 2;
   }
 
+  function handleEducationChange(event: React.ChangeEvent<HTMLInputElement>) {
+    const value = +event.target.value;
+    setEducation(value);
+    const newMaxLevel = getSliderMaxLevel(value);
+    if (seniority > newMaxLevel) {
+      setSeniority(newMaxLevel);
+    }
+    setSliderMaxLevel(newMaxLevel);
+    setContextSalary();
+  }
   const maxSalaryLevel = careerSchema.salaryStpes!.length - 1;
 
   function setContextSalary() {
@@ -45,10 +56,7 @@ export default function About({ careerSchema }: Props) {
             className={`${style['calculator-education-input']}`}
             name="education"
             value={Education.Bachelor}
-            onChange={(event) => {
-              setEducation(+event.target.value);
-              setContextSalary();
-            }}
+            onChange={handleEducationChange}
           />
           Bachelorgrad
         </label>
@@ -59,15 +67,7 @@ export default function About({ careerSchema }: Props) {
             name="education"
             value={Education.Master}
             defaultChecked
-            onChange={(event) => {
-              setEducation(+event.target.value);
-              // Edge case for switching from Bachelor to Master when slider is maxed out.
-              const newMaxLevel = getSliderMaxLevel(+event.target.value);
-              if (seniority > newMaxLevel) {
-                setSeniority(newMaxLevel);
-              }
-              setContextSalary();
-            }}
+            onChange={handleEducationChange}
           />
           Mastergrad
         </label>
@@ -78,8 +78,9 @@ export default function About({ careerSchema }: Props) {
           <input
             type="range"
             className={`${style['calculator-seniority-range']}`}
+            key={sliderMaxLevel}
             min={0}
-            max={getSliderMaxLevel(education)}
+            max={sliderMaxLevel}
             onChange={(event) => {
               setSeniority(+event.target.value);
               setContextSalary();
