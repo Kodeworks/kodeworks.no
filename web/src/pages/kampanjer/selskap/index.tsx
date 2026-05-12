@@ -3,7 +3,6 @@ import { NextPageWithLayout } from '../../_app';
 import CampaignContact from '../../../components/HomePage/ContactSection/CampaignContact';
 
 const CompanyPage: NextPageWithLayout = () => {
-
   const contact = {
     title: 'Book gratis konsulenttime',
     subject: 'Kampanje større selskap',
@@ -18,13 +17,13 @@ const CompanyPage: NextPageWithLayout = () => {
   function calcOffsetPosition(element: HTMLElement) {
     const elementPosition = element.getBoundingClientRect().top;
     return elementPosition + window.scrollY - headerHeight;
-  };
+  }
 
   const scrollToSection2 = () => {
     if (section2Ref.current) {
       window.scrollTo({
         top: calcOffsetPosition(section2Ref.current),
-        behavior: 'smooth'
+        behavior: 'smooth',
       });
     }
   };
@@ -33,14 +32,13 @@ const CompanyPage: NextPageWithLayout = () => {
     if (contactRef.current) {
       window.scrollTo({
         top: calcOffsetPosition(contactRef.current),
-        behavior: 'smooth'
+        behavior: 'smooth',
       });
     }
-  };
+  }
 
   return (
     <main className="main mt-[100px]">
-
       <section className="flex flex-col w-full h-[calc(var(--vh, 1vh) * 100)]">
         <div className="flex flex-col lg:flex-row w-full">
           <div className="max-h-xl max-w-lg flex lg:items-start items-center justify-center">
@@ -54,7 +52,8 @@ const CompanyPage: NextPageWithLayout = () => {
             </div>
 
             <p className="lg:text-4xl text-xl font-semibold">
-              Vi ser ofte at selskaper står ovenfor utfordringer med å realisere sine prosjekter <span className="green-text">raskt </span>
+              Vi ser ofte at selskaper står ovenfor utfordringer med å realisere sine prosjekter{' '}
+              <span className="green-text">raskt </span>
               og <span className="green-text">kostnadseffektivt.</span>
             </p>
 
@@ -75,9 +74,12 @@ const CompanyPage: NextPageWithLayout = () => {
         </div>
       </section>
 
-      <section ref={section2Ref} className="flex flex-col w-full h-[calc(var(--vh, 1vh) * 100)] items-center mt-20 mb-20">
+      <section
+        ref={section2Ref}
+        className="flex flex-col w-full h-[calc(var(--vh, 1vh) * 100)] items-center mt-20 mb-20"
+      >
         <h1 className="text-4xl font-black text-center mb-12 lg:mb-20">
-          Selskaper som bruker Kodeworks
+          Selskaper som bruker KodeWorks
         </h1>
         <div className="grid grid-cols-3 gap-4 gap-y-8 lg:gap-8 lg:gap-y-12">
           <img src="/logos/thales.png" className="max-w-full max-h-10" />
@@ -174,9 +176,7 @@ const CompanyPage: NextPageWithLayout = () => {
         </div>
 
         <BookNowBtn handleClick={scrollToContact} />
-
       </section>
-
 
       <section ref={contactRef} className="mb-48">
         <h1 className="text-4xl font-black text-center mb-12 lg:mb-20">
@@ -188,13 +188,12 @@ const CompanyPage: NextPageWithLayout = () => {
           </div>
           <div className="flex flex-col items-center ml-4">
             <h2>David Garner</h2>
-            <p>Konsulent, Kodeworks</p>
+            <p>Konsulent, KodeWorks</p>
           </div>
         </div>
 
         <CampaignContact subject={contact.subject} />
       </section>
-
     </main>
   );
 };
@@ -203,10 +202,11 @@ function BookNowBtn({ handleClick }: { handleClick: () => void }) {
   return (
     <button
       onClick={handleClick}
-      className="btn btn-primary active:bg-green-950 rounded-xl text-white bg-green-900 font-bold text-xl w-fit px-6 py-2 cursor-pointer">
+      className="btn btn-primary active:bg-green-950 rounded-xl text-white bg-green-900 font-bold text-xl w-fit px-6 py-2 cursor-pointer"
+    >
       Book Nå
     </button>
-  )
+  );
 }
 
 CompanyPage.getInitialProps = async () => {
@@ -214,10 +214,12 @@ CompanyPage.getInitialProps = async () => {
     disableContact: true,
     socialProps: {
       title: 'Gratis konsulenttime',
-      description: 'Vi tilbyr gratis konsulenttime for selskap som ønsker å realisere sine IT-prosjekter.',
+      description:
+        'Vi tilbyr gratis konsulenttime for selskap som ønsker å realisere sine IT-prosjekter.',
       image: '/static/photos/tjenester/kodeworks-tjenester1.png',
-    }
+    },
   };
 };
 
 export default CompanyPage;
+
