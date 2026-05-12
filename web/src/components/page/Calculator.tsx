@@ -32,7 +32,7 @@ export default function Calculator({ careerSchema }: Props) {
         setPension,
       }}
     >
-      <section className="col-span-1 lg:col-span-2 flex flex-col">
+      <section id="kalkulator" className="col-span-1 lg:col-span-2 flex flex-col scroll-mt-28">
         <h2 className="text-center lg:text-start">Hva kommer du til å tjene</h2>
         <div className="col-span-1 lg:col-span-2 grid grid-cols-[1fr] lg:grid-cols-[repeat(2,1fr)] my-16">
           <About careerSchema={careerSchema} />
